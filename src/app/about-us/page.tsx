@@ -9,7 +9,7 @@ export default function AboutPage() {
 
   return (
     <main className="w-full pt-20 px-5 md:px-10 lg:px-20 space-y-10">
-      <MotionComponent type="slideIn" duration={1} delay={0.3}>
+      <MotionComponent type="fadeIn" duration={1} delay={0.3}>
         <AboutUs aboutUs={aboutUs} />
       </MotionComponent>
 

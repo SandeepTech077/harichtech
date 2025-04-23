@@ -1,23 +1,21 @@
-import { ServiceListData } from "@/data/ServiceListData";
-import ServiceDetailCard from "@/components/ServiceList/ServiceDetailCard";
-import ProcessComponent from "@/components/ServiceList/ProcessSection";
-import ServicesSection from "@/components/ServiceList/ServicesSection";
-import PortfolioSection from "@/components/ServiceList/PortfolioSection";
-import WhyChooseUs from "@/components/ServiceList/WhyChooseUs";
-import MotionComponent from "@/Animation/MotionComponent";
+'use client';
 
-interface PageProps {
-  params: { id: string };
-}
+import { useParams } from 'next/navigation';
+import { ServiceListData } from '@/data/ServiceListData';
+import ServiceDetailCard from '@/components/ServiceList/ServiceDetailCard';
+import ProcessComponent from '@/components/ServiceList/ProcessSection';
+import ServicesSection from '@/components/ServiceList/ServicesSection';
+import PortfolioSection from '@/components/ServiceList/PortfolioSection';
+import WhyChooseUs from '@/components/ServiceList/WhyChooseUs';
+import MotionComponent from '@/Animation/MotionComponent';
 
-const ServiceDetailPage = async ({ params }: PageProps) => {
-  const { id } = await params;
-  const serviceId = parseInt(id);
+export default function ServiceDetailPage() {
+  const params = useParams();
+  const id = params?.id;
 
-  const service = ServiceListData.serviceList.find(
-    (item) => item.id === serviceId
-  );
-  
+  const serviceId = parseInt(id as string); // Ensure it's a string before parsing
+  const service = ServiceListData.serviceList.find(item => item.id === serviceId);
+
   if (!service || !service.maintitle) {
     return <div className="p-6 text-red-600">Service not found!</div>;
   }
@@ -45,6 +43,4 @@ const ServiceDetailPage = async ({ params }: PageProps) => {
       </MotionComponent>
     </div>
   );
-};
-
-export default ServiceDetailPage;
+}

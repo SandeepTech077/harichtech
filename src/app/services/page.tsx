@@ -9,7 +9,7 @@ export default function ServicesPage() {
 
   return (
     <main className="w-full space-y-10 py-20 px-5 md:px-10 lg:px-20 mx-auto">
-      <MotionComponent type="slideIn" duration={1} delay={0.5}>
+      <MotionComponent type="bounce" duration={1} delay={0.5}>
         <ServiceTitleSection serviceTitle={serviceTitle} />
       </MotionComponent>
       
