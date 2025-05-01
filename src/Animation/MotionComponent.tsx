@@ -1,7 +1,6 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
 
-import { animate, inView } from "motion";
+import { motion, useAnimation, useInView } from "framer-motion";
 import { ReactNode, useEffect, useRef } from "react";
 
 interface MotionComponentProps {
@@ -19,40 +18,54 @@ const MotionComponent = ({
   delay = 0,
   className = "",
 }: MotionComponentProps) => {
-  const ref = useRef<HTMLDivElement>(null);
+  const ref = useRef(null);
+  const controls = useAnimation();
+  const inView = useInView(ref, { amount: 0.2, once: true });
 
   useEffect(() => {
-    if (ref.current) {
-      const animations: { [key: string]: any } = {
-        fadeIn: { opacity: [0, 1] },
-        slideIn: { opacity: [0, 1], transform: ["translateY(50px)", "translateY(0)"] },
-        zoomIn: { opacity: [0, 1], scale: [0.8, 1] },
-        bounce: { 
-          opacity: [0, 1],
-          transform: ["translateY(50px)", "translateY(0)"],
-          easing: "ease-out",
-          repeat: 1,
-          direction: "alternate",
-        },
-      };
-
-      inView(ref.current, () => {
-        animate(
-          ref.current!,
-          animations[type] || animations.fadeIn,
-          {
-            duration,
-            delay,
-          }
-        );
-      }, { amount: 0.2 });
+    if (inView) {
+      controls.start("visible");
     }
-  }, [type, duration, delay]);
+  }, [inView, controls]);
+
+  const variants = {
+    fadeIn: {
+      hidden: { opacity: 0 },
+      visible: { opacity: 1, transition: { duration, delay } },
+    },
+    slideIn: {
+      hidden: { opacity: 0, y: 50 },
+      visible: { opacity: 1, y: 0, transition: { duration, delay } },
+    },
+    zoomIn: {
+      hidden: { opacity: 0, scale: 0.8 },
+      visible: { opacity: 1, scale: 1, transition: { duration, delay } },
+    },
+    bounce: {
+      hidden: { opacity: 0, y: 50 },
+      visible: {
+        opacity: 1,
+        y: 0,
+        transition: {
+          duration,
+          delay,
+          type: "spring",
+          bounce: 0.5,
+        },
+      },
+    },
+  };
 
   return (
-    <div ref={ref} className={className}>
+    <motion.div
+      ref={ref}
+      className={className}
+      initial="hidden"
+      animate={controls}
+      variants={variants[type] || variants.fadeIn}
+    >
       {children}
-    </div>
+    </motion.div>
   );
 };
 

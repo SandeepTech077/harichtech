@@ -4,6 +4,7 @@ import Image, { StaticImageData } from "next/image";
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
+import { motion } from "framer-motion";
 import "swiper/css";
 import "swiper/css/navigation";
 import Title from "@/components/Title";
@@ -26,26 +27,52 @@ interface BlogsComponentProps {
   data: BlogData;
 }
 
+// Animation variants
+const fadeUp = {
+  hidden: { opacity: 0, y: 40 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.7, ease: "easeOut" },
+  },
+};
+
 const BlogsComponent: React.FC<BlogsComponentProps> = ({ data }) => {
   return (
     <div className="w-full">
       {/* Header */}
-      <div className="flex justify-between items-end mb-10">
+      <motion.div
+        variants={fadeUp}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: false, amount: 0.3 }} // Trigger animation when 30% of the element is in view
+        className="flex justify-between items-end mb-10"
+      >
         <div>
           <div className="inline-block mb-4">
             <Title title={data.title} />
           </div>
-          <h2 className="text-3xl font-bold">
+          <motion.h2
+            className="text-3xl font-bold"
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+          >
             Discover Our <span className="text-blue-600">Latest</span> <br />
             <span className="text-blue-600">Insights</span>
-          </h2>
+          </motion.h2>
         </div>
 
         {/* Navigation buttons (hidden on mobile) */}
-        <div className="hidden md:flex gap-2">
-          <button
-            className="swiper-button-prev-custom bg-blue-600 text-white w-10 h-10 flex items-center justify-center rounded"
-          >
+        <motion.div
+          className="hidden md:flex gap-2"
+          initial={{ opacity: 0, x: 50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+        >
+          <button className="swiper-button-prev-custom bg-blue-600 text-white w-10 h-10 flex items-center justify-center rounded shadow-md hover:scale-110 transition">
             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
               <path
                 fillRule="evenodd"
@@ -54,9 +81,7 @@ const BlogsComponent: React.FC<BlogsComponentProps> = ({ data }) => {
               />
             </svg>
           </button>
-          <button
-            className="swiper-button-next-custom bg-blue-600 text-white w-10 h-10 flex items-center justify-center rounded"
-          >
+          <button className="swiper-button-next-custom bg-blue-600 text-white w-10 h-10 flex items-center justify-center rounded shadow-md hover:scale-110 transition">
             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
               <path
                 fillRule="evenodd"
@@ -65,8 +90,8 @@ const BlogsComponent: React.FC<BlogsComponentProps> = ({ data }) => {
               />
             </svg>
           </button>
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
 
       {/* Swiper Slides */}
       <Swiper
@@ -88,7 +113,15 @@ const BlogsComponent: React.FC<BlogsComponentProps> = ({ data }) => {
       >
         {data.blogsSlider.map((blog) => (
           <SwiperSlide key={blog.id}>
-            <div className="bg-white border border-gray-100 rounded-md overflow-hidden shadow-sm">
+            <motion.div
+              variants={fadeUp}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.3 }} // Trigger animation when 30% of the card is in view
+              whileHover={{ scale: 1.03 }}
+              transition={{ duration: 0.4 }}
+              className="bg-white border border-gray-100 rounded-md overflow-hidden shadow-md hover:shadow-lg transition-all"
+            >
               {/* Blog Image */}
               <div className="relative w-full h-80">
                 <Image
@@ -109,7 +142,7 @@ const BlogsComponent: React.FC<BlogsComponentProps> = ({ data }) => {
                 </div>
 
                 {/* Read More */}
-                <div className="flex justify-between items-center p-3 bg-[#E0E3E1]">
+                <div className="flex justify-between items-center p-3 bg-[#E0E3E1] hover:bg-[#d0d3d1] transition">
                   <p className="font-medium text-gray-800 hover:text-blue-600">
                     Read More
                   </p>
@@ -127,7 +160,7 @@ const BlogsComponent: React.FC<BlogsComponentProps> = ({ data }) => {
                   </svg>
                 </div>
               </div>
-            </div>
+            </motion.div>
           </SwiperSlide>
         ))}
       </Swiper>

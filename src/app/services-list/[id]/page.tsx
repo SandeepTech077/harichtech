@@ -13,7 +13,7 @@ export default function ServiceDetailPage() {
   const params = useParams();
   const id = params?.id;
 
-  const serviceId = parseInt(id as string); // Ensure it's a string before parsing
+  const serviceId = parseInt(id as string);
   const service = ServiceListData.serviceList.find(item => item.id === serviceId);
 
   if (!service || !service.maintitle) {

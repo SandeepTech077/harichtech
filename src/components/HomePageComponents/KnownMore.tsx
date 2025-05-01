@@ -1,7 +1,31 @@
-import React from "react";
+"use client";
+
+import React, { useRef } from "react";
 import Image, { StaticImageData } from "next/image";
 import Title from "@/components/Title";
 import Button from "@/components/Button";
+import { motion, useInView } from "framer-motion";
+
+// Animation Variants
+const container = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.2,
+    },
+  },
+};
+
+const item = {
+  hidden: { opacity: 0, y: 30 },
+  show: { opacity: 1, y: 0 },
+};
+
+const scaleIn = {
+  hidden: { opacity: 0, scale: 0.95 },
+  show: { opacity: 1, scale: 1 },
+};
 
 interface KnownMoreProps {
   data: {
@@ -15,14 +39,32 @@ interface KnownMoreProps {
 
 const KnownMore: React.FC<KnownMoreProps> = ({ data }) => {
   const { title, Image1, Image2, describation, btnTitle } = data;
-
+  
+  // Create a ref for the section and use useInView hook
+  const sectionRef = useRef(null);
+  const isInView = useInView(sectionRef, { once: true, amount: 0.3 });
+  
   return (
-    <section className="w-full relative overflow-hidden h-[74dvh] lg:h-[100dvh] ">
-      <div className="container mx-auto">
-        {/* Mobile view - stacked layout */}
+    <motion.section
+      ref={sectionRef}
+      initial="hidden"
+      animate={isInView ? "show" : "hidden"}
+      variants={container}
+      className="w-full relative overflow-hidden h-full py-16"
+    >
+      {/* Right vertical line for desktop */}
+      <motion.div
+        initial={{ scaleY: 0 }}
+        animate={isInView ? { scaleY: 1 } : { scaleY: 0 }}
+        transition={{ delay: 0.4, duration: 1.2 }}
+        style={{ originY: 1 }}
+        className="hidden lg:block absolute top-0 right-[120px] w-[1px] h-full bg-[#999999] z-0 opacity-50"
+      />
+
+      <div className="h-full mx-auto">
+        {/* Mobile View */}
         <div className="flex flex-col lg:hidden items-center text-center">
-          {/* Title section */}
-          <div className="w-full flex flex-col  items-end text-right">
+          <motion.div variants={item} className="w-full flex flex-col items-end text-right">
             <div className="w-36">
               <Title title={title} />
             </div>
@@ -30,22 +72,21 @@ const KnownMore: React.FC<KnownMoreProps> = ({ data }) => {
               Accelerate Your Business with{" "}
               <span className="text-blue-600">Harichtech</span>
             </h1>
-          </div>
+          </motion.div>
 
-          {/* Main Image */}
-          <div className="w-full mb-6">
-            <div className="relative hidden lg:block">
-              <Image
-                src={Image1}
-                alt="Main Image"
-                width={600}
-                className="w-full rounded-xl object-contain"
-              />
-            </div>
-          </div>
+          <motion.div variants={scaleIn} className="w-full my-6 relative">
+            <Image
+              src={Image1}
+              alt="Main Image"
+              width={600}
+              className="w-full rounded-xl object-contain"
+            />
+          </motion.div>
 
-          {/* Floating Card for mobile */}
-          <div className="w-full bg-white rounded-lg shadow-lg overflow-hidden">
+          <motion.div
+            variants={item}
+            className="w-full bg-white rounded-lg shadow-lg overflow-hidden"
+          >
             <div className="relative w-full h-48">
               <Image
                 src={Image2}
@@ -58,67 +99,69 @@ const KnownMore: React.FC<KnownMoreProps> = ({ data }) => {
               <p className="text-sm text-left text-gray-700 mb-6 leading-relaxed">
                 {describation}
               </p>
-              <div className="flex justify-start">
+              <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
                 <Button text={btnTitle} />
-              </div>
+              </motion.div>
             </div>
-          </div>
+          </motion.div>
         </div>
 
-        {/* Desktop layout - hidden on mobile */}
-        <div className="hidden lg:block">
-          <div className="flex flex-row items-start gap-16 relative">
-            {/* Left Image Container */}
-            <div className="w-1/2">
-              <div className="relative">
-                <Image
-                  src={Image1}
-                  alt="Main Image"
-                  width={600}
-                  height={450}
-                  className="w-full rounded-xl object-cover"
-                />
-                {/* Decorative element */}
-                <div className="absolute -bottom-4 -left-4 w-24 h-24 bg-blue-500 opacity-20 rounded-full z-0"></div>
-              </div>
+        {/* Desktop View Text */}
+        <motion.div
+          variants={item}
+          className="hidden lg:flex w-full justify-end pr-34 text-right"
+        >
+          <div className="max-w-[40%] text-end h-40">
+            <div className="inline-block mb-4">
+              <Title title={title} />
             </div>
-
-            {/* Right Content */}
-            <div className="w-1/2 relative z-10 text-right pl-12">
-              {/* Title badge */}
-              <div className="inline-block ">
-                <Title title={title} />
-              </div>
-              <h1 className="text-3xl md:text-4xl font-bold mb-6 mt-6">
-                Accelerate Your Business with{" "}
-                <span className="text-blue-600">Harichtech</span>
-              </h1>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Floating Card - desktop only */}
-      <div className="hidden lg:block absolute right-28 w-3/5 top-44 z-20">
-        <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-          <div className="relative w-full h-64">
-            <Image
-              src={Image2}
-              alt="Card Image"
-              className="w-full h-full object-cover"
-              fill
-            />
-          </div>
-
-          <div className="p-8">
-            <p className="text-base text-gray-700 mb-6 leading-relaxed">
+            <h2 className="text-3xl lg:text-4xl font-bold mb-6 leading-snug">
+              Accelerate Your Business with{" "}
+              <span className="text-blue-600">Harichtech</span>
+            </h2>
+            <p className="text-gray-700 text-base leading-relaxed mb-6">
               {describation}
             </p>
-            <Button text={btnTitle} />
           </div>
+        </motion.div>
+
+        {/* Desktop View Images */}
+        <div className="hidden lg:flex flex-row items-center gap-16 relative w-full">
+          <motion.div variants={item} className="w-[50%] relative mt-10">
+            <div className="relative">
+              <Image
+                src={Image1}
+                alt="Main Image"
+                className="w-full rounded-xl object-cover"
+              />
+              <div className="absolute -bottom-4 -left-4 w-24 h-24 bg-[#2575FC] opacity-20 rounded-full z-0"></div>
+            </div>
+
+            {/* Floating Card */}
+            <motion.div
+              variants={scaleIn}
+              transition={{ delay: 0.5 }}
+              className="absolute transform top-52 left-124 w-[904px] overflow-hidden bg-white z-10"
+            >
+              <div className="relative w-full h-100">
+                <Image
+                  src={Image2}
+                  alt="Floating Card"
+                  className="w-full h-full object-cover"
+                  fill
+                />
+              </div>
+              <div className="p-4">
+                <p className="text-sm text-gray-700 mb-8">{describation}</p>
+               
+                  <Button text={btnTitle} />
+            
+              </div>
+            </motion.div>
+          </motion.div>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 
