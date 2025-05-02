@@ -83,6 +83,7 @@ const ClientsComponent: React.FC<ClientsComponentProps> = ({ data }) => {
       </div>
 
       {/* Testimonials Slider */}
+      
       <Swiper
         slidesPerView={1}
         spaceBetween={20}
