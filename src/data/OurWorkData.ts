@@ -5,7 +5,7 @@ export const OurWorkData = {
     title: "Our Work",
     subTitle: "Elevate Your Brand with Harichtech's Digital Marketing Services",
     describation:
-      "At Harichtech, we offer a comprehensive range of digital marketing services designed to help businesses of all sizes achieve their online goals. Our team of experienced1 professionals will work closely with you to develop a tailored strategy that drives results. ",
+      "We create technology solutions that help businesses grow and succeed. From designing easy-to-use websites and apps to building custom software, we focus on making things simple and effective for our clients. Every project is handled with care and attention to make sure it fits the client’s needs perfectly. We work closely with our clients to turn their ideas into real, useful digital products that people enjoy using.",
     btnTitle: "Let’s Connect",
   },
   portfolio: {

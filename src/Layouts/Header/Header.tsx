@@ -1,11 +1,10 @@
-// components/Header.tsx
 "use client";
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Phone, Mail, Facebook, Instagram, Linkedin } from "lucide-react";
 import Logo from "../../../public/Logo/Logo.svg";
 
 const Header = () => {
@@ -26,6 +25,18 @@ const Header = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // Close menu when clicking outside or on navigation
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth >= 768) {
+        setIsMenuOpen(false);
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
@@ -36,43 +47,91 @@ const Header = () => {
     { name: "Our Work", path: "/our-work" },
     { name: "About us", path: "/about-us" },
     { name: "Blog", path: "/blog" },
-    // { name: "Career", path: "/career" },
+    { name: "Career", path: "/career" },
+    { name: "Contact Us", path: "/contact-us" },
   ];
 
   return (
-    <header
-      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
-        scrolled ? "bg-white shadow-md" : "bg-white/90"
-      }`}
-    >
-      <div className="container mx-auto px-4 py-3 flex items-center justify-between">
-        {/* Logo */}
-        <div className="flex items-center">
-          <Link href="/">
-            <div className="flex items-center">
+    <>
+      {/* Top Contact Bar */}
+      <div className="fixed top-0 left-0 w-full bg-blue-600 text-white py-2 px-2 sm:px-4 text-xs sm:text-sm z-50">
+        <div className="container mx-auto flex items-center justify-between max-w-7xl">
+          {/* Contact Info - Hidden on very small screens, shown as single item on small screens */}
+          <div className="flex items-center space-x-2 sm:space-x-6">
+            <div className="hidden xs:flex items-center space-x-1 sm:space-x-2">
+              <Phone size={12} className="sm:w-4 sm:h-4" />
+              <span className="truncate">+91-6200-66-5954</span>
+            </div>
+            <div className="hidden sm:flex items-center space-x-2">
+              <Mail size={14} />
+              <span className="truncate">info@harichtech.com</span>
+            </div>
+            {/* Show only phone on extra small screens */}
+            <div className="flex xs:hidden items-center space-x-1">
+              <Phone size={12} />
+              <span>Call Us</span>
+            </div>
+          </div>
+
+          {/* Social Icons */}
+          <div className="flex items-center space-x-1 sm:space-x-3">
+            <a 
+              href="#" 
+              className="w-6 h-6 sm:w-8 sm:h-8 rounded-full flex items-center justify-center hover:bg-white hover:bg-opacity-20 transition-colors"
+              aria-label="Facebook"
+            >
+              <Facebook size={14} className="sm:w-5 sm:h-5" />
+            </a>
+            <a 
+              href="#" 
+              className="w-6 h-6 sm:w-8 sm:h-8 rounded-full flex items-center justify-center hover:bg-white hover:bg-opacity-20 transition-colors"
+              aria-label="Instagram"
+            >
+              <Instagram size={14} className="sm:w-5 sm:h-5" />
+            </a>
+            <a 
+              href="#" 
+              className="w-6 h-6 sm:w-8 sm:h-8 rounded-full flex items-center justify-center hover:bg-white hover:bg-opacity-20 transition-colors"
+              aria-label="LinkedIn"
+            >
+              <Linkedin size={14} className="sm:w-5 sm:h-5" />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      {/* Main Header */}
+      <header
+        className={`fixed top-8 sm:top-10 left-0 w-full z-40 transition-all duration-300 ${
+          scrolled ? "bg-white shadow-md" : "bg-white/95 backdrop-blur-sm"
+        }`}
+      >
+        <div className="container mx-auto px-3 sm:px-4 lg:px-6 py-3 sm:py-4 flex items-center justify-between max-w-7xl">
+          {/* Logo */}
+          <div className="flex items-center flex-shrink-0">
+            <Link href="/" className="flex items-center">
               <Image
                 src={Logo}
                 alt="Harich Technologies"
-                className="h-10 w-auto"
+                className="h-8 sm:h-10 lg:h-12 w-auto"
+                priority
               />
-            </div>
-          </Link>
-        </div>
+            </Link>
+          </div>
 
-        {/* Desktop Navigation */}
-        <div className="hidden md:flex items-center space-x-8">
-          <nav>
-            <ul className="flex space-x-8">
+          {/* Desktop Navigation */}
+          <nav className="hidden lg:flex items-center">
+            <ul className="flex items-center space-x-6 xl:space-x-8">
               {navItems.map((item) => {
                 const isActive = pathname === item.path;
                 return (
                   <li key={item.name}>
                     <Link
                       href={item.path}
-                      className={`text-gray-700 hover:text-blue-500 transition-colors relative ${
+                      className={`text-sm xl:text-base font-medium transition-colors relative py-2 ${
                         isActive
-                          ? "after:absolute after:bottom-[-6px] after:left-1/2 after:transform after:-translate-x-1/2 after:w-1 after:h-1 after:bg-blue-600 after:rounded-full"
-                          : ""
+                          ? "text-blue-600 after:absolute after:bottom-0 after:left-1/2 after:transform after:-translate-x-1/2 after:w-1 after:h-1 after:bg-blue-600 after:rounded-full"
+                          : "text-gray-700 hover:text-blue-600"
                       }`}
                     >
                       {item.name}
@@ -82,47 +141,55 @@ const Header = () => {
               })}
             </ul>
           </nav>
-        </div>
 
-        {/* Search and CTA Buttons */}
-        <div className="hidden md:flex items-center space-x-4">
-          <Link
-            href="/contact"
-            className="inline-flex items-center px-4 py-2 border border-blue-600 rounded-md text-blue-600 font-medium hover:bg-blue-50 transition-colors"
-          >
-            Get in Touch <span className="ml-1">↗</span>
-          </Link>
-        </div>
+          {/* Desktop CTA Button */}
+          <div className="hidden md:flex items-center">
+            <Link
+              href="/contact"
+              className="inline-flex items-center px-4 lg:px-6 py-2 lg:py-2.5 border border-blue-600 rounded-md text-sm lg:text-base text-blue-600 font-medium hover:bg-blue-50 transition-colors whitespace-nowrap"
+            >
+              Get in Touch
+              <span className="ml-1 text-xs">↗</span>
+            </Link>
+          </div>
 
-        {/* Mobile Menu Button */}
-        <div className="flex items-center md:hidden">
+          {/* Mobile Menu Button */}
           <button
-            className="p-2 text-gray-700"
+            className="flex items-center justify-center lg:hidden p-2 text-gray-700 hover:text-blue-600 transition-colors"
             onClick={toggleMenu}
             aria-label="Toggle menu"
+            aria-expanded={isMenuOpen}
           >
-            {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            {isMenuOpen ? <X size={24} /> : <Menu size={30} />}
           </button>
         </div>
-      </div>
+      </header>
 
-      {/* Mobile Menu Slide-in */}
+      {/* Mobile Menu Overlay */}
+      {isMenuOpen && (
+        <div
+          className="fixed inset-0 bg-black bg-opacity-50 z-45 lg:hidden"
+          onClick={toggleMenu}
+          aria-hidden="true"
+        />
+      )}
+
+      {/* Mobile Menu */}
       <div
-        className={`fixed top-0 right-0 h-full w-4/5 bg-white shadow-lg z-50 transform transition-transform duration-300 ease-in-out ${
+        className={`fixed top-0 right-0 h-full w-full sm:w-4/5 max-w-sm bg-white shadow-xl z-50 transform transition-transform duration-300 ease-in-out lg:hidden ${
           isMenuOpen ? "translate-x-0" : "translate-x-full"
-        } md:hidden`}
+        }`}
       >
-        <div className="p-6">
-          <div className="flex justify-between items-center mb-6">
+        <div className="flex flex-col h-full">
+          {/* Mobile Menu Header */}
+          <div className="flex justify-between items-center p-4 sm:p-6 border-b border-gray-100">
             <Image
               src={Logo}
               alt="Harich Technologies"
-              width={120}
-              height={30}
-              className="h-8 w-auto"
+              className="h-8 sm:h-10 w-auto"
             />
             <button
-              className="text-gray-700"
+              className="p-2 text-gray-700 hover:text-blue-600 transition-colors"
               onClick={toggleMenu}
               aria-label="Close menu"
             >
@@ -130,16 +197,39 @@ const Header = () => {
             </button>
           </div>
 
-          <nav className="mt-8">
-            <ul className="space-y-4">
+          {/* Mobile Contact Info */}
+          <div className="mx-4 sm:mx-6 mt-4 p-4 bg-blue-50 rounded-lg">
+            <div className="flex flex-col space-y-3 text-sm">
+              <a 
+                href="tel:+916200665954"
+                className="flex items-center space-x-3 text-blue-600 hover:text-blue-700 transition-colors"
+              >
+                <Phone size={16} />
+                <span>+91-6200-66-5954</span>
+              </a>
+              <a 
+                href="mailto:info@harichtech.com"
+                className="flex items-center space-x-3 text-blue-600 hover:text-blue-700 transition-colors"
+              >
+                <Mail size={16} />
+                <span>info@harichtech.com</span>
+              </a>
+            </div>
+          </div>
+
+          {/* Mobile Navigation */}
+          <nav className="flex-1 overflow-y-auto px-4 sm:px-6 mt-6">
+            <ul className="space-y-1">
               {navItems.map((item) => {
                 const isActive = pathname === item.path;
                 return (
-                  <li key={item.name} className="border-b border-gray-100 pb-3">
+                  <li key={item.name}>
                     <Link
                       href={item.path}
-                      className={`block text-lg ${
-                        isActive ? "text-blue-600 font-medium" : "text-gray-700"
+                      className={`block py-3 px-4 rounded-lg text-base transition-colors ${
+                        isActive 
+                          ? "text-blue-600 font-semibold bg-blue-50" 
+                          : "text-gray-700 hover:text-blue-600 hover:bg-gray-50"
                       }`}
                       onClick={toggleMenu}
                     >
@@ -151,26 +241,45 @@ const Header = () => {
             </ul>
           </nav>
 
-          <div className="mt-8 flex flex-col space-y-4">
+          {/* Mobile Menu Footer */}
+          <div className="p-4 sm:p-6 border-t border-gray-100">
             <Link
               href="/contact"
-              className="flex items-center justify-center px-4 py-2 border border-blue-600 rounded-md text-blue-600 font-medium hover:bg-blue-50 transition-colors"
+              className="flex items-center justify-center w-full px-4 py-3 border border-blue-600 rounded-lg text-blue-600 font-medium hover:bg-blue-50 transition-colors mb-4"
               onClick={toggleMenu}
             >
-              Get in Touch <span className="ml-1">↗</span>
+              Get in Touch
+              <span className="ml-2 text-sm">↗</span>
             </Link>
+
+            {/* Mobile Social Icons */}
+            <div className="flex items-center justify-center space-x-4">
+              <a 
+                href="#" 
+                className="w-10 h-10 bg-blue-600 text-white rounded-full flex items-center justify-center hover:bg-blue-700 transition-colors"
+                aria-label="Facebook"
+              >
+                <Facebook size={18} />
+              </a>
+              <a 
+                href="#" 
+                className="w-10 h-10 bg-blue-600 text-white rounded-full flex items-center justify-center hover:bg-blue-700 transition-colors"
+                aria-label="Instagram"
+              >
+                <Instagram size={18} />
+              </a>
+              <a 
+                href="#" 
+                className="w-10 h-10 bg-blue-600 text-white rounded-full flex items-center justify-center hover:bg-blue-700 transition-colors"
+                aria-label="LinkedIn"
+              >
+                <Linkedin size={18} />
+              </a>
+            </div>
           </div>
         </div>
       </div>
-
-      {/* Overlay for mobile menu */}
-      {isMenuOpen && (
-        <div
-          className="fixed inset-0 bg-black bg-opacity-50 z-40 md:hidden"
-          onClick={toggleMenu}
-        />
-      )}
-    </header>
+    </>
   );
 };
 

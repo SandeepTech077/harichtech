@@ -9,69 +9,114 @@ export const HomePagedata = {
     Img1: Helper.main1,
     Img2: Helper.main2,
   },
+  
   knownMore: {
     title: "About Us",
-    subTitle: "About Us",
-    Image1: Helper.KnownImage1,
-    Image2: Helper.KnownImage2,
-    describation:
-      "Morem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
-    btnTitle: "Learn More",
+    headline: "Accelerate Your Business with Harichtech",
+    description:
+      "At Harich Tech, we craft digital solutions that move businesses forward. From websites to strategy, we blend design, tech, and clear thinking to help brands grow faster, look sharper, and connect better with their audience.",
+    buttons: [
+      { label: "Learn More", link: "#" },
+      { label: "Let's talk", link: "#" },
+    ],
+    features: [
+      {
+        id: "01",
+        icon: Helper.DesignerSvg,
+        title: "Design",
+        description:
+          "Visuals that connect, layouts that guide, details that matter.",
+      },
+      {
+        id: "02",
+        icon: Helper.DeveloperSvg,
+        title: "Development",
+        description:
+          "Built for performance. Thoughtful development that brings ideas to life - fast, stable, and scalable. ",
+      },
+      {
+        id: "03",
+        icon: Helper.MarketingSvg,
+        title: "Marketing that connects",
+        description:
+          "Precise, creative, and built to make your brand shine.",
+      },
+      {
+        id: "04",
+        icon: Helper.SupportSvg,
+        title: "Helping Support",
+        description:
+          "Behind every solution, a team that truly supports.",
+      },
+    ],
+    image: Helper.KnownImage,
   },
   serviceList: {
     title: "Services",
     Subtitle: "We Provide The SolutionFor Our Clients",
     describation:
-      "Morem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
-    GrapIcon: Helper.GraphIcon,
-    HoverGraphIcon: Helper.HoverGraphIcon,
-    RightTopIcon: Helper.TopRightIcon,
-    HoverRightIcon: Helper.HoverRightIcon,
-
+      "WPTSFOC -Our solutions are tailored, practical, and built around each client’s goals - thoughtfully designed to drive results, deliver long-term value, and support meaningful growth",
     serviceLists: [
       {
         id: 1,
         title: "High Performance",
         describation:
-          "Morem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
-        Image: Helper.ServiceImg,
+          "We craft high-performance solutions that are fast, reliable, and built to scale with confidence.",
+        Image: Helper.performamce,
       },
       {
         id: 2,
-        title: "High Performance",
+        title: "Working Plan",
         describation:
-          "Morem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
-        Image: Helper.ServiceImg,
+          "Every project begins with a focused, step-by-step plan tailored to your business goals.",
+        Image: Helper.working,
       },
       {
         id: 3,
-        title: "High Performance",
+        title: "Technology",
         describation:
-          "Morem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
-        Image: Helper.ServiceImg,
+          "We use the right technology - smart, stable, and future-ready - to build meaningful products.",
+        Image: Helper.technology,
       },
       {
         id: 4,
-        title: "High Performance",
+        title: "Creative Minds",
         describation:
-          "Morem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
-        Image: Helper.ServiceImg,
+          "Behind every solution is a team of creative thinkers solving problems with fresh perspective.",
+        Image: Helper.cretive,
       },
-      {
-        id: 5,
-        title: "High Performance",
-        describation:
-          "Morem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
-        Image: Helper.ServiceImg,
-      },
+  
     ],
+  },
+  ourClient:{
+   title:"Our Clients",
+
+   clintsImages:[
+    Helper.clientLogo1,
+    Helper.clientLogo2,
+    Helper.clientLogo3,
+    Helper.clientLogo4,
+    Helper.clientLogo5,
+    Helper.clientLogo6,
+    Helper.clientLogo7,
+    Helper.clientLogo8,
+    Helper.clientLogo9,
+    Helper.clientLogo10,
+    Helper.clientLogo11,
+    Helper.clientLogo12,
+    Helper.clientLogo13,
+    Helper.clientLogo14,
+    Helper.clientLogo15,
+    
+
+   ]
   },
   portfolio: {
     title: "Portfolio",
     Subtitle: "See How We Transform Ideas into Reality",
     btnTitle: "View More",
     describation:
-      "Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+      "Big ideas deserve more than just planning - they need momentum.We turn concepts into clear, functional digital experiences. From first thought to final build, we make it real.",
     works: [
       {
         title: "Borem ipsum ",
@@ -121,7 +166,7 @@ export const HomePagedata = {
         description:
           "“Be genuine in your assessment, and provide constructive feedback to benefit both potential customers and the company providing the product or service.”",
         img: Helper.TestimonialImage1,
-        clipImg:Helper.clip
+        clipImg: Helper.clip,
       },
       {
         id: 2,
@@ -131,7 +176,7 @@ export const HomePagedata = {
           "“Be genuine in your assessment, and provide constructive feedback to benefit both potential customers and the company providing the product or service.”",
 
         img: Helper.TestimonialImage1,
-        clipImg:Helper.clip
+        clipImg: Helper.clip,
       },
       {
         id: 3,
@@ -139,7 +184,7 @@ export const HomePagedata = {
         position: "CEO of an eduport",
         description:
           "“Be genuine in your assessment, and provide constructive feedback to benefit both potential customers and the company providing the product or service.”",
-          clipImg:Helper.clip,
+        clipImg: Helper.clip,
         img: Helper.TestimonialImage1,
       },
       {
@@ -148,7 +193,7 @@ export const HomePagedata = {
         position: "CEO of an eduport",
         description:
           "“Be genuine in your assessment, and provide constructive feedback to benefit both potential customers and the company providing the product or service.”",
-          clipImg:Helper.clip,
+        clipImg: Helper.clip,
         img: Helper.TestimonialImage1,
       },
     ],
@@ -161,7 +206,7 @@ export const HomePagedata = {
         id: 1,
         title: "Digital Marketing",
         dateAndTimeDetail: "by Harichtech on March 26, 2024",
-        Img:Helper.BlogImage1,
+        Img: Helper.BlogImage1,
         description:
           "Today, most people spent their time on the internet. People are getting entertainment, news, learning, and many things by using the internet. Along with this they also shop and buy things online. The use of Digital Marketing is growing.......",
       },
@@ -169,7 +214,7 @@ export const HomePagedata = {
         id: 2,
         title: "Digital Marketing",
         dateAndTimeDetail: "by Harichtech on March 26, 2024",
-        Img:Helper.BlogImage2,
+        Img: Helper.BlogImage2,
         description:
           "Today, most people spent their time on the internet. People are getting entertainment, news, learning, and many things by using the internet. Along with this they also shop and buy things online. The use of Digital Marketing is growing.......",
       },
@@ -177,7 +222,7 @@ export const HomePagedata = {
         id: 3,
         title: "Digital Marketing",
         dateAndTimeDetail: "by Harichtech on March 26, 2024",
-        Img:Helper.BlogImage3,
+        Img: Helper.BlogImage3,
         description:
           "Today, most people spent their time on the internet. People are getting entertainment, news, learning, and many things by using the internet. Along with this they also shop and buy things online. The use of Digital Marketing is growing.......",
       },
@@ -185,7 +230,7 @@ export const HomePagedata = {
         id: 4,
         title: "Digital Marketing",
         dateAndTimeDetail: "by Harichtech on March 26, 2024",
-        Img:Helper.BlogImage1,
+        Img: Helper.BlogImage1,
         description:
           "Today, most people spent their time on the internet. People are getting entertainment, news, learning, and many things by using the internet. Along with this they also shop and buy things online. The use of Digital Marketing is growing.......",
       },
@@ -193,7 +238,7 @@ export const HomePagedata = {
         id: 5,
         title: "Digital Marketing",
         dateAndTimeDetail: "by Harichtech on March 26, 2024",
-        Img:Helper.BlogImage2,
+        Img: Helper.BlogImage2,
         description:
           "Today, most people spent their time on the internet. People are getting entertainment, news, learning, and many things by using the internet. Along with this they also shop and buy things online. The use of Digital Marketing is growing.......",
       },
@@ -201,7 +246,7 @@ export const HomePagedata = {
         id: 6,
         title: "Digital Marketing",
         dateAndTimeDetail: "by Harichtech on March 26, 2024",
-        Img:Helper.BlogImage3,
+        Img: Helper.BlogImage3,
         description:
           "Today, most people spent their time on the internet. People are getting entertainment, news, learning, and many things by using the internet. Along with this they also shop and buy things online. The use of Digital Marketing is growing.......",
       },

@@ -23,7 +23,7 @@ const MainTitle: React.FC<MainTitleProps> = ({
         <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
           {subTitle}
         </h1>
-        <p className="text-gray-600 mb-8">
+        <p className="text-black mb-8">
           {description}
         </p>
    <Button text={btnTitle}/>

@@ -2,15 +2,14 @@
 import main1 from "../../public/Image/HomePageImage/main/Img1.png";
 import main2 from "../../public/Image/HomePageImage/main/Img2.png";
 
-import KnownImage1 from "../../public/Image/HomePageImage/KnowmeImage/Image1.png";
-import KnownImage2 from "../../public/Image/HomePageImage/KnowmeImage/Image2.png";
+import KnownImage from "../../public/Image/HomePageImage/KnowmeImage/Image.png";
+import DesignerSvg from "../../public/Image/HomePageImage/KnowmeImage/Designer.svg";
+import DeveloperSvg from "../../public/Image/HomePageImage/KnowmeImage/Coder.svg";
+import MarketingSvg from "../../public/Image/HomePageImage/KnowmeImage/Marking.svg";
+import SupportSvg from "../../public/Image/HomePageImage/KnowmeImage/Support.svg"
 
-// Serice
-import ServiceImg from "../../public/Image/HomePageImage/Service/Img.png";
-import GraphIcon from "../../public/Icon/GrafIcon.svg";
-import HoverGraphIcon from "../../public/Icon/HoverGrafIcon.svg";
-import TopRightIcon from "../../public/Icon/RightUpArrow.svg";
-import HoverRightIcon from "../../public/Icon/HoverRightArrow.svg";
+
+
 
 //Work
 import WorkImage1 from "../../public/Image/HomePageImage/Work/Img1.png";
@@ -33,20 +32,48 @@ import StepImage1 from "../../public/SVG/Process/Step1.svg";
 import StepImage2 from "../../public/SVG/Process/Step2.svg";
 import StepImage3 from "../../public/SVG/Process/Step3.svg";
 import StepImage4 from "../../public/SVG/Process/Step4.svg";
+
+// Servece
+import performamce from "../../public/Image/HomePageImage/Service/Svg/Performance.svg"
+import working from "../../public/Image/HomePageImage/Service/Svg/communication-plan.svg"
+import technology from "../../public/Image/HomePageImage/Service/Svg/Technology.svg"
+import cretive from "../../public/Image/HomePageImage/Service/Svg/Creative-Head.svg"
+
+
+//Cliwnt Logo
+import clientLogo1 from "../../public/Image/HomePageImage/CLientLogo/logo-1.svg";
+import clientLogo2 from "../../public/Image/HomePageImage/CLientLogo/logo-2.svg";
+import clientLogo3 from "../../public/Image/HomePageImage/CLientLogo/logo-3.svg";
+import clientLogo4 from "../../public/Image/HomePageImage/CLientLogo/logo-4.svg";
+import clientLogo5 from "../../public/Image/HomePageImage/CLientLogo/logo-5.svg";
+import clientLogo6 from "../../public/Image/HomePageImage/CLientLogo/logo-6.svg";
+import clientLogo7 from "../../public/Image/HomePageImage/CLientLogo/logo-7.svg";
+import clientLogo8 from "../../public/Image/HomePageImage/CLientLogo/logo-8.svg";
+import clientLogo9 from "../../public/Image/HomePageImage/CLientLogo/logo-9.svg";
+import clientLogo10 from "../../public/Image/HomePageImage/CLientLogo/logo-10.svg";
+import clientLogo11 from "../../public/Image/HomePageImage/CLientLogo/logo-11.svg";
+import clientLogo12 from "../../public/Image/HomePageImage/CLientLogo/logo-12.svg";
+import clientLogo13 from "../../public/Image/HomePageImage/CLientLogo/logo-13.svg";
+import clientLogo14 from "../../public/Image/HomePageImage/CLientLogo/logo-14.svg";
+import clientLogo15 from "../../public/Image/HomePageImage/CLientLogo/logo-15.svg";
+
+
 export const Helper = {
   //MAIN
   main1,
   main2,
 
-  KnownImage1,
-  KnownImage2,
+  KnownImage,
+  DesignerSvg,
+  DeveloperSvg,
+  MarketingSvg,
+  SupportSvg,
 
   //Service
-  ServiceImg,
-  GraphIcon,
-  HoverGraphIcon,
-  TopRightIcon,
-  HoverRightIcon,
+  performamce,
+  working,
+  technology,
+  cretive,
 
   //Work
   WorkImage1,
@@ -69,6 +96,26 @@ export const Helper = {
   StepImage1,
   StepImage2,
   StepImage3,
-  StepImage4
+  StepImage4,
+
+  // cleint
+  clientLogo1,
+  clientLogo2,
+  clientLogo3,
+  clientLogo4,
+  clientLogo5,
+  clientLogo6,
+  clientLogo7,
+  clientLogo8,
+  clientLogo9,
+  clientLogo10,
+  clientLogo11,
+  clientLogo12,
+  clientLogo13,
+  clientLogo14,
+  clientLogo15,
+
+  
+
 
 };

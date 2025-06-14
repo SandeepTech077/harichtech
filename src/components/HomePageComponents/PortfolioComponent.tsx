@@ -30,15 +30,15 @@ const PortfolioComponent: React.FC<PortfolioComponentProps> = ({ data }) => {
         </div>
 
         {/* Heading */}
-        <h2 className="text-3xl font-bold mt-2 max-w-2xl mx-auto">
+        <h2 className="text-[30px] lg:text-[48px] font-bold mt-2 max-w-3xl mx-auto">
           {data.Subtitle.split(" ").slice(0, -1).join(" ")}{" "}
-          <span className="text-blue-600">
+          <span className="bg-gradient-to-l from-[#2058FF] to-[#004BC2] bg-clip-text text-transparent">
             {data.Subtitle.split(" ").slice(-1)}
           </span>
         </h2>
 
         {/* Description */}
-        <p className=" mx-auto mt-4 text-gray-600">
+        <p className=" mx-auto mt-4 text-black text-lg max-w-6xl">
           {data.describation}
         </p>
       </div>
@@ -90,7 +90,7 @@ const PortfolioComponent: React.FC<PortfolioComponentProps> = ({ data }) => {
       </div>
 
       {/* View More Button */}
-      <div className="flex justify-center my-16">
+      <div className="flex justify-center my-16 ">
         <Button text={data.btnTitle}/>
       </div>
     </div>

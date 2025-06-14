@@ -1,10 +1,10 @@
 import React from 'react';
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 import Title from "@/components/Title"
 interface WhyUsListItem {
   id: number;
   describation: string;
-  LineImage: string;
+  LineImage: StaticImageData;
 }
 
 interface WhyUsProps {
@@ -13,7 +13,7 @@ interface WhyUsProps {
     subTitle: string;
     describation: string;
     list: WhyUsListItem[];
-    rightImg: string;
+    rightImg: StaticImageData;
   };
 }
 

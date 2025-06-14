@@ -13,7 +13,7 @@ interface AboutStatusProps {
 
 const AboutStatus: React.FC<AboutStatusProps> = ({ status }) => {
   return (
-    <section className="w-full py-12 bg-white">
+    <section className="w-full bg-white">
       <div className=" mx-auto grid grid-cols-1  md:grid-cols-4 gap-8 text-center">
         {status.map((item) => (
           <div key={item.id} className="flex flex-col items-center space-y-3">

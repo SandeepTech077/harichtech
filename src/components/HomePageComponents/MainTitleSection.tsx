@@ -4,7 +4,7 @@ import React from "react";
 import Image, { StaticImageData } from "next/image";
 import RoutesLogo from "../../../public/SVG/Routelogo.svg";
 import Button from "@/components/Button";
-import { motion } from "framer-motion"; // Using framer-motion instead
+import { motion } from "framer-motion";
 
 interface MainTitleSectionProps {
   data: {
@@ -40,7 +40,7 @@ const MainTitleSection: React.FC<MainTitleSectionProps> = ({ data }) => {
                 initial={{ x: -20, opacity: 0 }}
                 animate={{ x: 0, opacity: 1 }}
                 transition={{ delay: 0.5, duration: 0.6 }}
-                className="text-[#2575FC] mr-2"
+                className="bg-gradient-to-l from-[#2058FF] to-[#004BC2] bg-clip-text text-transparent mr-2"
               >
                 Websites
               </motion.span>
@@ -72,7 +72,7 @@ const MainTitleSection: React.FC<MainTitleSectionProps> = ({ data }) => {
                 initial={{ x: -20, opacity: 0 }}
                 animate={{ x: 0, opacity: 1 }}
                 transition={{ delay: 1.1, duration: 0.6 }}
-                className="text-[#2575FC] mr-2"
+                className="bg-gradient-to-l from-[#2058FF] to-[#004BC2] bg-clip-text text-transparent mr-2"
               >
                 App
               </motion.span>
@@ -138,7 +138,7 @@ const MainTitleSection: React.FC<MainTitleSectionProps> = ({ data }) => {
       </motion.div>
 
       {/* Bottom-left logo with smooth 360-degree rotating animation */}
-      <div className="absolute bottom-10 left-40  flex items-end">
+      <div className="absolute bottom-10 left-40 flex items-end">
         <motion.div
           animate={{ rotate: 360 }}
           transition={{
@@ -158,29 +158,29 @@ const MainTitleSection: React.FC<MainTitleSectionProps> = ({ data }) => {
           />
         </motion.div>
 
-        {/* Horizontal lines */}
+        {/* Horizontal lines - hidden on mobile */}
         <motion.div
           initial={{ scaleX: 0, opacity: 0 }}
           animate={{ scaleX: 1, opacity: 0.5 }}
           transition={{ delay: 2.4, duration: 1.2 }}
           style={{ originX: 0 }}
-          className="absolute bottom-[50px] left-10 h-[1px] w-screen bg-[#999999] z-0 opacity-50"
+          className="hidden sm:block absolute bottom-[50px] left-10 h-[1px] w-screen bg-[#999999] z-0 opacity-50"
         />
         <motion.div
           initial={{ scaleX: 0, opacity: 0 }}
           animate={{ scaleX: 1, opacity: 0.5 }}
           transition={{ delay: 2.4, duration: 1.2 }}
           style={{ originX: 1 }}
-          className="absolute bottom-[50px] right-10 h-[1px] w-screen bg-[#999999] z-0 opacity-50 w-full"
+          className="hidden sm:block absolute bottom-[50px] right-10 h-[1px] w-screen bg-[#999999] z-0 opacity-50"
         />
 
-        {/* Vertical line */}
+        {/* Vertical line - hidden on mobile */}
         <motion.div
           initial={{ scaleY: 0, opacity: 0 }}
           animate={{ scaleY: 1, opacity: 0.5 }}
           transition={{ delay: 2.6, duration: 1.2 }}
           style={{ originY: 1 }}
-          className="absolute bottom-10 left-[50px] w-[1px] h-screen bg-[#999999] z-0 opacity-50"
+          className="hidden sm:block absolute bottom-10 left-[50px] w-[1px] h-screen bg-[#999999] z-0 opacity-50"
         />
       </div>
     </div>

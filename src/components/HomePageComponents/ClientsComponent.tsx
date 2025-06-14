@@ -51,35 +51,37 @@ const ClientsComponent: React.FC<ClientsComponentProps> = ({ data }) => {
           <div className="inline-block mb-4">
             <Title title={data.title} />
           </div>
-          <h2 className="text-3xl font-bold">
-            See What <span className="text-blue-600">Our Clients</span> <br />
+          <h2 className="text-[30px] lg:text-[48px] font-bold">
+            See What <span className="bg-gradient-to-l from-[#2058FF] to-[#004BC2] bg-clip-text text-transparent">Our Clients</span> <br />
             Have to Say
           </h2>
         </div>
 
         {/* Navigation buttons (optional integration) */}
-        <div className="hidden lg:flex gap-2">
-          <button className="bg-blue-600 text-white w-10 h-10 flex items-center justify-center rounded">
-            {/* Left arrow */}
-            <svg className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-              <path
-                fillRule="evenodd"
-                d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"
-                clipRule="evenodd"
-              />
-            </svg>
-          </button>
-          <button className="bg-blue-600 text-white w-10 h-10 flex items-center justify-center rounded">
-            {/* Right arrow */}
-            <svg className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-              <path
-                fillRule="evenodd"
-                d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                clipRule="evenodd"
-              />
-            </svg>
-          </button>
-        </div>
+      <div className="hidden lg:flex gap-4">
+  {/* Left arrow */}
+  <button className="bg-gradient-to-l from-[#2058FF] to-[#004BC2] text-white w-14 h-14 flex items-center justify-center rounded-[10px] shadow-md hover:opacity-90 transition">
+    <svg className="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
+      <path
+        fillRule="evenodd"
+        d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"
+        clipRule="evenodd"
+      />
+    </svg>
+  </button>
+
+  {/* Right arrow */}
+  <button className="bg-gradient-to-l from-[#2058FF] to-[#004BC2] text-white w-14 h-14 flex items-center justify-center rounded-[10px] shadow-md hover:opacity-90 transition">
+    <svg className="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
+      <path
+        fillRule="evenodd"
+        d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+        clipRule="evenodd"
+      />
+    </svg>
+  </button>
+</div>
+
       </div>
 
       {/* Testimonials Slider */}

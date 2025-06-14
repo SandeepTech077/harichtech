@@ -21,13 +21,13 @@ export const AboutUsData = {
       {
         id: 2,
         title: "Client Satisfied",
-        number: "50+",
+        number: "40+",
         icon: Helper.HappyClient,
       },
       {
         id: 3,
         title: "Countries",
-        number: "4+",
+        number: "1+",
         icon: Helper.Countries,
       },
       {

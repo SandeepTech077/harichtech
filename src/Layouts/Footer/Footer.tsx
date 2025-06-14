@@ -1,134 +1,136 @@
 // components/Footer.tsx
-'use client';
+"use client";
 
-import Image from 'next/image';
-import Link from 'next/link';
-import { Facebook, Twitter, Linkedin, Instagram, MapPin, Phone, Mail } from 'lucide-react';
-import { useEffect, useState } from 'react';
-import Logo from "../../../public/Logo/Logo.svg"
+import Image from "next/image";
+import Link from "next/link";
+import { Facebook, Linkedin, Instagram } from "lucide-react";
+import { useEffect, useState } from "react";
+import Logo from "../../../public/Logo/logo-white.svg";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   const [, setWindowWidth] = useState<number>(0);
-  
+
   // Track window width for responsive design
   useEffect(() => {
     const handleResize = () => {
       setWindowWidth(window.innerWidth);
     };
-    
+
     // Set initial width
     handleResize();
-    
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
-  
+
   const quickLinks = [
-    { name: 'Home', path: '/' },
-    { name: 'Services', path: '/services' },
-    { name: 'Our work', path: '/our-work' },
-    { name: 'About us', path: '/about-us' },
-    { name: 'Blogs', path: '/blogs' },
-    { name: 'Career', path: '/career' },
+    { name: "Home", path: "/" },
+    { name: "Services", path: "/services" },
+    { name: "Our work", path: "/our-work" },
+    { name: "About us", path: "/about-us" },
+    { name: "Blogs", path: "/blog" },
+    { name: "Career", path: "/career" },
+    { name: "Contact us", path: "/contact-us" },
   ];
 
   const socialLinks = [
-    { icon: <Facebook size={18} />, path: 'https://facebook.com/harichtech', name: 'Facebook' },
-    { icon: <Twitter size={18} />, path: 'https://twitter.com/harichtech', name: 'Twitter' },
-    { icon: <Linkedin size={18} />, path: 'https://linkedin.com/company/harichtech', name: 'LinkedIn' },
-    { icon: <Instagram size={18} />, path: 'https://instagram.com/harichtech', name: 'Instagram' },
+    {
+      icon: <Facebook size={20} />,
+      path: "https://facebook.com/harichtech",
+      name: "Facebook",
+    },
+    {
+      icon: <Linkedin size={20} />,
+      path: "https://linkedin.com/company/harichtech",
+      name: "LinkedIn",
+    },
+    {
+      icon: <Instagram size={20} />,
+      path: "https://instagram.com/harichtech",
+      name: "Instagram",
+    },
   ];
-  
-  return (
-    <footer className="bg-white relative overflow-hidden h-auto w-full">
-      {/* Background decorative elements */}
-      <div className="absolute top-0 left-0 w-24 h-24 md:w-36 md:h-36 bg-blue-50 rounded-full -translate-x-1/2 -translate-y-1/2 opacity-50"></div>
-      <div className="absolute bottom-0 right-0 w-32 h-32 md:w-48 md:h-48 bg-blue-50 rounded-full translate-x-1/4 translate-y-1/4 opacity-50"></div>
-      
-      <div className="container mx-auto px-4 sm:px-6 py-12 relative z-10">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12">
-          {/* Logo and Company Info */}
-          <div className="space-y-4 sm:space-y-6">
-          <Image 
-  src={Logo}
-  alt="Harich Technologies" 
-  width={140} 
-  height={40}
-/>
 
-            <p className="text-gray-600 text-sm max-w-md">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-            </p>
-          </div>
-          
-          {/* Quick Links */}
-          <div className="space-y-4 sm:space-y-6">
-            <h3 className="font-medium text-base md:text-lg">Quick Links</h3>
-            <ul className="grid grid-cols-2 sm:grid-cols-1 gap-y-3 gap-x-4">
-              {quickLinks.map((link) => (
-                <li key={link.name}>
-                  <Link href={link.path} className="text-gray-600 hover:text-blue-600 transition-colors text-sm">
-                    {link.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-          
-          {/* Contact Information */}
-          <div className="space-y-4 sm:space-y-6">
-            <h3 className="font-medium text-base md:text-lg">Contact</h3>
-            <div className="space-y-4">
-              <div className="flex items-start space-x-3">
-                <MapPin className="text-gray-600 mt-1 flex-shrink-0" size={18} />
-                <p className="text-gray-600 text-sm">
-                  Shilp 3, 3rd Floor, Sindhu Bhavan Road, Shilp Circle, Above Bajarang Grocery, Bodakdev, Ahmedabad, Gujarat 380054
+  return (
+    <footer className="w-full px-4 sm:px-6 lg:px-10 pb-6 lg:pb-10">
+      <div className="w-full mx-auto bg-gradient-to-r from-[#1E5AFF] to-[#004BC2] text-white rounded-2xl overflow-hidden">
+        {/* Main Content */}
+        <div className="px-6 sm:px-8 lg:px-12 py-8 lg:py-12">
+          <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-8 lg:gap-12">
+            {/* Left Section - Logo and Address */}
+            <div className="flex-shrink-0 space-y-4 lg:space-y-6">
+              <Image
+                src={Logo}
+                alt="Harich Technologies"
+                width={120}
+                height={35}
+                className="lg:w-[140px] lg:h-[40px]"
+              />
+
+              <div className="space-y-2 max-w-xs">
+                <p className="text-sm lg:text-base font-medium text-white/90">
+                  Shilp 3, 3rd Floor, Sindhu Bhavan Road, Shilp Circle, Above
+                  Bajarang Grocery, Bodakdev,Ahmedabad, Gujarat 380054.
                 </p>
               </div>
-              
-              <div className="flex items-center space-x-3">
-                <Phone className="text-gray-600 flex-shrink-0" size={18} />
-                <a href="tel:+918200665684" className="text-gray-600 hover:text-blue-600 transition-colors text-sm">
+            </div>
+
+            {/* Right Section - Contact Info and Social */}
+            <div className=" sm:flex-row items-start sm:items-center gap-6 lg:gap-8">
+              {/* Contact Info */}
+              <div className="flex items-center space-x-3 lg:space-x-4">
+                {socialLinks.map((social, index) => (
+                  <a
+                    key={index}
+                    href={social.path}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-10 h-10 lg:w-12 lg:h-12 bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110"
+                    aria-label={social.name}
+                  >
+                    <div className="text-white">{social.icon}</div>
+                  </a>
+                ))}
+              </div>
+              <div className="text-right space-y-1 py-5">
+                <p className="text-sm lg:text-lg font-semibold">
                   +91-8200 66 5684
-                </a>
-              </div>
-              
-              <div className="flex items-center space-x-3">
-                <Mail className="text-gray-600 flex-shrink-0" size={18} />
-                <a href="mailto:info@harichtech.com" className="text-gray-600 hover:text-blue-600 transition-colors text-sm break-all">
+                </p>
+                <p className="text-sm lg:text-lg text-white/90">
                   info@harichtech.com
-                </a>
+                </p>
               </div>
+
+              {/* Social Media Icons */}
             </div>
           </div>
         </div>
-        
-        {/* Divider line */}
-        <div className="w-full h-px bg-gray-200 my-8"></div>
-        
-        {/* Social Media and Copyright */}
-        <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-gray-600 text-sm text-center md:text-left order-2 md:order-1">
-            Copyright {currentYear} Harichtech | All Rights Reserved
-          </p>
-          
-          <div className="flex items-center gap-6 order-1 md:order-2">
-            <h3 className="font-medium text-sm hidden md:block">Social media</h3>
-            <div className="flex items-center space-x-4">
-              {socialLinks.map((social, index) => (
-                <a 
-                  key={index}
-                  href={social.path}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-gray-600 hover:text-blue-600 transition-colors"
-                  aria-label={social.name}
-                >
-                  {social.icon}
-                </a>
+
+        {/* Navigation Links */}
+        <div className="border-t border-white/20 px-6 sm:px-8 lg:px-12 py-4 lg:py-6">
+          <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
+            {/* Navigation Links */}
+            <nav className="flex flex-wrap justify-center sm:justify-start items-center gap-4 lg:gap-8">
+              {quickLinks.map((link, index) => (
+                <div key={link.name} className="flex items-center">
+                  <Link
+                    href={link.path}
+                    className="text-sm lg:text-base text-white/90 hover:text-white transition-colors duration-300 font-medium"
+                  >
+                    {link.name}
+                  </Link>
+                  {index < quickLinks.length - 1 && (
+                    <span className="text-white/40 ml-4 lg:ml-8">|</span>
+                  )}
+                </div>
               ))}
-            </div>
+            </nav>
+
+            {/* Copyright */}
+            <p className="text-xs lg:text-sm text-white/70 text-center sm:text-right">
+              Copyright {currentYear} Harichtech | All Rights Reserved
+            </p>
           </div>
         </div>
       </div>
