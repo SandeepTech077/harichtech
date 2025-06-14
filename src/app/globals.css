@@ -1,6 +1,5 @@
 @import "tailwindcss";
 
-
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -19,17 +18,19 @@
     --foreground: #ededed;
   }
 } */
+
 :root {
   --font-nunito: 'Nunito', sans-serif;
 }
-
 
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-nunito), sans-serif;
-
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  overflow-y: auto;   /* Allow vertical scrolling when needed */
 }
+
 @keyframes customSpin {
   0% {
     transform: rotate(0deg);
@@ -41,4 +42,33 @@ body {
 
 .custom-spin {
   animation: customSpin 10s linear infinite;
+}
+
+/* Additional overflow utility classes */
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.overflow-auto {
+  overflow: auto;
+}
+
+.overflow-scroll {
+  overflow: scroll;
+}
+
+.overflow-x-hidden {
+  overflow-x: hidden;
+}
+
+.overflow-y-auto {
+  overflow-y: auto;
+}
+
+.overflow-x-auto {
+  overflow-x: auto;
+}
+
+.overflow-y-hidden {
+  overflow-y: hidden;
 }

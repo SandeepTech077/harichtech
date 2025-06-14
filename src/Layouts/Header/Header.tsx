@@ -51,6 +51,13 @@ const Header = () => {
     { name: "Contact Us", path: "/contact-us" },
   ];
 
+  // Social media links - replace with your actual URLs
+  const socialLinks = {
+    facebook: "https://www.facebook.com/harichtech", // Replace with your actual URL
+    instagram: "https://www.instagram.com/harichtech", // Replace with your actual URL
+    linkedin: "https://www.linkedin.com/company/harich-tech/posts/?feedView=all" // Replace with your actual URL
+  };
+
   return (
     <>
       {/* Top Contact Bar */}
@@ -73,25 +80,31 @@ const Header = () => {
             </div>
           </div>
 
-          {/* Social Icons */}
+          {/* Social Icons - Fixed with external links */}
           <div className="flex items-center space-x-1 sm:space-x-3">
             <a 
-              href="#" 
-              className="w-6 h-6 sm:w-8 sm:h-8 rounded-full flex items-center justify-center hover:bg-white hover:bg-opacity-20 transition-colors"
+              href={socialLinks.facebook}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-6 h-6 sm:w-8 sm:h-8 rounded-full flex items-center justify-center   transition-colors"
               aria-label="Facebook"
             >
               <Facebook size={14} className="sm:w-5 sm:h-5" />
             </a>
             <a 
-              href="#" 
-              className="w-6 h-6 sm:w-8 sm:h-8 rounded-full flex items-center justify-center hover:bg-white hover:bg-opacity-20 transition-colors"
+              href={socialLinks.instagram}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-6 h-6 sm:w-8 sm:h-8 rounded-full flex items-center justify-center  transition-colors"
               aria-label="Instagram"
             >
               <Instagram size={14} className="sm:w-5 sm:h-5" />
             </a>
             <a 
-              href="#" 
-              className="w-6 h-6 sm:w-8 sm:h-8 rounded-full flex items-center justify-center hover:bg-white hover:bg-opacity-20 transition-colors"
+              href={socialLinks.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-6 h-6 sm:w-8 sm:h-8 rounded-full flex items-center justify-center transition-colors"
               aria-label="LinkedIn"
             >
               <Linkedin size={14} className="sm:w-5 sm:h-5" />
@@ -176,7 +189,7 @@ const Header = () => {
 
       {/* Mobile Menu */}
       <div
-        className={`fixed top-0 right-0 h-full w-full sm:w-4/5 max-w-sm bg-white shadow-xl z-50 transform transition-transform duration-300 ease-in-out lg:hidden ${
+        className={`fixed top-0 right-0 h-full w-[70%] bg-white shadow-xl z-50 transform transition-transform duration-300 ease-in-out lg:hidden ${
           isMenuOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
@@ -200,20 +213,20 @@ const Header = () => {
           {/* Mobile Contact Info */}
           <div className="mx-4 sm:mx-6 mt-4 p-4 bg-blue-50 rounded-lg">
             <div className="flex flex-col space-y-3 text-sm">
-              <a 
+              <Link 
                 href="tel:+916200665954"
                 className="flex items-center space-x-3 text-blue-600 hover:text-blue-700 transition-colors"
               >
                 <Phone size={16} />
                 <span>+91-6200-66-5954</span>
-              </a>
-              <a 
+              </Link>
+              <Link 
                 href="mailto:info@harichtech.com"
                 className="flex items-center space-x-3 text-blue-600 hover:text-blue-700 transition-colors"
               >
                 <Mail size={16} />
                 <span>info@harichtech.com</span>
-              </a>
+              </Link>
             </div>
           </div>
 
@@ -252,24 +265,30 @@ const Header = () => {
               <span className="ml-2 text-sm">↗</span>
             </Link>
 
-            {/* Mobile Social Icons */}
+            {/* Mobile Social Icons - Fixed with external links */}
             <div className="flex items-center justify-center space-x-4">
               <a 
-                href="#" 
+                href={socialLinks.facebook}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 bg-blue-600 text-white rounded-full flex items-center justify-center hover:bg-blue-700 transition-colors"
                 aria-label="Facebook"
               >
                 <Facebook size={18} />
               </a>
               <a 
-                href="#" 
+                href={socialLinks.instagram}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 bg-blue-600 text-white rounded-full flex items-center justify-center hover:bg-blue-700 transition-colors"
                 aria-label="Instagram"
               >
                 <Instagram size={18} />
               </a>
               <a 
-                href="#" 
+                href={socialLinks.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 bg-blue-600 text-white rounded-full flex items-center justify-center hover:bg-blue-700 transition-colors"
                 aria-label="LinkedIn"
               >
