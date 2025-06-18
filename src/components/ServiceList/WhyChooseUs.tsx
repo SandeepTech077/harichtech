@@ -19,7 +19,7 @@ interface WhyUsProps {
 
 const WhyChooseUs: React.FC<WhyUsProps> = ({ whyUsData }) => {
   return (
-    <div className="py-16 mx-auto">
+    <div className="py-6 mx-auto">
         <div className="mb-6">
             <div className="inline-block mb-3">
            <Title title={whyUsData.title} />

@@ -1,23 +1,22 @@
-// components/Footer.tsx
 "use client";
 
 import Image from "next/image";
 import Link from "next/link";
-import { Facebook, Linkedin, Instagram } from "lucide-react";
 import { useEffect, useState } from "react";
 import Logo from "../../../public/Logo/logo-white.svg";
+import facebookLogo from "../../../public/SVG/facebook-logo.svg";
+import instagramLogo from "../../../public/SVG/instagram-logo.svg";
+import linkedinLogo from "../../../public/SVG/linkedin-logo.svg";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   const [, setWindowWidth] = useState<number>(0);
 
-  // Track window width for responsive design
   useEffect(() => {
     const handleResize = () => {
       setWindowWidth(window.innerWidth);
     };
 
-    // Set initial width
     handleResize();
 
     window.addEventListener("resize", handleResize);
@@ -36,17 +35,18 @@ const Footer = () => {
 
   const socialLinks = [
     {
-      icon: <Facebook size={20} />,
-      path: "https://facebook.com/harichtech",
-      name: "Facebook",
-    },
-    {
-      icon: <Linkedin size={20} />,
+      icon: linkedinLogo,
       path: "https://linkedin.com/company/harichtech",
       name: "LinkedIn",
     },
     {
-      icon: <Instagram size={20} />,
+      icon: facebookLogo,
+      path: "https://facebook.com/harichtech",
+      name: "Facebook",
+    },
+
+    {
+      icon: instagramLogo,
       path: "https://instagram.com/harichtech",
       name: "Instagram",
     },
@@ -59,26 +59,24 @@ const Footer = () => {
         <div className="px-6 sm:px-8 lg:px-12 py-8 lg:py-12">
           <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-8 lg:gap-12">
             {/* Left Section - Logo and Address */}
-            <div className="flex-shrink-0 space-y-4 lg:space-y-6">
+            <div className=" space-y-4 lg:space-y-6">
               <Image
                 src={Logo}
                 alt="Harich Technologies"
-                width={120}
-                height={35}
-                className="lg:w-[140px] lg:h-[40px]"
+                width={200}
+                height={50}
+                className="lg:w-[200px] lg:h-[60px]"
               />
-
               <div className="space-y-2 max-w-xs">
                 <p className="text-sm lg:text-base font-medium text-white/90">
                   Shilp 3, 3rd Floor, Sindhu Bhavan Road, Shilp Circle, Above
-                  Bajarang Grocery, Bodakdev,Ahmedabad, Gujarat 380054.
+                  Bajarang Grocery, Bodakdev, Ahmedabad, Gujarat 380054.
                 </p>
               </div>
             </div>
 
             {/* Right Section - Contact Info and Social */}
-            <div className=" sm:flex-row items-start sm:items-center gap-6 lg:gap-8">
-              {/* Contact Info */}
+            <div className="sm:flex-row items-start sm:items-center gap-6 lg:gap-8">
               <div className="flex items-center space-x-3 lg:space-x-4">
                 {socialLinks.map((social, index) => (
                   <a
@@ -86,13 +84,22 @@ const Footer = () => {
                     href={social.path}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-10 h-10 lg:w-12 lg:h-12 bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110"
+                    className="w-10 h-10 lg:w-12 lg:h-12 bg-white rounded-full flex items-center justify-center transition-all duration-300 "
                     aria-label={social.name}
                   >
-                    <div className="text-white">{social.icon}</div>
+                    <div className="w-5 h-5 lg:w-6 lg:h-6 relative">
+                      <Image
+                        src={social.icon}
+                        alt={social.name}
+                        fill
+                        className="object-contain"
+                      />
+                    </div>
                   </a>
                 ))}
               </div>
+
+              {/* Contact Info */}
               <div className="text-right space-y-1 py-5">
                 <p className="text-sm lg:text-lg font-semibold">
                   +91-8200 66 5684
@@ -101,8 +108,6 @@ const Footer = () => {
                   info@harichtech.com
                 </p>
               </div>
-
-              {/* Social Media Icons */}
             </div>
           </div>
         </div>

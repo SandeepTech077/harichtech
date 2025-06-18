@@ -25,7 +25,7 @@ const GetInTouch: React.FC<GetInTouchProps> = ({
         </div>
 
         <div className="mt-4 lg:mt-0">
-          <Button text={buttonText} />
+          <Button text={buttonText} href='/contact-us'/>
         </div>
       </div>
     </div>

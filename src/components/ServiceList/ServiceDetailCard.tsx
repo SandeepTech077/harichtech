@@ -5,7 +5,6 @@ import Image, { StaticImageData } from "next/image";
 import Title from "../Title";
 import Button from "../Button";
 
-
 interface DataProps {
   title: string;
   subtitle: string;
@@ -20,37 +19,51 @@ interface ServiceDetailCardProps {
 
 const ServiceDetailCard = ({ data }: ServiceDetailCardProps) => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center mt-14">
-      {/* Left Section */}
-      <div className="flex flex-col gap-4">
-        <div className="w-36">
-        <Title title={data.title} />
+    <article className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 xl:gap-16 items-center">
+      {/* Content Section */}
+      <div className="flex flex-col gap-6 lg:gap-8">
+        {/* Title Badge */}
+        <div className="w-fit">
+          <Title title={data.title} />
         </div>
 
-        <h2 className="text-[30px] md:text-[48px] text-[#02060B] font-semibold">{data.subtitle}</h2>
-        <p className="text-black text-[14px]">{data.describation}</p>
+        {/* Main Heading */}
+        <h1 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold text-gray-900 leading-tight">
+          {data.subtitle}
+        </h1>
+
+        {/* Description */}
+        <p className="text-gray-700 text-base sm:text-lg leading-relaxed max-w-prose">
+          {data.describation}
+        </p>
+
+        {/* Call to Action Button */}
         {data.btnTitle && (
-          <div className="mt-5">
-  <Button text={data.btnTitle}/>
+          <div className="mt-2">
+            <Button 
+              text={data.btnTitle}
+             href="/contact-us"
+            />
           </div>
-      
         )}
       </div>
 
-      {/* Right Section */}
+      {/* Image Section */}
       {data.BannerRight && (
-        <div className="flex justify-center">
-          <Image
-            src={data.BannerRight}
-            alt={data.title}
-            width={500}
-            height={400}
-            className="w-full h-auto object-contain max-w-[500px]"
-            priority
-          />
+        <div className="relative flex justify-center lg:justify-end">
+          <div className="relative w-full max-w-lg lg:max-w-xl xl:max-w-2xl">
+            <Image
+              src={data.BannerRight}
+              alt={`${data.title} - ${data.subtitle}`}
+              width={600}
+              height={300}
+              className="w-full h-100 object-contain drop-shadow-lg"
+              
+            />
+          </div>
         </div>
       )}
-    </div>
+    </article>
   );
 };
 

@@ -4,7 +4,15 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-import { Menu, X, Phone, Mail, Facebook, Instagram, Linkedin } from "lucide-react";
+import {
+  Menu,
+  X,
+  Phone,
+  Mail,
+  Facebook,
+  Instagram,
+  Linkedin,
+} from "lucide-react";
 import Logo from "../../../public/Logo/Logo.svg";
 
 const Header = () => {
@@ -14,25 +22,19 @@ const Header = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 10) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
+      setScrolled(window.scrollY > 10);
     };
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Close menu when clicking outside or on navigation
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth >= 768) {
         setIsMenuOpen(false);
       }
     };
-
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
@@ -51,101 +53,130 @@ const Header = () => {
     { name: "Contact Us", path: "/contact-us" },
   ];
 
-  // Social media links - replace with your actual URLs
   const socialLinks = {
-    facebook: "https://www.facebook.com/harichtech", // Replace with your actual URL
-    instagram: "https://www.instagram.com/harichtech", // Replace with your actual URL
-    linkedin: "https://www.linkedin.com/company/harich-tech/posts/?feedView=all" // Replace with your actual URL
+    linkedin: "https://www.linkedin.com/company/harich-tech",
+    facebook: "https://www.facebook.com/harichtech",
+    instagram: "https://www.instagram.com/harichtech",
   };
 
   return (
     <>
-      {/* Top Contact Bar */}
-      <div className="fixed top-0 left-0 w-full bg-blue-600 text-white py-2 px-2 sm:px-4 text-xs sm:text-sm z-50">
-        <div className="container mx-auto flex items-center justify-between max-w-7xl">
-          {/* Contact Info - Hidden on very small screens, shown as single item on small screens */}
-          <div className="flex items-center space-x-2 sm:space-x-6">
-            <div className="hidden xs:flex items-center space-x-1 sm:space-x-2">
-              <Phone size={12} className="sm:w-4 sm:h-4" />
-              <span className="truncate">+91-6200-66-5954</span>
-            </div>
-            <div className="hidden sm:flex items-center space-x-2">
-              <Mail size={14} />
-              <span className="truncate">info@harichtech.com</span>
-            </div>
-            {/* Show only phone on extra small screens */}
-            <div className="flex xs:hidden items-center space-x-1">
-              <Phone size={12} />
-              <span>Call Us</span>
-            </div>
-          </div>
+      {/* Top Contact Bar - Enhanced Design */}
+      {!scrolled && (
+        <div className="fixed top-0 left-0 w-full text-white bg-gradient-to-r from-[#2058FF] via-[#1B4FE8] to-[#004BC2] py-3 px-4 z-50 shadow-lg">
+          <div className="container mx-auto flex items-center justify-between max-w-7xl">
+            {/* Contact Info */}
+            <div className="flex items-center space-x-6">
+              <div className="flex items-center space-x-2 group">
+                <div className="p-1.5 bg-white/10 rounded-full group-hover:bg-white/20 transition-colors">
+                  <Phone size={14} className="text-white" />
+                </div>
+                <Link
+                  href="tel:+916200665954"
+                  className="hidden sm:block text-sm font-medium hover:text-blue-100 transition-colors"
+                >
+                  +91-6200-66-5954
+                </Link>
+                <span className="sm:hidden text-sm font-medium">Call Us</span>
+              </div>
 
-          {/* Social Icons - Fixed with external links */}
-          <div className="flex items-center space-x-1 sm:space-x-3">
-            <a 
-              href={socialLinks.facebook}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-6 h-6 sm:w-8 sm:h-8 rounded-full flex items-center justify-center   transition-colors"
-              aria-label="Facebook"
-            >
-              <Facebook size={14} className="sm:w-5 sm:h-5" />
-            </a>
-            <a 
-              href={socialLinks.instagram}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-6 h-6 sm:w-8 sm:h-8 rounded-full flex items-center justify-center  transition-colors"
-              aria-label="Instagram"
-            >
-              <Instagram size={14} className="sm:w-5 sm:h-5" />
-            </a>
-            <a 
-              href={socialLinks.linkedin}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-6 h-6 sm:w-8 sm:h-8 rounded-full flex items-center justify-center transition-colors"
-              aria-label="LinkedIn"
-            >
-              <Linkedin size={14} className="sm:w-5 sm:h-5" />
-            </a>
+              <div className="hidden md:flex items-center space-x-2 group">
+                <div className="p-1.5 bg-white/10 rounded-full group-hover:bg-white/20 transition-colors">
+                  <Mail size={14} className="text-white" />
+                </div>
+                <Link
+                  href="mailto:info@harichtech.com"
+                  className="text-sm font-medium hover:text-blue-100 transition-colors"
+                >
+                  info@harichtech.com
+                </Link>
+              </div>
+            </div>
+
+            {/* Social Links */}
+            <div className="flex items-center space-x-3">
+              <span className="hidden sm:block text-xs font-medium text-blue-100 mr-2">
+                Follow Us:
+              </span>
+              <Link
+                href={socialLinks.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-1.5 bg-white/10 rounded-full hover:bg-white/20 hover:scale-110 transition-all duration-300 group"
+                aria-label="Follow us on LinkedIn"
+              >
+                <Linkedin
+                  size={16}
+                  className="text-white group-hover:text-blue-100"
+                />
+              </Link>
+              <Link
+                href={socialLinks.facebook}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-1.5 bg-white/10 rounded-full hover:bg-white/20 hover:scale-110 transition-all duration-300 group"
+                aria-label="Follow us on Facebook"
+              >
+                <Facebook
+                  size={16}
+                  className="text-white group-hover:text-blue-100"
+                />
+              </Link>
+              <Link
+                href={socialLinks.instagram}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-1.5 bg-white/10 rounded-full hover:bg-white/20 hover:scale-110 transition-all duration-300 group"
+                aria-label="Follow us on Instagram"
+              >
+                <Instagram
+                  size={16}
+                  className="text-white group-hover:text-blue-100"
+                />
+              </Link>
+            </div>
           </div>
         </div>
-      </div>
+      )}
 
       {/* Main Header */}
       <header
-        className={`fixed top-8 sm:top-10 left-0 w-full z-40 transition-all duration-300 ${
-          scrolled ? "bg-white shadow-md" : "bg-white/95 backdrop-blur-sm"
+        className={`fixed left-0 w-full z-40 transition-all duration-300 ${
+          scrolled
+            ? "top-0 bg-white shadow-lg"
+            : "top-12 bg-white/95 backdrop-blur-md shadow-sm"
         }`}
       >
-        <div className="container mx-auto px-3 sm:px-4 lg:px-6 py-3 sm:py-4 flex items-center justify-between max-w-7xl">
-          {/* Logo */}
-          <div className="flex items-center flex-shrink-0">
-            <Link href="/" className="flex items-center">
-              <Image
-                src={Logo}
-                alt="Harich Technologies"
-                className="h-8 sm:h-10 lg:h-12 w-auto"
-                priority
-              />
-            </Link>
-          </div>
+        <div className="container mx-auto px-4 lg:px-6 py-3 flex items-center justify-between ">
+          <Link href="/" className="flex items-center">
+            <Image
+              src={Logo}
+              alt="Harich Technologies"
+              className="h-10 sm:h-12 lg:h-14 w-auto"
+              priority
+            />
+          </Link>
 
-          {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center">
-            <ul className="flex items-center space-x-6 xl:space-x-8">
+            <ul className="flex items-center space-x-8">
               {navItems.map((item) => {
                 const isActive = pathname === item.path;
                 return (
                   <li key={item.name}>
                     <Link
                       href={item.path}
-                      className={`text-sm xl:text-base font-medium transition-colors relative py-2 ${
+                      className={`text-base font-semibold transition-all duration-300 relative py-2 px-1 ${
                         isActive
-                          ? "text-blue-600 after:absolute after:bottom-0 after:left-1/2 after:transform after:-translate-x-1/2 after:w-1 after:h-1 after:bg-blue-600 after:rounded-full"
-                          : "text-gray-700 hover:text-blue-600"
+                          ? "text-blue-600 after:absolute after:bottom-0 after:left-1/2 after:transform after:-translate-x-1/2 after:w-1.5 after:h-1.5 after:bg-blue-600 after:rounded-full"
+                          : "text-gray-700 hover:text-blue-600  "
                       }`}
+                      style={
+                        !isActive
+                          ? {
+                              transition: "all 0.3s ease",
+                            }
+                          : {}
+                      }
                     >
                       {item.name}
                     </Link>
@@ -155,25 +186,32 @@ const Header = () => {
             </ul>
           </nav>
 
-          {/* Desktop CTA Button */}
           <div className="hidden md:flex items-center">
-            <Link
-              href="/contact"
-              className="inline-flex items-center px-4 lg:px-6 py-2 lg:py-2.5 border border-blue-600 rounded-md text-sm lg:text-base text-blue-600 font-medium hover:bg-blue-50 transition-colors whitespace-nowrap"
-            >
-              Get in Touch
-              <span className="ml-1 text-xs">↗</span>
+            <Link href="/contact-us">
+              <button className="relative cursor-pointer px-6 py-2.5 text-base font-bold bg-white rounded-xl hover:shadow-lg transition-all duration-300 group">
+                {/* Perfect 2px gradient border */}
+                <div className="absolute inset-0 bg-gradient-to-r from-[#2058FF] to-[#004BC2] rounded-xl p-[2px]">
+                  <div className="w-full h-full bg-white group-hover:bg-gradient-to-r group-hover:from-[#2058FF] group-hover:to-[#004BC2] rounded-[10px] transition-all duration-300"></div>
+                </div>
+
+                {/* Content */}
+                <span className="relative flex items-center text-transparent bg-gradient-to-r from-[#2058FF] to-[#004BC2] bg-clip-text group-hover:text-white transition-all duration-300 z-10">
+                  Get in Touch
+                  <span className="ml-2 text-lg group-hover:translate-x-1 transition-transform duration-300">
+                    ↗
+                  </span>
+                </span>
+              </button>
             </Link>
           </div>
 
-          {/* Mobile Menu Button */}
           <button
-            className="flex items-center justify-center lg:hidden p-2 text-gray-700 hover:text-blue-600 transition-colors"
+            className="flex items-center justify-center lg:hidden p-2 text-gray-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-all duration-300"
             onClick={toggleMenu}
             aria-label="Toggle menu"
             aria-expanded={isMenuOpen}
           >
-            {isMenuOpen ? <X size={24} /> : <Menu size={30} />}
+            {isMenuOpen ? <X size={24} /> : <Menu size={28} />}
           </button>
         </div>
       </header>
@@ -181,67 +219,71 @@ const Header = () => {
       {/* Mobile Menu Overlay */}
       {isMenuOpen && (
         <div
-          className="fixed inset-0 bg-black bg-opacity-50 z-45 lg:hidden"
+          className="fixed inset-0 bg-black bg-opacity-50 z-45 lg:hidden backdrop-blur-sm"
           onClick={toggleMenu}
-          aria-hidden="true"
         />
       )}
 
       {/* Mobile Menu */}
       <div
-        className={`fixed top-0 right-0 h-full w-[70%] bg-white shadow-xl z-50 transform transition-transform duration-300 ease-in-out lg:hidden ${
+        className={`fixed top-0 right-0 h-full w-[75%] max-w-sm bg-white shadow-2xl z-50 transform transition-transform duration-300 ease-in-out lg:hidden ${
           isMenuOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
         <div className="flex flex-col h-full">
-          {/* Mobile Menu Header */}
-          <div className="flex justify-between items-center p-4 sm:p-6 border-b border-gray-100">
+          {/* Mobile Header */}
+          <div className="flex justify-between items-center p-6 border-b border-gray-100 bg-gradient-to-r from-blue-50 to-indigo-50">
             <Image
               src={Logo}
               alt="Harich Technologies"
-              className="h-8 sm:h-10 w-auto"
+              className="h-10 w-auto"
             />
             <button
-              className="p-2 text-gray-700 hover:text-blue-600 transition-colors"
+              className="p-2 text-gray-600 hover:text-blue-600 hover:bg-white rounded-lg transition-all duration-300"
               onClick={toggleMenu}
-              aria-label="Close menu"
             >
               <X size={24} />
             </button>
           </div>
 
-          {/* Mobile Contact Info */}
-          <div className="mx-4 sm:mx-6 mt-4 p-4 bg-blue-50 rounded-lg">
-            <div className="flex flex-col space-y-3 text-sm">
-              <Link 
+          {/* Contact Info Card */}
+          <div className="mx-6 mt-6 p-4 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-xl border border-blue-100">
+            <div className="flex flex-col space-y-3">
+              <Link
                 href="tel:+916200665954"
-                className="flex items-center space-x-3 text-blue-600 hover:text-blue-700 transition-colors"
+                className="flex items-center space-x-3 text-blue-600 hover:text-blue-700 transition-colors group"
+                onClick={toggleMenu}
               >
-                <Phone size={16} />
-                <span>+91-6200-66-5954</span>
+                <div className="p-2 bg-blue-100 rounded-lg group-hover:bg-blue-200 transition-colors">
+                  <Phone size={16} />
+                </div>
+                <span className="font-medium">+91-6200-66-5954</span>
               </Link>
-              <Link 
+              <Link
                 href="mailto:info@harichtech.com"
-                className="flex items-center space-x-3 text-blue-600 hover:text-blue-700 transition-colors"
+                className="flex items-center space-x-3 text-blue-600 hover:text-blue-700 transition-colors group"
+                onClick={toggleMenu}
               >
-                <Mail size={16} />
-                <span>info@harichtech.com</span>
+                <div className="p-2 bg-blue-100 rounded-lg group-hover:bg-blue-200 transition-colors">
+                  <Mail size={16} />
+                </div>
+                <span className="font-medium">info@harichtech.com</span>
               </Link>
             </div>
           </div>
 
-          {/* Mobile Navigation */}
-          <nav className="flex-1 overflow-y-auto px-4 sm:px-6 mt-6">
-            <ul className="space-y-1">
+          {/* Navigation */}
+          <nav className="flex-1 overflow-y-auto px-6 mt-6">
+            <ul className="space-y-2">
               {navItems.map((item) => {
                 const isActive = pathname === item.path;
                 return (
                   <li key={item.name}>
                     <Link
                       href={item.path}
-                      className={`block py-3 px-4 rounded-lg text-base transition-colors ${
-                        isActive 
-                          ? "text-blue-600 font-semibold bg-blue-50" 
+                      className={`block py-3 px-4 rounded-xl text-base font-medium transition-all duration-300 ${
+                        isActive
+                          ? "text-blue-600 font-semibold bg-gradient-to-r from-blue-50 to-indigo-50 border border-blue-200"
                           : "text-gray-700 hover:text-blue-600 hover:bg-gray-50"
                       }`}
                       onClick={toggleMenu}
@@ -254,46 +296,50 @@ const Header = () => {
             </ul>
           </nav>
 
-          {/* Mobile Menu Footer */}
-          <div className="p-4 sm:p-6 border-t border-gray-100">
+          {/* Bottom Section */}
+          <div className="p-6 border-t border-gray-100 bg-gray-50">
             <Link
-              href="/contact"
-              className="flex items-center justify-center w-full px-4 py-3 border border-blue-600 rounded-lg text-blue-600 font-medium hover:bg-blue-50 transition-colors mb-4"
+              href="/contact-us"
+              className="flex items-center justify-center w-full px-4 py-3 bg-gradient-to-r from-[#2058FF] to-[#004BC2] text-white font-semibold rounded-xl hover:shadow-lg transition-all duration-300 mb-6 group"
               onClick={toggleMenu}
             >
               Get in Touch
-              <span className="ml-2 text-sm">↗</span>
+              <span className="ml-2 text-lg group-hover:translate-x-1 transition-transform duration-300">
+                ↗
+              </span>
             </Link>
 
-            {/* Mobile Social Icons - Fixed with external links */}
+            {/* Social Links */}
             <div className="flex items-center justify-center space-x-4">
-              <a 
-                href={socialLinks.facebook}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-10 h-10 bg-blue-600 text-white rounded-full flex items-center justify-center hover:bg-blue-700 transition-colors"
-                aria-label="Facebook"
-              >
-                <Facebook size={18} />
-              </a>
-              <a 
-                href={socialLinks.instagram}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-10 h-10 bg-blue-600 text-white rounded-full flex items-center justify-center hover:bg-blue-700 transition-colors"
-                aria-label="Instagram"
-              >
-                <Instagram size={18} />
-              </a>
-              <a 
-                href={socialLinks.linkedin}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-10 h-10 bg-blue-600 text-white rounded-full flex items-center justify-center hover:bg-blue-700 transition-colors"
-                aria-label="LinkedIn"
-              >
-                <Linkedin size={18} />
-              </a>
+              <span className="text-sm font-medium text-gray-600 mb-2 block w-full text-center">
+                Follow Us
+              </span>
+              <div className="flex space-x-3">
+                <Link
+                  href={socialLinks.facebook}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-12 h-12 bg-gradient-to-r from-blue-600 to-blue-700 text-white rounded-xl flex items-center justify-center hover:scale-110 hover:shadow-lg transition-all duration-300"
+                >
+                  <Facebook size={20} />
+                </Link>
+                <Link
+                  href={socialLinks.instagram}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-12 h-12 bg-gradient-to-r from-pink-500 to-purple-600 text-white rounded-xl flex items-center justify-center hover:scale-110 hover:shadow-lg transition-all duration-300"
+                >
+                  <Instagram size={20} />
+                </Link>
+                <Link
+                  href={socialLinks.linkedin}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-12 h-12 bg-gradient-to-r from-blue-700 to-blue-800 text-white rounded-xl flex items-center justify-center hover:scale-110 hover:shadow-lg transition-all duration-300"
+                >
+                  <Linkedin size={20} />
+                </Link>
+              </div>
             </div>
           </div>
         </div>

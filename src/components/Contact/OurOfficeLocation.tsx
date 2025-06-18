@@ -20,12 +20,12 @@ export default function OurOfficeLocation({ data }: OurOfficeLocationProps) {
   const mapLink = data.mapLink || "https://www.google.com/maps/place/Harich+Tech/@23.0408831,72.5022936,801m/data=!3m3!1e3!4b1!5s0x395e9b4458a6c34b:0x4a051f13b574b726!4m6!3m5!1s0x3959cb9ef6bd40eb:0x43ebf40375e2a4b2!8m2!3d23.0408831!4d72.5048685!16s%2Fg%2F11sy1h_542?entry=ttu&g_ep=EgoyMDI1MDYxMS4wIKXMDSoASAFQAw%3D%3D";
 
   return (
-    <section className=" px-4 sm:px-6 lg:px-16 bg-gray-50">
+    <section className=" px-4 sm:px-6 lg:px-16 bg-gray-50 py-12">
       <div className=" mx-auto">
         {/* Section Title */}
         <div className="text-center mb-12">
           <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-            Our <span className="text-blue-600">Office</span>
+            Our <span className="bg-gradient-to-l from-[#2058FF] to-[#004BC2] bg-clip-text text-transparent">Office</span>
           </h2>
         </div>
 

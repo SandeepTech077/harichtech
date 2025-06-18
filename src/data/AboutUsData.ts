@@ -5,8 +5,9 @@ export const AboutUsData = {
     title: "About Us",
     subTitle: "Accelerate Your Business with Harichtech",
     descrobation: [
-      "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis. Ut commodo efficitur neque. Ut diam quam, semper iaculis condimentum ac, vestibulum eu nisl.",
-      "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis. Ut commodo efficitur neque. Ut diam quam, semper iaculis condimentum ac, vestibulum eu nisl.",
+      "At Harich Technologies, we are dedicated to empowering businesses and individuals through innovative technology solutions. Founded on a passion for excellence and a commitment to delivering value, we specialize in providing cutting-edge IT services, software development, and digital transformation strategies.",
+      "Our team of skilled professionals combines deep technical expertise with a client-focused approach, ensuring that every project is tailored to meet the unique needs of our partners. From custom software and web applications to cloud services and IT consulting, we help our clients navigate the ever-evolving technology landscape with confidence.",
+      "At Harich Technologies, we believe in building lasting relationships based on trust, transparency, and results. Our mission is to drive growth and success by delivering solutions that are not only innovative but also reliable and scalable."
     ],
     BannerImg: Helper.Banner,
   },
@@ -27,7 +28,7 @@ export const AboutUsData = {
       {
         id: 3,
         title: "Countries",
-        number: "1+",
+        number: "4+",
         icon: Helper.Countries,
       },
       {
@@ -43,8 +44,8 @@ export const AboutUsData = {
     leftSide: {
       title: "Where Innovation Meets Satisfaction",
       describation: [
-        "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis. Ut commodo efficitur neque. Ut diam quam, semper iaculis condimentum ac, vestibulum eu nisl.",
-        "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis. Ut commodo efficitur neque. Ut diam quam, semper iaculis condimentum ac, vestibulum eu nisl.",
+        "At Harich Technologie, innovation is at the core of everything we do. We combine cutting-edge technology with creative solutions to address the challenges of today and shape the opportunities of tomorrow. Our dedicated team of experts is committed to turning ambitious ideas into tangible, impactful results, ensuring that every project we undertake is guided by passion, precision, and a relentless drive to excel.",
+        "Satisfaction isn’t just a goal at Harich Technologie - it’s our promise. From the initial consultation to project completion and beyond, we prioritize your needs, delivering seamless experiences that exceed expectations. Every interaction is marked by professionalism, trust, and an unwavering commitment to quality. Discover where innovation meets satisfaction -where Harich Technologie empowers your vision and transforms possibilities into success.",
       ],
       btnTitle: "Join our team",
     },
@@ -54,14 +55,14 @@ export const AboutUsData = {
           id: 1,
           title: "Our Mission",
           description:
-            "Morem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+            "To be a leading technology partner recognized for innovation, quality, and customer success - empowering businesses to thrive in a rapidly evolving digital world.",
           icon: Helper.Target,
         },
         {
             id: 2,
             title: "Our Vision",
             description:
-            "Morem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+            "To provide innovative, efficient, and user-friendly technology solutions that help businesses grow, improve operations, and connect meaningfully with their customers. We strive to deliver excellence through collaboration, creativity, and integrity.",
             icon: Helper.Target,
         }
       ],

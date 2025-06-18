@@ -8,14 +8,14 @@ export const ServiceListData = {
         title: "Services",
         subtitle: "UI/UX Design",
         describation:
-          "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis. Ut commodo efficitur neque. Ut diam quam, semper iaculis condimentum ac, vestibulum eu nisl.",
+          "We craft exceptional digital experiences through expert UI/UX design. Our design process prioritizes user needs and expectations, blending aesthetics with functionality. Using leading tools like Figma, Sketch, Adobe XD, and InVision, we design intuitive interfaces that engage users, enhance usability, and elevate brands across platforms and devices.",
         btnTitle: "Consult our Creative Design Team",
         BannerRight:Helper.UIUXBanner,
       },
      
       process: {
-        title: "Process",
-        subTitle: "Our Design Process",
+        title: "Design Services",
+        subTitle: "Our Core Services",
         shortDescribation: "Our Proven Methodology for Success",
         steps: [
           {
@@ -80,8 +80,9 @@ export const ServiceListData = {
       whyUs: {
         title: "Why Us",
         subTitle: "Why Choose Harichtech?",
+        titleDescribation:"Before the first pixel, we’re focused on what matters most: your vision.",
         describation:
-          "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis. Ut commodo efficitur neque. Ut diam quam, semper iaculis condimentum ac, vestibulum eu nisl.",
+          "With thoughtful planning, clean design, and smart technology, we build solutions that perform. We value timelines, communication, and craft - delivering work that’s both strategic and beautiful. At Harich Tech, you don’t just get a service - you gain a partner.",
         list: [
           {
             id: 1,
@@ -116,7 +117,7 @@ export const ServiceListData = {
         title: "Services",
       subtitle: "Mobile App Development",
       describation:
-        "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis. Ut commodo efficitur neque. Ut diam quam, semper iaculis condimentum ac, vestibulum eu nisl.",
+        "Our mobile app development services deliver innovative, high-performance applications tailored to your business goals. We create engaging native and cross-platform apps for iOS and Android, focusing on seamless functionality, robust architecture, and scalability. From concept to launch, we build solutions that connect users, drive engagement, and foster growth.",
       btnTitle: "Consult our Creative Design Team",
         BannerRight:Helper.MobileBanner,
       },
@@ -186,8 +187,9 @@ export const ServiceListData = {
       whyUs: {
         title: "Why Us",
         subTitle: "Why Choose Harichtech?",
+        titleDescribation:"Before the first pixel, we’re focused on what matters most: your vision.",
         describation:
-          "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis. Ut commodo efficitur neque. Ut diam quam, semper iaculis condimentum ac, vestibulum eu nisl.",
+          "With thoughtful planning, clean design, and smart technology, we build solutions that perform. We value timelines, communication, and craft - delivering work that’s both strategic and beautiful. At Harich Tech, you don’t just get a service - you gain a partner.",
         list: [
           {
             id: 1,
@@ -220,7 +222,7 @@ export const ServiceListData = {
         title: "Services",
         subtitle: "Web Development",
         describation:
-          "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis. Ut commodo efficitur neque. Ut diam quam, semper iaculis condimentum ac, vestibulum eu nisl.",
+          "We design and develop dynamic, responsive websites that captivate users and achieve business objectives. Our team specializes in creating scalable, secure, and feature-rich web solutions, from corporate websites to e-commerce platforms. By integrating modern technologies, we deliver seamless experiences that align with your brand and empower digital success.",
         btnTitle: "Consult our Creative Design Team",
         BannerRight:Helper.WebBanner,
       },
@@ -292,8 +294,9 @@ export const ServiceListData = {
       whyUs: {
         title: "Why Us",
         subTitle: "Why Choose Harichtech?",
+        titleDescribation:"Before the first pixel, we’re focused on what matters most: your vision.",
         describation:
-          "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis. Ut commodo efficitur neque. Ut diam quam, semper iaculis condimentum ac, vestibulum eu nisl.",
+          "With thoughtful planning, clean design, and smart technology, we build solutions that perform. We value timelines, communication, and craft - delivering work that’s both strategic and beautiful. At Harich Tech, you don’t just get a service - you gain a partner.",
         list: [
           {
             id: 1,
@@ -326,13 +329,13 @@ export const ServiceListData = {
         title: "Services",
       subtitle: "Digital Marketing Services",
       describation:
-        "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis. Ut commodo efficitur neque. Ut diam quam, semper iaculis condimentum ac, vestibulum eu nisl.",
+        "Our digital marketing services amplify your brand’s online presence, driving visibility and growth. We craft strategic campaigns that combine SEO, social media, content marketing, and paid advertising. With data-driven insights and creative execution, we help businesses connect with their audiences, generate leads, and achieve measurable results in the digital landscape.",
       btnTitle: "Consult our Creative Design Team",
         BannerRight:Helper.DigitalBanner,
       },
      
       process: {
-        title: "Process",
+        title: "Design Services",
         subTitle: "Our Design Process",
         shortDescribation: "Our Proven Methodology for Success",
         steps: [
@@ -360,7 +363,7 @@ export const ServiceListData = {
       },
       services: {
         title: "Design Services",
-        subTitle: "Our Core Services",
+        subTitle: "Our Digital Marketing Services",
         services: [
           "Search Engine Optimization (SEO)",
           "Pay-Per-Click (PPC) Advertising",
@@ -398,8 +401,9 @@ export const ServiceListData = {
       whyUs: {
         title: "Why Us",
         subTitle: "Why Choose Harichtech?",
+        titleDescribation:"Before the first pixel, we’re focused on what matters most: your vision.",
         describation:
-          "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis. Ut commodo efficitur neque. Ut diam quam, semper iaculis condimentum ac, vestibulum eu nisl.",
+          "With thoughtful planning, clean design, and smart technology, we build solutions that perform. We value timelines, communication, and craft - delivering work that’s both strategic and beautiful. At Harich Tech, you don’t just get a service - you gain a partner.",
         list: [
           {
             id: 1,

@@ -8,7 +8,7 @@ export default function ServicesPage() {
   const { serviceTitle, services } = Services;
 
   return (
-    <main className="w-full space-y-10 py-32 px-5 md:px-10 lg:px-20 mx-auto">
+    <main className="w-full space-y-10 py-32 px-5 md:px-10 lg:px-20 mx-auto mt-10">
       <MotionComponent type="bounce" duration={1} delay={0.5}>
         <ServiceTitleSection serviceTitle={serviceTitle} />
       </MotionComponent>

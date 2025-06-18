@@ -20,10 +20,14 @@ const AboutUs: React.FC<AboutUsProps> = ({ aboutUs }) => {
 
       {/* Main content */}
       <div className="text-center mb-10 relative z-10">
-        <h1 className="text-2xl md:text-4xl font-bold mb-4">
-          {aboutUs.subTitle.split('Harichtech')[0]}<br/>
-          <span className="text-blue-600">Harichtech</span>
-        </h1>
+        <h1 className="text-[30px] md:text-[48px] font-bold mb-4">
+  {aboutUs.subTitle.split("Harichtech")[0]}
+  <br />
+  <span className="mt-2 inline-block bg-gradient-to-l from-[#2058FF] to-[#004BC2] bg-clip-text text-transparent">
+    Harichtech
+  </span>
+</h1>
+
 
         <div className="mx-auto">
           {aboutUs.descrobation.map((paragraph, index) => (

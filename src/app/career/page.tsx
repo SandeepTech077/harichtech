@@ -8,7 +8,7 @@ export default function ServicesPage() {
   const { bannerSection, hiring, upload, whyChooseUs } = Career;
   
   return (
-    <div className="py-30 px-4 lg:px-16">
+    <div className=" px-4 lg:px-16 mt-36">
       <Banner
         title={bannerSection.title}
         subTitle={bannerSection.subTitle}

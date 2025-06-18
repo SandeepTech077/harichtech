@@ -15,7 +15,7 @@ export default function Home() {
     <main className="w-full">
       <MainTitleSection data={HomePagedata.mainTitleSection} />
       <KnownMore data={HomePagedata.knownMore} />
-      <div className="w-full space-y-16  px-5 md:px-10 lg:px-20 py-30">
+      <div className="w-full space-y-20  px-5 md:px-10 lg:px-20 py-12">
         <AboutStatus status={ourStatus.status} />
         <HomeServices data={HomePagedata.serviceList} />
         <PortfolioComponent data={HomePagedata.portfolio} />

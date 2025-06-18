@@ -32,7 +32,7 @@ const PortfolioComponent: React.FC<PortfolioComponentProps> = ({ data }) => {
         {/* Heading */}
         <h2 className="text-[30px] lg:text-[48px] font-bold mt-2 max-w-3xl mx-auto">
           {data.Subtitle.split(" ").slice(0, -1).join(" ")}{" "}
-          <span className="bg-gradient-to-l from-[#2058FF] to-[#004BC2] bg-clip-text text-transparent">
+          <span className="bg-gradient-to-l from-[#2058FF] to-[#004BC2] bg-clip-text text-transparent ">
             {data.Subtitle.split(" ").slice(-1)}
           </span>
         </h2>
@@ -91,7 +91,7 @@ const PortfolioComponent: React.FC<PortfolioComponentProps> = ({ data }) => {
 
       {/* View More Button */}
       <div className="flex justify-center my-16 ">
-        <Button text={data.btnTitle}/>
+        <Button text={data.btnTitle} href="/our-work"/>
       </div>
     </div>
   );

@@ -37,7 +37,7 @@ const GetTouchContact: React.FC<GetTouchContactProps> = ({ data }) => {
             const firstWords = words.slice(0, -2).join(" ");
             return (
               <>
-                {firstWords} <span className="text-blue-600">{lastTwo}</span>
+                {firstWords} <span className="bg-gradient-to-l from-[#2058FF] to-[#004BC2] bg-clip-text text-transparent ">{lastTwo}</span>
               </>
             );
           })()}

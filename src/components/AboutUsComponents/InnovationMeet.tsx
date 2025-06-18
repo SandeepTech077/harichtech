@@ -36,7 +36,7 @@ const InnovationMeet: React.FC<InnovationMeetProps> = ({ innovationMeet }) => {
         <div className="flex flex-col">
           <h2 className="text-2xl lg:text-4xl font-bold mb-6">
             Where Innovation Meets{' '} <br/>
-            <span className="text-blue-600">Satisfaction</span>
+            <span className="bg-gradient-to-l from-[#2058FF] to-[#004BC2] bg-clip-text text-transparent  ">Satisfaction</span>
           </h2>
 
           <div className="space-y-6">
@@ -48,7 +48,7 @@ const InnovationMeet: React.FC<InnovationMeetProps> = ({ innovationMeet }) => {
           </div>
 
           <div className="mt-8 hidden lg:block">
-           <Button text={leftSide.btnTitle} />
+           <Button text={leftSide.btnTitle} href='/career'/>
           </div>
         </div>
 

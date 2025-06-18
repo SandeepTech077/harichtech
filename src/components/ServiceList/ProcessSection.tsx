@@ -24,7 +24,7 @@ const ProcessComponent: React.FC<ProcessComponentProps> = ({ processData }) => {
   const { title, subTitle, shortDescribation, steps } = processData;
 
   return (
-    <div className="container mx-auto py-16 px-4">
+    <div className="pt-10 mx-auto px-4">
       <div className="text-center mb-30">
         <div className="inline-block mb-4">
           <Title title={title} />

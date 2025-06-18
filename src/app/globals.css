@@ -20,15 +20,15 @@
 } */
 
 :root {
-  --font-nunito: 'Nunito', sans-serif;
+  --font-nunito: 'Nunito', sans-serif ;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-nunito), sans-serif;
-  overflow-x: hidden; /* Prevent horizontal scrolling */
-  overflow-y: auto;   /* Allow vertical scrolling when needed */
+  font-family: var(--font-nunito), sans-serif ;
+  overflow-x: hidden; 
+  overflow-y: auto; 
 }
 
 @keyframes customSpin {

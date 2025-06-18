@@ -21,7 +21,7 @@ const ContactInfo = ({ data }: ContactInfoProps) => {
   return (
     <section className="py-16 px-4 sm:px-6 lg:px-8">
       <div
-        className="max-w-7xl mx-auto rounded-3xl shadow-2xl p-6 lg:p-12"
+        className="max-w-7xl mx-auto rounded-3xl  p-6 lg:p-12"
         style={{
           background: 'linear-gradient(270deg, #2058FF 0%, #004BC2 100%)',
         }}
@@ -44,7 +44,7 @@ const ContactInfo = ({ data }: ContactInfoProps) => {
             {data.info.map((item, index) => (
               <div
                 key={index}
-                className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 group"
+                className="bg-white rounded-2xl p-6  transform hover:-translate-y-1 transition-all duration-300 group"
               >
                 <div className="flex flex-col items-center text-center space-y-4">
                   {/* Icon */}

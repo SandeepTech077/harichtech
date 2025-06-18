@@ -123,7 +123,7 @@ const MainTitleSection: React.FC<MainTitleSectionProps> = ({ data }) => {
           transition={{ delay: 1.8, duration: 0.8 }}
           className="w-full flex max-w-3xl justify-start sm:justify-end mt-6 sm:mt-8 mx-auto"
         >
-          <Button text={btnButton} />
+          <Button text={btnButton} href='/about-us'/>
         </motion.div>
       </div>
 

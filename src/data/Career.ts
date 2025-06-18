@@ -21,6 +21,18 @@ export const Career = {
         opening: "Open Position : 01",
         btnText: "Apply Now",
       },
+      {
+        title: "BDE (Bussiness Development Executive)",
+        experiance: "Experience : 02 Years",
+        opening: "Open Position : 01",
+        btnText: "Apply Now",
+      },
+      {
+        title: "Digital Marketing Specialist",
+        experiance: "Experience : 02 Years",
+        opening: "Open Position : 01",
+        btnText: "Apply Now",
+      },
     ],
   },
   upload: {
