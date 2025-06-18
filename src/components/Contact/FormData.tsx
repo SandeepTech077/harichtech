@@ -71,7 +71,7 @@ export default function FormData({ data }: FormDataProps) {
                   value={formState.name}
                   onChange={handleInputChange}
                   required
-                  className="w-full px-4 py-4 border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 text-gray-900 placeholder-gray-500 bg-white shadow-sm hover:shadow-md"
+                  className="w-full px-4 py-4 border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 text-gray-900 placeholder-gray-500 bg-white "
                 />
               </div>
 
@@ -84,7 +84,7 @@ export default function FormData({ data }: FormDataProps) {
                   value={formState.email}
                   onChange={handleInputChange}
                   required
-                  className="w-full px-4 py-4 border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 text-gray-900 placeholder-gray-500 bg-white shadow-sm hover:shadow-md"
+                  className="w-full px-4 py-4 border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 text-gray-900 placeholder-gray-500 bg-white"
                 />
               </div>
 
@@ -97,7 +97,7 @@ export default function FormData({ data }: FormDataProps) {
                   value={formState.phone}
                   onChange={handleInputChange}
                   required
-                  className="w-full px-4 py-4 border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 text-gray-900 placeholder-gray-500 bg-white shadow-sm hover:shadow-md"
+                  className="w-full px-4 py-4 border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 text-gray-900 placeholder-gray-500 bg-white "
                 />
               </div>
 
@@ -110,7 +110,7 @@ export default function FormData({ data }: FormDataProps) {
                   value={formState.country}
                   onChange={handleInputChange}
                   required
-                  className="w-full px-4 py-4 border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 text-gray-900 placeholder-gray-500 bg-white shadow-sm hover:shadow-md"
+                  className="w-full px-4 py-4 border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 text-gray-900 placeholder-gray-500 bg-white "
                 />
               </div>
 
@@ -123,7 +123,7 @@ export default function FormData({ data }: FormDataProps) {
                   onChange={handleInputChange}
                   rows={4}
                   required
-                  className="w-full px-4 py-4 border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 text-gray-900 placeholder-gray-500 bg-white shadow-sm hover:shadow-md resize-none"
+                  className="w-full px-4 py-4 border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 text-gray-900 placeholder-gray-500 bg-white  resize-none"
                 />
               </div>
 
@@ -131,7 +131,7 @@ export default function FormData({ data }: FormDataProps) {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="group relative w-full sm:w-auto px-8 py-4 bg-gradient-to-r from-blue-600 to-blue-700 text-white font-semibold rounded-lg shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-200 disabled:opacity-70 disabled:cursor-not-allowed disabled:transform-none"
+                className="group relative w-full sm:w-auto px-8 py-4 bg-gradient-to-r from-blue-600 to-blue-700 text-white font-semibold rounded-lg  transform hover:-translate-y-0.5 transition-all duration-200 disabled:opacity-70 disabled:cursor-not-allowed disabled:transform-none"
               >
                 <span className="flex items-center justify-center space-x-2">
                   <span>{isSubmitting ? 'Sending...' : data.btnText}</span>
@@ -158,7 +158,7 @@ export default function FormData({ data }: FormDataProps) {
               <div className="absolute inset-0 bg-gradient-to-br from-blue-50 to-purple-50 rounded-3xl transform -rotate-1"></div>
               
               {/* Main image container */}
-              <div className="relative h-full w-full bg-white rounded-2xl shadow-xl overflow-hidden">
+              <div className="relative h-full w-full bg-white rounded-2xl overflow-hidden">
                 <Image
                   src={data.rightSideImage}
                   alt="Contact illustration"

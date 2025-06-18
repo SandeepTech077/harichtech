@@ -19,7 +19,7 @@ const MainTitleSection: React.FC<MainTitleSectionProps> = ({ data }) => {
   const { subTitle, btnButton, Img1, Img2 } = data;
 
   return (
-    <div className="w-full min-h-screen flex justify-center items-center relative py-16 px-5 overflow-hidden">
+    <div className="w-full lg:min-h-screen flex justify-center items-center relative py-40  px-5 overflow-hidden">
       <div className="w-full max-w-5xl text-left">
         {/* Main Title Section with animation */}
         <motion.div
@@ -189,7 +189,7 @@ const MainTitleSection: React.FC<MainTitleSectionProps> = ({ data }) => {
           animate={{ scaleY: 1, opacity: 0.5 }}
           transition={{ delay: 2.6, duration: 1.2 }}
           style={{ originY: 1 }}
-          className="absolute bottom-10 left-[32px] sm:left-[50px] w-[1px] h-[calc(100vh-120px)] sm:h-screen bg-[#999999] z-0 opacity-50"
+          className="hidden lg:block absolute bottom-10 left-[32px] sm:left-[50px] w-[1px] h-[calc(100vh-120px)] sm:h-screen bg-[#999999] z-0 opacity-50"
         />
       </div>
     </div>

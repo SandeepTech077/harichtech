@@ -11,7 +11,13 @@ import Img6 from "../../public/Image/Blog/BlogsImage/Img6.png"
 import Img7 from "../../public/Image/Blog/BlogsImage/Img7.png"
 import Img8 from "../../public/Image/Blog/BlogsImage/Img8.png"
 import Img9 from "../../public/Image/Blog/BlogsImage/Img9.png"
+import App from "../../public/Image/Blog/BlogsImage/application.png"
+import Web from "../../public/Image/Blog/BlogsImage/marketing.png"
+import Marketing from "../../public/Image/Blog/BlogsImage/Img9.png"
 import blackArrow from "../../public/Image/Blog/BlogsImage/Arrow 1 (1).svg"
+
+
+
 
 export const Helper = {
 
@@ -27,7 +33,10 @@ export const Helper = {
     Img7,
     Img8,
     Img9,
-    blackArrow
+    blackArrow,
+    App,
+    Web,
+    Marketing
 
 
 }

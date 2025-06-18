@@ -11,17 +11,27 @@ import GetInTouch from "@/components/Ui/GetInTouch";
 
 export default function Home() {
   const { ourStatus } = AboutUsData;
+  
   return (
-    <main className="w-full">
+    <main className="w-full overflow-hidden">
+      {/* Hero Section - Full width */}
       <MainTitleSection data={HomePagedata.mainTitleSection} />
+      
+      {/* Known More Section - Full width */}
+      
+      {/* Other Sections - Contained width with responsive padding */}
+      <div className="w-full">
+        <div className=" mx-auto px-4 sm:px-6 lg:px-8 ">
+          <div className="space-y-12 sm:space-y-16 lg:space-y-20">
       <KnownMore data={HomePagedata.knownMore} />
-      <div className="w-full space-y-20  px-5 md:px-10 lg:px-20 py-12">
-        <AboutStatus status={ourStatus.status} />
-        <HomeServices data={HomePagedata.serviceList} />
-        <PortfolioComponent data={HomePagedata.portfolio} />
-        <OurClients data={HomePagedata.ourClient}/>
-        <ClientsComponent data={HomePagedata.client} />
-       <GetInTouch/>
+            <AboutStatus status={ourStatus.status} />
+            <HomeServices data={HomePagedata.serviceList} />
+            <PortfolioComponent data={HomePagedata.portfolio} />
+            <OurClients data={HomePagedata.ourClient}/>
+            <ClientsComponent data={HomePagedata.client} />
+            <GetInTouch/>
+          </div>
+        </div>
       </div>
     </main>
   );

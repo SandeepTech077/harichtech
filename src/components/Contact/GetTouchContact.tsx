@@ -26,7 +26,7 @@ const GetTouchContact: React.FC<GetTouchContactProps> = ({ data }) => {
     <section className="relative w-full flex flex-col lg:flex-row items-start justify-between px-6 lg:px-24 py-20 overflow-hidden">
       {/* Left Section */}
       <div className="w-full lg:w-2/3 space-y-6 z-10">
-        <div className="w-50">
+        <div className="w-40 lg:w-50">
           <Title title={data.title} />
         </div>
 

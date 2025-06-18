@@ -2,69 +2,88 @@ import { Helper } from "@/helper/OurWorkHelper";
 
 export const OurWorkData = {
   mainTitle: {
-    title: "Our Work",
-    subTitle: "Elevate Your Brand with Harichtech's Digital Marketing Services",
-    describation:
-      "We create technology solutions that help businesses grow and succeed. From designing easy-to-use websites and apps to building custom software, we focus on making things simple and effective for our clients. Every project is handled with care and attention to make sure it fits the client’s needs perfectly. We work closely with our clients to turn their ideas into real, useful digital products that people enjoy using.",
-    btnTitle: "Let’s Connect",
+   title:"Portfolio",
+   subTitle:"Our Portfolio",
+   Banner:Helper.Banner
   },
-  portfolio: {
-    title: "Portfolio",
-    subTitle: "Our Portfolio",
+  design: {
+    title: "Your Growth",
+    subTitle: " Our Achievements",
     Images: [
       {
         id: 1,
-        type: "web",
-        image: Helper.web1,
+        title: "Insight Management",
+        subTitle:"UI / UX Design | Web Development",
+        image: Helper.Insight,
       },
       {
         id: 2,
-        type: "web",
-        image: Helper.web2,
+        title: "Shilp Aarambh",
+        subTitle:"UI / UX Design | Web Development",
+        image: Helper.Aarambh,
       },
       {
-        id:3,
-        type: "mobile",
-        image: Helper.mobile1,
+        id: 3,
+        title: "Microbrange",
+        subTitle:"UI / UX Design | Web Development",
+        image: Helper.Microbrange,
       },
       {
         id: 4,
-        type: "mobile",
-        image: Helper.mobile2,
+        title: "Arkle Equestrian Club",
+        subTitle:"UI / UX Design | Web Development",
+        image: Helper.Arkle,
       },
       {
         id: 5,
-        type: "mobile",
-        image: Helper.mobile3,
-
+        title: "Shilp Group",
+        subTitle:"UI / UX Design | Web Development",
+        image: Helper.Shilp,
       },
       {
         id: 6,
-        type: "digital",
-        image: Helper.digital1,
+        title: "Sneshshilp Foundation",
+        subTitle:"UI / UX Design | Web Development",
+        image: Helper.SnehShilp,
       },
       {
         id: 7,
-        type: "digital",
-        image: Helper.digital2,
+        title: "Yash Brahmbhatt",
+        subTitle:"UI / UX Design | Web Development",
+        image: Helper.Yash,
       },
       {
         id: 8,
-        type: "digital",    
-        image: Helper.digital3,
+        title: "Snehal Brahmbhatt",
+        subTitle:"UI / UX Design | Web Development",
+        image: Helper.Snehal,
       },
       {
         id: 9,
-        type: "uiux",
-        image: Helper.uiux1,
-
+        title: "Startup Fest",
+        subTitle:"UI / UX Design | Web Development",
+        image: Helper.Fest,
       },
       {
         id: 10,
-        type: "uiux",
-        image: Helper.uiux2,
-
+        title: "Aerotyne",
+        subTitle:"UI / UX Design | Web Development",
+        image: Helper.Aerotyne,
       },
+      {
+        id: 11,
+        title: "Oreum - Live Pure",
+        subTitle:"UI / UX Design | Web Development",
+        image: Helper.Oreum,
+      },
+      {
+        id: 12,
+        title: "Evervital",
+        subTitle:"UI / UX Design | Web Development",
+        image: Helper.Evervital,
+      },
+      
+      
       
     ],
   },

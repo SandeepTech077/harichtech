@@ -14,29 +14,29 @@
         {
             id:1,
             image:Helper.Img1,
-            title:"Digital Marketing",
+            title:"App Development",
             dateAndBy:"by Harichtech on March 26, 2024",
-            descibation:"Today, most people spent their time on the internet. People are getting entertainment, news, learning, and many things by using the internet. Along with this they also shop and buy things online. The use of Digital Marketing is growing.......",
+            descibation:"App Development is the process to create applications for mobile phones, tablets, and other mobile devices. By Developers, it is developed for IOS and Android mostly. It can be downloaded from the app store and it can be...",
             btnTitle:"Read More",
-            btnArrow:Helper.blackArrow
+            btnArrow:Helper.App
         },
         {
             id:2,
             image:Helper.Img2,
-            title:"Digital Marketing",
+            title:"What is Web Development?",
             dateAndBy:"by Harichtech on March 26, 2024",
-            descibation:"Today, most people spent their time on the internet. People are getting entertainment, news, learning, and many things by using the internet. Along with this they also shop and buy things online. The use of Digital Marketing is growing.......",
+            descibation:"Web Development is the work of creating and maintaining a website. It includes many aspects like Web programming, Web Designing, Web Publishing, Database Management. Web Development makes ....",
             btnTitle:"Read More",
-            btnArrow:Helper.blackArrow
+            btnArrow:Helper.Web
         },
         {
             id:3,
             image:Helper.Img3,
-            title:"Digital Marketing",
+            title:"What is Digital Marketing?",
             dateAndBy:"by Harichtech on March 26, 2024",
-            descibation:"Today, most people spent their time on the internet. People are getting entertainment, news, learning, and many things by using the internet. Along with this they also shop and buy things online. The use of Digital Marketing is growing.......",
+            descibation:"Today, most people spent their time on the internet. People are getting entertainment, news, learning, and many things by using the internet. Along with this they also shop and buy things online....",
             btnTitle:"Read More",
-            btnArrow:Helper.blackArrow
+            btnArrow:Helper.Marketing
         },
         {
             id:4,

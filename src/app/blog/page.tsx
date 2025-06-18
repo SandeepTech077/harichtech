@@ -7,7 +7,7 @@ export default function BlogPage() {
   const { BannerSection: bannerData, blogs } = BlogData;
 
   return (
-    <main className="w-full py-36 px-5 md:px-10 lg:px-20 space-y-10">
+    <main className="w-full py-22 md:py-36 px-5 md:px-10 lg:px-20 space-y-10">
       {/* Animated Banner Section */}
       <MotionComponent type="slideIn" duration={1} delay={0.3}>
         <BannerSection 

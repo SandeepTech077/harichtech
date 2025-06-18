@@ -8,7 +8,7 @@ export default function ServicesPage() {
 
     const {getTouch, formData ,contactInfo ,ourOffice} = ContactData
     return (
-        <main className="min-h-screen w-full bg-white mt-22">
+        <main className="min-h-screen w-full bg-white mt-6 lg:mt-22">
         <GetTouchContact data={getTouch} />
         <FormData data={formData}/>
         <ContactInfo data={contactInfo}/>

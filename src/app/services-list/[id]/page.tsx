@@ -6,8 +6,9 @@ import ServiceDetailCard from "@/components/ServiceList/ServiceDetailCard";
 import ProcessComponent from "@/components/ServiceList/ProcessSection";
 import ServicesSection from "@/components/ServiceList/ServicesSection";
 import PortfolioSection from "@/components/ServiceList/PortfolioSection";
-import WhyChooseUs from "@/components/ServiceList/WhyChooseUs";
 import MotionComponent from "@/Animation/MotionComponent";
+import ClientsComponent from "@/components/HomePageComponents/ClientsComponent";
+import { HomePagedata } from "@/data/HomePageData";
 
 export default function ServiceDetailPage() {
   const params = useParams();
@@ -51,7 +52,7 @@ export default function ServiceDetailPage() {
   return (
     <main className="min-h-screen bg-gradient-to-br from-gray-50 to-white ">
       {/* Hero Section with optimized spacing */}
-      <section className="pt-20 sm:pt-24 lg:pt-44 pb-8 sm:pb-12 lg:pb-16">
+      <section className="pt-24 lg:pt-44 pb-8 sm:pb-12 lg:pb-16">
         <div className="container mx-auto px-4 sm:px-6 lg:px-16 space-y-10">
           <MotionComponent type="slideIn" duration={0.8} delay={0.1}>
             <ServiceDetailCard data={service.maintitle} />
@@ -69,10 +70,8 @@ export default function ServiceDetailPage() {
             <PortfolioSection portfolioData={service.portfolio} />
           </MotionComponent>
 
-          {/* Why Choose Us Section */}
-
           <MotionComponent type="bounce" duration={0.8} delay={0.5}>
-            <WhyChooseUs whyUsData={service.whyUs} />
+            <ClientsComponent data={HomePagedata.client} />
           </MotionComponent>
         </div>
       </section>

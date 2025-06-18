@@ -11,6 +11,7 @@ interface WhyUsProps {
   whyUsData: {
     title: string;
     subTitle: string;
+    titleDescribation:string;
     describation: string;
     list: WhyUsListItem[];
     rightImg: StaticImageData;
@@ -25,8 +26,11 @@ const WhyChooseUs: React.FC<WhyUsProps> = ({ whyUsData }) => {
            <Title title={whyUsData.title} />
             </div>
             <h2 className="text-3xl font-bold mb-6">
-              Why Choose <span className="text-blue-500">Harichtech?</span>
+              Why Choose <span className="bg-gradient-to-l from-[#2058FF] to-[#004BC2] bg-clip-text text-transparent">Harichtech?</span>
             </h2>
+            <p className='bg-gradient-to-l from-[#2058FF] to-[#004BC2] bg-clip-text text-transparent font-bold text-[16px]'>
+              {whyUsData.titleDescribation}
+            </p>
             <p className="text-gray-700 mb-10">
               {whyUsData.describation}
             </p>

@@ -1,46 +1,37 @@
-// web images 
-import web1 from "../../public/Image/OurWork/Web1.png"
-import web2 from "../../public/Image/OurWork/Web2.png"
+// Details 
+import Insight from "../../public/Image/OurWork/insight.png"
+import Aarambh from "../../public/Image/OurWork/aarambh.png"
+import Microbrange from "../../public/Image/OurWork/micro.png"
+import Arkle from "../../public/Image/OurWork/arkle.png"
+import Shilp from "../../public/Image/OurWork/shilp.png"
+import SnehShilp  from "../../public/Image/OurWork/snehshilp.png"
+import Yash from "../../public/Image/OurWork/yash.png"
+import Snehal from "../../public/Image/OurWork/snehal.png"
+import Fest from "../../public/Image/OurWork/fest.png"
+import Aerotyne from "../../public/Image/OurWork/aerotypne.png"
+import Oreum from "../../public/Image/OurWork/orem.png"
+import Evervital from "../../public/Image/OurWork/evervital.png"
+import Banner from "../../public/Image/OurWork/Banner/Banner.png"
 
-
-
-// mobile images
-import mobile1 from "../../public/Image/OurWork/Mobile1.png"
-import mobile2 from "../../public/Image/OurWork/Mobile2.png"
-import mobile3 from "../../public/Image/OurWork/Mobile3.png"
-
-
-// Digital Image
-import digital1 from "../../public/Image/OurWork/Digital1.png"
-import digital2 from "../../public/Image/OurWork/Digital2.png"
-import digital3 from "../../public/Image/OurWork/Digital3.png"
-
-
-// UiUx Image
-import uiux1 from "../../public/Image/OurWork/UIUX1.png"
-import uiux2 from "../../public/Image/OurWork/UIUX2.png"
 
 
 
 export const Helper = {
-    // Mobile
-    mobile1,
-    mobile2,
-    mobile3,
 
-    // Digital
-    digital1,
-    digital2,
-    digital3,
+    // Helper function to get the current date and time
+    Banner,
+    Insight,
+    Aarambh,
+    Microbrange,
+    Arkle,
+    Shilp,
+    SnehShilp ,
+    Yash,
+    Snehal,
+    Fest,
+    Aerotyne,
+    Oreum,
+    Evervital,
 
-
-
-    //UiUx 
-    uiux1,
-    uiux2,
-
-    //Web Image
-    web1,
-    web2,
 
 }

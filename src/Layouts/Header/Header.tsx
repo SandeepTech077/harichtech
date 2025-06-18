@@ -4,16 +4,11 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-import {
-  Menu,
-  X,
-  Phone,
-  Mail,
-  Facebook,
-  Instagram,
-  Linkedin,
-} from "lucide-react";
+import { Menu, X, Phone, Mail } from "lucide-react";
 import Logo from "../../../public/Logo/Logo.svg";
+import linkedinIcon from "../../../public/SVG/linkedin-logo.svg";
+import facebookIcon from "../../../public/SVG/facebook-logo.svg";
+import instagramIcon from "../../../public/SVG/instagram-logo.svg";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -31,13 +26,27 @@ const Header = () => {
 
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth >= 768) {
+      if (window.innerWidth >= 1024) {
         setIsMenuOpen(false);
       }
     };
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
+
+  // Prevent body scroll when menu is open
+  useEffect(() => {
+    if (isMenuOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+    
+    // Cleanup on unmount
+    return () => {
+      document.body.style.overflow = 'unset';
+    };
+  }, [isMenuOpen]);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -60,78 +69,89 @@ const Header = () => {
   };
 
   return (
-    <>
-      {/* Top Contact Bar - Enhanced Design */}
+    <div className="w-full overflow-x-hidden">
+      {/* Top Contact Bar - Hidden on mobile for better UX */}
       {!scrolled && (
-        <div className="fixed top-0 left-0 w-full text-white bg-gradient-to-r from-[#2058FF] via-[#1B4FE8] to-[#004BC2] py-3 px-4 z-50 shadow-lg">
+        <div className="hidden sm:block fixed top-0 left-0 right-0 w-full text-white bg-gradient-to-r from-[#2058FF] via-[#1B4FE8] to-[#004BC2] py-2 sm:py-3 px-4 z-50 shadow-lg">
           <div className="container mx-auto flex items-center justify-between max-w-7xl">
             {/* Contact Info */}
-            <div className="flex items-center space-x-6">
-              <div className="flex items-center space-x-2 group">
-                <div className="p-1.5 bg-white/10 rounded-full group-hover:bg-white/20 transition-colors">
+            <div className="flex items-center space-x-4 sm:space-x-6 min-w-0 flex-shrink">
+              <div className="flex items-center space-x-2 group min-w-0">
+                <div className="p-1.5 bg-white/10 rounded-full group-hover:bg-white/20 transition-colors flex-shrink-0">
                   <Phone size={14} className="text-white" />
                 </div>
                 <Link
                   href="tel:+916200665954"
-                  className="hidden sm:block text-sm font-medium hover:text-blue-100 transition-colors"
+                  className="text-xs sm:text-sm font-medium hover:text-blue-100 transition-colors truncate"
                 >
                   +91-6200-66-5954
                 </Link>
-                <span className="sm:hidden text-sm font-medium">Call Us</span>
               </div>
 
-              <div className="hidden md:flex items-center space-x-2 group">
-                <div className="p-1.5 bg-white/10 rounded-full group-hover:bg-white/20 transition-colors">
+              <div className="hidden md:flex items-center space-x-2 group min-w-0">
+                <div className="p-1.5 bg-white/10 rounded-full group-hover:bg-white/20 transition-colors flex-shrink-0">
                   <Mail size={14} className="text-white" />
                 </div>
                 <Link
                   href="mailto:info@harichtech.com"
-                  className="text-sm font-medium hover:text-blue-100 transition-colors"
+                  className="text-sm font-medium hover:text-blue-100 transition-colors truncate"
                 >
                   info@harichtech.com
                 </Link>
               </div>
             </div>
 
-            {/* Social Links */}
-            <div className="flex items-center space-x-3">
-              <span className="hidden sm:block text-xs font-medium text-blue-100 mr-2">
+            {/* Social Links - FIXED: Consistent sizing for all social icons */}
+            <div className="flex items-center space-x-2 sm:space-x-3 flex-shrink-0">
+              <span className="hidden sm:block text-xs font-medium text-blue-100 mr-2 whitespace-nowrap">
                 Follow Us:
               </span>
+
               <Link
                 href={socialLinks.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-1.5 bg-white/10 rounded-full hover:bg-white/20 hover:scale-110 transition-all duration-300 group"
+                className="w-8 h-8 bg-white rounded-full hover:bg-gray-50 hover:scale-110 transition-all duration-300 group shadow-sm flex items-center justify-center flex-shrink-0"
                 aria-label="Follow us on LinkedIn"
               >
-                <Linkedin
-                  size={16}
-                  className="text-white group-hover:text-blue-100"
+                <Image
+                  src={linkedinIcon}
+                  alt="LinkedIn"
+                  width={16}
+                  height={16}
+                  className="group-hover:opacity-80"
                 />
               </Link>
+
               <Link
                 href={socialLinks.facebook}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-1.5 bg-white/10 rounded-full hover:bg-white/20 hover:scale-110 transition-all duration-300 group"
+                className="w-8 h-8 bg-white rounded-full hover:bg-gray-50 hover:scale-110 transition-all duration-300 group shadow-sm flex items-center justify-center flex-shrink-0"
                 aria-label="Follow us on Facebook"
               >
-                <Facebook
-                  size={16}
-                  className="text-white group-hover:text-blue-100"
+                <Image
+                  src={facebookIcon}
+                  alt="Facebook"
+                  width={10}
+                  height={10}
+                  className="group-hover:opacity-80"
                 />
               </Link>
+
               <Link
                 href={socialLinks.instagram}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-1.5 bg-white/10 rounded-full hover:bg-white/20 hover:scale-110 transition-all duration-300 group"
+                className="w-8 h-8 bg-white rounded-full hover:bg-gray-50 hover:scale-110 transition-all duration-300 group shadow-sm flex items-center justify-center flex-shrink-0"
                 aria-label="Follow us on Instagram"
               >
-                <Instagram
-                  size={16}
-                  className="text-white group-hover:text-blue-100"
+                <Image
+                  src={instagramIcon}
+                  alt="Instagram"
+                  width={16}
+                  height={16}
+                  className="group-hover:opacity-80"
                 />
               </Link>
             </div>
@@ -139,149 +159,147 @@ const Header = () => {
         </div>
       )}
 
-      {/* Main Header */}
+      {/* Main Header - Mobile overflow fixes */}
       <header
-        className={`fixed left-0 w-full z-40 transition-all duration-300 ${
+        className={`fixed left-0 right-0 w-full z-40 transition-all duration-300 overflow-hidden ${
           scrolled
             ? "top-0 bg-white shadow-lg"
-            : "top-12 bg-white/95 backdrop-blur-md shadow-sm"
+            : "sm:top-12 top-0 bg-white/95 backdrop-blur-md shadow-sm"
         }`}
       >
-        <div className="container mx-auto px-4 lg:px-6 py-3 flex items-center justify-between ">
-          <Link href="/" className="flex items-center">
-            <Image
-              src={Logo}
-              alt="Harich Technologies"
-              className="h-10 sm:h-12 lg:h-14 w-auto"
-              priority
-            />
-          </Link>
-
-          <nav className="hidden lg:flex items-center">
-            <ul className="flex items-center space-x-8">
-              {navItems.map((item) => {
-                const isActive = pathname === item.path;
-                return (
-                  <li key={item.name}>
-                    <Link
-                      href={item.path}
-                      className={`text-base font-semibold transition-all duration-300 relative py-2 px-1 ${
-                        isActive
-                          ? "text-blue-600 after:absolute after:bottom-0 after:left-1/2 after:transform after:-translate-x-1/2 after:w-1.5 after:h-1.5 after:bg-blue-600 after:rounded-full"
-                          : "text-gray-700 hover:text-blue-600  "
-                      }`}
-                      style={
-                        !isActive
-                          ? {
-                              transition: "all 0.3s ease",
-                            }
-                          : {}
-                      }
-                    >
-                      {item.name}
-                    </Link>
-                  </li>
-                );
-              })}
-            </ul>
-          </nav>
-
-          <div className="hidden md:flex items-center">
-            <Link href="/contact-us">
-              <button className="relative cursor-pointer px-6 py-2.5 text-base font-bold bg-white rounded-xl hover:shadow-lg transition-all duration-300 group">
-                {/* Perfect 2px gradient border */}
-                <div className="absolute inset-0 bg-gradient-to-r from-[#2058FF] to-[#004BC2] rounded-xl p-[2px]">
-                  <div className="w-full h-full bg-white group-hover:bg-gradient-to-r group-hover:from-[#2058FF] group-hover:to-[#004BC2] rounded-[10px] transition-all duration-300"></div>
-                </div>
-
-                {/* Content */}
-                <span className="relative flex items-center text-transparent bg-gradient-to-r from-[#2058FF] to-[#004BC2] bg-clip-text group-hover:text-white transition-all duration-300 z-10">
-                  Get in Touch
-                  <span className="ml-2 text-lg group-hover:translate-x-1 transition-transform duration-300">
-                    ↗
-                  </span>
-                </span>
-              </button>
+        <div className="w-full max-w-full">
+          <div className="container mx-auto px-3 sm:px-4 lg:px-6 py-2 sm:py-3 flex items-center justify-between min-h-[60px] sm:min-h-[64px]">
+            {/* Logo - Mobile optimized */}
+            <Link href="/" className="flex items-center flex-shrink-0">
+              <Image
+                src={Logo}
+                alt="Harich Technologies"
+                className=" h-14 lg:h-14 w-auto max-w-[140px] sm:max-w-none"
+                priority
+              />
             </Link>
-          </div>
 
-          <button
-            className="flex items-center justify-center lg:hidden p-2 text-gray-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-all duration-300"
-            onClick={toggleMenu}
-            aria-label="Toggle menu"
-            aria-expanded={isMenuOpen}
-          >
-            {isMenuOpen ? <X size={24} /> : <Menu size={28} />}
-          </button>
+            {/* Desktop Navigation */}
+            <nav className="hidden lg:flex items-center flex-1 justify-center">
+              <ul className="flex items-center space-x-6 xl:space-x-8">
+                {navItems.map((item) => {
+                  const isActive = pathname === item.path;
+                  return (
+                    <li key={item.name}>
+                      <Link
+                        href={item.path}
+                        className={`text-sm xl:text-base font-semibold transition-all duration-300 relative py-2 px-1 whitespace-nowrap ${
+                          isActive
+                            ? "text-blue-600 after:absolute after:bottom-0 after:left-1/2 after:transform after:-translate-x-1/2 after:w-1.5 after:h-1.5 after:bg-blue-600 after:rounded-full"
+                            : "text-gray-700 hover:text-blue-600"
+                        }`}
+                      >
+                        {item.name}
+                      </Link>
+                    </li>
+                  );
+                })}
+              </ul>
+            </nav>
+
+            {/* Desktop CTA Button */}
+            <div className="hidden md:flex items-center flex-shrink-0">
+              <Link href="/contact-us">
+                <button className="relative cursor-pointer px-4 lg:px-6 py-2 lg:py-2.5 text-sm lg:text-base font-bold bg-white rounded-xl hover:shadow-lg transition-all duration-300 group whitespace-nowrap">
+                  <div className="absolute inset-0 bg-gradient-to-r from-[#2058FF] to-[#004BC2] rounded-xl p-[2px]">
+                    <div className="w-full h-full bg-white group-hover:bg-gradient-to-r group-hover:from-[#2058FF] group-hover:to-[#004BC2] rounded-[10px] transition-all duration-300"></div>
+                  </div>
+                  <span className="relative flex items-center text-transparent bg-gradient-to-r from-[#2058FF] to-[#004BC2] bg-clip-text group-hover:text-white transition-all duration-300 z-10">
+                    <span className="hidden lg:inline">Get in Touch</span>
+                    <span className="lg:hidden">Contact</span>
+                    <span className="ml-1 lg:ml-2 text-sm lg:text-lg group-hover:translate-x-1 transition-transform duration-300">
+                      ↗
+                    </span>
+                  </span>
+                </button>
+              </Link>
+            </div>
+
+            {/* Mobile Menu Button - Fixed sizing */}
+            <button
+              className="flex items-center justify-center lg:hidden p-2 text-gray-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-all duration-300 touch-manipulation flex-shrink-0 w-10 h-10"
+              onClick={toggleMenu}
+              aria-label="Toggle menu"
+              aria-expanded={isMenuOpen}
+            >
+              {isMenuOpen ? <X size={20} /> : <Menu size={22} />}
+            </button>
+          </div>
         </div>
       </header>
 
       {/* Mobile Menu Overlay */}
       {isMenuOpen && (
         <div
-          className="fixed inset-0 bg-black bg-opacity-50 z-45 lg:hidden backdrop-blur-sm"
+          className="fixed inset-0 bg-black/60 z-45 lg:hidden backdrop-blur-sm"
           onClick={toggleMenu}
         />
       )}
 
-      {/* Mobile Menu */}
+      {/* Mobile Menu - Fixed width and overflow */}
       <div
-        className={`fixed top-0 right-0 h-full w-[75%] max-w-sm bg-white shadow-2xl z-50 transform transition-transform duration-300 ease-in-out lg:hidden ${
+        className={`fixed top-0 right-0 bottom-0 w-full max-w-[280px] bg-white shadow-2xl z-50 transform transition-transform duration-300 ease-in-out lg:hidden overflow-hidden ${
           isMenuOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
-        <div className="flex flex-col h-full">
+        <div className="flex flex-col h-full w-full overflow-hidden">
           {/* Mobile Header */}
-          <div className="flex justify-between items-center p-6 border-b border-gray-100 bg-gradient-to-r from-blue-50 to-indigo-50">
+          <div className="flex justify-between items-center p-4 border-b border-gray-100 bg-gradient-to-r from-blue-50 to-indigo-50 flex-shrink-0">
             <Image
               src={Logo}
               alt="Harich Technologies"
-              className="h-10 w-auto"
+              className="h-10 w-auto max-w-[140px]"
             />
             <button
-              className="p-2 text-gray-600 hover:text-blue-600 hover:bg-white rounded-lg transition-all duration-300"
+              className="p-2 text-gray-600 hover:text-blue-600 hover:bg-white rounded-lg transition-all duration-300 touch-manipulation flex-shrink-0"
               onClick={toggleMenu}
+              aria-label="Close menu"
             >
-              <X size={24} />
+              <X size={18} />
             </button>
           </div>
 
-          {/* Contact Info Card */}
-          <div className="mx-6 mt-6 p-4 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-xl border border-blue-100">
-            <div className="flex flex-col space-y-3">
+          {/* Contact Info Card - Mobile optimized */}
+          <div className="mx-4 mt-4 p-3 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-xl border border-blue-100 flex-shrink-0">
+            <div className="flex flex-col space-y-2">
               <Link
                 href="tel:+916200665954"
-                className="flex items-center space-x-3 text-blue-600 hover:text-blue-700 transition-colors group"
+                className="flex items-center space-x-3 text-blue-600 hover:text-blue-700 transition-colors group min-w-0"
                 onClick={toggleMenu}
               >
-                <div className="p-2 bg-blue-100 rounded-lg group-hover:bg-blue-200 transition-colors">
-                  <Phone size={16} />
+                <div className="p-2 bg-blue-100 rounded-lg group-hover:bg-blue-200 transition-colors flex-shrink-0">
+                  <Phone size={12} />
                 </div>
-                <span className="font-medium">+91-6200-66-5954</span>
+                <span className="font-medium text-sm truncate">+91-6200-66-5954</span>
               </Link>
               <Link
                 href="mailto:info@harichtech.com"
-                className="flex items-center space-x-3 text-blue-600 hover:text-blue-700 transition-colors group"
+                className="flex items-center space-x-3 text-blue-600 hover:text-blue-700 transition-colors group min-w-0"
                 onClick={toggleMenu}
               >
-                <div className="p-2 bg-blue-100 rounded-lg group-hover:bg-blue-200 transition-colors">
-                  <Mail size={16} />
+                <div className="p-2 bg-blue-100 rounded-lg group-hover:bg-blue-200 transition-colors flex-shrink-0">
+                  <Mail size={12} />
                 </div>
-                <span className="font-medium">info@harichtech.com</span>
+                <span className="font-medium text-sm truncate">info@harichtech.com</span>
               </Link>
             </div>
           </div>
 
-          {/* Navigation */}
-          <nav className="flex-1 overflow-y-auto px-6 mt-6">
-            <ul className="space-y-2">
+          {/* Navigation - Mobile scrollable */}
+          <nav className="flex-1 overflow-y-auto px-4 mt-4 pb-4">
+            <ul className="space-y-1">
               {navItems.map((item) => {
                 const isActive = pathname === item.path;
                 return (
                   <li key={item.name}>
                     <Link
                       href={item.path}
-                      className={`block py-3 px-4 rounded-xl text-base font-medium transition-all duration-300 ${
+                      className={`block py-3 px-4 rounded-xl text-sm font-medium transition-all duration-300 touch-manipulation ${
                         isActive
                           ? "text-blue-600 font-semibold bg-gradient-to-r from-blue-50 to-indigo-50 border border-blue-200"
                           : "text-gray-700 hover:text-blue-600 hover:bg-gray-50"
@@ -296,55 +314,73 @@ const Header = () => {
             </ul>
           </nav>
 
-          {/* Bottom Section */}
-          <div className="p-6 border-t border-gray-100 bg-gray-50">
+          {/* Bottom Section - Mobile fixed */}
+          <div className="p-4 border-t border-gray-100 bg-gray-50 flex-shrink-0">
             <Link
               href="/contact-us"
-              className="flex items-center justify-center w-full px-4 py-3 bg-gradient-to-r from-[#2058FF] to-[#004BC2] text-white font-semibold rounded-xl hover:shadow-lg transition-all duration-300 mb-6 group"
+              className="flex items-center justify-center w-full px-4 py-3 bg-gradient-to-r from-[#2058FF] to-[#004BC2] text-white font-semibold rounded-xl hover:shadow-lg transition-all duration-300 mb-4 group touch-manipulation"
               onClick={toggleMenu}
             >
-              Get in Touch
-              <span className="ml-2 text-lg group-hover:translate-x-1 transition-transform duration-300">
+              <span className="truncate">Get in Touch</span>
+              <span className="ml-2 text-lg group-hover:translate-x-1 transition-transform duration-300 flex-shrink-0">
                 ↗
               </span>
             </Link>
 
-            {/* Social Links */}
-            <div className="flex items-center justify-center space-x-4">
-              <span className="text-sm font-medium text-gray-600 mb-2 block w-full text-center">
+            {/* Social Links - Mobile compact */}
+            <div className="flex flex-col items-center justify-center space-y-3">
+              <span className="text-xs font-medium text-gray-600 text-center">
                 Follow Us
               </span>
-              <div className="flex space-x-3">
+              <div className="flex justify-center space-x-3">
                 <Link
                   href={socialLinks.facebook}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-12 h-12 bg-gradient-to-r from-blue-600 to-blue-700 text-white rounded-xl flex items-center justify-center hover:scale-110 hover:shadow-lg transition-all duration-300"
+                  className="w-9 h-9 bg-blue-600 text-white rounded-lg flex items-center justify-center transition-all duration-300 touch-manipulation hover:bg-blue-700"
+                  aria-label="Facebook"
                 >
-                  <Facebook size={20} />
+                  <Image
+                    src={facebookIcon}
+                    alt="Facebook"
+                    width={12}
+                    height={12}
+                  />
                 </Link>
                 <Link
                   href={socialLinks.instagram}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-12 h-12 bg-gradient-to-r from-pink-500 to-purple-600 text-white rounded-xl flex items-center justify-center hover:scale-110 hover:shadow-lg transition-all duration-300"
+                  className="w-9 h-9 bg-gradient-to-r from-pink-500 to-purple-600 text-white rounded-lg flex items-center justify-center transition-all duration-300 touch-manipulation hover:shadow-lg"
+                  aria-label="Instagram"
                 >
-                  <Instagram size={20} />
+                  <Image
+                    src={instagramIcon}
+                    alt="Instagram"
+                    width={14}
+                    height={14}
+                  />
                 </Link>
                 <Link
                   href={socialLinks.linkedin}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-12 h-12 bg-gradient-to-r from-blue-700 to-blue-800 text-white rounded-xl flex items-center justify-center hover:scale-110 hover:shadow-lg transition-all duration-300"
+                  className="w-9 h-9 bg-gradient-to-r from-blue-700 to-blue-800 text-white rounded-lg flex items-center justify-center transition-all duration-300 touch-manipulation hover:shadow-lg"
+                  aria-label="LinkedIn"
                 >
-                  <Linkedin size={20} />
+                  <Image
+                    src={linkedinIcon}
+                    alt="LinkedIn"
+                    width={14}
+                    height={14}
+                  />
                 </Link>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

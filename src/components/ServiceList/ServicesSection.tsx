@@ -18,7 +18,7 @@ const ServicesSection: React.FC<ServicesSectionProps> = ({ servicesData }) => {
      <Title title={servicesData.title}/>
         </div>
         <h2 className="text-3xl font-bold">
-          Our Core <span className="text-blue-500">Services</span>
+          Our Core <span className="bg-gradient-to-l from-[#2058FF] to-[#004BC2] bg-clip-text text-transparent">Services</span>
         </h2>
       </div>
 

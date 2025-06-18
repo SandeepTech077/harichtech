@@ -14,13 +14,13 @@ const AboutUs: React.FC<AboutUsProps> = ({ aboutUs }) => {
   return (
     <section className="relative w-full mx-auto">
       {/* Title and navigation */}
-      <div className="flex justify-center mb-6">
+      <div className="flex  md:justify-center mb-6">
        <Title title={aboutUs.title}/>
       </div>
 
       {/* Main content */}
-      <div className="text-center mb-10 relative z-10">
-        <h1 className="text-[30px] md:text-[48px] font-bold mb-4">
+      <div className="md:text-center mb-10 relative z-10">
+        <h1 className="text-[32px] md:text-[48px] font-bold mb-4">
   {aboutUs.subTitle.split("Harichtech")[0]}
   <br />
   <span className="mt-2 inline-block bg-gradient-to-l from-[#2058FF] to-[#004BC2] bg-clip-text text-transparent">

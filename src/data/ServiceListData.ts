@@ -398,37 +398,7 @@ export const ServiceListData = {
           },
         ],
       },
-      whyUs: {
-        title: "Why Us",
-        subTitle: "Why Choose Harichtech?",
-        titleDescribation:"Before the first pixel, we’re focused on what matters most: your vision.",
-        describation:
-          "With thoughtful planning, clean design, and smart technology, we build solutions that perform. We value timelines, communication, and craft - delivering work that’s both strategic and beautiful. At Harich Tech, you don’t just get a service - you gain a partner.",
-        list: [
-          {
-            id: 1,
-            describation: "Experienced and skilled digital marketing professionals",
-            LineImage: Helper.Line,
-          },
-          {
-            id: 2,
-            describation:
-              "Customized strategies tailored to your business",
-            LineImage: Helper.Line,
-          },
-          {
-            id: 3,
-            describation: "Data-driven approach and measurable results",
-            LineImage: Helper.Line,
-          },
-          {
-            id: 4,
-            describation: "Transparent communication and ongoing support",
-            LineImage: Helper.Line,
-          },
-        ],
-        rightImg: Helper.RightImage,
-      },
+
     },
   ],
 };
