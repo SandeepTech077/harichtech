@@ -100,6 +100,22 @@ import AeroLogo from "../../public/Image/OurProjects/logo/aero.svg"
 import OreumLogo from "../../public/Image/OurProjects/logo/oerum.svg"
 import EverVitalLogo from "../../public/Image/OurProjects/logo/evervital.svg"
 
+//Cleitensreviw
+
+import InsightClient from "../../public/Image/OurProjects/clientReview/insight.png"
+import AarambhClient from "../../public/Image/OurProjects/clientReview/aarambh.png"
+import MicroClient from "../../public/Image/OurProjects/clientReview/micro.png"
+import ArkleClient from "../../public/Image/OurProjects/clientReview/arkle.png"
+import ShilpClient from "../../public/Image/OurProjects/clientReview/shilp.png"
+import YashClient from "../../public/Image/OurProjects/clientReview/yash.png"
+import SnehalClient from "../../public/Image/OurProjects/clientReview/snehal.png"
+import SnehShilpClient from "../../public/Image/OurProjects/clientReview/snehshilp.png"
+import FestClient from "../../public/Image/OurProjects/clientReview/fest.png"
+import AeroClient from "../../public/Image/OurProjects/clientReview/aero.png"
+import OreumClient from "../../public/Image/OurProjects/clientReview/orium.png"
+import EverVitalClient from "../../public/Image/OurProjects/clientReview/evervital.png"
+
+
 
 //Arrow 
 import festArrow from "../../public/Image/OurProjects/Svg/fest.svg"
@@ -222,6 +238,23 @@ export const Helper = {
     AeroLogo,
     OreumLogo,
     EverVitalLogo,
+
+
+    //cleint 
+    InsightClient,
+    AarambhClient,
+    MicroClient,
+    ArkleClient,
+    ShilpClient,
+    YashClient,
+    SnehalClient,
+    SnehShilpClient,
+    FestClient,
+    AeroClient,
+    OreumClient,
+    EverVitalClient,
+    
+    
 
     
 

@@ -8,49 +8,56 @@ export const OurProjects = {
         icon: Helper.InsightLogo,
         description:
           "At Insight, we believe the key to better decisions is already within reach - It just needs to be uncovered, organized, and understood. In most organizations, valuable knowledge lives in scattered documents, forgotten conversations, and siloed tools.",
-          btnText:"Visit Website",
-          Banner:Helper.InsigtBanner,
-          upArrowSvg:Helper.InsightArrow
+        btnText: "Visit Website",
+        Banner: Helper.InsigtBanner,
+        MobileBanner: Helper.InsigtBanner,
+        upArrowSvg: Helper.InsightArrow,
+        textColor: "text-[#1B5AA7]",
       },
-      projectOverView:{
-        leftSideImage:Helper.InsightOverView,
-        rightContent:{
-            title:"Project Overview",
-            describation:[
-                "At Insight, we believe the key to better decisions is already within reach - It just needs to be uncovered, organized, and understood. In most organizations, valuable knowledge lives in scattered documents, forgotten conversations, and siloed tools. We’re here to change that.",
-                "Insight is a platform built to bring all your research, feedback, and findings into one intelligent, connected space. Whether you're gathering user interviews, analyzing surveys, or sharing internal learnings, we make it easy to turn information into clear, actionable understanding.",
-                "We partner with teams who value thoughtful decisions - product managers, researchers, strategists, and innovators - and help them work with greater clarity, speed, and alignment.",
-                "Our mission is simple: to turn everyday information into powerful insight, and insight into impact.",
-                "Because when you truly understand your world, you can shape it with confidence."
-            ]
-        }
+      projectOverView: {
+        leftSideImage: Helper.InsightOverView,
+        rightContent: {
+          title: "Project Overview",
+          titleTextColor: "text-[#1B5AA7]",
+          describation: [
+            "At Insight, we believe the key to better decisions is already within reach - It just needs to be uncovered, organized, and understood. In most organizations, valuable knowledge lives in scattered documents, forgotten conversations, and siloed tools. We’re here to change that.",
+            "Insight is a platform built to bring all your research, feedback, and findings into one intelligent, connected space. Whether you're gathering user interviews, analyzing surveys, or sharing internal learnings, we make it easy to turn information into clear, actionable understanding.",
+            "We partner with teams who value thoughtful decisions - product managers, researchers, strategists, and innovators - and help them work with greater clarity, speed, and alignment.",
+            "Our mission is simple: to turn everyday information into powerful insight, and insight into impact.",
+            "Because when you truly understand your world, you can shape it with confidence.",
+          ],
+        },
       },
-      MiddleBannerSection:{
-        Banner:Helper.InsightMiddleBanner,
-        mobileBanner:Helper.InsightMiddleBanner
+      MiddleBannerSection: {
+        Banner: Helper.InsightMiddleBanner,
+        mobileBanner: Helper.InsightMiddleBanner,
       },
-      design:{
-        title:"Design System",
-        colors:[
-            {
-                id:1,
-                BgColor:"#1B5AA7"
-            },
-            {
-                id:2,
-                BgColor:"#EEF6FF"
-            },
-            {
-                id:3,
-                BgColor:"#A4A4A4"
-            },
-            {
-                id:4,
-                BgColor:"#958075"
-            }
+      design: {
+        title: "Design System",
+        textColor: "text-[#1B5AA7]",
+        colors: [
+          {
+            id: 1,
+            BgColor: "#1B5AA7",
+          },
+          {
+            id: 2,
+            BgColor: "#EEF6FF",
+          },
+          {
+            id: 3,
+            BgColor: "#A4A4A4",
+          },
+          {
+            id: 4,
+            BgColor: "#958075",
+          },
         ],
-        Banner:Helper.InsightFont,
-
+        Banner: Helper.InsightFont,
+      },
+      review:{
+        banner:Helper.InsightClient,
+        mobileBanner :Helper.InsightClient
       }
     },
     {
@@ -59,553 +66,531 @@ export const OurProjects = {
         icon: Helper.AarambhLogo,
         description:
           "Shilp Aarambh GIFT City Run was conceived as a celebration of fitness, community, and a shared vision for a healthier, drug-free future. The event was born out of the idea that by coming together, we can make a difference in the lives of individuals struggling with drug addiction. It's an opportunity to raise awareness, promote a healthy lifestyle, and build a supportive community.",
-          btnText:"Visit Website",
-          Banner:Helper.AarambhBanner,
-          upArrowSvg:Helper.AarambhBanner
+        btnText: "Visit Website",
+        Banner: Helper.AarambhBanner,
+        upArrowSvg: Helper.AarambhArrow,
+        textColor: "text-[#E51D25]",
       },
-      projectOverView:{
-        leftSideImage:Helper.AarambhOverView,
-        rightContent:{
-            title:"Project Overview",
-            describation:[
-                "Shilp Aarambh GIFT City Run was conceived as a celebration of fitness, community, and a shared vision for a healthier, drug-free future. The event was born out of the idea that by coming together, we can make a difference in the lives of individuals struggling with drug addiction. It's an opportunity to raise awareness, promote a healthy lifestyle, and build a supportive community.",
-               
-            ]
-        }
+      projectOverView: {
+        leftSideImage: Helper.AarambhOverView,
+        rightContent: {
+          title: "Project Overview",
+          textColor: "text-[#E51D25]",
+          describation: [
+            "Shilp Aarambh GIFT City Run was conceived as a celebration of fitness, community, and a shared vision for a healthier, drug-free future. The event was born out of the idea that by coming together, we can make a difference in the lives of individuals struggling with drug addiction. It's an opportunity to raise awareness, promote a healthy lifestyle, and build a supportive community.",
+          ],
+        },
       },
-      MiddleBannerSection:{
-        Banner:Helper.AarambhOverView,
-        mobileBanner:Helper.AarambhOverView
+      MiddleBannerSection: {
+        Banner: Helper.AarambhMiddleBanner,
+        mobileBanner: Helper.AarambhMiddleBanner,
       },
-      design:{
-        title:"Design System",
-        colors:[
-            {
-                id:1,
-                BgColor:"#1B5AA7"
-            },
-            {
-                id:2,
-                BgColor:"#EEF6FF"
-            },
-            {
-                id:3,
-                BgColor:"#FFEBEB"
-            },
-           
+      design: {
+        title: "Design System",
+        textColor: "text-[#E51D25]",
+        colors: [
+          {
+            id: 1,
+            BgColor: "#E51D25",
+          },
+          {
+            id: 2,
+            BgColor: "#EEF6FF",
+          },
+          {
+            id: 3,
+            BgColor: "#FFEBEB",
+          },
         ],
-        Banner:Helper.AarambhFont,
-
+        Banner: Helper.AarambhFont,
+      },
+        review:{
+        banner:Helper.AarambhClient,
+        mobileBanner :Helper.AarambhClient
       }
     },
     {
       id: 3,
       BannerSection: {
-        icon: Helper.InsightLogo,
+        icon: Helper.MicroLogo,
         description:
-          "At Insight, we believe the key to better decisions is already within reach - It just needs to be uncovered, organized, and understood. In most organizations, valuable knowledge lives in scattered documents, forgotten conversations, and siloed tools.",
-          btnText:"Visit Website",
-          Banner:Helper.InsigtBanner,
-          upArrowSvg:Helper.InsightArrow
+          "At Microb Range Pvt Ltd, we are dedicated to transforming global nutrition through innovative, science-backed solutions. By combining Spirulina, collagen, and other microbial advancements, we provide affordable, non-GMO, and chemical-free nutraceutical products that cater to diverse dietary needs. ",
+        btnText: "Visit Website",
+        textColor: "text-[#4BBA72]",
+        Banner: Helper.MicroBanner,
+        upArrowSvg: Helper.MicroArrow,
       },
-      projectOverView:{
-        leftSideImage:Helper.InsightOverView,
-        rightContent:{
-            title:"Project Overview",
-            describation:[
-                "At Insight, we believe the key to better decisions is already within reach - It just needs to be uncovered, organized, and understood. In most organizations, valuable knowledge lives in scattered documents, forgotten conversations, and siloed tools. We’re here to change that.",
-                "Insight is a platform built to bring all your research, feedback, and findings into one intelligent, connected space. Whether you're gathering user interviews, analyzing surveys, or sharing internal learnings, we make it easy to turn information into clear, actionable understanding.",
-                "We partner with teams who value thoughtful decisions - product managers, researchers, strategists, and innovators - and help them work with greater clarity, speed, and alignment.",
-                "Our mission is simple: to turn everyday information into powerful insight, and insight into impact.",
-                "Because when you truly understand your world, you can shape it with confidence."
-            ]
-        }
+      projectOverView: {
+        leftSideImage: Helper.MicroOverView,
+        rightContent: {
+          title: "Project Overview",
+         titleTextColor: "text-[#4BBA72]",
+          describation: [
+            "At Microb Range Pvt Ltd, we are dedicated to transforming global nutrition through innovative, science-backed solutions. By combining Spirulina, collagen, and other microbial advancements, we provide affordable, non-GMO, and chemical-free nutraceutical products that cater to diverse dietary needs. ",
+            "Our mission is to combat malnutrition and nutritional deficiencies while promoting overall health and well-being. With a focus on sustainability, inclusivity, and rigorous research, we strive to make balanced nutrition accessible to all.",
+          ],
+        },
       },
-      MiddleBannerSection:{
-        Banner:Helper.InsightMiddleBanner,
-        mobileBanner:Helper.InsightMiddleBanner
+      MiddleBannerSection: {
+        Banner: Helper.MicroMiddleBanner,
+        mobileBanner: Helper.MicroMiddleBanner,
       },
-      design:{
-        title:"Design System",
-        colors:[
-            {
-                id:1,
-                BgColor:"#1B5AA7"
-            },
-            {
-                id:2,
-                BgColor:"#EEF6FF"
-            },
-            {
-                id:3,
-                BgColor:"#A4A4A4"
-            },
-            {
-                id:4,
-                BgColor:"#958075"
-            }
+      design: {
+        title: "Design System",
+        textColor: "text-[#4BBA72]",
+        colors: [
+          {
+            id: 1,
+            BgColor: "#4BBA72",
+          },
+          {
+            id: 2,
+            BgColor: "#CBFFDD",
+          },
+          {
+            id: 3,
+            BgColor: "#EDFFF3",
+          },
+          {
+            id: 4,
+            BgColor: "#2D2D2D",
+          },
         ],
-        Banner:Helper.InsightFont,
-
+        Banner: Helper.MicroFont,
+      },
+        review:{
+        banner:Helper.MicroClient,
+        mobileBanner :Helper.MicroClient
       }
     },
     {
-      id: 1,
+      id: 4,
       BannerSection: {
-        icon: Helper.InsightLogo,
+        icon: Helper.ArkleLogo,
         description:
-          "At Insight, we believe the key to better decisions is already within reach - It just needs to be uncovered, organized, and understood. In most organizations, valuable knowledge lives in scattered documents, forgotten conversations, and siloed tools.",
-          btnText:"Visit Website",
-          Banner:Helper.InsigtBanner,
-          upArrowSvg:Helper.InsightArrow
+          "At Arkle Equestrian Club, we pride ourselves on transforming both horses and riders into champions. Our comprehensive training programs have helped countless equestrians achieve their dreams, fostering a competitive spirit through personalized coaching and exceptional horse care.",
+        btnText: "Visit Website",
+        titleTextColor: "text-black",
+        Banner: Helper.ArkleBanner,
+        upArrowSvg: Helper.BlackArrow,
       },
-      projectOverView:{
-        leftSideImage:Helper.InsightOverView,
-        rightContent:{
-            title:"Project Overview",
-            describation:[
-                "At Insight, we believe the key to better decisions is already within reach - It just needs to be uncovered, organized, and understood. In most organizations, valuable knowledge lives in scattered documents, forgotten conversations, and siloed tools. We’re here to change that.",
-                "Insight is a platform built to bring all your research, feedback, and findings into one intelligent, connected space. Whether you're gathering user interviews, analyzing surveys, or sharing internal learnings, we make it easy to turn information into clear, actionable understanding.",
-                "We partner with teams who value thoughtful decisions - product managers, researchers, strategists, and innovators - and help them work with greater clarity, speed, and alignment.",
-                "Our mission is simple: to turn everyday information into powerful insight, and insight into impact.",
-                "Because when you truly understand your world, you can shape it with confidence."
-            ]
-        }
+      projectOverView: {
+        leftSideImage: Helper.ArkleOverView,
+        rightContent: {
+          title: "Project Overview",
+          titleTextColor: "text-[#D09A40]",
+          describation: [
+            "At Arkle Equestrian Club, we pride ourselves on transforming both horses and riders into champions. Our comprehensive training programs have helped countless equestrians achieve their dreams, fostering a competitive spirit through personalized coaching and exceptional horse care.",
+            "Founded in 2005, Arkle Equestrian Club stands as Gujarat’s premier destination for horse boarding, training, and leasing. Our experienced trainers provide tailored services designed to meet the unique needs of each horse and rider, ensuring excellence in equestrian sports.",
+          ],
+        },
       },
-      MiddleBannerSection:{
-        Banner:Helper.InsightMiddleBanner,
-        mobileBanner:Helper.InsightMiddleBanner
+      MiddleBannerSection: {
+        Banner: Helper.ArkleMiddleBanner,
+        mobileBanner: Helper.ArkleMiddleBanner,
       },
-      design:{
-        title:"Design System",
-        colors:[
-            {
-                id:1,
-                BgColor:"#1B5AA7"
-            },
-            {
-                id:2,
-                BgColor:"#EEF6FF"
-            },
-            {
-                id:3,
-                BgColor:"#A4A4A4"
-            },
-            {
-                id:4,
-                BgColor:"#958075"
-            }
+      design: {
+        title: "Design System",
+        textColor: "text-[#D09A40]",
+        colors: [
+          {
+            id: 1,
+            BgColor: "#D09A40",
+          },
+          {
+            id: 2,
+            BgColor: "#212121",
+          },
+          {
+            id: 3,
+            BgColor: "#B3B3B3",
+          },
         ],
-        Banner:Helper.InsightFont,
-
+        Banner: Helper.ArkleFont,
+      },
+        review:{
+        banner:Helper.ArkleClient,
+        mobileBanner :Helper.ArkleClient
       }
     },
     {
-      id: 1,
+      id: 5,
       BannerSection: {
-        icon: Helper.InsightLogo,
+        icon: Helper.ShilpLogo,
         description:
-          "At Insight, we believe the key to better decisions is already within reach - It just needs to be uncovered, organized, and understood. In most organizations, valuable knowledge lives in scattered documents, forgotten conversations, and siloed tools.",
-          btnText:"Visit Website",
-          Banner:Helper.InsigtBanner,
-          upArrowSvg:Helper.InsightArrow
+          "Shilp Group, a leading real estate company in Ahmedabad, is built on the pillars of quality, integrity, and authenticity. Recognized for its innovative approach, cutting-edge designs, and commitment to excellence, Shilp Group has delivered over 50 landmark projects across the city. The company is known for identifying upcoming areas and creating modern, dynamic structures that meet market needs.",
+        btnText: "Visit Website",
+        textColor: "text-black",
+        Banner: Helper.ShilpBanner,
+        upArrowSvg: Helper.BlackArrow,
       },
-      projectOverView:{
-        leftSideImage:Helper.InsightOverView,
-        rightContent:{
-            title:"Project Overview",
-            describation:[
-                "At Insight, we believe the key to better decisions is already within reach - It just needs to be uncovered, organized, and understood. In most organizations, valuable knowledge lives in scattered documents, forgotten conversations, and siloed tools. We’re here to change that.",
-                "Insight is a platform built to bring all your research, feedback, and findings into one intelligent, connected space. Whether you're gathering user interviews, analyzing surveys, or sharing internal learnings, we make it easy to turn information into clear, actionable understanding.",
-                "We partner with teams who value thoughtful decisions - product managers, researchers, strategists, and innovators - and help them work with greater clarity, speed, and alignment.",
-                "Our mission is simple: to turn everyday information into powerful insight, and insight into impact.",
-                "Because when you truly understand your world, you can shape it with confidence."
-            ]
-        }
+      projectOverView: {
+        leftSideImage: Helper.ShilpOverView,
+        rightContent: {
+          title: "Project Overview",
+          titleTextColor: "text-black",
+          describation: [
+            "Shilp Group, a leading real estate company in Ahmedabad, is built on the pillars of quality, integrity, and authenticity. Recognized for its innovative approach, cutting-edge designs, and commitment to excellence, Shilp Group has delivered over 50 landmark projects across the city. The company is known for identifying upcoming areas and creating modern, dynamic structures that meet market needs.",
+            "Founded in 2004 by Mr. Yash Brahmbhatt, Shilp Group started with a small land acquisition and has since grown into a trusted brand shaping Ahmedabad’s skyline. It was the first to develop projects on Sindhu Bhavan Road, now a prime location, and continues to pioneer strategic real estate developments. Adapting to trends while staying true to timeless values, Shilp Group has also ventured into affordable housing and plotting schemes to meet evolving demands.",
+          ],
+        },
       },
-      MiddleBannerSection:{
-        Banner:Helper.InsightMiddleBanner,
-        mobileBanner:Helper.InsightMiddleBanner
+      MiddleBannerSection: {
+        Banner: Helper.ShilpMiddleBanner,
+        mobileBanner: Helper.ShilpMiddleBanner,
       },
-      design:{
-        title:"Design System",
-        colors:[
-            {
-                id:1,
-                BgColor:"#1B5AA7"
-            },
-            {
-                id:2,
-                BgColor:"#EEF6FF"
-            },
-            {
-                id:3,
-                BgColor:"#A4A4A4"
-            },
-            {
-                id:4,
-                BgColor:"#958075"
-            }
+      design: {
+        title: "Design System",
+        textColor: "text-black",
+        colors: [
+          {
+            id: 1,
+            BgColor: "#000000",
+          },
+          {
+            id: 2,
+            BgColor: "#727272",
+          },
         ],
-        Banner:Helper.InsightFont,
-
+        Banner: Helper.ShilpFont,
+      },
+        review:{
+        banner:Helper.ShilpClient,
+        mobileBanner :Helper.ShilpClient
       }
     },
     {
-      id: 1,
+      id: 6,
       BannerSection: {
-        icon: Helper.InsightLogo,
+        icon: Helper.YashLogo,
         description:
-          "At Insight, we believe the key to better decisions is already within reach - It just needs to be uncovered, organized, and understood. In most organizations, valuable knowledge lives in scattered documents, forgotten conversations, and siloed tools.",
-          btnText:"Visit Website",
-          Banner:Helper.InsigtBanner,
-          upArrowSvg:Helper.InsightArrow
+          "Yash Brahmbhatt is a self-made, first-generation entrepreneur and the founder and CEO of Shilp Group, a leading real estate company in Ahmedabad. Coming from humble beginnings, he never waited for opportunities—he created them. With a strong vision and relentless drive, he has shaped both his journey and the city’s skyline. ",
+        btnText: "Visit Website",
+        textColor: "text-black",
+        Banner: Helper.YashBanner,
+        upArrowSvg: Helper.BlackArrow,
       },
-      projectOverView:{
-        leftSideImage:Helper.InsightOverView,
-        rightContent:{
-            title:"Project Overview",
-            describation:[
-                "At Insight, we believe the key to better decisions is already within reach - It just needs to be uncovered, organized, and understood. In most organizations, valuable knowledge lives in scattered documents, forgotten conversations, and siloed tools. We’re here to change that.",
-                "Insight is a platform built to bring all your research, feedback, and findings into one intelligent, connected space. Whether you're gathering user interviews, analyzing surveys, or sharing internal learnings, we make it easy to turn information into clear, actionable understanding.",
-                "We partner with teams who value thoughtful decisions - product managers, researchers, strategists, and innovators - and help them work with greater clarity, speed, and alignment.",
-                "Our mission is simple: to turn everyday information into powerful insight, and insight into impact.",
-                "Because when you truly understand your world, you can shape it with confidence."
-            ]
-        }
+      projectOverView: {
+        leftSideImage: Helper.YashOverView,
+        rightContent: {
+          title: "Project Overview",
+          titleTextColor: "text-black",
+          describation: [
+            "A firm believer in shaping his own fate, Yash leads with a mindset that combines decisiveness with dedication. His journey is deeply rooted in his values. Ethics, he believes, define a man’s true character, and there is never a wrong time to do the right thing. Choosing integrity over convenience has always been his guiding principle. Commitment, to him, is the foundation of success—it transforms ideas into tangible outcomes and fuels the determination to move forward with purpose. ",
+            "Excellence is not merely achieved but created, crafted through a blend of diligence, vision, and creativity. He refuses to settle for the good when greatness is within reach. Transparency is a virtue he holds dear, as it builds trust, fosters strong relationships, and creates lasting credibility. Honesty and openness form the cornerstone of both his business and personal life, making him a leader who inspires confidence and respect.",
+          ],
+        },
       },
-      MiddleBannerSection:{
-        Banner:Helper.InsightMiddleBanner,
-        mobileBanner:Helper.InsightMiddleBanner
+      MiddleBannerSection: {
+        Banner: Helper.YashMiddleBanner,
+        mobileBanner: Helper.YashMiddleBanner,
       },
-      design:{
-        title:"Design System",
-        colors:[
-            {
-                id:1,
-                BgColor:"#1B5AA7"
-            },
-            {
-                id:2,
-                BgColor:"#EEF6FF"
-            },
-            {
-                id:3,
-                BgColor:"#A4A4A4"
-            },
-            {
-                id:4,
-                BgColor:"#958075"
-            }
+      design: {
+        title: "Design System",
+        textColor: "text-black",
+        colors: [
+          {
+            id: 1,
+            BgColor: "#2A2A2A",
+          },
+          {
+            id: 2,
+            BgColor: "#999999",
+          },
         ],
-        Banner:Helper.InsightFont,
-
+        Banner: Helper.YashFont,
+      },
+       review:{
+        banner:Helper.YashClient,
+        mobileBanner :Helper.YashClient
       }
     },
     {
-      id: 1,
+      id: 7,
       BannerSection: {
-        icon: Helper.InsightLogo,
+        icon: Helper.SnehalLogo,
         description:
-          "At Insight, we believe the key to better decisions is already within reach - It just needs to be uncovered, organized, and understood. In most organizations, valuable knowledge lives in scattered documents, forgotten conversations, and siloed tools.",
-          btnText:"Visit Website",
-          Banner:Helper.InsigtBanner,
-          upArrowSvg:Helper.InsightArrow
+          "Meet Snehal Brahmbhatt - a maverick, innovator, and changemaker. As the Founder of Snehshilp Foundation, COO of the prestigious Shilp Group, and Spousal Chair of the EO Gujarat Chapter, Snehal’s journey is anything but conventional. ",
+        btnText: "Visit Website",
+        textColor: "text-black",
+        Banner: Helper.SnehalBanner,
+        upArrowSvg: Helper.BlackArrow,
       },
-      projectOverView:{
-        leftSideImage:Helper.InsightOverView,
-        rightContent:{
-            title:"Project Overview",
-            describation:[
-                "At Insight, we believe the key to better decisions is already within reach - It just needs to be uncovered, organized, and understood. In most organizations, valuable knowledge lives in scattered documents, forgotten conversations, and siloed tools. We’re here to change that.",
-                "Insight is a platform built to bring all your research, feedback, and findings into one intelligent, connected space. Whether you're gathering user interviews, analyzing surveys, or sharing internal learnings, we make it easy to turn information into clear, actionable understanding.",
-                "We partner with teams who value thoughtful decisions - product managers, researchers, strategists, and innovators - and help them work with greater clarity, speed, and alignment.",
-                "Our mission is simple: to turn everyday information into powerful insight, and insight into impact.",
-                "Because when you truly understand your world, you can shape it with confidence."
-            ]
-        }
+      projectOverView: {
+        leftSideImage: Helper.SnehalOverView,
+        rightContent: {
+          title: "Project Overview",
+          titleTextColor: "text-black",
+          describation: [
+            "Meet Snehal Brahmbhatt - a maverick, innovator, and changemaker. As the Founder of Snehshilp Foundation, COO of the prestigious Shilp Group, and Spousal Chair of the EO Gujarat Chapter, Snehal’s journey is anything but conventional. Her passion for youth empowerment, community service, and leadership transcends boundaries, challenging societal norms and redefining what’s possible. With a fearless spirit and a mind that thrives on innovation, she doesn’t just follow the rules - she rewrites them. Snehal’s mission is to inspire, empower, and create a world where bold ideas ignite meaningful change.",
+            "Step into her world and witness a life driven by purpose, creativity, and a belief in the power of individuality.",
+          ],
+        },
       },
-      MiddleBannerSection:{
-        Banner:Helper.InsightMiddleBanner,
-        mobileBanner:Helper.InsightMiddleBanner
+      MiddleBannerSection: {
+        Banner: Helper.ShilpMiddleBanner,
+        mobileBanner: Helper.ShilpMiddleBanner,
       },
-      design:{
-        title:"Design System",
-        colors:[
-            {
-                id:1,
-                BgColor:"#1B5AA7"
-            },
-            {
-                id:2,
-                BgColor:"#EEF6FF"
-            },
-            {
-                id:3,
-                BgColor:"#A4A4A4"
-            },
-            {
-                id:4,
-                BgColor:"#958075"
-            }
+      design: {
+        title: "Design System",
+        textColor: "text-black",
+        colors: [
+          {
+            id: 1,
+            BgColor: "#000000",
+          },
+          {
+            id: 2,
+            BgColor: "#727272",
+          },
         ],
-        Banner:Helper.InsightFont,
-
+        Banner: Helper.SnehalFont,
+      },
+       review:{
+        banner:Helper.SnehShilpClient,
+        mobileBanner :Helper.SnehShilpClient
       }
     },
     {
-      id: 1,
+      id: 8,
       BannerSection: {
-        icon: Helper.InsightLogo,
+        icon: Helper.SnehShilpLogo,
         description:
           "At Insight, we believe the key to better decisions is already within reach - It just needs to be uncovered, organized, and understood. In most organizations, valuable knowledge lives in scattered documents, forgotten conversations, and siloed tools.",
-          btnText:"Visit Website",
-          Banner:Helper.InsigtBanner,
-          upArrowSvg:Helper.InsightArrow
+        btnText: "Visit Website",
+        textColor: "text-[#73BE5F]",
+        Banner: Helper.SnehShilpBanner,
+        upArrowSvg: Helper.MicroArrow,
       },
-      projectOverView:{
-        leftSideImage:Helper.InsightOverView,
-        rightContent:{
-            title:"Project Overview",
-            describation:[
-                "At Insight, we believe the key to better decisions is already within reach - It just needs to be uncovered, organized, and understood. In most organizations, valuable knowledge lives in scattered documents, forgotten conversations, and siloed tools. We’re here to change that.",
-                "Insight is a platform built to bring all your research, feedback, and findings into one intelligent, connected space. Whether you're gathering user interviews, analyzing surveys, or sharing internal learnings, we make it easy to turn information into clear, actionable understanding.",
-                "We partner with teams who value thoughtful decisions - product managers, researchers, strategists, and innovators - and help them work with greater clarity, speed, and alignment.",
-                "Our mission is simple: to turn everyday information into powerful insight, and insight into impact.",
-                "Because when you truly understand your world, you can shape it with confidence."
-            ]
-        }
+      projectOverView: {
+        leftSideImage: Helper.SnehShilpOverView,
+        rightContent: {
+          title: "Project Overview",
+          titleTextColor: "text-[#73BE5F]",
+          describation: [
+            "SnehShilp Foundation is the culmination of the years of hard work of Shilp. Shilp has been turning people’s dreams into reality since 2004 by keeping their needs in focus and building around them. We wish to take a leap now and give back to the society by doing what it takes to make a significant difference in people’s lives. SnehShilp Foundation has been established with the sole purpose of empowering, strengthening and enabling people to live a life they truly deserve.",
+            "We sincerely believe that helping others is not a matter of time, it is about feelings followed by dedication. It isn’t about doing great things; it is all about doing small things with great love. There is a lot of power in giving. Lending a hand to someone not only helps the one in need but greatly satisfies the thirst of the giver, the thirst of happiness and self-fulfillment.",
+          ],
+        },
       },
-      MiddleBannerSection:{
-        Banner:Helper.InsightMiddleBanner,
-        mobileBanner:Helper.InsightMiddleBanner
+      MiddleBannerSection: {
+        Banner: Helper.SnehShilpMiddleBanner,
+        mobileBanner: Helper.SnehShilpMiddleBanner,
       },
-      design:{
-        title:"Design System",
-        colors:[
-            {
-                id:1,
-                BgColor:"#1B5AA7"
-            },
-            {
-                id:2,
-                BgColor:"#EEF6FF"
-            },
-            {
-                id:3,
-                BgColor:"#A4A4A4"
-            },
-            {
-                id:4,
-                BgColor:"#958075"
-            }
+      design: {
+        title: "Design System",
+        textColor: "text-[#73BE5F]",
+        colors: [
+          {
+            id: 1,
+            BgColor: "#73BE5F",
+          },
+          {
+            id: 2,
+            BgColor: "#EEFFE9",
+          },
         ],
-        Banner:Helper.InsightFont,
-
+        Banner: Helper.SnehalFont,
+      },
+       review:{
+        banner:Helper.SnehShilpClient,
+        mobileBanner :Helper.SnehShilpClient
       }
     },
     {
-      id: 1,
+      id: 9,
       BannerSection: {
-        icon: Helper.InsightLogo,
+        icon: Helper.FestLogo,
         description:
-          "At Insight, we believe the key to better decisions is already within reach - It just needs to be uncovered, organized, and understood. In most organizations, valuable knowledge lives in scattered documents, forgotten conversations, and siloed tools.",
-          btnText:"Visit Website",
-          Banner:Helper.InsigtBanner,
-          upArrowSvg:Helper.InsightArrow
+          "Snehshilp Foundation's 'Start-Up Fest Gujarat' highlights the thriving spirit of entrepreneurship and innovation in the region. Founded and driven by the visionary Mrs. Snehal Brahmbhatt, the event aims to fill the void in start-up support by providing a comprehensive platform for fresh ideas to flourish.",
+        btnText: "Visit Website",
+        textColor: "text-[#003777]",
+        Banner: Helper.FestBanner,
+        upArrowSvg: Helper.festArrow,
       },
-      projectOverView:{
-        leftSideImage:Helper.InsightOverView,
-        rightContent:{
-            title:"Project Overview",
-            describation:[
-                "At Insight, we believe the key to better decisions is already within reach - It just needs to be uncovered, organized, and understood. In most organizations, valuable knowledge lives in scattered documents, forgotten conversations, and siloed tools. We’re here to change that.",
-                "Insight is a platform built to bring all your research, feedback, and findings into one intelligent, connected space. Whether you're gathering user interviews, analyzing surveys, or sharing internal learnings, we make it easy to turn information into clear, actionable understanding.",
-                "We partner with teams who value thoughtful decisions - product managers, researchers, strategists, and innovators - and help them work with greater clarity, speed, and alignment.",
-                "Our mission is simple: to turn everyday information into powerful insight, and insight into impact.",
-                "Because when you truly understand your world, you can shape it with confidence."
-            ]
-        }
+      projectOverView: {
+        leftSideImage: Helper.FestOverView,
+        rightContent: {
+          title: "Project Overview",
+          titleTextColor: "text-[#003777]",
+          describation: [
+            "Snehshilp Foundation's 'Start-Up Fest Gujarat' highlights the thriving spirit of entrepreneurship and innovation in the region. Founded and driven by the visionary Mrs. Snehal Brahmbhatt, the event aims to fill the void in start-up support by providing a comprehensive platform for fresh ideas to flourish.",
+            "The annual event brings together start-ups, investors, and industry collaboration. Leaders for two days, creating an atmosphere of inspiration and fruitful collaboration.",
+          ],
+        },
       },
-      MiddleBannerSection:{
-        Banner:Helper.InsightMiddleBanner,
-        mobileBanner:Helper.InsightMiddleBanner
+      MiddleBannerSection: {
+        Banner: Helper.FestMiddleBanner,
+        mobileBanner: Helper.FestMiddleBanner,
       },
-      design:{
-        title:"Design System",
-        colors:[
-            {
-                id:1,
-                BgColor:"#1B5AA7"
-            },
-            {
-                id:2,
-                BgColor:"#EEF6FF"
-            },
-            {
-                id:3,
-                BgColor:"#A4A4A4"
-            },
-            {
-                id:4,
-                BgColor:"#958075"
-            }
+      design: {
+        title: "Design System",
+        textColor: "text-[#003777]",
+        colors: [
+          {
+            id: 1,
+            BgColor: "#003777",
+          },
+          {
+            id: 2,
+            BgColor: "#F2F8FF",
+          },
         ],
-        Banner:Helper.InsightFont,
+        Banner: Helper.FestFont,
+      },
+       review:{
+        banner:Helper.FestClient,
+        mobileBanner :Helper.FestClient
+      }
+    },
 
+    {
+      id: 10,
+      BannerSection: {
+        icon: Helper.AeroLogo,
+        description:
+          "Qorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis.",
+        btnText: "Visit Website",
+        Banner: Helper.AeroBanner,
+        textColor: "text-[#53CCC7]",
+        upArrowSvg: Helper.BlackArrow,
+      },
+      projectOverView: {
+        leftSideImage: Helper.ArkleOverView,
+        rightContent: {
+          title: "Project Overview",
+          titleTextColor: "text-[#53CCC7]",
+          describation: [
+            " Qorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent auctor purus luctus enim egestas, ac scelerisque ante pulvinar. Donec ut rhoncus ex. Suspendisse ac rhoncus nisl, eu tempor urna. Curabitur vel bibendum lorem. Morbi convallis convallis diam sit amet lacinia. Aliquam in elementum tellus.",
+          ],
+        },
+      },
+      MiddleBannerSection: {
+        Banner: Helper.AeroMiddleBanner,
+        mobileBanner: Helper.AeroMiddleBanner,
+      },
+      design: {
+        title: "Design System",
+        textColor: "text-[#53CCC7]",
+        colors: [
+          {
+            id: 1,
+            BgColor: "#53CCC7",
+          },
+          {
+            id: 2,
+            BgColor: "#161616",
+          },
+          {
+            id: 3,
+            BgColor: "#878787",
+          },
+        ],
+        Banner: Helper.InsightFont,
+      },
+      review:{
+        banner:Helper.AeroClient,
+        mobileBanner :Helper.AeroClient
       }
     },
     {
-      id: 1,
+      id: 11,
       BannerSection: {
-        icon: Helper.InsightLogo,
+        icon: Helper.OreumLogo,
         description:
-          "At Insight, we believe the key to better decisions is already within reach - It just needs to be uncovered, organized, and understood. In most organizations, valuable knowledge lives in scattered documents, forgotten conversations, and siloed tools.",
-          btnText:"Visit Website",
-          Banner:Helper.InsigtBanner,
-          upArrowSvg:Helper.InsightArrow
+          "A next-generation, compact air purification system powered by Spirulina and other high-performing microalgae—often referred to as “liquid trees” for their remarkable ability to convert CO₂ into oxygen at rates surpassing most terrestrial plants, our system enhances indoor environments by working in harmony with traditional greenery—not replacing, but reinforcing nature’s work. ",
+        btnText: "Visit Website",
+        Banner: Helper.OreumBanner,
+        textColor: "text-[#05A750]",
+        upArrowSvg: Helper.BlackArrow,
       },
-      projectOverView:{
-        leftSideImage:Helper.InsightOverView,
-        rightContent:{
-            title:"Project Overview",
-            describation:[
-                "At Insight, we believe the key to better decisions is already within reach - It just needs to be uncovered, organized, and understood. In most organizations, valuable knowledge lives in scattered documents, forgotten conversations, and siloed tools. We’re here to change that.",
-                "Insight is a platform built to bring all your research, feedback, and findings into one intelligent, connected space. Whether you're gathering user interviews, analyzing surveys, or sharing internal learnings, we make it easy to turn information into clear, actionable understanding.",
-                "We partner with teams who value thoughtful decisions - product managers, researchers, strategists, and innovators - and help them work with greater clarity, speed, and alignment.",
-                "Our mission is simple: to turn everyday information into powerful insight, and insight into impact.",
-                "Because when you truly understand your world, you can shape it with confidence."
-            ]
-        }
+      projectOverView: {
+        leftSideImage: Helper.OreumOverView,
+        rightContent: {
+          title: "Project Overview",
+          titleTextColor: "text-[#05A750]",
+          describation: [
+            "A next-generation, compact air purification system powered by Spirulina and other high-performing microalgae—often referred to as “liquid trees” for their remarkable ability to convert CO₂ into oxygen at rates surpassing most terrestrial plants, our system enhances indoor environments by working in harmony with traditional greenery—not replacing, but reinforcing nature’s work. Beyond oxygenation, Orium’s advanced biofiltration technology actively reduces airborne bacterial load and removes harmful particulate matter (PM2.5 and PM10), making it ideal for homes, offices, and healthcare spaces. Constructed from biodegradable, recyclable materials and equipped with automated monitoring and control systems, Orium is a smart, sustainable solution for healthier indoor living.  ",
+          ],
+        },
       },
-      MiddleBannerSection:{
-        Banner:Helper.InsightMiddleBanner,
-        mobileBanner:Helper.InsightMiddleBanner
+      MiddleBannerSection: {
+        Banner: Helper.OreumMiddleBanner,
+        mobileBanner: Helper.OreumMiddleBanner,
       },
-      design:{
-        title:"Design System",
-        colors:[
-            {
-                id:1,
-                BgColor:"#1B5AA7"
-            },
-            {
-                id:2,
-                BgColor:"#EEF6FF"
-            },
-            {
-                id:3,
-                BgColor:"#A4A4A4"
-            },
-            {
-                id:4,
-                BgColor:"#958075"
-            }
+      design: {
+        title: "Design System",
+        textColor: "text-[#05A750]",
+        colors: [
+          {
+            id: 1,
+            BgColor: "#53CCC7",
+          },
+          {
+            id: 2,
+            BgColor: "#2D2D2D",
+          },
+          {
+            id: 3,
+            BgColor: "#747474",
+          },
         ],
-        Banner:Helper.InsightFont,
-
+        Banner: Helper.OreumFont,
+      },
+      review:{
+        banner:Helper.OreumClient,
+        mobileBanner :Helper.OreumClient
       }
     },
     {
-      id: 1,
+      id: 12,
       BannerSection: {
-        icon: Helper.InsightLogo,
+        icon: Helper.EverVitalLogo,
         description:
-          "At Insight, we believe the key to better decisions is already within reach - It just needs to be uncovered, organized, and understood. In most organizations, valuable knowledge lives in scattered documents, forgotten conversations, and siloed tools.",
-          btnText:"Visit Website",
-          Banner:Helper.InsigtBanner,
-          upArrowSvg:Helper.InsightArrow
+          "Once upon a time, in a world where modern life often left people struggling to maintain their health, a vision was born—a vision of a healthier, more nourished world. This dream became Ever Vital, a trusted companion for those seeking balance in their busy lives.At Ever Vital, we believe that good health is not a luxury but a necessity—a cornerstone of a fulfilling and vibrant life.",
+        btnText: "Visit Website",
+        Banner: Helper.EverVitalBanner,
+        textColor: "text-[#218A66]",
+        upArrowSvg: Helper.BlackArrow,
       },
-      projectOverView:{
-        leftSideImage:Helper.InsightOverView,
-        rightContent:{
-            title:"Project Overview",
-            describation:[
-                "At Insight, we believe the key to better decisions is already within reach - It just needs to be uncovered, organized, and understood. In most organizations, valuable knowledge lives in scattered documents, forgotten conversations, and siloed tools. We’re here to change that.",
-                "Insight is a platform built to bring all your research, feedback, and findings into one intelligent, connected space. Whether you're gathering user interviews, analyzing surveys, or sharing internal learnings, we make it easy to turn information into clear, actionable understanding.",
-                "We partner with teams who value thoughtful decisions - product managers, researchers, strategists, and innovators - and help them work with greater clarity, speed, and alignment.",
-                "Our mission is simple: to turn everyday information into powerful insight, and insight into impact.",
-                "Because when you truly understand your world, you can shape it with confidence."
-            ]
-        }
+      projectOverView: {
+        leftSideImage: Helper.EverVitalOverView,
+        rightContent: {
+          title: "Project Overview",
+          titleTextColor: "text-[#218A66]",
+          describation: [
+            "Once upon a time, in a world where modern life often left people struggling to maintain their health, a vision was born—a vision of a healthier, more nourished world. This dream became Ever Vital, a trusted companion for those seeking balance in their busy lives.",
+            "At Ever Vital, we believe that good health is not a luxury but a necessity—a cornerstone of a fulfilling and vibrant life. Guided by this belief, we set out on a mission as simple as it was profound: to make balanced nutrition accessible and affordable for all.",
+            "Imagine a family, their days filled with responsibilities and aspirations, yearning for wellness but unsure how to achieve it. Enter Ever Vital with its all-in-one nutraceutical solution—a blend of nature’s finest ingredients, crafted to fill the gaps in daily nutrition. ",
+          ],
+        },
       },
-      MiddleBannerSection:{
-        Banner:Helper.InsightMiddleBanner,
-        mobileBanner:Helper.InsightMiddleBanner
+      MiddleBannerSection: {
+        Banner: Helper.EverVitalMiddleBanner,
+        mobileBanner: Helper.EverVitalMiddleBanner,
       },
-      design:{
-        title:"Design System",
-        colors:[
-            {
-                id:1,
-                BgColor:"#1B5AA7"
-            },
-            {
-                id:2,
-                BgColor:"#EEF6FF"
-            },
-            {
-                id:3,
-                BgColor:"#A4A4A4"
-            },
-            {
-                id:4,
-                BgColor:"#958075"
-            }
+      design: {
+        title: "Design System",
+        textColor: "text-[#218A66]",
+        colors: [
+          {
+            id: 1,
+            BgColor: "#218A66",
+          },
+          {
+            id: 2,
+            BgColor: "#E9FFF7",
+          },
+          {
+            id: 3,
+            BgColor: "#909090",
+          },
         ],
-        Banner:Helper.InsightFont,
-
-      }
-    },
-    {
-      id: 1,
-      BannerSection: {
-        icon: Helper.InsightLogo,
-        description:
-          "At Insight, we believe the key to better decisions is already within reach - It just needs to be uncovered, organized, and understood. In most organizations, valuable knowledge lives in scattered documents, forgotten conversations, and siloed tools.",
-          btnText:"Visit Website",
-          Banner:Helper.InsigtBanner,
-          upArrowSvg:Helper.InsightArrow
+        Banner: Helper.EverVitalFont,
       },
-      projectOverView:{
-        leftSideImage:Helper.InsightOverView,
-        rightContent:{
-            title:"Project Overview",
-            describation:[
-                "At Insight, we believe the key to better decisions is already within reach - It just needs to be uncovered, organized, and understood. In most organizations, valuable knowledge lives in scattered documents, forgotten conversations, and siloed tools. We’re here to change that.",
-                "Insight is a platform built to bring all your research, feedback, and findings into one intelligent, connected space. Whether you're gathering user interviews, analyzing surveys, or sharing internal learnings, we make it easy to turn information into clear, actionable understanding.",
-                "We partner with teams who value thoughtful decisions - product managers, researchers, strategists, and innovators - and help them work with greater clarity, speed, and alignment.",
-                "Our mission is simple: to turn everyday information into powerful insight, and insight into impact.",
-                "Because when you truly understand your world, you can shape it with confidence."
-            ]
-        }
-      },
-      MiddleBannerSection:{
-        Banner:Helper.InsightMiddleBanner,
-        mobileBanner:Helper.InsightMiddleBanner
-      },
-      design:{
-        title:"Design System",
-        colors:[
-            {
-                id:1,
-                BgColor:"#1B5AA7"
-            },
-            {
-                id:2,
-                BgColor:"#EEF6FF"
-            },
-            {
-                id:3,
-                BgColor:"#A4A4A4"
-            },
-            {
-                id:4,
-                BgColor:"#958075"
-            }
-        ],
-        Banner:Helper.InsightFont,
-
+      review:{
+        banner:Helper.EverVitalClient,
+        mobileBanner :Helper.EverVitalClient
       }
     },
   ],

@@ -1,7 +1,11 @@
-// app/portfolio/[id]/page.tsx
 import { notFound } from "next/navigation";
-import { OurProjects } from "@/data/OurProjectData"; // Adjust path
-import Image from "next/image";
+import { OurProjects } from "@/data/OurProjectData";
+import ProjectBanner from "@/components/OurProject/ProjectBanner";
+import OverView from "@/components/OurProject/OverView";
+import BannerMiddle from "@/components/OurProject/BannerMiddle";
+import DesignComponent from "@/components/OurProject/DesignComponent";
+import ReviewComponent from "@/components/OurProject/ReviewComponent";
+import GetInTouch from "@/components/Ui/GetInTouch";
 
 interface Props {
   params: { id: string };
@@ -9,21 +13,21 @@ interface Props {
 
 const PortfolioDetail = ({ params }: Props) => {
   const id = parseInt(params.id);
-  const project = PortfolioData.find((item) => item.id === id);
+  const project = OurProjects.projectdata.find((item) => item.id === id);
 
   if (!project) return notFound();
 
   return (
-    <div className="max-w-5xl mx-auto px-4 py-12">
-      <h1 className="text-4xl font-bold mb-4">{project.title}</h1>
-      <p className="text-lg text-gray-600 mb-6">{project.subTitle}</p>
-      <Image
-        src={project.image}
-        alt={project.title}
-        className="rounded-xl border border-gray-300"
-        width={800}
-        height={600}
-      />
+    <div className="bg-white py-7">
+      <ProjectBanner project={project.BannerSection} />
+      <OverView data={project.projectOverView} />
+      <BannerMiddle data={project.MiddleBannerSection}/>
+      <DesignComponent data={project.design}/>
+      <ReviewComponent data={project.review} />
+      <div className="px-4 lg:px-20 py-10 pt-10">
+
+       <GetInTouch/>
+      </div>
     </div>
   );
 };
