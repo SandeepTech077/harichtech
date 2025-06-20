@@ -33,7 +33,7 @@ const ProjectBanner: React.FC<ProjectBannerProps> = ({ project }) => {
           src={project.MobileBanner || project.Banner}
           alt="Mobile Banner"
           fill
-          className="block md:hidden object-contain"
+          className="block md:hidden object-cover"
           priority
         />
       </div>

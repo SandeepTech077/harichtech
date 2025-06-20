@@ -30,7 +30,7 @@ const BannerMiddle: React.FC<BannerMiddleProps> = ({ data }) => {
           src={data.mobileBanner || data.Banner}
           alt="Mobile Middle Banner"
           fill
-          className="object-contain"
+          className="object-cover"
           priority
         />
       </div>

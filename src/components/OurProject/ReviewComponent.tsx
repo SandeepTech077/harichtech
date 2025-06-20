@@ -27,13 +27,13 @@ const ReviewComponent: React.FC<ReviewComponentProps> = ({ data }) => {
       </div>
 
       {/* Mobile Banner */}
-      <div className="block md:hidden absolute inset-0 z-0">
+      <div className="block md:hidden absolute  z-0">
         <Image
           src={data.mobileBanner || data.banner}
           alt="Mobile Review Banner"
-          fill
+          
           className="object-cover"
-          priority
+          
         />
       </div>
     </section>
