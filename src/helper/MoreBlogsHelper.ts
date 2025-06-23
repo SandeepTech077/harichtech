@@ -1,14 +1,14 @@
 //Banner
-import DigitalBanner from "../../public/Image/MoreBlogsData/Banners/digital-banner.png"
-import WebBanner from "../../public/Image/MoreBlogsData/Banners/web-banner.png"
-import AppBanner from "../../public/Image/MoreBlogsData/Banners/app-banner.png"
+import DigitalBanner from "../../public/Image/more-blogs-banner/digital-banner.png"
+import WebBanner from "../../public/Image/more-blogs-banner/web-banner.png"
+import AppBanner from "../../public/Image/more-blogs-banner/app-banner.png"
 
 
 
 //Mobile Banner 
-import MobileDigitalBanner from "../../public/Image/MoreBlogsData/Banners/mobile-digit-banner.png"
-import MobileWebBanner from "../../public/Image/MoreBlogsData/Banners/mobile-web-banner.png"
-import MobileAppBanner from "../../public/Image/MoreBlogsData/Banners/mobile-app-banner.png"
+import MobileDigitalBanner from "../../public/Image/more-blogs-banner/mobile-digit-banner.png"
+import MobileWebBanner from "../../public/Image/more-blogs-banner/mobile-web-banner.png"
+import MobileAppBanner from "../../public/Image/more-blogs-banner/mobile-app-banner.png"
 
 
 

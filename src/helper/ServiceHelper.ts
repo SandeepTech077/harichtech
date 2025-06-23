@@ -32,25 +32,6 @@ import MobileAppDevelopment from "../../public/Image/ServiceImg/AllPage/MobileAp
 import UiUx from "../../public/Image/ServiceImg/AllPage/UiUx.png"
 
 
-//UIUX
-import UIUXImg1 from "../../public/Image/ServiceImg/ImageOfLang/UiUx/Img1.png"
-import UIUXImg2 from "../../public/Image/ServiceImg/ImageOfLang/UiUx/Img2.png"
-import UIUXImg3 from "../../public/Image/ServiceImg/ImageOfLang/UiUx/Img3.png"
-
-// Web
-import WebImg1 from "../../public/Image/ServiceImg/ImageOfLang/Web/Img1.png"
-import WebImg2 from "../../public/Image/ServiceImg/ImageOfLang/Web/Img2.png"
-import WebImg3 from "../../public/Image/ServiceImg/ImageOfLang/Web/Img3.png"
-
-// Mobile
-import MobileImg1 from "../../public/Image/ServiceImg/ImageOfLang/Mobile/Img1.png"
-import MobileImg2 from "../../public/Image/ServiceImg/ImageOfLang/Mobile/Img2.png"
-import MobileImg3 from "../../public/Image/ServiceImg/ImageOfLang/Mobile/Img3.png"
-
-// Digital
-import DigitalImg1 from "../../public/Image/ServiceImg/ImageOfLang/Digit/Img1.png"
-import DigitalImg2 from "../../public/Image/ServiceImg/ImageOfLang/Digit/Img2.png"
-import DigitalImg3 from "../../public/Image/ServiceImg/ImageOfLang/Digit/Img3.png"
 
 import RightImage from "../../public/SVG/RightImage.svg"
 
@@ -100,25 +81,7 @@ export const Helper = {
     UiUx,
 
 
-    //UIUX
-    UIUXImg1,
-    UIUXImg2,
-    UIUXImg3,
-
-    //Web
-    WebImg1,
-    WebImg2,
-    WebImg3,
-
-    //Mobile
-    MobileImg1,
-    MobileImg2,
-    MobileImg3,
-
-    //Digital
-    DigitalImg1,
-    DigitalImg2,
-    DigitalImg3,
+   
 
 
     //Line

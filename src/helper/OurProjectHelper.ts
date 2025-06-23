@@ -28,18 +28,18 @@ import OreumMobileBanner from "../../public/Image/OurProjects/Banner/orem-mobile
 import EverVitalMobileBanner from "../../public/Image/OurProjects/Banner/evervital-mobile-banner.png"
 
 // OverView Image 
-import InsightOverView from "../../public/Image/OurProjects/OverView/insight-overview.png"
-import AarambhOverView from "../../public/Image/OurProjects/OverView/aaramb-overview.png"
-import MicroOverView from "../../public/Image/OurProjects/OverView/micro-overview.png"
-import ArkleOverView from "../../public/Image/OurProjects/OverView/arkle-overview.png"
-import ShilpOverView from "../../public/Image/OurProjects/OverView/shilp-overview.png"
-import YashOverView from "../../public/Image/OurProjects/OverView/yash-overview.png"
-import SnehalOverView from "../../public/Image/OurProjects/OverView/snehal-overview.png"
-import SnehShilpOverView from "../../public/Image/OurProjects/OverView/snehshilp-overview.png"
-import FestOverView from "../../public/Image/OurProjects/OverView/fest-overview.png"
-import AeroOverView from "../../public/Image/OurProjects/OverView/aero-overview.png"
-import OreumOverView from "../../public/Image/OurProjects/OverView/orium-overview.png"
-import EverVitalOverView from "../../public/Image/OurProjects/OverView/evervite-overview.png"
+import InsightOverView from "../../public/Image/OurProjects/overviews/insight-overview.png"
+import AarambhOverView from "../../public/Image/OurProjects/overviews/aaramb-overview.png"
+import MicroOverView from "../../public/Image/OurProjects/overviews/micro-overview.png"
+import ArkleOverView from "../../public/Image/OurProjects/overviews/arkle-overview.png"
+import ShilpOverView from "../../public/Image/OurProjects/overviews/shilp-overview.png"
+import YashOverView from "../../public/Image/OurProjects/overviews/yash-overview.png"
+import SnehalOverView from "../../public/Image/OurProjects/overviews/snehal-overview.png"
+import SnehShilpOverView from "../../public/Image/OurProjects/overviews/snehshilp-overview.png"
+import FestOverView from "../../public/Image/OurProjects/overviews/fest-overview.png"
+import AeroOverView from "../../public/Image/OurProjects/overviews/aero-overview.png"
+import OreumOverView from "../../public/Image/OurProjects/overviews/orium-overview.png"
+import EverVitalOverView from "../../public/Image/OurProjects/overviews/evervite-overview.png"
 
 //Middle Banner
 import InsightMiddleBanner from "../../public/Image/OurProjects/MiddleBanner/insight.png"
@@ -184,7 +184,7 @@ import MicroProfile from "../../public/Image/OurProjects/testimoinals/profiles/m
 import DarshilProfile from "../../public/Image/OurProjects/testimoinals/profiles/darshil.png"
 
 
-import BgImage from "../../public/Image/OurProjects/BG.png"
+import BgImage from "../../public/Image/OurProjects/overviews/bgline.png"
 
 
 
