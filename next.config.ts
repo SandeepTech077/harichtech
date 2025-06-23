@@ -1,8 +1,13 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
-  
+  reactStrictMode: true,
+  swcMinify: true,
+  trailingSlash: true,
+  // output: "export",
+  experimental: {
+    serverActions: {}, // ✅ fixed
+  },
 };
 
 export default nextConfig;
