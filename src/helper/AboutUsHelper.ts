@@ -4,6 +4,7 @@ import HappyClient from "../../public/SVG/HappyClient.svg"
 import Countries from "../../public/SVG/Country.svg"
 import Experience from "../../public/SVG/Experince.svg"
 import Target from "../../public/SVG/Target.svg"
+import Vision from "../../public/SVG/vision.svg"
 
 //Banner
 import Banner from "../../public/Image/AboutUsPageImage/Banner/Banner.png"
@@ -20,6 +21,7 @@ export const Helper = {
     Countries,
     Experience,
     Target,
+ Vision,
 
     //Banner 
     Banner,

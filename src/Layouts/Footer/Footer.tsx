@@ -36,7 +36,7 @@ const Footer = () => {
   const socialLinks = [
     {
       icon: linkedinLogo,
-      path: "https://linkedin.com/company/harichtech",
+      path: "https://www.linkedin.com/company/harich-tech/posts/?feedView=all",
       name: "LinkedIn",
     },
     {

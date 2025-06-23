@@ -63,7 +63,7 @@ export const AboutUsData = {
             title: "Our Vision",
             description:
             "To provide innovative, efficient, and user-friendly technology solutions that help businesses grow, improve operations, and connect meaningfully with their customers. We strive to deliver excellence through collaboration, creativity, and integrity.",
-            icon: Helper.Target,
+            icon: Helper.Vision,
         }
       ],
     },

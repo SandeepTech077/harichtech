@@ -1,7 +1,7 @@
-import React from 'react';
-import Image from 'next/image';
-import Title from "@/components/Title"
-import Button from '../Button';
+import React from "react";
+import Image from "next/image";
+import Title from "@/components/Title";
+import Button from "../Button";
 interface InnovationMeetProps {
   innovationMeet: {
     title: string;
@@ -26,17 +26,18 @@ const InnovationMeet: React.FC<InnovationMeetProps> = ({ innovationMeet }) => {
 
   return (
     <section className="w-full py-16 mx-auto">
-      <div className="flex mb-10">
-        <div className="">
-         <Title title={title}/>
-        </div>
-      </div>
+      <div className="flex mb-10"></div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <div className="flex flex-col">
+          <div className="w-52 mb-10">
+            <Title title={title} />
+          </div>
           <h2 className="text-2xl lg:text-4xl font-bold mb-6">
-            Where Innovation Meets{' '} <br/>
-            <span className="bg-gradient-to-l from-[#2058FF] to-[#004BC2] bg-clip-text text-transparent  ">Satisfaction</span>
+            Where Innovation Meets <br />
+            <span className="bg-gradient-to-l from-[#2058FF] to-[#004BC2] bg-clip-text text-transparent  ">
+              Satisfaction
+            </span>
           </h2>
 
           <div className="space-y-6">
@@ -48,34 +49,35 @@ const InnovationMeet: React.FC<InnovationMeetProps> = ({ innovationMeet }) => {
           </div>
 
           <div className="mt-8 hidden lg:block">
-           <Button text={leftSide.btnTitle} href='/career'/>
+            <Button text={leftSide.btnTitle} href="/career" />
           </div>
         </div>
-
-        {/* Right side cards */}
-        <div className="space-y-6">
-          {rightSide.cards.map((card) => (
-            <div 
-              key={card.id} 
-              className="bg-white p-6 rounded-lg border border-gray-50"
-              style={{ boxShadow: '0px 1px 4px 0px rgba(0, 0, 0, 0.25)' }}
-            >
-              <div className="flex items-start mb-3">
-                <div className="mr-4">
-                  {card.icon ? (
-                    <Image src={card.icon} alt={card.title} width={28} height={28} />
-                  ) : (
-                    <svg className="w-7 h-7 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                    </svg>
-                  )}
-                </div>
-                <h3 className="text-xl font-semibold">{card.title}</h3>
-              </div>
-              <p className="text-gray-600 pl-11">{card.description}</p>
+<div className="w-full max-w-md mx-auto mt-10 space-y-6">
+  {rightSide.cards.map((card, index) => (
+    <div key={card.id} className="relative">
+      {/* Outer skew container - affects background shape */}
+      <div className={`-skew-y-4 bg-[#FBFBFB] border border-gray-300 rounded-md overflow-hidden ${index === 0 ? '' : ''}`}>
+        {/* Inner unskewed content to look normal */}
+        <div className=" p-6">
+          <div className="flex items-start mb-3">
+            <div className="w-7 h-7 mr-4 flex-shrink-0">
+              <Image
+                src={card.icon}
+                alt={card.title}
+                width={28}
+                height={28}
+              />
             </div>
-          ))}
+            <h3 className="text-xl font-semibold">{card.title}</h3>
+          </div>
+          <p className="text-gray-600 pl-11">{card.description}</p>
         </div>
+      </div>
+    </div>
+  ))}
+</div>
+
+
       </div>
     </section>
   );

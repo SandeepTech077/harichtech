@@ -55,16 +55,17 @@ export const OurProjects = {
         ],
         Banner: Helper.InsightFont,
       },
-      review:{
-        colorCode:{
-          profileBorderColor:"border-[#1B5AA7]",
-          textCenter:"color-black",
-
-        },
-        profileImage:"",
-        banner:Helper.InsightClient,
-        mobileBanner :Helper.InsightClient
-      }
+      review: {
+        Textcolor: "text-[#1B5AA7]",
+        Bordercolor: "border-[#1B5AA7]",
+        icon: Helper.InsightIcon,
+        backgroundColor: "bg-[#EEF6FF]",
+        connectIcon: Helper.InsightConnect,
+        happyClintIcon: Helper.InsightHappyClient,
+        profileImage: Helper.commonProfile,
+        describation:
+          "At Insight Management, everything we do is about creating unforgettable experiences - and we needed a website that could reflect that same energy and precision online. Harich Tech got it right from the start. They understood our brand vision - modern, dynamic, and detail-driven - and translated it into a site that truly feels like an extension of who we are. It’s clean, fast, visually engaging, and easy to navigate. Most importantly, it captures the essence of what we do on-ground. With Harich, it never felt like a one-way brief - it was a creative partnership. The result speaks for itself.",
+      },
     },
     {
       id: 2,
@@ -110,10 +111,17 @@ export const OurProjects = {
         ],
         Banner: Helper.AarambhFont,
       },
-        review:{
-        banner:Helper.AarambhClient,
-        mobileBanner :Helper.AarambhClient
-      }
+      review: {
+        Textcolor: "text-black",
+        Bordercolor: "border-[#1B5AA7]",
+        icon: Helper.InsightIcon,
+        backgroundColor: "bg-[#EEF6FF]",
+        connectIcon: Helper.AarambhConnect,
+        happyClintIcon: Helper.AarambhHappyClient,
+        profileImage: Helper.commonProfile,
+        describation:
+          "At Insight Management, everything we do is about creating unforgettable experiences - and we needed a website that could reflect that same energy and precision online. Harich Tech got it right from the start. They understood our brand vision - modern, dynamic, and detail-driven - and translated it into a site that truly feels like an extension of who we are. It’s clean, fast, visually engaging, and easy to navigate. Most importantly, it captures the essence of what we do on-ground. With Harich, it never felt like a one-way brief - it was a creative partnership. The result speaks for itself.",
+      },
     },
     {
       id: 3,
@@ -130,7 +138,7 @@ export const OurProjects = {
         leftSideImage: Helper.MicroOverView,
         rightContent: {
           title: "Project Overview",
-         titleTextColor: "text-[#4BBA72]",
+          titleTextColor: "text-[#4BBA72]",
           describation: [
             "At Microb Range Pvt Ltd, we are dedicated to transforming global nutrition through innovative, science-backed solutions. By combining Spirulina, collagen, and other microbial advancements, we provide affordable, non-GMO, and chemical-free nutraceutical products that cater to diverse dietary needs. ",
             "Our mission is to combat malnutrition and nutritional deficiencies while promoting overall health and well-being. With a focus on sustainability, inclusivity, and rigorous research, we strive to make balanced nutrition accessible to all.",
@@ -164,10 +172,17 @@ export const OurProjects = {
         ],
         Banner: Helper.MicroFont,
       },
-        review:{
-        banner:Helper.MicroClient,
-        mobileBanner :Helper.MicroClient
-      }
+      review: {
+        Textcolor: "text-black",
+        Bordercolor: "border-[#4BBA72]",
+        icon: Helper.MicroIcon,
+        backgroundColor: "bg-[#CBFFDD]",
+        connectIcon: Helper.MicroConnect,
+        happyClintIcon: Helper.MicroHappyClient,
+        profileImage: Helper.MicroProfile,
+        describation:
+          "Mircorange, on the other hand, needed a different energy -  bold, vibrant, and creatively driven. Harich brought that flair while still maintaining clarity and structure. The site they built feels alive, engaging, and aligned with our dynamic identity. Even though Mircorange has a very different tone, Harich managed to give each its own space without compromising quality. Their versatility and design sense really stood out.",
+      },
     },
     {
       id: 4,
@@ -214,10 +229,17 @@ export const OurProjects = {
         ],
         Banner: Helper.ArkleFont,
       },
-        review:{
-        banner:Helper.ArkleClient,
-        mobileBanner :Helper.ArkleClient
-      }
+     review: {
+        Textcolor: "text-black",
+        Bordercolor: "border-[#D09A40]",
+        icon: Helper.ArkleIcon,
+        backgroundColor: "bg-[#EEEEEE]",
+        connectIcon: Helper.ArkleConnect,
+        happyClintIcon: Helper.ArkleHappyClient,
+        profileImage: Helper.commonProfile,
+        describation:
+          "I wanted Arkle’s website to reflect not just our facilities, but the passion we bring to equestrian sport. Harich delivered more than just a website - they built an experience that speaks to every rider and horse lover who visits us. Simple, elegant, and exactly what we needed.",
+      },
     },
     {
       id: 5,
@@ -260,10 +282,17 @@ export const OurProjects = {
         ],
         Banner: Helper.ShilpFont,
       },
-        review:{
-        banner:Helper.ShilpClient,
-        mobileBanner :Helper.ShilpClient
-      }
+       review: {
+        Textcolor: "text-black",
+        Bordercolor: "border-black",
+        icon: Helper.ShilpIcon,
+        backgroundColor: "bg-[#EEEEEE]",
+        connectIcon: Helper.ShilpConnect,
+        happyClintIcon: Helper.ShilpHappyClient,
+        profileImage: Helper.yashProfile,
+        describation:
+          "We’ve worked with Harich Tech more than once, and each time they’ve delivered beyond expectations. For our Shilp project, we needed a digital presence that not only looked premium but also resonated with our audience - and Harich got it absolutely right.They understood the nuances of real estate presentation - from highlighting projects to optimizing the layout for easy navigation. The site is fast, functional, and communicates the value of the project clearly. Their team was proactive, responsive, and always aligned with our vision. ",
+      },
     },
     {
       id: 6,
@@ -306,10 +335,17 @@ export const OurProjects = {
         ],
         Banner: Helper.YashFont,
       },
-       review:{
-        banner:Helper.YashClient,
-        mobileBanner :Helper.YashClient
-      }
+  review: {
+        Textcolor: "text-black",
+        Bordercolor: "border-black",
+        icon: Helper.YashIcon,
+        backgroundColor: "bg-[#EEEEEE]",
+        connectIcon: Helper.YashConnect,
+        happyClintIcon: Helper.YashHappyClient,
+        profileImage: Helper.yashProfile,
+        describation:
+          "As someone from the real estate and development industry, I value precision, clarity, and strong presentation. Harich delivered exactly that for YB Official. The website reflects my professional identity with a clean and well-structured design. Their team worked efficiently, understood the brief quickly, and executed it with finesse. It was a seamless experience from start to finish. ",
+      },
     },
     {
       id: 7,
@@ -352,10 +388,17 @@ export const OurProjects = {
         ],
         Banner: Helper.SnehalFont,
       },
-       review:{
-        banner:Helper.SnehShilpClient,
-        mobileBanner :Helper.SnehShilpClient
-      }
+       review: {
+        Textcolor: "text-black",
+        Bordercolor: "border-black",
+        icon: Helper.SnehalIcon,
+        backgroundColor: "bg-[#EEEEEE]",
+        connectIcon: Helper.SnehalConnect,
+        happyClintIcon: Helper.SnehalHappyClient,
+        profileImage: Helper.SnehalProfile,
+        describation:
+          "It was important for me to have a digital identity that’s both professional and expressive. Harich helped me do just that with SB Official. They worked with speed, clarity, and were always open to feedback. Love how it turned out.",
+      },
     },
     {
       id: 8,
@@ -398,10 +441,17 @@ export const OurProjects = {
         ],
         Banner: Helper.SnehalFont,
       },
-       review:{
-        banner:Helper.SnehShilpClient,
-        mobileBanner :Helper.SnehShilpClient
-      }
+     review: {
+        Textcolor: "text-black",
+        Bordercolor: "border-black",
+        icon: Helper.SnehShilpIcon,
+        backgroundColor: "bg-[#EEFFE9]",
+        connectIcon: Helper.SnehShilpConnect,
+        happyClintIcon: Helper.SnehShilpHappyClient,
+        profileImage: Helper.SnehalProfile,
+        describation:
+          "Sneh Shilp Foundation began as a heartfelt initiative, rooted in compassion and the desire to create real impact. It’s more than just an organisation - it’s a reflection of the values we believe in: care, dignity, and meaningful change. When we started working with Harich Tech, I hoped they’d understand that this wasn’t just about building a website - it was about telling our story with honesty and warmth. And they did just that. The site feels calm, clean, and genuine - exactly what we wanted. It doesn’t shout, it gently invites people to understand what we do. The Harich team listened closely, worked patiently, and brought our vision to life in a way that feels personal. I’m truly grateful for the heart they brought into this project.",
+      },
     },
     {
       id: 9,
@@ -444,10 +494,17 @@ export const OurProjects = {
         ],
         Banner: Helper.FestFont,
       },
-       review:{
-        banner:Helper.FestClient,
-        mobileBanner :Helper.FestClient
-      }
+      review: {
+        Textcolor: "text-black",
+        Bordercolor: "border-black",
+        icon: Helper.FestIcon,
+        backgroundColor: "bg-[#F2F8FF]",
+        connectIcon: Helper.FestConnect,
+        happyClintIcon: Helper.FestHappyClient,
+        profileImage: Helper.commonProfile,
+        describation:
+          "Morem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.Morem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+      },
     },
 
     {
@@ -494,10 +551,17 @@ export const OurProjects = {
         ],
         Banner: Helper.InsightFont,
       },
-      review:{
-        banner:Helper.AeroClient,
-        mobileBanner :Helper.AeroClient
-      }
+       review: {
+        Textcolor: "text-black",
+        Bordercolor: "border-[#53CCC7]",
+        icon: Helper.AeroIcon,
+        backgroundColor: "bg-[#EEEEEE]",
+        connectIcon: Helper.AeroConnect,
+        happyClintIcon: Helper.AeroHappyClient,
+        profileImage: Helper.commonProfile,
+        describation:
+          "Morem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.Morem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+      },
     },
     {
       id: 11,
@@ -543,10 +607,17 @@ export const OurProjects = {
         ],
         Banner: Helper.OreumFont,
       },
-      review:{
-        banner:Helper.OreumClient,
-        mobileBanner :Helper.OreumClient
-      }
+      review: {
+        Textcolor: "text-black",
+        Bordercolor: "border-black",
+        icon: Helper.OreumIcon,
+        backgroundColor: "bg-[#F0FFF0]",
+        connectIcon: Helper.OreumConnect,
+        happyClintIcon: Helper.OreumHappyClient,
+        profileImage: Helper.MicroProfile,
+        describation:
+          "With Orium, we wanted to position ourselves as a premium, next-gen air solutions brand. Harich Tech understood that vision from day one. They created a sleek, high-performance website that not only looks sharp but also works flawlessly across devices. Their team paid attention to the smallest details - from user flow to content placement - and delivered a platform that elevates the brand. It speaks to both our customers and our positioning",
+      },
     },
     {
       id: 12,
@@ -594,10 +665,18 @@ export const OurProjects = {
         ],
         Banner: Helper.EverVitalFont,
       },
-      review:{
-        banner:Helper.EverVitalClient,
-        mobileBanner :Helper.EverVitalClient
-      }
+     review: {
+        Textcolor: "text-black",
+        Bordercolor: "border-black",
+        icon: Helper.EverVitalIcon,
+        backgroundColor: "bg-[#E9FFF7]",
+        connectIcon: Helper.EverVitalConnect,
+        happyClintIcon: Helper.EverVitalHappyClient,
+        profileImage: Helper.DarshilProfile,
+        describation:
+          "In the health and wellness space, trust is everything - and your digital presence plays a big role in that. Harich Tech instinctively understood what Ever Vital was all about - they captured our need for clean design, a calming visual presence, and effortless user experience without needing constant direction. The website they created feels professional yet approachable - exactly the tone we were aiming for. It reflects our values and builds credibility from the first click. Our users have responded positively, and we’ve seen real engagement since the launch. Harich brought a thoughtful approach to the process, and it shows in the final result.",
+      },
+      
     },
   ],
 };

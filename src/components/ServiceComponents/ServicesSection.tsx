@@ -17,7 +17,7 @@ interface ServicesSectionProps {
   services: Service[];
 }
 
-const   ServicesSection: React.FC<ServicesSectionProps> = ({ services }) => {
+const ServicesSection: React.FC<ServicesSectionProps> = ({ services }) => {
   return (
     <section className="space-y-10">
       {services.map((service) => (

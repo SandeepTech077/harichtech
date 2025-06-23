@@ -27,7 +27,7 @@ const MainTitleSection: React.FC<MainTitleSectionProps> = ({ data }) => {
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.8 }}
         >
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[70px] font-bold leading-tight">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[70px] font-medium leading-tight">
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
@@ -36,7 +36,7 @@ const MainTitleSection: React.FC<MainTitleSectionProps> = ({ data }) => {
             >
               Thinking The High Quality
             </motion.div>
-            
+
             {/* Mobile Layout - Stack elements vertically */}
             <div className="flex flex-col sm:flex-row sm:justify-left sm:items-center sm:flex-wrap mt-2 sm:mt-4 space-y-2 sm:space-y-0">
               <div className="flex items-center justify-start flex-wrap">
@@ -65,7 +65,7 @@ const MainTitleSection: React.FC<MainTitleSectionProps> = ({ data }) => {
                   </motion.div>
                 )}
               </div>
-              
+
               <div className="flex items-center justify-start flex-wrap">
                 <motion.span
                   initial={{ opacity: 0 }}
@@ -123,30 +123,43 @@ const MainTitleSection: React.FC<MainTitleSectionProps> = ({ data }) => {
           transition={{ delay: 1.8, duration: 0.8 }}
           className="w-full flex max-w-3xl justify-start sm:justify-end mt-6 sm:mt-8 mx-auto"
         >
-          <Button text={btnButton} href='/about-us'/>
+          <Button text={btnButton} href="/about-us" />
         </motion.div>
       </div>
 
-      {/* Decorative elements - responsive */}
       {/* Vertical line - right side */}
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 0.5 }}
         transition={{ delay: 2, duration: 1.5 }}
-        className="absolute bottom-0 right-5 sm:right-30 w-[1px] h-32 sm:h-92 bg-[#999999] opacity-50"
+        className="absolute bottom-0 right-5 sm:right-70 w-[1px] h-32 sm:h-110 bg-[#999999] opacity-50"
       />
 
-      {/* Light background circular element */}
       <motion.div
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 0.1, scale: 1 }}
         transition={{ delay: 2.2, duration: 1.5 }}
         className="absolute top-0 left-0 w-20 h-32 sm:w-32 sm:h-64 md:w-64 md:h-96 -z-10"
       >
-        <div className="w-full h-full border-2 border-[#999999] rounded-full transform translate-x-[-50%] translate-y-[-30%]"></div>
+        <div className="relative w-full h-full transform translate-x-[-50%] translate-y-[-30%]">
+          <div className="absolute inset-0 rounded-full p-[2px] bg-[linear-gradient(270deg,_#2058FF_0%,_#004BC2_100%)]">
+            <div className="w-full h-full rounded-full bg-white"></div>
+          </div>
+        </div>
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0, scale: 0.8 }}
+        animate={{ opacity: 0.1, scale: 1 }}
+        transition={{ delay: 2.2, duration: 1.5 }}
+        className="absolute top-0 left-0 w-20 h-32 sm:w-32 sm:h-64 md:w-84 md:h-120 -z-10"
+      >
+        <div className="relative w-full h-full transform translate-x-[-50%] translate-y-[-30%]">
+          <div className="absolute inset-0 rounded-full p-[2px] bg-[linear-gradient(270deg,_#2058FF_0%,_#004BC2_100%)]">
+            <div className="w-full h-full rounded-full bg-white"></div>
+          </div>
+        </div>
       </motion.div>
 
-      {/* Bottom-left logo with lines */}
       <div className="absolute bottom-10 left-5 sm:left-40 flex items-end">
         <motion.div
           animate={{ rotate: 360 }}

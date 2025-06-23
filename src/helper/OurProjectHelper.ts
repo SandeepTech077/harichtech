@@ -178,7 +178,11 @@ import SneShilp from"../../public/Image/OurProjects/Svg/snehshilp.svg"
 
 //Profile
 import commonProfile from "../../public/Image/OurProjects/testimoinals/profiles/profile.png"
-// import yashProfile from "../../public/Image/OurProjects/testimoinals/profiles/"
+import yashProfile from "../../public/Image/OurProjects/testimoinals/profiles/yash.png"
+import SnehalProfile from "../../public/Image/OurProjects/testimoinals/profiles/snehal.png"
+import MicroProfile from "../../public/Image/OurProjects/testimoinals/profiles/micro.png"
+import DarshilProfile from "../../public/Image/OurProjects/testimoinals/profiles/darshil.png"
+
 
 
 
@@ -374,6 +378,12 @@ export const Helper = {
 
 
     //
+    yashProfile,
+    SnehalProfile,
+    commonProfile,
+    DarshilProfile,
+    MicroProfile
+
     
 
     

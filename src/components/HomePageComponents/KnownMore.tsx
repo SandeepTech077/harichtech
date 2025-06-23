@@ -39,7 +39,7 @@ const KnownMore: React.FC<KnownMoreProps> = ({ data }) => {
       ref={sectionRef}
       initial="hidden"
       animate={isInView ? "show" : "hidden"}
-      className="w-full bg-white py-8 px-4 sm:py-12 sm:px-6 lg:py-16 lg:px-8 overflow-hidden"
+      className="w-full bg-white py-8 px-0 sm:py-12 sm:px-6 lg:py-16 lg:px-8 overflow-hidden"
     >
       <div className=" mx-auto">
         {/* Mobile Layout (< md) */}

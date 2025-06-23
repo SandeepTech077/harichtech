@@ -8,11 +8,12 @@ import ReviewComponent from "@/components/OurProject/ReviewComponent";
 import GetInTouch from "@/components/Ui/GetInTouch";
 
 interface Props {
-  params: { id: string };
+  params: Promise<{ id: string }>; 
 }
 
-const PortfolioDetail = ({ params }: Props) => {
-  const id = parseInt(params.id);
+const PortfolioDetail = async ({ params }: Props) => {
+  const { id: idParam } = await params; 
+  const id = parseInt(idParam);
   const project = OurProjects.projectdata.find((item) => item.id === id);
 
   if (!project) return notFound();
@@ -21,12 +22,11 @@ const PortfolioDetail = ({ params }: Props) => {
     <div className="bg-white py-7">
       <ProjectBanner project={project.BannerSection} />
       <OverView data={project.projectOverView} />
-      <BannerMiddle data={project.MiddleBannerSection}/>
-      <DesignComponent data={project.design}/>
+      <BannerMiddle data={project.MiddleBannerSection} />
+      <DesignComponent data={project.design} />
       <ReviewComponent data={project.review} />
       <div className="px-4 lg:px-20 py-10 pt-10">
-
-       <GetInTouch/>
+        <GetInTouch />
       </div>
     </div>
   );

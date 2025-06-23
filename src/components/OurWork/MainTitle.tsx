@@ -26,13 +26,13 @@ const MainTitle = ({ mainTitle }: MainTitleProps) => {
       <div className="relative z-20 px-4 max-w-4xl w-full flex flex-col items-center gap-4">
         {/* Title inside white box with gradient text */}
         <div className="bg-white px-6 py-3 rounded-md inline-block">
-          <h1 className="text-3xl md:text-5xl font-bold bg-gradient-to-l from-[#2058FF] to-[#004BC2] bg-clip-text text-transparent">
+          <h1 className="text-xl md:text-3xl font-bold bg-gradient-to-l from-[#2058FF] to-[#004BC2] bg-clip-text text-transparent">
             {mainTitle.title}
           </h1>
         </div>
 
         {/* Subtitle in plain white text */}
-        <p className="text-white text-xl md:text-3xl mt-2 max-w-xl">
+        <p className="text-white text-2xl md:text-5xl mt-2 max-w-xl">
           {mainTitle.subTitle}
         </p>
       </div>

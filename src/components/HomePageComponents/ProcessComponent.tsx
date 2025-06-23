@@ -35,7 +35,7 @@ const itemVariants = {
 
 const ProcessComponent: React.FC<ProcessComponentProps> = ({ data }) => {
   return (
-    <div className="w-full ">
+    <div className="w-full  pt-10">
       {/* Title Section with scroll animation */}
       <motion.div
         className="text-center mb-16"

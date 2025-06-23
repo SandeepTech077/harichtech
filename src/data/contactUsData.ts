@@ -8,6 +8,10 @@ export const ContactData = {
       "Get in touch and let us know how we can help. Fill out the form and we’ll be in touch as soon as possible.",
     socilaMedia: [
       {
+        Icon: Helper.LinkedIn,
+        link: "https://www.linkedin.com/company/harich-tech/posts/?feedView=all",
+      },
+      {
         Icon: Helper.Facebook,
         link: "https://facebook.com/harichtech",
       },
@@ -16,10 +20,6 @@ export const ContactData = {
         link: "https://instagram.com/harichtech",
       },
 
-      {
-        Icon: Helper.LinkedIn,
-        link: "https://linkedin.com/company/harichtech",
-      },
     ],
   },
   formData: {

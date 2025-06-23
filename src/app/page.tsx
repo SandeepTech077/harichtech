@@ -21,7 +21,7 @@ export default function Home() {
       
       {/* Other Sections - Contained width with responsive padding */}
       <div className="w-full">
-        <div className=" mx-auto px-4 sm:px-6 lg:px-8 ">
+        <div className=" mx-auto px-4 sm:px-0 lg:px-8 ">
           <div className="space-y-12 sm:space-y-16 lg:space-y-20">
       <KnownMore data={HomePagedata.knownMore} />
             <AboutStatus status={ourStatus.status} />

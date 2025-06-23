@@ -91,7 +91,7 @@ const Header = () => {
                   href="tel:+916200665954"
                   className="text-xs sm:text-sm font-medium hover:text-blue-100 transition-colors truncate"
                 >
-                  +91-6200-66-5954
+                  +91-8200 66 5684
                 </Link>
               </div>
 
