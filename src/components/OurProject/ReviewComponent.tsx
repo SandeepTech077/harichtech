@@ -27,7 +27,7 @@ const ReviewComponent: React.FC<ReviewComponentProps> = ({ data }) => {
             <Image
               src={data.connectIcon}
               alt="Connect"
-              width={88}
+              width={100}
               height={88}
               className="object-cover"
               priority
