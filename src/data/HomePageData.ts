@@ -107,6 +107,9 @@ export const HomePagedata = {
     Helper.clientLogo13,
     Helper.clientLogo14,
     Helper.clientLogo15,
+    Helper.clientLogo16,
+    Helper.clientLogo17,
+    
     
 
    ]
@@ -165,7 +168,7 @@ export const HomePagedata = {
         position: "Arkle Equestrian Club",
         description:
           "“I wanted Arkle’s website to reflect not just our facilities, but the passion we bring to equestrian sport. Harich delivered more than just a website - they built an experience that speaks to every rider and horse lover who visits us. Simple, elegant, and exactly what we needed.”",
-        img: Helper.TestimonialImage1,
+        img: Helper.profile,
         clipImg: Helper.clip,
       },
       {
@@ -175,7 +178,7 @@ export const HomePagedata = {
         description:
           "“As someone from the real estate and development industry, I value precision, clarity, and strong presentation. Harich delivered exactly that for YB Official. The website reflects my professional identity with a clean and well-structured design. Their team worked efficiently, understood the brief quickly, and executed it with finesse. It was a seamless experience from start to finish. ”",
 
-        img: Helper.TestimonialImage1,
+        img: Helper.yash,
         clipImg: Helper.clip,
       },
       {
@@ -185,7 +188,7 @@ export const HomePagedata = {
         description:
           "“It was important for me to have a digital identity that’s both professional and expressive. Harich helped me do just that with SB Official. They worked with speed, clarity, and were always open to feedback. Love how it turned out.”",
         clipImg: Helper.clip,
-        img: Helper.TestimonialImage1,
+        img: Helper.snehal,
       },
       {
         id: 4,
@@ -194,7 +197,7 @@ export const HomePagedata = {
         description:
           "“We’re in the tech business, so I needed a site that’s fast, smart, and makes a strong impression. Harich delivered and we loved it. Their understanding of functionality combined with solid design made the entire process efficient. Would definitely recommend them! ”",
         clipImg: Helper.clip,
-        img: Helper.TestimonialImage1,
+        img: Helper.profile,
       },
       {
         id: 5,
@@ -203,7 +206,7 @@ export const HomePagedata = {
         description:
           "“With Sankalp, we wanted something grounded and value-driven - a site that felt trustworthy. Harich took time to understand our ethos and reflected that beautifully online. We’ve been getting great feedback from clients ever since. We highly recommend Harich for the people who desire and value quality work. ”",
         clipImg: Helper.clip,
-        img: Helper.TestimonialImage1,
+        img: Helper.profile,
       },
       {
         id: 6,
@@ -212,7 +215,7 @@ export const HomePagedata = {
         description:
           "“Being in the immersive tech space, We didn’t want a typical website. Harich totally understood the futuristic feel I was aiming for. The site they built is clean, tech-forward, and has that ‘edge’ we were looking for. Super happy with the results!! ”",
         clipImg: Helper.clip,
-        img: Helper.TestimonialImage1,
+        img: Helper.profile,
       },
       {
         id: 7,
@@ -221,7 +224,7 @@ export const HomePagedata = {
         description:
           "“Tiffin Mom is all about warmth, comfort, and homemade care - and Harich brought that vibe into the digital space perfectly. It was definitely beyond our imagination. They really listened, and the end result is a site that feels like an extension of our kitchen.”",
         clipImg: Helper.clip,
-        img: Helper.TestimonialImage1,
+        img: Helper.profile,
       },
       {
         id: 8,
@@ -230,7 +233,7 @@ export const HomePagedata = {
         description:
           "“Sneh Shilp Foundation began as a heartfelt initiative, rooted in compassion and the desire to create real impact. It’s more than just an organisation - it’s a reflection of the values we believe in: care, dignity, and meaningful change. When we started working with Harich Tech, I hoped they’d understand that this wasn’t just about building a website - it was about telling our story with honesty and warmth. And they did just that. The site feels calm, clean, and genuine - exactly what we wanted. It doesn’t shout, it gently invites people to understand what we do. The Harich team listened closely, worked patiently, and brought our vision to life in a way that feels personal. I’m truly grateful for the heart they brought into this project.”",
         clipImg: Helper.clip,
-        img: Helper.TestimonialImage1,
+        img: Helper.snehal,
       },
       {
         id: 9,
@@ -239,7 +242,7 @@ export const HomePagedata = {
         description:
           "“We’ve worked with Harich Tech more than once, and each time they’ve delivered beyond expectations. For our Shilp project, we needed a digital presence that not only looked premium but also resonated with our audience - and Harich got it absolutely right.They understood the nuances of real estate presentation - from highlighting projects to optimizing the layout for easy navigation. The site is fast, functional, and communicates the value of the project clearly. Their team was proactive, responsive, and always aligned with our vision. ”",
         clipImg: Helper.clip,
-        img: Helper.TestimonialImage1,
+        img: Helper.yash,
       },
       {
         id: 10,
@@ -248,7 +251,7 @@ export const HomePagedata = {
         description:
           "“Launching Startup Fest meant working under immense pressure - fast-moving timelines, constant changes, and high expectations. We needed a digital team that could adapt quickly without compromising on quality, and Harich Tech exceeded those expectations. They delivered a dynamic, purpose-driven website that reflected the spirit of the fest perfectly. The structure was intuitive, the visuals were impactful, and the user journey was thoughtfully crafted. What impressed us most was their ability to stay agile while maintaining clarity and focus throughout. Harich Tech didn’t just build a site - they supported our vision like true collaborators. Their commitment, communication, and creative input made them an essential part of our core team.”",
         clipImg: Helper.clip,
-        img: Helper.TestimonialImage1,
+        img: Helper.snehal,
       },
       {
         id:11,
@@ -257,7 +260,7 @@ export const HomePagedata = {
         description:
           "“Shilp Aarambh - Gift City Run is a project that’s extremely close to my heart. It’s not just an event, it’s a statement of purpose, energy, and community spirit - and we needed a digital presence that could convey all of that in a crisp and inspiring way. Harich Tech understood the emotion behind Aarambh from the very beginning. The website they delivered is vibrant, forward-focused, and perfectly in sync with the theme of fresh starts and positive movement.”",
         clipImg: Helper.clip,
-        img: Helper.TestimonialImage1,
+        img: Helper.snehal,
       },
       {
         id:12,
@@ -266,7 +269,7 @@ export const HomePagedata = {
         description:
           "“With Orium, we wanted to position ourselves as a premium, next-gen air solutions brand. Harich Tech understood that vision from day one. They created a sleek, high-performance website that not only looks sharp but also works flawlessly across devices. Their team paid attention to the smallest details - from user flow to content placement - and delivered a platform that elevates the brand. It speaks to both our customers and our positioning”",
         clipImg: Helper.clip,
-        img: Helper.TestimonialImage1,
+        img: Helper.oriem,
       },
       {
         id:13,
@@ -275,7 +278,7 @@ export const HomePagedata = {
         description:
           "“ Mircorange, on the other hand, needed a different energy -  bold, vibrant, and creatively driven. Harich brought that flair while still maintaining clarity and structure. The site they built feels alive, engaging, and aligned with our dynamic identity. Even though Mircorange has a very different tone, Harich managed to give each its own space without compromising quality. Their versatility and design sense really stood out.”",
         clipImg: Helper.clip,
-        img: Helper.TestimonialImage1,
+        img: Helper.oriem,
       },
       {
         id:14,
@@ -284,7 +287,7 @@ export const HomePagedata = {
         description:
           "“At Insight Management, everything we do is about creating unforgettable experiences - and we needed a website that could reflect that same energy and precision online. Harich Tech got it right from the start. They understood our brand vision - modern, dynamic, and detail-driven - and translated it into a site that truly feels like an extension of who we are. It’s clean, fast, visually engaging, and easy to navigate. Most importantly, it captures the essence of what we do on-ground. With Harich, it never felt like a one-way brief - it was a creative partnership. The result speaks for itself.”",
         clipImg: Helper.clip,
-        img: Helper.TestimonialImage1,
+        img: Helper.profile,
       },
       {
         id:15,
@@ -293,7 +296,7 @@ export const HomePagedata = {
         description:
           "“In the health and wellness space, trust is everything - and your digital presence plays a big role in that. Harich Tech instinctively understood what Ever Vital was all about - they captured our need for clean design, a calming visual presence, and effortless user experience without needing constant direction. The website they created feels professional yet approachable - exactly the tone we were aiming for. It reflects our values and builds credibility from the first click. Our users have responded positively, and we’ve seen real engagement since the launch. Harich brought a thoughtful approach to the process, and it shows in the final result.”",
         clipImg: Helper.clip,
-        img: Helper.TestimonialImage1,
+        img: Helper.darshil,
       },
       {
         id:16,
@@ -302,7 +305,7 @@ export const HomePagedata = {
         description:
           "“We’ve never been too vocal about our work - our jewellery speaks for itself. So when it came to building a website, we needed someone who would understand that simplicity and sincerity matter more than flash. Harich Tech got it. They didn’t overcomplicate things. They asked the right questions, gave us space to think, and slowly shaped a website that felt just right. It’s clean, easy, and most importantly - honest to who we are. It didn’t feel like we were ‘handing over’ a project. It felt like we were working alongside a team that genuinely cared about doing it well”",
         clipImg: Helper.clip,
-        img: Helper.TestimonialImage1,
+        img: Helper.profile,
       },
  
     ],

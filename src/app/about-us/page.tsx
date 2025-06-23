@@ -10,7 +10,7 @@ export default function AboutPage() {
   const { aboutUs, ourStatus, innovationMeet } = AboutUsData;
 
   return (
-    <main className="w-full pt-36 px-5 md:px-10 lg:px-20 space-y-10">
+    <main className="w-full pt-40 px-5 md:px-10 lg:px-20 space-y-10">
       <MotionComponent type="fadeIn" duration={1} delay={0.3}>
         <AboutUs aboutUs={aboutUs} />
       </MotionComponent>

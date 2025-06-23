@@ -5,6 +5,8 @@ import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { Menu, X, Phone, Mail } from "lucide-react";
+import phoneicon from "../../../public/SVG/call.svg";
+import mailicon from "../../../public/SVG/email.svg";
 import Logo from "../../../public/Logo/Logo.svg";
 import linkedinIcon from "../../../public/SVG/linkedin-logo.svg";
 import facebookIcon from "../../../public/SVG/facebook-logo.svg";
@@ -37,14 +39,14 @@ const Header = () => {
   // Prevent body scroll when menu is open
   useEffect(() => {
     if (isMenuOpen) {
-      document.body.style.overflow = 'hidden';
+      document.body.style.overflow = "hidden";
     } else {
-      document.body.style.overflow = 'unset';
+      document.body.style.overflow = "unset";
     }
-    
+
     // Cleanup on unmount
     return () => {
-      document.body.style.overflow = 'unset';
+      document.body.style.overflow = "unset";
     };
   }, [isMenuOpen]);
 
@@ -72,13 +74,18 @@ const Header = () => {
     <div className="w-full overflow-x-hidden">
       {/* Top Contact Bar - Hidden on mobile for better UX */}
       {!scrolled && (
-        <div className="hidden sm:block fixed top-0 left-0 right-0 w-full text-white bg-gradient-to-r from-[#2058FF] via-[#1B4FE8] to-[#004BC2] py-2 sm:py-3 px-4 z-50 shadow-lg">
+        <div className="hidden sm:block fixed top-0 left-0 right-0 w-full text-white bg-gradient-to-r from-[#2058FF] via-[#1B4FE8] to-[#004BC2] py-2 sm:py-3 px-4 z-50">
           <div className="container mx-auto flex items-center justify-between max-w-7xl">
             {/* Contact Info */}
             <div className="flex items-center space-x-4 sm:space-x-6 min-w-0 flex-shrink">
               <div className="flex items-center space-x-2 group min-w-0">
-                <div className="p-1.5 bg-white/10 rounded-full group-hover:bg-white/20 transition-colors flex-shrink-0">
-                  <Phone size={14} className="text-white" />
+                <div className="p-1.5  rounded-full  transition-colors flex-shrink-0">
+                  <Image
+                    src={phoneicon}
+                    alt="Phone Icon"
+                    width={20}
+                    height={20}
+                  />
                 </div>
                 <Link
                   href="tel:+916200665954"
@@ -89,8 +96,13 @@ const Header = () => {
               </div>
 
               <div className="hidden md:flex items-center space-x-2 group min-w-0">
-                <div className="p-1.5 bg-white/10 rounded-full group-hover:bg-white/20 transition-colors flex-shrink-0">
-                  <Mail size={14} className="text-white" />
+                <div className="p-1.5  rounded-full  flex-shrink-0">
+                  <Image
+                    src={mailicon}
+                    alt="Phone Icon"
+                    width={20}
+                    height={20}
+                  />
                 </div>
                 <Link
                   href="mailto:info@harichtech.com"
@@ -103,10 +115,6 @@ const Header = () => {
 
             {/* Social Links - FIXED: Consistent sizing for all social icons */}
             <div className="flex items-center space-x-2 sm:space-x-3 flex-shrink-0">
-              <span className="hidden sm:block text-xs font-medium text-blue-100 mr-2 whitespace-nowrap">
-                Follow Us:
-              </span>
-
               <Link
                 href={socialLinks.linkedin}
                 target="_blank"
@@ -185,13 +193,13 @@ const Header = () => {
                 {navItems.map((item) => {
                   const isActive = pathname === item.path;
                   return (
-                    <li key={item.name}>
+                    <li key={item.name} className="group">
                       <Link
                         href={item.path}
-                        className={`text-sm xl:text-base font-semibold transition-all duration-300 relative py-2 px-1 whitespace-nowrap ${
+                        className={`text-sm lg:text-lg font-semibold transition-all duration-300 relative py-2 px-1 whitespace-nowrap ${
                           isActive
-                            ? "text-blue-600 after:absolute after:bottom-0 after:left-1/2 after:transform after:-translate-x-1/2 after:w-1.5 after:h-1.5 after:bg-blue-600 after:rounded-full"
-                            : "text-gray-700 hover:text-blue-600"
+                            ? "text-transparent bg-gradient-to-r from-[#2058FF] to-[#004BC2] bg-clip-text after:absolute after:bottom-0 after:left-1/2 after:transform after:-translate-x-1/2 after:w-1.5 after:h-1.5 after:bg-gradient-to-r after:from-[#2058FF] after:to-[#004BC2] after:rounded-full"
+                            : "text-gray-700 group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-[#2058FF] group-hover:to-[#004BC2] group-hover:bg-clip-text"
                         }`}
                       >
                         {item.name}
@@ -275,7 +283,9 @@ const Header = () => {
                 <div className="p-2 bg-blue-100 rounded-lg group-hover:bg-blue-200 transition-colors flex-shrink-0">
                   <Phone size={12} />
                 </div>
-                <span className="font-medium text-sm truncate">+91-6200-66-5954</span>
+                <span className="font-medium text-sm truncate">
+                  +91-6200-66-5954
+                </span>
               </Link>
               <Link
                 href="mailto:info@harichtech.com"
@@ -285,7 +295,9 @@ const Header = () => {
                 <div className="p-2 bg-blue-100 rounded-lg group-hover:bg-blue-200 transition-colors flex-shrink-0">
                   <Mail size={12} />
                 </div>
-                <span className="font-medium text-sm truncate">info@harichtech.com</span>
+                <span className="font-medium text-sm truncate">
+                  info@harichtech.com
+                </span>
               </Link>
             </div>
           </div>

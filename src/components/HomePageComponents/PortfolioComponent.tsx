@@ -30,7 +30,7 @@ const PortfolioComponent: React.FC<PortfolioComponentProps> = ({ data }) => {
         </div>
 
         {/* Heading */}
-        <h2 className="text-[30px] lg:text-[48px] font-bold mt-2 max-w-3xl mx-auto">
+        <h2 className="text-[30px] lg:text-[48px] font-bold mt-2 mx-auto">
           {data.Subtitle.split(" ").slice(0, -1).join(" ")}{" "}
           <span className="bg-gradient-to-l from-[#2058FF] to-[#004BC2] bg-clip-text text-transparent ">
             {data.Subtitle.split(" ").slice(-1)}
@@ -43,51 +43,45 @@ const PortfolioComponent: React.FC<PortfolioComponentProps> = ({ data }) => {
         </p>
       </div>
 
-      {/* Portfolio Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
-        {/* First Large Item */}
-        <div className="relative bg-gray-200 rounded-lg overflow-hidden md:row-span-2 h-64 md:h-full">
-          {data.works[0]?.Image && (
-            <div className="h-full relative">
-              <Image
-                src={data.works[0].Image}
-                alt={data.works[0].title}
-                className="object-cover"
-                fill
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-              />
-              <div className="absolute bottom-0 left-0 p-6 text-white">
-                <h3 className="text-xl font-bold">{data.works[0].title}</h3>
-                <p>{data.works[0].shortDescription}</p>
-              </div>
-            </div>
-          )}
-        </div>
-
-        {/* Other Portfolio Items */}
-        {data.works.slice(1).map((work, index) => (
-          <div
-            key={index}
-            className="relative bg-gray-200 rounded-lg overflow-hidden h-80"
-          >
-            {work.Image && (
-              <div className="h-full relative">
-                <Image
-                  src={work.Image}
-                  alt={work.title}
-                  className="object-cover"
-                  fill
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                />
-                <div className="absolute bottom-0 left-0 p-4 text-white text-center justify-center">
-                  <h3 className="text-lg font-bold">{work.title}</h3>
-                  <p className="text-sm">{work.shortDescription}</p>
-                </div>
-              </div>
-            )}
-          </div>
-        ))}
+{/* Top Two Images in Two Columns */}
+<div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10">
+  {data.works.slice(0, 2).map((work, index) => (
+    <div
+      key={index}
+      className="overflow-hidden "
+    >
+      <div className=" h-full relative">
+        <Image
+          src={work.Image}
+          alt={work.title}
+          className="object-contain"
+          
+        />
+      
       </div>
+    </div>
+  ))}
+</div>
+
+{/* Bottom Three Images in Three Columns */}
+<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
+  {data.works.slice(2, 5).map((work, index) => (
+    <div
+      key={index}
+      className=" rounded-lg overflow-hidden "
+    >
+      <div className="h-full relative">
+        <Image
+          src={work.Image}
+          alt={work.title}
+          className="object-contain"
+        />
+
+      </div>
+    </div>
+  ))}
+</div>
+
 
       {/* View More Button */}
       <div className="flex justify-center my-16 ">

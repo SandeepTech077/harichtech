@@ -13,6 +13,19 @@ import AeroBanner from "../../public/Image/OurProjects/Banner/aero-banner.png"
 import OreumBanner from "../../public/Image/OurProjects/Banner/orium-banner.png"
 import EverVitalBanner from "../../public/Image/OurProjects/Banner/evervital-banner.png"
 
+// Main Mobile Banner 
+import InsightMobileBanner from "../../public/Image/OurProjects/Banner/insight-mobile-banner.png"
+import AarambhMobileBanner from "../../public/Image/OurProjects/Banner/aarambh-mobile-banner.png"
+import MicroMobileBanner from "../../public/Image/OurProjects/Banner/micro-mobile-banner.png"
+import ArkleMobileBanner from "../../public/Image/OurProjects/Banner/arkle-mobile-banner.png"
+import ShilpMobileBanner from "../../public/Image/OurProjects/Banner/shilp-mobile-banner.png"
+import YashMobileBanner from "../../public/Image/OurProjects/Banner/yash-mobile-banner.png"
+import SnehalMobileBanner from "../../public/Image/OurProjects/Banner/snehal-mobile-banner.png"
+import SnehShilpMobileBanner from "../../public/Image/OurProjects/Banner/snehshilp-banner.png"
+import FestMobileBanner from "../../public/Image/OurProjects/Banner/fest-mobile-banner.png"
+import AeroMobileBanner from "../../public/Image/OurProjects/Banner/aero-mobile-banner.png"
+import OreumMobileBanner from "../../public/Image/OurProjects/Banner/orem-mobile-banner.png"
+import EverVitalMobileBanner from "../../public/Image/OurProjects/Banner/evervital-mobile-banner.png"
 
 // OverView Image 
 import InsightOverView from "../../public/Image/OurProjects/OverView/insight.png"
@@ -114,8 +127,43 @@ import FestClient from "../../public/Image/OurProjects/clientReview/fest.png"
 import AeroClient from "../../public/Image/OurProjects/clientReview/aero.png"
 import OreumClient from "../../public/Image/OurProjects/clientReview/orium.png"
 import EverVitalClient from "../../public/Image/OurProjects/clientReview/evervital.png"
-
-
+// Icons
+import InsightIcon from "../../public/Image/OurProjects/testimoinals/svg/insight-icon.svg"
+import InsightHappyClient from "../../public/Image/OurProjects/testimoinals/svg/insight-happy-client.svg"
+import InsightConnect from "../../public/Image/OurProjects/testimoinals/svg/insight-connect.svg"
+import AarambhIcon from "../../public/Image/OurProjects/testimoinals/svg/aarambh-icon.svg"
+import AarambhHappyClient from "../../public/Image/OurProjects/testimoinals/svg/aarambh-happy-client.svg"
+import AarambhConnect from "../../public/Image/OurProjects/testimoinals/svg/aarambh-connect.svg"
+import MicroIcon from "../../public/Image/OurProjects/testimoinals/svg/micro-icon.svg"
+import MicroHappyClient from "../../public/Image/OurProjects/testimoinals/svg/micro-happy-client.svg"
+import MicroConnect from "../../public/Image/OurProjects/testimoinals/svg/micro-connect.svg"
+import ArkleIcon from "../../public/Image/OurProjects/testimoinals/svg/arkle-icon.svg"
+import ArkleHappyClient from "../../public/Image/OurProjects/testimoinals/svg/arkle-happy-client.svg"
+import ArkleConnect from "../../public/Image/OurProjects/testimoinals/svg/arkle-connect.svg"
+import ShilpIcon from "../../public/Image/OurProjects/testimoinals/svg/shilp-icon.svg"
+import ShilpHappyClient from "../../public/Image/OurProjects/testimoinals/svg/shilp-happy-client.svg"
+import ShilpConnect from "../../public/Image/OurProjects/testimoinals/svg/shilp-connet.svg"
+import YashIcon from "../../public/Image/OurProjects/testimoinals/svg/yash-icon.svg"
+import YashHappyClient from "../../public/Image/OurProjects/testimoinals/svg/yash-happy-client.svg"
+import YashConnect from "../../public/Image/OurProjects/testimoinals/svg/yash-connet.svg"
+import SnehalIcon from "../../public/Image/OurProjects/testimoinals/svg/snehal-icon.svg"
+import SnehalHappyClient from "../../public/Image/OurProjects/testimoinals/svg/snehal-happy-client.svg"
+import SnehalConnect from "../../public/Image/OurProjects/testimoinals/svg/snehal-connet.svg"
+import SnehShilpIcon from "../../public/Image/OurProjects/testimoinals/svg/snehshilp-icon.svg"
+import SnehShilpHappyClient from "../../public/Image/OurProjects/testimoinals/svg/snehal-happy-client.svg"
+import SnehShilpConnect from "../../public/Image/OurProjects/testimoinals/svg/snehal-connet.svg"
+import FestIcon from "../../public/Image/OurProjects/testimoinals/svg/fest-icon.svg"
+import FestHappyClient from "../../public/Image/OurProjects/testimoinals/svg/fest-happy-client.svg"
+import FestConnect from "../../public/Image/OurProjects/testimoinals/svg/fest-connect.svg"
+import AeroIcon from "../../public/Image/OurProjects/testimoinals/svg/aero-icon.svg"
+import AeroHappyClient from "../../public/Image/OurProjects/testimoinals/svg/aero-happy-client.svg"
+import AeroConnect from "../../public/Image/OurProjects/testimoinals/svg/aero-connect.svg"
+import OreumIcon from "../../public/Image/OurProjects/testimoinals/svg/oreum-icon.svg"
+import OreumHappyClient from "../../public/Image/OurProjects/testimoinals/svg/oreum-happy-client.svg"
+import OreumConnect from "../../public/Image/OurProjects/testimoinals/svg/oreum-connect.svg"
+import EverVitalIcon from "../../public/Image/OurProjects/testimoinals/svg/evervital-icon.svg"
+import EverVitalHappyClient from "../../public/Image/OurProjects/testimoinals/svg/evervital-happy-client.svg"
+import EverVitalConnect from "../../public/Image/OurProjects/testimoinals/svg/evervital-connect.svg"
 
 //Arrow 
 import festArrow from "../../public/Image/OurProjects/Svg/fest.svg"
@@ -124,6 +172,17 @@ import BlackArrow from "../../public/Image/OurProjects/Svg/black.svg"
 import AarambhArrow from "../../public/Image/OurProjects/Svg/aarambh.svg"
 import MicroArrow from "../../public/Image/OurProjects/Svg/micro.svg"
 import SneShilp from"../../public/Image/OurProjects/Svg/snehshilp.svg"
+
+
+
+
+//Profile
+import commonProfile from "../../public/Image/OurProjects/testimoinals/profiles/profile.png"
+// import yashProfile from "../../public/Image/OurProjects/testimoinals/profiles/"
+
+
+
+
 
 
 export const Helper = {
@@ -148,6 +207,20 @@ export const Helper = {
     AeroBanner,
     OreumBanner,
     EverVitalBanner,
+
+    // Mobile banner 
+    InsightMobileBanner,
+    AarambhMobileBanner,
+    MicroMobileBanner,
+    ArkleMobileBanner,
+    ShilpMobileBanner,
+    YashMobileBanner,
+    SnehalMobileBanner,
+    SnehShilpMobileBanner,
+    FestMobileBanner,
+    AeroMobileBanner,
+    OreumMobileBanner,
+    EverVitalMobileBanner,
 
     //Overview
     InsightOverView,
@@ -253,7 +326,54 @@ export const Helper = {
     AeroClient,
     OreumClient,
     EverVitalClient,
-    
+
+
+
+    // Icons
+    InsightIcon,
+    AarambhIcon,
+    MicroIcon,
+    ArkleIcon,
+    ShilpIcon,
+    YashIcon,
+    SnehalIcon,
+    SnehShilpIcon,
+    FestIcon,
+    AeroIcon,
+    OreumIcon,
+    EverVitalIcon,
+    // Icons
+
+    InsightHappyClient,
+    AarambhHappyClient,
+    MicroHappyClient,
+    ArkleHappyClient,
+    ShilpHappyClient,
+    YashHappyClient,
+    SnehalHappyClient,
+    SnehShilpHappyClient,
+    FestHappyClient,
+    AeroHappyClient,
+    OreumHappyClient,
+    EverVitalHappyClient,
+    // Icons
+
+    InsightConnect,
+    AarambhConnect,
+    MicroConnect,
+    ArkleConnect,
+    ShilpConnect,
+    YashConnect,
+    SnehalConnect,
+    SnehShilpConnect,
+    FestConnect,
+    AeroConnect,
+    OreumConnect,
+    EverVitalConnect,
+
+
+
+    //
     
 
     

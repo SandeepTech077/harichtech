@@ -56,6 +56,12 @@ export const OurProjects = {
         Banner: Helper.InsightFont,
       },
       review:{
+        colorCode:{
+          profileBorderColor:"border-[#1B5AA7]",
+          textCenter:"color-black",
+
+        },
+        profileImage:"",
         banner:Helper.InsightClient,
         mobileBanner :Helper.InsightClient
       }

@@ -47,7 +47,13 @@ export const Services = {
       description:
         "Our digital marketing services amplify your brand’s online presence, driving visibility and growth. We craft strategic campaigns that combine SEO, social media, content marketing, and paid advertising. With data-driven insights and creative execution, we help businesses connect with their audiences, generate leads, and achieve measurable results in the digital landscape.",
       btnTitle: "Explore more",
-      serviceIcons: [Helper.Facebook, Helper.Instagram, Helper.Linkdin],
+      serviceIcons: [
+        Helper.Facebook,
+        Helper.Instagram,
+        Helper.Linkdin,
+        Helper.Ani,
+        Helper.Mate,
+      ],
       ImgBanner: Helper.DigitalMarketing,
     },
   ],

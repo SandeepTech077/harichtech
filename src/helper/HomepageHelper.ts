@@ -12,14 +12,18 @@ import SupportSvg from "../../public/Image/HomePageImage/KnowmeImage/Support.svg
 
 
 //Work
-import WorkImage1 from "../../public/Image/HomePageImage/Work/Img1.png";
-import WorkImage2 from "../../public/Image/HomePageImage/Work/Img2.png";
-import WorkImage3 from "../../public/Image/HomePageImage/Work/Img3.png";
-import WorkImage4 from "../../public/Image/HomePageImage/Work/Img4.png";
-import WorkImage5 from "../../public/Image/HomePageImage/Work/Img5.png";
+import WorkImage1 from "../../public/Image/HomePageImage/Work/Image1.png";
+import WorkImage2 from "../../public/Image/HomePageImage/Work/Image2.png";
+import WorkImage3 from "../../public/Image/HomePageImage/Work/Image3.png";
+import WorkImage4 from "../../public/Image/HomePageImage/Work/Image4.png";
+import WorkImage5 from "../../public/Image/HomePageImage/Work/Image5.png";
 
 //testimonials
-import TestimonialImage1 from "../../public/Image/HomePageImage/TestimonialImage/Img1.png";
+import profile from "../../public/Image/HomePageImage/TestimonialImage/profile.png";
+import yash from "../../public/Image/HomePageImage/TestimonialImage/yash.png";
+import snehal from "../../public/Image/HomePageImage/TestimonialImage/snehal.png";
+import darshil from "../../public/Image/HomePageImage/TestimonialImage/darshil.png";
+import oriem from "../../public/Image/HomePageImage/TestimonialImage/oriem.png";
 import clip from "../../public/SVG/Clip.svg"
 
 //Blogs
@@ -56,6 +60,8 @@ import clientLogo12 from "../../public/Image/HomePageImage/CLientLogo/logo-12.sv
 import clientLogo13 from "../../public/Image/HomePageImage/CLientLogo/logo-13.svg";
 import clientLogo14 from "../../public/Image/HomePageImage/CLientLogo/logo-14.svg";
 import clientLogo15 from "../../public/Image/HomePageImage/CLientLogo/logo-15.svg";
+import clientLogo16 from "../../public/Image/HomePageImage/CLientLogo/logo-16.svg";
+import clientLogo17 from "../../public/Image/HomePageImage/CLientLogo/logo-17.svg";
 
 
 export const Helper = {
@@ -83,7 +89,11 @@ export const Helper = {
   WorkImage5,
 
   //testimonials
-  TestimonialImage1,
+  profile,
+  yash,
+  snehal,
+  darshil,
+  oriem,
   clip,
 
 
@@ -114,6 +124,8 @@ export const Helper = {
   clientLogo13,
   clientLogo14,
   clientLogo15,
+  clientLogo16,
+  clientLogo17,
 
   
 

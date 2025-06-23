@@ -43,18 +43,18 @@ const Portfolio: React.FC<PortfolioProps> = ({ design }) => {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
         {design.Images.map((item) => (
           <Link href={`/our-work/${item.id}`} key={item.id}>
-            <div className="group hover:scale-105 transition duration-300 cursor-pointer">
-              <div className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden border border-gray-100 relative ">
+            <div className="group hover:scale-105 transition duration-300 cursor-pointer bg-[#F3F3F3]">
+              <div className=" rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden  relative ">
                 {/* Right and Bottom gradient border */}
                 <div
-                  className="absolute top-0 right-0 w-1 h-full rounded-r-3xl"
+                  className="absolute top-0 right-0 w-1.5 h-full rounded-r-3xl"
                   style={{
                     background:
                       "linear-gradient(270deg, #2058FF 0%, #004BC2 100%)",
                   }}
                 />
                 <div
-                  className="absolute bottom-0 left-0 w-full h-1 rounded-b-3xl"
+                  className="absolute bottom-0 left-0 w-full h-1.5 rounded-b-3xl"
                   style={{
                     background:
                       "linear-gradient(270deg, #2058FF 0%, #004BC2 100%)",
@@ -81,8 +81,7 @@ const Portfolio: React.FC<PortfolioProps> = ({ design }) => {
                   <div className="relative">
                     {/* Desktop Mockup */}
                     <div className="relative mb-6">
-                      <div className="bg-gray-900 rounded-xl p-3 shadow-2xl border border-gray-800">
-                        <div className="bg-white rounded-lg overflow-hidden border border-gray-200">
+                        <div className=" rounded-lg overflow-hidden">
                           <Image
                             src={item.image}
                             alt={item.title}
@@ -90,22 +89,9 @@ const Portfolio: React.FC<PortfolioProps> = ({ design }) => {
                             priority
                           />
                         </div>
-                      </div>
                     </div>
 
-                    {/* Mobile Mockup */}
-                    <div className="absolute -bottom-4 -right-4 w-24 md:w-32">
-                      <div className="bg-gray-900 rounded-2xl p-2 shadow-xl border border-gray-800">
-                        <div className="bg-white rounded-xl overflow-hidden border border-gray-200">
-                          <Image
-                            src={item.image}
-                            alt={`${item.title} Mobile`}
-                            className="w-full h-auto object-cover"
-                            priority
-                          />
-                        </div>
-                      </div>
-                    </div>
+              
                   </div>
                 </div>
               </div>

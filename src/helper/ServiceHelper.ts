@@ -17,6 +17,9 @@ import JavaScript from "../../public/SVG/Web/Javascript.svg"
 import Facebook from "../../public/SVG/SocialMarketing/Facebook.svg"
 import Instagram from "../../public/SVG/SocialMarketing/Instagram.svg"
 import Linkdin from "../../public/SVG/SocialMarketing/Linkedin.svg"
+import Mate from "../../public/SVG/SocialMarketing/Meta.svg"
+import Ani from "../../public/SVG/SocialMarketing/Analist.svg"
+
 
 
 // Img
@@ -73,6 +76,8 @@ export const Helper = {
     Facebook,
     Instagram,
     Linkdin,
+    Mate,
+    Ani,
 
     //Image
     DigitalMarketing,
