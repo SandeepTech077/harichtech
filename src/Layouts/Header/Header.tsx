@@ -61,7 +61,7 @@ const Header = () => {
     { name: "About us", path: "/about-us" },
     { name: "Blog", path: "/blog" },
     { name: "Career", path: "/career" },
-    { name: "Contact Us", path: "/contact-us" },
+    // { name: "Contact Us", path: "/contact-us" },
   ];
 
   const socialLinks = {

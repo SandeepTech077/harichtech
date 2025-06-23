@@ -57,6 +57,8 @@ export const OurProjects = {
       },
       review: {
         Textcolor: "text-[#1B5AA7]",
+        bgImage:Helper.BgImage,
+
         Bordercolor: "border-[#1B5AA7]",
         icon: Helper.InsightIcon,
         backgroundColor: "bg-[#EEF6FF]",
@@ -113,6 +115,8 @@ export const OurProjects = {
       },
       review: {
         Textcolor: "text-black",
+        bgImage:Helper.BgImage,
+
         Bordercolor: "border-[#1B5AA7]",
         icon: Helper.InsightIcon,
         backgroundColor: "bg-[#EEF6FF]",
@@ -174,6 +178,8 @@ export const OurProjects = {
       },
       review: {
         Textcolor: "text-black",
+        bgImage:Helper.BgImage,
+
         Bordercolor: "border-[#4BBA72]",
         icon: Helper.MicroIcon,
         backgroundColor: "bg-[#CBFFDD]",
@@ -231,6 +237,8 @@ export const OurProjects = {
       },
      review: {
         Textcolor: "text-black",
+        bgImage:Helper.BgImage,
+
         Bordercolor: "border-[#D09A40]",
         icon: Helper.ArkleIcon,
         backgroundColor: "bg-[#EEEEEE]",
@@ -284,6 +292,8 @@ export const OurProjects = {
       },
        review: {
         Textcolor: "text-black",
+        bgImage:Helper.BgImage,
+
         Bordercolor: "border-black",
         icon: Helper.ShilpIcon,
         backgroundColor: "bg-[#EEEEEE]",
@@ -337,6 +347,8 @@ export const OurProjects = {
       },
   review: {
         Textcolor: "text-black",
+        bgImage:Helper.BgImage,
+
         Bordercolor: "border-black",
         icon: Helper.YashIcon,
         backgroundColor: "bg-[#EEEEEE]",
@@ -390,6 +402,8 @@ export const OurProjects = {
       },
        review: {
         Textcolor: "text-black",
+        bgImage:Helper.BgImage,
+
         Bordercolor: "border-black",
         icon: Helper.SnehalIcon,
         backgroundColor: "bg-[#EEEEEE]",
@@ -443,6 +457,8 @@ export const OurProjects = {
       },
      review: {
         Textcolor: "text-black",
+        bgImage:Helper.BgImage,
+
         Bordercolor: "border-black",
         icon: Helper.SnehShilpIcon,
         backgroundColor: "bg-[#EEFFE9]",
@@ -496,6 +512,8 @@ export const OurProjects = {
       },
       review: {
         Textcolor: "text-black",
+        bgImage:Helper.BgImage,
+
         Bordercolor: "border-black",
         icon: Helper.FestIcon,
         backgroundColor: "bg-[#F2F8FF]",
@@ -552,6 +570,7 @@ export const OurProjects = {
         Banner: Helper.InsightFont,
       },
        review: {
+        bgImage:Helper.BgImage,
         Textcolor: "text-black",
         Bordercolor: "border-[#53CCC7]",
         icon: Helper.AeroIcon,
@@ -609,6 +628,8 @@ export const OurProjects = {
       },
       review: {
         Textcolor: "text-black",
+        bgImage:Helper.BgImage,
+
         Bordercolor: "border-black",
         icon: Helper.OreumIcon,
         backgroundColor: "bg-[#F0FFF0]",
@@ -667,6 +688,8 @@ export const OurProjects = {
       },
      review: {
         Textcolor: "text-black",
+        bgImage:Helper.BgImage,
+
         Bordercolor: "border-black",
         icon: Helper.EverVitalIcon,
         backgroundColor: "bg-[#E9FFF7]",

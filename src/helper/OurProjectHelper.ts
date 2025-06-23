@@ -184,12 +184,16 @@ import MicroProfile from "../../public/Image/OurProjects/testimoinals/profiles/m
 import DarshilProfile from "../../public/Image/OurProjects/testimoinals/profiles/darshil.png"
 
 
+import BgImage from "../../public/Image/OurProjects/BG.png"
+
+
 
 
 
 
 
 export const Helper = {
+    BgImage,
 
     //SVG
     festArrow,
