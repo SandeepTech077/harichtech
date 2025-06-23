@@ -100,19 +100,12 @@ const KnownMore: React.FC<KnownMoreProps> = ({ data }) => {
                     {feature.id}
                   </div>
                   <div className="flex mb-3 rounded-full bg-white w-10 h-10 justify-center items-center shadow-sm">
-                    {typeof feature.icon === "string" ? (
-                      <div 
-                        className="w-5 h-5 flex items-center justify-center"
-                        dangerouslySetInnerHTML={{ __html: feature.icon }} 
-                      />
-                    ) : (
-                      <Image
-                        src={feature.icon}
-                        alt={feature.title}
-                        width={20}
-                        height={20}
-                      />
-                    )}
+                    <Image
+                      src={feature.icon}
+                      alt={feature.title}
+                      width={28}
+                      className="h-auto"
+                    />
                   </div>
                   <h3 className="text-sm font-bold mb-1 leading-tight">
                     {feature.title}
@@ -143,7 +136,7 @@ const KnownMore: React.FC<KnownMoreProps> = ({ data }) => {
               <p className="text-gray-600 text-base leading-relaxed max-w-2xl mx-auto">
                 {description}
               </p>
-              
+
               {/* Buttons */}
               <div className="flex justify-center gap-4">
                 {buttons.map((btn, i) => (
@@ -186,19 +179,12 @@ const KnownMore: React.FC<KnownMoreProps> = ({ data }) => {
                       {feature.id}
                     </div>
                     <div className="flex mb-3 rounded-full bg-white w-12 h-12 justify-center items-center shadow-sm">
-                      {typeof feature.icon === "string" ? (
-                        <div 
-                          className="w-6 h-6 flex items-center justify-center"
-                          dangerouslySetInnerHTML={{ __html: feature.icon }} 
-                        />
-                      ) : (
-                        <Image
-                          src={feature.icon}
-                          alt={feature.title}
-                          width={24}
-                          height={24}
-                        />
-                      )}
+                      <Image
+                        src={feature.icon}
+                        alt={feature.title}
+                        width={28}
+                        className="h-auto"
+                      />
                     </div>
                     <h3 className="text-base font-bold mb-1 leading-tight">
                       {feature.title}
@@ -227,19 +213,12 @@ const KnownMore: React.FC<KnownMoreProps> = ({ data }) => {
                     {feature.id}
                   </div>
                   <div className="flex mb-4 rounded-full bg-white w-14 h-14 xl:w-16 xl:h-16 justify-center items-center shadow-sm">
-                    {typeof feature.icon === "string" ? (
-                      <div 
-                        className="w-7 h-7 xl:w-8 xl:h-8 flex items-center justify-center"
-                        dangerouslySetInnerHTML={{ __html: feature.icon }} 
-                      />
-                    ) : (
-                      <Image
-                        src={feature.icon}
-                        alt={feature.title}
-                        width={28}
-                        height={28}
-                      />
-                    )}
+                    <Image
+                      src={feature.icon}
+                      alt={feature.title}
+                      width={28}
+                      className="h-auto"
+                    />
                   </div>
                   <h3 className="text-lg xl:text-xl 2xl:text-2xl font-bold mb-2 leading-tight">
                     {feature.title}
@@ -305,19 +284,12 @@ const KnownMore: React.FC<KnownMoreProps> = ({ data }) => {
                     {feature.id}
                   </div>
                   <div className="flex mb-4 rounded-full bg-white w-14 h-14 xl:w-16 xl:h-16 justify-center items-center shadow-sm">
-                    {typeof feature.icon === "string" ? (
-                      <div 
-                        className="w-7 h-7 xl:w-8 xl:h-8 flex items-center justify-center"
-                        dangerouslySetInnerHTML={{ __html: feature.icon }} 
-                      />
-                    ) : (
-                      <Image
-                        src={feature.icon}
-                        alt={feature.title}
-                        width={28}
-                        height={28}
-                      />
-                    )}
+                    <Image
+                      src={feature.icon}
+                      alt={feature.title}
+                      width={28}
+                      className="h-auto"
+                    />
                   </div>
                   <h3 className="text-lg xl:text-xl 2xl:text-2xl font-bold mb-2 leading-tight">
                     {feature.title}

@@ -114,55 +114,53 @@ const Header = () => {
             </div>
 
             {/* Social Links - FIXED: Consistent sizing for all social icons */}
-            <div className="flex items-center space-x-2 sm:space-x-3 flex-shrink-0">
-              <Link
-                href={socialLinks.linkedin}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-8 h-8 bg-white rounded-full hover:bg-gray-50 hover:scale-110 transition-all duration-300 group shadow-sm flex items-center justify-center flex-shrink-0"
-                aria-label="Follow us on LinkedIn"
-              >
-                <Image
-                  src={linkedinIcon}
-                  alt="LinkedIn"
-                  width={16}
-                  height={16}
-                  className="group-hover:opacity-80"
-                />
-              </Link>
+         <div className="flex items-center space-x-2 sm:space-x-3 flex-shrink-0">
+  <Link
+    href={socialLinks.linkedin}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="w-8 h-8 bg-white rounded-full hover:bg-gray-50 hover:scale-110 transition-all duration-300 group shadow-sm flex items-center justify-center flex-shrink-0"
+    aria-label="Follow us on LinkedIn"
+  >
+    <Image
+      src={linkedinIcon}
+      alt="LinkedIn"
+      width={16}
+      className="h-auto group-hover:opacity-80"
+    />
+  </Link>
 
-              <Link
-                href={socialLinks.facebook}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-8 h-8 bg-white rounded-full hover:bg-gray-50 hover:scale-110 transition-all duration-300 group shadow-sm flex items-center justify-center flex-shrink-0"
-                aria-label="Follow us on Facebook"
-              >
-                <Image
-                  src={facebookIcon}
-                  alt="Facebook"
-                  width={10}
-                  height={10}
-                  className="group-hover:opacity-80"
-                />
-              </Link>
+  <Link
+    href={socialLinks.facebook}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="w-8 h-8 bg-white rounded-full hover:bg-gray-50 hover:scale-110 transition-all duration-300 group shadow-sm flex items-center justify-center flex-shrink-0"
+    aria-label="Follow us on Facebook"
+  >
+    <Image
+      src={facebookIcon}
+      alt="Facebook"
+      width={10}
+      className="h-auto group-hover:opacity-80"
+    />
+  </Link>
 
-              <Link
-                href={socialLinks.instagram}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-8 h-8 bg-white rounded-full hover:bg-gray-50 hover:scale-110 transition-all duration-300 group shadow-sm flex items-center justify-center flex-shrink-0"
-                aria-label="Follow us on Instagram"
-              >
-                <Image
-                  src={instagramIcon}
-                  alt="Instagram"
-                  width={16}
-                  height={16}
-                  className="group-hover:opacity-80"
-                />
-              </Link>
-            </div>
+  <Link
+    href={socialLinks.instagram}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="w-8 h-8 bg-white rounded-full hover:bg-gray-50 hover:scale-110 transition-all duration-300 group shadow-sm flex items-center justify-center flex-shrink-0"
+    aria-label="Follow us on Instagram"
+  >
+    <Image
+      src={instagramIcon}
+      alt="Instagram"
+      width={16}
+      className="h-auto group-hover:opacity-80"
+    />
+  </Link>
+</div>
+
           </div>
         </div>
       )}

@@ -21,6 +21,9 @@ import Mate from "../../public/SVG/SocialMarketing/Meta.svg"
 import Ani from "../../public/SVG/SocialMarketing/Analist.svg"
 
 
+//
+
+
 
 // Img
 import DigitalMarketing from "../../public/Image/ServiceImg/AllPage/DigitalMarketing.png"
@@ -60,7 +63,18 @@ import DigitalBanner from "../../public/Image/ServiceImg/ImageOfLang/Digit/Banne
 
 
 import Line from "../../public/SVG/Line.svg"
+
+
+//images 
+import InsightProject from "../../public/Image/HomePageImage/Work/Image3.png"
+import AarambhProject from "../../public/Image/HomePageImage/Work/Image4.png"
+import MicroProject from "../../public/Image/HomePageImage/Work/Image5.png"
 export const Helper = {
+
+    // Project 
+    InsightProject,
+    AarambhProject,
+    MicroProject,
 // Svg
     Figma,
     Ai,

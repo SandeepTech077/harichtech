@@ -59,21 +59,20 @@ export const ServiceListData = {
         card: [
           {
             id: 1,
-            Img: Helper.UIUXImg1,
-            shortDescribation: "Norem ipsum dolor ",
-            blog: ["UI/UX", "Website"],
+            Img: Helper.InsightProject,
+            alt: "Insight Management",
           },
           {
             id: 2,
-            Img: Helper.UIUXImg2,
-            shortDescribation: "Norem ipsum dolor ",
-            blog: ["UI/UX", "Website"],
+            Img: Helper.AarambhProject,
+            alt: "Insight Management",
+            
           },
           {
             id: 3,
-            Img: Helper.UIUXImg3,
-            shortDescribation: "Norem ipsum dolor ",
-            blog: ["UI/UX", "Website"],
+             Img: Helper.MicroProject,
+            alt: "Insight Management",
+          
           },
         ],
       },
@@ -159,28 +158,27 @@ export const ServiceListData = {
           "Progressive web apps",
         ],
       },
-      portfolio: {
+     portfolio: {
         title: "Portfolio",
         subTitle: "Discover Our Digital Masterpieces",
         btnTitle: "See more projects",
         card: [
           {
             id: 1,
-            Img: Helper.UIUXImg1,
-            shortDescribation: "Norem ipsum dolor ",
-            blog: ["UI/UX", "Website"],
+            Img: Helper.InsightProject,
+            alt: "Insight Management",
           },
           {
             id: 2,
-            Img: Helper.UIUXImg2,
-            shortDescribation: "Norem ipsum dolor ",
-            blog: ["UI/UX", "Website"],
+            Img: Helper.AarambhProject,
+            alt: "Insight Management",
+            
           },
           {
             id: 3,
-            Img: Helper.UIUXImg3,
-            shortDescribation: "Norem ipsum dolor ",
-            blog: ["UI/UX", "Website"],
+             Img: Helper.MicroProject,
+            alt: "Insight Management",
+          
           },
         ],
       },
@@ -265,31 +263,29 @@ export const ServiceListData = {
             "Progressive web apps",
           ],
       },
-      portfolio: {
+   portfolio: {
         title: "Portfolio",
         subTitle: "Discover Our Digital Masterpieces",
         btnTitle: "See more projects",
         card: [
           {
             id: 1,
-            Img: Helper.UIUXImg1,
-            shortDescribation: "Norem ipsum dolor ",
-            blog: ["UI/UX", "Website"],
+            Img: Helper.InsightProject,
+            alt: "Insight Management",
           },
           {
             id: 2,
-            Img: Helper.UIUXImg2,
-            shortDescribation: "Norem ipsum dolor ",
-            blog: ["UI/UX", "Website"],
+            Img: Helper.AarambhProject,
+            alt: "Insight Management",
+            
           },
           {
             id: 3,
-            Img: Helper.UIUXImg3,
-            shortDescribation: "Norem ipsum dolor ",
-            blog: ["UI/UX", "Website"],
+             Img: Helper.MicroProject,
+            alt: "Insight Management",
+          
           },
         ],
-      
       },
       whyUs: {
         title: "Why Us",
@@ -373,28 +369,27 @@ export const ServiceListData = {
           "Analytics and Reporting",
         ],
       },
-      portfolio: {
+    portfolio: {
         title: "Portfolio",
         subTitle: "Discover Our Digital Masterpieces",
         btnTitle: "See more projects",
         card: [
           {
             id: 1,
-            Img: Helper.UIUXImg1,
-            shortDescribation: "Norem ipsum dolor ",
-            blog: ["UI/UX", "Website"],
+            Img: Helper.InsightProject,
+            alt: "Insight Management",
           },
           {
             id: 2,
-            Img: Helper.UIUXImg2,
-            shortDescribation: "Norem ipsum dolor ",
-            blog: ["UI/UX", "Website"],
+            Img: Helper.AarambhProject,
+            alt: "Insight Management",
+            
           },
           {
             id: 3,
-            Img: Helper.UIUXImg3,
-            shortDescribation: "Norem ipsum dolor ",
-            blog: ["UI/UX", "Website"],
+             Img: Helper.MicroProject,
+            alt: "Insight Management",
+          
           },
         ],
       },
