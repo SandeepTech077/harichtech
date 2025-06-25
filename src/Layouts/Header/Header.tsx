@@ -4,9 +4,11 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-import { Menu, X, Phone, Mail } from "lucide-react";
+import { Menu, X} from "lucide-react";
 import phoneicon from "../../../public/SVG/call.svg";
 import mailicon from "../../../public/SVG/email.svg";
+import MobilePhoneIcon from "../../../public/SVG/mobile-phone.svg";
+import MobileEMailIcon from "../../../public/SVG/mobile-email.svg";
 import Logo from "../../../public/Logo/Logo.svg";
 import linkedinIcon from "../../../public/SVG/linkedin-logo.svg";
 import facebookIcon from "../../../public/SVG/facebook-logo.svg";
@@ -57,7 +59,7 @@ const Header = () => {
   const navItems = [
     { name: "Home", path: "/" },
     { name: "Services", path: "/services" },
-    { name: "Our Work", path: "/our-work" },
+    { name: "Projects", path: "/projects" },
     { name: "About us", path: "/about-us" },
     { name: "Blog", path: "/blog" },
     { name: "Career", path: "/career" },
@@ -88,7 +90,7 @@ const Header = () => {
                   />
                 </div>
                 <Link
-                  href="tel:+916200665954"
+                  href="tel:+91-8200665684"
                   className="text-xs sm:text-sm font-medium hover:text-blue-100 transition-colors truncate"
                 >
                   +91-8200 66 5684
@@ -270,7 +272,12 @@ const Header = () => {
                 onClick={toggleMenu}
               >
                 <div className="p-2 bg-blue-100 rounded-lg group-hover:bg-blue-200 transition-colors flex-shrink-0">
-                  <Phone size={12} />
+                 <Image
+                    src={MobilePhoneIcon}
+                    alt="Phone Icon"
+                    width={20}
+                    height={20}
+                  />
                 </div>
                 <span className="font-medium text-sm truncate">
                   +91-6200-66-5954
@@ -282,7 +289,12 @@ const Header = () => {
                 onClick={toggleMenu}
               >
                 <div className="p-2 bg-blue-100 rounded-lg group-hover:bg-blue-200 transition-colors flex-shrink-0">
-                  <Mail size={12} />
+                     <Image
+                    src={MobileEMailIcon}
+                    alt="Phone Icon"
+                    width={20}
+                    height={20}
+                  />
                 </div>
                 <span className="font-medium text-sm truncate">
                   info@harichtech.com
@@ -335,7 +347,7 @@ const Header = () => {
                   href={socialLinks.facebook}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-9 h-9 bg-blue-600 text-white rounded-lg flex items-center justify-center transition-all duration-300 touch-manipulation hover:bg-blue-700"
+                  className="w-9 h-9 border border-gray-300  text-white rounded-lg flex items-center justify-center "
                   aria-label="Facebook"
                 >
                   <Image
@@ -349,7 +361,7 @@ const Header = () => {
                   href={socialLinks.instagram}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-9 h-9 bg-gradient-to-r from-pink-500 to-purple-600 text-white rounded-lg flex items-center justify-center transition-all duration-300 touch-manipulation hover:shadow-lg"
+                  className="w-9 h-9 border border-gray-300  text-white rounded-lg flex items-center justify-center "
                   aria-label="Instagram"
                 >
                   <Image
@@ -363,7 +375,7 @@ const Header = () => {
                   href={socialLinks.linkedin}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-9 h-9 bg-gradient-to-r from-blue-700 to-blue-800 text-white rounded-lg flex items-center justify-center transition-all duration-300 touch-manipulation hover:shadow-lg"
+                  className="w-9 h-9 border border-gray-300  text-white rounded-lg flex items-center justify-center "
                   aria-label="LinkedIn"
                 >
                   <Image

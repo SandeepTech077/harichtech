@@ -30,7 +30,7 @@ const PortfolioComponent: React.FC<PortfolioComponentProps> = ({ data }) => {
   const router = useRouter();
 
   const handleImageClick = (id: number) => {
-    router.push(`/our-work/${id}`);
+    router.push(`/projects/${id}`);
   };
 
   return (
@@ -95,7 +95,7 @@ const PortfolioComponent: React.FC<PortfolioComponentProps> = ({ data }) => {
 
       {/* View More Button */}
       <div className="flex justify-center my-16">
-        <Button text={data.btnTitle} href="/our-work" />
+        <Button text={data.btnTitle} href="/projects" />
       </div>
     </div>
   );

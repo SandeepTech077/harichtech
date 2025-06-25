@@ -38,7 +38,7 @@ const PortfolioSection: React.FC<PortfolioSectionProps> = ({
           </h2>
         </div>
         <div className="hidden lg:block">
-          <Button text={portfolioData.btnTitle} href="/our-work" />
+          <Button text={portfolioData.btnTitle} href="/projects" />
         </div>
       </div>
 

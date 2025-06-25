@@ -42,7 +42,7 @@ const Portfolio: React.FC<PortfolioProps> = ({ design }) => {
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 ">
         {design.Images.map((item) => (
-          <Link href={`/our-work/${item.id}`} key={item.id}>
+          <Link href={`/projects/${item.id}`} key={item.id}>
             <div className="group hover:scale-105 transition duration-300 cursor-pointer bg-[#F3F3F3] rounded-lg">
               <div className=" rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden  relative ">
                 {/* Right and Bottom gradient border */}

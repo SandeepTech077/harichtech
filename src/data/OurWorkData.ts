@@ -3,7 +3,7 @@ import { Helper } from "@/helper/OurWorkHelper";
 export const OurWorkData = {
   mainTitle: {
     title: "See Our Work",
-    subTitle: "Our Portfolio",
+    subTitle: "Our Projects",
     Banner: Helper.Banner,
   },
   design: {
