@@ -108,7 +108,6 @@ export const HomePagedata = {
     Helper.clientLogo14,
     Helper.clientLogo15,
     Helper.clientLogo16,
-    Helper.clientLogo17,
     
     
 
@@ -122,26 +121,31 @@ export const HomePagedata = {
       "Big ideas deserve more than just planning - they need momentum.We turn concepts into clear, functional digital experiences. From first thought to final build, we make it real.",
     works: [
       {
+        number:5,
         title: "Borem ipsum ",
         shortDescription: "Lorem ipsum ",
         Image: Helper.WorkImage1,
       },
       {
+         number:8,
         title: "Borem ipsum ",
         shortDescription: "Lorem ipsum ",
         Image: Helper.WorkImage2,
       },
       {
+          number:1,
         title: "Borem ipsum ",
         shortDescription: "Lorem ipsum ",
         Image: Helper.WorkImage3,
       },
       {
+        number:2,
         title: "Borem ipsum ",
         shortDescription: "Lorem ipsum ",
         Image: Helper.WorkImage4,
       },
       {
+        number:3,
         title: "Borem ipsum ",
         shortDescription: "Lorem ipsum ",
         Image: Helper.WorkImage5,

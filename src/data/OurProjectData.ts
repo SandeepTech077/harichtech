@@ -76,6 +76,7 @@ export const OurProjects = {
         description:
           "Shilp Aarambh GIFT City Run was conceived as a celebration of fitness, community, and a shared vision for a healthier, drug-free future. The event was born out of the idea that by coming together, we can make a difference in the lives of individuals struggling with drug addiction. It's an opportunity to raise awareness, promote a healthy lifestyle, and build a supportive community.",
         btnText: "Visit Website",
+        
         Banner: Helper.AarambhBanner,
         upArrowSvg: Helper.AarambhArrow,
         textColor: "text-[#E51D25]",
@@ -84,7 +85,7 @@ export const OurProjects = {
         leftSideImage: Helper.AarambhOverView,
         rightContent: {
           title: "Project Overview",
-          textColor: "text-[#E51D25]",
+          titleTextColor: "text-[#E51D25]",
           describation: [
             "Shilp Aarambh GIFT City Run was conceived as a celebration of fitness, community, and a shared vision for a healthier, drug-free future. The event was born out of the idea that by coming together, we can make a difference in the lives of individuals struggling with drug addiction. It's an opportunity to raise awareness, promote a healthy lifestyle, and build a supportive community.",
           ],
@@ -118,13 +119,15 @@ export const OurProjects = {
         bgImage:Helper.BgImage,
 
         Bordercolor: "border-[#1B5AA7]",
-        icon: Helper.InsightIcon,
-        backgroundColor: "bg-[#EEF6FF]",
+        icon: Helper.AarambhIcon,
+        backgroundColor: "bg-[#FFEBEB]",
         connectIcon: Helper.AarambhConnect,
         happyClintIcon: Helper.AarambhHappyClient,
-        profileImage: Helper.commonProfile,
+        profileImage: Helper.AarambhProfile,
         describation:
-          "At Insight Management, everything we do is about creating unforgettable experiences - and we needed a website that could reflect that same energy and precision online. Harich Tech got it right from the start. They understood our brand vision - modern, dynamic, and detail-driven - and translated it into a site that truly feels like an extension of who we are. It’s clean, fast, visually engaging, and easy to navigate. Most importantly, it captures the essence of what we do on-ground. With Harich, it never felt like a one-way brief - it was a creative partnership. The result speaks for itself.",
+          "Shilp Aarambh - Gift City Run is a project that’s extremely close to my heart. It’s not just an event, it’s a statement of purpose, energy, and community spirit - and we needed a digital presence that could convey all of that in a crisp and inspiring way. Harich Tech understood the emotion behind Aarambh from the very beginning. The website they delivered is vibrant, forward-focused, and perfectly in sync with the theme of fresh starts and positive movement. Their team brought in not just design expertise, but a thoughtful approach to storytelling and user flow. It’s rare to find a digital partner who balances creativity with clarity - and Harich did exactly that."
+
+
       },
     },
     {
@@ -197,7 +200,7 @@ export const OurProjects = {
         description:
           "At Arkle Equestrian Club, we pride ourselves on transforming both horses and riders into champions. Our comprehensive training programs have helped countless equestrians achieve their dreams, fostering a competitive spirit through personalized coaching and exceptional horse care.",
         btnText: "Visit Website",
-        titleTextColor: "text-black",
+        textColor: "text-black",
         Banner: Helper.ArkleBanner,
         upArrowSvg: Helper.BlackArrow,
       },
@@ -244,7 +247,7 @@ export const OurProjects = {
         backgroundColor: "bg-[#EEEEEE]",
         connectIcon: Helper.ArkleConnect,
         happyClintIcon: Helper.ArkleHappyClient,
-        profileImage: Helper.commonProfile,
+        profileImage: Helper.ArkleProfile,
         describation:
           "I wanted Arkle’s website to reflect not just our facilities, but the passion we bring to equestrian sport. Harich delivered more than just a website - they built an experience that speaks to every rider and horse lover who visits us. Simple, elegant, and exactly what we needed.",
       },
@@ -382,8 +385,8 @@ export const OurProjects = {
         },
       },
       MiddleBannerSection: {
-        Banner: Helper.ShilpMiddleBanner,
-        mobileBanner: Helper.ShilpMiddleBanner,
+        Banner: Helper.SnehalMiddleBanner,
+        mobileBanner: Helper.SnehalMiddleBanner,
       },
       design: {
         title: "Design System",
@@ -453,7 +456,7 @@ export const OurProjects = {
             BgColor: "#EEFFE9",
           },
         ],
-        Banner: Helper.SnehalFont,
+        Banner: Helper.SnehShilpFont,
       },
      review: {
         Textcolor: "text-black",
@@ -533,11 +536,11 @@ export const OurProjects = {
           "Qorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis.",
         btnText: "Visit Website",
         Banner: Helper.AeroBanner,
-        textColor: "text-[#53CCC7]",
+        textColor: "text-black",
         upArrowSvg: Helper.BlackArrow,
       },
       projectOverView: {
-        leftSideImage: Helper.ArkleOverView,
+        leftSideImage: Helper.AeroOverView,
         rightContent: {
           title: "Project Overview",
           titleTextColor: "text-[#53CCC7]",
@@ -567,7 +570,7 @@ export const OurProjects = {
             BgColor: "#878787",
           },
         ],
-        Banner: Helper.InsightFont,
+        Banner: Helper.AeroFont,
       },
        review: {
         bgImage:Helper.BgImage,
@@ -597,7 +600,7 @@ export const OurProjects = {
         leftSideImage: Helper.OreumOverView,
         rightContent: {
           title: "Project Overview",
-          titleTextColor: "text-[#05A750]",
+          titleTextColor: "text-black",
           describation: [
             "A next-generation, compact air purification system powered by Spirulina and other high-performing microalgae—often referred to as “liquid trees” for their remarkable ability to convert CO₂ into oxygen at rates surpassing most terrestrial plants, our system enhances indoor environments by working in harmony with traditional greenery—not replacing, but reinforcing nature’s work. Beyond oxygenation, Orium’s advanced biofiltration technology actively reduces airborne bacterial load and removes harmful particulate matter (PM2.5 and PM10), making it ideal for homes, offices, and healthcare spaces. Constructed from biodegradable, recyclable materials and equipped with automated monitoring and control systems, Orium is a smart, sustainable solution for healthier indoor living.  ",
           ],
@@ -613,14 +616,18 @@ export const OurProjects = {
         colors: [
           {
             id: 1,
-            BgColor: "#53CCC7",
+            BgColor: "#05A750",
           },
           {
             id: 2,
-            BgColor: "#2D2D2D",
+            BgColor: "#8AC53F",
           },
           {
             id: 3,
+            BgColor: "#2D2D2D",
+          },
+          {
+            id: 4,
             BgColor: "#747474",
           },
         ],
@@ -649,7 +656,7 @@ export const OurProjects = {
         btnText: "Visit Website",
         Banner: Helper.EverVitalBanner,
         textColor: "text-[#218A66]",
-        upArrowSvg: Helper.BlackArrow,
+        upArrowSvg: Helper.EverVitalArrow,
       },
       projectOverView: {
         leftSideImage: Helper.EverVitalOverView,

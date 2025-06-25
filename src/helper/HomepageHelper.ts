@@ -61,7 +61,6 @@ import clientLogo13 from "../../public/Image/HomePageImage/CLientLogo/logo-13.sv
 import clientLogo14 from "../../public/Image/HomePageImage/CLientLogo/logo-14.svg";
 import clientLogo15 from "../../public/Image/HomePageImage/CLientLogo/logo-15.svg";
 import clientLogo16 from "../../public/Image/HomePageImage/CLientLogo/logo-16.svg";
-import clientLogo17 from "../../public/Image/HomePageImage/CLientLogo/logo-17.svg";
 
 
 export const Helper = {
@@ -125,7 +124,6 @@ export const Helper = {
   clientLogo14,
   clientLogo15,
   clientLogo16,
-  clientLogo17,
 
   
 

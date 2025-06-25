@@ -172,6 +172,7 @@ import BlackArrow from "../../public/Image/OurProjects/Svg/black.svg"
 import AarambhArrow from "../../public/Image/OurProjects/Svg/aarambh.svg"
 import MicroArrow from "../../public/Image/OurProjects/Svg/micro.svg"
 import SneShilp from"../../public/Image/OurProjects/Svg/snehshilp.svg"
+import EverVitalArrow from"../../public/Image/OurProjects/Svg/ever-vital-icon.svg"
 
 
 
@@ -182,6 +183,8 @@ import yashProfile from "../../public/Image/OurProjects/testimoinals/profiles/ya
 import SnehalProfile from "../../public/Image/OurProjects/testimoinals/profiles/snehal.png"
 import MicroProfile from "../../public/Image/OurProjects/testimoinals/profiles/micro.png"
 import DarshilProfile from "../../public/Image/OurProjects/testimoinals/profiles/darshil.png"
+import ArkleProfile from "../../public/Image/OurProjects/testimoinals/profiles/arkle.png"
+import AarambhProfile from "../../public/Image/OurProjects/testimoinals/profiles/aarambh.png"
 
 
 import BgImage from "../../public/Image/OurProjects/overviews/bgline.png"
@@ -202,6 +205,7 @@ export const Helper = {
     AarambhArrow,
     MicroArrow,
     SneShilp,
+    EverVitalArrow,
     //Main Banner
     InsigtBanner,
     AarambhBanner,
@@ -386,7 +390,9 @@ export const Helper = {
     SnehalProfile,
     commonProfile,
     DarshilProfile,
-    MicroProfile
+    MicroProfile,
+    ArkleProfile,
+    AarambhProfile
 
     
 

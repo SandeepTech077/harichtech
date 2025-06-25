@@ -46,7 +46,7 @@ const OverView: React.FC<OverViewProps> = ({ data }) => {
         <div className="w-full md:w-1/2 flex flex-col space-y-6">
           <h2 className="text-xl sm:text-2xl md:text-3xl font-bold leading-snug">
             {firstPart}{' '}
-            <span className={titleTextColor ?? 'text-blue-600'}>
+            <span className={`${titleTextColor}`}>
               {lastWord}
             </span>
           </h2>

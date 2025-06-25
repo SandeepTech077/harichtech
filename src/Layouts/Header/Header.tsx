@@ -114,58 +114,56 @@ const Header = () => {
             </div>
 
             {/* Social Links - FIXED: Consistent sizing for all social icons */}
-         <div className="flex items-center space-x-2 sm:space-x-3 flex-shrink-0">
-  <Link
-    href={socialLinks.linkedin}
-    target="_blank"
-    rel="noopener noreferrer"
-    className="w-8 h-8 bg-white rounded-full hover:bg-gray-50 hover:scale-110 transition-all duration-300 group shadow-sm flex items-center justify-center flex-shrink-0"
-    aria-label="Follow us on LinkedIn"
-  >
-    <Image
-      src={linkedinIcon}
-      alt="LinkedIn"
-      width={16}
-      className="h-auto group-hover:opacity-80"
-    />
-  </Link>
+            <div className="flex items-center space-x-2 sm:space-x-3 flex-shrink-0">
+              <Link
+                href={socialLinks.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-8 h-8 bg-white rounded-full hover:bg-gray-50 hover:scale-110 transition-all duration-300 group shadow-sm flex items-center justify-center flex-shrink-0"
+                aria-label="Follow us on LinkedIn"
+              >
+                <Image
+                  src={linkedinIcon}
+                  alt="LinkedIn"
+                  width={16}
+                  className="h-auto group-hover:opacity-80"
+                />
+              </Link>
 
-  <Link
-    href={socialLinks.facebook}
-    target="_blank"
-    rel="noopener noreferrer"
-    className="w-8 h-8 bg-white rounded-full hover:bg-gray-50 hover:scale-110 transition-all duration-300 group shadow-sm flex items-center justify-center flex-shrink-0"
-    aria-label="Follow us on Facebook"
-  >
-    <Image
-      src={facebookIcon}
-      alt="Facebook"
-      width={10}
-      className="h-auto group-hover:opacity-80"
-    />
-  </Link>
+              <Link
+                href={socialLinks.facebook}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-8 h-8 bg-white rounded-full hover:bg-gray-50 hover:scale-110 transition-all duration-300 group shadow-sm flex items-center justify-center flex-shrink-0"
+                aria-label="Follow us on Facebook"
+              >
+                <Image
+                  src={facebookIcon}
+                  alt="Facebook"
+                  width={10}
+                  className="h-auto group-hover:opacity-80"
+                />
+              </Link>
 
-  <Link
-    href={socialLinks.instagram}
-    target="_blank"
-    rel="noopener noreferrer"
-    className="w-8 h-8 bg-white rounded-full hover:bg-gray-50 hover:scale-110 transition-all duration-300 group shadow-sm flex items-center justify-center flex-shrink-0"
-    aria-label="Follow us on Instagram"
-  >
-    <Image
-      src={instagramIcon}
-      alt="Instagram"
-      width={16}
-      className="h-auto group-hover:opacity-80"
-    />
-  </Link>
-</div>
-
+              <Link
+                href={socialLinks.instagram}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-8 h-8 bg-white rounded-full hover:bg-gray-50 hover:scale-110 transition-all duration-300 group shadow-sm flex items-center justify-center flex-shrink-0"
+                aria-label="Follow us on Instagram"
+              >
+                <Image
+                  src={instagramIcon}
+                  alt="Instagram"
+                  width={16}
+                  className="h-auto group-hover:opacity-80"
+                />
+              </Link>
+            </div>
           </div>
         </div>
       )}
 
-      {/* Main Header - Mobile overflow fixes */}
       <header
         className={`fixed left-0 right-0 w-full z-40 transition-all duration-300 overflow-hidden ${
           scrolled
@@ -175,7 +173,6 @@ const Header = () => {
       >
         <div className="w-full max-w-full">
           <div className="container mx-auto px-3 sm:px-4 lg:px-6 py-2 sm:py-3 flex items-center justify-between min-h-[60px] sm:min-h-[64px]">
-            {/* Logo - Mobile optimized */}
             <Link href="/" className="flex items-center flex-shrink-0">
               <Image
                 src={Logo}
@@ -185,7 +182,6 @@ const Header = () => {
               />
             </Link>
 
-            {/* Desktop Navigation */}
             <nav className="hidden lg:flex items-center flex-1 justify-center">
               <ul className="flex items-center space-x-6 xl:space-x-8">
                 {navItems.map((item) => {
@@ -208,7 +204,6 @@ const Header = () => {
               </ul>
             </nav>
 
-            {/* Desktop CTA Button */}
             <div className="hidden md:flex items-center flex-shrink-0">
               <Link href="/contact-us">
                 <button className="relative cursor-pointer px-4 lg:px-6 py-2 lg:py-2.5 text-sm lg:text-base font-bold bg-white rounded-xl hover:shadow-lg transition-all duration-300 group whitespace-nowrap">
@@ -226,7 +221,6 @@ const Header = () => {
               </Link>
             </div>
 
-            {/* Mobile Menu Button - Fixed sizing */}
             <button
               className="flex items-center justify-center lg:hidden p-2 text-gray-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-all duration-300 touch-manipulation flex-shrink-0 w-10 h-10"
               onClick={toggleMenu}
@@ -239,7 +233,6 @@ const Header = () => {
         </div>
       </header>
 
-      {/* Mobile Menu Overlay */}
       {isMenuOpen && (
         <div
           className="fixed inset-0 bg-black/60 z-45 lg:hidden backdrop-blur-sm"
@@ -247,7 +240,6 @@ const Header = () => {
         />
       )}
 
-      {/* Mobile Menu - Fixed width and overflow */}
       <div
         className={`fixed top-0 right-0 bottom-0 w-full max-w-[280px] bg-white shadow-2xl z-50 transform transition-transform duration-300 ease-in-out lg:hidden overflow-hidden ${
           isMenuOpen ? "translate-x-0" : "translate-x-full"
@@ -270,7 +262,6 @@ const Header = () => {
             </button>
           </div>
 
-          {/* Contact Info Card - Mobile optimized */}
           <div className="mx-4 mt-4 p-3 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-xl border border-blue-100 flex-shrink-0">
             <div className="flex flex-col space-y-2">
               <Link
@@ -300,7 +291,6 @@ const Header = () => {
             </div>
           </div>
 
-          {/* Navigation - Mobile scrollable */}
           <nav className="flex-1 overflow-y-auto px-4 mt-4 pb-4">
             <ul className="space-y-1">
               {navItems.map((item) => {
@@ -324,7 +314,6 @@ const Header = () => {
             </ul>
           </nav>
 
-          {/* Bottom Section - Mobile fixed */}
           <div className="p-4 border-t border-gray-100 bg-gray-50 flex-shrink-0">
             <Link
               href="/contact-us"
@@ -337,7 +326,6 @@ const Header = () => {
               </span>
             </Link>
 
-            {/* Social Links - Mobile compact */}
             <div className="flex flex-col items-center justify-center space-y-3">
               <span className="text-xs font-medium text-gray-600 text-center">
                 Follow Us

@@ -11,11 +11,11 @@ const nunito = Nunito({
 })
 
 export const metadata: Metadata = {
-  title: "Harichtech",
+  title: "Harich Tech",
   description:
     "Harichtech is a digital product development company specializing in custom web and mobile solutions. We help startups and businesses grow with cutting-edge technology, scalable architecture, and beautiful UI/UX design.",
   icons: {
-    icon: "/Logo/Logo.svg", 
+    icon: "/Logo/small-logo.svg", 
   },
 };
 

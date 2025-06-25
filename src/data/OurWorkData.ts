@@ -40,23 +40,24 @@ export const OurWorkData = {
         subTitle: "UI / UX Design | Web Development",
         image: Helper.Shilp,
       },
+      
       {
         id: "6",
-        title: "Sneshshilp Foundation",
-        subTitle: "UI / UX Design | Web Development",
-        image: Helper.SnehShilp,
-      },
-      {
-        id: "7",
         title: "Yash Brahmbhatt",
         subTitle: "UI / UX Design | Web Development",
         image: Helper.Yash,
       },
       {
-        id: "8",
+        id: "7",
         title: "Snehal Brahmbhatt",
         subTitle: "UI / UX Design | Web Development",
         image: Helper.Snehal,
+      },
+      {
+        id: "8",
+        title: "Sneshshilp Foundation",
+        subTitle: "UI / UX Design | Web Development",
+        image: Helper.SnehShilp,
       },
       {
         id: "9",

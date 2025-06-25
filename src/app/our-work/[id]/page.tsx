@@ -11,7 +11,6 @@ interface Props {
   params: Promise<{ id: string }>;
 }
 
-// ✅ Add this function so static build knows what pages to generate
 export async function generateStaticParams() {
   return OurProjects.projectdata.map((project) => ({
     id: String(project.id), // must be string
