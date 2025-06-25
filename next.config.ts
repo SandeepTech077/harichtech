@@ -1,24 +1,16 @@
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  output: 'export', // keep this for static export
   reactStrictMode: true,
-  experimental: {
-    serverActions: {
-      bodySizeLimit: "1mb", // Optional
-      allowedOrigins: ["*"], // Optional
-    },
-  },
   images: {
+    unoptimized: true, // ✅ disables server image optimization
     remotePatterns: [
       {
-        protocol: "https",
-        hostname: "**", // Allow all external images
+        protocol: 'https',
+        hostname: '**',
       },
     ],
   },
 };
 
 export default nextConfig;
-
-
-

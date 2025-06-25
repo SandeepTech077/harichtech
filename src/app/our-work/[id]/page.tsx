@@ -8,11 +8,18 @@ import ReviewComponent from "@/components/OurProject/ReviewComponent";
 import GetInTouch from "@/components/Ui/GetInTouch";
 
 interface Props {
-  params: Promise<{ id: string }>; 
+  params: Promise<{ id: string }>;
+}
+
+// ✅ Add this function so static build knows what pages to generate
+export async function generateStaticParams() {
+  return OurProjects.projectdata.map((project) => ({
+    id: String(project.id), // must be string
+  }));
 }
 
 const PortfolioDetail = async ({ params }: Props) => {
-  const { id: idParam } = await params; 
+  const { id: idParam } = await params;
   const id = parseInt(idParam);
   const project = OurProjects.projectdata.find((item) => item.id === id);
 

@@ -25,7 +25,7 @@ const ProcessComponent: React.FC<ProcessComponentProps> = ({ processData }) => {
 
   return (
     <div className="pt-10 mx-auto px-4">
-      <div className="text-center mb-30">
+      <div className="text-center mb-20">
         <div className="inline-block mb-4">
           <Title title={title} />
         </div>
@@ -49,7 +49,6 @@ const ProcessComponent: React.FC<ProcessComponentProps> = ({ processData }) => {
                     {step.number}
                   </span>
                 </div>
-
                 <div className="mt-6">{step.title}</div>
               </div>
             </div>
@@ -62,13 +61,16 @@ const ProcessComponent: React.FC<ProcessComponentProps> = ({ processData }) => {
                   left: `calc((100% / ${steps.length}) * ${index + 1} - 80px)`,
                 }}
               >
-                <Image
-                  src={Arrow} // Your Arrow SVG imported here
-                  alt="Arrow"
-                  width={160}
-                  height={60}
-                  className="w-40 h-auto"
-                />
+              <div className="relative w-40 h-[60px]">
+  <Image
+    src={Arrow}
+    alt="Arrow"
+    fill
+    className="object-contain"
+    priority
+  />
+</div>
+
               </div>
             )}
           </React.Fragment>

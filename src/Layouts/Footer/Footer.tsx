@@ -9,18 +9,26 @@ import instagramLogo from "../../../public/SVG/instagram-logo.svg";
 import linkedinLogo from "../../../public/SVG/linkedin-logo.svg";
 
 const Footer = () => {
-  const currentYear = new Date().getFullYear();
+  // Initialize with current year to avoid hydration mismatch
+  const [currentYear] = useState<number>(new Date().getFullYear());
   const [, setWindowWidth] = useState<number>(0);
 
   useEffect(() => {
-    const handleResize = () => {
-      setWindowWidth(window.innerWidth);
-    };
+    // Only execute on client side
+    if (typeof window !== "undefined") {
+      const handleResize = () => {
+        setWindowWidth(window.innerWidth);
+      };
 
-    handleResize();
-
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
+      // Set initial width
+      handleResize();
+      
+      // Add event listener
+      window.addEventListener("resize", handleResize);
+      
+      // Cleanup
+      return () => window.removeEventListener("resize", handleResize);
+    }
   }, []);
 
   const quickLinks = [
@@ -66,12 +74,11 @@ const Footer = () => {
                 width={160}
                 height={40}
                 className="sm:w-[180px] sm:h-[45px] lg:w-[200px] lg:h-[60px]"
+                priority
               />
-              
-              {/* Address - Better mobile formatting */}
               <div className="max-w-sm text-center sm:text-left">
                 <p className="text-xs sm:text-sm lg:text-base font-medium text-white/90 leading-relaxed">
-                  Shilp 3, 3rd Floor, Sindhu Bhavan Road,<br className="hidden sm:block" /> 
+                  Shilp 3, 3rd Floor, Sindhu Bhavan Road,<br className="hidden sm:block" />
                   Shilp Circle, Above Bajarang Grocery,<br className="hidden sm:block" />
                   Bodakdev, Ahmedabad, Gujarat 380054
                 </p>
@@ -80,33 +87,33 @@ const Footer = () => {
 
             {/* Contact & Social Section */}
             <div className="flex flex-col items-center sm:items-end space-y-4 sm:space-y-5">
-              
-              {/* Contact Info - Mobile optimized */}
               <div className="text-center sm:text-right space-y-1">
                 <a 
                   href="tel:+918200665684"
                   className="block text-base sm:text-lg lg:text-xl font-semibold hover:text-blue-200 transition-colors duration-300"
+                  aria-label="Call us at +91-8200 66 5684"
                 >
                   +91-8200 66 5684
                 </a>
                 <a 
                   href="mailto:info@harichtech.com"
                   className="block text-sm sm:text-base lg:text-lg text-white/90 hover:text-white transition-colors duration-300"
+                  aria-label="Email us at info@harichtech.com"
                 >
                   info@harichtech.com
                 </a>
               </div>
 
-              {/* Social Links - Better mobile spacing */}
+              {/* Social Links */}
               <div className="flex items-center justify-center sm:justify-end space-x-3 sm:space-x-4">
-                {socialLinks.map((social, index) => (
+                {socialLinks.map((social) => (
                   <a
-                    key={index}
+                    key={social.name}
                     href={social.path}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-10 h-10 sm:w-11 sm:h-11 lg:w-12 lg:h-12 bg-white/95 hover:bg-white rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110 active:scale-95"
-                    aria-label={social.name}
+                    aria-label={`Visit our ${social.name} profile`}
                   >
                     <div className="w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6 relative">
                       <Image
@@ -127,33 +134,32 @@ const Footer = () => {
         <div className="border-t border-white/20 px-4 sm:px-8 lg:px-12 py-4 sm:py-5 lg:py-6">
           <div className="flex flex-col space-y-4 sm:space-y-0 sm:flex-row sm:justify-between sm:items-center">
             
-            {/* Navigation Links - Mobile grid layout */}
+            {/* Navigation Links */}
             <nav className="w-full sm:w-auto">
-              {/* Mobile: 2-column grid */}
               <div className="grid grid-cols-2 gap-x-4 gap-y-2 sm:hidden">
                 {quickLinks.map((link) => (
                   <Link
-                    key={link.name}
+                    key={link.path}
                     href={link.path}
                     className="text-sm text-white/90 hover:text-white transition-colors duration-300 font-medium py-1 text-center"
+                    aria-label={`Navigate to ${link.name}`}
                   >
                     {link.name}
                   </Link>
                 ))}
               </div>
-              
-              {/* Tablet and Desktop: horizontal with separators */}
               <div className="hidden sm:flex flex-wrap items-center gap-2 lg:gap-4">
                 {quickLinks.map((link, index) => (
-                  <div key={link.name} className="flex items-center">
+                  <div key={link.path} className="flex items-center">
                     <Link
                       href={link.path}
                       className="text-sm lg:text-base text-white/90 hover:text-white transition-colors duration-300 font-medium whitespace-nowrap"
+                      aria-label={`Navigate to ${link.name}`}
                     >
                       {link.name}
                     </Link>
                     {index < quickLinks.length - 1 && (
-                      <span className="text-white/40 ml-2 lg:ml-4">|</span>
+                      <span className="text-white/40 ml-2 lg:ml-4" aria-hidden="true">|</span>
                     )}
                   </div>
                 ))}
