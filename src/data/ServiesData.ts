@@ -10,6 +10,7 @@ export const Services = {
   services: [
     {
       id: 1,
+      type:"uiux-detail",
       title: "UI/UX Design",
       description:
         "We craft exceptional digital experiences through expert UI/UX design. Our design process prioritizes user needs and expectations, blending aesthetics with functionality. Using leading tools like Figma, Sketch, Adobe XD, and InVision, we design intuitive interfaces that engage users, enhance usability, and elevate brands across platforms and devices.",
@@ -21,6 +22,7 @@ export const Services = {
     {
       id: 2,
       title: "Web Development",
+      type:"web-detail",
       description:
         "We design and develop dynamic, responsive websites that captivate users and achieve business objectives. Our team specializes in creating scalable, secure, and feature-rich web solutions, from corporate websites to e-commerce platforms. By integrating modern technologies, we deliver seamless experiences that align with your brand and empower digital success.",
       btnTitle: "Explore more",
@@ -30,6 +32,7 @@ export const Services = {
     {
       id: 3,
       title: "Mobile App Development",
+      type:"mobile-app-detail",
       description:
         "Our mobile app development services deliver innovative, high-performance applications tailored to your business goals. We create engaging native and cross-platform apps for iOS and Android, focusing on seamless functionality, robust architecture, and scalability. From concept to launch, we build solutions that connect users, drive engagement, and foster growth.",
       btnTitle: "Explore more",
@@ -44,6 +47,7 @@ export const Services = {
     {
       id: 4,
       title: "Digital Marketing",
+      type:"digital-marketing-detail",
       description:
         "Our digital marketing services amplify your brand’s online presence, driving visibility and growth. We craft strategic campaigns that combine SEO, social media, content marketing, and paid advertising. With data-driven insights and creative execution, we help businesses connect with their audiences, generate leads, and achieve measurable results in the digital landscape.",
       btnTitle: "Explore more",

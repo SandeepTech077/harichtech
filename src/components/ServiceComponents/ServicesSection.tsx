@@ -7,6 +7,7 @@ import Button from "../Button";
 interface Service {
   id: number;
   title: string;
+  type:string;
   description: string;
   btnTitle: string;
   serviceIcons: string[];
@@ -77,7 +78,7 @@ const ServicesSection: React.FC<ServicesSectionProps> = ({ services }) => {
             <div className="pt-4">
               <Button
                 text={service.btnTitle}
-                href={`/services-list/${service.id}`}
+                href={`/services-list/${service.type}`}
               />
             </div>
           </div>

@@ -4,6 +4,7 @@ export const ServiceListData = {
   serviceList: [
     {
       id: 1,
+      type:"uiux-detail",
       maintitle:{
         title: "Services",
         subtitle: "UI/UX Design",
@@ -112,6 +113,8 @@ export const ServiceListData = {
     },
     {
       id: 2,
+      type:"mobile-app-detail",
+
       maintitle:{
         title: "Services",
       subtitle: "Mobile App Development",
@@ -216,6 +219,8 @@ export const ServiceListData = {
     },
     {
       id: 3,
+      type:"web-detail",
+
       maintitle:{
         title: "Services",
         subtitle: "Web Development",
@@ -321,6 +326,8 @@ export const ServiceListData = {
     },
     {
       id:4,
+      type:"digital-marketing-detail",
+
       maintitle:{
         title: "Services",
       subtitle: "Digital Marketing Services",
