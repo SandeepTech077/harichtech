@@ -3,6 +3,7 @@ import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 
 interface BannerSectionProps {
+  id:number;
   banner: StaticImageData;
   mobileBanner:StaticImageData;
   title: string;
@@ -12,6 +13,7 @@ interface BannerSectionProps {
 }
 
 const BannerSection: React.FC<BannerSectionProps> = ({
+  id,
   banner,
   mobileBanner,
   title,
@@ -47,7 +49,7 @@ const BannerSection: React.FC<BannerSectionProps> = ({
           {describation}
         </p>
         <Link
-          href="/blog/digital-marketing"
+          href={`/blog/${id}`}
           className="inline-flex items-center"
         >
           <span className="font-medium">{btnRedirect}</span>

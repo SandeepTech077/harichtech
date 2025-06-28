@@ -9,6 +9,7 @@ export const OurWorkData = {
   design: {
     title: "Your Growth",
     subTitle: " Our Achievements",
+    subTitle2: "Our Projects",
     Images: [
       {
         id: "1",
@@ -40,7 +41,7 @@ export const OurWorkData = {
         subTitle: "UI / UX Design | Web Development",
         image: Helper.Shilp,
       },
-      
+
       {
         id: "6",
         title: "Yash Brahmbhatt",

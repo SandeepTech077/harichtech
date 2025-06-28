@@ -2,17 +2,20 @@
 import React from "react";
 import Link from "next/link";
 import Image, { StaticImageData } from "next/image";
+import Title from "../Title";
 
 interface PortfolioImage {
   id: string;
   title: string;
   subTitle: string;
+ 
   image: StaticImageData;
 }
 
 interface DesignData {
   title: string;
   subTitle: string;
+   subTitle2:string;
   Images: PortfolioImage[];
 }
 
@@ -24,7 +27,10 @@ const Portfolio: React.FC<PortfolioProps> = ({ design }) => {
   return (
     <div className="px-4 lg:px-20 mx-auto px-4 ">
       {/* Header Section */}
-      <div className="text-left mb-16">
+      <div className="text-center mb-16">
+        <div className="w-50 item-center justify-center mx-auto mb-10">
+          <Title title={design.subTitle2} />
+        </div>
         <h2 className="text-2xl md:text-5xl  font-bold text-gray-900 mb-4">
           {design.title}
           <span

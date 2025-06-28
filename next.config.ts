@@ -1,8 +1,8 @@
 const nextConfig = {
-  // output: 'export', // keep this for static export
+  output: 'export', // keep this for static export
   reactStrictMode: true,
   images: {
-    // unoptimized: true, // ✅ disables server image optimization
+    unoptimized: true, // ✅ disables server image optimization
     remotePatterns: [
       {
         protocol: 'https',

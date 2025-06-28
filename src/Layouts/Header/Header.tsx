@@ -93,7 +93,7 @@ const Header = () => {
                   href="tel:+91-8200665684"
                   className="text-xs sm:text-sm font-medium hover:text-blue-100 transition-colors truncate"
                 >
-                  +91-8200 66 5684
+                  +91 8200 66 5684
                 </Link>
               </div>
 

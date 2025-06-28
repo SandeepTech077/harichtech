@@ -173,6 +173,7 @@ import AarambhArrow from "../../public/Image/OurProjects/Svg/aarambh.svg"
 import MicroArrow from "../../public/Image/OurProjects/Svg/micro.svg"
 import SneShilp from"../../public/Image/OurProjects/Svg/snehshilp.svg"
 import EverVitalArrow from"../../public/Image/OurProjects/Svg/ever-vital-icon.svg"
+import OreumArrow from"../../public/Image/OurProjects/Svg/oreum.svg"
 
 
 
@@ -206,6 +207,7 @@ export const Helper = {
     MicroArrow,
     SneShilp,
     EverVitalArrow,
+    OreumArrow,
     //Main Banner
     InsigtBanner,
     AarambhBanner,

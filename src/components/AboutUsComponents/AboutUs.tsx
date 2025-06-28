@@ -1,12 +1,12 @@
-import React from 'react';
-import Image, { StaticImageData } from 'next/image';
-import Title from "@/components/Title"
+import React from "react";
+import Image, { StaticImageData } from "next/image";
+import Title from "@/components/Title";
 interface AboutUsProps {
   aboutUs: {
-title:string;
-    subTitle:string;
-    descrobation:string[]
-    BannerImg: StaticImageData,
+    title: string;
+    subTitle: string;
+    descrobation: string[];
+    BannerImg: StaticImageData;
   };
 }
 
@@ -15,23 +15,25 @@ const AboutUs: React.FC<AboutUsProps> = ({ aboutUs }) => {
     <section className="relative w-full mx-auto">
       {/* Title and navigation */}
       <div className="flex  md:justify-center mb-6">
-       <Title title={aboutUs.title}/>
+        <Title title={aboutUs.title} />
       </div>
 
       {/* Main content */}
       <div className="md:text-center mb-10 relative z-10">
         <h1 className="text-[32px] md:text-[48px] font-bold mb-4">
-  {aboutUs.subTitle.split("Harichtech")[0]}
-  <br />
-  <span className="mt-2 inline-block bg-gradient-to-l from-[#2058FF] to-[#004BC2] bg-clip-text text-transparent">
-    Harichtech
-  </span>
-</h1>
-
+          {aboutUs.subTitle.split("Harichtech")[0]}
+          <br />
+          <span className="mt-2 inline-block bg-gradient-to-l from-[#2058FF] to-[#004BC2] bg-clip-text text-transparent">
+            Harichtech
+          </span>
+        </h1>
 
         <div className="mx-auto">
           {aboutUs.descrobation.map((paragraph, index) => (
-            <p key={index} className="text-gray-700 mb-4 text-left md:text-center">
+            <p
+              key={index}
+              className="text-gray-700 mb-4 text-left md:text-center"
+            >
               {paragraph}
             </p>
           ))}
@@ -39,7 +41,7 @@ const AboutUs: React.FC<AboutUsProps> = ({ aboutUs }) => {
       </div>
 
       {/* Banner Image */}
-      <div className="border border-blue-300 rounded-lg overflow-hidden mb-10">
+      <div className=" rounded-lg overflow-hidden mb-10">
         {aboutUs.BannerImg ? (
           <Image
             src={aboutUs.BannerImg}

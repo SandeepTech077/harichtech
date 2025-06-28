@@ -594,7 +594,7 @@ export const OurProjects = {
         btnText: "Visit Website",
         Banner: Helper.OreumBanner,
         textColor: "text-[#05A750]",
-        upArrowSvg: Helper.BlackArrow,
+        upArrowSvg: Helper.OreumArrow,
       },
       projectOverView: {
         leftSideImage: Helper.OreumOverView,

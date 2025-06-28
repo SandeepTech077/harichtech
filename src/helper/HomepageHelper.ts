@@ -24,6 +24,7 @@ import yash from "../../public/Image/HomePageImage/TestimonialImage/yash.png";
 import snehal from "../../public/Image/HomePageImage/TestimonialImage/snehal.png";
 import darshil from "../../public/Image/HomePageImage/TestimonialImage/darshil.png";
 import oriem from "../../public/Image/HomePageImage/TestimonialImage/oriem.png";
+import samir from "../../public/Image/HomePageImage/TestimonialImage/samir.svg"
 import clip from "../../public/SVG/Clip.svg"
 
 //Blogs
@@ -45,15 +46,15 @@ import cretive from "../../public/Image/HomePageImage/Service/Svg/Creative-Head.
 
 
 //Cliwnt Logo
-import clientLogo1 from "../../public/Image/HomePageImage/CLientLogo/logo-1.svg";
-import clientLogo2 from "../../public/Image/HomePageImage/CLientLogo/logo-2.svg";
-import clientLogo3 from "../../public/Image/HomePageImage/CLientLogo/logo-3.svg";
-import clientLogo4 from "../../public/Image/HomePageImage/CLientLogo/logo-4.svg";
+import clientLogo7 from "../../public/Image/HomePageImage/CLientLogo/logo-1.svg";
+import clientLogo3 from "../../public/Image/HomePageImage/CLientLogo/logo-2.svg";
+import clientLogo4 from "../../public/Image/HomePageImage/CLientLogo/logo-3.svg";
+import clientLogo9 from "../../public/Image/HomePageImage/CLientLogo/logo-4.svg";
 import clientLogo5 from "../../public/Image/HomePageImage/CLientLogo/logo-5.svg";
-import clientLogo6 from "../../public/Image/HomePageImage/CLientLogo/logo-6.svg";
-import clientLogo7 from "../../public/Image/HomePageImage/CLientLogo/logo-7.svg";
+import clientLogo2 from "../../public/Image/HomePageImage/CLientLogo/logo-6.svg";
+import clientLogo1 from "../../public/Image/HomePageImage/CLientLogo/logo-7.svg";
 import clientLogo8 from "../../public/Image/HomePageImage/CLientLogo/logo-8.svg";
-import clientLogo9 from "../../public/Image/HomePageImage/CLientLogo/logo-9.svg";
+import clientLogo6 from "../../public/Image/HomePageImage/CLientLogo/logo-9.svg";
 import clientLogo10 from "../../public/Image/HomePageImage/CLientLogo/logo-10.svg";
 import clientLogo11 from "../../public/Image/HomePageImage/CLientLogo/logo-11.svg";
 import clientLogo12 from "../../public/Image/HomePageImage/CLientLogo/logo-12.svg";
@@ -94,6 +95,7 @@ export const Helper = {
   darshil,
   oriem,
   clip,
+  samir,
 
 
   //Blogs
