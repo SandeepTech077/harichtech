@@ -280,7 +280,7 @@ const Header = () => {
                   />
                 </div>
                 <span className="font-medium text-sm truncate">
-                  +91-6200-66-5954
+                  +91 8200 66 5684
                 </span>
               </Link>
               <Link
@@ -353,8 +353,8 @@ const Header = () => {
                   <Image
                     src={facebookIcon}
                     alt="Facebook"
-                    width={12}
-                    height={12}
+                    width={8}
+                    height={8}
                   />
                 </Link>
                 <Link

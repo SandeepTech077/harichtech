@@ -1,5 +1,5 @@
-import Banner from  "../../public/Image/Blog/Banner.png"
-import MobileBanner from  "../../public/Image/Blog/MobileBanner.png"
+import Banner from  "../../public/Image/more-blogs-banner/app-developer-banner.png"
+import MobileBanner from  "../../public/Image/more-blogs-banner/app-developer-mobile-banner.png"
 import arrowsvg from "../../public/Image/Blog/btnArrow.png"
 
 

@@ -52,32 +52,28 @@ const InnovationMeet: React.FC<InnovationMeetProps> = ({ innovationMeet }) => {
             <Button text={leftSide.btnTitle} href="/career" />
           </div>
         </div>
-<div className="w-full max-w-md mx-auto mt-10 space-y-6">
-  {rightSide.cards.map((card, index) => (
-    <div key={card.id} className="relative">
-      {/* Outer skew container - affects background shape */}
-      <div className={`-skew-y-4 bg-[#FBFBFB] border border-gray-300 rounded-md overflow-hidden ${index === 0 ? '' : ''}`}>
-        {/* Inner unskewed content to look normal */}
-        <div className=" p-6">
-          <div className="flex items-start mb-3">
-            <div className="w-7 h-7 mr-4 flex-shrink-0">
-              <Image
-                src={card.icon}
-                alt={card.title}
-                width={28}
-                height={28}
-              />
+        <div className="w-full max-w-md mx-auto mt-10 space-y-6">
+          {rightSide.cards.map((card) => (
+            <div key={card.id} className="relative">
+              <div className="-skew-y-4 bg-[#FBFBFB] border border-gray-300 rounded-md py-6">
+                <div className="skew-y-4 p-6 h-full flex flex-col justify-center">
+                  <div className="flex items-start mb-3">
+                    <div className="w-7 h-7 mr-4 ">
+                      <Image
+                        src={card.icon}
+                        alt={card.title}
+                        width={28}
+                        height={28}
+                      />
+                    </div>
+                    <h3 className="text-xl font-semibold">{card.title}</h3>
+                  </div>
+                  <p className="text-black   pl-11">{card.description}</p>
+                </div>
+              </div>
             </div>
-            <h3 className="text-xl font-semibold">{card.title}</h3>
-          </div>
-          <p className="text-gray-600 pl-11">{card.description}</p>
+          ))}
         </div>
-      </div>
-    </div>
-  ))}
-</div>
-
-
       </div>
     </section>
   );

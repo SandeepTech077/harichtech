@@ -108,7 +108,7 @@ export const HomePagedata = {
     ],
   },
   portfolio: {
-    title: "Portfolio",
+    title: "Projects",
     Subtitle: "See How We Transform Ideas into Reality",
     btnTitle: "View More",
     describation:

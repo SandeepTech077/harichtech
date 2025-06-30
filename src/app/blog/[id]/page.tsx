@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import { MoreBlogsData } from "@/data/MoreBlogsData";
 import BlogsBanner from "@/components/Blog/BlogsBanner";
+import BlogContent from "@/components/BlogsCompoenet/BlogContent";
 
 interface Props {
   params: Promise<{ id: string }>;
@@ -21,12 +22,13 @@ const BlogsDetails = async ({ params }: Props) => {
 
   return (
     <>
-      <div className="h-screen">
+      <div className="min-h-screen">
         <BlogsBanner
-          banner={project.Banner}
+          Banner={project.Banner}
           mobileBanner={project.mobileBanner}
           title={project.title}
         />
+        <BlogContent blogs={project.blogs} />
       </div>
     </>
   );

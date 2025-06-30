@@ -9,6 +9,7 @@ interface FormDataProps {
     email: string;
     phone: string;
     countru: string;
+    budget: string;
     describation: string;
     btnText: string;
     rightSideImage: StaticImageData;
@@ -20,6 +21,8 @@ interface FormState {
   email: string;
   phone: string;
   country: string;
+  budget: string;
+  customBudget: string;
   description: string;
 }
 
@@ -29,12 +32,14 @@ export default function FormData({ data }: FormDataProps) {
     email: '',
     phone: '',
     country: '',
+    budget: '',
+    customBudget: '',
     description: ''
   });
 
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value } = e.target;
     setFormState(prev => ({
       ...prev,
@@ -113,6 +118,40 @@ export default function FormData({ data }: FormDataProps) {
                   className="w-full px-4 py-4 border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 text-gray-900 placeholder-gray-500 bg-white "
                 />
               </div>
+
+              {/* Budget Field */}
+              <div className="space-y-2">
+                <select
+                  name="budget"
+                  value={formState.budget}
+                  onChange={handleInputChange}
+                  required
+                  className="w-full px-4 py-4 border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 text-gray-900 bg-white"
+                >
+                  <option value="" disabled className="text-gray-500">{data.budget}</option>
+                  <option value="$1,000 - $5,000">$1,000 - $5,000</option>
+                  <option value="$5,000 - $10,000">$5,000 - $10,000</option>
+                  <option value="$10,000 - $25,000">$10,000 - $25,000</option>
+                  <option value="$25,000 - $50,000">$25,000 - $50,000</option>
+                  <option value="$50,000+">$50,000+</option>
+                  <option value="custom">Custom Budget</option>
+                </select>
+              </div>
+
+              {/* Custom Budget Field - Shows when "Custom Budget" is selected */}
+              {formState.budget === 'custom' && (
+                <div className="space-y-2">
+                  <input
+                    type="text"
+                    name="customBudget"
+                    placeholder="Enter your custom budget (e.g., $15,000)"
+                    value={formState.customBudget}
+                    onChange={handleInputChange}
+                    required
+                    className="w-full px-4 py-4 border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 text-gray-900 placeholder-gray-500 bg-white"
+                  />
+                </div>
+              )}
 
               {/* Description Field */}
               <div className="space-y-2">

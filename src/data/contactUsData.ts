@@ -22,15 +22,16 @@ export const ContactData = {
 
     ],
   },
-  formData: {
-    name: "Your Name",
-    email: "Email Id",
-    phone: "Mobile no.",
-    countru: "Country",
-    describation: "Describe Your Project",
-    btnText: "Send Message",
-    rightSideImage: Helper.RightImage,
-  },
+formData: {
+  name: "Your Name",
+  email: "Email Id",
+  phone: "Mobile no.",
+  countru: "Country",
+  budget: "Select Your Budget Range",
+  describation: "Describe Your Project",
+  btnText: "Send Message",
+  rightSideImage: Helper.RightImage,
+},
   contactInfo: {
     title: "Contact Info",
     subTitle: "For Business Inquires",
