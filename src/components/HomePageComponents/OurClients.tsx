@@ -66,7 +66,7 @@ const OurClients: React.FC<OurClientsProps> = ({ data }) => {
             variants={logoVariant}
             className="group bg-gray-100 rounded-xl p-8 flex items-center justify-center hover:bg-white hover:shadow-md transition-all duration-300 cursor-pointer min-h-[100px]"
           >
-            <div className="relative w-full h-[120px] flex items-center justify-center">
+            <div className="relative w-full h-[60px] lg:h-[120px]  flex items-center justify-center">
               <Image
                 src={logo}
                 alt={`Client logo ${index + 1}`}

@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 import Image, { StaticImageData } from "next/image";
 import Title from "@/components/Title";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from "swiper/modules";
+import { Navigation, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import { motion, AnimatePresence } from "framer-motion";
@@ -29,7 +29,6 @@ interface ClientsComponentProps {
   data: ClientData;
 }
 
-// Animation variants
 const fadeUp = {
   hidden: { opacity: 0, y: 20 },
   visible: {
@@ -76,20 +75,28 @@ const ClientsComponent: React.FC<ClientsComponentProps> = ({ data }) => {
   const [swiperInstance, setSwiperInstance] = useState<SwiperType | null>(null);
   const [selectedTestimonial, setSelectedTestimonial] = useState<Testimonial | null>(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => setIsMobile(window.innerWidth < 768);
+    checkMobile();
+    window.addEventListener("resize", checkMobile);
+    return () => window.removeEventListener("resize", checkMobile);
+  }, []);
 
   useEffect(() => {
     const handleEscape = (e: KeyboardEvent) => {
-      if (e.key === 'Escape' && isModalOpen) closeModal();
+      if (e.key === "Escape" && isModalOpen) closeModal();
     };
 
     if (isModalOpen) {
-      document.addEventListener('keydown', handleEscape);
-      document.body.style.overflow = 'hidden';
+      document.addEventListener("keydown", handleEscape);
+      document.body.style.overflow = "hidden";
     }
 
     return () => {
-      document.removeEventListener('keydown', handleEscape);
-      document.body.style.overflow = 'unset';
+      document.removeEventListener("keydown", handleEscape);
+      document.body.style.overflow = "unset";
     };
   }, [isModalOpen]);
 
@@ -156,17 +163,22 @@ const ClientsComponent: React.FC<ClientsComponentProps> = ({ data }) => {
           </div>
         </div>
 
-        {/* Slider */}
+        {/* Swiper */}
         <Swiper
-          modules={[Navigation]}
+          modules={[Navigation, Autoplay]}
           onSwiper={setSwiperInstance}
           slidesPerView={1}
           spaceBetween={20}
+          loop={true}
           breakpoints={{
             640: { slidesPerView: 2, spaceBetween: 20 },
             1024: { slidesPerView: 3, spaceBetween: 30 },
           }}
-          loop={true}
+     autoplay={{
+  delay: 2000,
+  disableOnInteraction: false,
+}}
+
         >
           {data.testimonialsSlider.map((testimonial) => (
             <SwiperSlide key={testimonial.id} className="flex h-auto">
@@ -175,7 +187,13 @@ const ClientsComponent: React.FC<ClientsComponentProps> = ({ data }) => {
                 variants={itemVariant}
               >
                 <div className="relative w-12 h-12 mb-4">
-                  <Image src={testimonial.clipImg} alt="imgclip" fill sizes="48px" className="object-contain" />
+                  <Image
+                    src={testimonial.clipImg}
+                    alt="imgclip"
+                    fill
+                    sizes="48px"
+                    className="object-contain"
+                  />
                 </div>
 
                 <div className="flex-grow">
@@ -202,14 +220,19 @@ const ClientsComponent: React.FC<ClientsComponentProps> = ({ data }) => {
                   <div className="flex items-center justify-between">
                     <div className="flex items-center gap-3">
                       <div className="relative w-12 h-12 rounded-full overflow-hidden">
-                        <Image src={testimonial.img} alt={testimonial.name} fill sizes="48px" className="object-cover" />
+                        <Image
+                          src={testimonial.img}
+                          alt={testimonial.name}
+                          fill
+                          sizes="48px"
+                          className="object-cover"
+                        />
                       </div>
                       <div>
                         <h4 className="font-bold text-sm">{testimonial.name}</h4>
                         <p className="text-gray-500 text-xs">{testimonial.position}</p>
                       </div>
                     </div>
-
                     <div className="flex text-yellow-400">
                       {[...Array(5)].map((_, i) => (
                         <svg key={i} className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
@@ -224,18 +247,20 @@ const ClientsComponent: React.FC<ClientsComponentProps> = ({ data }) => {
           ))}
         </Swiper>
 
-        {/* Mobile dots (optional) */}
-        <div className="flex justify-center mt-6 lg:hidden">
-          <div className="flex gap-2">
-            {data.testimonialsSlider.map((_, index) => (
-              <button
-                key={index}
-                onClick={() => swiperInstance?.slideTo(index)}
-                className="w-2 h-2 rounded-full bg-gray-300 hover:bg-blue-500 transition-colors"
-              />
-            ))}
+        {/* Hide Dots on Mobile */}
+        {!isMobile && (
+          <div className="flex justify-center mt-6 lg:hidden">
+            <div className="flex gap-2">
+              {data.testimonialsSlider.map((_, index) => (
+                <button
+                  key={index}
+                  onClick={() => swiperInstance?.slideTo(index)}
+                  className="w-2 h-2 rounded-full bg-gray-300 hover:bg-blue-500 transition-colors"
+                />
+              ))}
+            </div>
           </div>
-        </div>
+        )}
       </motion.div>
 
       {/* Modal */}
@@ -248,7 +273,10 @@ const ClientsComponent: React.FC<ClientsComponentProps> = ({ data }) => {
             animate="visible"
             exit="exit"
           >
-            <motion.div className="absolute inset-0 bg-black bg-opacity-50" onClick={closeModal} />
+            <motion.div
+              className="absolute inset-0 bg-black bg-opacity-50"
+              onClick={closeModal}
+            />
 
             <motion.div
               className="relative bg-white rounded-[20px] max-w-2xl w-full max-h-[90vh] overflow-y-auto shadow-2xl"
@@ -273,7 +301,13 @@ const ClientsComponent: React.FC<ClientsComponentProps> = ({ data }) => {
               <div className="p-6 pb-4 border-b border-gray-200">
                 <div className="flex items-center gap-4">
                   <div className="relative w-16 h-16">
-                    <Image src={selectedTestimonial.clipImg} alt="imgclip" fill sizes="64px" className="object-contain" />
+                    <Image
+                      src={selectedTestimonial.clipImg}
+                      alt="imgclip"
+                      fill
+                      sizes="64px"
+                      className="object-contain"
+                    />
                   </div>
                   <div>
                     <h3 className="text-2xl font-bold text-[#02060B]">Client Testimonial</h3>
@@ -291,7 +325,13 @@ const ClientsComponent: React.FC<ClientsComponentProps> = ({ data }) => {
                   <div className="flex items-center justify-between">
                     <div className="flex items-center gap-4">
                       <div className="relative w-16 h-16 rounded-full overflow-hidden">
-                        <Image src={selectedTestimonial.img} alt={selectedTestimonial.name} fill sizes="64px" className="object-cover" />
+                        <Image
+                          src={selectedTestimonial.img}
+                          alt={selectedTestimonial.name}
+                          fill
+                          sizes="64px"
+                          className="object-cover"
+                        />
                       </div>
                       <div>
                         <h4 className="font-bold text-lg text-[#02060B]">{selectedTestimonial.name}</h4>

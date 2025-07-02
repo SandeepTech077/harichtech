@@ -33,6 +33,10 @@ const ApplicationModal: React.FC<{
   const [errors, setErrors] = useState<FormErrors>({});
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitSuccess, setSubmitSuccess] = useState(false);
+  const [submitError, setSubmitError] = useState<string>("");
+
+  // Backend API URL - Replace with your Namecheap domain
+  const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000/api';
 
   useEffect(() => {
     setFormData((prev) => ({
@@ -98,6 +102,10 @@ const ApplicationModal: React.FC<{
         [name]: undefined,
       }));
     }
+
+    if (submitError) {
+      setSubmitError("");
+    }
   };
 
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -113,6 +121,10 @@ const ApplicationModal: React.FC<{
         resume: undefined,
       }));
     }
+
+    if (submitError) {
+      setSubmitError("");
+    }
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -121,10 +133,29 @@ const ApplicationModal: React.FC<{
     if (!validateForm()) return;
 
     setIsSubmitting(true);
+    setSubmitError("");
 
     try {
-      await new Promise((resolve) => setTimeout(resolve, 2000));
-      console.log("Application submitted:", formData);
+      const formDataToSend = new FormData();
+      formDataToSend.append('fullName', formData.fullName);
+      formDataToSend.append('email', formData.email);
+      formDataToSend.append('phone', formData.phone);
+      formDataToSend.append('jobTitle', formData.jobTitle); // jobTitle included
+      if (formData.resume) {
+        formDataToSend.append('resume', formData.resume);
+      }
+
+      const response = await fetch(`${API_BASE_URL}/career`, {
+        method: 'POST',
+        body: formDataToSend,
+      });
+
+      const result = await response.json();
+
+      if (!response.ok) {
+        throw new Error(result.error || 'Failed to submit application');
+      }
+
       setSubmitSuccess(true);
 
       setTimeout(() => {
@@ -138,9 +169,12 @@ const ApplicationModal: React.FC<{
           resume: null,
         });
         setErrors({});
-      }, 2000);
+        setSubmitError("");
+      }, 3000);
+
     } catch (error) {
       console.error("Submission error:", error);
+      setSubmitError(error instanceof Error ? error.message : 'Failed to submit application. Please try again.');
     } finally {
       setIsSubmitting(false);
     }
@@ -151,6 +185,7 @@ const ApplicationModal: React.FC<{
       onClose();
       setErrors({});
       setSubmitSuccess(false);
+      setSubmitError("");
     }
   };
 
@@ -183,7 +218,22 @@ const ApplicationModal: React.FC<{
                     clipRule="evenodd"
                   />
                 </svg>
-                Application submitted successfully! We&apos;ll get back to you soon.
+                Application submitted successfully! We&apos;ll contact you soon.
+              </div>
+            </div>
+          )}
+
+          {submitError && (
+            <div className="mb-6 p-4 bg-red-100 border border-red-400 text-red-700 rounded-md">
+              <div className="flex items-center">
+                <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                  <path
+                    fillRule="evenodd"
+                    d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+                {submitError}
               </div>
             </div>
           )}
@@ -199,7 +249,8 @@ const ApplicationModal: React.FC<{
                 name="fullName"
                 value={formData.fullName}
                 onChange={handleInputChange}
-                className={`w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 ${
+                disabled={isSubmitting}
+                className={`w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 disabled:opacity-50 disabled:cursor-not-allowed ${
                   errors.fullName ? "border-red-500" : "border-gray-300"
                 }`}
                 placeholder="Enter your full name"
@@ -217,7 +268,8 @@ const ApplicationModal: React.FC<{
                 name="email"
                 value={formData.email}
                 onChange={handleInputChange}
-                className={`w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 ${
+                disabled={isSubmitting}
+                className={`w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 disabled:opacity-50 disabled:cursor-not-allowed ${
                   errors.email ? "border-red-500" : "border-gray-300"
                 }`}
                 placeholder="Enter your email address"
@@ -235,7 +287,8 @@ const ApplicationModal: React.FC<{
                 name="phone"
                 value={formData.phone}
                 onChange={handleInputChange}
-                className={`w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 ${
+                disabled={isSubmitting}
+                className={`w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 disabled:opacity-50 disabled:cursor-not-allowed ${
                   errors.phone ? "border-red-500" : "border-gray-300"
                 }`}
                 placeholder="Enter your phone number"
@@ -243,15 +296,17 @@ const ApplicationModal: React.FC<{
               {errors.phone && <p className="mt-1 text-sm text-red-600">{errors.phone}</p>}
             </div>
 
-            {/* Job Title */}
+            {/* Job Title - Now prominently displayed */}
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-2">Job Title</label>
+              <label className="block text-sm font-medium text-gray-700 mb-2">
+                Job Position <span className="text-red-500">*</span>
+              </label>
               <input
                 type="text"
                 name="jobTitle"
                 value={formData.jobTitle}
                 readOnly
-                className="w-full px-3 py-2 border rounded-md bg-gray-100 text-black cursor-not-allowed border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full px-3 py-2 border rounded-md bg-blue-50 text-blue-900 font-medium cursor-not-allowed border-blue-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
             </div>
 
@@ -264,8 +319,9 @@ const ApplicationModal: React.FC<{
                 type="file"
                 name="resume"
                 onChange={handleFileChange}
+                disabled={isSubmitting}
                 accept=".pdf,.doc,.docx"
-                className={`w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 ${
+                className={`w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 disabled:opacity-50 disabled:cursor-not-allowed ${
                   errors.resume ? "border-red-500" : "border-gray-300"
                 }`}
               />
