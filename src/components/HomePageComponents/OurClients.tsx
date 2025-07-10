@@ -36,7 +36,6 @@ const OurClients: React.FC<OurClientsProps> = ({ data }) => {
 
   return (
     <section className="mx-auto relative py-10 px-4 sm:px-8">
-      {/* Section Title */}
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -52,7 +51,6 @@ const OurClients: React.FC<OurClientsProps> = ({ data }) => {
         </h2>
       </motion.div>
 
-      {/* Clients Grid */}
       <motion.div
         variants={staggerContainer}
         initial="hidden"
