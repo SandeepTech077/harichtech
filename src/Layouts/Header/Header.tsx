@@ -5,8 +5,6 @@ import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { Menu, X} from "lucide-react";
-import phoneicon from "../../../public/SVG/call.svg";
-import mailicon from "../../../public/SVG/email.svg";
 import MobilePhoneIcon from "../../../public/SVG/mobile-phone.svg";
 import MobileEMailIcon from "../../../public/SVG/mobile-email.svg";
 import Logo from "../../../public/Logo/Logo.svg";
@@ -76,14 +74,14 @@ const Header = () => {
     <div className="w-full overflow-x-hidden">
       {/* Top Contact Bar - Hidden on mobile for better UX */}
       {!scrolled && (
-        <div className="hidden sm:block fixed top-0 left-0 right-0 w-full text-white bg-gradient-to-r from-[#2058FF] via-[#1B4FE8] to-[#004BC2] py-2 sm:py-3 px-4 z-50">
+        <div className="hidden sm:block fixed top-0 left-0 right-0 w-full  py-2 sm:py-3 px-4 z-50 bg-white">
           <div className="container mx-auto flex items-center justify-between max-w-7xl">
             {/* Contact Info */}
             <div className="flex items-center space-x-4 sm:space-x-6 min-w-0 flex-shrink">
               <div className="flex items-center space-x-2 group min-w-0">
                 <div className="p-1.5  rounded-full  transition-colors flex-shrink-0">
                   <Image
-                    src={phoneicon}
+                    src={MobilePhoneIcon}
                     alt="Phone Icon"
                     width={20}
                     height={20}
@@ -100,7 +98,7 @@ const Header = () => {
               <div className="hidden md:flex items-center space-x-2 group min-w-0">
                 <div className="p-1.5  rounded-full  flex-shrink-0">
                   <Image
-                    src={mailicon}
+                    src={MobileEMailIcon}
                     alt="Phone Icon"
                     width={20}
                     height={20}
@@ -121,7 +119,7 @@ const Header = () => {
                 href={socialLinks.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-8 h-8 bg-white rounded-full hover:bg-gray-50 hover:scale-110 transition-all duration-300 group shadow-sm flex items-center justify-center flex-shrink-0"
+                className="w-8 h-8 bg-white rounded-full hover:bg-gray-50 hover:scale-110 transition-all duration-300 group flex items-center justify-center flex-shrink-0"
                 aria-label="Follow us on LinkedIn"
               >
                 <Image
@@ -136,7 +134,7 @@ const Header = () => {
                 href={socialLinks.facebook}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-8 h-8 bg-white rounded-full hover:bg-gray-50 hover:scale-110 transition-all duration-300 group shadow-sm flex items-center justify-center flex-shrink-0"
+                className="w-8 h-8 bg-white rounded-full hover:bg-gray-50 hover:scale-110 transition-all duration-300 group  flex items-center justify-center flex-shrink-0"
                 aria-label="Follow us on Facebook"
               >
                 <Image
@@ -151,7 +149,7 @@ const Header = () => {
                 href={socialLinks.instagram}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-8 h-8 bg-white rounded-full hover:bg-gray-50 hover:scale-110 transition-all duration-300 group shadow-sm flex items-center justify-center flex-shrink-0"
+                className="w-8 h-8 bg-white rounded-full hover:bg-gray-50 hover:scale-110 transition-all duration-300 group  flex items-center justify-center flex-shrink-0"
                 aria-label="Follow us on Instagram"
               >
                 <Image
@@ -167,10 +165,10 @@ const Header = () => {
       )}
 
       <header
-        className={`fixed left-0 right-0 w-full z-40 transition-all duration-300 overflow-hidden ${
+        className={`fixed left-0 right-0 w-full z-40 transition-all duration-300 overflow-hidden shadow-lg  ${
           scrolled
-            ? "top-0 bg-white shadow-lg"
-            : "sm:top-12 top-0 bg-white/95 backdrop-blur-md shadow-sm"
+            ? "top-0 bg-white shadow-lg "
+            : "sm:top-12 top-0 bg-white/95 backdrop-blur-md shadow-lg "
         }`}
       >
         <div className="w-full max-w-full">
