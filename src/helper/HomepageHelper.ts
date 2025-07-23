@@ -1,6 +1,4 @@
-//Main
-import main1 from "../../public/Image/HomePageImage/main/Img1.png";
-import main2 from "../../public/Image/HomePageImage/main/Img2.png";
+
 
 import KnownImage from "../../public/Image/HomePageImage/KnowmeImage/Image.png";
 import DesignerSvg from "../../public/Image/HomePageImage/KnowmeImage/Designer.svg";
@@ -63,12 +61,9 @@ import clientLogo14 from "../../public/Image/HomePageImage/CLientLogo/logo-14.sv
 import clientLogo15 from "../../public/Image/HomePageImage/CLientLogo/logo-15.svg";
 import clientLogo16 from "../../public/Image/HomePageImage/CLientLogo/logo-16.svg";
 
+import AboutRightImage from "../../public/Image/HomePageImage/aboutus/right-image.svg";
 
 export const Helper = {
-  //MAIN
-  main1,
-  main2,
-
   KnownImage,
   DesignerSvg,
   DeveloperSvg,
@@ -127,6 +122,9 @@ export const Helper = {
   clientLogo15,
   clientLogo16,
 
+
+  //aboutus
+  AboutRightImage
   
 
 

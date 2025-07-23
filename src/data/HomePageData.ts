@@ -3,11 +3,28 @@ import { Helper } from "../helper/HomepageHelper";
 export const HomePagedata = {
   mainTitleSection: {
     title: "Thinking The High Quality Websites and App",
+    allTitle:[
+      {
+        id:1,
+        title:"Web Development",
+      },
+      {
+        id:2,
+        title:"Mobile Development",
+      },
+      {
+        id:3,
+        title:"Digital Marketing",
+      },
+      {
+        id:4,
+        title:"UI/UX Design",
+      }
+    ],
     subTitle:
-      "Harich Tech is an all new stylish Website and App For your services and projects that can show you things, awareness, drive traffic, connect with customers.",
+      "At Harich Technologies, we are dedicated to empowering businesses and individuals through innovative technology solutions. Founded on a passion for excellence and a commitment to delivering value, ",
     btnButton: "Learn More",
-    Img1: Helper.main1,
-    Img2: Helper.main2,
+  
   },
 
   knownMore: {
@@ -48,6 +65,13 @@ export const HomePagedata = {
       },
     ],
     image: Helper.KnownImage,
+  },
+  aboutUs: {
+   title:"About Us",
+   subTitle:"Accelerate Your Business with Harichtech",
+   describation:"At Harich Tech, we craft digital solutions that move businesses forward. From websites to strategy, we blend design, tech, and clear thinking to help brands grow faster, look sharper, and connect better with their audience.",
+   btnText:"Learn More",
+   rightImage:Helper.AboutRightImage
   },
   serviceList: {
     title: "Services",
