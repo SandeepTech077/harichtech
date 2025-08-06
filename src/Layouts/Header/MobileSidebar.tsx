@@ -143,7 +143,7 @@ const MobileSidebar: React.FC<MobileSidebarProps> = ({ isOpen, onClose }) => {
                               className="block py-2 px-3 text-xs font-medium text-blue-600 hover:text-blue-700 hover:bg-blue-50 rounded-lg transition-colors"
                               onClick={onClose}
                             >
-                              View All {item.name}
+                            {item.name}
                             </Link>
                             
                             {/* Subcategories */}
@@ -155,7 +155,15 @@ const MobileSidebar: React.FC<MobileSidebarProps> = ({ isOpen, onClose }) => {
                                   onClick={onClose}
                                 >
                                   {subItem.icon && (
-                                    <subItem.icon size={14} className="mr-2 flex-shrink-0" />
+                                    <div className="flex-shrink-0 w-5 h-5 mr-2 flex items-center justify-center">
+                                      <Image
+                                        src={subItem.icon}
+                                        alt={`${subItem.name} icon`}
+                                        width={14}
+                                        height={14}
+                                        className="text-blue-600"
+                                      />
+                                    </div>
                                   )}
                                   <span>{subItem.name}</span>
                                 </Link>
