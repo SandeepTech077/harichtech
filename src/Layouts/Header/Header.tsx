@@ -222,7 +222,7 @@
                                   >
                                     {subItem.icon && (
                                       <div className="flex-shrink-0 w-10 h-10 bg-blue-50 rounded-lg flex items-center justify-center mr-3 group-hover/link:bg-blue-100 transition-colors">
-                                        <subItem.icon size={20} className="text-blue-600" />
+                                        {/* <subItem.icon size={20} className="text-blue-600" /> */}
                                       </div>
                                     )}
                                     <div className="flex-1">
