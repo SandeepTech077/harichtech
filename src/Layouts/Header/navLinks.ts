@@ -99,7 +99,7 @@ export const industriesData: NavItem[] = [
 ];
 
 export const navItems: MainNavItem[] = [
-  { name: "Home", path: "/" },
+  // { name: "Home", path: "/" },
   {
     name: "Services",
     path: "/services",

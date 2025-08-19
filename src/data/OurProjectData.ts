@@ -8,7 +8,10 @@ export const OurProjects = {
         icon: Helper.InsightLogo,
         description:
           "At Insight, we believe the key to better decisions is already within reach - It just needs to be uncovered, organized, and understood. In most organizations, valuable knowledge lives in scattered documents, forgotten conversations, and siloed tools.",
-        btnText: "Visit Website",
+        button: {
+          title: "Visit Website",
+          href: "https://www.insightmanagement.in",
+        },
         Banner: Helper.InsigtBanner,
         MobileBanner: Helper.InsigtBanner,
         upArrowSvg: Helper.InsightArrow,
@@ -57,7 +60,7 @@ export const OurProjects = {
       },
       review: {
         Textcolor: "text-[#1B5AA7]",
-        bgImage:Helper.BgImage,
+        bgImage: Helper.BgImage,
 
         Bordercolor: "border-[#1B5AA7]",
         icon: Helper.InsightIcon,
@@ -75,8 +78,11 @@ export const OurProjects = {
         icon: Helper.AarambhLogo,
         description:
           "Shilp Aarambh GIFT City Run was conceived as a celebration of fitness, community, and a shared vision for a healthier, drug-free future. The event was born out of the idea that by coming together, we can make a difference in the lives of individuals struggling with drug addiction. It's an opportunity to raise awareness, promote a healthy lifestyle, and build a supportive community.",
-        btnText: "Visit Website",
-        
+        button: {
+          title: "Visit Website",
+          href: "https://shilpaarambh.com",
+        },
+
         Banner: Helper.AarambhBanner,
         upArrowSvg: Helper.AarambhArrow,
         textColor: "text-[#E51D25]",
@@ -116,7 +122,7 @@ export const OurProjects = {
       },
       review: {
         Textcolor: "text-black",
-        bgImage:Helper.BgImage,
+        bgImage: Helper.BgImage,
 
         Bordercolor: "border-[#1B5AA7]",
         icon: Helper.AarambhIcon,
@@ -125,9 +131,7 @@ export const OurProjects = {
         happyClintIcon: Helper.AarambhHappyClient,
         profileImage: Helper.AarambhProfile,
         describation:
-          "Shilp Aarambh - Gift City Run is a project that’s extremely close to my heart. It’s not just an event, it’s a statement of purpose, energy, and community spirit - and we needed a digital presence that could convey all of that in a crisp and inspiring way. Harich Tech understood the emotion behind Aarambh from the very beginning. The website they delivered is vibrant, forward-focused, and perfectly in sync with the theme of fresh starts and positive movement. Their team brought in not just design expertise, but a thoughtful approach to storytelling and user flow. It’s rare to find a digital partner who balances creativity with clarity - and Harich did exactly that."
-
-
+          "Shilp Aarambh - Gift City Run is a project that’s extremely close to my heart. It’s not just an event, it’s a statement of purpose, energy, and community spirit - and we needed a digital presence that could convey all of that in a crisp and inspiring way. Harich Tech understood the emotion behind Aarambh from the very beginning. The website they delivered is vibrant, forward-focused, and perfectly in sync with the theme of fresh starts and positive movement. Their team brought in not just design expertise, but a thoughtful approach to storytelling and user flow. It’s rare to find a digital partner who balances creativity with clarity - and Harich did exactly that.",
       },
     },
     {
@@ -136,7 +140,10 @@ export const OurProjects = {
         icon: Helper.MicroLogo,
         description:
           "At Microb Range Pvt Ltd, we are dedicated to transforming global nutrition through innovative, science-backed solutions. By combining Spirulina, collagen, and other microbial advancements, we provide affordable, non-GMO, and chemical-free nutraceutical products that cater to diverse dietary needs. ",
-        btnText: "Visit Website",
+        button: {
+          title: "Visit Website",
+          href: "/",
+        },
         textColor: "text-[#4BBA72]",
         Banner: Helper.MicroBanner,
         upArrowSvg: Helper.MicroArrow,
@@ -181,7 +188,7 @@ export const OurProjects = {
       },
       review: {
         Textcolor: "text-black",
-        bgImage:Helper.BgImage,
+        bgImage: Helper.BgImage,
 
         Bordercolor: "border-[#4BBA72]",
         icon: Helper.MicroIcon,
@@ -199,7 +206,10 @@ export const OurProjects = {
         icon: Helper.ArkleLogo,
         description:
           "At Arkle Equestrian Club, we pride ourselves on transforming both horses and riders into champions. Our comprehensive training programs have helped countless equestrians achieve their dreams, fostering a competitive spirit through personalized coaching and exceptional horse care.",
-        btnText: "Visit Website",
+        button: {
+          title: "Visit Website",
+          href: "https://arkleequestrianclub.com",
+        },
         textColor: "text-black",
         Banner: Helper.ArkleBanner,
         upArrowSvg: Helper.BlackArrow,
@@ -238,9 +248,9 @@ export const OurProjects = {
         ],
         Banner: Helper.ArkleFont,
       },
-     review: {
+      review: {
         Textcolor: "text-black",
-        bgImage:Helper.BgImage,
+        bgImage: Helper.BgImage,
 
         Bordercolor: "border-[#D09A40]",
         icon: Helper.ArkleIcon,
@@ -258,7 +268,10 @@ export const OurProjects = {
         icon: Helper.ShilpLogo,
         description:
           "Shilp Group, a leading real estate company in Ahmedabad, is built on the pillars of quality, integrity, and authenticity. Recognized for its innovative approach, cutting-edge designs, and commitment to excellence, Shilp Group has delivered over 50 landmark projects across the city. The company is known for identifying upcoming areas and creating modern, dynamic structures that meet market needs.",
-        btnText: "Visit Website",
+        button: {
+          title: "Visit Website",
+          href: "https://shilpgroup.com",
+        },
         textColor: "text-black",
         Banner: Helper.ShilpBanner,
         upArrowSvg: Helper.BlackArrow,
@@ -293,9 +306,9 @@ export const OurProjects = {
         ],
         Banner: Helper.ShilpFont,
       },
-       review: {
+      review: {
         Textcolor: "text-black",
-        bgImage:Helper.BgImage,
+        bgImage: Helper.BgImage,
 
         Bordercolor: "border-black",
         icon: Helper.ShilpIcon,
@@ -313,7 +326,10 @@ export const OurProjects = {
         icon: Helper.YashLogo,
         description:
           "Yash Brahmbhatt is a self-made, first-generation entrepreneur and the founder and CEO of Shilp Group, a leading real estate company in Ahmedabad. Coming from humble beginnings, he never waited for opportunities—he created them. With a strong vision and relentless drive, he has shaped both his journey and the city’s skyline. ",
-        btnText: "Visit Website",
+        button: {
+          title: "Visit Website",
+          href: "https://www.yashbrahmbhatt.in",
+        },
         textColor: "text-black",
         Banner: Helper.YashBanner,
         upArrowSvg: Helper.BlackArrow,
@@ -348,9 +364,9 @@ export const OurProjects = {
         ],
         Banner: Helper.YashFont,
       },
-  review: {
+      review: {
         Textcolor: "text-black",
-        bgImage:Helper.BgImage,
+        bgImage: Helper.BgImage,
 
         Bordercolor: "border-black",
         icon: Helper.YashIcon,
@@ -368,7 +384,10 @@ export const OurProjects = {
         icon: Helper.SnehalLogo,
         description:
           "Meet Snehal Brahmbhatt - a maverick, innovator, and changemaker. As the Founder of Snehshilp Foundation, COO of the prestigious Shilp Group, and Spousal Chair of the EO Gujarat Chapter, Snehal’s journey is anything but conventional. ",
-        btnText: "Visit Website",
+        button: {
+          title: "Visit Website",
+          href: "https://snehalbrahmbhatt.com",
+        },
         textColor: "text-black",
         Banner: Helper.SnehalBanner,
         upArrowSvg: Helper.BlackArrow,
@@ -403,9 +422,9 @@ export const OurProjects = {
         ],
         Banner: Helper.SnehalFont,
       },
-       review: {
+      review: {
         Textcolor: "text-black",
-        bgImage:Helper.BgImage,
+        bgImage: Helper.BgImage,
 
         Bordercolor: "border-black",
         icon: Helper.SnehalIcon,
@@ -422,8 +441,11 @@ export const OurProjects = {
       BannerSection: {
         icon: Helper.SnehShilpLogo,
         description:
-          "At Insight, we believe the key to better decisions is already within reach - It just needs to be uncovered, organized, and understood. In most organizations, valuable knowledge lives in scattered documents, forgotten conversations, and siloed tools.",
-        btnText: "Visit Website",
+          "At SnehShilp Foundation, we believe that the greatest investment is in people. By empowering individuals through education, skill development, healthcare, and social support, we nurture the potential within every person to create positive, lasting change in their communities. ",
+        button: {
+          title: "Visit Website",
+          href: "https://snehshilp.org",
+        },
         textColor: "text-[#73BE5F]",
         Banner: Helper.SnehShilpBanner,
         upArrowSvg: Helper.MicroArrow,
@@ -458,9 +480,9 @@ export const OurProjects = {
         ],
         Banner: Helper.SnehShilpFont,
       },
-     review: {
+      review: {
         Textcolor: "text-black",
-        bgImage:Helper.BgImage,
+        bgImage: Helper.BgImage,
 
         Bordercolor: "border-black",
         icon: Helper.SnehShilpIcon,
@@ -478,7 +500,10 @@ export const OurProjects = {
         icon: Helper.FestLogo,
         description:
           "Snehshilp Foundation's 'Start-Up Fest Gujarat' highlights the thriving spirit of entrepreneurship and innovation in the region. Founded and driven by the visionary Mrs. Snehal Brahmbhatt, the event aims to fill the void in start-up support by providing a comprehensive platform for fresh ideas to flourish.",
-        btnText: "Visit Website",
+        button: {
+          title: "Visit Website",
+          href: "https://startupfestgujarat.com",
+        },
         textColor: "text-[#003777]",
         Banner: Helper.FestBanner,
         upArrowSvg: Helper.festArrow,
@@ -515,7 +540,7 @@ export const OurProjects = {
       },
       review: {
         Textcolor: "text-black",
-        bgImage:Helper.BgImage,
+        bgImage: Helper.BgImage,
 
         Bordercolor: "border-black",
         icon: Helper.FestIcon,
@@ -534,7 +559,10 @@ export const OurProjects = {
         icon: Helper.AeroLogo,
         description:
           "Qorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis.",
-        btnText: "Visit Website",
+        button: {
+          title: "Visit Website",
+          href: "/",
+        },
         Banner: Helper.AeroBanner,
         textColor: "text-black",
         upArrowSvg: Helper.BlackArrow,
@@ -572,8 +600,8 @@ export const OurProjects = {
         ],
         Banner: Helper.AeroFont,
       },
-       review: {
-        bgImage:Helper.BgImage,
+      review: {
+        bgImage: Helper.BgImage,
         Textcolor: "text-black",
         Bordercolor: "border-[#53CCC7]",
         icon: Helper.AeroIcon,
@@ -591,7 +619,10 @@ export const OurProjects = {
         icon: Helper.OreumLogo,
         description:
           "A next-generation, compact air purification system powered by Spirulina and other high-performing microalgae—often referred to as “liquid trees” for their remarkable ability to convert CO₂ into oxygen at rates surpassing most terrestrial plants, our system enhances indoor environments by working in harmony with traditional greenery—not replacing, but reinforcing nature’s work. ",
-        btnText: "Visit Website",
+        button: {
+          title: "Visit Website",
+          href: "/",
+        },
         Banner: Helper.OreumBanner,
         textColor: "text-[#05A750]",
         upArrowSvg: Helper.OreumArrow,
@@ -599,203 +630,6 @@ export const OurProjects = {
       projectOverView: {
         leftSideImage: Helper.OreumOverView,
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
         rightContent: {
           title: "Project Overview",
           titleTextColor: "text-black",
@@ -833,7 +667,7 @@ export const OurProjects = {
       },
       review: {
         Textcolor: "text-black",
-        bgImage:Helper.BgImage,
+        bgImage: Helper.BgImage,
 
         Bordercolor: "border-black",
         icon: Helper.OreumIcon,
@@ -851,7 +685,10 @@ export const OurProjects = {
         icon: Helper.EverVitalLogo,
         description:
           "Once upon a time, in a world where modern life often left people struggling to maintain their health, a vision was born—a vision of a healthier, more nourished world. This dream became Ever Vital, a trusted companion for those seeking balance in their busy lives.At Ever Vital, we believe that good health is not a luxury but a necessity—a cornerstone of a fulfilling and vibrant life.",
-        btnText: "Visit Website",
+        button: {
+          title: "Visit Website",
+          href: "/",
+        },
         Banner: Helper.EverVitalBanner,
         textColor: "text-[#218A66]",
         upArrowSvg: Helper.EverVitalArrow,
@@ -891,9 +728,9 @@ export const OurProjects = {
         ],
         Banner: Helper.EverVitalFont,
       },
-     review: {
+      review: {
         Textcolor: "text-black",
-        bgImage:Helper.BgImage,
+        bgImage: Helper.BgImage,
 
         Bordercolor: "border-black",
         icon: Helper.EverVitalIcon,
@@ -904,7 +741,6 @@ export const OurProjects = {
         describation:
           "In the health and wellness space, trust is everything - and your digital presence plays a big role in that. Harich Tech instinctively understood what Ever Vital was all about - they captured our need for clean design, a calming visual presence, and effortless user experience without needing constant direction. The website they created feels professional yet approachable - exactly the tone we were aiming for. It reflects our values and builds credibility from the first click. Our users have responded positively, and we’ve seen real engagement since the launch. Harich brought a thoughtful approach to the process, and it shows in the final result.",
       },
-      
     },
   ],
 };

@@ -23,7 +23,11 @@ export const HomePagedata = {
     ],
     subTitle:
       "At Harich Technologies, we are dedicated to empowering businesses and individuals through innovative technology solutions. Founded on a passion for excellence and a commitment to delivering value, ",
-    btnButton: "Learn More",
+    button:{
+        title:"Learn More",
+        href:"/about-us",
+    } ,
+
   
   },
 
@@ -70,7 +74,10 @@ export const HomePagedata = {
    title:"About Us",
    subTitle:"Accelerate Your Business with Harichtech",
    describation:"At Harich Tech, we craft digital solutions that move businesses forward. From websites to strategy, we blend design, tech, and clear thinking to help brands grow faster, look sharper, and connect better with their audience.",
-   btnText:"Learn More",
+   button:{
+        title:"Learn More",
+        href:"/about-us",
+    } ,
    rightImage:Helper.AboutRightImage
   },
   serviceList: {

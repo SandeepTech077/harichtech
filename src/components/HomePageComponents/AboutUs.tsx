@@ -2,15 +2,23 @@
 
 import Image from "next/image";
 import React from "react";
-import Title from "../Title";
+import Title from "../Title"
+import Link from "next/link";
+import { MoveUpRight } from "lucide-react";
 
 // Define the prop types
+
+interface ButtonTitle {
+  title: string;
+  href: string;
+} 
+
 interface AboutUsProps {
   data: {
     title: string;
     subTitle: string;
     describation: string;
-    btnText: string;
+    button: ButtonTitle;
     rightImage: string;
   };
 }
@@ -25,7 +33,6 @@ const AboutUs: React.FC<AboutUsProps> = ({ data }) => {
           </span>
 
           <h2 className="text-[32px] md:text-[48px] font-bold leading-snug">
-
             {data.subTitle.split(" ").map((word, i) => (
               <span
                 key={i}
@@ -46,9 +53,12 @@ const AboutUs: React.FC<AboutUsProps> = ({ data }) => {
           </p>
 
           {/* Button */}
-          <button className="flex items-center gap-2 bg-gradient-to-l from-[#2058FF] to-[#004BC2] hover:opacity-90 transition px-6 py-3 text-white rounded-[10px] text-[16px] font-semibold shadow-md mx-auto md:mx-0">
-            {data.btnText}
-          </button>
+          <Link href={data.button.href}>
+            <button className="flex items-center gap-2 bg-gradient-to-l from-[#2058FF] to-[#004BC2] hover:opacity-90 transition px-6 py-3 text-white rounded-[10px] text-[16px] font-semibold shadow-md">
+              {data.button.title}
+              <MoveUpRight />
+            </button>
+          </Link>
         </div>
 
         {/* Right Image */}

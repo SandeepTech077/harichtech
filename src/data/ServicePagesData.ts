@@ -15,7 +15,7 @@ export const ServicePageDataWebDevelopement = [
         "React.js is one of the most widely used JavaScript libraries for building user interfaces, enabling the development of fast, scalable, and feature-rich web applications. At Harichtech, we specialize in delivering high-performance React.js development solutions tailored to your business needs.",
         "Our React.js development services are designed to help startups, SMEs, and enterprises build responsive digital experiences - from single-page applications to complex enterprise-grade platforms. With a focus on maintainability, scalability, and usability, we leverage the full potential of React.js to accelerate your digital transformation.",
       ],
-      svgIcon: Helper.reactjsSvg,
+      svgIcon: Helper.ReactjsSvg,
     },
     whyChooseUsSection: {
       title: "Why Choose React.js for Web Application Development?",
@@ -310,7 +310,7 @@ export const ServicePageDataWebDevelopement = [
         "Node.js has transformed modern web development by offering a fast, scalable, and event-driven architecture for building robust backend systems. At Harichtech, we offer end-to-end Node.js development services that power real-time, data-intensive applications with speed and efficiency.",
         "Whether you're developing a custom API, a full-stack web application, or a microservices architecture, our Node.js solutions ensure scalability, performance, and long-term maintainability.",
       ],
-      svgIcon: Helper.reactjsSvg,
+      svgIcon: Helper.NodejsSvg,
     },
     whyChooseUsSection: {
       title: "Why Choose Node.js for Web Application Development?",
@@ -592,7 +592,7 @@ export const ServicePageDataWebDevelopement = [
         "In today's digital-first world, speed, performance, and user experience are everything. That’s where Next.js shines. It’s not just another frontend framework-it’s a full-featured, production-grade toolkit that helps you build web applications that are as fast as they are powerful.",
         "At Harichtech, we specialize in creating Next.js solutions that balance technical excellence with a deep understanding of your business goals. Whether you need a high-performing marketing site, an e-commerce storefront, or a data-driven SaaS platform, we’ll help you build it right-with purpose and precision.",
       ],
-      svgIcon: Helper.reactjsSvg,
+      svgIcon: Helper.NextjsSvg,
     },
     whyChooseUsSection: {
       title: "Why Choose Next.js for Web Application Development?",
@@ -878,7 +878,7 @@ export const ServicePageDataWebDevelopement = [
         "In today’s mobile-first world, delivering seamless, high-performance experiences across platforms is essential. React Native allows businesses to create powerful mobile applications using a single codebase-without compromising on user experience or performance.",
         "At Harichtech, our React Native development services are focused on building scalable, fast, and elegant mobile apps that run smoothly on both iOS and Android. Whether you’re launching a new product or scaling an existing one, we help you reach more users with efficient, cost-effective development.",
       ],
-      svgIcon: Helper.reactjsSvg,
+      svgIcon: Helper.ReactNativejsSvg,
     },
     whyChooseUsSection: {
       title: "Why Choose React Native?",
@@ -1180,7 +1180,7 @@ export const ServicePageDataOfUIUx = [
         "Your website isn’t just a digital placeholder-it’s the first impression, the primary point of interaction, and often the deciding factor for whether a user engages with your brand or moves on. At Harichtech, we design websites that are more than just beautiful-they are thoughtful, functional, and built to perform.",
         "We focus on creating modern, mobile-friendly, and high-converting websites that align with your business goals. Whether you're launching a brand, revamping an outdated site, or creating a platform from the ground up, our design approach ensures every detail works toward the outcomes that matter.",
       ],
-      svgIcon: Helper.reactjsSvg,
+      svgIcon: Helper.WebDesignSvg,
     },
     whyChooseUsSection: {
       title: "Why Website Design Still Matters",
@@ -1453,7 +1453,7 @@ export const ServicePageDataOfUIUx = [
         "Your mobile app is more than just a tool—it’s your brand’s presence in your user's pocket, a constant companion that represents your business 24/7. In a few seconds, users decide whether your app is worth keeping or deleting. At Harichtech, we help make sure they stay, explore, and engage.",
         "We design mobile apps that don’t just look good—they work hard. Our team creates modern, user-friendly, and performance-driven designs that are rooted in usability and built to evolve with your brand. Whether you're launching a new app or reimagining an existing one, our goal is always the same: to help your business grow by designing for the people you serve.",
       ],
-      svgIcon: Helper.reactjsSvg,
+      svgIcon: Helper.MobileAppSvg,
     },
     whyChooseUsSection: {
       title: "Why Mobile App Design Still Matters",
@@ -1500,7 +1500,7 @@ export const ServicePageDataOfUIUx = [
         "Our team is experienced in delivering both high-impact consumer apps and complex, data-driven platforms. From rapid prototyping to full-scale enterprise solutions, we provide end-to-end support.",
       ],
       points: null,
-      rightImage: Helper.ReactApproch,
+      rightImage: Helper.MobileAPPDesign,
     },
     connectUsSection: {
       title: "Let’s Build a Website That Works for You",
@@ -1725,7 +1725,7 @@ export const ServicePageDataOfUIUx = [
         "At Harichtech, product design is not simply about creating visuals-it’s about solving problems. We collaborate with businesses to transform ideas into user-centered digital products that are scalable, intuitive, and built for impact. From concept to execution, we focus on creating designs that deliver clarity, usability, and measurable value.",
         "Whether you're an early-stage startup refining your MVP or an enterprise optimizing product performance, we help bridge the gap between user needs and business goals.",
       ],
-      svgIcon: Helper.reactjsSvg,
+      svgIcon: Helper.ProductDesignSvg,
     },
     whyChooseUsSection: {
       title: "Why Product Design Still Matters",
@@ -1778,7 +1778,7 @@ export const ServicePageDataOfUIUx = [
         "Our process adapts to your stage of growth. Whether you're building a product from the ground up or reimagining an existing platform, we work alongside your internal teams, offering end-to-end support across all phases of product design.",
       ],
       points: null,
-      rightImage: Helper.ReactApproch,
+      rightImage: Helper.ProductDesign,
     },
     connectUsSection: {
       title: "Let’s Design Your Next Great Product",
@@ -2019,7 +2019,7 @@ export const ServicePageDataOfDigitalMarketing = [
         "We take a strategic, performance-driven approach to search engine optimization. From on-page content and site structure to backlinks and technical performance, we optimize every detail to help your website rank higher, attract more visitors, and convert more leads.",
         "Whether you're a startup looking to break into your niche or an established brand aiming to outperform competitors, we help you rise to the top of search results and stay there.",
       ],
-      svgIcon: Helper.reactjsSvg,
+      svgIcon: Helper.SeoSvg,
     },
     whyChooseUsSection: {
       title: "Why SEO Still Matters?",
@@ -2075,7 +2075,7 @@ export const ServicePageDataOfDigitalMarketing = [
           "Cross-Functional Insight: Our SEO works in harmony with your dev, content, and PPC teams.",
         ],
       },
-      rightImage: Helper.ReactApproch,
+      rightImage: Helper.SEOServices,
     },
     connectUsSection: {
       title: "Let’s Get You Found",
@@ -2375,7 +2375,7 @@ export const ServicePageDataOfDigitalMarketing = [
         "Pay-per-click (PPC) advertising is one of the fastest ways to get your brand in front of your ideal customers but speed without strategy leads to wasted budget. At Harichtech, we help you run smarter campaigns that are data-driven, conversion-focused, and built for ROI.",
         "We take a strategic, performance-driven approach to search engine optimization. From on-page content and site structure to backlinks and technical performance, we optimize every detail to help your website rank higher, attract more visitors, and convert more leads.",
       ],
-      svgIcon: Helper.reactjsSvg,
+      svgIcon: Helper.PPCSvg,
     },
     whyChooseUsSection: {
       title: "Why PPC Still Matters?",
@@ -2431,7 +2431,7 @@ export const ServicePageDataOfDigitalMarketing = [
           "Performance First: We’re obsessed with metrics and improving them, month over month",
         ],
       },
-      rightImage: Helper.ReactApproch,
+      rightImage: Helper.PPCAdvertising,
     },
     connectUsSection: {
       title: "Let’s Run Ads That Actually Work",
@@ -2727,7 +2727,7 @@ export const ServicePageDataOfDigitalMarketing = [
         "Whether you're a fast-scaling startup or an established enterprise, we manage your social media with one goal in mind: creating content and campaigns that connect with your audience and support your business objectives.",
         "We don’t just post, we plan, design, engage, and measure. Our team becomes an extension of your brand voice, helping you make meaningful noise in a crowded digital world.",
       ],
-      svgIcon: Helper.reactjsSvg,
+      svgIcon: Helper.SocialMediaSvg,
     },
     whyChooseUsSection: {
       title: "Why Social Media Still Matters?",
@@ -2783,7 +2783,7 @@ export const ServicePageDataOfDigitalMarketing = [
           "Full Ownership: We handle ideation, design, copy, scheduling, engagement, and reporting-so you can focus on running your business",
         ],
       },
-      rightImage: Helper.ReactApproch,
+      rightImage: Helper.SocialMediaMarketing,
     },
     connectUsSection: {
       title: "Let’s Grow Your Brand on Social",
@@ -3073,7 +3073,7 @@ export const ServicePageDataOfDigitalMarketing = [
         "Whether you’re a tech company explaining a complex product, an e-commerce brand launching a new line, or a service provider nurturing leads, strategic content is your most powerful asset.",
         "We don’t just write-we research, plan, optimize, and distribute. Our content marketing is designed to meet your audience where they are, answer their questions, and move them closer to conversion.",
       ],
-      svgIcon: Helper.reactjsSvg,
+      svgIcon: Helper.ContentMarketingSvg,
     },
     whyChooseUsSection: {
       title: "Why Content Still Matters?",
@@ -3129,7 +3129,7 @@ export const ServicePageDataOfDigitalMarketing = [
           "Consistency & Scale: Whether 4 blogs a month or a 40-page resource-our team delivers quality at scale.",
         ],
       },
-      rightImage: Helper.ReactApproch,
+      rightImage: Helper.ContentMarketing,
     },
     connectUsSection: {
       title: "Let’s Tell Your Story-Strategically",
@@ -3408,7 +3408,7 @@ export const ServicePageDataOfDigitalMarketing = [
     },
   },
   {
-    id: 4,
+    id: 5,
     type: "email-marketing-services",
     bannerTitle: {
       title: "Content Marketing Services",
@@ -3422,7 +3422,7 @@ export const ServicePageDataOfDigitalMarketing = [
         "Whether you're nurturing leads, onboarding new users, launching products, or driving repeat purchases, we craft campaigns that speak to the right people at the right moment with content that’s built to drive results.",
         "We don’t just send emails-we build email systems that support your full customer journey.",
       ],
-      svgIcon: Helper.reactjsSvg,
+      svgIcon: Helper.EmailMarketingSvg,
     },
     whyChooseUsSection: {
       title: "Why Email Marketing Still Works",
@@ -3478,7 +3478,7 @@ export const ServicePageDataOfDigitalMarketing = [
           "Transparent Reporting: You’ll always know how your campaigns are performing with insights that go beyond vanity metrics.",
         ],
       },
-      rightImage: Helper.ReactApproch,
+      rightImage: Helper.EmailMarketing,
     },
     connectUsSection: {
       title: "Let’s Build an Email Engine That Works",
@@ -3759,7 +3759,7 @@ export const ServicePageDataOfDigitalMarketing = [
     },
   },
   {
-    id: 5,
+    id: 6,
     type: "analytics-reporting",
     bannerTitle: {
       title: "Analytics & Reporting",
@@ -3773,7 +3773,7 @@ export const ServicePageDataOfDigitalMarketing = [
         "Whether you're running campaigns, launching new features, or scaling user engagement, knowing what works (and what doesn't) is the key to sustainable growth.",
         "We go beyond surface-level metrics. Our team builds reporting systems that are clear, insightful, and aligned with your specific goals, so you always know where you stand, and where to go next.",
       ],
-      svgIcon: Helper.reactjsSvg,
+      svgIcon: Helper.AnalyticsSvg,
     },
     whyChooseUsSection: {
       title: "Why Email Marketing Still Works",
@@ -3829,7 +3829,7 @@ export const ServicePageDataOfDigitalMarketing = [
           "Transparent Reporting: You’ll always know how your campaigns are performing with insights that go beyond vanity metrics.",
         ],
       },
-      rightImage: Helper.ReactApproch,
+      rightImage: Helper.AnalyticsAndReporting,
     },
     connectUsSection: {
       title: "Let’s Turn Data Into Growth",
@@ -4110,7 +4110,7 @@ export const ServicePageDataOfDigitalMarketing = [
     },
   },
   {
-    id: 5,
+    id: 7,
     type: "influencer-marketing-services",
     bannerTitle: {
       title: "Influencer Marketing Services",
@@ -4124,7 +4124,7 @@ export const ServicePageDataOfDigitalMarketing = [
         "At Harichtech, we help you connect with the right creators, build campaigns that feel genuine, not scripted and turn social influence into measurable business results. Whether you're looking to build brand awareness, drive traffic, or boost conversions, our influencer marketing services deliver campaigns that resonate and scale.",
         "We don’t just find influencers, we build strategic collaborations that align with your brand, values, and goals.",
       ],
-      svgIcon: Helper.reactjsSvg,
+      svgIcon: Helper.InfluencerMarketingSvg,
     },
     whyChooseUsSection: {
       title: "Why Influencer Marketing Works?",
@@ -4180,7 +4180,7 @@ export const ServicePageDataOfDigitalMarketing = [
           "Transparent Performance: Clear reports, real results, and no influencer fluff.",
         ],
       },
-      rightImage: Helper.ReactApproch,
+      rightImage: Helper.InfluencerMarketing,
     },
     connectUsSection: {
       title: "Ready to Build Influence That Converts?",

@@ -2,12 +2,19 @@
 
 import React from 'react';
 import Image, { StaticImageData } from 'next/image';
+import Link from 'next/link';
+
+interface ButtonTitle {
+  title: string;
+  href: string;
+}
+
 
 export interface BannerSection {
   icon: StaticImageData;
   description: string;
-  btnText: string;
   textColor?: string;
+  button: ButtonTitle;
   Banner: StaticImageData;
   MobileBanner?: StaticImageData; 
   upArrowSvg: StaticImageData;
@@ -60,19 +67,23 @@ const ProjectBanner: React.FC<ProjectBannerProps> = ({ project }) => {
           </p>
 
           {/* Button */}
-          <button className={`flex ${project.textColor} cursor-pointer items-center gap-2 bg-white px-6 py-3 rounded-[10px] text-[14px] md:text-[16px] font-semibold hover:bg-gray-200 transition`}>
-            {project.btnText}
-            {/* Arrow Icon - Fixed with proper aspect ratio handling */}
-            <div className="w-4 h-4 md:w-4 md:h-4 relative">
-              <Image
-                src={project.upArrowSvg}
-                alt="Arrow Icon"
-                fill
-                className="object-contain"
-                sizes="(max-width: 767px) 16px, (min-width: 768px) 24px"
-              />
-            </div>
-          </button>
+          <Link href={project.button.href}>
+            <button
+              className={`flex ${project.textColor} cursor-pointer items-center gap-2 bg-white px-6 py-3 rounded-[10px] text-[14px] md:text-[16px] font-semibold hover:bg-gray-200 transition`}
+            >
+              {project.button.title}
+              {/* Arrow Icon - Fixed with proper aspect ratio handling */}
+              <div className="w-4 h-4 md:w-4 md:h-4 relative">
+                <Image
+                  src={project.upArrowSvg}
+                  alt="Arrow Icon"
+                  fill
+                  className="object-contain"
+                  sizes="(max-width: 767px) 16px, (min-width: 768px) 24px"
+                />
+              </div>
+            </button>
+          </Link>
         </div>
       </div>
     </section>

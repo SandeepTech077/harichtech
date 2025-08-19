@@ -3,17 +3,22 @@
 import { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import { MoveUpRight } from "lucide-react";
+import Link from "next/link";
 
 interface TitleItem {
   id: number;
   title: string;
 }
 
+interface ButtonTitle {
+  title: string;
+  href: string;
+}
 interface MainTitleData {
   title: string;
   allTitle: TitleItem[];
   subTitle: string;
-  btnButton: string;
+  button: ButtonTitle;
 }
 
 interface Props {
@@ -89,10 +94,13 @@ const MainTitleSection: React.FC<Props> = ({ data }) => {
         </p>
 
         {/* CTA Button */}
-        <button className="flex items-center gap-2 bg-gradient-to-l from-[#2058FF] to-[#004BC2] hover:opacity-90 transition px-6 py-3 text-white rounded-[10px] text-[16px] font-semibold shadow-md">
-          {data.btnButton}
+        <Link
+          href={data.button.href}
+          className="flex items-center gap-2 bg-gradient-to-l from-[#2058FF] to-[#004BC2] hover:opacity-90 transition px-6 py-3 text-white rounded-[10px] text-[16px] font-semibold shadow-md"
+        >
+          {data.button.title}
           <MoveUpRight />
-        </button>
+        </Link>
       </div>
     </section>
   );

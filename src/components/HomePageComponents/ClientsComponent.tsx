@@ -92,7 +92,7 @@ const ClientsComponent: React.FC<ClientsComponentProps> = ({ data }) => {
     if (isModalOpen) {
       document.addEventListener("keydown", handleEscape);
       document.body.style.overflow = "hidden";
-    }
+    } 
 
     return () => {
       document.removeEventListener("keydown", handleEscape);
@@ -267,14 +267,14 @@ const ClientsComponent: React.FC<ClientsComponentProps> = ({ data }) => {
       <AnimatePresence>
         {isModalOpen && selectedTestimonial && (
           <motion.div
-            className="fixed inset-0 z-50 flex items-center justify-center p-4"
+            className="fixed inset-0 z-50 flex items-center justify-center"
             variants={overlayVariant}
             initial="hidden"
             animate="visible"
             exit="exit"
           >
             <motion.div
-              className="absolute inset-0 bg-black bg-opacity-50"
+              className="absolute inset-0 bg-black bg-opacity-50 h-[100vh]"
               onClick={closeModal}
             />
 
