@@ -6,9 +6,11 @@ import { WhyChooseUsSection } from "@/components/ServicesAllPageComponent/WhyCho
 import { ApprouchSection } from "@/components/ServicesAllPageComponent/ApprouchSection";
 import { ConnectUsSection } from "@/components/ServicesAllPageComponent/ConnectUsSection";
 import { ServicesSection } from "@/components/ServicesAllPageComponent/ServicesSection";
+import { FAQSection } from "@/components/ServicesAllPageComponent/FAQSection";
 import { DevelopmentProcess } from "@/components/ServicesAllPageComponent/DevelopementProcess";
 import { TechStackSection } from "@/components/ServicesAllPageComponent/TechStackSection";
 import { IndustriesSection } from "@/components/ServicesAllPageComponent/IndustriesSection";
+import { PortfolioSection } from "@/components/ServicesAllPageComponent/PortfolioSection";
 
 export async function generateStaticParams() {
   return ServicePageDataWebDevelopement.map((service) => ({
@@ -22,9 +24,7 @@ export async function generateMetadata({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  const service = ServicePageDataWebDevelopement.find(
-    (s) => s.type === slug
-  );
+  const service = ServicePageDataWebDevelopement.find((s) => s.type === slug);
 
   if (!service) {
     return {
@@ -46,9 +46,7 @@ interface ServicePageProps {
 
 export default async function ServicePage({ params }: ServicePageProps) {
   const { slug } = await params;
-  const service = ServicePageDataWebDevelopement.find(
-    (s) => s.type === slug
-  );
+  const service = ServicePageDataWebDevelopement.find((s) => s.type === slug);
 
   if (!service) {
     notFound();
@@ -112,31 +110,18 @@ export default async function ServicePage({ params }: ServicePageProps) {
           description={service.IndustriesSection.describation}
           cards={service.IndustriesSection.cards}
         />
+        <PortfolioSection
+          title={service.portfolioSection.title}
+          blueTitle={service.portfolioSection.blueTitle}
+          projects={service.portfolioSection.projects}
+          buttonTitle={service.portfolioSection.btnTitle}
+        />
+        <FAQSection
+          title={service.faqSection.title}
+          faqs={service.faqSection.ponits}
+          svg={service.faqSection.svgimage}
+        />
       </div>
     </main>
   );
-}
-
-// import { PortfolioSection } from "@/components/ServicesAllPageComponent/PortfolioSection";
-// import { FAQSection } from "@/components/ServicesAllPageComponent/FAQSection";
-{
-  /* 
-
-   
-
-   
-
-      <PortfolioSection
-        title={service.portfolioSection.title}
-        blueTitle={service.portfolioSection.blueTitle}
-        projects={service.portfolioSection.projects}
-        buttonTitle={service.portfolioSection.btnTitle}
-      />
-
-      <FAQSection
-        title={service.faqSection.title}
-        faqs={service.faqSection.ponits}
-      />
-
-    */
 }

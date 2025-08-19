@@ -2,6 +2,7 @@
 
 import React from "react";
 import Image, { StaticImageData } from "next/image";
+import Link from "next/link";
 
 interface ProjectCardProps {
   id: number;  // ✅ number
@@ -20,12 +21,12 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
 }) => {
   return (
     <div
-      className="rounded-lg shadow-md overflow-hidden cursor-pointer"
+      className=" overflow-hidden cursor-pointer"
       onClick={() => onClick?.(id)}
     >
-      <a href={href} target="_blank" rel="noopener noreferrer">
-        <Image src={image} alt={alt} className="w-full h-48 object-cover" />
-      </a>
+      <Link href={href} target="_blank" rel="noopener noreferrer">
+        <Image src={image} alt={alt} className="w-full h-auto object-cover" />
+      </Link>
     </div>
   );
 };

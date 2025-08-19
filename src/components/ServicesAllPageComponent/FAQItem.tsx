@@ -1,6 +1,4 @@
-
-
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 interface FAQItemProps {
   title: string;
@@ -8,10 +6,10 @@ interface FAQItemProps {
   defaultOpen?: boolean;
 }
 
-export const FAQItem: React.FC<FAQItemProps> = ({ 
-  title, 
-  descriptions, 
-  defaultOpen = false 
+export const FAQItem: React.FC<FAQItemProps> = ({
+  title,
+  descriptions,
+  defaultOpen = false,
 }) => {
   const [isOpen, setIsOpen] = useState(defaultOpen);
 
@@ -22,10 +20,11 @@ export const FAQItem: React.FC<FAQItemProps> = ({
         onClick={() => setIsOpen(!isOpen)}
       >
         <span>{title}</span>
-        <span className={`transform transition-transform ${isOpen ? 'rotate-180' : ''}`}>
-          ▼
+        <span className="text-xl font-bold text-blue-600">
+          {isOpen ? "−" : "+"}
         </span>
       </button>
+
       {isOpen && (
         <div className="px-6 pb-6 border-t border-gray-100">
           {descriptions.map((desc, index) => (
