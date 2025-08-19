@@ -3,9 +3,10 @@
 import React from "react";
 import { ProjectCard } from "./ProjectCard";
 import { StaticImageData } from "next/image";
+import { MoveUpRight } from "lucide-react";
 
 interface ProjectArray {
-  id: number;  
+  id: number;
   image: StaticImageData;
   alt: string;
   href: string;
@@ -16,7 +17,6 @@ interface PortfolioSectionProps {
   blueTitle: string;
   projects: ProjectArray[];
   buttonTitle: string;
-
 }
 
 export const PortfolioSection: React.FC<PortfolioSectionProps> = ({
@@ -24,19 +24,27 @@ export const PortfolioSection: React.FC<PortfolioSectionProps> = ({
   blueTitle,
   projects,
   buttonTitle,
-
 }) => {
   return (
     <section className="py-16 bg-white">
-      <div className="container mx-auto px-4">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
-              {title} <span className="text-blue-600">{blueTitle}</span>
+      <div className=" mx-auto px-4">
+        <div className=" mx-auto">
+          {/* 🔹 Title on left + Button on right */}
+          <div className="flex flex-col md:flex-row justify-between items-center md:items-end mb-12">
+            <h2 className="text-[38px] max-w-2xl md:text-[48px] font-bold text-black mb-4 md:mb-0 text-left">
+              {title}{" "}
+              <span className="bg-gradient-to-l from-[#2058FF] to-[#004BC2] bg-clip-text text-transparent">
+                {blueTitle}
+              </span>
             </h2>
+            <button className="text-lg bg-gradient-to-l from-[#2058FF] to-[#004BC2] text-white px-6 py-3 rounded-lg hover:opacity-90 transition-all gap-4 flex items-center">
+              {buttonTitle}
+              <MoveUpRight />
+            </button>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
+          {/* 🔹 Projects Grid */}
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {projects.map((project) => (
               <ProjectCard
                 key={project.id}
@@ -46,14 +54,6 @@ export const PortfolioSection: React.FC<PortfolioSectionProps> = ({
                 href={project.href}
               />
             ))}
-          </div>
-
-          <div className="text-center">
-            <button
-              className="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition-colors"
-            >
-              {buttonTitle}
-            </button>
           </div>
         </div>
       </div>
