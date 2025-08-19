@@ -11,7 +11,7 @@ export const ServicePageDataWebDevelopement = [
     buildMorden: {
       title: "Build Modern, Scalable ",
       subtitle: "Web Applications with React.js",
-      describation: [
+      description: [
         "React.js is one of the most widely used JavaScript libraries for building user interfaces, enabling the development of fast, scalable, and feature-rich web applications. At Harichtech, we specialize in delivering high-performance React.js development solutions tailored to your business needs.",
         "Our React.js development services are designed to help startups, SMEs, and enterprises build responsive digital experiences - from single-page applications to complex enterprise-grade platforms. With a focus on maintainability, scalability, and usability, we leverage the full potential of React.js to accelerate your digital transformation.",
       ],
@@ -19,37 +19,37 @@ export const ServicePageDataWebDevelopement = [
     },
     whyChooseUsSection: {
       title: "Why Choose React.js for Web Application Development?",
-      describation:
+      description:
         "React.js is known for its efficient architecture, modular design, and strong developer community. Whether you are building a new platform or modernizing an existing one, React.js provides a stable foundation for long-term success.",
       cards: [
         {
           id: 1,
           title: "High Performance with Virtual DOM",
-          describation:
+          description:
             "React.js uses a virtual DOM that enables faster updates and rendering. This minimizes resource usage and ensures smooth performance, even in high-traffic environments.",
         },
         {
           id: 2,
           title: "Component-Based Architecture",
-          describation:
+          description:
             "React’s modular structure allows developers to build UI components that are reusable, testable, and easy to maintain—resulting in faster development cycles and more consistent user interfaces.",
         },
         {
           id: 3,
           title: "Unidirectional Data Flow",
-          describation:
+          description:
             "The one-way data binding model makes applications predictable and easier to debug, especially as they scale in complexity.",
         },
         {
           id: 4,
           title: "Strong Ecosystem",
-          describation:
+          description:
             "React.js is backed by Meta (formerly Facebook) and supported by a global community. It integrates well with other libraries, APIs, and frameworks, making it highly flexible and future-ready.",
         },
         {
           id: 5,
           title: "SEO Optimization",
-          describation:
+          description:
             "When paired with frameworks like Next.js, React.js supports server-side rendering and static site generation, helping improve website SEO and page load times.",
         },
       ],
@@ -57,7 +57,7 @@ export const ServicePageDataWebDevelopement = [
     approchSection: {
       title: "Our Approach to",
       blueTitle: "React.js Development",
-      describation: [
+      description: [
         "At Harichtech, we adopt a consultative and collaborative approach to development. Every React.js application we build is rooted in user experience, robust architecture, and business alignment.",
         "Our team is experienced in delivering both customer-facing interfaces and complex internal platforms using React.js. From rapid MVP development to full-scale enterprise applications, we provide end-to-end support.",
       ],
@@ -75,43 +75,43 @@ export const ServicePageDataWebDevelopement = [
     serviceSections: {
       title: "React JS",
       blueTitle: "Development Services",
-      describation:
+      description:
         "We provide a full suite of React.js development services tailored to support your goals at every stage of the product lifecycle.",
       cards: [
         {
           id: 1,
           title: "Custom React.js Application Development",
-          describation:
+          description:
             "We design and develop custom web applications from the ground up, tailored to your brand and business objectives.",
         },
         {
           id: 2,
           title: "Single Page Application (SPA) Development",
-          describation:
+          description:
             "We build fast-loading, interactive SPAs that offer seamless user experiences across desktop and mobile environments.",
         },
         {
           id: 3,
           title: "UI/UX Development Using React.js",
-          describation:
+          description:
             "Our design and frontend teams create intuitive, component-driven interfaces using React.js and modern styling libraries like Tailwind CSS and Material UI.",
         },
         {
           id: 4,
           title: "React.js Migration and Integration",
-          describation:
+          description:
             "We help you migrate legacy applications to React.js and integrate it with existing systems",
         },
         {
           id: 5,
           title: "Component and Plugin Development",
-          describation:
+          description:
             "Our developers create independent, reusable components and plugins that enhance application functionality and reduce redundancy.",
         },
         {
           id: 6,
           title: "Enterprise-Grade Application Development",
-          describation:
+          description:
             "We build secure, scalable enterprise solutions with complex workflows, multiple user roles, and real-time data interactions using React.js and supporting technologies.",
         },
       ],
@@ -119,30 +119,30 @@ export const ServicePageDataWebDevelopement = [
     developmentProcessSection: {
       title: "Development Process at",
       blueTitle: "Harichtech",
-      describation:
+      description:
         "We follow a structured, agile development process to ensure that React.js applications are delivered on time, within budget, and to the highest standards.",
       banner: Helper.ReactDevelopementpeocess,
     },
     techStacksSection: {
       title: "Our ReactJS",
       blueTitle: "Tech Stack",
-      describation:
+      description:
         "We combine React.js with a carefully selected stack of tools and technologies to build efficient, modern, and scalable web applications.",
       cards: [
         {
           id: 1,
           title: "React.js",
-          describation: ["ReactJS", "Next.js", "Javascript", "TypeScript"],
+          description: ["ReactJS", "Next.js", "Javascript", "TypeScript"],
         },
         {
           id: 2,
           title: "State Management",
-          describation: ["Redux", "Context API", "Recoil"],
+          description: ["Redux", "Context API", "Recoil"],
         },
         {
           id: 3,
           title: "Styling & UI",
-          describation: [
+          description: [
             "Tailwind CSS",
             "Material UI",
             "Ant Design",
@@ -152,7 +152,7 @@ export const ServicePageDataWebDevelopement = [
         {
           id: 4,
           title: "Testing & Linting",
-          describation: [
+          description: [
             "Node.js",
             "Express.js",
             "Firebase",
@@ -163,7 +163,7 @@ export const ServicePageDataWebDevelopement = [
         {
           id: 5,
           title: "DevOps & Hosting",
-          describation: [
+          description: [
             "Docker",
             "AWS",
             "Vercel",
@@ -174,56 +174,56 @@ export const ServicePageDataWebDevelopement = [
         {
           id: 6,
           title: "APIs",
-          describation: ["REST APIs", "GraphQL", "WebSockets", "OAuth"],
+          description: ["REST APIs", "GraphQL", "WebSockets", "OAuth"],
         },
       ],
     },
     IndustriesSection: {
       title: "Industries We",
       blueTitle: "Serve",
-      describation:
+      description:
         "Our React.js development services are industry-agnostic, with successful projects across various sectors",
            cards: [
         {
           id: 1,
           icons: Helper.RealEstateSvg,
           title: "Real Estate",
-          describation:
+          description:
             "We develop property portals, CRM integrations, booking systems, and map-based project listings optimized for lead generation and customer experience.",
         },
         {
           id: 2,
           icons: Helper.EcommoarceSvg,
           title: "E-commerce",
-          describation:
+          description:
             "React.js enables us to create fast, scalable e-commerce platforms with advanced product filtering, dynamic cart management, and secure payment integration.",
         },
         {
           id: 3,
           icons: Helper.FinanceSvg,
           title: "Finance & Fintech",
-          describation:
+          description:
             "We build secure, responsive dashboards and platforms for financial institutions, with real-time data visualization and transaction tracking.",
         },
         {
           id: 4,
           icons: Helper.HealthcareSvg,
           title: "Healthcare / Pharma ",
-          describation:
+          description:
             "HIPAA-compliant web applications, teleconsultation portals, and digital patient management systems built with React.js for performance and reliability.",
         },
         {
           id: 5,
           icons: Helper.EducationSvg,
           title: "Education",
-          describation:
+          description:
             "Custom learning management systems (LMS), content delivery platforms, and student portals with interactive modules and assessments.",
         },
         {
           id: 6,
           icons: Helper.RetailStore,
           title: "Retail",
-          describation:
+          description:
             "Inventory management dashboards, sales tools, and consumer-facing web interfaces optimized for real-time updates and mobile-first interactions.",
         },
       ],
@@ -259,35 +259,35 @@ export const ServicePageDataWebDevelopement = [
       ponits: [
         {
           title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
-          describation: [
+          description: [
             "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
             "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
           ],
         },
         {
           title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
-          describation: [
+          description: [
             "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
             "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
           ],
         },
         {
           title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
-          describation: [
+          description: [
             "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
             "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
           ],
         },
         {
           title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
-          describation: [
+          description: [
             "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
             "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
           ],
         },
         {
           title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
-          describation: [
+          description: [
             "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
             "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
           ],
@@ -306,7 +306,7 @@ export const ServicePageDataWebDevelopement = [
     buildMorden: {
       title: "High-Performance Backend ",
       subtitle: "Development with Node.js",
-      describation: [
+      description: [
         "Node.js has transformed modern web development by offering a fast, scalable, and event-driven architecture for building robust backend systems. At Harichtech, we offer end-to-end Node.js development services that power real-time, data-intensive applications with speed and efficiency.",
         "Whether you're developing a custom API, a full-stack web application, or a microservices architecture, our Node.js solutions ensure scalability, performance, and long-term maintainability.",
       ],
@@ -314,37 +314,37 @@ export const ServicePageDataWebDevelopement = [
     },
     whyChooseUsSection: {
       title: "Why Choose Node.js for Web Application Development?",
-      describation:
+      description:
         "Node.js is known for its efficient event-driven architecture, scalability, and large, active community. Whether you're building a new real-time application or modernizing an existing backend system, Node.js provides a robust foundation for long-term success.",
       cards: [
         {
           id: 1,
           title: "Asynchronous and Event-Driven",
-          describation:
+          description:
             "Node.js operates on a non-blocking I/O model, enabling it to handle thousands of concurrent requests without slowing down.",
         },
         {
           id: 2,
           title: "Built for Speed",
-          describation:
+          description:
             "Powered by Google’s V8 JavaScript engine, Node.js compiles code to native machine code, delivering exceptional runtime performance.",
         },
         {
           id: 3,
           title: "Real-Time Capabilities",
-          describation:
+          description:
             "Ideal for applications requiring real-time updates like chat apps, gaming platforms, and live dashboards.",
         },
         {
           id: 4,
           title: "Cross-Platform Development",
-          describation:
+          description:
             "Node.js allows for the development of cross-platform apps using frameworks like Electron, reducing time-to-market.",
         },
         {
           id: 5,
           title: "Rich Package Ecosystem",
-          describation:
+          description:
             "With over a million libraries on npm, Node.js provides tools to accelerate development and extend capabilities effortlessly.",
         },
       ],
@@ -352,7 +352,7 @@ export const ServicePageDataWebDevelopement = [
     approchSection: {
       title: "Our Approach to",
       blueTitle: "Node.js Development",
-      describation: [
+      description: [
         "At Harichtech, we adopt a consultative and collaborative approach to development. Every Node.js application we build is rooted in efficient performance, robust architecture, and business alignment.",
         "Our team is experienced in delivering both high-traffic backend systems and complex internal APIs using Node.js. From rapid MVP development to full-scale enterprise solutions, we provide end-to-end support",
       ],
@@ -369,43 +369,43 @@ export const ServicePageDataWebDevelopement = [
     serviceSections: {
       title: "Node JS",
       blueTitle: "Development Services",
-      describation:
+      description:
         "We provide a full suite of Node.js development services tailored to support your goals at every stage of the product lifecycle.",
       cards: [
         {
           id: 1,
           title: "Custom Backend Development",
-          describation:
+          description:
             "We develop scalable and secure backend systems using Node.js, tailored to your project’s performance and data needs.",
         },
         {
           id: 2,
           title: "API Development & Integration",
-          describation:
+          description:
             "Design and deployment of RESTful and GraphQL APIs to connect services, applications, and third-party platforms.",
         },
         {
           id: 3,
           title: "Real-Time Application Development",
-          describation:
+          description:
             "Chat systems, collaboration tools, and data-streaming dashboards built with socket.io and Node.js event handling.",
         },
         {
           id: 4,
           title: "Microservices Architecture",
-          describation:
+          description:
             "Design and development of decoupled services using Node.js to support high-availability and cloud-native applications.",
         },
         {
           id: 5,
           title: "Serverless Application Development",
-          describation:
+          description:
             "Build lightweight, event-driven applications using Node.js with AWS Lambda or Firebase Functions.",
         },
         {
           id: 6,
           title: "Migration to Node.js",
-          describation:
+          description:
             "Seamless transition of monolithic or legacy systems to a Node.js-based environment without performance trade-offs.",
         },
       ],
@@ -413,35 +413,35 @@ export const ServicePageDataWebDevelopement = [
     developmentProcessSection: {
       title: "Development Process at",
       blueTitle: "Harichtech",
-      describation:
+      description:
         "We follow a structured, agile development process to ensure that Node.js applications are delivered on time, within budget, and to the highest standards.",
       banner: Helper.ReactDevelopementpeocess,
     },
     techStacksSection: {
       title: "Our NodeJS",
       blueTitle: "Tech Stack",
-      describation:
+      description:
         "We combine React.js with a carefully selected stack of tools and technologies to build efficient, modern, and scalable web applications.",
       cards: [
         {
           id: 1,
           title: "React.js",
-          describation: ["Express.js", "NestJS", "Koa.js"],
+          description: ["Express.js", "NestJS", "Koa.js"],
         },
         {
           id: 2,
           title: "Databases",
-          describation: ["MongoDB", "MySQL", "Recoil", "PostgreSQL"],
+          description: ["MongoDB", "MySQL", "Recoil", "PostgreSQL"],
         },
         {
           id: 3,
           title: "Authentication",
-          describation: ["OAuth 2.0", "JWT", "Firebase Auth"],
+          description: ["OAuth 2.0", "JWT", "Firebase Auth"],
         },
         {
           id: 4,
           title: "DevOps Tools",
-          describation: [
+          description: [
             "Docker",
             "Kubernetes",
             "GitHub Actions",
@@ -451,61 +451,61 @@ export const ServicePageDataWebDevelopement = [
         {
           id: 5,
           title: "Real-Time Communication",
-          describation: ["Socket.io", "WebSockets", "MQTT"],
+          description: ["Socket.io", "WebSockets", "MQTT"],
         },
         {
           id: 6,
           title: "API Technologies",
-          describation: ["REST", "GraphQL", "gRPC"],
+          description: ["REST", "GraphQL", "gRPC"],
         },
       ],
     },
     IndustriesSection: {
       title: "Industries We",
       blueTitle: "Serve",
-      describation:
+      description:
         "Our Node.js development services are industry-agnostic, with successful projects across various sectors",
       cards: [
         {
           id: 1,
           icons: Helper.RealEstateSvg,
           title: "Real Estate",
-          describation:
+          description:
             "We develop property portals, CRM integrations, booking systems, and map-based project listings optimized for lead generation and customer experience.",
         },
         {
           id: 2,
           icons: Helper.EcommoarceSvg,
           title: "E-commerce",
-          describation:
+          description:
             "React.js enables us to create fast, scalable e-commerce platforms with advanced product filtering, dynamic cart management, and secure payment integration.",
         },
         {
           id: 3,
           icons: Helper.FinanceSvg,
           title: "Finance & Fintech",
-          describation:
+          description:
             "We build secure, responsive dashboards and platforms for financial institutions, with real-time data visualization and transaction tracking.",
         },
         {
           id: 4,
           icons: Helper.HealthcareSvg,
           title: "Healthcare / Pharma ",
-          describation:
+          description:
             "HIPAA-compliant web applications, teleconsultation portals, and digital patient management systems built with React.js for performance and reliability.",
         },
         {
           id: 5,
           icons: Helper.EducationSvg,
           title: "Education",
-          describation:
+          description:
             "Custom learning management systems (LMS), content delivery platforms, and student portals with interactive modules and assessments.",
         },
         {
           id: 6,
           icons: Helper.RetailStore,
           title: "Retail",
-          describation:
+          description:
             "Inventory management dashboards, sales tools, and consumer-facing web interfaces optimized for real-time updates and mobile-first interactions.",
         },
       ],
@@ -541,35 +541,35 @@ export const ServicePageDataWebDevelopement = [
       ponits: [
         {
           title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
-          describation: [
+          description: [
             "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
             "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
           ],
         },
         {
           title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
-          describation: [
+          description: [
             "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
             "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
           ],
         },
         {
           title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
-          describation: [
+          description: [
             "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
             "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
           ],
         },
         {
           title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
-          describation: [
+          description: [
             "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
             "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
           ],
         },
         {
           title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
-          describation: [
+          description: [
             "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
             "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
           ],
@@ -588,7 +588,7 @@ export const ServicePageDataWebDevelopement = [
     buildMorden: {
       title: "Build Fast, Scalable, and SEO Optimized ",
       subtitle: "Web Applications with Next.js",
-      describation: [
+      description: [
         "In today's digital-first world, speed, performance, and user experience are everything. That’s where Next.js shines. It’s not just another frontend framework-it’s a full-featured, production-grade toolkit that helps you build web applications that are as fast as they are powerful.",
         "At Harichtech, we specialize in creating Next.js solutions that balance technical excellence with a deep understanding of your business goals. Whether you need a high-performing marketing site, an e-commerce storefront, or a data-driven SaaS platform, we’ll help you build it right-with purpose and precision.",
       ],
@@ -596,43 +596,43 @@ export const ServicePageDataWebDevelopement = [
     },
     whyChooseUsSection: {
       title: "Why Choose Next.js for Web Application Development?",
-      describation:
+      description:
         "Next.js is known for its efficient server-side rendering (SSR), static site generation (SSG), and robust developer experience. Whether you're building a new dynamic web application or modernizing an existing frontend, Next.js provides a powerful foundation for long-term success.",
       cards: [
         {
           id: 1,
           title: "Server-Side Rendering (SSR)",
-          describation:
+          description:
             "Deliver fully rendered pages straight from the server. This boosts your SEO, improves load time, and provides a better user experience-especially on mobile.",
         },
         {
           id: 2,
           title: "Static Site Generation (SSG)",
-          describation:
+          description:
             "Ideal for content-heavy websites, SSG allows you to serve blazing-fast pages with almost zero delay. Think of it as preloading your website for your users.",
         },
         {
           id: 3,
           title: "Built-In API Routes",
-          describation:
+          description:
             "You don’t always need a separate backend. With Next.js, we can build serverless APIs right into your application-keeping everything in one place.",
         },
         {
           id: 4,
           title: "Streamlined Routing",
-          describation:
+          description:
             "Say goodbye to bulky configurations. Next.js uses a file-based routing system that’s clean, organized, and developer-friendly.",
         },
         {
           id: 5,
           title: "Image Optimization",
-          describation:
+          description:
             "Automatically resize, compress, and serve the best version of your images without extra effort. It’s built-in, efficient, and reliable.",
         },
         {
           id: 6,
           title: "Flexibility with Rendering",
-          describation:
+          description:
             "Need part of your site to update live while the rest stays static? Next.js lets us mix and match SSR, SSG, and client-side rendering-whatever works best for your use case.",
         },
       ],
@@ -640,7 +640,7 @@ export const ServicePageDataWebDevelopement = [
     approchSection: {
       title: "Our Approach to",
       blueTitle: "Next.js Development",
-      describation: [
+      description: [
         "At Harichtech, we adopt a consultative and collaborative approach to development. Every Next.js application we build is rooted in superior user experience, robust architecture, and business alignment.",
         "Our team is experienced in delivering both high-performance static sites and complex, server-rendered applications using Next.js. From rapid MVP development to full-scale enterprise solutions, we provide end-to-end support.",
       ],
@@ -657,43 +657,43 @@ export const ServicePageDataWebDevelopement = [
     serviceSections: {
       title: "What We Offer in ",
       blueTitle: "Next.js Development",
-      describation:
+      description:
         "We provide a full suite of Next.js development services tailored to support your goals at every stage of the product lifecycle.",
       cards: [
         {
           id: 1,
           title: "Full-Stack Development",
-          describation:
+          description:
             "From frontend pages to backend APIs, we use Next.js and supporting technologies like Node.js and GraphQL to build seamless web experiences.",
         },
         {
           id: 2,
           title: "SEO-Focused Architecture",
-          describation:
+          description:
             "We ensure every page is structured for performance and search visibility, helping your business get found online and stay relevant.",
         },
         {
           id: 3,
           title: "CMS Integrations",
-          describation:
+          description:
             "Want to use Contentful, Strapi, or Sanity? We connect your preferred CMS with your frontend, giving you control over your content without compromising performance.",
         },
         {
           id: 4,
           title: "Scalable E-commerce Development",
-          describation:
+          description:
             "Launch fast-loading, mobile-optimized e-commerce platforms that look great and convert better. From product catalogs to payments-we cover it all.",
         },
         {
           id: 5,
           title: "High-Performance Dashboards",
-          describation:
+          description:
             "For businesses that rely on data, we build real-time dashboards that update on the fly without slowing down.",
         },
         {
           id: 6,
           title: "Ongoing Support",
-          describation:
+          description:
             "We don’t just launch and leave. We provide ongoing updates, version upgrades, and performance tuning to keep your application ahead of the curve.",
         },
       ],
@@ -701,29 +701,29 @@ export const ServicePageDataWebDevelopement = [
     developmentProcessSection: {
       title: "Development Process at",
       blueTitle: "Harichtech",
-      describation:
+      description:
         "We follow a structured, agile development process to ensure that Next.js applications are delivered on time, within budget, and to the highest standards.",
       banner: Helper.ReactDevelopementpeocess,
     },
     techStacksSection: {
       title: "Our Next.Js",
       blueTitle: "Tech Stack",
-      describation: "",
+      description: "",
       cards: [
         {
           id: 1,
           title: "Frontend",
-          describation: ["NextJS", "NestJS", "ReactJS"],
+          description: ["NextJS", "NestJS", "ReactJS"],
         },
         {
           id: 2,
           title: "Backend",
-          describation: ["Node.js", "Express.js", "Firebase Functions"],
+          description: ["Node.js", "Express.js", "Firebase Functions"],
         },
         {
           id: 3,
           title: "CMS",
-          describation: [
+          description: [
             "Contentful",
             "Strapi",
             "Sanity",
@@ -733,12 +733,12 @@ export const ServicePageDataWebDevelopement = [
         {
           id: 4,
           title: "DevOps & Hosting",
-          describation: ["Vercel", "Netlify", "Docker", "GitHub Actions"],
+          description: ["Vercel", "Netlify", "Docker", "GitHub Actions"],
         },
         {
           id: 5,
           title: "SEO & Analytics",
-          describation: [
+          description: [
             "Google Analytics",
             "Schema Markup",
             "Open Graph + Twitter Cards",
@@ -749,49 +749,49 @@ export const ServicePageDataWebDevelopement = [
     IndustriesSection: {
       title: "Industries We",
       blueTitle: "Serve",
-      describation:
+      description:
         "Our Next.js development services are industry-agnostic, with successful projects across various sectors",
       cards: [
         {
           id: 1,
           icons: Helper.RealEstateSvg,
           title: "Real Estate",
-          describation:
+          description:
             "We develop property portals, CRM integrations, booking systems, and map-based project listings optimized for lead generation and customer experience.",
         },
         {
           id: 2,
           icons: Helper.EcommoarceSvg,
           title: "E-commerce",
-          describation:
+          description:
             "React.js enables us to create fast, scalable e-commerce platforms with advanced product filtering, dynamic cart management, and secure payment integration.",
         },
         {
           id: 3,
           icons: Helper.FinanceSvg,
           title: "Finance & Fintech",
-          describation:
+          description:
             "We build secure, responsive dashboards and platforms for financial institutions, with real-time data visualization and transaction tracking.",
         },
         {
           id: 4,
           icons: Helper.HealthcareSvg,
           title: "Healthcare / Pharma ",
-          describation:
+          description:
             "HIPAA-compliant web applications, teleconsultation portals, and digital patient management systems built with React.js for performance and reliability.",
         },
         {
           id: 5,
           icons: Helper.EducationSvg,
           title: "Education",
-          describation:
+          description:
             "Custom learning management systems (LMS), content delivery platforms, and student portals with interactive modules and assessments.",
         },
         {
           id: 6,
           icons: Helper.RetailStore,
           title: "Retail",
-          describation:
+          description:
             "Inventory management dashboards, sales tools, and consumer-facing web interfaces optimized for real-time updates and mobile-first interactions.",
         },
       ],
@@ -827,35 +827,35 @@ export const ServicePageDataWebDevelopement = [
       ponits: [
         {
           title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
-          describation: [
+          description: [
             "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
             "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
           ],
         },
         {
           title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
-          describation: [
+          description: [
             "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
             "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
           ],
         },
         {
           title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
-          describation: [
+          description: [
             "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
             "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
           ],
         },
         {
           title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
-          describation: [
+          description: [
             "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
             "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
           ],
         },
         {
           title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
-          describation: [
+          description: [
             "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
             "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
           ],
@@ -874,7 +874,7 @@ export const ServicePageDataWebDevelopement = [
     buildMorden: {
       title: "Build Cross-Platform Mobile Apps ",
       subtitle: "with Native Performance",
-      describation: [
+      description: [
         "In today’s mobile-first world, delivering seamless, high-performance experiences across platforms is essential. React Native allows businesses to create powerful mobile applications using a single codebase-without compromising on user experience or performance.",
         "At Harichtech, our React Native development services are focused on building scalable, fast, and elegant mobile apps that run smoothly on both iOS and Android. Whether you’re launching a new product or scaling an existing one, we help you reach more users with efficient, cost-effective development.",
       ],
@@ -882,37 +882,37 @@ export const ServicePageDataWebDevelopement = [
     },
     whyChooseUsSection: {
       title: "Why Choose React Native?",
-      describation:
+      description:
         "React Native brings the speed of web development together with the performance of native apps. Backed by Meta and used by global brands like Instagram, Airbnb, and Discord, it’s one of the most trusted frameworks for mobile app development.",
       cards: [
         {
           id: 1,
           title: "Single Codebase for Android and iOS",
-          describation:
+          description:
             "Build once, deploy everywhere. React Native allows developers to write shared code for both platforms, accelerating development and reducing costs.",
         },
         {
           id: 2,
           title: "Native Performance and Experience",
-          describation:
+          description:
             "React Native apps render using native components, delivering a near-native look, feel, and performance-while still using JavaScript.",
         },
         {
           id: 3,
           title: "Hot Reloading for Faster Iteration",
-          describation:
+          description:
             "Developers can instantly view changes without recompiling the entire app, leading to faster iterations and better collaboration between teams.",
         },
         {
           id: 4,
           title: "Seamless Third-Party Integration",
-          describation:
+          description:
             "From maps and cameras to payment gateways and analytics, React Native supports seamless integration with a wide range of native modules and third-party APIs.",
         },
         {
           id: 5,
           title: "Scalable Architecture",
-          describation:
+          description:
             "React Native’s component-based structure makes it easy to manage complex applications and scale over time as business needs evolve.",
         },
       ],
@@ -920,7 +920,7 @@ export const ServicePageDataWebDevelopement = [
     approchSection: {
       title: "Our Approach to",
       blueTitle: "React Native App Development",
-      describation: [
+      description: [
         "At Harichtech, we adopt a consultative and collaborative approach to development. Every React Native application we build is rooted in superior user experience, robust architecture, and business alignment.",
         "Our team is experienced in delivering both cross-platform mobile apps and complex, native-like experiences using React Native. From rapid MVP development to full-scale enterprise solutions, we provide end-to-end support.",
       ],
@@ -937,43 +937,43 @@ export const ServicePageDataWebDevelopement = [
     serviceSections: {
       title: "Our React Native App ",
       blueTitle: "Development Services",
-      describation:
+      description:
         "We offer comprehensive services tailored to your project goals-whether you're building a consumer-facing app, an internal operations tool, or a cross-platform MVP.",
       cards: [
         {
           id: 1,
           title: "Custom Mobile App Development",
-          describation:
+          description:
             "We build robust, feature-rich mobile applications from scratch using React Native-tailored to your brand, goals, and user experience expectations.",
         },
         {
           id: 2,
           title: "Cross-Platform App Development",
-          describation:
+          description:
             "With a shared codebase, we help you launch apps faster across iOS and Android-ensuring consistency in design and performance.",
         },
         {
           id: 3,
           title: "UI/UX Design for Mobile",
-          describation:
+          description:
             "Our team crafts modern, intuitive, and responsive user interfaces with mobile-first thinking, aligned with both Apple’s Human Interface Guidelines and Google’s Material Design standards.",
         },
         {
           id: 4,
           title: "App Maintenance & Support",
-          describation:
+          description:
             "Post-launch, we offer continuous maintenance, updates, feature improvements, and monitoring-so your app runs smoothly, securely, and efficiently.",
         },
         {
           id: 5,
           title: "React Native App Migration",
-          describation:
+          description:
             "Modernize your existing mobile apps by migrating from legacy platforms to React Native, with minimal disruption and maximum performance gains.",
         },
         {
           id: 6,
           title: "MVP & Startup Solutions",
-          describation:
+          description:
             "Need to validate an idea quickly? We specialize in building Minimum Viable Products (MVPs) with React Native that are cost-effective, scalable, and ready for user feedback.",
         },
       ],
@@ -981,35 +981,35 @@ export const ServicePageDataWebDevelopement = [
     developmentProcessSection: {
       title: "Development Process at",
       blueTitle: "Harichtech",
-      describation:
+      description:
         "We follow a structured, agile development process to ensure that React Native App are delivered on time, within budget, and to the highest standards.",
       banner: Helper.ReactDevelopementpeocess,
     },
     techStacksSection: {
       title: "Tech Stack & Tools",
       blueTitle: "We Use",
-      describation:
+      description:
         "To deliver high-performance React Native apps, we combine the framework with a robust supporting stack:",
       cards: [
         {
           id: 1,
           title: "Languages & Frameworks",
-          describation: ["React Native", "TypeScript", "JavaScript"],
+          description: ["React Native", "TypeScript", "JavaScript"],
         },
         {
           id: 2,
           title: "Navigation",
-          describation: [" React Navigation", "React Native Gesture Handler"],
+          description: [" React Navigation", "React Native Gesture Handler"],
         },
         {
           id: 3,
           title: "State Management",
-          describation: ["Redux", "Context API", "Zustand"],
+          description: ["Redux", "Context API", "Zustand"],
         },
         {
           id: 4,
           title: "Backend Integration",
-          describation: [
+          description: [
             "Firebase",
             "Node.js",
             "Express",
@@ -1020,22 +1020,22 @@ export const ServicePageDataWebDevelopement = [
         {
           id: 5,
           title: "DevOps & CI/CD",
-          describation: ["Fastlane", "Bitrise", "GitHub Actions"],
+          description: ["Fastlane", "Bitrise", "GitHub Actions"],
         },
         {
           id: 6,
           title: "Testing",
-          describation: ["Jest", "Detox", "Appium"],
+          description: ["Jest", "Detox", "Appium"],
         },
         {
           id: 7,
           title: "Databases",
-          describation: ["SQLite", "Realm", "Firebase Realtime DB", "MongoDB"],
+          description: ["SQLite", "Realm", "Firebase Realtime DB", "MongoDB"],
         },
         {
           id: 8,
           title: "APIs & SDKs",
-          describation: [
+          description: [
             "Stripe",
             "Twilio",
             "Google Maps",
@@ -1048,49 +1048,49 @@ export const ServicePageDataWebDevelopement = [
     IndustriesSection: {
       title: "Industries We",
       blueTitle: "Serve",
-      describation:
+      description:
         "Our React Native App development services are industry-agnostic, with successful projects across various sectors",
       cards: [
         {
           id: 1,
           icons: Helper.RealEstateSvg,
           title: "Real Estate",
-          describation:
+          description:
             "We develop property portals, CRM integrations, booking systems, and map-based project listings optimized for lead generation and customer experience.",
         },
         {
           id: 2,
           icons: Helper.EcommoarceSvg,
           title: "E-commerce",
-          describation:
+          description:
             "React.js enables us to create fast, scalable e-commerce platforms with advanced product filtering, dynamic cart management, and secure payment integration.",
         },
         {
           id: 3,
           icons: Helper.FinanceSvg,
           title: "Finance & Fintech",
-          describation:
+          description:
             "We build secure, responsive dashboards and platforms for financial institutions, with real-time data visualization and transaction tracking.",
         },
         {
           id: 4,
           icons: Helper.HealthcareSvg,
           title: "Healthcare / Pharma ",
-          describation:
+          description:
             "HIPAA-compliant web applications, teleconsultation portals, and digital patient management systems built with React.js for performance and reliability.",
         },
         {
           id: 5,
           icons: Helper.EducationSvg,
           title: "Education",
-          describation:
+          description:
             "Custom learning management systems (LMS), content delivery platforms, and student portals with interactive modules and assessments.",
         },
         {
           id: 6,
           icons: Helper.RetailStore,
           title: "Retail",
-          describation:
+          description:
             "Inventory management dashboards, sales tools, and consumer-facing web interfaces optimized for real-time updates and mobile-first interactions.",
         },
       ],
@@ -1126,35 +1126,35 @@ export const ServicePageDataWebDevelopement = [
       ponits: [
         {
           title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
-          describation: [
+          description: [
             "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
             "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
           ],
         },
         {
           title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
-          describation: [
+          description: [
             "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
             "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
           ],
         },
         {
           title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
-          describation: [
+          description: [
             "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
             "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
           ],
         },
         {
           title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
-          describation: [
+          description: [
             "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
             "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
           ],
         },
         {
           title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
-          describation: [
+          description: [
             "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
             "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
           ],
@@ -1176,7 +1176,7 @@ export const ServicePageDataOfUIUx = [
     buildMorden: {
       title: "Strategic Web Design That Builds  ",
       subtitle: "Trust and Drives Action",
-      describation: [
+      description: [
         "Your website isn’t just a digital placeholder-it’s the first impression, the primary point of interaction, and often the deciding factor for whether a user engages with your brand or moves on. At Harichtech, we design websites that are more than just beautiful-they are thoughtful, functional, and built to perform.",
         "We focus on creating modern, mobile-friendly, and high-converting websites that align with your business goals. Whether you're launching a brand, revamping an outdated site, or creating a platform from the ground up, our design approach ensures every detail works toward the outcomes that matter.",
       ],
@@ -1184,37 +1184,37 @@ export const ServicePageDataOfUIUx = [
     },
     whyChooseUsSection: {
       title: "Why Website Design Still Matters",
-      describation:
+      description:
         "Website design is known for its strategic planning, creative vision, and user-centric approach. Whether you're building a new digital platform or modernizing an existing one, a well-executed website design provides a powerful foundation for long-term success.",
       cards: [
         {
           id: 1,
           title: "First Impressions Are Instant",
-          describation:
+          description:
             "Users form an opinion about your website in seconds. We make sure it’s a positive, credible, and engaging one.",
         },
         {
           id: 2,
           title: "Design that Converts",
-          describation:
+          description:
             "A well-structured, visually clean website leads users through intuitive journeys-from first glance to final conversion.",
         },
         {
           id: 3,
           title: "Mobile-First, Always",
-          describation:
+          description:
             "More than 60% of users browse on mobile. Our responsive designs ensure flawless performance across screens and devices.",
         },
         {
           id: 4,
           title: "Performance-Optimized",
-          describation:
+          description:
             "We design for speed. Faster sites rank better, reduce bounce rates, and offer better user experiences.",
         },
         {
           id: 5,
           title: "Accessible by Design",
-          describation:
+          description:
             "We follow best practices to ensure your website is usable for everyone-Including those relying on assistive technologies.",
         },
       ],
@@ -1222,7 +1222,7 @@ export const ServicePageDataOfUIUx = [
     approchSection: {
       title: "Our Approach to ",
       blueTitle: "Website Design",
-      describation: [
+      description: [
         "At Harichtech, we adopt a consultative and collaborative approach to design. Every website we create is rooted in superior user experience, a scalable architecture, and business alignment.",
         "Our team is experienced in delivering both high-impact marketing websites and complex, data-driven platforms. From rapid prototyping to full-scale enterprise solutions, we provide end-to-end support.",
       ],
@@ -1240,43 +1240,43 @@ export const ServicePageDataOfUIUx = [
     serviceSections: {
       title: "Our Website ",
       blueTitle: "Design Services",
-      describation:
+      description:
         "We provide a full suite of website design services tailored to support your goals at every stage of the product lifecycle.",
       cards: [
         {
           id: 1,
           title: "UI/UX Design",
-          describation:
+          description:
             "Intuitive, user-first interfaces tailored to your audience, built with consistency and clarity in mind.",
         },
         {
           id: 2,
           title: "Corporate & Brand Websites",
-          describation:
+          description:
             "Professional websites that reflect your company’s credibility, values, and voice-designed to grow with your brand.",
         },
         {
           id: 3,
           title: "Landing Page Design",
-          describation:
+          description:
             "Focused, action-oriented landing pages for campaigns, lead generation, and product launches.",
         },
         {
           id: 4,
           title: "Portfolio & Showcase Sites",
-          describation:
+          description:
             "Creative, clean platforms for professionals and businesses who want their work to speak for itself.",
         },
         {
           id: 5,
           title: "CMS-Based Design",
-          describation:
+          description:
             "Design systems built for platforms like WordPress, Webflow, and headless CMS-balancing flexibility and control.",
         },
         {
           id: 6,
           title: "E-commerce Website Design",
-          describation:
+          description:
             "High-conversion product pages, mobile-first design, and frictionless user flows for online retail.",
         },
       ],
@@ -1284,89 +1284,89 @@ export const ServicePageDataOfUIUx = [
     developmentProcessSection: {
       title: "Development Process at",
       blueTitle: "Harichtech",
-      describation:
+      description:
         "We follow a structured, agile development process to ensure that React.js applications are delivered on time, within budget, and to the highest standards.",
       banner: Helper.DesignProcess,
     },
     techStacksSection: {
       title: "Tools",
       blueTitle: "We Use",
-      describation:
+      description:
         "We combine React.js with a carefully selected stack of tools and technologies to build efficient, modern, and scalable web applications.",
       cards: [
         {
           id: 1,
           title: "Design Tools",
-          describation: ["Figma", "Adobe XD"],
+          description: ["Figma", "Adobe XD"],
         },
         {
           id: 2,
           title: "Prototyping",
-          describation: ["InVision", "Webflow"],
+          description: ["InVision", "Webflow"],
         },
         {
           id: 3,
           title: "CMS Design",
-          describation: ["WordPress", "Webflow", "Framer", "Sanity"],
+          description: ["WordPress", "Webflow", "Framer", "Sanity"],
         },
         {
           id: 4,
           title: "Developer Handoff",
-          describation: ["Zeplin", "Avocode"],
+          description: ["Zeplin", "Avocode"],
         },
         {
           id: 5,
           title: "Design Systems",
-          describation: ["Tailwind UI", "Material Design", "Custom Tokens."],
+          description: ["Tailwind UI", "Material Design", "Custom Tokens."],
         },
       ],
     },
     IndustriesSection: {
       title: "Industries We",
       blueTitle: "Serve",
-      describation:
+      description:
         "Our website design services are industry-agnostic, with successful projects across various sectors.",
       cards: [
         {
           id: 1,
           icons: Helper.RealEstateSvg,
           title: "Real Estate",
-          describation:
+          description:
             "We develop property portals, CRM integrations, booking systems, and map-based project listings optimized for lead generation and customer experience.",
         },
         {
           id: 2,
           icons: Helper.EcommoarceSvg,
           title: "E-commerce",
-          describation:
+          description:
             "React.js enables us to create fast, scalable e-commerce platforms with advanced product filtering, dynamic cart management, and secure payment integration.",
         },
         {
           id: 3,
           icons: Helper.FinanceSvg,
           title: "Finance & Fintech",
-          describation:
+          description:
             "We build secure, responsive dashboards and platforms for financial institutions, with real-time data visualization and transaction tracking.",
         },
         {
           id: 4,
           icons: Helper.HealthcareSvg,
           title: "Healthcare / Pharma ",
-          describation:
+          description:
             "HIPAA-compliant web applications, teleconsultation portals, and digital patient management systems built with React.js for performance and reliability.",
         },
         {
           id: 5,
           icons: Helper.EducationSvg,
           title: "Education",
-          describation:
+          description:
             "Custom learning management systems (LMS), content delivery platforms, and student portals with interactive modules and assessments.",
         },
         {
           id: 6,
           icons: Helper.RetailStore,
           title: "Retail",
-          describation:
+          description:
             "Inventory management dashboards, sales tools, and consumer-facing web interfaces optimized for real-time updates and mobile-first interactions.",
         },
       ],
@@ -1402,35 +1402,35 @@ export const ServicePageDataOfUIUx = [
       ponits: [
         {
           title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
-          describation: [
+          description: [
             "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
             "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
           ],
         },
         {
           title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
-          describation: [
+          description: [
             "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
             "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
           ],
         },
         {
           title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
-          describation: [
+          description: [
             "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
             "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
           ],
         },
         {
           title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
-          describation: [
+          description: [
             "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
             "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
           ],
         },
         {
           title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
-          describation: [
+          description: [
             "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
             "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
           ],
@@ -1449,7 +1449,7 @@ export const ServicePageDataOfUIUx = [
     buildMorden: {
       title: "Strategic Mobile App Design That Builds",
       subtitle: "Trust and Drives Action",
-      describation: [
+      description: [
         "Your mobile app is more than just a tool—it’s your brand’s presence in your user's pocket, a constant companion that represents your business 24/7. In a few seconds, users decide whether your app is worth keeping or deleting. At Harichtech, we help make sure they stay, explore, and engage.",
         "We design mobile apps that don’t just look good—they work hard. Our team creates modern, user-friendly, and performance-driven designs that are rooted in usability and built to evolve with your brand. Whether you're launching a new app or reimagining an existing one, our goal is always the same: to help your business grow by designing for the people you serve.",
       ],
@@ -1457,37 +1457,37 @@ export const ServicePageDataOfUIUx = [
     },
     whyChooseUsSection: {
       title: "Why Mobile App Design Still Matters",
-      describation:
+      description:
         "In an age of rapid scrolling and even faster decisions, great app design isn’t a luxury—it’s a necessity. Your app often shapes how your audience perceives your business before they even get the chance to speak to them.",
       cards: [
         {
           id: 1,
           title: "First Impressions Are Instant",
-          describation:
+          description:
             "Research shows users form an opinion about your app based on its icon and the first few moments of use. We make sure that impression is one of clarity, professionalism, and purpose.",
         },
         {
           id: 2,
           title: "Design That Converts",
-          describation:
+          description:
             "A visually clean and strategically structured app gently leads users from discovery to decision—whether that means completing an onboarding flow, making an in-app purchase, or scheduling a call.",
         },
         {
           id: 3,
           title: "Device-First, Always",
-          describation:
+          description:
             "Your app's experience needs to be flawless on every screen size, from a small smartphone to a large tablet. We ensure your app performs beautifully across all iOS and Android devices.",
         },
         {
           id: 4,
           title: "Performance-Optimized",
-          describation:
+          description:
             "Fast apps perform better—both in app store rankings and user satisfaction. We prioritize speed and efficiency without compromising on a seamless visual experience.",
         },
         {
           id: 5,
           title: "Accessible by Design",
-          describation:
+          description:
             "We follow best practices to ensure your website is usable for everyone-Including those relying on assistive technologies.",
         },
       ],
@@ -1495,7 +1495,7 @@ export const ServicePageDataOfUIUx = [
     approchSection: {
       title: "Our Approach to ",
       blueTitle: "Mobile App Design",
-      describation: [
+      description: [
         "At Harichtech, we adopt a consultative and collaborative approach to design. Every mobile app we create is rooted in a superior user experience, a scalable architecture, and business alignment.",
         "Our team is experienced in delivering both high-impact consumer apps and complex, data-driven platforms. From rapid prototyping to full-scale enterprise solutions, we provide end-to-end support.",
       ],
@@ -1513,43 +1513,43 @@ export const ServicePageDataOfUIUx = [
     serviceSections: {
       title: "Our Mobile App",
       blueTitle: "Design Services",
-      describation:
+      description:
         "We provide full-spectrum design services tailored to your business goals and audience needs. Whether you're a fast-growing startup or an established enterprise, we offer flexible solutions for every stage of your digital journey.",
       cards: [
         {
           id: 1,
           title: "UI/UX Design",
-          describation:
+          description:
             "We design interfaces that feel intuitive and welcoming. Every screen is built to guide users with clarity and confidence, focusing on consistency, usability, and your brand’s unique voice.",
         },
         {
           id: 2,
           title: "Brand & Enterprise Apps",
-          describation:
+          description:
             "Your app is a reflection of your credibility. We create professional mobile applications that communicate trust, showcase your values, and scale with your business.",
         },
         {
           id: 3,
           title: "Onboarding & Feature Design",
-          describation:
+          description:
             "Need an app that seamlessly guides new users? We specialize in focused onboarding flows and intuitive feature design for product launches and user engagement.",
         },
         {
           id: 4,
           title: "Cross-Platform App Design",
-          describation:
+          description:
             "Whether you're targeting iOS, Android, or both, we build elegant, minimal app designs that put your functionality front and center.",
         },
         {
           id: 5,
           title: "Native & Hybrid App Design",
-          describation:
+          description:
             "From native frameworks like Swift and Kotlin to cross-platform solutions like React Native and Flutter, we design flexible, easy-to-manage apps that empower your internal teams without relying on platform-specific limitations.",
         },
         {
           id: 6,
           title: "E-commerce App Design",
-          describation:
+          description:
             "We create seamless, mobile-first shopping experiences with optimized product pages, user-friendly navigation, and a frictionless checkout process.",
         },
       ],
@@ -1557,88 +1557,88 @@ export const ServicePageDataOfUIUx = [
     developmentProcessSection: {
       title: "Development Process at",
       blueTitle: "Harichtech",
-      describation:
+      description:
         "We follow a structured, agile design process to ensure that your products are delivered on time, within budget, and to the highest standards.",
       banner: Helper.DesignProcess,
     },
     techStacksSection: {
       title: "Tools",
       blueTitle: "We Use",
-      describation: "",
+      description: "",
       cards: [
         {
           id: 1,
           title: "Design Tools",
-          describation: ["Figma", "Adobe XD"],
+          description: ["Figma", "Adobe XD"],
         },
         {
           id: 2,
           title: "Prototyping",
-          describation: ["InVision", "Webflow"],
+          description: ["InVision", "Webflow"],
         },
         {
           id: 3,
           title: "CMS Design",
-          describation: ["WordPress", "Webflow", "Framer", "Sanity"],
+          description: ["WordPress", "Webflow", "Framer", "Sanity"],
         },
         {
           id: 4,
           title: "Developer Handoff",
-          describation: ["Zeplin", "Avocode"],
+          description: ["Zeplin", "Avocode"],
         },
         {
           id: 5,
           title: "Design Systems",
-          describation: ["Tailwind UI", "Material Design", "Custom Tokens."],
+          description: ["Tailwind UI", "Material Design", "Custom Tokens."],
         },
       ],
     },
     IndustriesSection: {
       title: "Industries We",
       blueTitle: "Serve",
-      describation:
+      description:
         "Our website design services are industry-agnostic, with successful projects across various sectors.",
       cards: [
         {
           id: 1,
           icons: Helper.RealEstateSvg,
           title: "Real Estate",
-          describation:
+          description:
             "We develop property portals, CRM integrations, booking systems, and map-based project listings optimized for lead generation and customer experience.",
         },
         {
           id: 2,
           icons: Helper.EcommoarceSvg,
           title: "E-commerce",
-          describation:
+          description:
             "React.js enables us to create fast, scalable e-commerce platforms with advanced product filtering, dynamic cart management, and secure payment integration.",
         },
         {
           id: 3,
           icons: Helper.FinanceSvg,
           title: "Finance & Fintech",
-          describation:
+          description:
             "We build secure, responsive dashboards and platforms for financial institutions, with real-time data visualization and transaction tracking.",
         },
         {
           id: 4,
           icons: Helper.HealthcareSvg,
           title: "Healthcare / Pharma ",
-          describation:
+          description:
             "HIPAA-compliant web applications, teleconsultation portals, and digital patient management systems built with React.js for performance and reliability.",
         },
         {
           id: 5,
           icons: Helper.EducationSvg,
           title: "Education",
-          describation:
+          description:
             "Custom learning management systems (LMS), content delivery platforms, and student portals with interactive modules and assessments.",
         },
         {
           id: 6,
           icons: Helper.RetailStore,
           title: "Retail",
-          describation:
+          description:
             "Inventory management dashboards, sales tools, and consumer-facing web interfaces optimized for real-time updates and mobile-first interactions.",
         },
       ],
@@ -1674,35 +1674,35 @@ export const ServicePageDataOfUIUx = [
       ponits: [
         {
           title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
-          describation: [
+          description: [
             "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
             "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
           ],
         },
         {
           title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
-          describation: [
+          description: [
             "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
             "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
           ],
         },
         {
           title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
-          describation: [
+          description: [
             "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
             "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
           ],
         },
         {
           title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
-          describation: [
+          description: [
             "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
             "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
           ],
         },
         {
           title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
-          describation: [
+          description: [
             "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
             "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
           ],
@@ -1721,7 +1721,7 @@ export const ServicePageDataOfUIUx = [
     buildMorden: {
       title: "Building Digital Products That",
       subtitle: "Solve, Scale, and Succeed",
-      describation: [
+      description: [
         "At Harichtech, product design is not simply about creating visuals-it’s about solving problems. We collaborate with businesses to transform ideas into user-centered digital products that are scalable, intuitive, and built for impact. From concept to execution, we focus on creating designs that deliver clarity, usability, and measurable value.",
         "Whether you're an early-stage startup refining your MVP or an enterprise optimizing product performance, we help bridge the gap between user needs and business goals.",
       ],
@@ -1729,43 +1729,43 @@ export const ServicePageDataOfUIUx = [
     },
     whyChooseUsSection: {
       title: "Why Product Design Still Matters",
-      describation:
+      description:
         "In a crowded market, your product's design is your most powerful differentiator. It’s the difference between a tool and a solution, a user and a loyal advocate.",
       cards: [
         {
           id: 1,
           title: "User-Centric Innovation",
-          describation:
+          description:
             "We start with a deep understanding of your users, uncovering their pain points and motivations. This research-first approach ensures that every design decision is focused on creating genuine value.",
         },
         {
           id: 2,
           title: "Strategic Clarity",
-          describation:
+          description:
             "Great design is rooted in a clear strategy. We help you define a product vision, align features with business objectives, and create a roadmap that guides development and ensures long-term success.",
         },
         {
           id: 3,
           title: "Holistic Experience",
-          describation:
+          description:
             "We design the entire journey, not just a single screen. This includes every touchpoint—from onboarding and in-app interactions to notifications and customer support—creating a cohesive and memorable experience.",
         },
         {
           id: 4,
           title: "Iterative & Data-Driven",
-          describation:
+          description:
             "Design is an ongoing conversation. We work in agile sprints, using prototypes, user testing, and analytics to continuously gather feedback and refine our solutions, ensuring the final product is both beautiful and effective.",
         },
         {
           id: 5,
           title: "Builds Brand Trust",
-          describation:
+          description:
             "A well-designed product builds credibility and trust with your audience. A seamless, professional experience reinforces your brand's promise of quality and reliability.",
         },
         {
           id: 6,
           title: "Reduces Development Costs",
-          describation:
+          description:
             "By validating ideas early through research and prototyping, we prevent costly rework and ensure that development resources are focused on building features that genuinely matter to users.",
         },
       ],
@@ -1773,7 +1773,7 @@ export const ServicePageDataOfUIUx = [
     approchSection: {
       title: "Our Approach to ",
       blueTitle: "Product Design",
-      describation: [
+      description: [
         "We treat design as a continuous journey rather than a one-time activity. Our approach is iterative, collaborative, and informed by real-world data. We don’t believe in guesswork-every design choice is guided by user behavior, business goals, and market demands.",
         "Our process adapts to your stage of growth. Whether you're building a product from the ground up or reimagining an existing platform, we work alongside your internal teams, offering end-to-end support across all phases of product design.",
       ],
@@ -1791,55 +1791,55 @@ export const ServicePageDataOfUIUx = [
     serviceSections: {
       title: "Our Core Product ",
       blueTitle: "Design Services",
-      describation:
+      description:
         "We create intuitive and impactful digital products by combining user-centric strategy with modern, scalable design. Our services cover the entire product journey, from initial concept to a flawless user experience.",
       cards: [
         {
           id: 1,
           title: "Discovery & UX Research",
-          describation:
+          description:
             "We start by understanding your users and the market through interviews, analysis, and persona creation to inform a user-centric strategy.",
         },
         {
           id: 2,
           title: "UX Strategy & Information Architecture",
-          describation:
+          description:
             "We structure the product by defining user flows, sitemaps, and navigation to ensure an intuitive and efficient experience.",
         },
         {
           id: 3,
           title: "Wireframing & Prototyping",
-          describation:
+          description:
             "Before visual design, we create low-fidelity wireframes and interactive prototypes to test ideas and align teams on the product's structure.",
         },
         {
           id: 4,
           title: "UI Design & Visual Language",
-          describation:
+          description:
             "We craft a modern, brand-aligned visual interface, focusing on color, typography, and component libraries for a consistent and polished look.",
         },
         {
           id: 5,
           title: "Interactive Design & Microinteractions",
-          describation:
+          description:
             "We add subtle animations and transitions to guide users and make the product feel more responsive, intelligent, and engaging.",
         },
         {
           id: 6,
           title: "Design Systems & Component Libraries",
-          describation:
+          description:
             "For scalability, we build a modular system of reusable components and clear documentation to ensure consistency across all future updates and products.",
         },
         {
           id: 7,
           title: "Usability Testing & Iteration",
-          describation:
+          description:
             "We conduct user tests and analyze feedback to identify friction points and continuously refine the design before moving to development.",
         },
         {
           id: 8,
           title: "Developer Handoff & Ongoing Support",
-          describation:
+          description:
             "We provide detailed, developer-ready files and documentation, and remain available to ensure a smooth transition and implementation.",
         },
       ],
@@ -1847,88 +1847,88 @@ export const ServicePageDataOfUIUx = [
     developmentProcessSection: {
       title: "Development Process at",
       blueTitle: "Harichtech",
-      describation:
+      description:
         "We follow a structured, agile design process to ensure that your products are delivered on time, within budget, and to the highest standards.",
       banner: Helper.DesignProcess,
     },
     techStacksSection: {
       title: "Tools",
       blueTitle: "We Use",
-      describation: "",
+      description: "",
       cards: [
         {
           id: 1,
           title: "Design Tools",
-          describation: ["Figma", "Adobe XD"],
+          description: ["Figma", "Adobe XD"],
         },
         {
           id: 2,
           title: "Prototyping",
-          describation: ["InVision", "Webflow"],
+          description: ["InVision", "Webflow"],
         },
         {
           id: 3,
           title: "CMS Design",
-          describation: ["WordPress", "Webflow", "Framer", "Sanity"],
+          description: ["WordPress", "Webflow", "Framer", "Sanity"],
         },
         {
           id: 4,
           title: "Developer Handoff",
-          describation: ["Zeplin", "Avocode"],
+          description: ["Zeplin", "Avocode"],
         },
         {
           id: 5,
           title: "Design Systems",
-          describation: ["Tailwind UI", "Material Design", "Custom Tokens."],
+          description: ["Tailwind UI", "Material Design", "Custom Tokens."],
         },
       ],
     },
     IndustriesSection: {
       title: "Industries We",
       blueTitle: "Serve",
-      describation:
+      description:
         "Our website design services are industry-agnostic, with successful projects across various sectors.",
       cards: [
         {
           id: 1,
           icons: Helper.RealEstateSvg,
           title: "Real Estate",
-          describation:
+          description:
             "We develop property portals, CRM integrations, booking systems, and map-based project listings optimized for lead generation and customer experience.",
         },
         {
           id: 2,
           icons: Helper.EcommoarceSvg,
           title: "E-commerce",
-          describation:
+          description:
             "React.js enables us to create fast, scalable e-commerce platforms with advanced product filtering, dynamic cart management, and secure payment integration.",
         },
         {
           id: 3,
           icons: Helper.FinanceSvg,
           title: "Finance & Fintech",
-          describation:
+          description:
             "We build secure, responsive dashboards and platforms for financial institutions, with real-time data visualization and transaction tracking.",
         },
         {
           id: 4,
           icons: Helper.HealthcareSvg,
           title: "Healthcare / Pharma ",
-          describation:
+          description:
             "HIPAA-compliant web applications, teleconsultation portals, and digital patient management systems built with React.js for performance and reliability.",
         },
         {
           id: 5,
           icons: Helper.EducationSvg,
           title: "Education",
-          describation:
+          description:
             "Custom learning management systems (LMS), content delivery platforms, and student portals with interactive modules and assessments.",
         },
         {
           id: 6,
           icons: Helper.RetailStore,
           title: "Retail",
-          describation:
+          description:
             "Inventory management dashboards, sales tools, and consumer-facing web interfaces optimized for real-time updates and mobile-first interactions.",
         },
       ],
@@ -1964,35 +1964,35 @@ export const ServicePageDataOfUIUx = [
       ponits: [
         {
           title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
-          describation: [
+          description: [
             "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
             "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
           ],
         },
         {
           title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
-          describation: [
+          description: [
             "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
             "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
           ],
         },
         {
           title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
-          describation: [
+          description: [
             "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
             "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
           ],
         },
         {
           title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
-          describation: [
+          description: [
             "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
             "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
           ],
         },
         {
           title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
-          describation: [
+          description: [
             "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
             "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
           ],
@@ -2014,7 +2014,7 @@ export const ServicePageDataOfDigitalMarketing = [
     buildMorden: {
       title: "Search Engine Optimization That",
       subtitle: "Grows Visibility, Traffic, and Trust",
-      describation: [
+      description: [
         "In today’s digital marketplace, showing up online isn’t enough-you need to be found by the right audience, at the right time, with the right message. At Harichtech, our SEO services are built to do just that.",
         "We take a strategic, performance-driven approach to search engine optimization. From on-page content and site structure to backlinks and technical performance, we optimize every detail to help your website rank higher, attract more visitors, and convert more leads.",
         "Whether you're a startup looking to break into your niche or an established brand aiming to outperform competitors, we help you rise to the top of search results and stay there.",
@@ -2023,37 +2023,37 @@ export const ServicePageDataOfDigitalMarketing = [
     },
     whyChooseUsSection: {
       title: "Why SEO Still Matters?",
-      describation:
+      description:
         "SEO is not just about keywords or algorithms it’s about building long-term visibility and credibility. Search engines like Google reward websites that are relevant, trustworthy, and easy to use. A well-executed SEO strategy brings organic traffic, consistent engagement, and compounding returns over time.",
       cards: [
         {
           id: 1,
           title: "Visibility Where It Matters Most",
-          describation:
+          description:
             "75% of users never scroll past the first page of search results. We help get your business there and keep it there.",
         },
         {
           id: 2,
           title: "Organic Traffic = Sustainable Growth",
-          describation:
+          description:
             "Unlike paid ads, organic traffic doesn’t stop when your budget runs out. SEO builds a steady pipeline of high-intent users over time.",
         },
         {
           id: 3,
           title: "Better User Experience",
-          describation:
+          description:
             "Good SEO isn’t just for search engines, it improves usability, navigation, and overall site performance for real users.",
         },
         {
           id: 4,
           title: "Higher Trust, Lower Bounce",
-          describation:
+          description:
             "Ranking well signals authority. When users see you on the first page, they’re more likely to click, stay, and convert.",
         },
         {
           id: 5,
           title: "Cost-Effective ROI",
-          describation:
+          description:
             "SEO has one of the highest returns on investment in digital marketing, especially over the long term.",
         },
       ],
@@ -2061,7 +2061,7 @@ export const ServicePageDataOfDigitalMarketing = [
     approchSection: {
       title: "Why Choose ",
       blueTitle: "Harichtech for SEO? ",
-      describation: [
+      description: [
         "We treat SEO as a long-term partnership-not a checkbox on your marketing to-do list. Our strategies are built on transparency, data, and consistent optimization.",
       ],
       points: {
@@ -2088,13 +2088,13 @@ export const ServicePageDataOfDigitalMarketing = [
     serviceSections: {
       title: "Our SEO ",
       blueTitle: " Services",
-      describation:
+      description:
         "We offer end-to-end SEO services tailored to your business goals, industry, and target audience. Whether you’re looking for local SEO, technical optimization, or ongoing content strategy, we’ve got you covered.",
       cards: [
         {
           id: 1,
           title: "Technical SEO",
-          describation:
+          description:
             "We start at the foundation-ensuring your website is crawlable, fast, and structurally sound. Technical SEO improves performance and helps search engines understand your content.",
           points: {
             title: "Key activities:",
@@ -2109,7 +2109,7 @@ export const ServicePageDataOfDigitalMarketing = [
         {
           id: 2,
           title: "On-Page SEO",
-          describation:
+          description:
             "We optimize the content and structure of individual pages to improve relevance and readability for both users and search engines.",
           points: {
             title: "What we do:",
@@ -2126,7 +2126,7 @@ export const ServicePageDataOfDigitalMarketing = [
         {
           id: 3,
           title: "On-Page SEO",
-          describation:
+          description:
             "Content is at the heart of search. We help you create and optimize content that ranks, informs, and converts-without sounding robotic.",
           points: {
             title: "Our focus areas:",
@@ -2143,7 +2143,7 @@ export const ServicePageDataOfDigitalMarketing = [
         {
           id: 4,
           title: "Off-Page SEO & Link Building",
-          describation:
+          description:
             "Backlinks remain a core ranking factor. We help build authority and trust through ethical, white-hat link building strategies.",
           points: {
             title: "How we do it:",
@@ -2159,7 +2159,7 @@ export const ServicePageDataOfDigitalMarketing = [
         {
           id: 5,
           title: "Local SEO",
-          describation:
+          description:
             "For businesses targeting specific cities or regions, local SEO ensures you show up in local searches and map listings.",
           points: {
             title: "Includes:",
@@ -2175,7 +2175,7 @@ export const ServicePageDataOfDigitalMarketing = [
         {
           id: 6,
           title: "LEO Audits & Performance Reporting",
-          describation:
+          description:
             "We regularly audit, test, and refine your SEO strategy-so you always know what’s working, what’s not, and what’s next.",
           points: {
             title: "Deliverables:",
@@ -2193,19 +2193,19 @@ export const ServicePageDataOfDigitalMarketing = [
     developmentProcessSection: {
       title: "Our SEO Process at",
       blueTitle: "Harichtech",
-      describation:
+      description:
         "Our approach to SEO is iterative, data-backed, and tailored to your business. We don’t believe in one-size-fits-all templates-instead, we build custom strategies aligned with your goals.",
       banner: Helper.DigitalMarketingProcess,
     },
     techStacksSection: {
       title: "Tools & Platforms",
       blueTitle: "We Use",
-      describation: "",
+      description: "",
       cards: [
         {
           id: 1,
           title: "Technical & Audit",
-          describation: [
+          description: [
             "Screaming Frog",
             "Google Search Console ",
             "Sitebulb",
@@ -2214,7 +2214,7 @@ export const ServicePageDataOfDigitalMarketing = [
         {
           id: 2,
           title: "Keyword Research",
-          describation: [
+          description: [
             "Ahrefs",
             "SEMrush",
             "Ubersuggest",
@@ -2224,71 +2224,71 @@ export const ServicePageDataOfDigitalMarketing = [
         {
           id: 3,
           title: "Analytics",
-          describation: ["Google Analytics 4", "Looker Studio", "Hotjar"],
+          description: ["Google Analytics 4", "Looker Studio", "Hotjar"],
         },
         {
           id: 4,
           title: "Content Tools",
-          describation: ["Surfer SEO", "Clearscope", "Grammarly", "MarketMuse"],
+          description: ["Surfer SEO", "Clearscope", "Grammarly", "MarketMuse"],
         },
         {
           id: 5,
           title: "Backlink Tools",
-          describation: ["Ahrefs", "Moz", "Majestic"],
+          description: ["Ahrefs", "Moz", "Majestic"],
         },
         {
           id: 6,
           title: "Local SEO Tools",
-          describation: ["BrightLocal", "Whitespark", "GMB Everywhere"],
+          description: ["BrightLocal", "Whitespark", "GMB Everywhere"],
         },
       ],
     },
     IndustriesSection: {
       title: "Industries We",
       blueTitle: "Serve",
-      describation:
+      description:
         "Our SEO strategies are tailored to different industries, business models, and audience types.",
       cards: [
         {
           id: 1,
           icons: Helper.RealEstateSvg,
           title: "Real Estate",
-          describation:
+          description:
             "We develop property portals, CRM integrations, booking systems, and map-based project listings optimized for lead generation and customer experience.",
         },
         {
           id: 2,
           icons: Helper.EcommoarceSvg,
           title: "E-commerce",
-          describation:
+          description:
             "React.js enables us to create fast, scalable e-commerce platforms with advanced product filtering, dynamic cart management, and secure payment integration.",
         },
         {
           id: 3,
           icons: Helper.FinanceSvg,
           title: "Finance & Fintech",
-          describation:
+          description:
             "We build secure, responsive dashboards and platforms for financial institutions, with real-time data visualization and transaction tracking.",
         },
         {
           id: 4,
           icons: Helper.HealthcareSvg,
           title: "Healthcare / Pharma ",
-          describation:
+          description:
             "HIPAA-compliant web applications, teleconsultation portals, and digital patient management systems built with React.js for performance and reliability.",
         },
         {
           id: 5,
           icons: Helper.EducationSvg,
           title: "Education",
-          describation:
+          description:
             "Custom learning management systems (LMS), content delivery platforms, and student portals with interactive modules and assessments.",
         },
         {
           id: 6,
           icons: Helper.RetailStore,
           title: "Retail",
-          describation:
+          description:
             "Inventory management dashboards, sales tools, and consumer-facing web interfaces optimized for real-time updates and mobile-first interactions.",
         },
       ],
@@ -2324,35 +2324,35 @@ export const ServicePageDataOfDigitalMarketing = [
       ponits: [
         {
           title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
-          describation: [
+          description: [
             "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
             "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
           ],
         },
         {
           title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
-          describation: [
+          description: [
             "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
             "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
           ],
         },
         {
           title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
-          describation: [
+          description: [
             "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
             "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
           ],
         },
         {
           title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
-          describation: [
+          description: [
             "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
             "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
           ],
         },
         {
           title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
-          describation: [
+          description: [
             "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
             "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
           ],
@@ -2371,7 +2371,7 @@ export const ServicePageDataOfDigitalMarketing = [
     buildMorden: {
       title: "Precision-Paid Campaigns That ",
       subtitle: "Drive Traffic, Leads, and Conversions",
-      describation: [
+      description: [
         "Pay-per-click (PPC) advertising is one of the fastest ways to get your brand in front of your ideal customers but speed without strategy leads to wasted budget. At Harichtech, we help you run smarter campaigns that are data-driven, conversion-focused, and built for ROI.",
         "We take a strategic, performance-driven approach to search engine optimization. From on-page content and site structure to backlinks and technical performance, we optimize every detail to help your website rank higher, attract more visitors, and convert more leads.",
       ],
@@ -2379,37 +2379,37 @@ export const ServicePageDataOfDigitalMarketing = [
     },
     whyChooseUsSection: {
       title: "Why PPC Still Matters?",
-      describation:
+      description:
         "While organic search and SEO provide long-term visibility, PPC gives you instant exposure putting your brand at the top of search results, in the feeds of target audiences, and on the screens that matter most. But it's not just about showing up, it's about showing up to the right people, with the right message, at the right time.",
       cards: [
         {
           id: 1,
           title: "Immediate Results",
-          describation:
+          description:
             "Unlike SEO, PPC allows you to launch and see traffic the same day. Perfect for new launches, time-sensitive offers, or fast-tracking sales.",
         },
         {
           id: 2,
           title: "Total Targeting Control",
-          describation:
+          description:
             "PPC gives you precise control over audience, geography, devices, search intent, demographics, and behavior.",
         },
         {
           id: 3,
           title: "Full Budget Flexibility",
-          describation:
+          description:
             "Scale up or down based on performance and goals. Spend wisely, track every rupee, and optimize in real time.",
         },
         {
           id: 4,
           title: "Measurable ROI",
-          describation:
+          description:
             "Every impression, click, and conversion can be tracked. That means you know what’s working and what’s not- down to the ad level.",
         },
         {
           id: 5,
           title: "Supports Other Channels",
-          describation:
+          description:
             "SPPC complements SEO, social media, and email driving retargeting, list building, and A/B testing opportunities.",
         },
       ],
@@ -2417,7 +2417,7 @@ export const ServicePageDataOfDigitalMarketing = [
     approchSection: {
       title: "Why Choose  ",
       blueTitle: "Harichtech for PPC?",
-      describation: [
+      description: [
         "Running ads is easy. Running profitable ads takes strategy, experience, and constant tuning. That’s where Harichtech stands out.",
         "Certified PPC Experts: Google Ads and Meta-certified specialists",
         "Data-Driven Decisions: Every ad, audience, and bid backed by data not guesswork",
@@ -2444,13 +2444,13 @@ export const ServicePageDataOfDigitalMarketing = [
     serviceSections: {
       title: "Our PPC Services",
       blueTitle: " Services",
-      describation:
+      description:
         "We provide full-suite paid media management across Google Ads, Bing, YouTube, social platforms, and more - ensuring every campaign aligns with your business goals and budget.",
       cards: [
         {
           id: 1,
           title: "Search Ads (Google & Bing)",
-          describation:
+          description:
             "Appear at the top of search results when users actively look for your products or services. We target high-intent keywords that convert.",
           points: {
             title: "Includes:",
@@ -2466,7 +2466,7 @@ export const ServicePageDataOfDigitalMarketing = [
         {
           id: 2,
           title: "Display Ads",
-          describation:
+          description:
             "Reach users while they browse websites, apps, or videos in Google’s Display Network. Perfect for awareness and remarketing.",
           points: {
             title: "Includes:",
@@ -2482,7 +2482,7 @@ export const ServicePageDataOfDigitalMarketing = [
         {
           id: 3,
           title: "Remarketing Campaigns",
-          describation:
+          description:
             "Re-engage users who’ve visited your site but didn’t convert. Remarketing helps reduce lost opportunities and increase return visits.",
           points: {
             title: "Options:",
@@ -2498,7 +2498,7 @@ export const ServicePageDataOfDigitalMarketing = [
         {
           id: 4,
           title: "Shopping Ads (Google Merchant Center)",
-          describation:
+          description:
             "For e-commerce businesses, we manage product feed optimization and ad placements that highlight your products with images, prices, and ratings.",
           points: {
             title: "Includes:",
@@ -2514,7 +2514,7 @@ export const ServicePageDataOfDigitalMarketing = [
         {
           id: 5,
           title: "YouTube Video Ads",
-          describation:
+          description:
             "Harness the power of video marketing. We create and manage skippable, non-skippable, bumper, and discovery video campaigns.",
           points: {
             title: "Campaign Types:",
@@ -2529,7 +2529,7 @@ export const ServicePageDataOfDigitalMarketing = [
         {
           id: 6,
           title: "Local PPC (Map Packs & Service Areas)",
-          describation:
+          description:
             "If you’re targeting a specific city or region, we run local PPC campaigns that connect you with nearby, high-intent users.",
           points: {
             title: "Tactics:",
@@ -2547,19 +2547,19 @@ export const ServicePageDataOfDigitalMarketing = [
     developmentProcessSection: {
       title: "Our PPC Process at",
       blueTitle: "Harichtech",
-      describation:
+      description:
         "Successful PPC campaigns rely on careful planning, strategic execution, and constant refinement. Our process ensures we align with your goals, test continuously, and optimize relentlessly.",
       banner: Helper.DigitalMarketingProcess,
     },
     techStacksSection: {
       title: "Tools & Platforms",
       blueTitle: "We Use",
-      describation: "",
+      description: "",
       cards: [
         {
           id: 1,
           title: "Ad Platforms",
-          describation: [
+          description: [
             "Google Ads",
             "Bing Ads",
             "YouTube",
@@ -2570,22 +2570,22 @@ export const ServicePageDataOfDigitalMarketing = [
         {
           id: 2,
           title: "Analytics & Reporting",
-          describation: ["Google Analytics 4", "Looker Studio", "Hotjar"],
+          description: ["Google Analytics 4", "Looker Studio", "Hotjar"],
         },
         {
           id: 3,
           title: "Optimization Tools",
-          describation: ["SEMrush", "WordStream", "Optmyzr"],
+          description: ["SEMrush", "WordStream", "Optmyzr"],
         },
         {
           id: 4,
           title: "A/B Testing",
-          describation: ["Google Optimize", "Unbounce"],
+          description: ["Google Optimize", "Unbounce"],
         },
         {
           id: 5,
           title: "Tagging & Tracking",
-          describation: [
+          description: [
             "Google Tag Manager",
             "Google Ads Conversion Tag",
             "Meta Pixel",
@@ -2597,49 +2597,49 @@ export const ServicePageDataOfDigitalMarketing = [
     IndustriesSection: {
       title: "Industries We",
       blueTitle: "Serve",
-      describation:
+      description:
         "We’ve built and optimized PPC campaigns across a range of industries, each with its own audience behavior and conversion patterns.",
       cards: [
         {
           id: 1,
           icons: Helper.RealEstateSvg,
           title: "Real Estate",
-          describation:
+          description:
             "We develop property portals, CRM integrations, booking systems, and map-based project listings optimized for lead generation and customer experience.",
         },
         {
           id: 2,
           icons: Helper.EcommoarceSvg,
           title: "E-commerce",
-          describation:
+          description:
             "React.js enables us to create fast, scalable e-commerce platforms with advanced product filtering, dynamic cart management, and secure payment integration.",
         },
         {
           id: 3,
           icons: Helper.FinanceSvg,
           title: "Finance & Fintech",
-          describation:
+          description:
             "We build secure, responsive dashboards and platforms for financial institutions, with real-time data visualization and transaction tracking.",
         },
         {
           id: 4,
           icons: Helper.HealthcareSvg,
           title: "Healthcare / Pharma ",
-          describation:
+          description:
             "HIPAA-compliant web applications, teleconsultation portals, and digital patient management systems built with React.js for performance and reliability.",
         },
         {
           id: 5,
           icons: Helper.EducationSvg,
           title: "Education",
-          describation:
+          description:
             "Custom learning management systems (LMS), content delivery platforms, and student portals with interactive modules and assessments.",
         },
         {
           id: 6,
           icons: Helper.RetailStore,
           title: "Retail",
-          describation:
+          description:
             "Inventory management dashboards, sales tools, and consumer-facing web interfaces optimized for real-time updates and mobile-first interactions.",
         },
       ],
@@ -2675,35 +2675,35 @@ export const ServicePageDataOfDigitalMarketing = [
       ponits: [
         {
           title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
-          describation: [
+          description: [
             "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
             "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
           ],
         },
         {
           title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
-          describation: [
+          description: [
             "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
             "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
           ],
         },
         {
           title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
-          describation: [
+          description: [
             "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
             "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
           ],
         },
         {
           title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
-          describation: [
+          description: [
             "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
             "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
           ],
         },
         {
           title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
-          describation: [
+          description: [
             "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
             "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
           ],
@@ -2722,7 +2722,7 @@ export const ServicePageDataOfDigitalMarketing = [
     buildMorden: {
       title: "Build a Social Presence That  ",
       subtitle: "Connects, Engages, and Converts",
-      describation: [
+      description: [
         "Social media is more than just posts and likes-it’s where your brand lives, breathes, and builds trust in real-time. At Harichtech, we help brands transform their social media presence from passive to powerful, from scattered to strategic.",
         "Whether you're a fast-scaling startup or an established enterprise, we manage your social media with one goal in mind: creating content and campaigns that connect with your audience and support your business objectives.",
         "We don’t just post, we plan, design, engage, and measure. Our team becomes an extension of your brand voice, helping you make meaningful noise in a crowded digital world.",
@@ -2731,37 +2731,37 @@ export const ServicePageDataOfDigitalMarketing = [
     },
     whyChooseUsSection: {
       title: "Why Social Media Still Matters?",
-      describation:
+      description:
         "In a digital landscape driven by authenticity, immediacy, and storytelling, your social media channels are more than just distribution tools-they're conversation starters, relationship builders, and conversion engines.",
       cards: [
         {
           id: 1,
           title: "Your Audience Is Already There",
-          describation:
+          description:
             "Over 4.8 billion people use social media globally. Whether B2B or B2C, your potential customers are scrolling right now.",
         },
         {
           id: 2,
           title: "It Shapes First Impressions",
-          describation:
+          description:
             "Most users check social channels before visiting a website. What they see there forms a critical first impression.",
         },
         {
           id: 3,
           title: "It Builds Trust",
-          describation:
+          description:
             "Active, helpful, and consistent social activity improves brand perception, credibility, and customer loyalty.",
         },
         {
           id: 4,
           title: "It Drives Conversions",
-          describation:
+          description:
             "Social isn’t just about engagement-it directly influences buying behavior, lead generation, and website traffic.",
         },
         {
           id: 5,
           title: "It Amplifies Reach",
-          describation:
+          description:
             "With the right strategy, organic content and paid campaigns can generate viral exposure and long-term brand awareness.",
         },
       ],
@@ -2769,7 +2769,7 @@ export const ServicePageDataOfDigitalMarketing = [
     approchSection: {
       title: "Why Choose ",
       blueTitle: "Harichtech for Social Media?",
-      describation: [
+      description: [
         "We don’t just post because it’s Monday - we post with purpose, backed by data and creative insight.",
       ],
       points: {
@@ -2796,13 +2796,13 @@ export const ServicePageDataOfDigitalMarketing = [
     serviceSections: {
       title: "Our Social Media ",
       blueTitle: " Marketing Services",
-      describation:
+      description:
         "From strategy and content creation to paid social and influencer partnerships, we offer comprehensive social media management tailored to your goals.",
       cards: [
         {
           id: 1,
           title: "Social Media Strategy",
-          describation:
+          description:
             "We start with a custom strategy that defines your tone, goals, platforms, content mix, and KPIs.",
           points: {
             title: "Includes:",
@@ -2818,7 +2818,7 @@ export const ServicePageDataOfDigitalMarketing = [
         {
           id: 2,
           title: "Content Creation & Design",
-          describation:
+          description:
             "We create scroll-stopping content that communicates your brand story, value, and personality-visually and verbally.",
           points: {
             title: "We create:",
@@ -2834,7 +2834,7 @@ export const ServicePageDataOfDigitalMarketing = [
         {
           id: 3,
           title: "Account Management",
-          describation:
+          description:
             "We handle your daily social operations, from publishing and responding to performance monitoring.",
           points: {
             title: "What we manage:",
@@ -2850,7 +2850,7 @@ export const ServicePageDataOfDigitalMarketing = [
         {
           id: 4,
           title: "Paid Social Advertising",
-          describation:
+          description:
             "We build and manage highly-targeted ad campaigns across platforms to boost reach, drive leads, or promote sales.",
           points: {
             title: "Campaign types:",
@@ -2866,7 +2866,7 @@ export const ServicePageDataOfDigitalMarketing = [
         {
           id: 5,
           title: "Influencer Marketing Support",
-          describation:
+          description:
             "We identify, vet, and collaborate with creators who align with your brand and help manage the campaign from outreach to reporting.",
           points: {
             title: "Services include:",
@@ -2882,7 +2882,7 @@ export const ServicePageDataOfDigitalMarketing = [
         {
           id: 6,
           title: "Analytics & Reporting",
-          describation:
+          description:
             "Every month, we provide performance reports with key metrics, actionable insights, and strategic adjustments.",
           points: {
             title: "What we track:",
@@ -2900,29 +2900,29 @@ export const ServicePageDataOfDigitalMarketing = [
     developmentProcessSection: {
       title: "Our Process at",
       blueTitle: "Harichtech",
-      describation:
+      description:
         "We don’t believe in guesswork or one-size-fits-all templates. Our social media approach is intentional, adaptive, and grounded in your brand’s unique goals.",
       banner: Helper.DigitalMarketingProcess,
     },
     techStacksSection: {
       title: "Tools & Platforms",
       blueTitle: "We Use",
-      describation: "",
+      description: "",
       cards: [
         {
           id: 1,
           title: "Design",
-          describation: ["Adobe Suite", "Canva Pro", "Figma"],
+          description: ["Adobe Suite", "Canva Pro", "Figma"],
         },
         {
           id: 2,
           title: "Scheduling",
-          describation: ["Later", "Buffer", "Hootsuite", "Meta Business Suite"],
+          description: ["Later", "Buffer", "Hootsuite", "Meta Business Suite"],
         },
         {
           id: 3,
           title: "Analytics",
-          describation: [
+          description: [
             "Sprout Social",
             "Instagram Insights",
             "Meta Ads Manager",
@@ -2931,61 +2931,61 @@ export const ServicePageDataOfDigitalMarketing = [
         {
           id: 4,
           title: "Listening & Monitoring",
-          describation: ["Brandwatch", "Mention", "Google Alerts"],
+          description: ["Brandwatch", "Mention", "Google Alerts"],
         },
         {
           id: 5,
           title: "Video Editing",
-          describation: ["CapCut", "Adobe Premiere Rush", "InShot"],
+          description: ["CapCut", "Adobe Premiere Rush", "InShot"],
         },
       ],
     },
     IndustriesSection: {
       title: "Industries We",
       blueTitle: "Serve",
-      describation:
+      description:
         "We create industry-tailored social strategies that speak directly to your audience and reflect your market dynamics.",
       cards: [
         {
           id: 1,
           icons: Helper.RealEstateSvg,
           title: "Real Estate",
-          describation:
+          description:
             "We develop property portals, CRM integrations, booking systems, and map-based project listings optimized for lead generation and customer experience.",
         },
         {
           id: 2,
           icons: Helper.EcommoarceSvg,
           title: "E-commerce",
-          describation:
+          description:
             "React.js enables us to create fast, scalable e-commerce platforms with advanced product filtering, dynamic cart management, and secure payment integration.",
         },
         {
           id: 3,
           icons: Helper.FinanceSvg,
           title: "Finance & Fintech",
-          describation:
+          description:
             "We build secure, responsive dashboards and platforms for financial institutions, with real-time data visualization and transaction tracking.",
         },
         {
           id: 4,
           icons: Helper.HealthcareSvg,
           title: "Healthcare / Pharma ",
-          describation:
+          description:
             "HIPAA-compliant web applications, teleconsultation portals, and digital patient management systems built with React.js for performance and reliability.",
         },
         {
           id: 5,
           icons: Helper.EducationSvg,
           title: "Education",
-          describation:
+          description:
             "Custom learning management systems (LMS), content delivery platforms, and student portals with interactive modules and assessments.",
         },
         {
           id: 6,
           icons: Helper.RetailStore,
           title: "Retail",
-          describation:
+          description:
             "Inventory management dashboards, sales tools, and consumer-facing web interfaces optimized for real-time updates and mobile-first interactions.",
         },
       ],
@@ -3021,35 +3021,35 @@ export const ServicePageDataOfDigitalMarketing = [
       ponits: [
         {
           title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
-          describation: [
+          description: [
             "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
             "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
           ],
         },
         {
           title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
-          describation: [
+          description: [
             "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
             "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
           ],
         },
         {
           title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
-          describation: [
+          description: [
             "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
             "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
           ],
         },
         {
           title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
-          describation: [
+          description: [
             "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
             "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
           ],
         },
         {
           title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
-          describation: [
+          description: [
             "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
             "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
           ],
@@ -3068,7 +3068,7 @@ export const ServicePageDataOfDigitalMarketing = [
     buildMorden: {
       title: "Content That Educates, Converts,",
       subtitle: "and Builds Authority",
-      describation: [
+      description: [
         "In a world flooded with noise, content that delivers value stands out. At Harichtech, we help businesses create purposeful, high-impact content that attracts attention, builds trust, and drives real action.",
         "Whether you’re a tech company explaining a complex product, an e-commerce brand launching a new line, or a service provider nurturing leads, strategic content is your most powerful asset.",
         "We don’t just write-we research, plan, optimize, and distribute. Our content marketing is designed to meet your audience where they are, answer their questions, and move them closer to conversion.",
@@ -3077,37 +3077,37 @@ export const ServicePageDataOfDigitalMarketing = [
     },
     whyChooseUsSection: {
       title: "Why Content Still Matters?",
-      describation:
+      description:
         "Good content isn’t about volume, it’s about relevance, intent, and clarity. Search engines reward it, audiences share it, and businesses grow from it.",
       cards: [
         {
           id: 1,
           title: "It Builds Trust",
-          describation:
+          description:
             "Helpful, consistent content positions you as a reliable source, not just another company with a product to sell.",
         },
         {
           id: 2,
           title: "It Fuels SEO",
-          describation:
+          description:
             "Every blog, landing page, or FAQ you create adds keywords, structure, and value to your site-improving organic reach.",
         },
         {
           id: 3,
           title: "It Nurtures Buyers",
-          describation:
+          description:
             "From awareness to decision, content keeps your prospects engaged through every step of their journey.",
         },
         {
           id: 4,
           title: "It Increases Conversion Rates",
-          describation:
+          description:
             "Educated users are more confident and confident users convert more easily.",
         },
         {
           id: 5,
           title: "It Works Across Channels",
-          describation:
+          description:
             "Great content isn’t just for your website. It powers email, social media, ads, and even sales enablement.",
         },
       ],
@@ -3115,7 +3115,7 @@ export const ServicePageDataOfDigitalMarketing = [
     approchSection: {
       title: "Why Choose ",
       blueTitle: "Harichtech for Content Marketing?",
-      describation: [
+      description: [
         "We combine strategy, creativity, and marketing acumen to produce content that’s not just “nice to read” but actually moves the needle.",
       ],
       points: {
@@ -3142,13 +3142,13 @@ export const ServicePageDataOfDigitalMarketing = [
     serviceSections: {
       title: "Our Content",
       blueTitle: " Marketing Services",
-      describation:
+      description:
         "We create and manage content that fits your funnel, from awareness to conversion and beyond. Each piece is tailored to your brand, your audience, and your goals.",
       cards: [
         {
           id: 1,
           title: "Content Strategy & Planning",
-          describation:
+          description:
             "Every great content initiative begins with a clear plan. We define your audience, topics, tone, goals, and distribution channels.",
           points: {
             title: "Includes:",
@@ -3164,7 +3164,7 @@ export const ServicePageDataOfDigitalMarketing = [
         {
           id: 2,
           title: "Website & Landing Page Copy",
-          describation:
+          description:
             "We craft clear, conversion-oriented content for your most important digital assets-your website, service pages, and landing pages.",
           points: {
             title: "We create:",
@@ -3180,7 +3180,7 @@ export const ServicePageDataOfDigitalMarketing = [
         {
           id: 3,
           title: "Blog Content Creation",
-          describation:
+          description:
             "Blogs help answer questions, improve SEO, and position your brand as an expert in your niche. We create content that informs and converts.",
           points: {
             title: "What we cover:",
@@ -3196,7 +3196,7 @@ export const ServicePageDataOfDigitalMarketing = [
         {
           id: 4,
           title: "Long-Form Content & Resources",
-          describation:
+          description:
             "For more in-depth engagement, we create downloadable or gated assets that help build credibility and generate leads.",
           points: {
             title: "Includes:",
@@ -3212,7 +3212,7 @@ export const ServicePageDataOfDigitalMarketing = [
         {
           id: 5,
           title: "Email & Newsletter Copywriting",
-          describation:
+          description:
             "We help you stay top of mind with your audience - through campaigns that inform, sell, or simply nurture trust.",
           points: {
             title: "Types of emails:",
@@ -3228,7 +3228,7 @@ export const ServicePageDataOfDigitalMarketing = [
         {
           id: 6,
           title: "Video Scripts & Visual Content",
-          describation:
+          description:
             "For brands leveraging video or visual storytelling, we provide concise, brand-aligned scripts and on-screen content.",
           points: {
             title: "We help with:",
@@ -3245,24 +3245,24 @@ export const ServicePageDataOfDigitalMarketing = [
     developmentProcessSection: {
       title: "Our Content Creation Process at",
       blueTitle: "Harichtech",
-      describation:
+      description:
         "We blend research, creativity, and strategic alignment to produce content that hits the mark every time.",
       banner: Helper.DigitalMarketingProcess,
     },
     techStacksSection: {
       title: "Tools & Platforms",
       blueTitle: "We Use",
-      describation: "",
+      description: "",
       cards: [
         {
           id: 1,
           title: "Research & SEO",
-          describation: ["SEMrush", "Ahrefs", "Ubersuggest", "Google Trends"],
+          description: ["SEMrush", "Ahrefs", "Ubersuggest", "Google Trends"],
         },
         {
           id: 2,
           title: "Writing & Editing",
-          describation: [
+          description: [
             "Grammarly",
             "Hemingway",
             "ChatGPT (for drafts/ideation)",
@@ -3272,12 +3272,12 @@ export const ServicePageDataOfDigitalMarketing = [
         {
           id: 3,
           title: "Optimization",
-          describation: ["SurferSEO", "Clearscope", "Yoast SEO"],
+          description: ["SurferSEO", "Clearscope", "Yoast SEO"],
         },
         {
           id: 4,
           title: "Planning",
-          describation: [
+          description: [
             "Trello, Notion",
             "Airtable (for editorial calendars)",
           ],
@@ -3285,56 +3285,56 @@ export const ServicePageDataOfDigitalMarketing = [
         {
           id: 5,
           title: "Design",
-          describation: ["Adobe Illustrator", "Figma", "Canva"],
+          description: ["Adobe Illustrator", "Figma", "Canva"],
         },
       ],
     },
     IndustriesSection: {
       title: "Industries We",
       blueTitle: "Serve",
-      describation:
+      description:
         "We’ve built content strategies across a wide range of industries, each with a specific audience and intent.",
       cards: [
         {
           id: 1,
           icons: Helper.RealEstateSvg,
           title: "Real Estate",
-          describation:
+          description:
             "We develop property portals, CRM integrations, booking systems, and map-based project listings optimized for lead generation and customer experience.",
         },
         {
           id: 2,
           icons: Helper.EcommoarceSvg,
           title: "E-commerce",
-          describation:
+          description:
             "React.js enables us to create fast, scalable e-commerce platforms with advanced product filtering, dynamic cart management, and secure payment integration.",
         },
         {
           id: 3,
           icons: Helper.FinanceSvg,
           title: "Finance & Fintech",
-          describation:
+          description:
             "We build secure, responsive dashboards and platforms for financial institutions, with real-time data visualization and transaction tracking.",
         },
         {
           id: 4,
           icons: Helper.HealthcareSvg,
           title: "Healthcare / Pharma ",
-          describation:
+          description:
             "HIPAA-compliant web applications, teleconsultation portals, and digital patient management systems built with React.js for performance and reliability.",
         },
         {
           id: 5,
           icons: Helper.EducationSvg,
           title: "Education",
-          describation:
+          description:
             "Custom learning management systems (LMS), content delivery platforms, and student portals with interactive modules and assessments.",
         },
         {
           id: 6,
           icons: Helper.RetailStore,
           title: "Retail",
-          describation:
+          description:
             "Inventory management dashboards, sales tools, and consumer-facing web interfaces optimized for real-time updates and mobile-first interactions.",
         },
       ],
@@ -3370,35 +3370,35 @@ export const ServicePageDataOfDigitalMarketing = [
       ponits: [
         {
           title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
-          describation: [
+          description: [
             "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
             "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
           ],
         },
         {
           title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
-          describation: [
+          description: [
             "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
             "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
           ],
         },
         {
           title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
-          describation: [
+          description: [
             "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
             "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
           ],
         },
         {
           title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
-          describation: [
+          description: [
             "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
             "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
           ],
         },
         {
           title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
-          describation: [
+          description: [
             "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
             "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
           ],
@@ -3417,7 +3417,7 @@ export const ServicePageDataOfDigitalMarketing = [
     buildMorden: {
       title: "Inbox Strategies That",
       subtitle: "Nurture, Convert, and Retain",
-      describation: [
+      description: [
         "In a world of fast-scrolling social feeds and disappearing digital ads, email remains one of the most direct and dependable ways to communicate with your audience. At Harichtech, we help you create email experiences that feel personal, purposeful, and perfectly timed.",
         "Whether you're nurturing leads, onboarding new users, launching products, or driving repeat purchases, we craft campaigns that speak to the right people at the right moment with content that’s built to drive results.",
         "We don’t just send emails-we build email systems that support your full customer journey.",
@@ -3426,37 +3426,37 @@ export const ServicePageDataOfDigitalMarketing = [
     },
     whyChooseUsSection: {
       title: "Why Email Marketing Still Works",
-      describation:
+      description:
         "It’s easy to overlook email but the numbers tell a different story. Email marketing continues to deliver one of the highest ROI across all digital marketing channels.",
       cards: [
         {
           id: 1,
           title: "Direct & Personal",
-          describation:
+          description:
             "Email lands directly in your audience’s inbox-no algorithm, no ad fatigue. It’s permission-based, trusted, and personal.",
         },
         {
           id: 2,
           title: "Cost-Effective & Scalable",
-          describation:
+          description:
             "With the right setup, you can engage hundreds or millions of subscribers without increasing your costs significantly.",
         },
         {
           id: 3,
           title: "Measurable & Trackable",
-          describation:
+          description:
             "Every open, click, and conversion is measurable. You’ll always know what’s working and how to improve.",
         },
         {
           id: 4,
           title: "Fully Customizable",
-          describation:
+          description:
             "From design to tone to timing, email allows for deep personalization, segmentation, and A/B testing.",
         },
         {
           id: 5,
           title: "Full-Funnel Impact",
-          describation:
+          description:
             "Great content isn’t just for your website. It powers email, social media, ads, and even sales enablement.",
         },
       ],
@@ -3464,7 +3464,7 @@ export const ServicePageDataOfDigitalMarketing = [
     approchSection: {
       title: "Why Choose ",
       blueTitle: "Harichtech for Email Marketing?",
-      describation: [
+      description: [
         "At Harichtech, we treat email marketing like a craft. Every word, every button, and every workflow is designed with intent.",
       ],
       points: {
@@ -3491,13 +3491,13 @@ export const ServicePageDataOfDigitalMarketing = [
     serviceSections: {
       title: "Our Email ",
       blueTitle: " Marketing Services",
-      describation:
+      description:
         "We provide end-to-end email marketing from strategy and design to automation and performance tracking. Whether you're starting from scratch or optimizing an existing list, we’ve got you covered.",
       cards: [
         {
           id: 1,
           title: "Email Marketing Strategy",
-          describation:
+          description:
             "We begin with a custom plan tailored to your audience, goals, products, and platforms. The goal? A strategy that supports acquisition, retention, and growth.",
           points: {
             title: "Includes:",
@@ -3513,7 +3513,7 @@ export const ServicePageDataOfDigitalMarketing = [
         {
           id: 2,
           title: "Email Copywriting & Design",
-          describation:
+          description:
             "We craft high-performing, on-brand content that speaks directly to your audience and looks good across devices.",
           points: {
             title: "We create:",
@@ -3529,7 +3529,7 @@ export const ServicePageDataOfDigitalMarketing = [
         {
           id: 3,
           title: "Drip Campaigns & Automations",
-          describation:
+          description:
             "Automate your workflows to engage users at scale without losing that personal touch.",
           points: {
             title: "Popular workflows include:",
@@ -3546,7 +3546,7 @@ export const ServicePageDataOfDigitalMarketing = [
         {
           id: 4,
           title: "Newsletters & Brand Communication",
-          describation:
+          description:
             "Stay top of mind with a consistent, curated, and engaging newsletter strategy that builds community and loyalty.",
           points: {
             title: "Services include:",
@@ -3562,7 +3562,7 @@ export const ServicePageDataOfDigitalMarketing = [
         {
           id: 5,
           title: "Email List Building & Management",
-          describation:
+          description:
             "We help you grow, clean, and maintain a high-quality subscriber list that improves deliverability and performance.",
           points: {
             title: "We handle:",
@@ -3578,7 +3578,7 @@ export const ServicePageDataOfDigitalMarketing = [
         {
           id: 6,
           title: "Email Audit & Optimization",
-          describation:
+          description:
             "Already running email campaigns? We’ll review your current setup and provide actionable insights to improve open rates, CTRs, and conversions.",
           points: {
             title: "Audit includes:",
@@ -3596,24 +3596,24 @@ export const ServicePageDataOfDigitalMarketing = [
     developmentProcessSection: {
       title: "Our Content Creation Process at",
       blueTitle: "Harichtech",
-      describation:
+      description:
         "We blend research, creativity, and strategic alignment to produce content that hits the mark every time.",
       banner: Helper.DigitalMarketingProcess,
     },
     techStacksSection: {
       title: "Tools & Platforms",
       blueTitle: "We Use",
-      describation: "",
+      description: "",
       cards: [
         {
           id: 1,
           title: "Research & SEO",
-          describation: ["SEMrush", "Ahrefs", "Ubersuggest", "Google Trends"],
+          description: ["SEMrush", "Ahrefs", "Ubersuggest", "Google Trends"],
         },
         {
           id: 2,
           title: "Writing & Editing",
-          describation: [
+          description: [
             "Grammarly",
             "Hemingway",
             "ChatGPT (for drafts/ideation)",
@@ -3623,12 +3623,12 @@ export const ServicePageDataOfDigitalMarketing = [
         {
           id: 3,
           title: "Optimization",
-          describation: ["SurferSEO", "Clearscope", "Yoast SEO"],
+          description: ["SurferSEO", "Clearscope", "Yoast SEO"],
         },
         {
           id: 4,
           title: "Planning",
-          describation: [
+          description: [
             "Trello, Notion",
             "Airtable (for editorial calendars)",
           ],
@@ -3636,56 +3636,56 @@ export const ServicePageDataOfDigitalMarketing = [
         {
           id: 5,
           title: "Design",
-          describation: ["Adobe Illustrator", "Figma", "Canva"],
+          description: ["Adobe Illustrator", "Figma", "Canva"],
         },
       ],
     },
     IndustriesSection: {
       title: "Industries We",
       blueTitle: "Serve",
-      describation:
+      description:
         "Email marketing isn’t one-size-fits-all. We build strategies suited to your industry’s user behavior, sales cycles, and messaging style.",
       cards: [
         {
           id: 1,
           icons: Helper.RealEstateSvg,
           title: "Real Estate",
-          describation:
+          description:
             "We develop property portals, CRM integrations, booking systems, and map-based project listings optimized for lead generation and customer experience.",
         },
         {
           id: 2,
           icons: Helper.EcommoarceSvg,
           title: "E-commerce",
-          describation:
+          description:
             "React.js enables us to create fast, scalable e-commerce platforms with advanced product filtering, dynamic cart management, and secure payment integration.",
         },
         {
           id: 3,
           icons: Helper.FinanceSvg,
           title: "Finance & Fintech",
-          describation:
+          description:
             "We build secure, responsive dashboards and platforms for financial institutions, with real-time data visualization and transaction tracking.",
         },
         {
           id: 4,
           icons: Helper.HealthcareSvg,
           title: "Healthcare / Pharma ",
-          describation:
+          description:
             "HIPAA-compliant web applications, teleconsultation portals, and digital patient management systems built with React.js for performance and reliability.",
         },
         {
           id: 5,
           icons: Helper.EducationSvg,
           title: "Education",
-          describation:
+          description:
             "Custom learning management systems (LMS), content delivery platforms, and student portals with interactive modules and assessments.",
         },
         {
           id: 6,
           icons: Helper.RetailStore,
           title: "Retail",
-          describation:
+          description:
             "Inventory management dashboards, sales tools, and consumer-facing web interfaces optimized for real-time updates and mobile-first interactions.",
         },
       ],
@@ -3721,35 +3721,35 @@ export const ServicePageDataOfDigitalMarketing = [
       ponits: [
         {
           title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
-          describation: [
+          description: [
             "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
             "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
           ],
         },
         {
           title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
-          describation: [
+          description: [
             "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
             "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
           ],
         },
         {
           title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
-          describation: [
+          description: [
             "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
             "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
           ],
         },
         {
           title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
-          describation: [
+          description: [
             "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
             "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
           ],
         },
         {
           title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
-          describation: [
+          description: [
             "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
             "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
           ],
@@ -3768,7 +3768,7 @@ export const ServicePageDataOfDigitalMarketing = [
     buildMorden: {
       title: "Turn Data Into Direction.",
       subtitle: "Measure What Matters.",
-      describation: [
+      description: [
         "At Harichtech, we believe that decisions backed by data are the ones that drive real results. Our Analytics & Reporting services are designed to help you uncover actionable insights, track performance across every touchpoint, and continuously optimize your digital presence.",
         "Whether you're running campaigns, launching new features, or scaling user engagement, knowing what works (and what doesn't) is the key to sustainable growth.",
         "We go beyond surface-level metrics. Our team builds reporting systems that are clear, insightful, and aligned with your specific goals, so you always know where you stand, and where to go next.",
@@ -3777,37 +3777,37 @@ export const ServicePageDataOfDigitalMarketing = [
     },
     whyChooseUsSection: {
       title: "Why Email Marketing Still Works",
-      describation:
+      description:
         "It’s easy to overlook email but the numbers tell a different story. Email marketing continues to deliver one of the highest ROI across all digital marketing channels.",
       cards: [
         {
           id: 1,
           title: "Direct & Personal",
-          describation:
+          description:
             "Email lands directly in your audience’s inbox-no algorithm, no ad fatigue. It’s permission-based, trusted, and personal.",
         },
         {
           id: 2,
           title: "Cost-Effective & Scalable",
-          describation:
+          description:
             "With the right setup, you can engage hundreds or millions of subscribers without increasing your costs significantly.",
         },
         {
           id: 3,
           title: "Measurable & Trackable",
-          describation:
+          description:
             "Every open, click, and conversion is measurable. You’ll always know what’s working and how to improve.",
         },
         {
           id: 4,
           title: "Fully Customizable",
-          describation:
+          description:
             "From design to tone to timing, email allows for deep personalization, segmentation, and A/B testing.",
         },
         {
           id: 5,
           title: "Full-Funnel Impact",
-          describation:
+          description:
             "Great content isn’t just for your website. It powers email, social media, ads, and even sales enablement.",
         },
       ],
@@ -3815,7 +3815,7 @@ export const ServicePageDataOfDigitalMarketing = [
     approchSection: {
       title: "Why Choose ",
       blueTitle: "Harichtech for Email Marketing?",
-      describation: [
+      description: [
         "At Harichtech, we treat email marketing like a craft. Every word, every button, and every workflow is designed with intent.",
       ],
       points: {
@@ -3843,13 +3843,13 @@ export const ServicePageDataOfDigitalMarketing = [
     serviceSections: {
       title: "Our Analytics & Reporting  ",
       blueTitle: "  Services",
-      describation:
+      description:
         "From setup and integration to reporting and optimization, we provide complete visibility into how your digital efforts are performing and where to improve.",
       cards: [
         {
           id: 1,
           title: "Analytics Setup & Configuration",
-          describation:
+          description:
             "We ensure that your analytics tools are properly implemented, configured, and tracking the data that actually matters to your business.",
           points: {
             title: "Includes:",
@@ -3866,7 +3866,7 @@ export const ServicePageDataOfDigitalMarketing = [
         {
           id: 2,
           title: "Custom Dashboard Development",
-          describation:
+          description:
             "We build real-time dashboards that help your team make faster, more informed decisions with only the data that’s relevant to you.",
           points: {
             title: "Platforms we build in:",
@@ -3882,7 +3882,7 @@ export const ServicePageDataOfDigitalMarketing = [
         {
           id: 3,
           title: "Campaign Performance Tracking",
-          describation:
+          description:
             "For every campaign you run ads, social posts, emails - we track its reach, engagement, conversions, and contribution to your business goals.",
           points: {
             title: "Tracking Includes:",
@@ -3899,7 +3899,7 @@ export const ServicePageDataOfDigitalMarketing = [
         {
           id: 4,
           title: "E-commerce & Product Analytics",
-          describation:
+          description:
             "If you sell online, we help you understand product performance, customer behavior, and sales trends in detail.",
           points: {
             title: "We track:",
@@ -3915,7 +3915,7 @@ export const ServicePageDataOfDigitalMarketing = [
         {
           id: 5,
           title: "User Behavior Analysis",
-          describation:
+          description:
             "We analyze how users navigate your website or app- what they click, where they drop off, and how to reduce friction.",
           points: {
             title: "Tools we use:",
@@ -3930,7 +3930,7 @@ export const ServicePageDataOfDigitalMarketing = [
         {
           id: 6,
           title: "Reporting & Insights",
-          describation:
+          description:
             "We deliver monthly or weekly reports with actionable insights-not just numbers. You get clarity on what happened, why it matters, and what to do next.",
           points: {
             title: "Reports Include:",
@@ -3947,24 +3947,24 @@ export const ServicePageDataOfDigitalMarketing = [
     developmentProcessSection: {
       title: "Our Approach to ",
       blueTitle: "Harichtech Analytics",
-      describation:
+      description:
         "We don’t just track everything-we track what matters. Our analytics approach is centered on clarity, alignment, and actionable next steps.",
       banner: Helper.DigitalMarketingProcess,
     },
     techStacksSection: {
       title: "Tools & Platforms",
       blueTitle: "We Use",
-      describation: "",
+      description: "",
       cards: [
         {
           id: 1,
           title: "Research & SEO",
-          describation: ["SEMrush", "Ahrefs", "Ubersuggest", "Google Trends"],
+          description: ["SEMrush", "Ahrefs", "Ubersuggest", "Google Trends"],
         },
         {
           id: 2,
           title: "Writing & Editing",
-          describation: [
+          description: [
             "Grammarly",
             "Hemingway",
             "ChatGPT (for drafts/ideation)",
@@ -3974,12 +3974,12 @@ export const ServicePageDataOfDigitalMarketing = [
         {
           id: 3,
           title: "Optimization",
-          describation: ["SurferSEO", "Clearscope", "Yoast SEO"],
+          description: ["SurferSEO", "Clearscope", "Yoast SEO"],
         },
         {
           id: 4,
           title: "Planning",
-          describation: [
+          description: [
             "Trello, Notion",
             "Airtable (for editorial calendars)",
           ],
@@ -3987,56 +3987,56 @@ export const ServicePageDataOfDigitalMarketing = [
         {
           id: 5,
           title: "Design",
-          describation: ["Adobe Illustrator", "Figma", "Canva"],
+          description: ["Adobe Illustrator", "Figma", "Canva"],
         },
       ],
     },
     IndustriesSection: {
       title: "Industries We",
       blueTitle: "Serve",
-      describation:
+      description:
         "We tailor our analytics reporting to industry-specific KPIs and performance goals—ensuring relevance and actionability.",
       cards: [
         {
           id: 1,
           icons: Helper.RealEstateSvg,
           title: "Real Estate",
-          describation:
+          description:
             "We develop property portals, CRM integrations, booking systems, and map-based project listings optimized for lead generation and customer experience.",
         },
         {
           id: 2,
           icons: Helper.EcommoarceSvg,
           title: "E-commerce",
-          describation:
+          description:
             "React.js enables us to create fast, scalable e-commerce platforms with advanced product filtering, dynamic cart management, and secure payment integration.",
         },
         {
           id: 3,
           icons: Helper.FinanceSvg,
           title: "Finance & Fintech",
-          describation:
+          description:
             "We build secure, responsive dashboards and platforms for financial institutions, with real-time data visualization and transaction tracking.",
         },
         {
           id: 4,
           icons: Helper.HealthcareSvg,
           title: "Healthcare / Pharma ",
-          describation:
+          description:
             "HIPAA-compliant web applications, teleconsultation portals, and digital patient management systems built with React.js for performance and reliability.",
         },
         {
           id: 5,
           icons: Helper.EducationSvg,
           title: "Education",
-          describation:
+          description:
             "Custom learning management systems (LMS), content delivery platforms, and student portals with interactive modules and assessments.",
         },
         {
           id: 6,
           icons: Helper.RetailStore,
           title: "Retail",
-          describation:
+          description:
             "Inventory management dashboards, sales tools, and consumer-facing web interfaces optimized for real-time updates and mobile-first interactions.",
         },
       ],
@@ -4072,35 +4072,35 @@ export const ServicePageDataOfDigitalMarketing = [
       ponits: [
         {
           title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
-          describation: [
+          description: [
             "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
             "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
           ],
         },
         {
           title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
-          describation: [
+          description: [
             "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
             "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
           ],
         },
         {
           title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
-          describation: [
+          description: [
             "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
             "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
           ],
         },
         {
           title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
-          describation: [
+          description: [
             "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
             "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
           ],
         },
         {
           title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
-          describation: [
+          description: [
             "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
             "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
           ],
@@ -4119,7 +4119,7 @@ export const ServicePageDataOfDigitalMarketing = [
     buildMorden: {
       title: "Build Authentic Reach",
       subtitle: "Through Credible Voices",
-      describation: [
+      description: [
         "In today’s digital ecosystem, people trust people - not just ads. Influencer marketing leverages this truth by tapping into the authentic voices your audience already listens to.",
         "At Harichtech, we help you connect with the right creators, build campaigns that feel genuine, not scripted and turn social influence into measurable business results. Whether you're looking to build brand awareness, drive traffic, or boost conversions, our influencer marketing services deliver campaigns that resonate and scale.",
         "We don’t just find influencers, we build strategic collaborations that align with your brand, values, and goals.",
@@ -4128,37 +4128,37 @@ export const ServicePageDataOfDigitalMarketing = [
     },
     whyChooseUsSection: {
       title: "Why Influencer Marketing Works?",
-      describation:
+      description:
         "Influencer marketing isn’t just a trend, it's a proven channel that combines the power of word-of-mouth with the reach of digital. The right influencer can introduce your brand to thousands (or millions) in a way that feels personal and credible.",
       cards: [
         {
           id: 1,
           title: "Human Connection",
-          describation:
+          description:
             "Audiences trust real people more than brands. Influencers act as trusted peers, making recommendations feel like advice not ads.",
         },
         {
           id: 2,
           title: "Niche Reach",
-          describation:
+          description:
             "From micro-communities to industry leaders, influencers help you reach highly targeted audiences that traditional ads often miss.",
         },
         {
           id: 3,
           title: "Content at Scale",
-          describation:
+          description:
             "Influencer partnerships generate valuable user-generated content (UGC) that can be repurposed across your channels.",
         },
         {
           id: 4,
           title: "Measurable ROI",
-          describation:
+          description:
             "Track every view, click, share, and sale-making it easy to justify investment and scale what works.",
         },
         {
           id: 5,
           title: "Social Proof & Brand Lift",
-          describation:
+          description:
             "Being featured by trusted creators improves perception, increases trust, and drives long-term brand equity.",
         },
       ],
@@ -4166,7 +4166,7 @@ export const ServicePageDataOfDigitalMarketing = [
     approchSection: {
       title: "Why Choose ",
       blueTitle: "Harichtech for Influencer Marketing?",
-      describation: [
+      description: [
         "Influencer marketing is more than just finding someone with followers, it’s about finding the right voice to represent your brand.",
       ],
       points: {
@@ -4194,13 +4194,13 @@ export const ServicePageDataOfDigitalMarketing = [
     serviceSections: {
       title: "Our Influencer Marketing ",
       blueTitle: "Services",
-      describation:
+      description:
         "We provide a 360° influencer marketing solution from strategy and matchmaking to campaign execution and reporting. We act as your dedicated influencer marketing partner, not just a talent broker.",
       cards: [
         {
           id: 1,
           title: "Influencer Strategy & Planning",
-          describation:
+          description:
             "We design influencer marketing strategies that align with your objectives whether it’s launching a product, increasing app downloads, or driving e-commerce sales.",
           points: {
             title: "What’s included:",
@@ -4216,7 +4216,7 @@ export const ServicePageDataOfDigitalMarketing = [
         {
           id: 2,
           title: "Influencer Discovery & Vetting",
-          describation:
+          description:
             "Finding the right influencer is more than looking at follower counts. We match you with creators who align with your niche, values, and engagement goals.",
           points: {
             title: "We evaluate:",
@@ -4232,7 +4232,7 @@ export const ServicePageDataOfDigitalMarketing = [
         {
           id: 3,
           title: "Outreach, Negotiation & Contracting",
-          describation:
+          description:
             "We handle all communications, from outreach and relationship-building to rate negotiation and compliance.",
           points: {
             title: "What we manage:",
@@ -4248,7 +4248,7 @@ export const ServicePageDataOfDigitalMarketing = [
         {
           id: 4,
           title: "Campaign Management",
-          describation:
+          description:
             "From concept to content delivery, we coordinate every element of your campaign, ensuring it launches smoothly and delivers impact.",
           points: {
             title: "Campaign types we manage:",
@@ -4264,7 +4264,7 @@ export const ServicePageDataOfDigitalMarketing = [
         {
           id: 5,
           title: "Content Collaboration & Review",
-          describation:
+          description:
             "We guide influencers on brand messaging, voice, and expectations while preserving their authentic tone and style.",
           points: {
             title: "We provide:",
@@ -4280,7 +4280,7 @@ export const ServicePageDataOfDigitalMarketing = [
         {
           id: 6,
           title: "Performance Tracking & Reporting",
-          describation:
+          description:
             "Every campaign ends with insights. We deliver data-rich reports so you can see what worked, what didn’t, and what to do next.",
           points: {
             title: "Reports Include:",
@@ -4298,24 +4298,24 @@ export const ServicePageDataOfDigitalMarketing = [
     developmentProcessSection: {
       title: "Our Approach to Influencer ",
       blueTitle: "Marketing",
-      describation:
+      description:
         "We approach influencer marketing as a strategic storytelling tool, not just a shoutout platform. Every campaign is built on clarity, collaboration, and performance.",
       banner: Helper.DigitalMarketingProcess,
     },
     techStacksSection: {
       title: "Tools & Platforms",
       blueTitle: "We Use",
-      describation: "",
+      description: "",
       cards: [
         {
           id: 1,
           title: "Influencer discovery & CRM",
-          describation: ["Upfluence ", "Aspire", "Tagger"],
+          description: ["Upfluence ", "Aspire", "Tagger"],
         },
         {
           id: 2,
           title: "Trend analysis & outreach",
-          describation: [
+          description: [
             "BuzzSumo ",
             "Heepsy",
           
@@ -4324,12 +4324,12 @@ export const ServicePageDataOfDigitalMarketing = [
         {
           id: 3,
           title: "Fraud detection performance tracking",
-          describation: ["GRIN ", "HypeAuditor"],
+          description: ["GRIN ", "HypeAuditor"],
         },
         {
           id: 4,
           title: "Conversion & traffic tracking",
-          describation: [
+          description: [
             "Google Analytics ",
             "UTM Parameters",
           ],
@@ -4337,61 +4337,61 @@ export const ServicePageDataOfDigitalMarketing = [
         {
           id: 5,
           title: "Creative direction templates",
-          describation: ["Canva",  "Figma"],
+          description: ["Canva",  "Figma"],
         },
         {
           id: 6,
           title: "Social analytics integration",
-          describation: ["Sprout Social" ,  "Meta Suite"],
+          description: ["Sprout Social" ,  "Meta Suite"],
         },
       ],
     },
     IndustriesSection: {
       title: "Industries We",
       blueTitle: "Serve",
-      describation:
+      description:
         "Influencer marketing works across industries when you pair the right voice with the right message. We build tailored influencer programs across:",
       cards: [
         {
           id: 1,
           icons: Helper.RealEstateSvg,
           title: "Real Estate",
-          describation:
+          description:
             "We develop property portals, CRM integrations, booking systems, and map-based project listings optimized for lead generation and customer experience.",
         },
         {
           id: 2,
           icons: Helper.EcommoarceSvg,
           title: "E-commerce",
-          describation:
+          description:
             "React.js enables us to create fast, scalable e-commerce platforms with advanced product filtering, dynamic cart management, and secure payment integration.",
         },
         {
           id: 3,
           icons: Helper.FinanceSvg,
           title: "Finance & Fintech",
-          describation:
+          description:
             "We build secure, responsive dashboards and platforms for financial institutions, with real-time data visualization and transaction tracking.",
         },
         {
           id: 4,
           icons: Helper.HealthcareSvg,
           title: "Healthcare / Pharma ",
-          describation:
+          description:
             "HIPAA-compliant web applications, teleconsultation portals, and digital patient management systems built with React.js for performance and reliability.",
         },
         {
           id: 5,
           icons: Helper.EducationSvg,
           title: "Education",
-          describation:
+          description:
             "Custom learning management systems (LMS), content delivery platforms, and student portals with interactive modules and assessments.",
         },
         {
           id: 6,
           icons: Helper.RetailStore,
           title: "Retail",
-          describation:
+          description:
             "Inventory management dashboards, sales tools, and consumer-facing web interfaces optimized for real-time updates and mobile-first interactions.",
         },
       ],
@@ -4427,35 +4427,35 @@ export const ServicePageDataOfDigitalMarketing = [
       ponits: [
         {
           title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
-          describation: [
+          description: [
             "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
             "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
           ],
         },
         {
           title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
-          describation: [
+          description: [
             "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
             "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
           ],
         },
         {
           title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
-          describation: [
+          description: [
             "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
             "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
           ],
         },
         {
           title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
-          describation: [
+          description: [
             "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
             "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
           ],
         },
         {
           title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
-          describation: [
+          description: [
             "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
             "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
           ],

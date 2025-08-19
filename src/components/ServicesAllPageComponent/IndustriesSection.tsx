@@ -5,7 +5,7 @@ import { StaticImageData } from 'next/image';
 interface CardArray{
      id: number;
     title: string;
-    describation: string;
+    description: string;
     icons:StaticImageData
 }
 
@@ -47,7 +47,7 @@ export const IndustriesSection: React.FC<IndustriesSectionProps> = ({
               <IndustryCard
                 key={card.id}
                 title={card.title}
-                description={card.describation}
+                description={card.description}
                 icons={card.icons}
               />
             ))}

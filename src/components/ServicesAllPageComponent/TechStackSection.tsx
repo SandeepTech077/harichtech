@@ -4,7 +4,7 @@ import { TechStackCard } from "./TechStackCard";
 interface CardArray {
   id: number;
   title: string;
-  describation: string[];
+  description: string[];
 }
 
 interface TechStackSectionProps {
@@ -45,7 +45,7 @@ export const TechStackSection: React.FC<TechStackSectionProps> = ({
               <TechStackCard
                 key={card.id}
                 title={card.title}
-                technologies={card.describation}
+                technologies={card.description}
               />
             ))}
           </div>

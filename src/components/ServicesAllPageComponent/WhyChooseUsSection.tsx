@@ -4,7 +4,7 @@ import { FeatureCard } from './FeatureCard';
 interface CardArray{
 id: number;
     title: string;
-    describation: string;
+    description: string;
 }
 
 interface WhyChooseUsSectionProps {
@@ -37,7 +37,7 @@ export const WhyChooseUsSection: React.FC<WhyChooseUsSectionProps> = ({
               <FeatureCard
                 key={card.id}
                 title={card.title}
-                description={card.describation}
+                description={card.description}
               />
             ))}
           </div>

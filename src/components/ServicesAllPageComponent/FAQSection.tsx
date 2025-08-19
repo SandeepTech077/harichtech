@@ -6,7 +6,7 @@ import Image from "next/image";
 
 interface PointArray {
   title: string;
-  describation: string[];
+  description: string[];
 }
 
 interface FAQSectionProps {
@@ -31,7 +31,7 @@ export const FAQSection: React.FC<FAQSectionProps> = ({ title, faqs, svg }) => {
                 <FAQItem
                   key={index}
                   title={faq.title}
-                  descriptions={faq.describation}
+                  descriptions={faq.description}
                 />
               ))}
             </div>

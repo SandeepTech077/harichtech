@@ -18,26 +18,6 @@ export async function generateStaticParams() {
   }));
 }
 
-export async function generateMetadata({
-  params,
-}: {
-  params: Promise<{ slug: string }>;
-}) {
-  const { slug } = await params;
-  const service = ServicePageDataWebDevelopement.find((s) => s.type === slug);
-
-  if (!service) {
-    return {
-      title: "Service Not Found",
-    };
-  }
-
-  return {
-    title: service.bannerTitle.title,
-    description: service.buildMorden.describation[0],
-  };
-}
-
 interface ServicePageProps {
   params: Promise<{
     slug: string;
@@ -49,6 +29,7 @@ export default async function ServicePage({ params }: ServicePageProps) {
   const service = ServicePageDataWebDevelopement.find((s) => s.type === slug);
 
   if (!service) {
+    // This will show the not found page
     notFound();
   }
 
@@ -63,20 +44,20 @@ export default async function ServicePage({ params }: ServicePageProps) {
         <BuildModernSection
           title={service.buildMorden.title}
           subtitle={service.buildMorden.subtitle}
-          descriptions={service.buildMorden.describation}
+          descriptions={service.buildMorden.description}
           svgIcon={service.buildMorden.svgIcon}
         />
       </div>
 
       <WhyChooseUsSection
         title={service.whyChooseUsSection.title}
-        description={service.whyChooseUsSection.describation}
+        description={service.whyChooseUsSection.description}
         cards={service.whyChooseUsSection.cards}
       />
       <ApprouchSection
         title={service.approchSection.title}
         blueTitle={service.approchSection.blueTitle}
-        descriptions={service.approchSection.describation}
+        descriptions={service.approchSection.description}
         rightImage={service.approchSection.rightImage}
         points={service.approchSection.points}
       />
@@ -89,25 +70,25 @@ export default async function ServicePage({ params }: ServicePageProps) {
         <ServicesSection
           title={service.serviceSections.title}
           blueTitle={service.serviceSections.blueTitle}
-          description={service.serviceSections.describation}
+          description={service.serviceSections.description}
           cards={service.serviceSections.cards}
         />
         <DevelopmentProcess
           title={service.developmentProcessSection.title}
           blueTitle={service.developmentProcessSection.blueTitle}
-          description={service.developmentProcessSection.describation}
+          description={service.developmentProcessSection.description}
           banner={service.developmentProcessSection.banner}
         />
         <TechStackSection
           title={service.techStacksSection.title}
           blueTitle={service.techStacksSection.blueTitle}
-          description={service.techStacksSection.describation}
+          description={service.techStacksSection.description}
           cards={service.techStacksSection.cards}
         />
         <IndustriesSection
           title={service.IndustriesSection.title}
           blueTitle={service.IndustriesSection.blueTitle}
-          description={service.IndustriesSection.describation}
+          description={service.IndustriesSection.description}
           cards={service.IndustriesSection.cards}
         />
         <PortfolioSection
