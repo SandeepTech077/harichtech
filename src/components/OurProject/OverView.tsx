@@ -19,7 +19,6 @@ interface OverViewProps {
 const OverView: React.FC<OverViewProps> = ({ data }) => {
   const { leftSideImage, rightContent } = data;
   const { title, titleTextColor, describation } = rightContent;
-  console.log(data,"titleTextColor")
 
   // Separate last word to color it
   const words = title.split(' ');

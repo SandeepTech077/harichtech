@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-import { Menu, X, ChevronDown,ChevronRight } from "lucide-react";
+import { Menu, X, ChevronDown, ChevronRight } from "lucide-react";
 import { navItems, socialLinks } from "./navLinks";
 import MobileSidebar from "./MobileSidebar";
 import MobilePhoneIcon from "../../../public/SVG/mobile-phone.svg";
@@ -19,14 +19,15 @@ const Header = () => {
   const [scrolled, setScrolled] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
   const [activeSubmenu, setActiveSubmenu] = useState<string | null>(null);
-  const pathname = usePathname();
-  
-  const handleSubmenuEnter = (subItemName: string) => {
-    setActiveSubmenu(subItemName);
-  };
+  const [submenuTimeout, setSubmenuTimeout] = useState<NodeJS.Timeout | null>(
+    null
+  );
 
-  const handleSubmenuLeave = () => {
-    setActiveSubmenu(null);
+  const pathname = usePathname();
+
+  const handleSubmenuEnter = (subItemName: string) => {
+    if (submenuTimeout) clearTimeout(submenuTimeout);
+    setActiveSubmenu(subItemName);
   };
 
   useEffect(() => {
@@ -66,26 +67,38 @@ const Header = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const handleMouseLeave = () => {
+    const timeout = setTimeout(() => {
+      setActiveDropdown(null);
+      setActiveSubmenu(null);
+    }, 200); // 200ms delay
+    setSubmenuTimeout(timeout);
+  };
+
   const handleMouseEnter = (itemName: string) => {
+    if (submenuTimeout) clearTimeout(submenuTimeout);
     setActiveDropdown(itemName);
   };
 
-  const handleMouseLeave = () => {
-    setActiveDropdown(null);
+  const handleSubmenuLeave = () => {
+    const timeout = setTimeout(() => {
+      setActiveSubmenu(null);
+    }, 200); // optional: you can remove this if only parent needs delay
+    setSubmenuTimeout(timeout);
   };
 
   // Close dropdown when clicking outside
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       const target = event.target as HTMLElement;
-      if (!target.closest('.dropdown-container')) {
+      if (!target.closest(".dropdown-container")) {
         setActiveDropdown(null);
       }
     };
 
     if (activeDropdown) {
-      document.addEventListener('click', handleClickOutside);
-      return () => document.removeEventListener('click', handleClickOutside);
+      document.addEventListener("click", handleClickOutside);
+      return () => document.removeEventListener("click", handleClickOutside);
     }
   }, [activeDropdown]);
 
@@ -187,7 +200,7 @@ const Header = () => {
         className={`fixed left-0 right-0 w-full z-40 transition-all duration-300 ${
           scrolled
             ? "top-0 bg-white shadow-lg"
-            : "sm:top-12 top-0 bg-white/95 backdrop-blur-md shadow-lg"
+            : "sm:top-12 top-0 bg-white/98 backdrop-blur-md shadow-lg"
         }`}
       >
         <div className="w-full max-w-full">
@@ -201,7 +214,7 @@ const Header = () => {
               />
             </Link>
 
-             <nav className="hidden lg:flex items-center flex-1 justify-center">
+            <nav className="hidden lg:flex items-center flex-1 justify-center">
               <ul className="flex items-center space-x-6 xl:space-x-8">
                 {navItems.map((item) => {
                   const isActive = pathname === item.path;
@@ -213,11 +226,12 @@ const Header = () => {
                     <li
                       key={item.name}
                       className="group relative dropdown-container"
-                      onMouseEnter={() => hasDropdown && handleMouseEnter(item.name)}
+                      onMouseEnter={() =>
+                        hasDropdown && handleMouseEnter(item.name)
+                      }
                       onMouseLeave={handleMouseLeave}
                     >
                       {isIndustries ? (
-                        // Industries - no link, just hover
                         <div
                           className={`text-sm lg:text-lg font-semibold transition-all duration-300 relative py-2 px-1 whitespace-nowrap flex items-center cursor-default ${
                             isActive
@@ -241,7 +255,7 @@ const Header = () => {
                           href={item.path}
                           className={`text-sm lg:text-lg font-semibold transition-all duration-300 relative py-2 px-1 whitespace-nowrap flex items-center ${
                             isActive
-                              ? "text-transparent bg-gradient-to-r from-[#2058FF] to-[#004BC2] bg-clip-text after:absolute after:bottom-0 after:left-1/2 after:transform after:-translate-x-1/2 after:w-1.5 after:h-1.5 after:bg-gradient-to-r after:from-[#2058FF] after:to-[#004BC2] after:rounded-full"
+                              ? "text-transparent bg-gradient-to-r from-[#2058FF] to-[#004BC2] bg-clip-text "
                               : "text-gray-700 group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-[#2058FF] group-hover:to-[#004BC2] group-hover:bg-clip-text"
                           }`}
                         >
@@ -259,33 +273,38 @@ const Header = () => {
 
                       {/* Dropdown Menu */}
                       {hasDropdown && isDropdownActive && (
-                        <div 
+                        <div
                           className="absolute top-full left-1/2 transform -translate-x-1/2 mt-2 w-80 bg-white rounded-xl shadow-2xl border border-gray-100 py-4 z-[60]"
                           onMouseEnter={() => setActiveDropdown(item.name)}
                           onMouseLeave={handleMouseLeave}
                         >
                           <div className="grid gap-2 px-4">
                             {item.data?.map((subItem) => {
-                              const hasChildren = subItem.children && subItem.children.length > 0;
-                              const isSubmenuActive = activeSubmenu === subItem.name;
+                              const hasChildren =
+                                subItem.children && subItem.children.length > 0;
+                              const isSubmenuActive =
+                                activeSubmenu === subItem.name;
 
                               return (
-                                <div 
-                                  key={subItem.name} 
+                                <div
+                                  key={subItem.name}
                                   className="group/item relative"
-                                  onMouseEnter={() => hasChildren && handleSubmenuEnter(subItem.name)}
+                                  onMouseEnter={() =>
+                                    hasChildren &&
+                                    handleSubmenuEnter(subItem.name)
+                                  }
                                   onMouseLeave={handleSubmenuLeave}
                                 >
                                   {hasChildren ? (
                                     // Item with children - no link, just hover
                                     <div className="flex items-center p-3 rounded-lg hover:bg-gray-50 transition-colors cursor-default">
                                       {subItem.icon && (
-                                        <div className="flex-shrink-0 w-10 h-10 bg-blue-50 rounded-lg flex items-center justify-center mr-3 group-hover/item:bg-blue-100 transition-colors">
+                                        <div className="flex-shrink-0 w-10 h-10 rounded-lg flex items-center justify-center mr-3 transition-colors">
                                           <Image
                                             src={subItem.icon}
                                             alt={`${subItem.name} icon`}
-                                            width={20}
-                                            height={20}
+                                            width={30}
+                                            height={30}
                                           />
                                         </div>
                                       )}
@@ -293,11 +312,11 @@ const Header = () => {
                                         <h4 className="font-semibold text-gray-900 text-sm">
                                           {subItem.name}
                                         </h4>
-                                        <p className="text-xs text-gray-500 mt-1">
-                                          {subItem.children.length} services available
-                                        </p>
                                       </div>
-                                      <ChevronRight size={16} className="text-gray-400" />
+                                      <ChevronRight
+                                        size={20}
+                                        className="text-gray-400"
+                                      />
                                     </div>
                                   ) : (
                                     // Regular subitem with link
@@ -307,12 +326,12 @@ const Header = () => {
                                       onClick={() => setActiveDropdown(null)}
                                     >
                                       {subItem.icon && (
-                                        <div className="flex-shrink-0 w-10 h-10 bg-blue-50 rounded-lg flex items-center justify-center mr-3 group-hover/link:bg-blue-100 transition-colors">
+                                        <div className="flex-shrink-0 w-10 h-10 rounded-lg flex items-center justify-center mr-3 group-hover/link:bg-blue-100 transition-colors">
                                           <Image
                                             src={subItem.icon}
                                             alt={`${subItem.name} icon`}
-                                            width={20}
-                                            height={20}
+                                            width={30}
+                                            height={30}
                                           />
                                         </div>
                                       )}
@@ -326,9 +345,11 @@ const Header = () => {
 
                                   {/* Grandchild Menu (appears to the right) */}
                                   {hasChildren && isSubmenuActive && (
-                                    <div 
+                                    <div
                                       className="absolute top-0 left-full ml-1 w-80 bg-white rounded-xl shadow-2xl border border-gray-100 py-4 z-[70]"
-                                      onMouseEnter={() => setActiveSubmenu(subItem.name)}
+                                      onMouseEnter={() =>
+                                        setActiveSubmenu(subItem.name)
+                                      }
                                       onMouseLeave={handleSubmenuLeave}
                                     >
                                       <div className="grid gap-2 px-4">

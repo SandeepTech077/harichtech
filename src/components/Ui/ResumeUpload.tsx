@@ -26,7 +26,6 @@ const ResumeUpload: React.FC<ResumeUploadProps> = ({ data }) => {
       const target = e.target as HTMLInputElement;
       const file = target.files?.[0];
       if (file) {
-        console.log("Selected file:", file.name);
         handleFileUpload(file);
       }
     };
@@ -38,8 +37,6 @@ const ResumeUpload: React.FC<ResumeUploadProps> = ({ data }) => {
       const formData = new FormData();
       formData.append("resume", file);
 
-      // Upload logic goes here
-      console.log("File ready for upload:", file.name);
     } catch (error) {
       console.error("Error uploading file:", error);
     }

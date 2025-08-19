@@ -45,7 +45,7 @@ const MainTitleSection: React.FC<Props> = ({ data }) => {
       </video>
 
       {/* Main Content */}
-      <div className="z-10 px-4 w-full max-w-4xl text-center flex flex-col items-center justify-center space-y-6">
+      <div className="z-10 px-4 w-full mt-20 max-w-4xl text-center flex flex-col items-center justify-center space-y-6">
         {/* Marquee */}
         <div className="w-full overflow-hidden rounded-full border border-gray-300 shadow-lg max-w-5xl mx-auto bg-white/10 backdrop-blur-sm">
           <motion.div

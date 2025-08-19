@@ -1,65 +1,60 @@
-"use client";
-
-import Image from "next/image";
 import React from "react";
-import Title from "../Title";
-
-// Define the prop types
+import Image, { StaticImageData } from "next/image";
+import Title from "@/components/Title";
 interface AboutUsProps {
-  data: {
+  aboutUs: {
     title: string;
     subTitle: string;
-    describation: string;
-    btnText: string;
-    rightImage: string;
+    descrobation: string[];
+    BannerImg: StaticImageData;
   };
 }
 
-const AboutUs: React.FC<AboutUsProps> = ({ data }) => {
+const AboutUs: React.FC<AboutUsProps> = ({ aboutUs }) => {
   return (
-    <section className="w-full bg-white">
-      <div className=" mx-auto flex flex-col-reverse md:flex-row gap-10">
-        <div className="w-full md:w-1/2 space-y-6 text-center md:text-left">
-          <span className="inline-block  text-gray-900 px-5 py-2 rounded-lg font-semibold text-sm">
-            <Title title={data.title} />
+    <section className="relative w-full mx-auto">
+      {/* Title and navigation */}
+      <div className="flex  md:justify-center mb-6">
+        <Title title={aboutUs.title} />
+      </div>
+
+      {/* Main content */}
+      <div className="md:text-center mb-10 relative z-10">
+        <h1 className="text-[32px] md:text-[48px] font-bold mb-4">
+          {aboutUs.subTitle.split("Harichtech")[0]}
+          <br />
+          <span className="mt-2 inline-block bg-gradient-to-l from-[#2058FF] to-[#004BC2] bg-clip-text text-transparent">
+            Harichtech
           </span>
+        </h1>
 
-          <h2 className="text-[32px] md:text-[48px] font-bold leading-snug">
-
-            {data.subTitle.split(" ").map((word, i) => (
-              <span
-                key={i}
-                className={
-                  word.toLowerCase() === "harichtech"
-                    ? "text-[#2058FF]"
-                    : undefined
-                }
-              >
-                {word}{" "}
-              </span>
-            ))}
-          </h2>
-
-          {/* Description */}
-          <p className="text-black  w-max-4xl text-[16px] md:text-[20px]">
-            {data.describation}
-          </p>
-
-          {/* Button */}
-          <button className="flex items-center gap-2 bg-gradient-to-l from-[#2058FF] to-[#004BC2] hover:opacity-90 transition px-6 py-3 text-white rounded-[10px] text-[16px] font-semibold shadow-md mx-auto md:mx-0">
-            {data.btnText}
-          </button>
+        <div className="mx-auto">
+          {aboutUs.descrobation.map((paragraph, index) => (
+            <p
+              key={index}
+              className="text-gray-700 mb-4 text-left md:text-center"
+            >
+              {paragraph}
+            </p>
+          ))}
         </div>
+      </div>
 
-        {/* Right Image */}
-        <div className="w-full md:w-1/2 flex justify-center">
+      {/* Banner Image */}
+      <div className=" rounded-lg overflow-hidden mb-10">
+        {aboutUs.BannerImg ? (
           <Image
-            src={data.rightImage}
-            alt="About Harichtech"
-            className="w-full h-auto lg:h-[70vh] object-contain"
-            priority
+            src={aboutUs.BannerImg}
+            alt="About Us Banner"
+            width={1232}
+            height={479}
+            className="w-full h-auto"
           />
-        </div>
+        ) : (
+          <div className="w-full h-64 bg-gray-200 flex items-center justify-center">
+            <span className="text-gray-500">1232 × 479</span>
+          </div>
+        )}
       </div>
     </section>
   );

@@ -6,7 +6,6 @@ import path from 'path';
 export async function POST(request: NextRequest) {
   try {
     const formData = await request.formData();
-    console.log(formData,'hello ')
     
     const fullName = formData.get('fullName') as string;
     const email = formData.get('email') as string;
@@ -14,7 +13,7 @@ export async function POST(request: NextRequest) {
     const jobTitle = formData.get('jobTitle') as string;
     const resume = formData.get('resume') as File;
 
-    if (!fullName || !email || !phone || !resume) {
+    if (!fullName || !email ||!jobTitle || !phone || !resume) {
       return NextResponse.json(
         { error: 'Missing required fields' },
         { status: 400 }
@@ -57,15 +56,6 @@ export async function POST(request: NextRequest) {
     const buffer = Buffer.from(await resume.arrayBuffer());
     await writeFile(filePath, buffer);
 
-
-    console.log('New job application:', {
-      fullName,
-      email,
-      phone,
-      jobTitle,
-      resumePath: filePath,
-      submittedAt: new Date().toISOString()
-    });
 
 
     return NextResponse.json(

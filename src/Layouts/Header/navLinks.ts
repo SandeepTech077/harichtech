@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import WebIcon from "../../../public/SVG/header/web-development.svg"
 import UIUX from "../../../public/SVG/header/uiux-desgin.svg"
 import DigitalMarketing from "../../../public/SVG/header/digital-market.svg"
@@ -24,9 +25,12 @@ export interface NavItem {
 export interface MainNavItem {
   name: string;
   path: string;
+  url?: string;
+  dropdown?: any;
   hasDropdown?: boolean;
   data?: NavItem[];
 }
+
 
 export const servicesData: NavItem[] = [
   {
@@ -34,12 +38,12 @@ export const servicesData: NavItem[] = [
     icon: WebIcon,
     path: "/services/web-and-app-development",
     children: [
-      { name: "React.js Development", path: "/services/web-development/react" },
-      { name: "Node.js Development", path: "/services/web-development/node" },
-      { name: "Next.js Development", path: "/services/web-development/next" },
+      { name: "React.js Development", path: "/services/development/react" },
+      { name: "Node.js Development", path: "/services/development/node" },
+      { name: "Next.js Development", path: "/services/development/next" },
       {
         name: "React Native Development",
-        path: "/services/mobile-development/react-native",
+        path: "/services/development/react-native",
       },
     ],
   },
@@ -48,8 +52,8 @@ export const servicesData: NavItem[] = [
     icon: UIUX,
     path: "/services/ui-ux-design",
     children: [
-      { name: "Website Design", path: "/services/ui-ux-design/website" },
-      { name: "Mobile App Design", path: "/services/ui-ux-design/mobile-app" },
+      { name: "Website Design", path: "/services/ui-ux-design/website-design" },
+      { name: "Mobile App Design", path: "/services/ui-ux-design/mobile-app-design" },
       {
         name: "Product Design",
         path: "/services/ui-ux-design/product-design",
@@ -62,24 +66,24 @@ export const servicesData: NavItem[] = [
     icon: DigitalMarketing,
     path: "/services/digital-marketing",
     children: [
-      { name: "SEO", path: "/services/digital-marketing/seo" },
-      { name: "PPC Advertisement", path: "/services/digital-marketing/ppc" },
+      { name: "SEO", path: "/services/digital-marketing/search-engine-optimization-services" },
+      { name: "PPC Advertisement", path: "/services/digital-marketing/ppc-advertising-services" },
       {
         name: "Social Media Marketing",
-        path: "/services/digital-marketing/social-media",
+        path: "/services/digital-marketing/social-media-marketing-services",
       },
       {
         name:"Content Marking",
-        path: "/services/digital-marketing/content-marketing",
+        path: "/services/digital-marketing/content-marketing-services",
       },
-      { name: "Email Marketing", path: "/services/digital-marketing/email" },
+      { name: "Email Marketing", path: "/services/digital-marketing/email-marketing-services" },
       {
         name: "Analytics & Reporting",
-        path: "/services/digital-marketing/analytics",
+        path: "/services/digital-marketing/analytics-reporting",
       },
       {
         name: "Influencer Marketing",
-        path: "/services/digital-marketing/influencer-marketing",
+        path: "/services/digital-marketing/influencer-marketing-services",
       }
     ],
   },

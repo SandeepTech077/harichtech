@@ -53,7 +53,6 @@ export default function FormData({ data }: FormDataProps) {
     
     // Simulate API call
     setTimeout(() => {
-      console.log('Form submitted:', formState);
       setIsSubmitting(false);
       // Reset form or show success message
     }, 2000);

@@ -7,11 +7,10 @@ import ClientsComponent from "../components/HomePageComponents/ClientsComponent"
 import AboutStatus from "@/components/AboutUsComponents/AboutStatus";
 import OurClients from "@/components/HomePageComponents/OurClients";
 import GetInTouch from "@/components/Ui/GetInTouch";
-import AboutUs from "@/components/AboutUsComponents/AboutUs";
+import AboutUs from "@/components/HomePageComponents/AboutUs";
 
 export default function Home() {
   const { ourStatus } = AboutUsData;
-  console.log(HomePagedata,"HomePagedata")
 
   return (
     <main className="w-full overflow-hidden">

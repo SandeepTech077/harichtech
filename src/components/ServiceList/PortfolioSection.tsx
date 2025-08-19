@@ -28,13 +28,14 @@ const PortfolioSection: React.FC<PortfolioSectionProps> = ({
           <div className="inline-block bg-gray-100 px-4 py-2 rounded-md mb-3">
             <Title title={portfolioData.title} />
           </div>
-          <h2 className="text-3xl font-bold">
+          <h2 className="text-6xl font-bold">
             Discover Our{" "}
-            <span className="text-blue-500">
-              Digital
-              <br />
-              Masterpieces
-            </span>
+          <span className="bg-gradient-to-l from-[#2058FF] to-[#004BC2] bg-clip-text text-transparent">
+  Digital
+  <br />
+  Masterpieces
+</span>
+
           </h2>
         </div>
         <div className="hidden lg:block">
