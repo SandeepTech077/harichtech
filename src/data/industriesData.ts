@@ -7,7 +7,7 @@ export const industiesData = [
     mainSection: {
       title: "Digital Transformation for ",
       blueTitle: "the Real Estate Industry",
-      describations: [
+      descriptions: [
         "The real estate sector is evolving rapidly, driven by the need for digital-first solutions that enhance operational efficiency, client engagement, and overall market reach. Today’s property buyers, investors, and tenants expect seamless, technology-enabled experiences, whether they are searching for properties, scheduling visits, or completing transactions.",
         "At Harichtech, we deliver bespoke real estate IT solutions designed to meet the unique needs of real estate developers, agents, property management companies, and brokerage firms. Our goal is to help real estate businesses streamline processes, digitize services, and build a stronger connection with their customers through intelligent, scalable, and user-centric technology platforms.",
       ],
@@ -142,7 +142,7 @@ export const industiesData = [
     realEstateGrowth: {
       title: "Results That Drive ",
       blueTitle: "Real Estate Growth",
-      describations: [
+      descriptions: [
         "Our technology solutions have empowered real estate clients to increase inquiry rates, shorten sales cycles, and improve customer retention. Whether launching a new portal, upgrading legacy systems, or creating immersive property experiences, Harichtech enables digital transformation that delivers measurable impact.",
       ],
       bullets: null,
