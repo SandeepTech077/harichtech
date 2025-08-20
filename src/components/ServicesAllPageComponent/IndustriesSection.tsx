@@ -12,7 +12,7 @@ interface CardArray{
 interface IndustriesSectionProps {
   title: string;
   blueTitle: string;
-  description: string;
+  description?: string | null;
   cards: CardArray[]
  
 

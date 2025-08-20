@@ -58,7 +58,7 @@ export default function ServicePage({ params }: ServicePageProps) {
         <ServeSection
           title={service.serveSection.title}
           blueTitle={service.serveSection.blueTitle}
-          descriptions={service.serveSection.descriptions ?? []}
+          descriptions={service.serveSection.description ?? []}
           cards={service.serveSection.cards}
         />
       </div>
