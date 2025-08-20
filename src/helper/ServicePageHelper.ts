@@ -21,6 +21,10 @@ import InfluencerMarketingSvg from "../../public/Image/ServicesPagesAllImages/bu
 
 //Approch
 import ReactApproch from "../../public/Image/ServicesPagesAllImages/approchImg/react.png"
+import NodejsApproch from "../../public/Image/ServicesPagesAllImages/approchImg/nodejs.png"
+import NextjsApproch from "../../public/Image/ServicesPagesAllImages/approchImg/nextjs.png"
+import ReactNative from "../../public/Image/ServicesPagesAllImages/approchImg/react-native.png"
+import WebsiteDesign from "../../public/Image/ServicesPagesAllImages/approchImg/website-design.png"
 import MobileAPPDesign from "../../public/Image/ServicesPagesAllImages/approchImg/mobile-app.png"
 import ProductDesign from "../../public/Image/ServicesPagesAllImages/approchImg/product-design.png"
 import SEOServices from "../../public/Image/ServicesPagesAllImages/approchImg/seo.png"
@@ -85,6 +89,10 @@ export const Helper = {
 
   //Aprorch
   ReactApproch,
+  NodejsApproch,
+  NextjsApproch,
+  ReactNative,
+  WebsiteDesign,
   MobileAPPDesign,
   ProductDesign,
   SEOServices,

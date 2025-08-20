@@ -357,7 +357,7 @@ export const ServicePageDataWebDevelopement = [
         "Our team is experienced in delivering both high-traffic backend systems and complex internal APIs using Node.js. From rapid MVP development to full-scale enterprise solutions, we provide end-to-end support",
       ],
       points: null,
-      rightImage: Helper.ReactApproch,
+      rightImage: Helper.NodejsApproch,
     },
     connectUsSection: {
       title: "Start Your Node.Js Project with HarichTech",
@@ -645,7 +645,7 @@ export const ServicePageDataWebDevelopement = [
         "Our team is experienced in delivering both high-performance static sites and complex, server-rendered applications using Next.js. From rapid MVP development to full-scale enterprise solutions, we provide end-to-end support.",
       ],
       points: null,
-      rightImage: Helper.ReactApproch,
+      rightImage: Helper.NextjsApproch,
     },
     connectUsSection: {
       title: "Start Your Next.Js Project with HarichTech",
@@ -925,7 +925,7 @@ export const ServicePageDataWebDevelopement = [
         "Our team is experienced in delivering both cross-platform mobile apps and complex, native-like experiences using React Native. From rapid MVP development to full-scale enterprise solutions, we provide end-to-end support.",
       ],
       points: null,
-      rightImage: Helper.ReactApproch,
+      rightImage: Helper.ReactNative,
     },
     connectUsSection: {
       title: "Start Your Mobile App Journey with Harichtech",
@@ -1227,7 +1227,7 @@ export const ServicePageDataOfUIUx = [
         "Our team is experienced in delivering both high-impact marketing websites and complex, data-driven platforms. From rapid prototyping to full-scale enterprise solutions, we provide end-to-end support.",
       ],
       points: null,
-      rightImage: Helper.ReactApproch,
+      rightImage: Helper.WebsiteDesign,
     },
     connectUsSection: {
       title: "Let’s Build a Website That Works for You",

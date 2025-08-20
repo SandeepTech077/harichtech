@@ -1,6 +1,15 @@
 
 
-import MainImage from "../../public/Image/indutries/main-image/img.jpg"
+import RealEstate from "../../public/Image/indutries/main-image/real-estate.png";
+import Ecommerce  from "../../public/Image/indutries/main-image/e-commerce.png";
+import Finance from "../../public/Image/indutries/main-image/finance.png";
+import HealthCare from "../../public/Image/indutries/main-image/healthcare.png";
+import Education from "../../public/Image/indutries/main-image/education.png";
+import Retail from "../../public/Image/indutries/main-image/retail.png";
+
+
+
+
 
 //profile
 import yashProfile from "../../public/Image/indutries/profiles/yash-brahmbhatt.jpg"
@@ -26,21 +35,25 @@ import EducationSvg from "../../public/Image/ServicesPagesAllImages/serve/educti
 import RetailStore from "../../public/Image/ServicesPagesAllImages/serve/real-estate.svg"
 
 export const Helper = {
-    MainImage,
-    RightTick,
-    yashProfile,
-    InsightProject,
-    AarambhProject,
-MicrobrangeProject,
+  RealEstate,
+  Ecommerce,
+  Finance,
+  HealthCare,
+  Education,
+  Retail,
 
-RealEstateSvg,
-EcommoarceSvg,
-FinanceSvg,
-HealthcareSvg,
-EducationSvg,
-RetailStore,
+  RightTick,
+  yashProfile,
+  InsightProject,
+  AarambhProject,
+  MicrobrangeProject,
 
-FaqSvg
+  RealEstateSvg,
+  EcommoarceSvg,
+  FinanceSvg,
+  HealthcareSvg,
+  EducationSvg,
+  RetailStore,
 
-
-}
+  FaqSvg,
+};
