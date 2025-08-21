@@ -14,7 +14,7 @@ const nunito = Nunito({
 export const metadata: Metadata = {
     metadataBase: new URL("https://harichtech.com"), 
   title: {
-    default: "Harich Tech - Digital Product Development",
+    default: "Harich Tech",
     template: "%s | Harich Tech"
   },
   description:
