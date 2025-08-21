@@ -1,107 +1,126 @@
-import { industiesData } from "@/data/industriesData";
-import { notFound } from "next/navigation";
+import { GrowthSection } from "@/components/Industries/GrowthSection";
 import { MainSection } from "@/components/Industries/MainSection";
 import { ServeSection } from "@/components/Industries/ServeSection";
-import { WhyChooseUsSection } from "@/components/ServicesAllPageComponent/WhyChooseUsSection";
-import { ServicesSection } from "@/components/ServicesAllPageComponent/ServicesSection";
 import { ConnectUsSection } from "@/components/ServicesAllPageComponent/ConnectUsSection";
-import { GrowthSection } from "@/components/Industries/GrowthSection";
-import { PortfolioSection } from "@/components/ServicesAllPageComponent/PortfolioSection";
-import { IndustriesSection } from "@/components/ServicesAllPageComponent/IndustriesSection";
 import { FAQSection } from "@/components/ServicesAllPageComponent/FAQSection";
+import { IndustriesSection } from "@/components/ServicesAllPageComponent/IndustriesSection";
+import { PortfolioSection } from "@/components/ServicesAllPageComponent/PortfolioSection";
+import { ServicesSection } from "@/components/ServicesAllPageComponent/ServicesSection";
+import { WhyChooseUsSection } from "@/components/ServicesAllPageComponent/WhyChooseUsSection";
+import { industiesData } from "@/data/industriesData";
+import { Metadata } from 'next';
+import { notFound } from 'next/navigation';
 
 export async function generateStaticParams() {
-  return industiesData.map((service) => ({
-    slug: service.type,
+  return industiesData.map((industry) => ({
+    slug: industry.type, 
   }));
 }
 
-export async function generateMetadata({
-  params,
-}: {
-  params: { slug: string };
-}) {
-  const { slug } = params;
-  const service = industiesData.find((s) => s.type === slug);
+interface PageProps {
+  params: Promise<{
+    slug: string; 
+  }>;
+}
 
-  if (!service) {
-    return { title: "Service Not Found" };
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+  const { slug } = await params; // Await the params first
+  const industry = industiesData.find((item) => item.type === slug);
+  
+  if (!industry) {
+    return {
+      title: 'Industry Not Found',
+      description: 'The requested industry page could not be found.',
+    };
   }
 
+  const industryTitle = industry.mainSection.title + industry.mainSection.blueTitle;
+  
   return {
-    title: `${service.mainSection.title}${service.mainSection.blueTitle}`,
+    title: `${industryTitle} | Harichtech`,
+    description: industry.mainSection.descriptions[0]?.substring(0, 160) + '...',
+    keywords: `${industry.type}, digital transformation, technology solutions, Harichtech`,
+    openGraph: {
+      title: `${industryTitle} | Harichtech`,
+      description: industry.mainSection.descriptions[0],
+      type: 'website',
+    },
   };
 }
 
-interface ServicePageProps {
-  params: { slug: string };
-}
+export default async function IndustryPage({ params }: PageProps) {
+  const { slug } = await params; // Await the params first
+  const industryData = industiesData.find((item) => item.type === slug);
+  console.log(industryData,"industryData")
 
-export default function ServicePage({ params }: ServicePageProps) {
-  const { slug } = params;
-  const service = industiesData.find((s) => s.type === slug);
-
-  if (!service) {
+  if (!industryData) {
     notFound();
   }
 
   return (
     <main className="py-36">
-      {/* 🔹 Pass data to MainSection */}
       <div className="px-4 sm:px-6 lg:px-16">
         <MainSection
-          title={service.mainSection.title}
-          blueTitle={service.mainSection.blueTitle}
-          descriptions={service.mainSection.descriptions ?? []}
-          rightSideImage={service.mainSection.rightSideImage}
+          title={industryData.mainSection.title}
+          blueTitle={industryData.mainSection.blueTitle}
+          descriptions={industryData.mainSection.descriptions ?? []}
+          rightSideImage={industryData.mainSection.rightSideImage}
         />
+
         <ServeSection
-          title={service.serveSection.title}
-          blueTitle={service.serveSection.blueTitle}
-          descriptions={service.serveSection.description ?? []}
-          cards={service.serveSection.cards}
+          title={industryData.serveSection.title}
+          blueTitle={industryData.serveSection.blueTitle}
+          descriptions={industryData.serveSection.description ?? []}
+          cards={industryData.serveSection.cards}
         />
       </div>
+
       <WhyChooseUsSection
-        title={service.whyChooseUsSection.title}
-        description={service.whyChooseUsSection.description}
-        cards={service.whyChooseUsSection.cards}
+        title={industryData.whyChooseUsSection.title}
+        description={industryData.whyChooseUsSection.description}
+        cards={industryData.whyChooseUsSection.cards}
       />
+
       <div className="px-4 sm:px-6 lg:px-16">
         <ServicesSection
-          title={service.serviceSections.title}
-          blueTitle={service.serviceSections.blueTitle}
-          description={service.serviceSections.description}
-          cards={service.serviceSections.cards}
+          title={industryData.serviceSections.title}
+          blueTitle={industryData.serviceSections.blueTitle}
+          description={industryData.serviceSections.description}
+          cards={industryData.serviceSections.cards}
         />
+
         <ConnectUsSection
-          title={service.connectUsSection.title}
-          descriptions={service.connectUsSection.descriptions}
-          btnTitle={service.connectUsSection.btnTitle}
+          title={industryData.connectUsSection.title}
+          descriptions={industryData.connectUsSection.descriptions}
+          btnTitle={industryData.connectUsSection.btnTitle}
         />
+
         <GrowthSection
-          title={service.realEstateGrowth.title}
-          blueTitle={service.realEstateGrowth.blueTitle}
-          descriptions={service.realEstateGrowth.descriptions}
-          bullets={service.realEstateGrowth.bullets}
-          testimonial={service.realEstateGrowth.testimonial}
+          title={industryData.realEstateGrowth.title}
+          blueTitle={industryData.realEstateGrowth.blueTitle}
+          descriptions={industryData.realEstateGrowth.descriptions}
+          bullets={industryData.realEstateGrowth.bullets}
+          testimonial={industryData.realEstateGrowth.testimonial}
         />
+
         <PortfolioSection
-          title={service.portfolioSection.title}
-          blueTitle={service.portfolioSection.blueTitle}
-          projects={service.portfolioSection.projects}
-          buttonTitle={service.portfolioSection.btnTitle}
+          title={industryData.portfolioSection.title}
+          blueTitle={industryData.portfolioSection.blueTitle}
+          projects={industryData.portfolioSection.projects}
+          buttonTitle={industryData.portfolioSection.btnTitle}
         />
+
         <IndustriesSection
-          title={service.IndustriesSection.title}
-          blueTitle={service.IndustriesSection.blueTitle}
-          description={service.IndustriesSection.description}
-          cards={service.IndustriesSection.cards}
+          title={industryData.IndustriesSection.title}
+          blueTitle={industryData.IndustriesSection.blueTitle}
+          description={industryData.IndustriesSection.description}
+          cards={industryData.IndustriesSection.cards}
         />
+
         <FAQSection
-          title={service.faqSection.title}
-          faqs={service.faqSection.ponits}
-          svg={service.faqSection.svgimage}
+          title={industryData.faqSection.title}
+          faqs={industryData.faqSection.ponits}
+          svg={industryData.faqSection.svgimage}
         />
       </div>
     </main>
