@@ -25,7 +25,7 @@ interface PortfolioProps {
 
 const Portfolio: React.FC<PortfolioProps> = ({ design }) => {
   return (
-    <div className="px-4 lg:px-20 mx-auto px-4 ">
+    <div className="px-4 lg:px-20 mx-auto  ">
       {/* Header Section */}
       <div className="text-center mb-16">
         <div className="w-50 item-center justify-center mx-auto mb-10">
@@ -48,7 +48,12 @@ const Portfolio: React.FC<PortfolioProps> = ({ design }) => {
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 ">
         {design.Images.map((item) => (
-          <Link href={`/projects/${item.id}`} key={item.id}>
+          <Link 
+          href={`/projects/${item.id}`} 
+          key={item.id}
+          target="_blank"
+          rel="noopener noreferrer"
+          >
             <div className="group hover:scale-105 transition duration-300 cursor-pointer bg-[#F3F3F3] rounded-lg">
               <div className=" rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden  relative ">
                 {/* Right and Bottom gradient border */}
@@ -81,7 +86,7 @@ const Portfolio: React.FC<PortfolioProps> = ({ design }) => {
                     >
                       {item.title}
                     </h3>
-                    <p className="text-gray-600">{item.subTitle}</p>
+                    <p className="text-gray-600 mb-15">{item.subTitle}</p>
                   </div>
 
                   <div className="relative">

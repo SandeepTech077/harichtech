@@ -17,7 +17,7 @@ import WorkImage4 from "../../public/Image/HomePageImage/Work/Image4.png";
 import WorkImage5 from "../../public/Image/HomePageImage/Work/Image5.png";
 
 //testimonials
-import profile from "../../public/Image/HomePageImage/TestimonialImage/profile.png";
+import profile from "../../public/Image/HomePageImage/TestimonialImage/profile.jpg";
 import yash from "../../public/Image/HomePageImage/TestimonialImage/yash.png";
 import snehal from "../../public/Image/HomePageImage/TestimonialImage/snehal.png";
 import darshil from "../../public/Image/HomePageImage/TestimonialImage/darshil.png";
@@ -36,11 +36,28 @@ import StepImage2 from "../../public/SVG/Process/Step2.svg";
 import StepImage3 from "../../public/SVG/Process/Step3.svg";
 import StepImage4 from "../../public/SVG/Process/Step4.svg";
 
-// Servece
-import performamce from "../../public/Image/HomePageImage/Service/Svg/Performance.svg"
-import working from "../../public/Image/HomePageImage/Service/Svg/communication-plan.svg"
-import technology from "../../public/Image/HomePageImage/Service/Svg/Technology.svg"
-import cretive from "../../public/Image/HomePageImage/Service/Svg/Creative-Head.svg"
+// Service Image
+import UIUXImage from "../../public/Image/HomePageImage/Service/Image/ui-ux.png";
+import MobileAppDevelopment from "../../public/Image/HomePageImage/Service/Image/mobile-app-development.png";
+import WebDevelopment from "../../public/Image/HomePageImage/Service/Image/web-development.png";
+import DigitalMarketing from "../../public/Image/HomePageImage/Service/Image/digital-marketing.png";
+
+// Service Svg
+import AdobeIllustratorSvg from "../../public/Image/HomePageImage/Service/Svg/adobe-illustrator.svg";
+import AdobeXdSvg from "../../public/Image/HomePageImage/Service/Svg/adobe-xd.svg";
+import FigmaSvg from "../../public/Image/HomePageImage/Service/Svg/figma.svg";
+import AdobePhotoshopSvg from "../../public/Image/HomePageImage/Service/Svg/adobe-photoshop.svg";
+import FlutterSvg from "../../public/Image/HomePageImage/Service/Svg/flutter.svg";
+import AndroidSvg from "../../public/Image/HomePageImage/Service/Svg/android.svg";
+import ReactSvg from "../../public/Image/HomePageImage/Service/Svg/react.svg";
+import AppleSvg from "../../public/Image/HomePageImage/Service/Svg/apple.svg";
+import NodejsSvg from "../../public/Image/HomePageImage/Service/Svg/nodejs.svg";
+import AngularSvg from "../../public/Image/HomePageImage/Service/Svg/angular.svg";
+import FacebookSvg from "../../public/Image/HomePageImage/Service/Svg/facebook.svg";
+import InstaSvg from "../../public/Image/HomePageImage/Service/Svg/insta.svg";
+import LinkdinSvg from "../../public/Image/HomePageImage/Service/Svg/linkedin.svg";
+import GoogleAnalticsSvg from "../../public/Image/HomePageImage/Service/Svg/google-analytics.svg";
+import MetaSvg from "../../public/Image/HomePageImage/Service/Svg/meta.svg";
 
 
 //Cliwnt Logo
@@ -63,6 +80,14 @@ import clientLogo16 from "../../public/Image/HomePageImage/CLientLogo/logo-16.sv
 
 import AboutRightImage from "../../public/Image/HomePageImage/aboutus/right-image.svg";
 
+//icons
+import RealEstateSvg from "../../public/Image/ServicesPagesAllImages/serve/real-estate.svg"
+import EcommoarceSvg from "../../public/Image/ServicesPagesAllImages/serve/e-commerce.svg"
+import FinanceSvg from "../../public/Image/ServicesPagesAllImages/serve/finance.svg"
+import HealthcareSvg from "../../public/Image/ServicesPagesAllImages/serve/healthcare.svg"
+import EducationSvg from "../../public/Image/ServicesPagesAllImages/serve/eduction.svg"
+import RetailStore from "../../public/Image/ServicesPagesAllImages/serve/real-estate.svg"
+
 export const Helper = {
   KnownImage,
   DesignerSvg,
@@ -70,11 +95,29 @@ export const Helper = {
   MarketingSvg,
   SupportSvg,
 
-  //Service
-  performamce,
-  working,
-  technology,
-  cretive,
+  //Service Image
+  UIUXImage,
+  MobileAppDevelopment,
+  WebDevelopment,
+  DigitalMarketing,
+
+  // Service Svg
+  AdobeIllustratorSvg,
+  AdobeXdSvg,
+  FigmaSvg,
+  AdobePhotoshopSvg,
+  FlutterSvg,
+  AndroidSvg,
+  ReactSvg,
+  AppleSvg,
+  NodejsSvg,
+  AngularSvg,
+  FacebookSvg,
+  InstaSvg,
+  LinkdinSvg,
+  GoogleAnalticsSvg,
+  MetaSvg,
+
 
   //Work
   WorkImage1,
@@ -124,8 +167,15 @@ export const Helper = {
 
 
   //aboutus
-  AboutRightImage
+  AboutRightImage,
   
-
+  // industry we serve
+  
+  RealEstateSvg,
+  EcommoarceSvg,
+  FinanceSvg,
+  HealthcareSvg,
+  EducationSvg,
+  RetailStore,
 
 };

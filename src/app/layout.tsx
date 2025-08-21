@@ -12,10 +12,10 @@ const nunito = Nunito({
 })
 
 export const metadata: Metadata = {
-    metadataBase: new URL("https://harichtech.com"), 
+  metadataBase: new URL("https://harichtech.com"),
   title: {
     default: "Harich Tech - Digital Product Development",
-    template: "%s | Harich Tech"
+    template: "%s | Harich Tech",
   },
   description:
     "Harichtech is a digital product development company specializing in custom web and mobile solutions. We help startups and businesses grow with cutting-edge technology, scalable architecture, and beautiful UI/UX design.",
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     "custom software",
     "startup solutions",
     "UI/UX design",
-    "scalable architecture"
+    "scalable architecture",
   ],
   authors: [{ name: "Harich Tech" }],
   creator: "Harich Tech",
@@ -37,47 +37,48 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
-      'max-video-preview': -1,
-      'max-image-preview': 'large',
-      'max-snippet': -1,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
     },
   },
   icons: {
     icon: [
       { url: "/Logo/small-logo.svg" },
-      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
-      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" }
+      { url: "/Logo/small-logo.svg", sizes: "32x32", type: "image/png" },
+      { url: "/Logo/small-logo.svg", sizes: "16x16", type: "image/png" },
     ],
-    apple: "/apple-touch-icon.png",
+    apple: "/Logo/small-logo.svg",
   },
   manifest: "/site.webmanifest",
   openGraph: {
-    type: 'website',
-    locale: 'en_US',
-    url: 'https://harichtech.com',
-    siteName: 'Harich Tech',
-    title: 'Harich Tech - Digital Product Development',
-    description: 'Custom web and mobile solutions for startups and businesses. Cutting-edge technology, scalable architecture, and beautiful UI/UX design.',
+    type: "website",
+    locale: "en_US",
+    url: "https://harichtech.com",
+    siteName: "Harich Tech",
+    title: "Harich Tech - Digital Product Development",
+    description:
+      "Custom web and mobile solutions for startups and businesses. Cutting-edge technology, scalable architecture, and beautiful UI/UX design.",
     images: [
       {
-        url: '/og-image.jpg',
+        url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: 'Harich Tech - Digital Product Development',
-      }
+        alt: "Harich Tech - Digital Product Development",
+      },
     ],
   },
   twitter: {
-    card: 'summary_large_image',
-    title: 'Harich Tech - Digital Product Development',
-    description: 'Custom web and mobile solutions for startups and businesses.',
-    images: ['/og-image.jpg'],
-    creator: '@harichtech',
+    card: "summary_large_image",
+    title: "Harich Tech - Digital Product Development",
+    description: "Custom web and mobile solutions for startups and businesses.",
+    images: ["/og-image.jpg"],
+    creator: "@harichtech",
   },
   alternates: {
-    canonical: 'https://harichtech.com',
+    canonical: "https://harichtech.com",
   },
-  category: 'technology',
+  category: "technology",
 };
 
 export default function RootLayout({

@@ -9,30 +9,30 @@ export const Career = {
   hiring: {
     title: "Current Job Openings",
     hirings: [
-      {
-        title: "Node.js Developer",
-        experiance: "Experience : 02 Years",
-        opening: "Open Position : 02",
-        btnText: "Apply Now",
-      },
-      {
-        title: "React.js Developer",
-        experiance: "Experience : 03 Years",
-        opening: "Open Position : 01",
-        btnText: "Apply Now",
-      },
+      // {
+      //   title: "Node.js Developer",
+      //   experiance: "Experience : 02 Years",
+      //   opening: "Open Position : 02",
+      //   btnText: "Apply Now",
+      // },
+      // {
+      //   title: "React.js Developer",
+      //   experiance: "Experience : 03 Years",
+      //   opening: "Open Position : 01",
+      //   btnText: "Apply Now",
+      // },
       {
         title: "BDE (Bussiness Development Executive)",
         experiance: "Experience : 02 Years",
         opening: "Open Position : 01",
         btnText: "Apply Now",
       },
-      {
-        title: "Digital Marketing Specialist",
-        experiance: "Experience : 02 Years",
-        opening: "Open Position : 01",
-        btnText: "Apply Now",
-      },
+      // {
+      //   title: "Digital Marketing Specialist",
+      //   experiance: "Experience : 02 Years",
+      //   opening: "Open Position : 01",
+      //   btnText: "Apply Now",
+      // },
     ],
   },
   upload: {

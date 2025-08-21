@@ -1,6 +1,7 @@
 import React from 'react';
-import Button from '../Button';
-
+import Link from 'next/link';
+import Arrow from "../../../public/SVG/blue-arrow.svg"
+import Image from 'next/image';
 interface GetInTouchProps {
   title?: string;
   subtitle?: string;
@@ -8,24 +9,38 @@ interface GetInTouchProps {
 }
 
 const GetInTouch: React.FC<GetInTouchProps> = ({
-  title = "Get in touch with us",
-  subtitle = "Connect with like-minded professionals",
-  buttonText = "Connect with us",
+  title = "Ready to Accelerate Your Digital Jour ney?",
+  subtitle = "Let's discuss your vision and turn it into a powerful digital reality.",
+  buttonText = "Let’s Connect",
 }) => {
   return (
-    <div className="w-full mx-auto p-6 sm:p-8 lg:p-10 border border-blue-200 rounded-3xl mb-10">
-      <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-4">
+    <div className="w-full mx-auto p-6 sm:p-8 lg:p-10 bg-blue-600 border-none rounded-xl  mb-10">
+      <div className="flex flex-col lg:flex-row items-start  lg:items-center justify-between gap-4">
         <div className="flex-1">
-          <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-black mb-2">
+          <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-white mb-2">
             {title}
           </h3>
-          <p className="text-sm sm:text-base text-black leading-relaxed">
+          <p className="text-sm sm:text-base text-white leading-relaxed">
             {subtitle}
           </p>
         </div>
 
         <div className="mt-4 lg:mt-0">
-          <Button text={buttonText} href='/contact-us'/>
+          <Link
+            href="/contact-us"
+            className="inline-flex items-center justify-center gap-2 px-6 py-3 font-medium rounded-[10px] bg-white transition-all"
+          >
+            <span className="bg-gradient-to-l from-[#2575FC] to-[#0052D3] bg-clip-text text-transparent">
+              {buttonText}
+            </span>
+            <Image
+              src={Arrow}
+              alt="Arrow"
+              width={16}
+              height={16}
+              className="w-4 h-4"
+            />
+          </Link>
         </div>
       </div>
     </div>

@@ -5,11 +5,17 @@ import Image, { StaticImageData } from "next/image";
 import { motion, useInView } from "framer-motion";
 import Title from "../Title";
 
+interface ServiceIcon {
+  id: number;
+  image: StaticImageData; // since you're importing SVGs/images from Helper
+}
+
 interface ServiceItem {
   id: number;
   title: string;
   describation: string;
   Image: StaticImageData;
+  icons: ServiceIcon[]; // ✅ added icons field
 }
 
 interface HomeServicesProps {
@@ -21,8 +27,8 @@ interface HomeServicesProps {
   };
 }
 
-const HomeServices: React.FC<HomeServicesProps> = ({ data }) => {
-  const { title, describation, serviceLists } = data;
+const  HomeServices: React.FC<HomeServicesProps> = ({ data }) => {
+  const { title, Subtitle ,describation, serviceLists } = data;
 
   // Scroll animation refs
   const sectionRef = useRef(null);
@@ -136,37 +142,52 @@ const HomeServices: React.FC<HomeServicesProps> = ({ data }) => {
         variants={staggerContainer}
         initial="hidden"
         animate={isGridInView ? "visible" : "hidden"}
-        className=" mx-auto"
+        className="mx-auto"
       >
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {serviceLists.map((service) => (
             <motion.div
               key={service.id}
               variants={cardVariant}
-              className="group bg-[#F1F1F1] rounded-2xl p-8 hover:bg-white hover:shadow-lg transition-all duration-300 cursor-pointer"
+              className="group bg-[#F1F1F1] rounded-2xl p-8 hover:bg-white hover:shadow-lg transition-all duration-300 cursor-pointer flex items-center gap-6"
             >
-              {/* Service Icon */}
-              <div className="mb-6 rounded-full bg-white hover:bg-[#F1F1F1] w-16 h-16 flex items-center justify-center text-center">
-                <div className="w-12 h-12 flex items-center justify-center">
-                  <Image
-                    src={service.Image}
-                    alt={service.title}
-                    className="w-8 h-8 object-contain text-black"
-                    width={32}
-                    height={32}
-                  />
-                </div>
+              {/* Left Side: Service Image */}
+              <div className="flex-shrink-0 w-50 h-full rounded-xl overflow-hidden bg-white flex items-center justify-center">
+                <Image
+                  src={service.Image}
+                  alt={service.title}
+                  className="w-full h-full object-cover"
+                />
               </div>
 
-              {/* Title */}
-              <h3 className="text-2xl font-bold mb-4 text-gray-900 group-hover:text-blue-600 transition-colors duration-300">
-                {service.title}
-              </h3>
+              {/* Right Side: Content */}
+              <div className="flex-1">
+                {/* Title */}
+                <h3 className="text-2xl font-bold mb-3 text-gray-900 group-hover:text-blue-600 transition-colors duration-300">
+                  {service.title}
+                </h3>
 
-              {/* Description */}
-              <p className="text-gray-600 leading-relaxed">
-                {service.describation}
-              </p>
+                {/* Icons Row */}
+                <div className="flex flex-wrap gap-3 mb-4">
+                  {service.icons.map((icon) => (
+                    <div
+                      key={icon.id}
+                      className="flex items-center justify-center"
+                    >
+                      <Image
+                        src={icon.image}
+                        alt="tech-icon"
+                        className="w-6 h-6 object-contain"
+                      />
+                    </div>
+                  ))}
+                </div>
+
+                {/* Description */}
+                <p className="text-gray-600 leading-relaxed">
+                  {service.describation}
+                </p>
+              </div>
             </motion.div>
           ))}
         </div>

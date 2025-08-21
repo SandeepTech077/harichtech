@@ -36,7 +36,7 @@ export const servicesData: NavItem[] = [
   {
     name: "Web & App Development",
     icon: WebIcon,
-    path: "/services/web-and-app-development",
+    path: "/services-list/web-detail",
     children: [
       { name: "React.js Development", path: "/services/development/react" },
       { name: "Node.js Development", path: "/services/development/node" },
@@ -50,33 +50,44 @@ export const servicesData: NavItem[] = [
   {
     name: "UI/UX Design",
     icon: UIUX,
-    path: "/services/ui-ux-design",
+    path: "/services-list/uiux-detail",
     children: [
       { name: "Website Design", path: "/services/ui-ux-design/website-design" },
-      { name: "Mobile App Design", path: "/services/ui-ux-design/mobile-app-design" },
+      {
+        name: "Mobile App Design",
+        path: "/services/ui-ux-design/mobile-app-design",
+      },
       {
         name: "Product Design",
         path: "/services/ui-ux-design/product-design",
       },
- 
     ],
   },
   {
     name: "Digital Marketing",
     icon: DigitalMarketing,
-    path: "/services/digital-marketing",
+    path: "/services-list/digital-marketing-detail",
     children: [
-      { name: "SEO", path: "/services/digital-marketing/search-engine-optimization-services" },
-      { name: "PPC Advertisement", path: "/services/digital-marketing/ppc-advertising-services" },
+      {
+        name: "SEO",
+        path: "/services/digital-marketing/search-engine-optimization-services",
+      },
+      {
+        name: "PPC Advertisement",
+        path: "/services/digital-marketing/ppc-advertising-services",
+      },
       {
         name: "Social Media Marketing",
         path: "/services/digital-marketing/social-media-marketing-services",
       },
       {
-        name:"Content Marking",
+        name: "Content Marking",
         path: "/services/digital-marketing/content-marketing-services",
       },
-      { name: "Email Marketing", path: "/services/digital-marketing/email-marketing-services" },
+      {
+        name: "Email Marketing",
+        path: "/services/digital-marketing/email-marketing-services",
+      },
       {
         name: "Analytics & Reporting",
         path: "/services/digital-marketing/analytics-reporting",
@@ -84,7 +95,7 @@ export const servicesData: NavItem[] = [
       {
         name: "Influencer Marketing",
         path: "/services/digital-marketing/influencer-marketing-services",
-      }
+      },
     ],
   },
 ];

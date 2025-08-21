@@ -8,6 +8,7 @@ import AboutStatus from "@/components/AboutUsComponents/AboutStatus";
 import OurClients from "@/components/HomePageComponents/OurClients";
 import GetInTouch from "@/components/Ui/GetInTouch";
 import AboutUs from "@/components/HomePageComponents/AboutUs";
+import { IndustriesSection } from "@/components/ServicesAllPageComponent/IndustriesSection";
 
 export default function Home() {
   const { ourStatus } = AboutUsData;
@@ -20,14 +21,20 @@ export default function Home() {
       {/* Page Sections */}
       <div className="w-full">
         <div className="mx-auto px-4  lg:px-16">
-          <div className="space-y-24 sm:space-y-28 lg:space-y-32">
+          <div className="space-y-24 sm:space-y-28 lg:space-y-28">
             <AboutStatus status={ourStatus.status} />
             <AboutUs data={HomePagedata.aboutUs} />
-            <HomeServices data={HomePagedata.serviceList} />
             <PortfolioComponent data={HomePagedata.portfolio} />
+            <HomeServices data={HomePagedata.serviceList} />
+             <IndustriesSection
+                      title={HomePagedata.IndustriesSection.title}
+                      blueTitle={HomePagedata.IndustriesSection.blueTitle}
+                      description={HomePagedata.IndustriesSection.description}
+                      cards={HomePagedata.IndustriesSection.cards}
+                    />
+            <GetInTouch />
             <OurClients data={HomePagedata.ourClient} />
             <ClientsComponent data={HomePagedata.client} />
-            <GetInTouch />
           </div>
         </div>
       </div>

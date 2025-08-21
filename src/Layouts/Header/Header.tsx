@@ -296,10 +296,13 @@ const Header = () => {
                                   onMouseLeave={handleSubmenuLeave}
                                 >
                                   {hasChildren ? (
-                                    // Item with children - no link, just hover
-                                    <div className="flex items-center p-3 rounded-lg hover:bg-gray-50 transition-colors cursor-default">
+                                    <Link
+                                      href={subItem.path}
+                                      className="flex items-center p-3 rounded-lg hover:bg-gray-50 transition-colors group/link"
+                                      onClick={() => setActiveDropdown(null)}
+                                    >
                                       {subItem.icon && (
-                                        <div className="flex-shrink-0 w-10 h-10 rounded-lg flex items-center justify-center mr-3 transition-colors">
+                                        <div className="flex-shrink-0 w-10 h-10 rounded-lg flex items-center justify-center mr-3 group-hover/link:bg-blue-100 transition-colors">
                                           <Image
                                             src={subItem.icon}
                                             alt={`${subItem.name} icon`}
@@ -309,7 +312,7 @@ const Header = () => {
                                         </div>
                                       )}
                                       <div className="flex-1">
-                                        <h4 className="font-semibold text-gray-900 text-sm">
+                                        <h4 className="font-semibold text-gray-900 text-sm group-hover/link:text-blue-600 transition-colors">
                                           {subItem.name}
                                         </h4>
                                       </div>
@@ -317,9 +320,8 @@ const Header = () => {
                                         size={20}
                                         className="text-gray-400"
                                       />
-                                    </div>
+                                    </Link>
                                   ) : (
-                                    // Regular subitem with link
                                     <Link
                                       href={subItem.path}
                                       className="flex items-center p-3 rounded-lg hover:bg-gray-50 transition-colors group/link"

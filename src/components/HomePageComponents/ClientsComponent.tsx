@@ -113,14 +113,14 @@ const ClientsComponent: React.FC<ClientsComponentProps> = ({ data }) => {
   return (
     <>
       <motion.div
-        className="w-full"
+        className="w-full py-12"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.5 }}
         variants={fadeUp}
       >
         {/* Header */}
-        <div className="flex justify-between items-end mb-10">
+        <div className="flex justify-between items-end mb-10 ">
           <div>
             <div className="inline-block mb-4">
               <Title title={data.title} />
@@ -174,11 +174,10 @@ const ClientsComponent: React.FC<ClientsComponentProps> = ({ data }) => {
             640: { slidesPerView: 2, spaceBetween: 20 },
             1024: { slidesPerView: 3, spaceBetween: 30 },
           }}
-     autoplay={{
-  delay: 2000,
-  disableOnInteraction: false,
-}}
-
+          autoplay={{
+            delay: 2000,
+            disableOnInteraction: false,
+          }}
         >
           {data.testimonialsSlider.map((testimonial) => (
             <SwiperSlide key={testimonial.id} className="flex h-auto">
@@ -206,7 +205,11 @@ const ClientsComponent: React.FC<ClientsComponentProps> = ({ data }) => {
                     className="text-[#2058FF] text-sm font-medium hover:text-[#004BC2] transition mt-2 flex items-center gap-1"
                   >
                     View More
-                    <svg className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                    <svg
+                      className="h-4 w-4"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
                       <path
                         fillRule="evenodd"
                         d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
@@ -229,13 +232,22 @@ const ClientsComponent: React.FC<ClientsComponentProps> = ({ data }) => {
                         />
                       </div>
                       <div>
-                        <h4 className="font-bold text-sm">{testimonial.name}</h4>
-                        <p className="text-gray-500 text-xs">{testimonial.position}</p>
+                        <h4 className="font-bold text-sm">
+                          {testimonial.name}
+                        </h4>
+                        <p className="text-gray-500 text-xs">
+                          {testimonial.position}
+                        </p>
                       </div>
                     </div>
                     <div className="flex text-yellow-400">
                       {[...Array(5)].map((_, i) => (
-                        <svg key={i} className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                        <svg
+                          key={i}
+                          className="h-4 w-4"
+                          viewBox="0 0 20 20"
+                          fill="currentColor"
+                        >
                           <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                         </svg>
                       ))}
@@ -289,7 +301,11 @@ const ClientsComponent: React.FC<ClientsComponentProps> = ({ data }) => {
                 onClick={closeModal}
                 className="absolute top-4 right-4 z-10 bg-gray-100 hover:bg-gray-200 rounded-full p-2"
               >
-                <svg className="h-6 w-6 text-gray-600" viewBox="0 0 20 20" fill="currentColor">
+                <svg
+                  className="h-6 w-6 text-gray-600"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
                   <path
                     fillRule="evenodd"
                     d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
@@ -310,7 +326,9 @@ const ClientsComponent: React.FC<ClientsComponentProps> = ({ data }) => {
                     />
                   </div>
                   <div>
-                    <h3 className="text-2xl font-bold text-[#02060B]">Client Testimonial</h3>
+                    <h3 className="text-2xl font-bold text-[#02060B]">
+                      Client Testimonial
+                    </h3>
                     <p className="text-gray-600 mt-1">Full review details</p>
                   </div>
                 </div>
@@ -334,13 +352,22 @@ const ClientsComponent: React.FC<ClientsComponentProps> = ({ data }) => {
                         />
                       </div>
                       <div>
-                        <h4 className="font-bold text-lg text-[#02060B]">{selectedTestimonial.name}</h4>
-                        <p className="text-gray-600 text-sm">{selectedTestimonial.position}</p>
+                        <h4 className="font-bold text-lg text-[#02060B]">
+                          {selectedTestimonial.name}
+                        </h4>
+                        <p className="text-gray-600 text-sm">
+                          {selectedTestimonial.position}
+                        </p>
                       </div>
                     </div>
                     <div className="flex text-yellow-400">
                       {[...Array(5)].map((_, i) => (
-                        <svg key={i} className="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
+                        <svg
+                          key={i}
+                          className="h-6 w-6"
+                          viewBox="0 0 20 20"
+                          fill="currentColor"
+                        >
                           <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                         </svg>
                       ))}
