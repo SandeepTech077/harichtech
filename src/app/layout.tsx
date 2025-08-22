@@ -13,7 +13,7 @@ const nunito = Nunito({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://harichtech.com"), // ✅ replace with your live site URL
-  title: "Harichtech | Digital Product Development Company",
+  title: "Harich Tech",
   description:
     "Harichtech is a digital product development company specializing in custom web and mobile solutions. We help startups and businesses grow with cutting-edge technology, scalable architecture, and beautiful UI/UX design.",
   icons: {
