@@ -19,7 +19,7 @@ export const BlogData = {
       title: "Smarter Marketing with AI: How to Stay Ahead ...",
       dateAndBy: "by Harichtech on March 26, 2024",
       description:
-        "In 2025, the marketing landscape is no longer just digital - it’s intelligent. Artificial Intelligence (AI) has emerged as a cornerstone of modern marketing strategies...",
+        "In 2025, the marketing landscape is no longer just digital it’s intelligent. Artificial Intelligence (AI) has emerged as a cornerstone of modern marketing strategies...",
       btnTitle: "Read More",
       btnArrow: Helper.blackArrow,
     },
@@ -36,10 +36,10 @@ export const BlogData = {
     {
       id: 3,
       image: Helper.AiPoweredByAnalytic,
-      title: "AI-Powered Analytics: See Beyond the Data",
+      title: "AI Powered Analytics: See Beyond the Data",
       dateAndBy: "by Harichtech on March 26, 2024",
       description:
-        "Collecting data is easy. Making sense of it? That’s where AI shines. In today’s digital landscape, businesses are drowning in data - web traffic, customer behavior...",
+        "Collecting data is easy. Making sense of it? That’s where AI shines. In today’s digital landscape, businesses are drowning in data   web traffic, customer behavior...",
       btnTitle: "Read More",
       btnArrow: Helper.blackArrow,
     },
@@ -49,7 +49,7 @@ export const BlogData = {
       title: "Automate or Fall Behind: The Future of ...",
       dateAndBy: "by Harichtech on March 26, 2024",
       description:
-        "Today’s consumers expect instant responses, personalized experiences, and consistent communication - all at scale...",
+        "Today’s consumers expect instant responses, personalized experiences, and consistent communication  all at scale...",
       btnTitle: "Read More",
       btnArrow: Helper.blackArrow,
     },
@@ -59,14 +59,14 @@ export const BlogData = {
       title: "AI Meets Creativity: The New Face of Digital...",
       dateAndBy: "by Harichtech on March 26, 2024",
       description:
-        "In the age of AI, creativity isn’t dying - it’s evolving. With the right tools, marketers and designers can supercharge their storytelling with data-backed...",
+        "In the age of AI, creativity isn’t dying   it’s evolving. With the right tools, marketers and designers can supercharge their storytelling with data backed...",
       btnTitle: "Read More",
       btnArrow: Helper.blackArrow,
     },
     {
       id: 6,
       image: Helper.TheRiseOfAl,
-      title: "The Rise of AI-Native Businesses: Are You...",
+      title: "The Rise of AI Native Businesses: Are You...",
       dateAndBy: "by Harichtech on March 26, 2024",
       description:
         "In the race to stay relevant, companies are turning to AI with the same energy they once reserved for the internet, mobile, or cloud computing. But here’s the difference: this time...",
@@ -79,7 +79,7 @@ export const BlogData = {
       title: "From Tools to Ecosystems: What Automation...",
       dateAndBy: "by Harichtech on March 26, 2024",
       description:
-        "Forget automation as just a feature in your email software. In 2025, automation is an ecosystem — smart, self-improving, and always-on...",
+        "Forget automation as just a feature in your email software. In 2025, automation is an ecosystem — smart, self improving, and always on...",
       btnTitle: "Read More",
       btnArrow: Helper.blackArrow,
     },
