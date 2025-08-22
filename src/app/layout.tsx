@@ -12,12 +12,13 @@ const nunito = Nunito({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://harichtech.com"), // ✅ replace with your live site URL
   title: "Harichtech | Digital Product Development Company",
   description:
     "Harichtech is a digital product development company specializing in custom web and mobile solutions. We help startups and businesses grow with cutting-edge technology, scalable architecture, and beautiful UI/UX design.",
   icons: {
     icon: [
-      { url: "/favicon.ico", sizes: "any" }, // default favicon
+      { url: "/favicon.ico", sizes: "any" },
       { url: "/favicon-16x16.png", type: "image/png", sizes: "16x16" },
       { url: "/favicon-32x32.png", type: "image/png", sizes: "32x32" },
     ],
@@ -32,7 +33,7 @@ export const metadata: Metadata = {
     siteName: "Harichtech",
     images: [
       {
-        url: "/og-image.png", // put an image in /public for social media preview
+        url: "/og-image.png", // this will automatically resolve to full URL
         width: 1200,
         height: 630,
         alt: "Harichtech Preview",
