@@ -6,9 +6,9 @@ import Footer from "@/Layouts/Footer/Footer";
 
 const nunito = Nunito({
   subsets: ['latin'],
-  weight: ['300', '400', '500', '600', '700', '800'], // Extended weight range
+  weight: ['300', '400', '500', '600', '700', '800'],
   variable: '--font-nunito',
-  display: 'swap', // Improves font loading performance
+  display: 'swap',
 })
 
 export const metadata: Metadata = {
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   keywords: [
     "digital product development",
     "web development",
-    "mobile development",
+    "mobile development", 
     "custom software",
     "startup solutions",
     "UI/UX design",
@@ -42,18 +42,22 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
+  // Using your converted logo files
   icons: {
     icon: [
-      { url: "/Logo/small-logo.svg" },
-      { url: "/Logo/small-logo.svg", sizes: "32x32", type: "image/png" },
-      { url: "/Logo/small-logo.svg", sizes: "16x16", type: "image/png" },
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
     ],
-    apple: "/Logo/small-logo.svg",
+    apple: [
+      { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" }
+    ],
+    shortcut: "/favicon.ico",
   },
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://harichtech.com",
+    url: "https://harichtech.com", 
     siteName: "Harich Tech",
     title: "Harich Tech - Digital Product Development",
     description:
@@ -80,6 +84,51 @@ export const metadata: Metadata = {
   category: "technology",
 };
 
+// Structured Data for Organization
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Harich Tech",
+  "url": "https://harichtech.com",
+  "logo": "/favicon-32x32.png", // Update this path to your actual logo
+  "description": "Harichtech is a digital product development company specializing in custom web and mobile solutions. We help startups and businesses grow with cutting-edge technology, scalable architecture, and beautiful UI/UX design.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Shilp 3, 3rd Floor, Sindhu bhavan road, above bajarang grocery, PRL Colony, Bodakdev",
+    "addressLocality": "Ahmedabad",
+    "addressRegion": "Gujarat",
+    "postalCode": "380059",
+    "addressCountry": "IN"
+  },
+  "telephone": "082008 65684",
+  "sameAs": [
+    "https://www.linkedin.com/company/harich-tech",
+    "https://www.facebook.com/harichtechnologies",
+    "https://www.instagram.com/harichtech"
+  ],
+  "serviceArea": {
+    "@type": "Place",
+    "name": "Worldwide"
+  },
+  "areaServed": [
+    {
+      "@type": "Country",
+      "name": "India"
+    },
+    {
+      "@type": "Country", 
+      "name": "United States"
+    }
+  ],
+  "knowsAbout": [
+    "Web Development",
+    "Mobile App Development",
+    "UI/UX Design",
+    "Digital Product Development",
+    "Custom Software Solutions"
+  ]
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -88,18 +137,26 @@ export default function RootLayout({
   return (
     <html lang="en" className={nunito.variable}>
       <head>
-        {/* Preconnect to external domains for better performance */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         
-        {/* Viewport meta tag for responsive design */}
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
-        
-        {/* Theme color for mobile browsers */}
         <meta name="theme-color" content="#3b82f6" />
         
-        {/* Preload critical resources */}
+        {/* Explicit favicon links using your converted logo */}
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" href="/favicon-16x16.png" sizes="16x16" type="image/png" />
+        <link rel="icon" href="/favicon-32x32.png" sizes="32x32" type="image/png" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        
+        {/* Keep your original SVG for other uses */}
         <link rel="preload" href="/Logo/small-logo.svg" as="image" type="image/svg+xml" />
+        
+        {/* Organization Structured Data */}
+        <script 
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+        />
       </head>
       <body 
         suppressHydrationWarning={true}
@@ -107,13 +164,12 @@ export default function RootLayout({
       >
         <div className="flex flex-col min-h-screen">
           <Header />
-          <main className="flex-grow">
+          <main className="flex-grow" id="main-content">
             {children}
           </main>
           <Footer />
         </div>
         
-        {/* Skip to main content for accessibility */}
         <a 
           href="#main-content" 
           className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-blue-600 text-white px-4 py-2 rounded-md z-50"
