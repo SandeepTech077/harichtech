@@ -386,7 +386,7 @@ export const HomePagedata = {
         description:
           "At Insight Management, everything we do is about creating unforgettable experiences and we needed a website that could reflect that same energy and precision online. Harich Tech got it right from the start. They understood our brand vision  modern, dynamic, and detail driven and translated it into a site that truly feels like an extension of who we are. It’s clean, fast, visually engaging, and easy to navigate. Most importantly, it captures the essence of what we do on ground. With Harich, it never felt like a one way brief it was a creative partnership. The result speaks for itself.",
         clipImg: Helper.clip,
-        img: Helper.profile,
+        img: Helper.insight,
       },
       {
         id: 15,

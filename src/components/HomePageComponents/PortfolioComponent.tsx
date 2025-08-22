@@ -30,7 +30,7 @@ const PortfolioComponent: React.FC<PortfolioComponentProps> = ({ data }) => {
   const router = useRouter();
 
   const handleImageClick = (id: number) => {
-    router.push(`/projects/${id}`);
+    router.push(`/projects`);
   };
 
   return (
