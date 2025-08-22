@@ -67,7 +67,11 @@ const ProjectBanner: React.FC<ProjectBannerProps> = ({ project }) => {
           </p>
 
           {/* Button */}
-          <Link href={project.button.href}>
+          <Link
+            href={project.button.href}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <button
               className={`flex ${project.textColor} cursor-pointer items-center gap-2 bg-white px-6 py-3 rounded-[10px] text-[14px] md:text-[16px] font-semibold hover:bg-gray-200 transition`}
             >

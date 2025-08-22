@@ -4,6 +4,7 @@ export const OurProjects = {
   projectdata: [
     {
       id: 1,
+      type: "insight",
       BannerSection: {
         icon: Helper.InsightLogo,
         description:
@@ -74,6 +75,7 @@ export const OurProjects = {
     },
     {
       id: 2,
+      type: "shilp-aarambh",
       BannerSection: {
         icon: Helper.AarambhLogo,
         description:
@@ -136,6 +138,7 @@ export const OurProjects = {
     },
     {
       id: 3,
+      type: "microbrange",
       BannerSection: {
         icon: Helper.MicroLogo,
         description:
@@ -202,6 +205,7 @@ export const OurProjects = {
     },
     {
       id: 4,
+      type: "arkle-equestrian-club",
       BannerSection: {
         icon: Helper.ArkleLogo,
         description:
@@ -264,6 +268,7 @@ export const OurProjects = {
     },
     {
       id: 5,
+      type: "shilp-group",
       BannerSection: {
         icon: Helper.ShilpLogo,
         description:
@@ -322,6 +327,7 @@ export const OurProjects = {
     },
     {
       id: 6,
+      type: "yash-brambhatt",
       BannerSection: {
         icon: Helper.YashLogo,
         description:
@@ -380,6 +386,7 @@ export const OurProjects = {
     },
     {
       id: 7,
+      type: "snehal-brambhatt",
       BannerSection: {
         icon: Helper.SnehalLogo,
         description:
@@ -438,6 +445,7 @@ export const OurProjects = {
     },
     {
       id: 8,
+      type: "snehshilp-foundation",
       BannerSection: {
         icon: Helper.SnehShilpLogo,
         description:
@@ -496,6 +504,7 @@ export const OurProjects = {
     },
     {
       id: 9,
+      type: "startup-fest",
       BannerSection: {
         icon: Helper.FestLogo,
         description:
@@ -555,6 +564,7 @@ export const OurProjects = {
 
     {
       id: 10,
+      type: "aerotyne",
       BannerSection: {
         icon: Helper.AeroLogo,
         description:
@@ -615,6 +625,7 @@ export const OurProjects = {
     },
     {
       id: 11,
+      type: "oreum-live-pure",
       BannerSection: {
         icon: Helper.OreumLogo,
         description:
@@ -681,6 +692,7 @@ export const OurProjects = {
     },
     {
       id: 12,
+      type: "evervital",
       BannerSection: {
         icon: Helper.EverVitalLogo,
         description:

@@ -50,7 +50,6 @@ export const metadata: Metadata = {
     ],
     apple: "/Logo/small-logo.svg",
   },
-  manifest: "/site.webmanifest",
   openGraph: {
     type: "website",
     locale: "en_US",
