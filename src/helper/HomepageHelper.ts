@@ -25,6 +25,7 @@ import oriem from "../../public/Image/HomePageImage/TestimonialImage/oriem.png";
 import samir from "../../public/Image/HomePageImage/TestimonialImage/samir.svg"
 import clip from "../../public/SVG/Clip.svg"
 import insight from "../../public/Image/HomePageImage/TestimonialImage/insight.jpg";
+import appcom from "../../public/Image/HomePageImage/TestimonialImage/appcom.jpeg";
 
 //Blogs
 import BlogImage1 from "../../public/Image/HomePageImage/Blogs/Img1.png";
@@ -136,7 +137,7 @@ export const Helper = {
   clip,
   samir,
   insight,
-
+  appcom,
 
   //Blogs
   BlogImage1,

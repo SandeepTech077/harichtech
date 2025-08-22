@@ -291,12 +291,12 @@ export const HomePagedata = {
       },
       {
         id: 4,
-        name: " Jignesh Patel",
+        name: " Jignesh Prajapati",
         position: "Appcom",
         description:
           "We’re in the tech business, so I needed a site that’s fast, smart, and makes a strong impression. Harich delivered and we loved it. Their understanding of functionality combined with solid design made the entire process efficient. Would definitely recommend them! ",
         clipImg: Helper.clip,
-        img: Helper.profile,
+        img: Helper.appcom,
       },
       {
         id: 5,
