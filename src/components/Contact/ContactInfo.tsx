@@ -30,7 +30,7 @@ const ContactInfo = ({ data }: ContactInfoProps) => {
           {/* Left Side: Title and Subtitle */}
           <div className="w-full md:w-1/3">
             <div className="inline-block bg-white rounded-[10px] px-6 py-2 mb-4">
-              <span className="text-black font-medium text-[16px] lg:text-[20px] font-bold">
+              <span className="text-black font-medium text-[16px] lg:text-[20px] ">
                 {data.title}
               </span>
             </div>

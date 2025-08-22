@@ -24,7 +24,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
       className=" overflow-hidden cursor-pointer"
       onClick={() => onClick?.(id)}
     >
-      <Link href={href} target="_blank" rel="noopener noreferrer">
+      <Link href={href} >
         <Image src={image} alt={alt} className="w-full h-auto object-cover" />
       </Link>
     </div>
