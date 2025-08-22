@@ -47,7 +47,7 @@ export const Career = {
     subTitle: "Why Choose Harichtech?",
     titleDescribation:"Before the first pixel, we’re focused on what matters most: your vision.",
     describation:
-      "With thoughtful planning, clean design, and smart technology, we build solutions that perform. We value timelines, communication, and craft - delivering work that’s both strategic and beautiful. At Harich Tech, you don’t just get a service - you gain a partner.",
+      "With thoughtful planning, clean design, and smart technology, we build solutions that perform. We value timelines, communication, and craft   delivering work that’s both strategic and beautiful. At Harich Tech, you don’t just get a service you gain a partner.",
     list: [
       {
         id: 1,

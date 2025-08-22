@@ -81,7 +81,6 @@ export const HomePagedata = {
   },
   serviceList: {
     title: "Services",
-    Subtitle: "We Provide The SolutionFor For Our Clients",
     describation:
       "Our solutions are tailored, practical, and built around each client’s goals thoughtfully designed to drive results, deliver long term value, and support meaningful growth",
     serviceLists: [

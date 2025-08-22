@@ -21,14 +21,13 @@ interface ServiceItem {
 interface HomeServicesProps {
   data: {
     title: string;
-    Subtitle: string;
     describation: string;
     serviceLists: ServiceItem[];
   };
 }
 
 const  HomeServices: React.FC<HomeServicesProps> = ({ data }) => {
-  const { title, Subtitle ,describation, serviceLists } = data;
+  const { title ,describation, serviceLists } = data;
 
   // Scroll animation refs
   const sectionRef = useRef(null);
