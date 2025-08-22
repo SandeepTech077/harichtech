@@ -11,6 +11,7 @@ interface WorkItem {
   title: string;
   shortDescription: string;
   Image: StaticImageData;
+  href: string;
 }
 
 interface PortfolioData {
@@ -29,8 +30,8 @@ interface PortfolioComponentProps {
 const PortfolioComponent: React.FC<PortfolioComponentProps> = ({ data }) => {
   const router = useRouter();
 
-  const handleImageClick = (id: number) => {
-    router.push(`/projects`);
+  const handleImageClick = (href: string) => {
+    router.push(href);
   };
 
   return (
@@ -55,13 +56,13 @@ const PortfolioComponent: React.FC<PortfolioComponentProps> = ({ data }) => {
         </p>
       </div>
 
-      {/* Top Two Images in Two Columns */}
+      {/* Top Two Images in Two Columns */} 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10">
         {data.works.slice(0, 2).map((work, index) => (
           <div
             key={index}
             className="overflow-hidden cursor-pointer"
-            onClick={() => handleImageClick(work.number)}
+            onClick={() => handleImageClick(work.href)}
           >
             <div className="h-full relative">
               <Image
@@ -80,7 +81,7 @@ const PortfolioComponent: React.FC<PortfolioComponentProps> = ({ data }) => {
           <div
             key={index}
             className="rounded-lg overflow-hidden cursor-pointer"
-            onClick={() => handleImageClick(work.number)}
+            onClick={() => handleImageClick(work.href)}
           >
             <div className="h-full relative">
               <Image
