@@ -51,7 +51,6 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 export default async function IndustryPage({ params }: PageProps) {
   const { slug } = await params; // Await the params first
   const industryData = industiesData.find((item) => item.type === slug);
-  console.log(industryData,"industryData")
 
   if (!industryData) {
     notFound();
