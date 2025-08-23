@@ -12,42 +12,87 @@ const nunito = Nunito({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://harichtech.com"), // ✅ replace with your live site URL
-  title: "Harich Tech",
+  metadataBase: new URL("https://harichtech.com"),
+  title: {
+    default: "Harich Tech",
+    template: "%s | Harichtech"
+  },
   description:
     "Harichtech is a digital product development company specializing in custom web and mobile solutions. We help startups and businesses grow with cutting-edge technology, scalable architecture, and beautiful UI/UX design.",
+  keywords: [
+    "digital product development",
+    "web development",
+    "mobile app development",
+    "UI/UX design",
+    "startup solutions",
+    "custom software",
+    "Harichtech"
+  ],
+  authors: [{ name: "Harichtech" }],
+  creator: "Harichtech",
+  publisher: "Harichtech",
+  
+  // Enhanced favicon configuration
   icons: {
     icon: [
       { url: "/favicon.ico", sizes: "any" },
       { url: "/favicon-16x16.png", type: "image/png", sizes: "16x16" },
       { url: "/favicon-32x32.png", type: "image/png", sizes: "32x32" },
+      { url: "/logo.png", type: "image/png", sizes: "192x192" },
     ],
-    apple: [{ url: "/apple-touch-icon.png", sizes: "180x180" }],
-    other: [{ rel: "manifest", url: "/site.webmanifest" }],
+    apple: [
+      { url: "/apple-touch-icon.png", sizes: "180x180" },
+    ],
+    shortcut: "/favicon.ico",
+    other: [
+      { rel: "manifest", url: "/site.webmanifest" },
+      { rel: "mask-icon", url: "/safari-pinned-tab.svg", color: "#000000" }, 
+    ],
   },
+
   openGraph: {
     title: "Harichtech | Digital Product Development Company",
     description:
       "Harichtech is a digital product development company specializing in custom web and mobile solutions. We help startups and businesses grow with cutting-edge technology, scalable architecture, and beautiful UI/UX design.",
-    url: "https://yourdomain.com",
+    url: "https://harichtech.com", 
     siteName: "Harichtech",
     images: [
       {
-        url: "/og-image.png", // this will automatically resolve to full URL
+        url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Harichtech Preview",
+        alt: "Harichtech - Digital Product Development Company",
+        type: "image/png",
       },
     ],
+    locale: "en_US",
     type: "website",
   },
+
+  // Enhanced Twitter configuration
   twitter: {
     card: "summary_large_image",
-    title: "Harichtech | Digital Product Development Company",
+    title: "Harich Tech ",
     description:
       "Harichtech is a digital product development company specializing in custom web and mobile solutions. We help startups and businesses grow with cutting-edge technology, scalable architecture, and beautiful UI/UX design.",
     images: ["/og-image.png"],
+    creator: "@harichtech", // Add your Twitter handle if you have one
   },
+
+  // Additional metadata for better SEO
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+
+
 };
 
 export default function RootLayout({
@@ -57,6 +102,22 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={nunito.variable}>
+      <head>
+        {/* Additional favicon links for better browser support */}
+        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+        <link rel="manifest" href="/site.webmanifest" />
+        
+        {/* Theme color for mobile browsers */}
+        <meta name="theme-color" content="#000000" />
+        <meta name="msapplication-TileColor" content="#000000" />
+        
+        {/* Preconnect to Google Fonts for better performance */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+      </head>
       <body
         suppressHydrationWarning={true}
         className="font-nunito antialiased bg-white text-gray-900 min-h-screen"
