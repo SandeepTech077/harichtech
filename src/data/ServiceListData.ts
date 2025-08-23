@@ -4,16 +4,16 @@ export const ServiceListData = {
   serviceList: [
     {
       id: 1,
-      type:"uiux-detail",
-      maintitle:{
+      type: "uiux-detail",
+      maintitle: {
         title: "Services",
         subtitle: "UI/UX Design",
         describation:
           "We craft exceptional digital experiences through expert UI/UX design. Our design process prioritizes user needs and expectations, blending aesthetics with functionality. Using leading tools like Figma, Sketch, Adobe XD, and InVision, we design intuitive interfaces that engage users, enhance usability, and elevate brands across platforms and devices.",
         btnTitle: "Consult our Creative Design Team",
-        BannerRight:Helper.UIUXBanner,
+        BannerRight: Helper.UIUXBanner,
       },
-     
+
       process: {
         title: "Design Services",
         subTitle: "Our Core Services",
@@ -62,25 +62,27 @@ export const ServiceListData = {
             id: 1,
             Img: Helper.InsightProject,
             alt: "Insight Management",
+            url: "/projects/insight/",
           },
           {
             id: 2,
             Img: Helper.AarambhProject,
-            alt: "Insight Management",
-            
+            alt: "Shilp Aarambh",
+            url: "/projects/shilp-aarambh/",
           },
           {
             id: 3,
-             Img: Helper.MicroProject,
-            alt: "Insight Management",
-          
+            Img: Helper.MicroProject,
+            alt: "MicrobRange",
+            url: "/projects/microbrange/",
           },
         ],
       },
       whyUs: {
         title: "Why Us",
         subTitle: "Why Choose Harichtech?",
-        titleDescribation:"Before the first pixel, we’re focused on what matters most: your vision.",
+        titleDescribation:
+          "Before the first pixel, we’re focused on what matters most: your vision.",
         describation:
           "With thoughtful planning, clean design, and smart technology, we build solutions that perform. We value timelines, communication, and craft - delivering work that’s both strategic and beautiful. At Harich Tech, you don’t just get a service - you gain a partner.",
         list: [
@@ -88,14 +90,12 @@ export const ServiceListData = {
             id: 1,
             describation: "Experienced and skilled designers",
             LineImage: Helper.Line,
-         
           },
           {
             id: 2,
             describation:
               "Customized solutions tailored to your specific needs",
             LineImage: Helper.Line,
-            
           },
           {
             id: 3,
@@ -113,17 +113,17 @@ export const ServiceListData = {
     },
     {
       id: 2,
-      type:"mobile-app-detail",
+      type: "mobile-app-detail",
 
-      maintitle:{
+      maintitle: {
         title: "Services",
-      subtitle: "Mobile App Development",
-      describation:
-        "Our mobile app development services deliver innovative, high-performance applications tailored to your business goals. We create engaging native and cross-platform apps for iOS and Android, focusing on seamless functionality, robust architecture, and scalability. From concept to launch, we build solutions that connect users, drive engagement, and foster growth.",
-      btnTitle: "Consult our Creative Design Team",
-        BannerRight:Helper.MobileBanner,
+        subtitle: "Mobile App Development",
+        describation:
+          "Our mobile app development services deliver innovative, high-performance applications tailored to your business goals. We create engaging native and cross-platform apps for iOS and Android, focusing on seamless functionality, robust architecture, and scalability. From concept to launch, we build solutions that connect users, drive engagement, and foster growth.",
+        btnTitle: "Consult our Creative Design Team",
+        BannerRight: Helper.MobileBanner,
       },
-     
+
       process: {
         title: "Process",
         subTitle: "Our Design Process",
@@ -161,7 +161,7 @@ export const ServiceListData = {
           "Progressive web apps",
         ],
       },
-     portfolio: {
+      portfolio: {
         title: "Portfolio",
         subTitle: "Discover Our Digital Masterpieces",
         btnTitle: "See more projects",
@@ -170,25 +170,27 @@ export const ServiceListData = {
             id: 1,
             Img: Helper.InsightProject,
             alt: "Insight Management",
+            url: "/projects/insight/",
           },
           {
             id: 2,
             Img: Helper.AarambhProject,
-            alt: "Insight Management",
-            
+            alt: "Shilp Aarambh",
+            url: "/projects/shilp-aarambh/",
           },
           {
             id: 3,
-             Img: Helper.MicroProject,
-            alt: "Insight Management",
-          
+            Img: Helper.MicroProject,
+            alt: "MicrobRange",
+            url: "/projects/microbrange/",
           },
         ],
       },
       whyUs: {
         title: "Why Us",
         subTitle: "Why Choose Harichtech?",
-        titleDescribation:"Before the first pixel, we’re focused on what matters most: your vision.",
+        titleDescribation:
+          "Before the first pixel, we’re focused on what matters most: your vision.",
         describation:
           "With thoughtful planning, clean design, and smart technology, we build solutions that perform. We value timelines, communication, and craft - delivering work that’s both strategic and beautiful. At Harich Tech, you don’t just get a service - you gain a partner.",
         list: [
@@ -219,18 +221,17 @@ export const ServiceListData = {
     },
     {
       id: 3,
-      type:"web-detail",
+      type: "web-detail",
 
-      maintitle:{
+      maintitle: {
         title: "Services",
         subtitle: "Web Development",
         describation:
           "We design and develop dynamic, responsive websites that captivate users and achieve business objectives. Our team specializes in creating scalable, secure, and feature-rich web solutions, from corporate websites to e-commerce platforms. By integrating modern technologies, we deliver seamless experiences that align with your brand and empower digital success.",
         btnTitle: "Consult our Creative Design Team",
-        BannerRight:Helper.WebBanner,
+        BannerRight: Helper.WebBanner,
       },
-     
-     
+
       process: {
         title: "Process",
         subTitle: "Our Design Process",
@@ -262,13 +263,13 @@ export const ServiceListData = {
         title: "Design Services",
         subTitle: "Our Core Services",
         services: [
-            "Native apps(iOS and Android)",
-            "Hybrid apps",
-            "Cross platform apps",
-            "Progressive web apps",
-          ],
+          "Native apps(iOS and Android)",
+          "Hybrid apps",
+          "Cross platform apps",
+          "Progressive web apps",
+        ],
       },
-   portfolio: {
+      portfolio: {
         title: "Portfolio",
         subTitle: "Discover Our Digital Masterpieces",
         btnTitle: "See more projects",
@@ -277,25 +278,27 @@ export const ServiceListData = {
             id: 1,
             Img: Helper.InsightProject,
             alt: "Insight Management",
+            url: "/projects/insight/",
           },
           {
             id: 2,
             Img: Helper.AarambhProject,
-            alt: "Insight Management",
-            
+            alt: "Shilp Aarambh",
+            url: "/projects/shilp-aarambh/",
           },
           {
             id: 3,
-             Img: Helper.MicroProject,
-            alt: "Insight Management",
-          
+            Img: Helper.MicroProject,
+            alt: "MicrobRange",
+            url: "/projects/microbrange/",
           },
         ],
       },
       whyUs: {
         title: "Why Us",
         subTitle: "Why Choose Harichtech?",
-        titleDescribation:"Before the first pixel, we’re focused on what matters most: your vision.",
+        titleDescribation:
+          "Before the first pixel, we’re focused on what matters most: your vision.",
         describation:
           "With thoughtful planning, clean design, and smart technology, we build solutions that perform. We value timelines, communication, and craft - delivering work that’s both strategic and beautiful. At Harich Tech, you don’t just get a service - you gain a partner.",
         list: [
@@ -325,18 +328,18 @@ export const ServiceListData = {
       },
     },
     {
-      id:4,
-      type:"digital-marketing-detail",
+      id: 4,
+      type: "digital-marketing-detail",
 
-      maintitle:{
+      maintitle: {
         title: "Services",
-      subtitle: "Digital Marketing Services",
-      describation:
-        "Our digital marketing services amplify your brand’s online presence, driving visibility and growth. We craft strategic campaigns that combine SEO, social media, content marketing, and paid advertising. With data-driven insights and creative execution, we help businesses connect with their audiences, generate leads, and achieve measurable results in the digital landscape.",
-      btnTitle: "Consult our Creative Design Team",
-        BannerRight:Helper.DigitalBanner,
+        subtitle: "Digital Marketing Services",
+        describation:
+          "Our digital marketing services amplify your brand’s online presence, driving visibility and growth. We craft strategic campaigns that combine SEO, social media, content marketing, and paid advertising. With data-driven insights and creative execution, we help businesses connect with their audiences, generate leads, and achieve measurable results in the digital landscape.",
+        btnTitle: "Consult our Creative Design Team",
+        BannerRight: Helper.DigitalBanner,
       },
-     
+
       process: {
         title: "Design Services",
         subTitle: "Our Design Process",
@@ -376,7 +379,7 @@ export const ServiceListData = {
           "Analytics and Reporting",
         ],
       },
-    portfolio: {
+      portfolio: {
         title: "Portfolio",
         subTitle: "Discover Our Digital Masterpieces",
         btnTitle: "See more projects",
@@ -385,22 +388,22 @@ export const ServiceListData = {
             id: 1,
             Img: Helper.InsightProject,
             alt: "Insight Management",
+            url: "/projects/insight/",
           },
           {
             id: 2,
             Img: Helper.AarambhProject,
-            alt: "Insight Management",
-            
+            alt: "Shilp Aarambh",
+            url: "/projects/shilp-aarambh/",
           },
           {
             id: 3,
-             Img: Helper.MicroProject,
-            alt: "Insight Management",
-          
+            Img: Helper.MicroProject,
+            alt: "MicrobRange",
+            url: "/projects/microbrange/",
           },
         ],
       },
-
     },
   ],
 };
