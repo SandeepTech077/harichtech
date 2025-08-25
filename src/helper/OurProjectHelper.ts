@@ -55,6 +55,9 @@ import AeroMiddleBanner from "../../public/Image/OurProjects/MiddleBanner/aero.p
 import OreumMiddleBanner from "../../public/Image/OurProjects/MiddleBanner/orium.png"
 import EverVitalMiddleBanner from "../../public/Image/OurProjects/MiddleBanner/evervital.png"
 
+// Mobile Middle Banner 
+import InsightMiddleMobileBanner from "../../public/Image/OurProjects/MiddleBanner/insight-mobile-Banner.png";
+
 
 // Desgin color 
 import InsightColor from "../../public/Image/OurProjects/Design/insight-color.png"
@@ -235,6 +238,9 @@ export const Helper = {
     AeroMobileBanner,
     OreumMobileBanner,
     EverVitalMobileBanner,
+
+    // Middle Banner Mobile 
+    InsightMiddleMobileBanner,
 
     //Overview
     InsightOverView,

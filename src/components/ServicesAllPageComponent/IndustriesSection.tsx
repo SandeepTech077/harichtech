@@ -29,8 +29,8 @@ export const IndustriesSection: React.FC<IndustriesSectionProps> = ({
     <section className="py-16">
       <div className="container mx-auto px-4">
         <div className=" mx-auto">
-           <div className="text-center mb-12">
-            <h2 className="text-[36px] md:text-[48px] font-bold text-gray-800 mb-6">
+          <div className="text-center mb-12">
+            <h2 className="text-[32px] md:text-[48px] font-bold text-gray-800 mb-6">
               {title}{" "}
               <span className="bg-gradient-to-l from-[#2058FF] to-[#004BC2] bg-clip-text text-transparent">
                 {blueTitle}
@@ -42,7 +42,7 @@ export const IndustriesSection: React.FC<IndustriesSectionProps> = ({
               </p>
             )}
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 md:gap-8">
             {cards.map((card) => (
               <IndustryCard
                 key={card.id}

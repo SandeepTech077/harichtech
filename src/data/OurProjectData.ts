@@ -14,7 +14,7 @@ export const OurProjects = {
           href: "https://www.insightmanagement.in",
         },
         Banner: Helper.InsigtBanner,
-        MobileBanner: Helper.InsigtBanner,
+        MobileBanner: Helper.InsightMobileBanner,
         upArrowSvg: Helper.InsightArrow,
         textColor: "text-[#1B5AA7]",
       },
@@ -34,7 +34,7 @@ export const OurProjects = {
       },
       MiddleBannerSection: {
         Banner: Helper.InsightMiddleBanner,
-        mobileBanner: Helper.InsightMiddleBanner,
+        mobileBanner: Helper.InsightMiddleMobileBanner,
       },
       design: {
         title: "Design System",
@@ -86,6 +86,7 @@ export const OurProjects = {
         },
 
         Banner: Helper.AarambhBanner,
+        MobileBanner: Helper.AarambhMobileBanner,
         upArrowSvg: Helper.AarambhArrow,
         textColor: "text-[#E51D25]",
       },
@@ -149,6 +150,7 @@ export const OurProjects = {
         },
         textColor: "text-[#4BBA72]",
         Banner: Helper.MicroBanner,
+        MobileBanner: Helper.MicroMobileBanner,
         upArrowSvg: Helper.MicroArrow,
       },
       projectOverView: {
@@ -216,6 +218,7 @@ export const OurProjects = {
         },
         textColor: "text-black",
         Banner: Helper.ArkleBanner,
+        MobileBanner: Helper.ArkleMobileBanner,
         upArrowSvg: Helper.BlackArrow,
       },
       projectOverView: {
@@ -279,6 +282,7 @@ export const OurProjects = {
         },
         textColor: "text-black",
         Banner: Helper.ShilpBanner,
+        MobileBanner: Helper.ShilpMobileBanner,
         upArrowSvg: Helper.BlackArrow,
       },
       projectOverView: {
@@ -338,6 +342,7 @@ export const OurProjects = {
         },
         textColor: "text-black",
         Banner: Helper.YashBanner,
+        MobileBanner: Helper.YashMobileBanner,
         upArrowSvg: Helper.BlackArrow,
       },
       projectOverView: {
@@ -397,6 +402,7 @@ export const OurProjects = {
         },
         textColor: "text-black",
         Banner: Helper.SnehalBanner,
+        MobileBanner: Helper.SnehalMobileBanner,
         upArrowSvg: Helper.BlackArrow,
       },
       projectOverView: {
@@ -456,6 +462,7 @@ export const OurProjects = {
         },
         textColor: "text-[#73BE5F]",
         Banner: Helper.SnehShilpBanner,
+        MobileBanner: Helper.SnehShilpMobileBanner,
         upArrowSvg: Helper.MicroArrow,
       },
       projectOverView: {
@@ -515,6 +522,7 @@ export const OurProjects = {
         },
         textColor: "text-[#003777]",
         Banner: Helper.FestBanner,
+        MobileBanner: Helper.FestMobileBanner,
         upArrowSvg: Helper.festArrow,
       },
       projectOverView: {
@@ -574,6 +582,7 @@ export const OurProjects = {
           href: "/",
         },
         Banner: Helper.AeroBanner,
+        MobileBanner: Helper.AeroMobileBanner,
         textColor: "text-black",
         upArrowSvg: Helper.BlackArrow,
       },
@@ -635,6 +644,7 @@ export const OurProjects = {
           href: "/",
         },
         Banner: Helper.OreumBanner,
+        MobileBanner: Helper.OreumMobileBanner,
         textColor: "text-[#05A750]",
         upArrowSvg: Helper.OreumArrow,
       },
@@ -702,6 +712,7 @@ export const OurProjects = {
           href: "/",
         },
         Banner: Helper.EverVitalBanner,
+        MobileBanner: Helper.EverVitalMobileBanner,
         textColor: "text-[#218A66]",
         upArrowSvg: Helper.EverVitalArrow,
       },

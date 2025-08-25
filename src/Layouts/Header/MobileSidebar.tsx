@@ -143,9 +143,9 @@ const MobileSidebar: React.FC<MobileSidebarProps> = ({ isOpen, onClose }) => {
                               className="block py-2 px-3 text-xs font-medium text-blue-600 hover:text-blue-700 hover:bg-blue-50 rounded-lg transition-colors"
                               onClick={onClose}
                             >
-                            {item.name}
+                              {item.name}
                             </Link>
-                            
+
                             {/* Subcategories */}
                             {item.data?.map((subItem) => (
                               <div key={subItem.name} className="space-y-1">
@@ -167,7 +167,7 @@ const MobileSidebar: React.FC<MobileSidebarProps> = ({ isOpen, onClose }) => {
                                   )}
                                   <span>{subItem.name}</span>
                                 </Link>
-                                
+
                                 {/* Children */}
                                 {subItem.children && (
                                   <div className="ml-6 space-y-1">
@@ -232,12 +232,9 @@ const MobileSidebar: React.FC<MobileSidebarProps> = ({ isOpen, onClose }) => {
                   className="w-9 h-9 border border-gray-300 text-white rounded-lg flex items-center justify-center"
                   aria-label="Facebook"
                 >
-                  <Image
-                    src={facebookIcon}
-                    alt="Facebook"
-                    width={8}
-                    height={8}
-                  />
+                  <div className="w-6 h-6 relative">
+                    <Image src={facebookIcon} alt="Facebook" fill />
+                  </div>
                 </Link>
                 <Link
                   href={socialLinks.instagram}
@@ -246,12 +243,9 @@ const MobileSidebar: React.FC<MobileSidebarProps> = ({ isOpen, onClose }) => {
                   className="w-9 h-9 border border-gray-300 text-white rounded-lg flex items-center justify-center"
                   aria-label="Instagram"
                 >
-                  <Image
-                    src={instagramIcon}
-                    alt="Instagram"
-                    width={14}
-                    height={14}
-                  />
+                  <div className="w-6 h-6 relative">
+                    <Image src={instagramIcon} alt="Instagram" fill />
+                  </div>
                 </Link>
                 <Link
                   href={socialLinks.linkedin}
@@ -260,12 +254,13 @@ const MobileSidebar: React.FC<MobileSidebarProps> = ({ isOpen, onClose }) => {
                   className="w-9 h-9 border border-gray-300 text-white rounded-lg flex items-center justify-center"
                   aria-label="LinkedIn"
                 >
-                  <Image
-                    src={linkedinIcon}
-                    alt="LinkedIn"
-                    width={14}
-                    height={14}
-                  />
+                  <div className="w-6 h-6 relative">
+                    <Image
+                      src={linkedinIcon}
+                      alt="LinkedIn"
+                      fill
+                    />
+                  </div>
                 </Link>
               </div>
             </div>

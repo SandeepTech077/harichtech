@@ -416,7 +416,8 @@ export const HomePagedata = {
   IndustriesSection: {
     title: "Industries We",
     blueTitle: "Serve",
-    description: null,
+    description:
+      "We empower businesses across diverse sectors with tailored digital solutions, driving innovation and growth.",
     cards: [
       {
         id: 1,

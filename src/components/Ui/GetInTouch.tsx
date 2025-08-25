@@ -6,18 +6,20 @@ interface GetInTouchProps {
   title?: string;
   subtitle?: string;
   buttonText?: string;
+  bg:string;
 }
 
 const GetInTouch: React.FC<GetInTouchProps> = ({
-  title = "Ready to Accelerate Your Digital Jour ney?",
-  subtitle = "Let's discuss your vision and turn it into a powerful digital reality.",
-  buttonText = "Let’s Connect",
+  title,
+  subtitle, 
+  buttonText,
+  bg
 }) => {
   return (
-    <div className="w-full mx-auto p-6 sm:p-8 lg:p-10 bg-blue-600 border-none rounded-xl  mb-10">
+    <div className={`w-full mx-auto p-6 sm:p-8 lg:p-10 bg-blue-600 border-none rounded-xl  mb-10`}>
       <div className="flex flex-col lg:flex-row items-start  lg:items-center justify-between gap-4">
         <div className="flex-1">
-          <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-white mb-2">
+          <h3 className="text-2xl sm:text-xl lg:text-2xl font-bold text-white mb-2">
             {title}
           </h3>
           <p className="text-sm sm:text-base text-white leading-relaxed">

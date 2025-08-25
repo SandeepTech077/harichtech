@@ -27,14 +27,19 @@ const PortfolioDetail = async ({ params }: Props) => {
   if (!project) return notFound();
 
   return (
-    <div className="bg-white py-7">
+    <div className="bg-white py-5">
       <ProjectBanner project={project.BannerSection} />
       <OverView data={project.projectOverView} />
       <BannerMiddle data={project.MiddleBannerSection} />
       <DesignComponent data={project.design} />
       <ReviewComponent data={project.review} />
       <div className="px-4 lg:px-20 py-10 pt-10">
-        <GetInTouch />
+        <GetInTouch
+          title="Ready to Accelerate Your Digital Journey?"
+          subtitle="Let's discuss your vision and turn it into a powerful digital reality."
+          buttonText="Let’s Connect"
+          bg="bg-white"
+        />
       </div>
     </div>
   );
