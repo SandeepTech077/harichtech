@@ -35,101 +35,34 @@ const ApplicationModal: React.FC<{
   const [submitSuccess, setSubmitSuccess] = useState(false);
   const [submitError, setSubmitError] = useState<string>("");
 
-  // Backend API URL - Replace with your Namecheap domain
-  const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000/api';
-
   useEffect(() => {
-    setFormData((prev) => ({
-      ...prev,
-      jobTitle: jobTitle,
-    }));
+    setFormData((prev) => ({ ...prev, jobTitle })); 
   }, [jobTitle]);
 
   const validateForm = (): boolean => {
     const newErrors: FormErrors = {};
 
-    if (!formData.fullName.trim()) {
-      newErrors.fullName = "Full name is required";
-    } else if (formData.fullName.trim().length < 2) {
-      newErrors.fullName = "Full name must be at least 2 characters";
-    }
-
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!formData.email.trim()) {
-      newErrors.email = "Email is required";
-    } else if (!emailRegex.test(formData.email)) {
-      newErrors.email = "Please enter a valid email address";
-    }
-
-    const phoneRegex = /^[\+]?[\d\s\-\(\)]{10,}$/;
-    if (!formData.phone.trim()) {
-      newErrors.phone = "Phone number is required";
-    } else if (!phoneRegex.test(formData.phone.replace(/\s/g, ""))) {
-      newErrors.phone = "Please enter a valid phone number";
-    }
-
-    if (!formData.resume) {
-      newErrors.resume = "Resume is required";
-    } else {
-      const allowedTypes = [
-        "application/pdf",
-        "application/msword",
-        "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
-      ];
-      if (!allowedTypes.includes(formData.resume.type)) {
-        newErrors.resume = "Please upload a PDF or Word document";
-      } else if (formData.resume.size > 5 * 1024 * 1024) {
-        newErrors.resume = "File size must be less than 5MB";
-      }
-    }
+    if (!formData.fullName.trim()) newErrors.fullName = "Full name is required";
+    if (!formData.email.trim()) newErrors.email = "Email is required";
+    if (!formData.phone.trim()) newErrors.phone = "Phone is required";
+    if (!formData.resume) newErrors.resume = "Resume is required";
 
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
   };
 
-  const handleInputChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
-  ) => {
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
-    setFormData((prev) => ({
-      ...prev,
-      [name]: value,
-    }));
-
-    if (errors[name as keyof FormErrors]) {
-      setErrors((prev) => ({
-        ...prev,
-        [name]: undefined,
-      }));
-    }
-
-    if (submitError) {
-      setSubmitError("");
-    }
+    setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0] || null;
-    setFormData((prev) => ({
-      ...prev,
-      resume: file,
-    }));
-
-    if (errors.resume) {
-      setErrors((prev) => ({
-        ...prev,
-        resume: undefined,
-      }));
-    }
-
-    if (submitError) {
-      setSubmitError("");
-    }
+    setFormData((prev) => ({ ...prev, resume: file }));
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-
     if (!validateForm()) return;
 
     setIsSubmitting(true);
@@ -137,55 +70,30 @@ const ApplicationModal: React.FC<{
 
     try {
       const formDataToSend = new FormData();
-      formDataToSend.append('fullName', formData.fullName);
-      formDataToSend.append('email', formData.email);
-      formDataToSend.append('phone', formData.phone);
-      formDataToSend.append('jobTitle', formData.jobTitle); // jobTitle included
-      if (formData.resume) {
-        formDataToSend.append('resume', formData.resume);
-      }
+      formDataToSend.append("fullName", formData.fullName);
+      formDataToSend.append("email", formData.email);
+      formDataToSend.append("phone", formData.phone);
+      formDataToSend.append("jobTitle", formData.jobTitle);
+      if (formData.resume) formDataToSend.append("resume", formData.resume);
 
-      const response = await fetch(`${API_BASE_URL}/career`, {
-        method: 'POST',
+      const response = await fetch("http://localhost:5000/api/career/resume", {
+        method: "POST",
         body: formDataToSend,
       });
 
-      const result = await response.json();
-
       if (!response.ok) {
-        throw new Error(result.error || 'Failed to submit application');
+        throw new Error("Failed to submit application");
       }
 
       setSubmitSuccess(true);
-
       setTimeout(() => {
         setSubmitSuccess(false);
         onClose();
-        setFormData({
-          fullName: "",
-          email: "",
-          phone: "",
-          jobTitle: jobTitle,
-          resume: null,
-        });
-        setErrors({});
-        setSubmitError("");
       }, 3000);
-
     } catch (error) {
-      console.error("Submission error:", error);
-      setSubmitError(error instanceof Error ? error.message : 'Failed to submit application. Please try again.');
+      setSubmitError("Something went wrong!");
     } finally {
       setIsSubmitting(false);
-    }
-  };
-
-  const handleClose = () => {
-    if (!isSubmitting) {
-      onClose();
-      setErrors({});
-      setSubmitSuccess(false);
-      setSubmitError("");
     }
   };
 
@@ -198,7 +106,7 @@ const ApplicationModal: React.FC<{
           <div className="flex justify-between items-center mb-6">
             <h2 className="text-2xl font-bold text-gray-900">Apply for Position</h2>
             <button
-              onClick={handleClose}
+              onClick={handleSubmit}
               disabled={isSubmitting}
               className="text-gray-400 hover:text-gray-600 disabled:opacity-50"
             >
@@ -333,7 +241,7 @@ const ApplicationModal: React.FC<{
             <div className="flex gap-4 pt-4">
               <button
                 type="button"
-                onClick={handleClose}
+                onClick={onClose}
                 disabled={isSubmitting}
                 className="flex-1 px-4 py-2 border border-gray-300 text-gray-700 rounded-md hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed"
               >
@@ -341,11 +249,10 @@ const ApplicationModal: React.FC<{
               </button>
               <button
                 type="submit"
-                disabled={isSubmitting}
                 className="flex-1 bg-gradient-to-l from-[#2058FF] to-[#004BC2] text-white px-4 py-2 rounded-md hover:opacity-90 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center"
               >
                 {isSubmitting ? (
-                  <>
+                            <>
                     <svg
                       className="animate-spin -ml-1 mr-3 h-5 w-5 text-white"
                       xmlns="http://www.w3.org/2000/svg"
