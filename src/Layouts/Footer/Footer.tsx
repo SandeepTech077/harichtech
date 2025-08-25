@@ -11,7 +11,7 @@ import linkedinLogo from "../../../public/SVG/linkedin-logo.svg";
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
-  // ✅ Form state
+
   const [FooterState, setFormState] = useState({
     name: "",
     email: "",
@@ -21,7 +21,7 @@ const Footer = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [message, setMessage] = useState<{ type: "success" | "error"; text: string } | null>(null);
 
-  // ✅ Data
+  // Data
   const servicesData = [
     {
       name: "Web & App Development",
@@ -53,7 +53,7 @@ const Footer = () => {
     { icon: instagramLogo, path: "https://instagram.com/harichtech", name: "Instagram" },
   ];
 
-  // ✅ Input change
+  // Input change
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     setFormState((prev) => ({
@@ -62,7 +62,7 @@ const Footer = () => {
     }));
   };
 
-  // ✅ Submit
+  // Submit
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
@@ -109,7 +109,7 @@ const Footer = () => {
     } finally {
       setIsSubmitting(false);
     }
-  };
+  };  
 
   return (
     <footer className="w-full px-4 sm:px-6 lg:px-8 pb-6">
@@ -215,14 +215,27 @@ const Footer = () => {
                   placeholder="Email Id"
                   className="w-full px-4 py-3 bg-transparent border border-white/30 rounded-lg text-white"
                 />
-                <input
-                  type="tel"
-                  name="phone"
-                  value={FooterState.phone}
-                  onChange={handleInputChange}
-                  placeholder="Mobile No."
-                  className="w-full px-4 py-3 bg-transparent border border-white/30 rounded-lg text-white"
-                />
+             <input
+                    type="tel"
+                    name="phone"
+                    value={FooterState.phone}
+                    onChange={(e) => {
+                      // sirf digits allow
+                      let value = e.target.value.replace(/\D/g, "");
+                      // max 10 digit hi rakho
+                      if (value.length > 10) {
+                        value = value.slice(0, 10);
+                      }
+                      setFormState((prev) => ({ ...prev, phone: value }));
+                    }}
+                    inputMode="numeric" // mobile keyboard number only
+                    pattern="[0-9]*"
+                    disabled={isSubmitting}
+                    className={`"w-full px-4 py-3 bg-transparent border border-white/30 rounded-lg text-white" $
+                      FooterState.phone ?
+                    `}
+                    placeholder="Moblie No."
+                  />
                 <textarea
                   name="message"
                   value={FooterState.message}

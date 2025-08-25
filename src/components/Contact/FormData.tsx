@@ -56,7 +56,8 @@ export default function FormData({ data }: FormDataProps) {
 
    const handleSubmit = async (e: React.FormEvent) => {
   e.preventDefault();
-  const errors: Record<string, string> = {};
+
+   const errors: Record<string, string> = {};
   if (!/^[0-9]{10}$/.test(formState.phone)) {
     errors.phone = "Phone number must be 10 digits";
   }
@@ -114,6 +115,7 @@ export default function FormData({ data }: FormDataProps) {
     setIsSubmitting(false);
   }
 };
+
 
   return (
     <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-slate-50 to-blue-50">

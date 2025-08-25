@@ -36,7 +36,7 @@ const ApplicationModal: React.FC<{
   const [submitError, setSubmitError] = useState<string>("");
 
   useEffect(() => {
-    setFormData((prev) => ({ ...prev, jobTitle })); 
+    setFormData((prev) => ({ ...prev, jobTitle }));
   }, [jobTitle]);
 
   const validateForm = (): boolean => {
@@ -46,6 +46,15 @@ const ApplicationModal: React.FC<{
     if (!formData.email.trim()) newErrors.email = "Email is required";
     if (!formData.phone.trim()) newErrors.phone = "Phone is required";
     if (!formData.resume) newErrors.resume = "Resume is required";
+
+    // extra validations
+    if (formData.phone && !/^[0-9]{10}$/.test(formData.phone)) {
+      newErrors.phone = "Phone number must be 10 digits";
+    }
+
+    if (formData.email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
+      newErrors.email = "Enter a valid email address";
+    }
 
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
@@ -104,45 +113,39 @@ const ApplicationModal: React.FC<{
       <div className="bg-white rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto">
         <div className="p-6">
           <div className="flex justify-between items-center mb-6">
-            <h2 className="text-2xl font-bold text-gray-900">Apply for Position</h2>
+            <h2 className="text-2xl font-bold text-gray-900">
+              Apply for Position
+            </h2>
             <button
-              onClick={handleSubmit}
+              onClick={onClose}
               disabled={isSubmitting}
               className="text-gray-400 hover:text-gray-600 disabled:opacity-50"
             >
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              <svg
+                className="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M6 18L18 6M6 6l12 12"
+                />
               </svg>
             </button>
           </div>
 
           {submitSuccess && (
             <div className="mb-6 p-4 bg-green-100 border border-green-400 text-green-700 rounded-md">
-              <div className="flex items-center">
-                <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                  <path
-                    fillRule="evenodd"
-                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                    clipRule="evenodd"
-                  />
-                </svg>
-                Application submitted successfully! We&apos;ll contact you soon.
-              </div>
+              ✅ Application submitted successfully! We&apos;ll contact you soon.
             </div>
           )}
 
           {submitError && (
             <div className="mb-6 p-4 bg-red-100 border border-red-400 text-red-700 rounded-md">
-              <div className="flex items-center">
-                <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                  <path
-                    fillRule="evenodd"
-                    d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z"
-                    clipRule="evenodd"
-                  />
-                </svg>
-                {submitError}
-              </div>
+            {submitError}
             </div>
           )}
 
@@ -163,7 +166,9 @@ const ApplicationModal: React.FC<{
                 }`}
                 placeholder="Enter your full name"
               />
-              {errors.fullName && <p className="mt-1 text-sm text-red-600">{errors.fullName}</p>}
+              {errors.fullName && (
+                <p className="mt-1 text-sm text-red-600">{errors.fullName}</p>
+              )}
             </div>
 
             {/* Email */}
@@ -182,7 +187,9 @@ const ApplicationModal: React.FC<{
                 }`}
                 placeholder="Enter your email address"
               />
-              {errors.email && <p className="mt-1 text-sm text-red-600">{errors.email}</p>}
+              {errors.email && (
+                <p className="mt-1 text-sm text-red-600">{errors.email}</p>
+              )}
             </div>
 
             {/* Phone */}
@@ -191,20 +198,34 @@ const ApplicationModal: React.FC<{
                 Phone Number <span className="text-red-500">*</span>
               </label>
               <input
-                type="tel"
-                name="phone"
-                value={formData.phone}
-                onChange={handleInputChange}
-                disabled={isSubmitting}
-                className={`w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 disabled:opacity-50 disabled:cursor-not-allowed ${
-                  errors.phone ? "border-red-500" : "border-gray-300"
-                }`}
-                placeholder="Enter your phone number"
-              />
-              {errors.phone && <p className="mt-1 text-sm text-red-600">{errors.phone}</p>}
+                    type="tel"
+                    name="phone"
+                    value={formData.phone}
+                    onChange={(e) => {
+                      // sirf digits allow
+                      let value = e.target.value.replace(/\D/g, "");
+                      // max 10 digit hi rakho
+                      if (value.length > 10) {
+                        value = value.slice(0, 10);
+                      }
+                      setFormData((prev) => ({ ...prev, phone: value }));
+                    }}
+                    inputMode="numeric" // mobile keyboard number only
+                    pattern="[0-9]*"
+                    disabled={isSubmitting}
+                    className={`w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 disabled:opacity-50 disabled:cursor-not-allowed ${
+                      errors.phone ? "border-red-500" : "border-gray-300"
+                    }`}
+                    placeholder="Enter your phone number"
+                  />
+
+
+              {errors.phone && (
+                <p className="mt-1 text-sm text-red-600">{errors.phone}</p>
+              )}
             </div>
 
-            {/* Job Title - Now prominently displayed */}
+            {/* Job Title */}
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-2">
                 Job Position <span className="text-red-500">*</span>
@@ -214,7 +235,7 @@ const ApplicationModal: React.FC<{
                 name="jobTitle"
                 value={formData.jobTitle}
                 readOnly
-                className="w-full px-3 py-2 border rounded-md bg-blue-50 text-blue-900 font-medium cursor-not-allowed border-blue-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full px-3 py-2 border rounded-md bg-blue-50 text-blue-900 font-medium cursor-not-allowed border-blue-300"
               />
             </div>
 
@@ -233,8 +254,12 @@ const ApplicationModal: React.FC<{
                   errors.resume ? "border-red-500" : "border-gray-300"
                 }`}
               />
-              <p className="mt-1 text-xs text-gray-500">Upload your resume in PDF or Word format (max 5MB)</p>
-              {errors.resume && <p className="mt-1 text-sm text-red-600">{errors.resume}</p>}
+              <p className="mt-1 text-xs text-gray-500">
+                Upload your resume in PDF or Word format (max 5MB)
+              </p>
+              {errors.resume && (
+                <p className="mt-1 text-sm text-red-600">{errors.resume}</p>
+              )}
             </div>
 
             {/* Buttons */}
@@ -249,17 +274,25 @@ const ApplicationModal: React.FC<{
               </button>
               <button
                 type="submit"
+                disabled={isSubmitting}
                 className="flex-1 bg-gradient-to-l from-[#2058FF] to-[#004BC2] text-white px-4 py-2 rounded-md hover:opacity-90 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center"
               >
                 {isSubmitting ? (
-                            <>
+                  <>
                     <svg
                       className="animate-spin -ml-1 mr-3 h-5 w-5 text-white"
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
                       viewBox="0 0 24 24"
                     >
-                      <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+                      <circle
+                        className="opacity-25"
+                        cx="12"
+                        cy="12"
+                        r="10"
+                        stroke="currentColor"
+                        strokeWidth="4"
+                      ></circle>
                       <path
                         className="opacity-75"
                         fill="currentColor"
