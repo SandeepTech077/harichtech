@@ -38,7 +38,6 @@ const PortfolioDetail = async ({ params }: Props) => {
           title="Ready to Accelerate Your Digital Journey?"
           subtitle="Let's discuss your vision and turn it into a powerful digital reality."
           buttonText="Let’s Connect"
-          bg="bg-white"
         />
       </div>
     </div>

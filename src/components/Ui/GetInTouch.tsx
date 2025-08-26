@@ -6,14 +6,13 @@ interface GetInTouchProps {
   title?: string;
   subtitle?: string;
   buttonText?: string;
-  bg:string;
 }
 
 const GetInTouch: React.FC<GetInTouchProps> = ({
   title,
   subtitle, 
   buttonText,
-  bg
+  
 }) => {
   return (
     <div className={`w-full mx-auto p-6 sm:p-8 lg:p-10 bg-blue-600 border-none rounded-xl  mb-10`}>
