@@ -7,6 +7,7 @@ import Logo from "../../../public/Logo/logo-white.svg";
 import facebookLogo from "../../../public/SVG/facebook-logo.svg";
 import instagramLogo from "../../../public/SVG/instagram-logo.svg";
 import linkedinLogo from "../../../public/SVG/linkedin-logo.svg";
+import { sendFooterMessage } from "@/api/footer"
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -81,35 +82,28 @@ const Footer = () => {
       return;
     }
 
-    try {
-      const response = await fetch("http://localhost:5000/api/get", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(FooterState),
-      });
+     try {
+      const { ok, result } = await sendFooterMessage(FooterState);
 
-      const result = await response.json();
-      if (response.ok) {
+      if (ok) {
         setMessage({ type: "success", text: "Message sent successfully!" });
         setFormState({ name: "", email: "", phone: "", message: "" });
 
-        setTimeout(() =>{
-          setMessage(null);
-        },3000 );
+        setTimeout(() => setMessage(null), 3000);
       } else {
-        setMessage({ type: "error", text: result.msg || "Something went wrong, please try again." });
+        setMessage({
+          type: "error",
+          text: result.msg || "Something went wrong, please try again.",
+        });
       }
     } catch (error) {
-      console.error(error);
       setMessage({ type: "error", text: "Server error, please try again later." });
-       setTimeout(() =>{
-          setMessage(null);
-        },3000 );
-
+      setTimeout(() => setMessage(null), 3000);
     } finally {
       setIsSubmitting(false);
     }
-  };  
+  };
+
 
   return (
     <footer className="w-full px-4 sm:px-6 lg:px-8 pb-6">

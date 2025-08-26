@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
+import { submitResume } from "@/api/resume";
 
 interface ApplicationFormData {
   fullName: string;
@@ -77,36 +78,33 @@ const ApplicationModal: React.FC<{
     setIsSubmitting(true);
     setSubmitError("");
 
-    try {
-      const formDataToSend = new FormData();
-      formDataToSend.append("fullName", formData.fullName);
-      formDataToSend.append("email", formData.email);
-      formDataToSend.append("phone", formData.phone);
-      formDataToSend.append("jobTitle", formData.jobTitle);
-      if (formData.resume) formDataToSend.append("resume", formData.resume);
+    
+  try {
+    const formDataToSend = new FormData();
+    formDataToSend.append("fullName", formData.fullName);
+    formDataToSend.append("email", formData.email);
+    formDataToSend.append("phone", formData.phone);
+    formDataToSend.append("jobTitle", formData.jobTitle);
+    if (formData.resume) formDataToSend.append("resume", formData.resume);
 
-      const response = await fetch("http://localhost:5000/api/career/resume", {
-        method: "POST",
-        body: formDataToSend,
-      });
+    const response = await submitResume(formDataToSend);
 
-      if (!response.ok) {
-        throw new Error("Failed to submit application");
-      }
-
-      setSubmitSuccess(true);
-      setTimeout(() => {
-        setSubmitSuccess(false);
-        onClose();
-      }, 3000);
-    } catch (error) {
-      setSubmitError("Something went wrong!");
-    } finally {
-      setIsSubmitting(false);
+    if (response.status !== 200) {
+      throw new Error("Failed to submit application");
     }
-  };
 
-  if (!isOpen) return null;
+    setSubmitSuccess(true);
+    setTimeout(() => {
+      setSubmitSuccess(false);
+      onClose();
+    }, 3000);
+  } catch (error) {
+    setSubmitError("Something went wrong!");
+  } finally {
+    setIsSubmitting(false);
+  }
+};
+if (!isOpen) return null;
 
   return (
     <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">

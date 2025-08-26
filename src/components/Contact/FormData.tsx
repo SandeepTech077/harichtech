@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import Image, { StaticImageData } from 'next/image';
-
+import { sendEmailMessage } from "@/api/email";
 interface FormDataProps {
   data: {
     name: string;
@@ -71,50 +71,39 @@ export default function FormData({ data }: FormDataProps) {
     return;
   }
    }
-  try {
-    const response = await fetch("http://localhost:5000/api/email", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(formState),
-    });
+  
+    try {
+      const { ok, result } = await sendEmailMessage(formState);
 
-    const result = await response.json();
+      if (ok) {
+        setMessage({ type: "success", text: "Message sent successfully!" });
+        setFormState({
+          name: "",
+          email: "",
+          phone: "",
+          country: "",
+          budget: "",
+          customBudget: "",
+          description: "",
+        });
 
-    if (response.ok) {
-      setMessage({ type: "success", text: "Message sent successfully!" });
-      setFormState({
-        name: "",
-        email: "",
-        phone: "",
-        country: "",
-        budget: "",
-        customBudget: "",
-        description: "",
-      });
-        setTimeout(() =>{
-          setMessage(null);
-        },3000 );
-    } else {
+        setTimeout(() => setMessage(null), 3000);
+      } else {
+        setMessage({
+          type: "error",
+          text: result.msg || "Something went wrong, please try again.",
+        });
+      }
+    } catch (error) {
       setMessage({
         type: "error",
-        text: result.msg || "Something went wrong, please try again.",
+        text: "Server error, please try again later.",
       });
+      setTimeout(() => setMessage(null), 3000);
+    } finally {
+      setIsSubmitting(false);
     }
-  } catch (error) {
-    console.error(error);
-    setMessage({
-      type: "error",
-      text: "Server error, please try again later.",
-    });
-      setTimeout(() =>{
-          setMessage(null);
-        },3000 );
-  } finally {
-    setIsSubmitting(false);
-  }
-};
+  };
 
 
   return (
