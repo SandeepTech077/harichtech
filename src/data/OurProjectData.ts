@@ -102,7 +102,7 @@ export const OurProjects = {
       },
       MiddleBannerSection: {
         Banner: Helper.AarambhMiddleBanner,
-        mobileBanner: Helper.AarambhMiddleBanner,
+        mobileBanner: Helper.AarambhMiddleMobileBanner,
       },
       design: {
         title: "Design System",
@@ -166,7 +166,7 @@ export const OurProjects = {
       },
       MiddleBannerSection: {
         Banner: Helper.MicroMiddleBanner,
-        mobileBanner: Helper.MicroMiddleBanner,
+        mobileBanner: Helper.MicronRangeMiddleMobileBanner,
       },
       design: {
         title: "Design System",
@@ -234,7 +234,7 @@ export const OurProjects = {
       },
       MiddleBannerSection: {
         Banner: Helper.ArkleMiddleBanner,
-        mobileBanner: Helper.ArkleMiddleBanner,
+        mobileBanner: Helper.ArkleMiddleMobileBanner,
       },
       design: {
         title: "Design System",
@@ -298,7 +298,7 @@ export const OurProjects = {
       },
       MiddleBannerSection: {
         Banner: Helper.ShilpMiddleBanner,
-        mobileBanner: Helper.ShilpMiddleBanner,
+        mobileBanner: Helper.ShilpMiddleMobileBanner,
       },
       design: {
         title: "Design System",
@@ -358,7 +358,7 @@ export const OurProjects = {
       },
       MiddleBannerSection: {
         Banner: Helper.YashMiddleBanner,
-        mobileBanner: Helper.YashMiddleBanner,
+        mobileBanner: Helper.YashMiddleMobileBanner,
       },
       design: {
         title: "Design System",
@@ -538,7 +538,7 @@ export const OurProjects = {
       },
       MiddleBannerSection: {
         Banner: Helper.FestMiddleBanner,
-        mobileBanner: Helper.FestMiddleBanner,
+        mobileBanner: Helper.StartupFestMiddleMobileBanner,
       },
       design: {
         title: "Design System",
@@ -598,7 +598,7 @@ export const OurProjects = {
       },
       MiddleBannerSection: {
         Banner: Helper.AeroMiddleBanner,
-        mobileBanner: Helper.AeroMiddleBanner,
+        mobileBanner: Helper.AeroTypeMiddleMobileBanner,
       },
       design: {
         title: "Design System",
@@ -661,7 +661,7 @@ export const OurProjects = {
       },
       MiddleBannerSection: {
         Banner: Helper.OreumMiddleBanner,
-        mobileBanner: Helper.OreumMiddleBanner,
+        mobileBanner: Helper.OreumMiddleMobileBanner,
       },
       design: {
         title: "Design System",
@@ -730,7 +730,7 @@ export const OurProjects = {
       },
       MiddleBannerSection: {
         Banner: Helper.EverVitalMiddleBanner,
-        mobileBanner: Helper.EverVitalMiddleBanner,
+        mobileBanner: Helper.EverVitalMiddleMobileBanner,
       },
       design: {
         title: "Design System",

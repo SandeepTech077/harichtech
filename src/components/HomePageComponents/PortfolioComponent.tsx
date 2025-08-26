@@ -5,9 +5,10 @@ import Image, { StaticImageData } from "next/image";
 import { useRouter } from "next/navigation";
 import Title from "@/components/Title";
 import Button from "@/components/Button";
-          
+import { motion } from "framer-motion";
+
 interface WorkItem {
-   number: number;
+  number: number;
   title: string;
   shortDescription: string;
   Image: StaticImageData;
@@ -15,7 +16,6 @@ interface WorkItem {
 }
 
 interface PortfolioData {
- 
   title: string;
   Subtitle: string;
   btnTitle: string;
@@ -35,8 +35,20 @@ const PortfolioComponent: React.FC<PortfolioComponentProps> = ({ data }) => {
   };
 
   return (
-    <div className="w-full">
-      <div className="text-center">
+    <motion.div
+      className="w-full"
+      initial={{ opacity: 0, y: 40 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8 }}
+      viewport={{ once: true }}
+    >
+      <motion.div
+        className="text-center"
+        initial={{ opacity: 0, y: -20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, delay: 0.2 }}
+        viewport={{ once: true }}
+      >
         {/* Title */}
         <div className="mx-auto mb-8" style={{ maxWidth: "200px" }}>
           <Title title={data.title} />
@@ -54,15 +66,30 @@ const PortfolioComponent: React.FC<PortfolioComponentProps> = ({ data }) => {
         <p className="mx-auto mt-4 text-black text-lg max-w-6xl">
           {data.describation}
         </p>
-      </div>
+      </motion.div>
 
-      {/* Top Two Images in Two Columns */} 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10">
+      {/* Top Two Images */}
+      <motion.div
+        className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10"
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true }}
+        variants={{
+          hidden: {},
+          show: {
+            transition: { staggerChildren: 0.2 },
+          },
+        }}
+      >
         {data.works.slice(0, 2).map((work, index) => (
-          <div
+          <motion.div
             key={index}
             className="overflow-hidden cursor-pointer"
             onClick={() => handleImageClick(work.href)}
+            initial={{ opacity: 0, scale: 0.95 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
           >
             <div className="h-full relative">
               <Image
@@ -71,17 +98,32 @@ const PortfolioComponent: React.FC<PortfolioComponentProps> = ({ data }) => {
                 className="object-contain"
               />
             </div>
-          </div>
+          </motion.div>
         ))}
-      </div>
+      </motion.div>
 
-      {/* Bottom Three Images in Three Columns */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
+      {/* Bottom Three Images */}
+      <motion.div
+        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-6"
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true }}
+        variants={{
+          hidden: {},
+          show: {
+            transition: { staggerChildren: 0.2 },
+          },
+        }}
+      >
         {data.works.slice(2, 5).map((work, index) => (
-          <div
+          <motion.div
             key={index}
             className="rounded-lg overflow-hidden cursor-pointer"
             onClick={() => handleImageClick(work.href)}
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
           >
             <div className="h-full relative">
               <Image
@@ -90,15 +132,21 @@ const PortfolioComponent: React.FC<PortfolioComponentProps> = ({ data }) => {
                 className="object-contain"
               />
             </div>
-          </div>
+          </motion.div>
         ))}
-      </div>
+      </motion.div>
 
       {/* View More Button */}
-      <div className="flex justify-center my-16">
+      <motion.div
+        className="flex justify-center my-16"
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, delay: 0.2 }}
+        viewport={{ once: true }}
+      >
         <Button text={data.btnTitle} href="/projects" />
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
   );
 };
 

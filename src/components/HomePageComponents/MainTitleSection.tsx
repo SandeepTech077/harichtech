@@ -75,7 +75,12 @@ const MainTitleSection: React.FC<Props> = ({ data }) => {
         </div>
 
         {/* Title */}
-        <h1 className="text-[40px] md:text-[55px] font-bold px-4 py-5 flex flex-wrap justify-center gap-2 text-center">
+        <motion.h1
+          className="text-[40px] md:text-[55px] font-bold px-4 py-5 flex flex-wrap justify-center gap-2 text-center"
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+        >
           {data.title.split(" ").map((word, i) => (
             <span
               key={i}
@@ -86,21 +91,32 @@ const MainTitleSection: React.FC<Props> = ({ data }) => {
               {word}
             </span>
           ))}
-        </h1>
+        </motion.h1>
 
         {/* SubTitle */}
-        <p className="text-[16px] md:text-[20px] text-white px-4">
+        <motion.p
+          className="text-[16px] md:text-[20px] text-white px-4"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, delay: 0.4 }}
+        >
           {data.subTitle}
-        </p>
+        </motion.p>
 
         {/* CTA Button */}
-        <Link
-          href={data.button.href}
-          className="flex items-center gap-2 bg-gradient-to-l from-[#2058FF] to-[#004BC2] hover:opacity-90 transition px-6 py-3 text-white rounded-[10px] text-[16px] font-semibold shadow-md"
+        <motion.div
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.8, delay: 0.8 }}
         >
-          {data.button.title}
-          <MoveUpRight />
-        </Link>
+          <Link
+            href={data.button.href}
+            className="flex items-center gap-2 bg-gradient-to-l from-[#2058FF] to-[#004BC2] hover:opacity-90 transition px-6 py-3 text-white rounded-[10px] text-[16px] font-semibold shadow-md"
+          >
+            {data.button.title}
+            <MoveUpRight />
+          </Link>
+        </motion.div>
       </div>
     </section>
   );

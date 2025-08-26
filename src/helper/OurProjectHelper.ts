@@ -56,7 +56,18 @@ import OreumMiddleBanner from "../../public/Image/OurProjects/MiddleBanner/orium
 import EverVitalMiddleBanner from "../../public/Image/OurProjects/MiddleBanner/evervital.png"
 
 // Mobile Middle Banner 
-import InsightMiddleMobileBanner from "../../public/Image/OurProjects/MiddleBanner/insight-mobile-Banner.png";
+import InsightMiddleMobileBanner from "../../public/Image/OurProjects/MiddleBanner/insight-mobile-middle.png";
+import AarambhMiddleMobileBanner from "../../public/Image/OurProjects/MiddleBanner/aarambh-mobile-middle.png";
+import MicronRangeMiddleMobileBanner from "../../public/Image/OurProjects/MiddleBanner/microbrange-mobile-middle.png";
+import ArkleMiddleMobileBanner from "../../public/Image/OurProjects/MiddleBanner/arkle-mobile-middle.png";
+import ShilpMiddleMobileBanner from "../../public/Image/OurProjects/MiddleBanner/shilp-mobile-middle.png";
+import YashMiddleMobileBanner from "../../public/Image/OurProjects/MiddleBanner/yash-mobile-middle.png";
+import SnehalMiddleMobileBanner from "../../public/Image/OurProjects/MiddleBanner/snehal-mobile-middle.png";
+import SnehShilpMiddleMobileBanner from "../../public/Image/OurProjects/MiddleBanner/snehshilp-mobile-middle.png";
+import StartupFestMiddleMobileBanner from "../../public/Image/OurProjects/MiddleBanner/startupfest-mobile-middle.png";
+import AeroTypeMiddleMobileBanner from "../../public/Image/OurProjects/MiddleBanner/aerotype-mobile-middle.png";
+import OreumMiddleMobileBanner from "../../public/Image/OurProjects/MiddleBanner/oreum-mobile-middle.png";
+import EverVitalMiddleMobileBanner from "../../public/Image/OurProjects/MiddleBanner/evervital-mobile-middle.png";
 
 
 // Desgin color 
@@ -241,6 +252,18 @@ export const Helper = {
 
     // Middle Banner Mobile 
     InsightMiddleMobileBanner,
+    AarambhMiddleMobileBanner,
+    MicronRangeMiddleMobileBanner,
+    ArkleMiddleMobileBanner,
+    ShilpMiddleMobileBanner,
+    YashMiddleMobileBanner,
+    SnehShilpMiddleMobileBanner,
+    SnehalMiddleMobileBanner,
+    StartupFestMiddleMobileBanner,
+    AeroTypeMiddleMobileBanner,
+    OreumMiddleMobileBanner,
+    EverVitalMiddleMobileBanner,
+
 
     //Overview
     InsightOverView,
