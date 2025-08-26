@@ -2,7 +2,7 @@ import { Helper } from "../helper/HomepageHelper";
 
 export const HomePagedata = {
   mainTitleSection: {
-    title: "Thinking The High Quality Websites and App",
+    title: "Thinking The High Quality Websites and Applications",
     allTitle: [
       {
         id: 1,
