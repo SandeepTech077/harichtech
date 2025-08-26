@@ -4,6 +4,7 @@ export const OurProjects = {
   projectdata: [
     {
       id: 1,
+      type: "insight",
       BannerSection: {
         icon: Helper.InsightLogo,
         description:
@@ -13,7 +14,7 @@ export const OurProjects = {
           href: "https://www.insightmanagement.in",
         },
         Banner: Helper.InsigtBanner,
-        MobileBanner: Helper.InsigtBanner,
+        MobileBanner: Helper.InsightMobileBanner,
         upArrowSvg: Helper.InsightArrow,
         textColor: "text-[#1B5AA7]",
       },
@@ -33,7 +34,7 @@ export const OurProjects = {
       },
       MiddleBannerSection: {
         Banner: Helper.InsightMiddleBanner,
-        mobileBanner: Helper.InsightMiddleBanner,
+        mobileBanner: Helper.InsightMiddleMobileBanner,
       },
       design: {
         title: "Design System",
@@ -74,6 +75,7 @@ export const OurProjects = {
     },
     {
       id: 2,
+      type: "shilp-aarambh",
       BannerSection: {
         icon: Helper.AarambhLogo,
         description:
@@ -84,6 +86,7 @@ export const OurProjects = {
         },
 
         Banner: Helper.AarambhBanner,
+        MobileBanner: Helper.AarambhMobileBanner,
         upArrowSvg: Helper.AarambhArrow,
         textColor: "text-[#E51D25]",
       },
@@ -99,7 +102,7 @@ export const OurProjects = {
       },
       MiddleBannerSection: {
         Banner: Helper.AarambhMiddleBanner,
-        mobileBanner: Helper.AarambhMiddleBanner,
+        mobileBanner: Helper.AarambhMiddleMobileBanner,
       },
       design: {
         title: "Design System",
@@ -136,6 +139,7 @@ export const OurProjects = {
     },
     {
       id: 3,
+      type: "microbrange",
       BannerSection: {
         icon: Helper.MicroLogo,
         description:
@@ -146,6 +150,7 @@ export const OurProjects = {
         },
         textColor: "text-[#4BBA72]",
         Banner: Helper.MicroBanner,
+        MobileBanner: Helper.MicroMobileBanner,
         upArrowSvg: Helper.MicroArrow,
       },
       projectOverView: {
@@ -161,7 +166,7 @@ export const OurProjects = {
       },
       MiddleBannerSection: {
         Banner: Helper.MicroMiddleBanner,
-        mobileBanner: Helper.MicroMiddleBanner,
+        mobileBanner: Helper.MicronRangeMiddleMobileBanner,
       },
       design: {
         title: "Design System",
@@ -202,6 +207,7 @@ export const OurProjects = {
     },
     {
       id: 4,
+      type: "arkle-equestrian-club",
       BannerSection: {
         icon: Helper.ArkleLogo,
         description:
@@ -212,6 +218,7 @@ export const OurProjects = {
         },
         textColor: "text-black",
         Banner: Helper.ArkleBanner,
+        MobileBanner: Helper.ArkleMobileBanner,
         upArrowSvg: Helper.BlackArrow,
       },
       projectOverView: {
@@ -227,7 +234,7 @@ export const OurProjects = {
       },
       MiddleBannerSection: {
         Banner: Helper.ArkleMiddleBanner,
-        mobileBanner: Helper.ArkleMiddleBanner,
+        mobileBanner: Helper.ArkleMiddleMobileBanner,
       },
       design: {
         title: "Design System",
@@ -264,6 +271,7 @@ export const OurProjects = {
     },
     {
       id: 5,
+      type: "shilp-group",
       BannerSection: {
         icon: Helper.ShilpLogo,
         description:
@@ -274,6 +282,7 @@ export const OurProjects = {
         },
         textColor: "text-black",
         Banner: Helper.ShilpBanner,
+        MobileBanner: Helper.ShilpMobileBanner,
         upArrowSvg: Helper.BlackArrow,
       },
       projectOverView: {
@@ -289,7 +298,7 @@ export const OurProjects = {
       },
       MiddleBannerSection: {
         Banner: Helper.ShilpMiddleBanner,
-        mobileBanner: Helper.ShilpMiddleBanner,
+        mobileBanner: Helper.ShilpMiddleMobileBanner,
       },
       design: {
         title: "Design System",
@@ -322,6 +331,7 @@ export const OurProjects = {
     },
     {
       id: 6,
+      type: "yash-brambhatt",
       BannerSection: {
         icon: Helper.YashLogo,
         description:
@@ -332,6 +342,7 @@ export const OurProjects = {
         },
         textColor: "text-black",
         Banner: Helper.YashBanner,
+        MobileBanner: Helper.YashMobileBanner,
         upArrowSvg: Helper.BlackArrow,
       },
       projectOverView: {
@@ -347,7 +358,7 @@ export const OurProjects = {
       },
       MiddleBannerSection: {
         Banner: Helper.YashMiddleBanner,
-        mobileBanner: Helper.YashMiddleBanner,
+        mobileBanner: Helper.YashMiddleMobileBanner,
       },
       design: {
         title: "Design System",
@@ -380,6 +391,7 @@ export const OurProjects = {
     },
     {
       id: 7,
+      type: "snehal-brambhatt",
       BannerSection: {
         icon: Helper.SnehalLogo,
         description:
@@ -390,6 +402,7 @@ export const OurProjects = {
         },
         textColor: "text-black",
         Banner: Helper.SnehalBanner,
+        MobileBanner: Helper.SnehalMobileBanner,
         upArrowSvg: Helper.BlackArrow,
       },
       projectOverView: {
@@ -438,6 +451,7 @@ export const OurProjects = {
     },
     {
       id: 8,
+      type: "snehshilp-foundation",
       BannerSection: {
         icon: Helper.SnehShilpLogo,
         description:
@@ -448,6 +462,7 @@ export const OurProjects = {
         },
         textColor: "text-[#73BE5F]",
         Banner: Helper.SnehShilpBanner,
+        MobileBanner: Helper.SnehShilpMobileBanner,
         upArrowSvg: Helper.MicroArrow,
       },
       projectOverView: {
@@ -496,6 +511,7 @@ export const OurProjects = {
     },
     {
       id: 9,
+      type: "startup-fest",
       BannerSection: {
         icon: Helper.FestLogo,
         description:
@@ -506,6 +522,7 @@ export const OurProjects = {
         },
         textColor: "text-[#003777]",
         Banner: Helper.FestBanner,
+        MobileBanner: Helper.FestMobileBanner,
         upArrowSvg: Helper.festArrow,
       },
       projectOverView: {
@@ -521,7 +538,7 @@ export const OurProjects = {
       },
       MiddleBannerSection: {
         Banner: Helper.FestMiddleBanner,
-        mobileBanner: Helper.FestMiddleBanner,
+        mobileBanner: Helper.StartupFestMiddleMobileBanner,
       },
       design: {
         title: "Design System",
@@ -555,6 +572,7 @@ export const OurProjects = {
 
     {
       id: 10,
+      type: "aerotyne",
       BannerSection: {
         icon: Helper.AeroLogo,
         description:
@@ -564,6 +582,7 @@ export const OurProjects = {
           href: "/",
         },
         Banner: Helper.AeroBanner,
+        MobileBanner: Helper.AeroMobileBanner,
         textColor: "text-black",
         upArrowSvg: Helper.BlackArrow,
       },
@@ -579,7 +598,7 @@ export const OurProjects = {
       },
       MiddleBannerSection: {
         Banner: Helper.AeroMiddleBanner,
-        mobileBanner: Helper.AeroMiddleBanner,
+        mobileBanner: Helper.AeroTypeMiddleMobileBanner,
       },
       design: {
         title: "Design System",
@@ -615,6 +634,7 @@ export const OurProjects = {
     },
     {
       id: 11,
+      type: "oreum-live-pure",
       BannerSection: {
         icon: Helper.OreumLogo,
         description:
@@ -624,6 +644,7 @@ export const OurProjects = {
           href: "/",
         },
         Banner: Helper.OreumBanner,
+        MobileBanner: Helper.OreumMobileBanner,
         textColor: "text-[#05A750]",
         upArrowSvg: Helper.OreumArrow,
       },
@@ -640,7 +661,7 @@ export const OurProjects = {
       },
       MiddleBannerSection: {
         Banner: Helper.OreumMiddleBanner,
-        mobileBanner: Helper.OreumMiddleBanner,
+        mobileBanner: Helper.OreumMiddleMobileBanner,
       },
       design: {
         title: "Design System",
@@ -681,6 +702,7 @@ export const OurProjects = {
     },
     {
       id: 12,
+      type: "evervital",
       BannerSection: {
         icon: Helper.EverVitalLogo,
         description:
@@ -690,6 +712,7 @@ export const OurProjects = {
           href: "/",
         },
         Banner: Helper.EverVitalBanner,
+        MobileBanner: Helper.EverVitalMobileBanner,
         textColor: "text-[#218A66]",
         upArrowSvg: Helper.EverVitalArrow,
       },
@@ -707,7 +730,7 @@ export const OurProjects = {
       },
       MiddleBannerSection: {
         Banner: Helper.EverVitalMiddleBanner,
-        mobileBanner: Helper.EverVitalMiddleBanner,
+        mobileBanner: Helper.EverVitalMiddleMobileBanner,
       },
       design: {
         title: "Design System",

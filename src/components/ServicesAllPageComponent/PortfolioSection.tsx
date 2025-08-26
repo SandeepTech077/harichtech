@@ -4,6 +4,7 @@ import React from "react";
 import { ProjectCard } from "./ProjectCard";
 import { StaticImageData } from "next/image";
 import { MoveUpRight } from "lucide-react";
+import Link from "next/link";
 
 interface ProjectArray {
   id: number;
@@ -37,10 +38,12 @@ export const PortfolioSection: React.FC<PortfolioSectionProps> = ({
                 {blueTitle}
               </span>
             </h2>
-            <button className="text-lg bg-gradient-to-l from-[#2058FF] to-[#004BC2] text-white px-6 py-3 rounded-lg hover:opacity-90 transition-all gap-4 flex items-center">
-              {buttonTitle}
-              <MoveUpRight />
-            </button>
+            <Link href="/projects">
+              <button className="text-lg bg-gradient-to-l from-[#2058FF] to-[#004BC2] text-white px-6 py-3 rounded-lg hover:opacity-90 transition-all gap-4 flex items-center">
+                {buttonTitle}
+                <MoveUpRight />
+              </button>
+            </Link>
           </div>
 
           {/* 🔹 Projects Grid */}

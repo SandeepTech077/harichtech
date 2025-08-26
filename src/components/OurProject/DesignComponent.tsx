@@ -36,11 +36,11 @@ const DesignComponent: React.FC<DesignComponentProps> = ({ data }) => {
       </h2>
 
       {/* Color Grid */}
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 mb-10">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-10">
         {colors.map((color) => (
           <div key={color.id} className="flex flex-col items-center">
             <div
-              className="w-full h-24 rounded-md"
+              className="w-80 h-30 rounded-md"
               style={{ backgroundColor: color.BgColor }}
             />
             <p className="mt-2 text-[16px] font-bold text-black">
@@ -52,7 +52,7 @@ const DesignComponent: React.FC<DesignComponentProps> = ({ data }) => {
 
       {/* Banner Image */}
       <div className="flex justify-center">
-        <div className="w-full  px-4">
+        <div className="w-full  px-2">
           <Image
             src={Banner}
             alt="Design Banner"

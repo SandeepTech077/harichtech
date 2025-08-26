@@ -12,7 +12,7 @@ interface BannerMiddleProps {
 
 const BannerMiddle: React.FC<BannerMiddleProps> = ({ data }) => {
   return (
-    <section className="relative w-full h-screen mt-10 overflow-hidden">
+    <section className="relative w-full h-[38vh] mt-10 overflow-hidden">
       {/* Desktop Banner */}
       <div className="hidden md:block absolute inset-0 z-0 w-full h-full">
         <Image
@@ -26,13 +26,12 @@ const BannerMiddle: React.FC<BannerMiddleProps> = ({ data }) => {
       </div>
 
       {/* Mobile Banner */}
-      <div className="block md:hidden absolute inset-0 z-0 w-full h-full">
+      <div className="block md:hidden absolute inset-0 z-0 w-full h-[100vh]">
         <Image
           src={data.mobileBanner || data.Banner}
           alt="Mobile Middle Banner"
-          fill
           className="object-cover"
-          priority
+
           sizes="100vw"
         />
       </div>

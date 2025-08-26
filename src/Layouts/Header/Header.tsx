@@ -157,7 +157,7 @@ const Header = () => {
                 <Image
                   src={linkedinIcon}
                   alt="LinkedIn"
-                  width={16}
+                  width={30}
                   className="h-auto group-hover:opacity-80"
                 />
               </Link>
@@ -172,7 +172,7 @@ const Header = () => {
                 <Image
                   src={facebookIcon}
                   alt="Facebook"
-                  width={10}
+                  width={30}
                   className="h-auto group-hover:opacity-80"
                 />
               </Link>
@@ -187,7 +187,7 @@ const Header = () => {
                 <Image
                   src={instagramIcon}
                   alt="Instagram"
-                  width={16}
+                  width={30}
                   className="h-auto group-hover:opacity-80"
                 />
               </Link>

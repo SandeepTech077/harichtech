@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Title from "@/components/Title";
 import Button from "../Button";
+import Link from "next/link";
 interface InnovationMeetProps {
   innovationMeet: {
     title: string;
@@ -49,7 +50,9 @@ const InnovationMeet: React.FC<InnovationMeetProps> = ({ innovationMeet }) => {
           </div>
 
           <div className="mt-8 hidden lg:block">
-            <Button text={leftSide.btnTitle} href="/career" />
+            <Link href="/career">
+              <Button text={leftSide.btnTitle} href="/career" />
+            </Link>
           </div>
         </div>
         <div className="w-full max-w-md mx-auto mt-10 space-y-6">

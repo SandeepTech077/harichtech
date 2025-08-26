@@ -16,7 +16,7 @@ export interface BannerSection {
   textColor?: string;
   button: ButtonTitle;
   Banner: StaticImageData;
-  MobileBanner?: StaticImageData; 
+  MobileBanner: StaticImageData; 
   upArrowSvg: StaticImageData;
 }
 
@@ -38,20 +38,20 @@ const ProjectBanner: React.FC<ProjectBannerProps> = ({ project }) => {
           sizes="(max-width: 767px) 100vw, (min-width: 768px) 100vw"
         />
         <Image
-          src={project.MobileBanner || project.Banner}
+          src={project.MobileBanner}
           alt="Mobile Banner"
           fill
           className="block md:hidden object-cover"
           priority
-          sizes="(max-width: 767px) 100vw, (min-width: 768px) 100vw"
-        />
+          sizes='100vw'
+         />
       </div>
 
       {/* Overlay Content - Kept exactly the same */}
       <div className="relative z-10 flex items-center h-full px-6 md:px-20">
         <div className="max-w-xl text-white space-y-6">
           {/* Logo - Fixed with proper aspect ratio handling */}
-          <div className="w-16 h-16 md:w-40 md:h-20 relative">
+          <div className="w-25 h-25 md:w-40 md:h-20 relative">
             <Image
               src={project.icon}
               alt="Logo"
@@ -67,7 +67,11 @@ const ProjectBanner: React.FC<ProjectBannerProps> = ({ project }) => {
           </p>
 
           {/* Button */}
-          <Link href={project.button.href}>
+          <Link
+            href={project.button.href}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <button
               className={`flex ${project.textColor} cursor-pointer items-center gap-2 bg-white px-6 py-3 rounded-[10px] text-[14px] md:text-[16px] font-semibold hover:bg-gray-200 transition`}
             >
