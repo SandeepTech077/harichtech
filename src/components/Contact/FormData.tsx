@@ -1,8 +1,9 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 "use client";
 
 import React, { useState } from 'react';
 import Image, { StaticImageData } from 'next/image';
-
+import { sendEmailMessage } from "@/api/base";
 interface FormDataProps {
   data: {
     name: string;
@@ -38,6 +39,7 @@ export default function FormData({ data }: FormDataProps) {
   });
 
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [message, setMessage] = useState<{ type: "success" | "error"; text: string } | null>(null);
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value } = e.target;
@@ -50,13 +52,58 @@ export default function FormData({ data }: FormDataProps) {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
-    // Simulate API call
-    setTimeout(() => {
+    setMessage(null); 
+
+
+
+   const errors: Record<string, string> = {};
+  if (!/^[0-9]{10}$/.test(formState.phone)) {
+    errors.phone = "Phone number must be 10 digits";
+  }
+
+  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formState.email)) {
+    errors.email = "Enter a valid email address";
+  }
+
+  if (Object.keys(errors).length > 0) {
+    setMessage({ type: "error", text: Object.values(errors).join(", ") });
+    return;
+  
+   }
+  
+    try {
+      const { ok, result } = await sendEmailMessage(formState);
+
+      if (ok) {
+        setMessage({ type: "success", text: "Message sent successfully!" });
+        setFormState({
+          name: "",
+          email: "",
+          phone: "",
+          country: "",
+          budget: "",
+          customBudget: "",
+          description: "",
+        });
+
+        setTimeout(() => setMessage(null), 3000);
+      } else {
+        setMessage({
+          type: "error",
+          text: result.msg || "Something went wrong, please try again.",
+        });
+      }
+    } catch (error) {
+      setMessage({
+        type: "error",
+        text: "Server error, please try again later.",
+      });
+      setTimeout(() => setMessage(null), 3000);
+    } finally {
       setIsSubmitting(false);
-      // Reset form or show success message
-    }, 2000);
+    }
   };
+
 
   return (
     <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-slate-50 to-blue-50">
@@ -64,7 +111,6 @@ export default function FormData({ data }: FormDataProps) {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left Side - Form */}
           <div className="space-y-8">
-           
             <form onSubmit={handleSubmit} className="space-y-6">
               {/* Name Field */}
               <div className="space-y-2">
@@ -79,31 +125,40 @@ export default function FormData({ data }: FormDataProps) {
                 />
               </div>
 
-              {/* Email Field */}
-              <div className="space-y-2">
-                <input
-                  type="email"
-                  name="email"
-                  placeholder={data.email}
-                  value={formState.email}
-                  onChange={handleInputChange}
-                  required
-                  className="w-full px-4 py-4 border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 text-gray-900 placeholder-gray-500 bg-white"
-                />
-              </div>
 
-              {/* Phone Field */}
-              <div className="space-y-2">
-                <input
-                  type="tel"
-                  name="phone"
-                  placeholder={data.phone}
-                  value={formState.phone}
-                  onChange={handleInputChange}
-                  required
-                  className="w-full px-4 py-4 border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 text-gray-900 placeholder-gray-500 bg-white "
-                />
-              </div>
+              {/* Email Field */}
+              <div>
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder='Email'
+                    value={formState.email}
+                    onChange={(e) =>
+                      setFormState({ ...formState, email: e.target.value })
+                    }
+                    className={`border p-2 rounded w-full ${
+                      message?.text.includes("email") ? "border-red-500" : "border-gray-300"
+                    }`}
+                  />
+                  </div>
+                  {/* phone Field */}
+                  <div className='space-y-2'>
+                   <input
+                    type="text"
+                    name="phone"
+                    placeholder='Moblie No.'
+                    value={formState.phone}
+                    onChange={(e) => {
+                      if (/^[0-9]{0,10}$/.test(e.target.value)) {
+                        setFormState({ ...formState, phone: e.target.value });
+                      }
+                    }}
+                    className={`border p-2 rounded w-full ${
+                      message?.text.includes("Phone") ? "border-red-500" : "border-gray-300"
+                    }`}
+                  />
+                  </div>
+                  
 
               {/* Country Field */}
               <div className="space-y-2">
@@ -137,7 +192,7 @@ export default function FormData({ data }: FormDataProps) {
                 </select>
               </div>
 
-              {/* Custom Budget Field - Shows when "Custom Budget" is selected */}
+              {/* Custom Budget Field */}
               {formState.budget === 'custom' && (
                 <div className="space-y-2">
                   <input
@@ -185,17 +240,22 @@ export default function FormData({ data }: FormDataProps) {
                   )}
                 </span>
               </button>
+
+              {/* Success / Error Message */}
+              {message && (
+                <p className={`text-sm ${message.type === "success" ? "text-green-600" : "text-red-600"}`}>
+                  {message.text}
+                </p>
+              )}
             </form>
           </div>
 
           {/* Right Side - Image */}
           <div className="relative">
             <div className="relative h-[500px] lg:h-[600px] w-full">
-              {/* Background decoration */}
               <div className="absolute inset-0 bg-gradient-to-br from-blue-100 to-indigo-100 rounded-3xl transform rotate-3"></div>
               <div className="absolute inset-0 bg-gradient-to-br from-blue-50 to-purple-50 rounded-3xl transform -rotate-1"></div>
               
-              {/* Main image container */}
               <div className="relative h-full w-full bg-white rounded-2xl overflow-hidden">
                 <Image
                   src={data.rightSideImage}
@@ -205,8 +265,6 @@ export default function FormData({ data }: FormDataProps) {
                   priority
                 />
               </div>
-
-            
             </div>
           </div>
         </div>
