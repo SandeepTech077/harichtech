@@ -44,7 +44,7 @@ formData: {
       {
         icon: Helper.Email,
         title: "EMAIL",
-        detail: "Info@harichtech.com",
+        detail: "info@harichtech.com",
       },
     ],
   },

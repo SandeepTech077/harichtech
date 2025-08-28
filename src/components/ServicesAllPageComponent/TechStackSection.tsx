@@ -1,5 +1,7 @@
+"use client";
 import React from "react";
 import { TechStackCard } from "./TechStackCard";
+import { motion } from "framer-motion";
 
 interface CardArray {
   id: number;
@@ -21,9 +23,9 @@ export const TechStackSection: React.FC<TechStackSectionProps> = ({
   cards,
 }) => {
   return (
-    <section className="px-4  lg:px-20 bg-white">
-      <div className=" mx-auto px-4">
-        <div className=" mx-auto">
+    <section className="px-4 lg:px-20 bg-white">
+      <div className="mx-auto px-4">
+        <div className="mx-auto">
           {/* Heading */}
           <div className="text-center mb-12">
             <h2 className="text-[36px] md:text-[48px] font-bold text-gray-800 mb-6">
@@ -33,20 +35,28 @@ export const TechStackSection: React.FC<TechStackSectionProps> = ({
               </span>
             </h2>
             {description && (
-              <p className="text-[#02060B] text-[18px]  mx-auto">
+              <p className="text-[#02060B] text-[18px] mx-auto">
                 {description}
               </p>
             )}
           </div>
 
-          {/* Cards */}
+          {/* Cards with animation */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {cards.map((card) => (
-              <TechStackCard
+            {cards.map((card, index) => (
+              <motion.div
                 key={card.id}
-                title={card.title}
-                technologies={card.description}
-              />
+                initial={{ opacity: 0, y: 40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: index * 0.2 }}
+                viewport={{ once: true }}
+                whileHover={{ scale: 1.05 }}
+              >
+                <TechStackCard
+                  title={card.title}
+                  technologies={card.description}
+                />
+              </motion.div>
             ))}
           </div>
         </div>

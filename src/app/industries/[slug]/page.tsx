@@ -10,6 +10,7 @@ import { WhyChooseUsSection } from "@/components/ServicesAllPageComponent/WhyCho
 import { industiesData } from "@/data/industriesData";
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
+import MotionComponent from "@/Animation/MotionComponent";
 
 export async function generateStaticParams() {
   return industiesData.map((industry) => ({
@@ -57,21 +58,25 @@ export default async function IndustryPage({ params }: PageProps) {
   }
 
   return (
-    <main className="py-36">
+    <main className="mt-33 py-4">
       <div className="px-4 sm:px-6 lg:px-16">
-        <MainSection
-          title={industryData.mainSection.title}
-          blueTitle={industryData.mainSection.blueTitle}
-          descriptions={industryData.mainSection.descriptions ?? []}
-          rightSideImage={industryData.mainSection.rightSideImage}
-        />
+        <MotionComponent type="bounce" duration={1} delay={0.5}>
+          <MainSection
+            title={industryData.mainSection.title}
+            blueTitle={industryData.mainSection.blueTitle}
+            descriptions={industryData.mainSection.descriptions ?? []}
+            rightSideImage={industryData.mainSection.rightSideImage}
+          />
+        </MotionComponent>
 
-        <ServeSection
-          title={industryData.serveSection.title}
-          blueTitle={industryData.serveSection.blueTitle}
-          descriptions={industryData.serveSection.description ?? []}
-          cards={industryData.serveSection.cards}
-        />
+        <MotionComponent type="bounce" duration={1} delay={0.75}>
+          <ServeSection
+            title={industryData.serveSection.title}
+            blueTitle={industryData.serveSection.blueTitle}
+            descriptions={industryData.serveSection.description ?? []}
+            cards={industryData.serveSection.cards}
+          />
+        </MotionComponent>
       </div>
 
       <WhyChooseUsSection
@@ -94,20 +99,24 @@ export default async function IndustryPage({ params }: PageProps) {
           btnTitle={industryData.connectUsSection.btnTitle}
         />
 
-        <GrowthSection
-          title={industryData.realEstateGrowth.title}
-          blueTitle={industryData.realEstateGrowth.blueTitle}
-          descriptions={industryData.realEstateGrowth.descriptions}
-          bullets={industryData.realEstateGrowth.bullets}
-          testimonial={industryData.realEstateGrowth.testimonial}
-        />
+        <MotionComponent type="bounce" duration={1} delay={0.1}>
+          <GrowthSection
+            title={industryData.realEstateGrowth.title}
+            blueTitle={industryData.realEstateGrowth.blueTitle}
+            descriptions={industryData.realEstateGrowth.descriptions}
+            bullets={industryData.realEstateGrowth.bullets}
+            testimonial={industryData.realEstateGrowth.testimonial}
+          />
+        </MotionComponent>
 
-        <PortfolioSection
-          title={industryData.portfolioSection.title}
-          blueTitle={industryData.portfolioSection.blueTitle}
-          projects={industryData.portfolioSection.projects}
-          buttonTitle={industryData.portfolioSection.btnTitle}
-        />
+        <MotionComponent type="bounce" duration={1} delay={0.85}>
+          <PortfolioSection
+            title={industryData.portfolioSection.title}
+            blueTitle={industryData.portfolioSection.blueTitle}
+            projects={industryData.portfolioSection.projects}
+            buttonTitle={industryData.portfolioSection.btnTitle}
+          />
+        </MotionComponent>
 
         <IndustriesSection
           title={industryData.IndustriesSection.title}

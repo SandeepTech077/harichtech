@@ -1,5 +1,8 @@
+"use client";
+
 import React from "react";
 import Image, { StaticImageData } from "next/image";
+import { motion } from "framer-motion";
 
 interface BuildModernSectionProps {
   title: string;
@@ -16,9 +19,21 @@ export const BuildModernSection: React.FC<BuildModernSectionProps> = ({
   svgIcon,
 }) => {
   return (
-    <section className="py-16 mx-auto">
+    <motion.section
+      className="py-16 mx-auto"
+      initial={{ opacity: 0, y: 40 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.3 }}
+      transition={{ duration: 0.8, ease: "easeOut" }}
+    >
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-        <div className="space-y-6">
+        {/* Left Text Section */}
+        <motion.div
+          className="space-y-1"
+          initial={{ x: -50, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{ duration: 0.7, delay: 0.2 }}
+        >
           <h2 className="text-[30px] md:text-[40px] font-bold text-[#02060B]">
             {title}
           </h2>
@@ -28,17 +43,29 @@ export const BuildModernSection: React.FC<BuildModernSectionProps> = ({
 
           <div className="space-y-3">
             {descriptions.map((desc, index) => (
-              <p key={index} className="text-gray-700 mt-10 text-[18px]">
+              <motion.p
+                key={index}
+                className="text-gray-700 mt-10 text-[18px]"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.3 + index * 0.2 }}
+              >
                 {desc}
-              </p>
+              </motion.p>
             ))}
           </div>
-        </div>
+        </motion.div>
 
-        <div className="flex justify-center items-center">
-          <Image src={svgIcon} alt="react" className="w-full  h-auto" />
-        </div>
+        {/* Right Image Section */}
+        <motion.div
+          className="flex justify-center items-center"
+          initial={{ x: 50, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{ duration: 0.7, delay: 0.4 }}
+        >
+          <Image src={svgIcon} alt="react" className="w-full h-auto" />
+        </motion.div>
       </div>
-    </section>
+    </motion.section>
   );
 };

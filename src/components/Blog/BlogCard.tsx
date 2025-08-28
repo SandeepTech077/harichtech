@@ -30,7 +30,7 @@ export const BlogCard: React.FC<BlogCardProps> = ({
     <>
       {showSectionTitle && (
         <motion.div
-          className="col-span-full text-left mb-6 sm:mb-8"
+          className="col-span-full text-left sm:mb-3"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}

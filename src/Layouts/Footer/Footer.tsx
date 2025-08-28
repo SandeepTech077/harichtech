@@ -8,10 +8,8 @@ import instagramLogo from "../../../public/SVG/instagram-logo.svg";
 import linkedinLogo from "../../../public/SVG/linkedin-logo.svg";
 
 const Footer = () => {
-  // ✅ Safer: compute once, no hydration mismatch
   const currentYear = new Date().getFullYear();
 
-  // Services data
   const servicesData = [
     {
       name: "Web & App Development",
@@ -84,7 +82,7 @@ const Footer = () => {
     { name: "Real Estate", path: "/industries/real-estate" },
     { name: "E-commerce", path: "/industries/ecommerce" },
     { name: "Finance & Fintech", path: "/industries/finance" },
-    { name: "Healthcare / Pharma", path: "/industries/healthcare" },
+    { name: "Healthcare & Pharma", path: "/industries/healthcare" },
     { name: "Education", path: "/industries/education" },
     { name: "Retail", path: "/industries/retail" },
   ];
@@ -119,9 +117,9 @@ const Footer = () => {
       <div className="w-full mx-auto bg-gradient-to-r from-[#1E5AFF] to-[#004BC2] text-white rounded-2xl overflow-hidden">
         {/* Main Content */}
         <div className="px-6 sm:px-8 lg:px-16 py-12 lg:py-16">
-          <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 lg:gap-12">
+          <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 lg:gap-5">
             {/* Logo and Address Section */}
-            <div className="lg:col-span-1 space-y-6 flex flex-col items-center text-center ">
+            <div className="lg:col-span-1 space-y-4 flex flex-col items-center text-center lg:items-start lg:text-left mr-3">
               <Image
                 src={Logo}
                 alt="Harich Technologies"
@@ -131,7 +129,7 @@ const Footer = () => {
                 priority
               />
               <div className="space-y-4">
-                <p className="text-md leading-relaxed text-white/90">
+                <p className="text-sm leading-relaxed text-white/90">
                   Shilp 3, 3rd Floor, Sindhu Bhavan Road,
                   <br />
                   Shilp Circle, Above Bajarang Grocery,
@@ -140,14 +138,14 @@ const Footer = () => {
                 </p>
 
                 {/* Social Links */}
-                <div className="flex justify-center space-x-4 sm:space-x-3">
+                <div className="flex justify-center lg:justify-start space-x-4 sm:space-x-3">
                   {socialLinks.map((social) => (
                     <a
                       key={social.name}
                       href={social.path}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="w-10 h-10 sm:w-11 sm:h-11 lg:w-12 lg:h-12  rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110 active:scale-95"
+                      className="w-10 h-10 sm:w-11 sm:h-11 lg:w-12 lg:h-12 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110 active:scale-95"
                       aria-label={`Visit our ${social.name} profile`}
                     >
                       <div className="w-10 h-10 sm:w-5 sm:h-5 lg:w-10 lg:h-10 relative mt-2">
@@ -180,7 +178,7 @@ const Footer = () => {
             </div>
 
             {/* Services Section */}
-            <div className="hidden sm:block space-y-6">
+            <div className="hidden sm:block space-y-6 text-center lg:text-left">
               <h3 className="text-xl font-bold text-white border-b-2 border-white/30 pb-2 inline-block">
                 Services
               </h3>
@@ -199,7 +197,7 @@ const Footer = () => {
             </div>
 
             {/* Industries Section */}
-            <div className="hidden sm:block space-y-6">
+            <div className="hidden sm:block space-y-6 text-center lg:text-left">
               <h3 className="text-xl font-bold text-white border-b-2 border-white/30 pb-2 inline-block">
                 Industries
               </h3>
@@ -218,7 +216,7 @@ const Footer = () => {
             </div>
 
             {/* Hire Developers Section */}
-            <div className="hidden sm:block space-y-6">
+            <div className="hidden sm:block space-y-6 text-center lg:text-left">
               <h3 className="text-xl font-bold text-white border-b-2 border-white/30 pb-2 inline-block">
                 Hire Developers
               </h3>
@@ -286,7 +284,7 @@ const Footer = () => {
         {/* Bottom Section */}
         <div className="border-t border-white/20 px-6 sm:px-8 lg:px-16 py-6">
           <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
-            <p className="text-sm text-white/70">
+            <p className="text-sm font-bold text-white">
               Copyright © {currentYear} Harichtech | All Rights Reserved
             </p>
             <div className="flex items-center gap-6">

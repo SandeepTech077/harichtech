@@ -17,8 +17,8 @@ interface AboutStatusProps {
 
 const AboutStatus: React.FC<AboutStatusProps> = ({ status }) => {
   return (
-    <section className="w-full bg-white py-12">
-      <div className="mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-center max-w-7xl">
+    <section className="w-full bg-white">
+      <div className="mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-center max-w-9xl">
         {status.map((item, index) => {
           // Extract number and suffix (+, %, etc.)
           const finalNumber = parseInt(item.number.replace(/\D/g, ""), 10);
@@ -28,7 +28,7 @@ const AboutStatus: React.FC<AboutStatusProps> = ({ status }) => {
             <div key={item.id} className="flex flex-col items-center space-y-3">
               <div
                 className={`relative ${
-                  index === 1 ? "w-[85px] h-[50px]" : "w-[60px] h-[50px]"
+                  index === 1 ? "w-[110px] h-[60px]" : "w-[110px] h-[60px]"
                 }`}
               >
                 <Image
@@ -45,7 +45,7 @@ const AboutStatus: React.FC<AboutStatusProps> = ({ status }) => {
                 {suffix}
               </h3>
 
-              <p className="text-xl lg:text-2xl text-black">{item.title}</p>
+              <p className="mt-3 text-xl lg:text-2xl font-bold font-outfit text-black">{item.title}</p>
             </div>
           );
         })}

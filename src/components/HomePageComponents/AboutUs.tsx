@@ -24,7 +24,7 @@ interface AboutUsProps {
 
 const AboutUs: React.FC<AboutUsProps> = ({ data }) => {
   return (
-    <section className="w-full bg-white py-12">
+    <section className="w-full bg-white">
       <div className="mx-auto flex flex-col-reverse md:flex-row gap-10 items-center max-w-8xl px-4">
         {/* Left Content */}
         <motion.div
@@ -36,7 +36,7 @@ const AboutUs: React.FC<AboutUsProps> = ({ data }) => {
         >
           {/* Title */}
           <motion.span
-            className="inline-block text-gray-900 px-3 py-2 rounded-lg font-semibold text-sm"
+            className="inline-block text-gray-900 px-3  rounded-lg font-semibold text-sm"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
@@ -107,7 +107,7 @@ const AboutUs: React.FC<AboutUsProps> = ({ data }) => {
 
         {/* Right Image (Desktop only) */}
         <motion.div
-          className="w-full md:w-1/2 flex justify-center hidden md:flex"
+          className="w-full md:w-1/2 flex justify-center hidden md:flex mt-15 "
           initial={{ opacity: 0, x: 50 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true, amount: 0.3 }}

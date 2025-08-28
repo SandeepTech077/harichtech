@@ -13,7 +13,7 @@ export const IndustryCard: React.FC<IndustryCardProps> = ({
   icons 
 }) => {
   return (
-    <div className="bg-[#F1F1F1] p-6 md:p-8 rounded-xl shadow-md hover:shadow-lg transition-shadow flex items-start gap-4 md:gap-6">
+    <div className="bg-[#F1F1F1] p-6 md:p-8 rounded-xl shadow-md hover:shadow-lg transition-shadow flex items-start gap-4 md:gap-6 h-full">
       {/* Left: Icon */}
       <div className="flex-shrink-0">
         <Image src={icons} alt={`${title} icon`} width={60} height={60} />

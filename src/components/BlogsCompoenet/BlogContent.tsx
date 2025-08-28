@@ -1,23 +1,67 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
-// components/Blog/BlogContent.tsx
-import React from 'react';
+"use client";
+import React, { useEffect, useRef, useState } from "react";
+import { motion } from "framer-motion";
+import Image, { StaticImageData } from "next/image";
 
 interface BlogContentProps {
   blogs: any[];
+  title: string;
+  Banner: StaticImageData;
+  mobileBanner: StaticImageData;
 }
 
-const BlogContent: React.FC<BlogContentProps> = ({ blogs }) => {
-  // Helper function to safely render description arrays
+const BlogContent: React.FC<BlogContentProps> = ({
+  blogs,
+  title,
+  Banner,
+  mobileBanner,
+}) => {
+  const [activeSection, setActiveSection] = useState<number | null>(-1);
+  const sectionRefs = useRef<(HTMLElement | null)[]>([]);
+
+  // Scroll to section
+  const scrollToSection = (index: number) => {
+    const section = sectionRefs.current[index + 1]; // +1 because intro = -1
+    if (section) {
+      window.scrollTo({
+        top: section.offsetTop - 100,
+        behavior: "smooth",
+      });
+    }
+  };
+
+  // Track active section on scroll
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPos = window.scrollY + 150;
+      let foundActive = -1;
+
+      sectionRefs.current.forEach((sec, index) => {
+        if (sec && sec.offsetTop <= scrollPos) {
+          foundActive = index - 1; // shift back (-1 = intro)
+        }
+      });
+
+      setActiveSection(foundActive);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  // Helpers
   const renderDescriptions = (descriptions: string[] | string | undefined) => {
     if (!descriptions) return null;
-    
-    // If it's a string, convert to array
-    const descArray = Array.isArray(descriptions) ? descriptions : [descriptions];
-    
+    const descArray = Array.isArray(descriptions)
+      ? descriptions
+      : [descriptions];
     return (
       <div className="mb-4 sm:mb-6">
         {descArray.map((desc: string, descIndex: number) => (
-          <p key={descIndex} className="text-gray-700 leading-relaxed mb-3 sm:mb-4 text-sm sm:text-base">
+          <p
+            key={descIndex}
+            className="text-gray-700 leading-relaxed mb-3 sm:mb-4 text-sm sm:text-base"
+          >
             {desc}
           </p>
         ))}
@@ -26,14 +70,20 @@ const BlogContent: React.FC<BlogContentProps> = ({ blogs }) => {
   };
 
   const renderBullets = (bullets: string[] | undefined) => {
-    if (!bullets || !Array.isArray(bullets)) return null;
-    
+    if (!bullets) return null;
     return (
       <ul className="list-disc ml-4 sm:ml-6 mb-4 sm:mb-6">
         {bullets.map((bullet, index) => (
           <li key={index} className="text-[#02060B] text-[16px]">
-            {bullet.includes('**') ? (
-              <span dangerouslySetInnerHTML={{ __html: bullet.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>') }} />
+            {bullet.includes("**") ? (
+              <span
+                dangerouslySetInnerHTML={{
+                  __html: bullet.replace(
+                    /\*\*(.*?)\*\*/g,
+                    "<strong>$1</strong>"
+                  ),
+                }}
+              />
             ) : (
               bullet
             )}
@@ -50,190 +100,153 @@ const BlogContent: React.FC<BlogContentProps> = ({ blogs }) => {
           {section.sectionTitle}
         </h3>
       )}
-      {section.description && renderDescriptions(section.description)}
-      {section.bullets && renderBullets(section.bullets)}
-    </div>
-  );
-
-  const renderRealWorldApplication = (realWorld: any) => (
-    <div className="bg-blue-50 p-4 sm:p-6 rounded-lg mb-6 sm:mb-8">
-      <h4 className="text-base sm:text-lg font-semibold text-blue-800 mb-3 sm:mb-4">
-        {realWorld.title}
-      </h4>
-      <p className="text-gray-700 leading-relaxed mb-4 text-sm sm:text-base">
-        {realWorld.description}
-      </p>
-      {realWorld.bulletPoints && (
-        <div>
-          <h5 className="font-medium text-gray-800 mb-2 text-sm sm:text-base">
-            {realWorld.bulletPoints.title}
-          </h5>
-          {renderBullets(realWorld.bulletPoints.points)}
-        </div>
-      )}
+      {renderDescriptions(section.description)}
+      {renderBullets(section.bullets)}
     </div>
   );
 
   const renderBlogSection = (blog: any, index: number) => (
-    <section key={index} className="mb-8 sm:mb-12">
+    <section
+      key={index}
+      ref={(el) => {
+        sectionRefs.current[index] = el;
+      }}
+      className="mb-8 sm:mb-12"
+    >
       <h2 className="text-[24px] md:text-[26px] lg:text-[30px] font-bold text-transparent bg-gradient-to-l from-[#2058FF] to-[#004BC2] bg-clip-text mb-4 sm:mb-6">
         {blog.title}
       </h2>
-
-      {/* Main Description */}
-      {blog.description && renderDescriptions(blog.description)}
-
-      {/* Bullets */}
-      {blog.bullets && renderBullets(blog.bullets)}
-
-      {/* Sections */}
-      {blog.sections && Array.isArray(blog.sections) && blog.sections.map((section: any, sectionIndex: number) => 
+      {renderDescriptions(blog.description)}
+      {renderBullets(blog.bullets)}
+      {blog.sections?.map((section: any, sectionIndex: number) =>
         renderSection(section, sectionIndex)
-      )}
-
-      {blog.realWorld && renderRealWorldApplication(blog.realWorld)}
-
-      {blog.additionalInfo && (
-        <div className="rounded-lg mb-6 sm:mb-8">
-          <h4 className="text-base sm:text-lg font-semibold text-gray-800 mb-3 sm:mb-4">
-            {blog.additionalInfo.title}
-          </h4>
-          {blog.additionalInfo.description && renderDescriptions(blog.additionalInfo.description)}
-          {blog.additionalInfo.bullets && renderBullets(blog.additionalInfo.bullets)}
-          {blog.additionalInfo.points && renderBullets(blog.additionalInfo.points)}
-        </div>
-      )}
-
-      {blog.example && (
-        <div className="bg-blue-50 p-4 sm:p-6 rounded-lg mb-6 sm:mb-8">
-          <p className="text-gray-700 leading-relaxed text-sm sm:text-base">
-            <span className="font-semibold">Example:</span> {blog.example}
-          </p>
-        </div>
-      )}
-
-      {blog.results && Array.isArray(blog.results) && (
-        <div className="bg-blue-50 p-4 sm:p-6 rounded-lg mb-6 sm:mb-8">
-          <h4 className="font-semibold text-gray-800 mb-2 sm:mb-3 text-sm sm:text-base">Results:</h4>
-          <ul className="list-disc ml-4 sm:ml-6 space-y-1 sm:space-y-2">
-            {blog.results.map((result: string, resultIndex: number) => (
-              <li key={resultIndex} className="text-gray-700 text-sm sm:text-base">
-                {result}
-              </li>
-            ))}
-          </ul>
-        </div>
-      )}
-
-      {blog.departments && Array.isArray(blog.departments) && (
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 mb-6 sm:mb-8">
-          {blog.departments.map((dept: any, deptIndex: number) => (
-            <div key={deptIndex} className="">
-              <h4 className="font-semibold text-indigo-800 mb-2 sm:mb-3 text-sm sm:text-base">
-                {dept.name}
-              </h4>
-              <p className="text-gray-700 text-xs sm:text-sm">
-                {dept.features}
-              </p>
-            </div>
-          ))}
-        </div>
-      )}
-
-      {/* Examples */}
-      {blog.examples && Array.isArray(blog.examples) && (
-        <div className="space-y-4 sm:space-y-6 mb-6 sm:mb-8">
-          {blog.examples.map((example: any, exampleIndex: number) => (
-            <div key={exampleIndex} className="p-4 sm:p-6 rounded-lg">
-              <h4 className="font-semibold text-purple-800 mb-2 sm:mb-3 text-sm sm:text-base">
-                {example.name}
-              </h4>
-              <p className="text-gray-700 text-xs sm:text-sm">
-                {example.description}
-              </p>
-            </div>
-          ))}
-        </div>
-      )}
-
-      {/* Steps */}
-      {blog.steps && Array.isArray(blog.steps) && (
-        <div className="space-y-4 sm:space-y-6 mb-6 sm:mb-8">
-          {blog.steps.map((step: any, stepIndex: number) => (
-            <div key={stepIndex} className="">
-              <h4 className="font-semibold text-teal-800 mb-2 sm:mb-3 text-sm sm:text-base">
-                {stepIndex + 1}. {step.title}
-              </h4>
-              <p className="text-gray-700 text-xs sm:text-sm">
-                {step.description}
-              </p>
-            </div>
-          ))}
-        </div>
-      )}
-
-      {/* Points */}
-      {blog.points && (
-        <div className="mb-6 sm:mb-8">
-          {Array.isArray(blog.points) ? (
-            blog.points.map((point: any, pointIndex: number) => (
-              <div key={pointIndex} className="mb-4 sm:mb-6">
-                {point.title && (
-                  <h4 className="font-semibold text-gray-800 mb-2 sm:mb-3 text-sm sm:text-base">
-                    {point.title}
-                  </h4>
-                )}
-                {point.bullets && renderBullets(point.bullets)}
-              </div>
-            ))
-          ) : (
-            <div>
-              {blog.points.title && (
-                <h4 className="font-semibold text-gray-800 mb-2 sm:mb-3 text-sm sm:text-base">
-                  {blog.points.title}
-                </h4>
-              )}
-              {blog.points.bullets && renderBullets(blog.points.bullets)}
-            </div>
-          )}
-        </div>
-      )}
-
-      {/* Bullet Title with Bullets */}
-      {blog.bulletTitle && (
-        <div className="mb-4 sm:mb-6">
-          <h4 className="font-semibold text-gray-800 mb-2 sm:mb-3 text-sm sm:text-base">
-            {blog.bulletTitle}
-          </h4>
-          {blog.bullets && renderBullets(blog.bullets)}
-        </div>
-      )}
-
-      {/* Result */}
-      {blog.result && (
-        <div className="p-4">
-          <p className="text-gray-700 leading-relaxed text-sm sm:text-base">
-            <span className="font-semibold">Result:</span> {blog.result}
-          </p>
-        </div>
-      )}
-
-      {/* Conclusion */}
-      {blog.conclusion && (
-        <div className="bg-blue-50 p-4 sm:p-6 rounded-lg mb-6 sm:mb-8">
-          <p className="text-gray-700 leading-relaxed text-sm sm:text-base">
-            {blog.conclusion}
-          </p>
-        </div>
       )}
     </section>
   );
 
   return (
     <div className="w-full bg-white">
-      <div className="mx-auto px-4 sm:px-6 lg:px-16 py-8 sm:py-12 lg:py-16">
-        <div className="prose prose-sm sm:prose lg:prose-lg xl:prose-xl max-w-none">
-          {blogs && Array.isArray(blogs) && blogs.map((blog, index) => renderBlogSection(blog, index))}
+      <div className="mx-auto px-4 sm:px-6  flex flex-col lg:flex-row gap-8">
+        {/* Left Column: Banner + Blog */}
+        <div className="flex-1">
+          {/* Banner */}
+          <div className="relative w-full h-[200px] sm:h-[250px] md:h-[400px] lg:h-[500px] mb-10">
+            {/* Desktop Banner */}
+            <Image
+              src={Banner}
+              alt={title}
+              fill
+              className="object-cover hidden md:block rounded-lg"
+              priority
+            />
+
+            {/* Mobile Banner */}
+            <Image
+              src={mobileBanner}
+              alt={title}
+              fill
+              className="object-cover block md:hidden rounded-lg"
+              priority
+            />
+          </div>
+
+          {/* Blog Content */}
+          <div className="py-8 sm:py-12 lg:py-16">
+            {blogs.map((blog, index) => renderBlogSection(blog, index))}
+          </div>
+        </div>
+
+        {/* Right Sidebar */}
+        <div className="hidden lg:block w-1/5 flex-shrink-0">
+          <div className="sticky top-20 space-y-8">
+            {/* Article Nav */}
+            <motion.div
+              className="bg-gray-50 rounded-lg p-6"
+              initial={{ opacity: 0, x: 20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6 }}
+            >
+              <h3 className="font-semibold text-lg mb-4 text-gray-900">
+                In this article
+              </h3>
+              <nav className="space-y-2">
+                <motion.button
+                  onClick={() =>
+                    window.scrollTo({ top: 0, behavior: "smooth" })
+                  }
+                  className={`block w-full text-left text-sm font-medium mb-3 py-2 pl-4 border-l-2 rounded-r-md transition-all duration-300 ${
+                    activeSection === -1
+                      ? "text-black text-md bg-blue-50 border-blue-600"
+                      : "text-blue-600 hover:bg-blue-50 border-blue-400 hover:border-blue-600"
+                  }`}
+                  whileHover={{ x: 4 }}
+                  whileTap={{ scale: 0.98 }}
+                >
+                  Introduction
+                </motion.button>
+                {blogs.map((point, index) => (
+                  <motion.button
+                    key={index}
+                    onClick={() => scrollToSection(index)}
+                    className={`block w-full text-left text-sm transition-all duration-300 py-2 pl-4 border-l-2 rounded-r-md ${
+                      activeSection === index
+                        ? "text-blue-600 bg-blue-50 border-blue-600 font-medium"
+                        : "text-gray-600 hover:text-blue-600 border-gray-200 hover:border-blue-600 hover:bg-blue-50"
+                    }`}
+                    whileHover={{ x: 4 }}
+                    whileTap={{ scale: 0.98 }}
+                  >
+                    {point.title}
+                  </motion.button>
+                ))}
+              </nav>
+            </motion.div>
+
+            {/* Get in Touch Form */}
+            <div className="space-y-6 border border-gray-400 py-4 px-3 rounded-lg">
+              <h3 className="text-xl font-bold border-b-2 border-white/30 pb-2 inline-block text-[#2058FF]">
+                Contact Us
+              </h3>
+              <form className="space-y-4">
+                <input
+                  type="text"
+                  placeholder="Your Name"
+                  className="w-full px-4 py-3 border border-grey-400 rounded-lg "
+                />
+                <input
+                  type="email"
+                  placeholder="Email Id"
+                  className="w-full px-4 py-3 border border-grey-100 rounded-lg"
+                />
+                <input
+                  type="tel"
+                  placeholder="Mobile No."
+                  className="w-full px-4 py-3 border border-grey-100 rounded-lg"
+                />
+                <textarea
+                  placeholder="Your Message"
+                  rows={4}
+                  className="w-full px-4 py-3 border border-grey-100 rounded-lg"
+                />
+                <button
+                  type="submit"
+                  className="w-full bg-[#2058FF] text-white py-3 px-6 rounded-lg font-semibold hover:bg-white/90 transition-colors duration-300 flex items-center justify-center gap-2"
+                >
+                  Send Message
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                  >
+                    <path d="M7 17L17 7M17 7H7M17 7V17" />
+                  </svg>
+                </button>
+              </form>
+            </div>
+          </div>
         </div>
       </div>
     </div>

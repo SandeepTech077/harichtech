@@ -12,45 +12,45 @@ export const ServicePageDataWebDevelopement = [
       title: "Build Modern, Scalable ",
       subtitle: "Web Applications with React.js",
       description: [
-        "React.js is one of the most widely used JavaScript libraries for building user interfaces, enabling the development of fast, scalable, and feature-rich web applications. At Harichtech, we specialize in delivering high-performance React.js development solutions tailored to your business needs.",
-        "Our React.js development services are designed to help startups, SMEs, and enterprises build responsive digital experiences - from single-page applications to complex enterprise-grade platforms. With a focus on maintainability, scalability, and usability, we leverage the full potential of React.js to accelerate your digital transformation.",
+        "React.js is one of the most widely used JavaScript libraries for building user interfaces, enabling the development of fast, scalable, and feature rich web applications. At Harichtech, we specialize in delivering high performance React.js development solutions tailored to your business needs.",
+        "Our React.js development services are designed to help startups, SMEs, and enterprises build responsive digital experiences from single page applications to complex enterprise grade platforms. With a focus on maintainability, scalability, and usability, we leverage the full potential of React.js to accelerate your digital transformation.",
       ],
       svgIcon: Helper.ReactjsSvg,
     },
     whyChooseUsSection: {
       title: "Why Choose React.js for Web Application Development?",
       description:
-        "React.js is known for its efficient architecture, modular design, and strong developer community. Whether you are building a new platform or modernizing an existing one, React.js provides a stable foundation for long-term success.",
+        "React.js is known for its efficient architecture, modular design, and strong developer community. Whether you are building a new platform or modernizing an existing one, React.js provides a stable foundation for long term success.",
       cards: [
         {
           id: 1,
           title: "High Performance with Virtual DOM",
           description:
-            "React.js uses a virtual DOM that enables faster updates and rendering. This minimizes resource usage and ensures smooth performance, even in high-traffic environments.",
+            "React.js uses a virtual DOM that enables faster updates and rendering. This minimizes resource usage and ensures smooth performance, even in high traffic environments.",
         },
         {
           id: 2,
-          title: "Component-Based Architecture",
+          title: "Component Based Architecture",
           description:
-            "React’s modular structure allows developers to build UI components that are reusable, testable, and easy to maintain—resulting in faster development cycles and more consistent user interfaces.",
+            "React’s modular structure allows developers to build UI components that are reusable, testable, and easy to maintain resulting in faster development cycles and more consistent user interfaces.",
         },
         {
           id: 3,
           title: "Unidirectional Data Flow",
           description:
-            "The one-way data binding model makes applications predictable and easier to debug, especially as they scale in complexity.",
+            "The one way data binding model makes applications predictable and easier to debug, especially as they scale in complexity.",
         },
         {
           id: 4,
           title: "Strong Ecosystem",
           description:
-            "React.js is backed by Meta (formerly Facebook) and supported by a global community. It integrates well with other libraries, APIs, and frameworks, making it highly flexible and future-ready.",
+            "React.js is backed by Meta (formerly Facebook) and supported by a global community. It integrates well with other libraries, APIs, and frameworks, making it highly flexible and future ready.",
         },
         {
           id: 5,
           title: "SEO Optimization",
           description:
-            "When paired with frameworks like Next.js, React.js supports server-side rendering and static site generation, helping improve website SEO and page load times.",
+            "When paired with frameworks like Next.js, React.js supports server side rendering and static site generation, helping improve website SEO and page load times.",
         },
       ],
     },
@@ -59,7 +59,7 @@ export const ServicePageDataWebDevelopement = [
       blueTitle: "React.js Development",
       description: [
         "At Harichtech, we adopt a consultative and collaborative approach to development. Every React.js application we build is rooted in user experience, robust architecture, and business alignment.",
-        "Our team is experienced in delivering both customer-facing interfaces and complex internal platforms using React.js. From rapid MVP development to full-scale enterprise applications, we provide end-to-end support.",
+        "Our team is experienced in delivering both customer facing interfaces and complex internal platforms using React.js. From rapid MVP development to full scale enterprise applications, we provide end to end support.",
       ],
       points: null,
       rightImage: Helper.ReactApproch,
@@ -67,7 +67,7 @@ export const ServicePageDataWebDevelopement = [
     connectUsSection: {
       title: "Start Your React.js Project with Harichtech",
       descriptions: [
-        "React.js is the foundation for modern, efficient web applications-and Harichtech is your trusted development partner. We combine deep technical expertise with a commitment to quality and innovation.",
+        "React.js is the foundation for modern, efficient web applications and Harichtech is your trusted development partner. We combine deep technical expertise with a commitment to quality and innovation.",
         "Whether you're building a new product or modernizing an existing one, we’re here to guide you from planning through delivery and beyond.",
       ],
       btnTitle: "Connect With us",
@@ -88,13 +88,13 @@ export const ServicePageDataWebDevelopement = [
           id: 2,
           title: "Single Page Application (SPA) Development",
           description:
-            "We build fast-loading, interactive SPAs that offer seamless user experiences across desktop and mobile environments.",
+            "We build fast loading, interactive SPAs that offer seamless user experiences across desktop and mobile environments.",
         },
         {
           id: 3,
           title: "UI/UX Development Using React.js",
           description:
-            "Our design and frontend teams create intuitive, component-driven interfaces using React.js and modern styling libraries like Tailwind CSS and Material UI.",
+            "Our design and frontend teams create intuitive, component driven interfaces using React.js and modern styling libraries like Tailwind CSS and Material UI.",
         },
         {
           id: 4,
@@ -110,9 +110,9 @@ export const ServicePageDataWebDevelopement = [
         },
         {
           id: 6,
-          title: "Enterprise-Grade Application Development",
+          title: "Enterprise Grade Application Development",
           description:
-            "We build secure, scalable enterprise solutions with complex workflows, multiple user roles, and real-time data interactions using React.js and supporting technologies.",
+            "We build secure, scalable enterprise solutions with complex workflows, multiple user roles, and real time data interactions using React.js and supporting technologies.",
         },
       ],
     },
@@ -182,35 +182,35 @@ export const ServicePageDataWebDevelopement = [
       title: "Industries We",
       blueTitle: "Serve",
       description:
-        "Our React.js development services are industry-agnostic, with successful projects across various sectors",
+        "Our React.js development services are industry agnostic, with successful projects across various sectors",
            cards: [
         {
           id: 1,
           icons: Helper.RealEstateSvg,
           title: "Real Estate",
           description:
-            "We develop property portals, CRM integrations, booking systems, and map-based project listings optimized for lead generation and customer experience.",
+            "We develop property portals, CRM integrations, booking systems, and map based project listings optimized for lead generation and customer experience.",
         },
         {
           id: 2,
           icons: Helper.EcommoarceSvg,
-          title: "E-commerce",
+          title: "E commerce",
           description:
-            "React.js enables us to create fast, scalable e-commerce platforms with advanced product filtering, dynamic cart management, and secure payment integration.",
+            "React.js enables us to create fast, scalable e commerce platforms with advanced product filtering, dynamic cart management, and secure payment integration.",
         },
         {
           id: 3,
           icons: Helper.FinanceSvg,
           title: "Finance & Fintech",
           description:
-            "We build secure, responsive dashboards and platforms for financial institutions, with real-time data visualization and transaction tracking.",
+            "We build secure, responsive dashboards and platforms for financial institutions, with real time data visualization and transaction tracking.",
         },
         {
           id: 4,
           icons: Helper.HealthcareSvg,
           title: "Healthcare / Pharma ",
           description:
-            "HIPAA-compliant web applications, teleconsultation portals, and digital patient management systems built with React.js for performance and reliability.",
+            "HIPAA compliant web applications, teleconsultation portals, and digital patient management systems built with React.js for performance and reliability.",
         },
         {
           id: 5,
@@ -224,7 +224,7 @@ export const ServicePageDataWebDevelopement = [
           icons: Helper.RetailStore,
           title: "Retail",
           description:
-            "Inventory management dashboards, sales tools, and consumer-facing web interfaces optimized for real-time updates and mobile-first interactions.",
+            "Inventory management dashboards, sales tools, and consumer facing web interfaces optimized for real time updates and mobile first interactions.",
         },
       ],
     },
@@ -255,41 +255,43 @@ export const ServicePageDataWebDevelopement = [
       ],
     },
     faqSection: {
-      title: "FAQ",
+      title: "FAQs",
       ponits: [
         {
-          title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
+          title: "How is ReactJS different from other frameworks?",
           description: [
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+            "Unlike traditional frameworks, ReactJS focuses on building reusable UI components and uses a virtual DOM for efficient rendering. This results in faster performance, reduced development time, and better scalability compared to many other frameworks.",
+         ],
+        },
+        {
+          title: "Do you provide custom ReactJS development services?",
+          description: [
+            "Yes. Our team delivers tailor made ReactJS solutions based on your business goals. From UI/UX design to front end development and API integration, we provide end to end ReactJS development services.",
+            
           ],
         },
         {
-          title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
+          title: "Can you integrate ReactJS with my existing backend system?",
           description: [
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+            " Absolutely. ReactJS can be seamlessly integrated with various backends like Node.js, Python (Django/Flask), PHP (Laravel), .NET, or even headless CMS solutions to ensure a smooth workflow.",  
           ],
         },
         {
-          title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
+          title: "How long does it take to develop a ReactJS application?",
           description: [
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+            " The timeline depends on your project’s complexity, features, and integrations. A basic application may take a few weeks, while a large scale enterprise solution could take several months. We provide detailed timelines after project analysis.",  
           ],
         },
         {
-          title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
+          title: "Do you offer migration services to ReactJS?",
           description: [
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+            " Yes, we help businesses migrate from legacy systems or other front-end frameworks to ReactJS, ensuring zero data loss, improved performance, and a modernized user experience.",  
           ],
         },
         {
-          title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
+          title: "What is your engagement model for ReactJS development?",
           description: [
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+            " We offer flexible engagement models, fixed cost projects, dedicated ReactJS developers, or hourly hiring depending on your project scope and requirements.",  
           ],
         },
       ],
@@ -307,21 +309,21 @@ export const ServicePageDataWebDevelopement = [
       title: "High-Performance Backend ",
       subtitle: "Development with Node.js",
       description: [
-        "Node.js has transformed modern web development by offering a fast, scalable, and event-driven architecture for building robust backend systems. At Harichtech, we offer end-to-end Node.js development services that power real-time, data-intensive applications with speed and efficiency.",
-        "Whether you're developing a custom API, a full-stack web application, or a microservices architecture, our Node.js solutions ensure scalability, performance, and long-term maintainability.",
+        "Node.js has transformed modern web development by offering a fast, scalable, and event driven architecture for building robust backend systems. At Harichtech, we offer end to end Node.js development services that power real time, data intensive applications with speed and efficiency.",
+        "Whether you're developing a custom API, a full stack web application, or a microservices architecture, our Node.js solutions ensure scalability, performance, and long term maintainability.",
       ],
       svgIcon: Helper.NodejsSvg,
     },
     whyChooseUsSection: {
       title: "Why Choose Node.js for Web Application Development?",
       description:
-        "Node.js is known for its efficient event-driven architecture, scalability, and large, active community. Whether you're building a new real-time application or modernizing an existing backend system, Node.js provides a robust foundation for long-term success.",
+        "Node.js is known for its efficient event driven architecture, scalability, and large, active community. Whether you're building a new real time application or modernizing an existing backend system, Node.js provides a robust foundation for long term success.",
       cards: [
         {
           id: 1,
           title: "Asynchronous and Event-Driven",
           description:
-            "Node.js operates on a non-blocking I/O model, enabling it to handle thousands of concurrent requests without slowing down.",
+            "Node.js operates on a non blocking I/O model, enabling it to handle thousands of concurrent requests without slowing down.",
         },
         {
           id: 2,
@@ -333,13 +335,13 @@ export const ServicePageDataWebDevelopement = [
           id: 3,
           title: "Real-Time Capabilities",
           description:
-            "Ideal for applications requiring real-time updates like chat apps, gaming platforms, and live dashboards.",
+            "Ideal for applications requiring real time updates like chat apps, gaming platforms, and live dashboards.",
         },
         {
           id: 4,
           title: "Cross-Platform Development",
           description:
-            "Node.js allows for the development of cross-platform apps using frameworks like Electron, reducing time-to-market.",
+            "Node.js allows for the development of cross platform apps using frameworks like Electron, reducing time to market.",
         },
         {
           id: 5,
@@ -354,7 +356,7 @@ export const ServicePageDataWebDevelopement = [
       blueTitle: "Node.js Development",
       description: [
         "At Harichtech, we adopt a consultative and collaborative approach to development. Every Node.js application we build is rooted in efficient performance, robust architecture, and business alignment.",
-        "Our team is experienced in delivering both high-traffic backend systems and complex internal APIs using Node.js. From rapid MVP development to full-scale enterprise solutions, we provide end-to-end support",
+        "Our team is experienced in delivering both high traffic backend systems and complex internal APIs using Node.js. From rapid MVP development to full scale enterprise solutions, we provide end to end support",
       ],
       points: null,
       rightImage: Helper.NodejsApproch,
@@ -382,31 +384,31 @@ export const ServicePageDataWebDevelopement = [
           id: 2,
           title: "API Development & Integration",
           description:
-            "Design and deployment of RESTful and GraphQL APIs to connect services, applications, and third-party platforms.",
+            "Design and deployment of RESTful and GraphQL APIs to connect services, applications, and third party platforms.",
         },
         {
           id: 3,
           title: "Real-Time Application Development",
           description:
-            "Chat systems, collaboration tools, and data-streaming dashboards built with socket.io and Node.js event handling.",
+            "Chat systems, collaboration tools, and data streaming dashboards built with socket.io and Node.js event handling.",
         },
         {
           id: 4,
           title: "Microservices Architecture",
           description:
-            "Design and development of decoupled services using Node.js to support high-availability and cloud-native applications.",
+            "Design and development of decoupled services using Node.js to support high vailability and cloud native applications.",
         },
         {
           id: 5,
           title: "Serverless Application Development",
           description:
-            "Build lightweight, event-driven applications using Node.js with AWS Lambda or Firebase Functions.",
+            "Build lightweight, event driven applications using Node.js with AWS Lambda or Firebase Functions.",
         },
         {
           id: 6,
           title: "Migration to Node.js",
           description:
-            "Seamless transition of monolithic or legacy systems to a Node.js-based environment without performance trade-offs.",
+            "Seamless transition of monolithic or legacy systems to a Node.js based environment without performance trade offs.",
         },
       ],
     },
@@ -464,35 +466,35 @@ export const ServicePageDataWebDevelopement = [
       title: "Industries We",
       blueTitle: "Serve",
       description:
-        "Our Node.js development services are industry-agnostic, with successful projects across various sectors",
+        "Our Node.js development services are industry agnostic, with successful projects across various sectors",
       cards: [
         {
           id: 1,
           icons: Helper.RealEstateSvg,
           title: "Real Estate",
           description:
-            "We develop property portals, CRM integrations, booking systems, and map-based project listings optimized for lead generation and customer experience.",
+            "We develop property portals, CRM integrations, booking systems, and map based project listings optimized for lead generation and customer experience.",
         },
         {
           id: 2,
           icons: Helper.EcommoarceSvg,
           title: "E-commerce",
           description:
-            "React.js enables us to create fast, scalable e-commerce platforms with advanced product filtering, dynamic cart management, and secure payment integration.",
+            "React.js enables us to create fast, scalable e commerce platforms with advanced product filtering, dynamic cart management, and secure payment integration.",
         },
         {
           id: 3,
           icons: Helper.FinanceSvg,
           title: "Finance & Fintech",
           description:
-            "We build secure, responsive dashboards and platforms for financial institutions, with real-time data visualization and transaction tracking.",
+            "We build secure, responsive dashboards and platforms for financial institutions, with real time data visualization and transaction tracking.",
         },
         {
           id: 4,
           icons: Helper.HealthcareSvg,
           title: "Healthcare / Pharma ",
           description:
-            "HIPAA-compliant web applications, teleconsultation portals, and digital patient management systems built with React.js for performance and reliability.",
+            "HIPAA compliant web applications, teleconsultation portals, and digital patient management systems built with React.js for performance and reliability.",
         },
         {
           id: 5,
@@ -506,7 +508,7 @@ export const ServicePageDataWebDevelopement = [
           icons: Helper.RetailStore,
           title: "Retail",
           description:
-            "Inventory management dashboards, sales tools, and consumer-facing web interfaces optimized for real-time updates and mobile-first interactions.",
+            "Inventory management dashboards, sales tools, and consumer facing web interfaces optimized for real time updates and mobile first interactions.",
         },
       ],
     },
@@ -537,41 +539,42 @@ export const ServicePageDataWebDevelopement = [
       ],
     },
     faqSection: {
-      title: "FAQ",
+      title: "FAQs",
       ponits: [
         {
-          title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
+          title: "Why is Node.js better than traditional backend technologies?",
           description: [
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+            "Unlike traditional backend technologies, Node.js uses non-blocking I/O and an event-driven architecture. This allows it to process multiple requests simultaneously, resulting in faster performance and better scalability.",
           ],
         },
         {
-          title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
+          title: "Do you provide custom Node.js development services?",
           description: [
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+            "Yes. We specialize in building tailor-made Node.js applications, including API development, microservices architecture, full-stack solutions, and enterprise-grade applications.",
           ],
         },
         {
-          title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
+          title: "Can you integrate Node.js with my existing systems?",
           description: [
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+            "Absolutely. Node.js integrates seamlessly with databases like MongoDB, MySQL, and PostgreSQL, as well as with front-end frameworks like React, Angular, or Vue. We ensure smooth API and third-party service integrations as well.",
           ],
         },
         {
-          title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
+          title: "How long does it take to develop a Node.js application?",
           description: [
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+            "The development time depends on the project’s complexity, features, and scale. A simple Node.js app may take a few weeks, while complex enterprise solutions could take several months. We provide a detailed project timeline after analysis.",
           ],
         },
         {
-          title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
+          title: "Do you offer migration services to Node.js?",
           description: [
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+            "Yes, We help businesses migrate from legacy systems or monolithic architectures to Node.js, enabling better performance, security, and scalability without disrupting operations.",
+          ],
+        },
+        {
+          title: "What engagement models do you offer for Node.js development?",
+          description: [
+            "We offer flexible models fixed price, hourly hiring, and dedicated Node.js developers so you can choose what works best for your business needs.",
           ],
         },
       ],
@@ -589,51 +592,51 @@ export const ServicePageDataWebDevelopement = [
       title: "Build Fast, Scalable, and SEO Optimized ",
       subtitle: "Web Applications with Next.js",
       description: [
-        "In today's digital-first world, speed, performance, and user experience are everything. That’s where Next.js shines. It’s not just another frontend framework-it’s a full-featured, production-grade toolkit that helps you build web applications that are as fast as they are powerful.",
-        "At Harichtech, we specialize in creating Next.js solutions that balance technical excellence with a deep understanding of your business goals. Whether you need a high-performing marketing site, an e-commerce storefront, or a data-driven SaaS platform, we’ll help you build it right-with purpose and precision.",
+        "In today's digital first world, speed, performance, and user experience are everything. That’s where Next.js shines. It’s not just another frontend framework it’s a full featured, production grade toolkit that helps you build web applications that are as fast as they are powerful.",
+        "At Harichtech, we specialize in creating Next.js solutions that balance technical excellence with a deep understanding of your business goals. Whether you need a high performing marketing site, an e commerce storefront, or a data driven SaaS platform, we’ll help you build it right with purpose and precision.",
       ],
       svgIcon: Helper.NextjsSvg,
     },
     whyChooseUsSection: {
       title: "Why Choose Next.js for Web Application Development?",
       description:
-        "Next.js is known for its efficient server-side rendering (SSR), static site generation (SSG), and robust developer experience. Whether you're building a new dynamic web application or modernizing an existing frontend, Next.js provides a powerful foundation for long-term success.",
+        "Next.js is known for its efficient server side rendering (SSR), static site generation (SSG), and robust developer experience. Whether you're building a new dynamic web application or modernizing an existing frontend, Next.js provides a powerful foundation for long term success.",
       cards: [
         {
           id: 1,
-          title: "Server-Side Rendering (SSR)",
+          title: "Server Side Rendering (SSR)",
           description:
-            "Deliver fully rendered pages straight from the server. This boosts your SEO, improves load time, and provides a better user experience-especially on mobile.",
+            "Deliver fully rendered pages straight from the server. This boosts your SEO, improves load time, and provides a better user experience especially on mobile.",
         },
         {
           id: 2,
           title: "Static Site Generation (SSG)",
           description:
-            "Ideal for content-heavy websites, SSG allows you to serve blazing-fast pages with almost zero delay. Think of it as preloading your website for your users.",
+            "Ideal for content heavy websites, SSG allows you to serve blazing fast pages with almost zero delay. Think of it as preloading your website for your users.",
         },
         {
           id: 3,
           title: "Built-In API Routes",
           description:
-            "You don’t always need a separate backend. With Next.js, we can build serverless APIs right into your application-keeping everything in one place.",
+            "You don’t always need a separate backend. With Next.js, we can build serverless APIs right into your application keeping everything in one place.",
         },
         {
           id: 4,
           title: "Streamlined Routing",
           description:
-            "Say goodbye to bulky configurations. Next.js uses a file-based routing system that’s clean, organized, and developer-friendly.",
+            "Say goodbye to bulky configurations. Next.js uses a file based routing system that’s clean, organized, and developer friendly.",
         },
         {
           id: 5,
           title: "Image Optimization",
           description:
-            "Automatically resize, compress, and serve the best version of your images without extra effort. It’s built-in, efficient, and reliable.",
+            "Automatically resize, compress, and serve the best version of your images without extra effort. It’s built in, efficient, and reliable.",
         },
         {
           id: 6,
           title: "Flexibility with Rendering",
           description:
-            "Need part of your site to update live while the rest stays static? Next.js lets us mix and match SSR, SSG, and client-side rendering-whatever works best for your use case.",
+            "Need part of your site to update live while the rest stays static? Next.js lets us mix and match SSR, SSG, and client side rendering whatever works best for your use case.",
         },
       ],
     },
@@ -642,7 +645,7 @@ export const ServicePageDataWebDevelopement = [
       blueTitle: "Next.js Development",
       description: [
         "At Harichtech, we adopt a consultative and collaborative approach to development. Every Next.js application we build is rooted in superior user experience, robust architecture, and business alignment.",
-        "Our team is experienced in delivering both high-performance static sites and complex, server-rendered applications using Next.js. From rapid MVP development to full-scale enterprise solutions, we provide end-to-end support.",
+        "Our team is experienced in delivering both high performance static sites and complex, server rendered applications using Next.js. From rapid MVP development to full scale enterprise solutions, we provide end to end support.",
       ],
       points: null,
       rightImage: Helper.NextjsApproch,
@@ -682,13 +685,13 @@ export const ServicePageDataWebDevelopement = [
           id: 4,
           title: "Scalable E-commerce Development",
           description:
-            "Launch fast-loading, mobile-optimized e-commerce platforms that look great and convert better. From product catalogs to payments-we cover it all.",
+            "Launch fast loading, mobile optimized e commerce platforms that look great and convert better. From product catalogs to payments we cover it all.",
         },
         {
           id: 5,
           title: "High-Performance Dashboards",
           description:
-            "For businesses that rely on data, we build real-time dashboards that update on the fly without slowing down.",
+            "For businesses that rely on data, we build real time dashboards that update on the fly without slowing down.",
         },
         {
           id: 6,
@@ -750,35 +753,35 @@ export const ServicePageDataWebDevelopement = [
       title: "Industries We",
       blueTitle: "Serve",
       description:
-        "Our Next.js development services are industry-agnostic, with successful projects across various sectors",
+        "Our Next.js development services are industry agnostic, with successful projects across various sectors",
       cards: [
         {
           id: 1,
           icons: Helper.RealEstateSvg,
           title: "Real Estate",
           description:
-            "We develop property portals, CRM integrations, booking systems, and map-based project listings optimized for lead generation and customer experience.",
+            "We develop property portals, CRM integrations, booking systems, and map based project listings optimized for lead generation and customer experience.",
         },
         {
           id: 2,
           icons: Helper.EcommoarceSvg,
           title: "E-commerce",
           description:
-            "React.js enables us to create fast, scalable e-commerce platforms with advanced product filtering, dynamic cart management, and secure payment integration.",
+            "React.js enables us to create fast, scalable e commerce platforms with advanced product filtering, dynamic cart management, and secure payment integration.",
         },
         {
           id: 3,
           icons: Helper.FinanceSvg,
           title: "Finance & Fintech",
           description:
-            "We build secure, responsive dashboards and platforms for financial institutions, with real-time data visualization and transaction tracking.",
+            "We build secure, responsive dashboards and platforms for financial institutions, with real time data visualization and transaction tracking.",
         },
         {
           id: 4,
           icons: Helper.HealthcareSvg,
           title: "Healthcare / Pharma ",
           description:
-            "HIPAA-compliant web applications, teleconsultation portals, and digital patient management systems built with React.js for performance and reliability.",
+            "HIPAA compliant web applications, teleconsultation portals, and digital patient management systems built with React.js for performance and reliability.",
         },
         {
           id: 5,
@@ -792,7 +795,7 @@ export const ServicePageDataWebDevelopement = [
           icons: Helper.RetailStore,
           title: "Retail",
           description:
-            "Inventory management dashboards, sales tools, and consumer-facing web interfaces optimized for real-time updates and mobile-first interactions.",
+            "Inventory management dashboards, sales tools, and consumer facing web interfaces optimized for real time updates and mobile first interactions.",
         },
       ],
     },
@@ -823,41 +826,42 @@ export const ServicePageDataWebDevelopement = [
       ],
     },
     faqSection: {
-      title: "FAQ",
+      title: "FAQs",
       ponits: [
         {
-          title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
+          title: "How is Next.js different from React.js?",
           description: [
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+            "React is a UI library, while Next.js is a framework built on top of React. Next.js provides extra features like server-side rendering, static site generation, image optimization, and better SEO capabilities, making it more powerful for production-ready apps.",
           ],
         },
         {
-          title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
+          title: "Do you provide custom Next.js development services?",
           description: [
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+            "Yes. We offer end-to-end Next.js services including custom development, UI/UX design, API integration, headless CMS integration, and performance optimization",
           ],
         },
         {
-          title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
+          title: "Is Next.js good for SEO?",
           description: [
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+            "Yes. Next.js supports server-side rendering and static generation, making websites load faster and rank higher on search engines compared to traditional SPAs.",
           ],
         },
         {
-          title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
+          title: "Can you integrate Next.js with my backend system?",
           description: [
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+            "Absolutely. Next.js works seamlessly with Node.js, Express, GraphQL, REST APIs, headless CMS (like Strapi, Contentful), and databases like MongoDB, MySQL, or PostgreSQL.",
           ],
         },
         {
-          title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
+          title: "How long does it take to build a Next.js application?",
           description: [
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+            "The timeline depends on your project requirements. A simple website may take 2–4 weeks, while a complex SaaS or eCommerce platform could take several months. We provide a detailed plan after project discussion.",
+          ],
+        },
+        {
+          title: "Do you offer migration services to Next.js?",
+          description: [
+            "Yes, We can migrate your existing website or app to Next.js, ensuring improved performance, scalability, and SEO benefits without affecting your existing data.",
           ],
         },
       ],
@@ -875,8 +879,8 @@ export const ServicePageDataWebDevelopement = [
       title: "Build Cross-Platform Mobile Apps ",
       subtitle: "with Native Performance",
       description: [
-        "In today’s mobile-first world, delivering seamless, high-performance experiences across platforms is essential. React Native allows businesses to create powerful mobile applications using a single codebase-without compromising on user experience or performance.",
-        "At Harichtech, our React Native development services are focused on building scalable, fast, and elegant mobile apps that run smoothly on both iOS and Android. Whether you’re launching a new product or scaling an existing one, we help you reach more users with efficient, cost-effective development.",
+        "In today’s mobile first world, delivering seamless, high performance experiences across platforms is essential. React Native allows businesses to create powerful mobile applications using a single codebase without compromising on user experience or performance.",
+        "At Harichtech, our React Native development services are focused on building scalable, fast, and elegant mobile apps that run smoothly on both iOS and Android. Whether you’re launching a new product or scaling an existing one, we help you reach more users with efficient, cost effective development.",
       ],
       svgIcon: Helper.ReactNativejsSvg,
     },
@@ -895,7 +899,7 @@ export const ServicePageDataWebDevelopement = [
           id: 2,
           title: "Native Performance and Experience",
           description:
-            "React Native apps render using native components, delivering a near-native look, feel, and performance-while still using JavaScript.",
+            "React Native apps render using native components, delivering a near native look, feel, and performance while still using JavaScript.",
         },
         {
           id: 3,
@@ -907,13 +911,13 @@ export const ServicePageDataWebDevelopement = [
           id: 4,
           title: "Seamless Third-Party Integration",
           description:
-            "From maps and cameras to payment gateways and analytics, React Native supports seamless integration with a wide range of native modules and third-party APIs.",
+            "From maps and cameras to payment gateways and analytics, React Native supports seamless integration with a wide range of native modules and third party APIs.",
         },
         {
           id: 5,
           title: "Scalable Architecture",
           description:
-            "React Native’s component-based structure makes it easy to manage complex applications and scale over time as business needs evolve.",
+            "React Native’s component based structure makes it easy to manage complex applications and scale over time as business needs evolve.",
         },
       ],
     },
@@ -922,7 +926,7 @@ export const ServicePageDataWebDevelopement = [
       blueTitle: "React Native App Development",
       description: [
         "At Harichtech, we adopt a consultative and collaborative approach to development. Every React Native application we build is rooted in superior user experience, robust architecture, and business alignment.",
-        "Our team is experienced in delivering both cross-platform mobile apps and complex, native-like experiences using React Native. From rapid MVP development to full-scale enterprise solutions, we provide end-to-end support.",
+        "Our team is experienced in delivering both cross platform mobile apps and complex, native like experiences using React Native. From rapid MVP development to full scale enterprise solutions, we provide end t0 end support.",
       ],
       points: null,
       rightImage: Helper.ReactNative,
@@ -930,7 +934,7 @@ export const ServicePageDataWebDevelopement = [
     connectUsSection: {
       title: "Start Your Mobile App Journey with Harichtech",
       descriptions: [
-        "React Native offers the flexibility of cross-platform development without sacrificing quality and Harichtech is here to help you make the most of it. Our team of experienced engineers, designers, and product thinkers will guide you from concept to deployment with clarity and confidence.",
+        "React Native offers the flexibility of cross platform development without sacrificing quality and Harichtech is here to help you make the most of it. Our team of experienced engineers, designers, and product thinkers will guide you from concept to deployment with clarity and confidence.",
       ],
       btnTitle: "Connect With us",
     },
@@ -938,31 +942,31 @@ export const ServicePageDataWebDevelopement = [
       title: "Our React Native App ",
       blueTitle: "Development Services",
       description:
-        "We offer comprehensive services tailored to your project goals-whether you're building a consumer-facing app, an internal operations tool, or a cross-platform MVP.",
+        "We offer comprehensive services tailored to your project goals whether you're building a consumer facing app, an internal operations tool, or a cross platform MVP.",
       cards: [
         {
           id: 1,
           title: "Custom Mobile App Development",
           description:
-            "We build robust, feature-rich mobile applications from scratch using React Native-tailored to your brand, goals, and user experience expectations.",
+            "We build robust, feature rich mobile applications from scratch using React Native tailored to your brand, goals, and user experience expectations.",
         },
         {
           id: 2,
           title: "Cross-Platform App Development",
           description:
-            "With a shared codebase, we help you launch apps faster across iOS and Android-ensuring consistency in design and performance.",
+            "With a shared codebase, we help you launch apps faster across iOS and Android ensuring consistency in design and performance.",
         },
         {
           id: 3,
           title: "UI/UX Design for Mobile",
           description:
-            "Our team crafts modern, intuitive, and responsive user interfaces with mobile-first thinking, aligned with both Apple’s Human Interface Guidelines and Google’s Material Design standards.",
+            "Our team crafts modern, intuitive, and responsive user interfaces with mobile first thinking, aligned with both Apple’s Human Interface Guidelines and Google’s Material Design standards.",
         },
         {
           id: 4,
           title: "App Maintenance & Support",
           description:
-            "Post-launch, we offer continuous maintenance, updates, feature improvements, and monitoring-so your app runs smoothly, securely, and efficiently.",
+            "Post launch, we offer continuous maintenance, updates, feature improvements, and monitoring so your app runs smoothly, securely, and efficiently.",
         },
         {
           id: 5,
@@ -974,7 +978,7 @@ export const ServicePageDataWebDevelopement = [
           id: 6,
           title: "MVP & Startup Solutions",
           description:
-            "Need to validate an idea quickly? We specialize in building Minimum Viable Products (MVPs) with React Native that are cost-effective, scalable, and ready for user feedback.",
+            "Need to validate an idea quickly? We specialize in building Minimum Viable Products (MVPs) with React Native that are cost effective, scalable, and ready for user feedback.",
         },
       ],
     },
@@ -989,7 +993,7 @@ export const ServicePageDataWebDevelopement = [
       title: "Tech Stack & Tools",
       blueTitle: "We Use",
       description:
-        "To deliver high-performance React Native apps, we combine the framework with a robust supporting stack:",
+        "To deliver high performance React Native apps, we combine the framework with a robust supporting stack:",
       cards: [
         {
           id: 1,
@@ -1049,35 +1053,35 @@ export const ServicePageDataWebDevelopement = [
       title: "Industries We",
       blueTitle: "Serve",
       description:
-        "Our React Native App development services are industry-agnostic, with successful projects across various sectors",
+        "Our React Native App development services are industry agnostic, with successful projects across various sectors",
       cards: [
         {
           id: 1,
           icons: Helper.RealEstateSvg,
           title: "Real Estate",
           description:
-            "We develop property portals, CRM integrations, booking systems, and map-based project listings optimized for lead generation and customer experience.",
+            "We develop property portals, CRM integrations, booking systems, and map based project listings optimized for lead generation and customer experience.",
         },
         {
           id: 2,
           icons: Helper.EcommoarceSvg,
           title: "E-commerce",
           description:
-            "React.js enables us to create fast, scalable e-commerce platforms with advanced product filtering, dynamic cart management, and secure payment integration.",
+            "React.js enables us to create fast, scalable ecommerce platforms with advanced product filtering, dynamic cart management, and secure payment integration.",
         },
         {
           id: 3,
           icons: Helper.FinanceSvg,
           title: "Finance & Fintech",
           description:
-            "We build secure, responsive dashboards and platforms for financial institutions, with real-time data visualization and transaction tracking.",
+            "We build secure, responsive dashboards and platforms for financial institutions, with real time data visualization and transaction tracking.",
         },
         {
           id: 4,
           icons: Helper.HealthcareSvg,
           title: "Healthcare / Pharma ",
           description:
-            "HIPAA-compliant web applications, teleconsultation portals, and digital patient management systems built with React.js for performance and reliability.",
+            "HIPAA compliant web applications, teleconsultation portals, and digital patient management systems built with React.js for performance and reliability.",
         },
         {
           id: 5,
@@ -1091,7 +1095,7 @@ export const ServicePageDataWebDevelopement = [
           icons: Helper.RetailStore,
           title: "Retail",
           description:
-            "Inventory management dashboards, sales tools, and consumer-facing web interfaces optimized for real-time updates and mobile-first interactions.",
+            "Inventory management dashboards, sales tools, and consumer facing web interfaces optimized for real time updates and mobile first interactions.",
         },
       ],
     },
@@ -1122,41 +1126,42 @@ export const ServicePageDataWebDevelopement = [
       ],
     },
     faqSection: {
-      title: "FAQ",
+      title: "FAQs",
       ponits: [
         {
-          title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
+          title: "How is React Native different from native app development?",
           description: [
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+            "Traditional native apps require separate codebases for iOS and Android, while React Native allows cross platform development with up to 90% code reuse. This makes development faster, cost effective, and easier to maintain.",
           ],
         },
         {
-          title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
+          title: "Do React Native apps perform as well as native apps?",
           description: [
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+            "Yes, With proper optimization, React Native apps deliver near native performance. It offers smooth UI/UX, fast rendering, and access to native device features through APIs and third-party libraries",
           ],
         },
         {
-          title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
+          title: "Do you provide custom React Native app development services?",
           description: [
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+            "Yes, We offer end to end React Native services including custom app development, UI/UX design, API integration, third party integrations, and performance optimization.",
           ],
         },
         {
-          title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
+          title: "Can you migrate my existing app to React Native?",
           description: [
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+            "We provide app migration services to React Native, ensuring seamless transition, improved performance, and cross-platform compatibility without data loss.",
           ],
         },
         {
-          title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
+          title: "How long does it take to build a React Native app?",
           description: [
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+            "The timeline depends on your app’s complexity and features. A basic app may take 6 to 8 weeks, while feature rich enterprise solutions may take several months. We share detailed timelines after project analysis.",
+          ],
+        },
+        {
+          title: "Is React Native good for startups and MVPs?",
+          description: [
+            "Yes, React Native is a great choice for startups as it allows faster development, cost savings, and quicker time-to-market, making it ideal for building MVPs and testing business ideas.",
           ],
         },
       ],
@@ -1177,15 +1182,15 @@ export const ServicePageDataOfUIUx = [
       title: "Strategic Web Design That Builds  ",
       subtitle: "Trust and Drives Action",
       description: [
-        "Your website isn’t just a digital placeholder-it’s the first impression, the primary point of interaction, and often the deciding factor for whether a user engages with your brand or moves on. At Harichtech, we design websites that are more than just beautiful-they are thoughtful, functional, and built to perform.",
-        "We focus on creating modern, mobile-friendly, and high-converting websites that align with your business goals. Whether you're launching a brand, revamping an outdated site, or creating a platform from the ground up, our design approach ensures every detail works toward the outcomes that matter.",
+        "Your website isn’t just a digital placeholder it’s the first impression, the primary point of interaction, and often the deciding factor for whether a user engages with your brand or moves on. At Harichtech, we design websites that are more than just beautiful they are thoughtful, functional, and built to perform.",
+        "We focus on creating modern, mobile friendly, and high converting websites that align with your business goals. Whether you're launching a brand, revamping an outdated site, or creating a platform from the ground up, our design approach ensures every detail works toward the outcomes that matter.",
       ],
       svgIcon: Helper.WebDesignSvg,
     },
     whyChooseUsSection: {
       title: "Why Website Design Still Matters",
       description:
-        "Website design is known for its strategic planning, creative vision, and user-centric approach. Whether you're building a new digital platform or modernizing an existing one, a well-executed website design provides a powerful foundation for long-term success.",
+        "Website design is known for its strategic planning, creative vision, and user centric approach. Whether you're building a new digital platform or modernizing an existing one, a well executed website design provides a powerful foundation for long term success.",
       cards: [
         {
           id: 1,
@@ -1197,7 +1202,7 @@ export const ServicePageDataOfUIUx = [
           id: 2,
           title: "Design that Converts",
           description:
-            "A well-structured, visually clean website leads users through intuitive journeys-from first glance to final conversion.",
+            "A well structured, visually clean website leads users through intuitive journeys from first glance to final conversion.",
         },
         {
           id: 3,
@@ -1215,7 +1220,7 @@ export const ServicePageDataOfUIUx = [
           id: 5,
           title: "Accessible by Design",
           description:
-            "We follow best practices to ensure your website is usable for everyone-Including those relying on assistive technologies.",
+            "We follow best practices to ensure your website is usable for everyone Including those relying on assistive technologies.",
         },
       ],
     },
@@ -1224,7 +1229,7 @@ export const ServicePageDataOfUIUx = [
       blueTitle: "Website Design",
       description: [
         "At Harichtech, we adopt a consultative and collaborative approach to design. Every website we create is rooted in superior user experience, a scalable architecture, and business alignment.",
-        "Our team is experienced in delivering both high-impact marketing websites and complex, data-driven platforms. From rapid prototyping to full-scale enterprise solutions, we provide end-to-end support.",
+        "Our team is experienced in delivering both high impact marketing websites and complex, data driven platforms. From rapid prototyping to full scale enterprise solutions, we provide end to end support.",
       ],
       points: null,
       rightImage: Helper.WebsiteDesign,
@@ -1232,7 +1237,7 @@ export const ServicePageDataOfUIUx = [
     connectUsSection: {
       title: "Let’s Build a Website That Works for You",
       descriptions: [
-        "At Harichtech, we don’t just design for today-we design for scale, for usability, and for real people. Whether you need a sharp landing page or an entire corporate platform, we approach every project with strategy, creativity, and precision.",
+        "At Harichtech, we don’t just design for today we design for scale, for usability, and for real people. Whether you need a sharp landing page or an entire corporate platform, we approach every project with strategy, creativity, and precision.",
         "Have a vision? Let’s bring it to life.",
       ],
       btnTitle: "Connect With us",
@@ -1247,19 +1252,19 @@ export const ServicePageDataOfUIUx = [
           id: 1,
           title: "UI/UX Design",
           description:
-            "Intuitive, user-first interfaces tailored to your audience, built with consistency and clarity in mind.",
+            "Intuitive, user first interfaces tailored to your audience, built with consistency and clarity in mind.",
         },
         {
           id: 2,
           title: "Corporate & Brand Websites",
           description:
-            "Professional websites that reflect your company’s credibility, values, and voice-designed to grow with your brand.",
+            "Professional websites that reflect your company’s credibility, values, and voice designed to grow with your brand.",
         },
         {
           id: 3,
           title: "Landing Page Design",
           description:
-            "Focused, action-oriented landing pages for campaigns, lead generation, and product launches.",
+            "Focused, action oriented landing pages for campaigns, lead generation, and product launches.",
         },
         {
           id: 4,
@@ -1271,13 +1276,13 @@ export const ServicePageDataOfUIUx = [
           id: 5,
           title: "CMS-Based Design",
           description:
-            "Design systems built for platforms like WordPress, Webflow, and headless CMS-balancing flexibility and control.",
+            "Design systems built for platforms like WordPress, Webflow, and headless CMS balancing flexibility and control.",
         },
         {
           id: 6,
           title: "E-commerce Website Design",
           description:
-            "High-conversion product pages, mobile-first design, and frictionless user flows for online retail.",
+            "High conversion product pages, mobile first design, and frictionless user flows for online retail.",
         },
       ],
     },
@@ -1325,35 +1330,35 @@ export const ServicePageDataOfUIUx = [
       title: "Industries We",
       blueTitle: "Serve",
       description:
-        "Our website design services are industry-agnostic, with successful projects across various sectors.",
+        "Our website design services are industry agnostic, with successful projects across various sectors.",
       cards: [
         {
           id: 1,
           icons: Helper.RealEstateSvg,
           title: "Real Estate",
           description:
-            "We develop property portals, CRM integrations, booking systems, and map-based project listings optimized for lead generation and customer experience.",
+            "We develop property portals, CRM integrations, booking systems, and map based project listings optimized for lead generation and customer experience.",
         },
         {
           id: 2,
           icons: Helper.EcommoarceSvg,
           title: "E-commerce",
           description:
-            "React.js enables us to create fast, scalable e-commerce platforms with advanced product filtering, dynamic cart management, and secure payment integration.",
+            "React.js enables us to create fast, scalable ecommerce platforms with advanced product filtering, dynamic cart management, and secure payment integration.",
         },
         {
           id: 3,
           icons: Helper.FinanceSvg,
           title: "Finance & Fintech",
           description:
-            "We build secure, responsive dashboards and platforms for financial institutions, with real-time data visualization and transaction tracking.",
+            "We build secure, responsive dashboards and platforms for financial institutions, with real time data visualization and transaction tracking.",
         },
         {
           id: 4,
           icons: Helper.HealthcareSvg,
           title: "Healthcare / Pharma ",
           description:
-            "HIPAA-compliant web applications, teleconsultation portals, and digital patient management systems built with React.js for performance and reliability.",
+            "HIPAA compliant web applications, teleconsultation portals, and digital patient management systems built with React.js for performance and reliability.",
         },
         {
           id: 5,
@@ -1367,7 +1372,7 @@ export const ServicePageDataOfUIUx = [
           icons: Helper.RetailStore,
           title: "Retail",
           description:
-            "Inventory management dashboards, sales tools, and consumer-facing web interfaces optimized for real-time updates and mobile-first interactions.",
+            "Inventory management dashboards, sales tools, and consumer facing web interfaces optimized for real time updates and mobile first interactions.",
         },
       ],
     },
@@ -1398,41 +1403,42 @@ export const ServicePageDataOfUIUx = [
       ],
     },
     faqSection: {
-      title: "FAQ",
+      title: "FAQs",
       ponits: [
         {
-          title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
+          title: "Do you create responsive and mobile-friendly designs?",
           description: [
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+            "Yes, All our websites are fully responsive, ensuring they look and perform perfectly on desktops, tablets, and smartphones.",
           ],
         },
         {
-          title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
+          title: "Can you redesign my existing website?",
           description: [
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+            "Absolutely, We provide website redesign services to modernize outdated websites, improve UI/UX, and enhance speed, security, and performance.",
           ],
         },
         {
-          title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
+          title: "How long does it take to design a website?",
           description: [
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+            "The timeline depends on your website’s complexity. A simple business site may take 2 to 4 weeks, while large eCommerce or custom platforms can take several months.",
           ],
         },
         {
-          title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
+          title: "Do you provide custom website design or use templates?",
           description: [
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+            "We focus on custom website design tailored to your brand, but we can also work with pre-built templates if you need a quicker and cost effective solution",
           ],
         },
         {
-          title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
+          title: "Will my website be SEO-friendly?",
           description: [
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+            "Yes. We follow SEO best practices, including clean code, fast loading speed, mobile responsiveness, and proper site structure to ensure your site is search engine friendly.",
+          ],
+        },
+        {
+          title: "Do you integrate CMS like WordPress or custom solutions?",
+          description: [
+            "Yes. We design websites using WordPress, Shopify, Webflow, or custom CMS solutions, depending on your business goals",
           ],
         },
       ],
@@ -1451,7 +1457,7 @@ export const ServicePageDataOfUIUx = [
       subtitle: "Trust and Drives Action",
       description: [
         "Your mobile app is more than just a tool—it’s your brand’s presence in your user's pocket, a constant companion that represents your business 24/7. In a few seconds, users decide whether your app is worth keeping or deleting. At Harichtech, we help make sure they stay, explore, and engage.",
-        "We design mobile apps that don’t just look good—they work hard. Our team creates modern, user-friendly, and performance-driven designs that are rooted in usability and built to evolve with your brand. Whether you're launching a new app or reimagining an existing one, our goal is always the same: to help your business grow by designing for the people you serve.",
+        "We design mobile apps that don’t just look good—they work hard. Our team creates modern, user friendly, and performance driven designs that are rooted in usability and built to evolve with your brand. Whether you're launching a new app or reimagining an existing one, our goal is always the same: to help your business grow by designing for the people you serve.",
       ],
       svgIcon: Helper.MobileAppSvg,
     },
@@ -1470,7 +1476,7 @@ export const ServicePageDataOfUIUx = [
           id: 2,
           title: "Design That Converts",
           description:
-            "A visually clean and strategically structured app gently leads users from discovery to decision—whether that means completing an onboarding flow, making an in-app purchase, or scheduling a call.",
+            "A visually clean and strategically structured app gently leads users from discovery to decision—whether that means completing an onboarding flow, making an in app purchase, or scheduling a call.",
         },
         {
           id: 3,
@@ -1488,7 +1494,7 @@ export const ServicePageDataOfUIUx = [
           id: 5,
           title: "Accessible by Design",
           description:
-            "We follow best practices to ensure your website is usable for everyone-Including those relying on assistive technologies.",
+            "We follow best practices to ensure your website is usable for everyone Including those relying on assistive technologies.",
         },
       ],
     },
@@ -1497,7 +1503,7 @@ export const ServicePageDataOfUIUx = [
       blueTitle: "Mobile App Design",
       description: [
         "At Harichtech, we adopt a consultative and collaborative approach to design. Every mobile app we create is rooted in a superior user experience, a scalable architecture, and business alignment.",
-        "Our team is experienced in delivering both high-impact consumer apps and complex, data-driven platforms. From rapid prototyping to full-scale enterprise solutions, we provide end-to-end support.",
+        "Our team is experienced in delivering both high impact consumer apps and complex, data driven platforms. From rapid prototyping to full scale enterprise solutions, we provide end to end support.",
       ],
       points: null,
       rightImage: Helper.MobileAPPDesign,
@@ -1514,7 +1520,7 @@ export const ServicePageDataOfUIUx = [
       title: "Our Mobile App",
       blueTitle: "Design Services",
       description:
-        "We provide full-spectrum design services tailored to your business goals and audience needs. Whether you're a fast-growing startup or an established enterprise, we offer flexible solutions for every stage of your digital journey.",
+        "We provide full spectrum design services tailored to your business goals and audience needs. Whether you're a fast growing startup or an established enterprise, we offer flexible solutions for every stage of your digital journey.",
       cards: [
         {
           id: 1,
@@ -1544,13 +1550,13 @@ export const ServicePageDataOfUIUx = [
           id: 5,
           title: "Native & Hybrid App Design",
           description:
-            "From native frameworks like Swift and Kotlin to cross-platform solutions like React Native and Flutter, we design flexible, easy-to-manage apps that empower your internal teams without relying on platform-specific limitations.",
+            "From native frameworks like Swift and Kotlin to cross platform solutions like React Native and Flutter, we design flexible, easy to manage apps that empower your internal teams without relying on platform specific limitations.",
         },
         {
           id: 6,
           title: "E-commerce App Design",
           description:
-            "We create seamless, mobile-first shopping experiences with optimized product pages, user-friendly navigation, and a frictionless checkout process.",
+            "We create seamless, mobile first shopping experiences with optimized product pages, user friendly navigation, and a frictionless checkout process.",
         },
       ],
     },
@@ -1597,35 +1603,35 @@ export const ServicePageDataOfUIUx = [
       title: "Industries We",
       blueTitle: "Serve",
       description:
-        "Our website design services are industry-agnostic, with successful projects across various sectors.",
+        "Our website design services are industry agnostic, with successful projects across various sectors.",
       cards: [
         {
           id: 1,
           icons: Helper.RealEstateSvg,
           title: "Real Estate",
           description:
-            "We develop property portals, CRM integrations, booking systems, and map-based project listings optimized for lead generation and customer experience.",
+            "We develop property portals, CRM integrations, booking systems, and map based project listings optimized for lead generation and customer experience.",
         },
         {
           id: 2,
           icons: Helper.EcommoarceSvg,
           title: "E-commerce",
           description:
-            "React.js enables us to create fast, scalable e-commerce platforms with advanced product filtering, dynamic cart management, and secure payment integration.",
+            "React.js enables us to create fast, scalable ecommerce platforms with advanced product filtering, dynamic cart management, and secure payment integration.",
         },
         {
           id: 3,
           icons: Helper.FinanceSvg,
           title: "Finance & Fintech",
           description:
-            "We build secure, responsive dashboards and platforms for financial institutions, with real-time data visualization and transaction tracking.",
+            "We build secure, responsive dashboards and platforms for financial institutions, with real time data visualization and transaction tracking.",
         },
         {
           id: 4,
           icons: Helper.HealthcareSvg,
           title: "Healthcare / Pharma ",
           description:
-            "HIPAA-compliant web applications, teleconsultation portals, and digital patient management systems built with React.js for performance and reliability.",
+            "HIPAA compliant web applications, teleconsultation portals, and digital patient management systems built with React.js for performance and reliability.",
         },
         {
           id: 5,
@@ -1639,7 +1645,7 @@ export const ServicePageDataOfUIUx = [
           icons: Helper.RetailStore,
           title: "Retail",
           description:
-            "Inventory management dashboards, sales tools, and consumer-facing web interfaces optimized for real-time updates and mobile-first interactions.",
+            "Inventory management dashboards, sales tools, and consumer facing web interfaces optimized for real time updates and mobile first interactions.",
         },
       ],
     },
@@ -1673,38 +1679,39 @@ export const ServicePageDataOfUIUx = [
       title: "FAQ",
       ponits: [
         {
-          title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
+          title: "What is included in your mobile app design services?",
           description: [
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+            "Our services cover UI/UX design, wireframing, prototyping, user journey mapping, interactive mockups, and design system creation for consistent branding."
           ],
         },
         {
-          title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
+          title: "Do you provide custom app designs or use standard templates?",
           description: [
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+            "We create custom app designs tailored to your brand identity, target audience, and business goals. We avoid generic templates to ensure uniqueness and engagement."
           ],
         },
         {
-          title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
+          title: "How long does it take to design a mobile app?",
           description: [
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+            "Timelines vary based on complexity. A simple app design may take 2 to 3 weeks, while feature-rich or enterprise-level designs may require several months."
           ],
         },
         {
-          title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
+          title: "Do you provide clickable prototypes?",
           description: [
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+             "Yes, We provide interactive prototypes that allow you to preview the user flow and functionality before development begins."
           ],
         },
         {
-          title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
+          title: "How do you ensure a great user experience (UX)?",
           description: [
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+              "We focus on user research, intuitive navigation, consistent design patterns, accessibility, and usability testing to create seamless experiences.",
+          ],
+        },
+        {
+          title: " Will the app design match my brand guidelines?",
+          description: [
+              "Yes, We align all designs with your brand colors, fonts, and overall identity to maintain consistency across digital platforms.",
           ],
         },
       ],
@@ -1722,8 +1729,8 @@ export const ServicePageDataOfUIUx = [
       title: "Building Digital Products That",
       subtitle: "Solve, Scale, and Succeed",
       description: [
-        "At Harichtech, product design is not simply about creating visuals-it’s about solving problems. We collaborate with businesses to transform ideas into user-centered digital products that are scalable, intuitive, and built for impact. From concept to execution, we focus on creating designs that deliver clarity, usability, and measurable value.",
-        "Whether you're an early-stage startup refining your MVP or an enterprise optimizing product performance, we help bridge the gap between user needs and business goals.",
+        "At Harichtech, product design is not simply about creating visuals it’s about solving problems. We collaborate with businesses to transform ideas into user centered digital products that are scalable, intuitive, and built for impact. From concept to execution, we focus on creating designs that deliver clarity, usability, and measurable value.",
+        "Whether you're an early stage startup refining your MVP or an enterprise optimizing product performance, we help bridge the gap between user needs and business goals.",
       ],
       svgIcon: Helper.ProductDesignSvg,
     },
@@ -1736,19 +1743,19 @@ export const ServicePageDataOfUIUx = [
           id: 1,
           title: "User-Centric Innovation",
           description:
-            "We start with a deep understanding of your users, uncovering their pain points and motivations. This research-first approach ensures that every design decision is focused on creating genuine value.",
+            "We start with a deep understanding of your users, uncovering their pain points and motivations. This research first approach ensures that every design decision is focused on creating genuine value.",
         },
         {
           id: 2,
           title: "Strategic Clarity",
           description:
-            "Great design is rooted in a clear strategy. We help you define a product vision, align features with business objectives, and create a roadmap that guides development and ensures long-term success.",
+            "Great design is rooted in a clear strategy. We help you define a product vision, align features with business objectives, and create a roadmap that guides development and ensures long term success.",
         },
         {
           id: 3,
           title: "Holistic Experience",
           description:
-            "We design the entire journey, not just a single screen. This includes every touchpoint—from onboarding and in-app interactions to notifications and customer support—creating a cohesive and memorable experience.",
+            "We design the entire journey, not just a single screen. This includes every touchpoint—from onboarding and in app interactions to notifications and customer support—creating a cohesive and memorable experience.",
         },
         {
           id: 4,
@@ -1760,7 +1767,7 @@ export const ServicePageDataOfUIUx = [
           id: 5,
           title: "Builds Brand Trust",
           description:
-            "A well-designed product builds credibility and trust with your audience. A seamless, professional experience reinforces your brand's promise of quality and reliability.",
+            "A well designed product builds credibility and trust with your audience. A seamless, professional experience reinforces your brand's promise of quality and reliability.",
         },
         {
           id: 6,
@@ -1774,8 +1781,8 @@ export const ServicePageDataOfUIUx = [
       title: "Our Approach to ",
       blueTitle: "Product Design",
       description: [
-        "We treat design as a continuous journey rather than a one-time activity. Our approach is iterative, collaborative, and informed by real-world data. We don’t believe in guesswork-every design choice is guided by user behavior, business goals, and market demands.",
-        "Our process adapts to your stage of growth. Whether you're building a product from the ground up or reimagining an existing platform, we work alongside your internal teams, offering end-to-end support across all phases of product design.",
+        "We treat design as a continuous journey rather than a one time activity. Our approach is iterative, collaborative, and informed by real world data. We don’t believe in guesswork every design choice is guided by user behavior, business goals, and market demands.",
+        "Our process adapts to your stage of growth. Whether you're building a product from the ground up or reimagining an existing platform, we work alongside your internal teams, offering end to end support across all phases of product design.",
       ],
       points: null,
       rightImage: Helper.ProductDesign,
@@ -1792,13 +1799,13 @@ export const ServicePageDataOfUIUx = [
       title: "Our Core Product ",
       blueTitle: "Design Services",
       description:
-        "We create intuitive and impactful digital products by combining user-centric strategy with modern, scalable design. Our services cover the entire product journey, from initial concept to a flawless user experience.",
+        "We create intuitive and impactful digital products by combining user centric strategy with modern, scalable design. Our services cover the entire product journey, from initial concept to a flawless user experience.",
       cards: [
         {
           id: 1,
           title: "Discovery & UX Research",
           description:
-            "We start by understanding your users and the market through interviews, analysis, and persona creation to inform a user-centric strategy.",
+            "We start by understanding your users and the market through interviews, analysis, and persona creation to inform a user centric strategy.",
         },
         {
           id: 2,
@@ -1810,13 +1817,13 @@ export const ServicePageDataOfUIUx = [
           id: 3,
           title: "Wireframing & Prototyping",
           description:
-            "Before visual design, we create low-fidelity wireframes and interactive prototypes to test ideas and align teams on the product's structure.",
+            "Before visual design, we create low fidelity wireframes and interactive prototypes to test ideas and align teams on the product's structure.",
         },
         {
           id: 4,
           title: "UI Design & Visual Language",
           description:
-            "We craft a modern, brand-aligned visual interface, focusing on color, typography, and component libraries for a consistent and polished look.",
+            "We craft a modern, brand aligned visual interface, focusing on color, typography, and component libraries for a consistent and polished look.",
         },
         {
           id: 5,
@@ -1840,7 +1847,7 @@ export const ServicePageDataOfUIUx = [
           id: 8,
           title: "Developer Handoff & Ongoing Support",
           description:
-            "We provide detailed, developer-ready files and documentation, and remain available to ensure a smooth transition and implementation.",
+            "We provide detailed, developer ready files and documentation, and remain available to ensure a smooth transition and implementation.",
         },
       ],
     },
@@ -1887,35 +1894,35 @@ export const ServicePageDataOfUIUx = [
       title: "Industries We",
       blueTitle: "Serve",
       description:
-        "Our website design services are industry-agnostic, with successful projects across various sectors.",
+        "Our website design services are industry agnostic, with successful projects across various sectors.",
       cards: [
         {
           id: 1,
           icons: Helper.RealEstateSvg,
           title: "Real Estate",
           description:
-            "We develop property portals, CRM integrations, booking systems, and map-based project listings optimized for lead generation and customer experience.",
+            "We develop property portals, CRM integrations, booking systems, and map based project listings optimized for lead generation and customer experience.",
         },
         {
           id: 2,
           icons: Helper.EcommoarceSvg,
           title: "E-commerce",
           description:
-            "React.js enables us to create fast, scalable e-commerce platforms with advanced product filtering, dynamic cart management, and secure payment integration.",
+            "React.js enables us to create fast, scalable ecommerce platforms with advanced product filtering, dynamic cart management, and secure payment integration.",
         },
         {
           id: 3,
           icons: Helper.FinanceSvg,
           title: "Finance & Fintech",
           description:
-            "We build secure, responsive dashboards and platforms for financial institutions, with real-time data visualization and transaction tracking.",
+            "We build secure, responsive dashboards and platforms for financial institutions, with real time data visualization and transaction tracking.",
         },
         {
           id: 4,
           icons: Helper.HealthcareSvg,
           title: "Healthcare / Pharma ",
           description:
-            "HIPAA-compliant web applications, teleconsultation portals, and digital patient management systems built with React.js for performance and reliability.",
+            "HIPAA compliant web applications, teleconsultation portals, and digital patient management systems built with React.js for performance and reliability.",
         },
         {
           id: 5,
@@ -1929,7 +1936,7 @@ export const ServicePageDataOfUIUx = [
           icons: Helper.RetailStore,
           title: "Retail",
           description:
-            "Inventory management dashboards, sales tools, and consumer-facing web interfaces optimized for real-time updates and mobile-first interactions.",
+            "Inventory management dashboards, sales tools, and consumer facing web interfaces optimized for real time updates and mobile first interactions.",
         },
       ],
     },
@@ -1960,41 +1967,42 @@ export const ServicePageDataOfUIUx = [
       ],
     },
     faqSection: {
-      title: "FAQ",
+      title: "FAQs",
       ponits: [
         {
-          title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
+          title: "Do you design for web, mobile, or both?",
           description: [
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+           "We design for both web and mobile platforms, ensuring seamless, responsive, and user-friendly experiences across all devices.",
           ],
         },
         {
-          title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
+          title: "How do you ensure the product meets user needs?",
           description: [
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+           "We use a user-centered design approach that includes research, user personas, journey mapping, and usability testing to align the product with customer expectations.",
           ],
         },
         {
-          title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
+          title: "Can you redesign my existing product’s UI/UX?",
           description: [
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+          "Yes, We offer product redesign services to modernize outdated interfaces, improve usability, and align designs with current trends and business goals.",
           ],
         },
         {
-          title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
+          title: " What tools do you use for UI/UX design?",
           description: [
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+            "Our team uses industry-standard tools like Figma, Sketch, Adobe XD, and InVision for wireframing, prototyping, and collaborative design.",
           ],
         },
         {
-          title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
+          title: "How long does it take to complete a product design project?",
           description: [
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+           "The timeline depends on the product’s complexity. A basic MVP design may take 2 to 4 weeks, while large-scale products with complex features could take several months.",
+          ],
+        },
+        {
+          title: "Do you provide interactive prototypes?",
+          description: [
+           "Yes, We provide clickable, interactive prototypes that allow stakeholders to experience the product flow before development begins.",
           ],
         },
       ],
@@ -2015,8 +2023,8 @@ export const ServicePageDataOfDigitalMarketing = [
       title: "Search Engine Optimization That",
       subtitle: "Grows Visibility, Traffic, and Trust",
       description: [
-        "In today’s digital marketplace, showing up online isn’t enough-you need to be found by the right audience, at the right time, with the right message. At Harichtech, our SEO services are built to do just that.",
-        "We take a strategic, performance-driven approach to search engine optimization. From on-page content and site structure to backlinks and technical performance, we optimize every detail to help your website rank higher, attract more visitors, and convert more leads.",
+        "In today’s digital marketplace, showing up online isn’t enough you need to be found by the right audience, at the right time, with the right message. At Harichtech, our SEO services are built to do just that.",
+        "We take a strategic, performance driven approach to search engine optimization. From on page content and site structure to backlinks and technical performance, we optimize every detail to help your website rank higher, attract more visitors, and convert more leads.",
         "Whether you're a startup looking to break into your niche or an established brand aiming to outperform competitors, we help you rise to the top of search results and stay there.",
       ],
       svgIcon: Helper.SeoSvg,
@@ -2024,7 +2032,7 @@ export const ServicePageDataOfDigitalMarketing = [
     whyChooseUsSection: {
       title: "Why SEO Still Matters?",
       description:
-        "SEO is not just about keywords or algorithms it’s about building long-term visibility and credibility. Search engines like Google reward websites that are relevant, trustworthy, and easy to use. A well-executed SEO strategy brings organic traffic, consistent engagement, and compounding returns over time.",
+        "SEO is not just about keywords or algorithms it’s about building long term visibility and credibility. Search engines like Google reward websites that are relevant, trustworthy, and easy to use. A well executed SEO strategy brings organic traffic, consistent engagement, and compounding returns over time.",
       cards: [
         {
           id: 1,
@@ -2036,7 +2044,7 @@ export const ServicePageDataOfDigitalMarketing = [
           id: 2,
           title: "Organic Traffic = Sustainable Growth",
           description:
-            "Unlike paid ads, organic traffic doesn’t stop when your budget runs out. SEO builds a steady pipeline of high-intent users over time.",
+            "Unlike paid ads, organic traffic doesn’t stop when your budget runs out. SEO builds a steady pipeline of high intent users over time.",
         },
         {
           id: 3,
@@ -2062,17 +2070,17 @@ export const ServicePageDataOfDigitalMarketing = [
       title: "Why Choose ",
       blueTitle: "Harichtech for SEO? ",
       description: [
-        "We treat SEO as a long-term partnership-not a checkbox on your marketing to-do list. Our strategies are built on transparency, data, and consistent optimization.",
+        "We treat SEO as a long term partnership not a checkbox on your marketing to do list. Our strategies are built on transparency, data, and consistent optimization.",
       ],
       points: {
         title: "Our SEO Approach",
         bulletPoints: [
-          "100% White-Hat Techniques: No shortcuts, no black-hat tactics.",
-          "Goal-Aligned Strategies: Every action connects back to your business KPIs.",
+          "100% White Hat Techniques: No shortcuts, no black hat tactics.",
+          "Goal Aligned Strategies: Every action connects back to your business KPIs.",
           "Deep Keyword & Content Understanding: We know how to match search intent to your offer.",
-          "Dedicated SEO Specialists: No bots, no outsourcing-we’re real people doing real work.",
+          "Dedicated SEO Specialists: No bots, no outsourcing we’re real people doing real work.",
           "Regular Reporting: You’ll always know what we’re doing and why.",
-          "Cross-Functional Insight: Our SEO works in harmony with your dev, content, and PPC teams.",
+          "Cross Functional Insight: Our SEO works in harmony with your dev, content, and PPC teams.",
         ],
       },
       rightImage: Helper.SEOServices,
@@ -2080,7 +2088,7 @@ export const ServicePageDataOfDigitalMarketing = [
     connectUsSection: {
       title: "Let’s Get You Found",
       descriptions: [
-        "SEO isn’t magic-it’s methodical, measurable, and incredibly impactful when done right. Whether you're launching a new website or scaling an existing one, Harichtech helps you build organic visibility that lasts.",
+        "SEO isn’t magic it’s methodical, measurable, and incredibly impactful when done right. Whether you're launching a new website or scaling an existing one, Harichtech helps you build organic visibility that lasts.",
         "Ready to take your SEO to the next level? Let’s talk.",
       ],
       btnTitle: "Connect With us",
@@ -2089,13 +2097,13 @@ export const ServicePageDataOfDigitalMarketing = [
       title: "Our SEO ",
       blueTitle: " Services",
       description:
-        "We offer end-to-end SEO services tailored to your business goals, industry, and target audience. Whether you’re looking for local SEO, technical optimization, or ongoing content strategy, we’ve got you covered.",
+        "We offer end to end SEO services tailored to your business goals, industry, and target audience. Whether you’re looking for local SEO, technical optimization, or ongoing content strategy, we’ve got you covered.",
       cards: [
         {
           id: 1,
           title: "Technical SEO",
           description:
-            "We start at the foundation-ensuring your website is crawlable, fast, and structurally sound. Technical SEO improves performance and helps search engines understand your content.",
+            "We start at the foundation ensuring your website is crawlable, fast, and structurally sound. Technical SEO improves performance and helps search engines understand your content.",
           points: {
             title: "Key activities:",
             bullets: [
@@ -2119,7 +2127,7 @@ export const ServicePageDataOfDigitalMarketing = [
               "Header tags (H1, H2, etc.)",
               "Internal linking structure",
               "Image alt text and compression",
-              "SEO-friendly URLs",
+              "SEO friendly URLs",
             ],
           },
         },
@@ -2127,14 +2135,14 @@ export const ServicePageDataOfDigitalMarketing = [
           id: 3,
           title: "On-Page SEO",
           description:
-            "Content is at the heart of search. We help you create and optimize content that ranks, informs, and converts-without sounding robotic.",
+            "Content is at the heart of search. We help you create and optimize content that ranks, informs, and converts without sounding robotic.",
           points: {
             title: "Our focus areas:",
             bullets: [
               "Content strategy and calendar",
               "Blog optimization and creation",
               "Service/product page copy",
-              "SEO-focused landing pages",
+              "SEO focused landing pages",
               "Evergreen and topical content",
               "Voice search and featured snippets",
             ],
@@ -2144,7 +2152,7 @@ export const ServicePageDataOfDigitalMarketing = [
           id: 4,
           title: "Off-Page SEO & Link Building",
           description:
-            "Backlinks remain a core ranking factor. We help build authority and trust through ethical, white-hat link building strategies.",
+            "Backlinks remain a core ranking factor. We help build authority and trust through ethical, white hat link building strategies.",
           points: {
             title: "How we do it:",
             bullets: [
@@ -2176,13 +2184,13 @@ export const ServicePageDataOfDigitalMarketing = [
           id: 6,
           title: "LEO Audits & Performance Reporting",
           description:
-            "We regularly audit, test, and refine your SEO strategy-so you always know what’s working, what’s not, and what’s next.",
+            "We regularly audit, test, and refine your SEO strategy so you always know what’s working, what’s not, and what’s next.",
           points: {
             title: "Deliverables:",
             bullets: [
               "Monthly SEO reports",
               "Keyword ranking updates",
-              "Traffic analysis (organic, branded, non-branded)",
+              "Traffic analysis (organic, branded, non branded)",
               "Competitor movement tracking",
               "Strategy roadmap and recommendations",
             ],
@@ -2194,7 +2202,7 @@ export const ServicePageDataOfDigitalMarketing = [
       title: "Our SEO Process at",
       blueTitle: "Harichtech",
       description:
-        "Our approach to SEO is iterative, data-backed, and tailored to your business. We don’t believe in one-size-fits-all templates-instead, we build custom strategies aligned with your goals.",
+        "Our approach to SEO is iterative, data backed, and tailored to your business. We don’t believe in one size fits all templates instead, we build custom strategies aligned with your goals.",
       banner: Helper.DigitalMarketingProcess,
     },
     techStacksSection: {
@@ -2254,28 +2262,28 @@ export const ServicePageDataOfDigitalMarketing = [
           icons: Helper.RealEstateSvg,
           title: "Real Estate",
           description:
-            "We develop property portals, CRM integrations, booking systems, and map-based project listings optimized for lead generation and customer experience.",
+            "We develop property portals, CRM integrations, booking systems, and map based project listings optimized for lead generation and customer experience.",
         },
         {
           id: 2,
           icons: Helper.EcommoarceSvg,
           title: "E-commerce",
           description:
-            "React.js enables us to create fast, scalable e-commerce platforms with advanced product filtering, dynamic cart management, and secure payment integration.",
+            "React.js enables us to create fast, scalable ecommerce platforms with advanced product filtering, dynamic cart management, and secure payment integration.",
         },
         {
           id: 3,
           icons: Helper.FinanceSvg,
           title: "Finance & Fintech",
           description:
-            "We build secure, responsive dashboards and platforms for financial institutions, with real-time data visualization and transaction tracking.",
+            "We build secure, responsive dashboards and platforms for financial institutions, with real time data visualization and transaction tracking.",
         },
         {
           id: 4,
           icons: Helper.HealthcareSvg,
           title: "Healthcare / Pharma ",
           description:
-            "HIPAA-compliant web applications, teleconsultation portals, and digital patient management systems built with React.js for performance and reliability.",
+            "HIPAA compliant web applications, teleconsultation portals, and digital patient management systems built with React.js for performance and reliability.",
         },
         {
           id: 5,
@@ -2289,7 +2297,7 @@ export const ServicePageDataOfDigitalMarketing = [
           icons: Helper.RetailStore,
           title: "Retail",
           description:
-            "Inventory management dashboards, sales tools, and consumer-facing web interfaces optimized for real-time updates and mobile-first interactions.",
+            "Inventory management dashboards, sales tools, and consumer facing web interfaces optimized for real time updates and mobile first interactions.",
         },
       ],
     },
@@ -2320,41 +2328,43 @@ export const ServicePageDataOfDigitalMarketing = [
       ],
     },
     faqSection: {
-      title: "FAQ",
+      title: "FAQs",
       ponits: [
         {
-          title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
+          title: "How long does it take to see results from SEO?",
           description: [
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+            "SEO is a long-term strategy. You may start seeing improvements in 3 to 4 months, but significant results generally take 6 to 12 months depending on competition and your industry.",
           ],
         },
         {
-          title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
+          title: "Do you guarantee #1 ranking on Google?",
           description: [
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+            " No ethical SEO company can guarantee a #1 ranking, since search engines control algorithms. However, we guarantee improved visibility, traffic growth, and higher keyword rankings with proven strategies.",
           ],
         },
         {
-          title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
+          title: "What industries do you specialize in?",
           description: [
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+            "We provide SEO services for all industries including IT, real estate, healthcare, eCommerce, education, startups, and enterprise businesses.",
           ],
         },
         {
-          title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
+          title: " Do you provide local SEO services?",
           description: [
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+              "Yes. We optimize your Google Business Profile, local citations, and geo-targeted keywords to help your business rank in local searches and maps.",
+            
           ],
         },
         {
-          title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
+          title: "How do you measure SEO success?",
           description: [
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+            "We track keyword rankings, organic traffic, conversions, bounce rate, and ROI using tools like Google Analytics, Search Console, and third-party SEO platforms.",
+          ],
+        },
+        {
+          title: "Do you also create content for SEO?",
+          description: [
+            "Yes. We provide SEO-friendly content creation, including blogs, landing pages, product descriptions, and website copy optimized for both users and search engines.",
           ],
         },
       ],
@@ -2372,21 +2382,21 @@ export const ServicePageDataOfDigitalMarketing = [
       title: "Precision-Paid Campaigns That ",
       subtitle: "Drive Traffic, Leads, and Conversions",
       description: [
-        "Pay-per-click (PPC) advertising is one of the fastest ways to get your brand in front of your ideal customers but speed without strategy leads to wasted budget. At Harichtech, we help you run smarter campaigns that are data-driven, conversion-focused, and built for ROI.",
-        "We take a strategic, performance-driven approach to search engine optimization. From on-page content and site structure to backlinks and technical performance, we optimize every detail to help your website rank higher, attract more visitors, and convert more leads.",
+        "Pay per click (PPC) advertising is one of the fastest ways to get your brand in front of your ideal customers but speed without strategy leads to wasted budget. At Harichtech, we help you run smarter campaigns that are data driven, conversion focused, and built for ROI.",
+        "We take a strategic, performance driven approach to search engine optimization. From on page content and site structure to backlinks and technical performance, we optimize every detail to help your website rank higher, attract more visitors, and convert more leads.",
       ],
       svgIcon: Helper.PPCSvg,
     },
     whyChooseUsSection: {
       title: "Why PPC Still Matters?",
       description:
-        "While organic search and SEO provide long-term visibility, PPC gives you instant exposure putting your brand at the top of search results, in the feeds of target audiences, and on the screens that matter most. But it's not just about showing up, it's about showing up to the right people, with the right message, at the right time.",
+        "While organic search and SEO provide long term visibility, PPC gives you instant exposure putting your brand at the top of search results, in the feeds of target audiences, and on the screens that matter most. But it's not just about showing up, it's about showing up to the right people, with the right message, at the right time.",
       cards: [
         {
           id: 1,
           title: "Immediate Results",
           description:
-            "Unlike SEO, PPC allows you to launch and see traffic the same day. Perfect for new launches, time-sensitive offers, or fast-tracking sales.",
+            "Unlike SEO, PPC allows you to launch and see traffic the same day. Perfect for new launches, time sensitive offers, or fast tracking sales.",
         },
         {
           id: 2,
@@ -2404,7 +2414,7 @@ export const ServicePageDataOfDigitalMarketing = [
           id: 4,
           title: "Measurable ROI",
           description:
-            "Every impression, click, and conversion can be tracked. That means you know what’s working and what’s not- down to the ad level.",
+            "Every impression, click, and conversion can be tracked. That means you know what’s working and what’s not  down to the ad level.",
         },
         {
           id: 5,
@@ -2419,15 +2429,15 @@ export const ServicePageDataOfDigitalMarketing = [
       blueTitle: "Harichtech for PPC?",
       description: [
         "Running ads is easy. Running profitable ads takes strategy, experience, and constant tuning. That’s where Harichtech stands out.",
-        "Certified PPC Experts: Google Ads and Meta-certified specialists",
-        "Data-Driven Decisions: Every ad, audience, and bid backed by data not guesswork",
+        "Certified PPC Experts: Google Ads and Meta certified specialists",
+        "Data Driven Decisions: Every ad, audience, and bid backed by data not guesswork",
       ],
       points: {
         title: "",
         bulletPoints: [
-          "Conversion-Focused: We look beyond clicks - our goal is revenue, leads, and real outcomes",
+          "Conversion Focused: We look beyond clicks our goal is revenue, leads, and real outcomes",
           "Transparent Communication: You’ll know exactly where your budget is going and what it’s returning",
-          "End-to-End Support: From strategy and ad copy to landing page testing and tracking implementation",
+          "End to End Support: From strategy and ad copy to landing page testing and tracking implementation",
           "Performance First: We’re obsessed with metrics and improving them, month over month",
         ],
       },
@@ -2445,13 +2455,13 @@ export const ServicePageDataOfDigitalMarketing = [
       title: "Our PPC Services",
       blueTitle: " Services",
       description:
-        "We provide full-suite paid media management across Google Ads, Bing, YouTube, social platforms, and more - ensuring every campaign aligns with your business goals and budget.",
+        "We provide full suite paid media management across Google Ads, Bing, YouTube, social platforms, and more ensuring every campaign aligns with your business goals and budget.",
       cards: [
         {
           id: 1,
           title: "Search Ads (Google & Bing)",
           description:
-            "Appear at the top of search results when users actively look for your products or services. We target high-intent keywords that convert.",
+            "Appear at the top of search results when users actively look for your products or services. We target high intent keywords that convert.",
           points: {
             title: "Includes:",
             bullets: [
@@ -2483,12 +2493,12 @@ export const ServicePageDataOfDigitalMarketing = [
           id: 3,
           title: "Remarketing Campaigns",
           description:
-            "Re-engage users who’ve visited your site but didn’t convert. Remarketing helps reduce lost opportunities and increase return visits.",
+            "Re engage users who’ve visited your site but didn’t convert. Remarketing helps reduce lost opportunities and increase return visits.",
           points: {
             title: "Options:",
             bullets: [
               "Standard remarketing",
-              "Dynamic product remarketing (e-commerce)",
+              "Dynamic product remarketing (ecommerce)",
               "List segmentation (abandoners, repeat visitors)",
               "YouTube video remarketing",
               "Email list retargeting (if available)",
@@ -2499,13 +2509,13 @@ export const ServicePageDataOfDigitalMarketing = [
           id: 4,
           title: "Shopping Ads (Google Merchant Center)",
           description:
-            "For e-commerce businesses, we manage product feed optimization and ad placements that highlight your products with images, prices, and ratings.",
+            "For ecommerce businesses, we manage product feed optimization and ad placements that highlight your products with images, prices, and ratings.",
           points: {
             title: "Includes:",
             bullets: [
               "Google Merchant Center setup",
               "Product feed optimization",
-              "Performance-based bidding",
+              "Performance based bidding",
               "Seasonal campaign management",
               "Smart Shopping & Performance Max integration",
             ],
@@ -2515,7 +2525,7 @@ export const ServicePageDataOfDigitalMarketing = [
           id: 5,
           title: "YouTube Video Ads",
           description:
-            "Harness the power of video marketing. We create and manage skippable, non-skippable, bumper, and discovery video campaigns.",
+            "Harness the power of video marketing. We create and manage skippable, non skippable, bumper, and discovery video campaigns.",
           points: {
             title: "Campaign Types:",
             bullets: [
@@ -2530,15 +2540,15 @@ export const ServicePageDataOfDigitalMarketing = [
           id: 6,
           title: "Local PPC (Map Packs & Service Areas)",
           description:
-            "If you’re targeting a specific city or region, we run local PPC campaigns that connect you with nearby, high-intent users.",
+            "If you’re targeting a specific city or region, we run local PPC campaigns that connect you with nearby, high intent users.",
           points: {
             title: "Tactics:",
             bullets: [
               "Google Local Services Ads",
               "Local search targeting",
               "Location extensions",
-              "Radius-based targeting",
-              "Call-focused campaigns",
+              "Radius based targeting",
+              "Call focused campaigns",
             ],
           },
         },
@@ -2605,28 +2615,28 @@ export const ServicePageDataOfDigitalMarketing = [
           icons: Helper.RealEstateSvg,
           title: "Real Estate",
           description:
-            "We develop property portals, CRM integrations, booking systems, and map-based project listings optimized for lead generation and customer experience.",
+            "We develop property portals, CRM integrations, booking systems, and map based project listings optimized for lead generation and customer experience.",
         },
         {
           id: 2,
           icons: Helper.EcommoarceSvg,
           title: "E-commerce",
           description:
-            "React.js enables us to create fast, scalable e-commerce platforms with advanced product filtering, dynamic cart management, and secure payment integration.",
+            "React.js enables us to create fast, scalable ecommerce platforms with advanced product filtering, dynamic cart management, and secure payment integration.",
         },
         {
           id: 3,
           icons: Helper.FinanceSvg,
           title: "Finance & Fintech",
           description:
-            "We build secure, responsive dashboards and platforms for financial institutions, with real-time data visualization and transaction tracking.",
+            "We build secure, responsive dashboards and platforms for financial institutions, with real time data visualization and transaction tracking.",
         },
         {
           id: 4,
           icons: Helper.HealthcareSvg,
           title: "Healthcare / Pharma ",
           description:
-            "HIPAA-compliant web applications, teleconsultation portals, and digital patient management systems built with React.js for performance and reliability.",
+            "HIPAA compliant web applications, teleconsultation portals, and digital patient management systems built with React.js for performance and reliability.",
         },
         {
           id: 5,
@@ -2640,7 +2650,7 @@ export const ServicePageDataOfDigitalMarketing = [
           icons: Helper.RetailStore,
           title: "Retail",
           description:
-            "Inventory management dashboards, sales tools, and consumer-facing web interfaces optimized for real-time updates and mobile-first interactions.",
+            "Inventory management dashboards, sales tools, and consumer facing web interfaces optimized for real time updates and mobile first interactions.",
         },
       ],
     },
@@ -2671,41 +2681,42 @@ export const ServicePageDataOfDigitalMarketing = [
       ],
     },
     faqSection: {
-      title: "FAQ",
+      title: "FAQs",
       ponits: [
         {
-          title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
+          title: "What PPC platforms do you manage?",
           description: [
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+            "We manage campaigns on Google Ads, Bing Ads, Facebook Ads, Instagram Ads, LinkedIn Ads, YouTube Ads, and other programmatic platforms.",
           ],
         },
         {
-          title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
+          title: "How do you make sure my ad budget is used effectively?",
           description: [
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+            "We perform keyword research, audience targeting, A/B testing, and continuous campaign optimization to maximize ROI and reduce wasted ad spend",
           ],
         },
         {
-          title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
+          title: "How quickly can I see results from PPC campaigns?",
           description: [
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+            "PPC delivers immediate results. Once your ads are live, you can start receiving traffic and leads the same day, depending on your budget and targeting.",
           ],
         },
         {
-          title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
+          title: "What industries do you provide PPC services for?",
           description: [
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+           "We run successful PPC campaigns for eCommerce, real estate, healthcare, IT, education, startups, and enterprise-level businesses across multiple industries.",
           ],
         },
         {
-          title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
+          title: "Do you create landing pages for PPC campaigns?",
           description: [
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+            "Yes, We design optimized landing pages with strong CTAs to increase conversions and maximize your ad performance.",
+          ],
+        },
+        {
+          title: "How do you measure PPC campaign success?",
+          description: [
+            "We track clicks, impressions, conversions, cost per lead (CPL), return on ad spend (ROAS), and overall ROI using analytics and ad platform reports.",
           ],
         },
       ],
@@ -2723,8 +2734,8 @@ export const ServicePageDataOfDigitalMarketing = [
       title: "Build a Social Presence That  ",
       subtitle: "Connects, Engages, and Converts",
       description: [
-        "Social media is more than just posts and likes-it’s where your brand lives, breathes, and builds trust in real-time. At Harichtech, we help brands transform their social media presence from passive to powerful, from scattered to strategic.",
-        "Whether you're a fast-scaling startup or an established enterprise, we manage your social media with one goal in mind: creating content and campaigns that connect with your audience and support your business objectives.",
+        "Social media is more than just posts and likes it’s where your brand lives, breathes, and builds trust in real time. At Harichtech, we help brands transform their social media presence from passive to powerful, from scattered to strategic.",
+        "Whether you're a fast scaling startup or an established enterprise, we manage your social media with one goal in mind: creating content and campaigns that connect with your audience and support your business objectives.",
         "We don’t just post, we plan, design, engage, and measure. Our team becomes an extension of your brand voice, helping you make meaningful noise in a crowded digital world.",
       ],
       svgIcon: Helper.SocialMediaSvg,
@@ -2732,7 +2743,7 @@ export const ServicePageDataOfDigitalMarketing = [
     whyChooseUsSection: {
       title: "Why Social Media Still Matters?",
       description:
-        "In a digital landscape driven by authenticity, immediacy, and storytelling, your social media channels are more than just distribution tools-they're conversation starters, relationship builders, and conversion engines.",
+        "In a digital landscape driven by authenticity, immediacy, and storytelling, your social media channels are more than just distribution tools they're conversation starters, relationship builders, and conversion engines.",
       cards: [
         {
           id: 1,
@@ -2756,13 +2767,13 @@ export const ServicePageDataOfDigitalMarketing = [
           id: 4,
           title: "It Drives Conversions",
           description:
-            "Social isn’t just about engagement-it directly influences buying behavior, lead generation, and website traffic.",
+            "Social isn’t just about engagement it directly influences buying behavior, lead generation, and website traffic.",
         },
         {
           id: 5,
           title: "It Amplifies Reach",
           description:
-            "With the right strategy, organic content and paid campaigns can generate viral exposure and long-term brand awareness.",
+            "With the right strategy, organic content and paid campaigns can generate viral exposure and long term brand awareness.",
         },
       ],
     },
@@ -2770,17 +2781,17 @@ export const ServicePageDataOfDigitalMarketing = [
       title: "Why Choose ",
       blueTitle: "Harichtech for Social Media?",
       description: [
-        "We don’t just post because it’s Monday - we post with purpose, backed by data and creative insight.",
+        "We don’t just post because it’s Monday we post with purpose, backed by data and creative insight.",
       ],
       points: {
         title: "",
         bulletPoints: [
           "Strategic Storytelling: Your posts tell a story,not just fill a calendar",
           "Real Engagement: We design content to spark real interactions and community growth",
-          "In-House Creative: Designers, editors, and writers under one roof = fast, brand-aligned content",
-          "Performance-Driven: Everything we do ties back to a goal - visibility, engagement, or revenue",
-          "Adaptable to Trends: Reels, challenges, memes- we adapt to what works, without losing your voice",
-          "Full Ownership: We handle ideation, design, copy, scheduling, engagement, and reporting-so you can focus on running your business",
+          "In House Creative: Designers, editors, and writers under one roof = fast, brand aligned content",
+          "Performance Driven: Everything we do ties back to a goal visibility, engagement, or revenue",
+          "Adaptable to Trends: Reels, challenges, memes we adapt to what works, without losing your voice",
+          "Full Ownership: We handle ideation, design, copy, scheduling, engagement, and reporting so you can focus on running your business",
         ],
       },
       rightImage: Helper.SocialMediaMarketing,
@@ -2788,7 +2799,7 @@ export const ServicePageDataOfDigitalMarketing = [
     connectUsSection: {
       title: "Let’s Grow Your Brand on Social",
       descriptions: [
-        "Social media should feel alive, intentional, and reflective of your brand’s values. At Harichtech, we help you build a presence that doesn’t just post-it performs.",
+        "Social media should feel alive, intentional, and reflective of your brand’s values. At Harichtech, we help you build a presence that doesn’t just post it performs.",
         "Let’s create, connect, and convert, together.",
       ],
       btnTitle: "Connect With us",
@@ -2819,15 +2830,15 @@ export const ServicePageDataOfDigitalMarketing = [
           id: 2,
           title: "Content Creation & Design",
           description:
-            "We create scroll-stopping content that communicates your brand story, value, and personality-visually and verbally.",
+            "We create scroll stopping content that communicates your brand story, value, and personality visually and verbally.",
           points: {
             title: "We create:",
             bullets: [
               "Static posts (single & carousel)",
-              "Reels and short-form videos",
-              "GIFs and micro-animations",
+              "Reels and short form videos",
+              "GIFs and micro animations",
               "Infographics and visual explainers",
-              "Polls, quizzes, and engagement-driven formats",
+              "Polls, quizzes, and engagement driven formats",
             ],
           },
         },
@@ -2851,7 +2862,7 @@ export const ServicePageDataOfDigitalMarketing = [
           id: 4,
           title: "Paid Social Advertising",
           description:
-            "We build and manage highly-targeted ad campaigns across platforms to boost reach, drive leads, or promote sales.",
+            "We build and manage highly targeted ad campaigns across platforms to boost reach, drive leads, or promote sales.",
           points: {
             title: "Campaign types:",
             bullets: [
@@ -2859,7 +2870,7 @@ export const ServicePageDataOfDigitalMarketing = [
               "Lead generation",
               "Retargeting and custom audience nurturing",
               "Product launches and promotions",
-              "App installs and e-commerce conversions",
+              "App installs and ecommerce conversions",
             ],
           },
         },
@@ -2890,7 +2901,7 @@ export const ServicePageDataOfDigitalMarketing = [
               "Engagement rate (likes, comments, shares)",
               "Follower growth",
               "Traffic and conversions from social",
-              "Best-performing content",
+              "Best performing content",
               "Paid campaign ROI (CPC, CPL, ROAS)",
             ],
           },
@@ -2901,7 +2912,7 @@ export const ServicePageDataOfDigitalMarketing = [
       title: "Our Process at",
       blueTitle: "Harichtech",
       description:
-        "We don’t believe in guesswork or one-size-fits-all templates. Our social media approach is intentional, adaptive, and grounded in your brand’s unique goals.",
+        "We don’t believe in guesswork or one size fits all templates. Our social media approach is intentional, adaptive, and grounded in your brand’s unique goals.",
       banner: Helper.DigitalMarketingProcess,
     },
     techStacksSection: {
@@ -2944,35 +2955,35 @@ export const ServicePageDataOfDigitalMarketing = [
       title: "Industries We",
       blueTitle: "Serve",
       description:
-        "We create industry-tailored social strategies that speak directly to your audience and reflect your market dynamics.",
+        "We create industry tailored social strategies that speak directly to your audience and reflect your market dynamics.",
       cards: [
         {
           id: 1,
           icons: Helper.RealEstateSvg,
           title: "Real Estate",
           description:
-            "We develop property portals, CRM integrations, booking systems, and map-based project listings optimized for lead generation and customer experience.",
+            "We develop property portals, CRM integrations, booking systems, and map based project listings optimized for lead generation and customer experience.",
         },
         {
           id: 2,
           icons: Helper.EcommoarceSvg,
           title: "E-commerce",
           description:
-            "React.js enables us to create fast, scalable e-commerce platforms with advanced product filtering, dynamic cart management, and secure payment integration.",
+            "React.js enables us to create fast, scalable ecommerce platforms with advanced product filtering, dynamic cart management, and secure payment integration.",
         },
         {
           id: 3,
           icons: Helper.FinanceSvg,
           title: "Finance & Fintech",
           description:
-            "We build secure, responsive dashboards and platforms for financial institutions, with real-time data visualization and transaction tracking.",
+            "We build secure, responsive dashboards and platforms for financial institutions, with real time data visualization and transaction tracking.",
         },
         {
           id: 4,
           icons: Helper.HealthcareSvg,
           title: "Healthcare / Pharma ",
           description:
-            "HIPAA-compliant web applications, teleconsultation portals, and digital patient management systems built with React.js for performance and reliability.",
+            "HIPAA compliant web applications, teleconsultation portals, and digital patient management systems built with React.js for performance and reliability.",
         },
         {
           id: 5,
@@ -2986,7 +2997,7 @@ export const ServicePageDataOfDigitalMarketing = [
           icons: Helper.RetailStore,
           title: "Retail",
           description:
-            "Inventory management dashboards, sales tools, and consumer-facing web interfaces optimized for real-time updates and mobile-first interactions.",
+            "Inventory management dashboards, sales tools, and consumer facing web interfaces optimized for real time updates and mobile first interactions.",
         },
       ],
     },
@@ -3017,41 +3028,42 @@ export const ServicePageDataOfDigitalMarketing = [
       ],
     },
     faqSection: {
-      title: "FAQ",
+      title: "FAQs",
       ponits: [
         {
-          title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
+          title: "What services are included in social media marketing?",
           description: [
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+           "Our services include content creation, graphic design, video posts, ad campaigns, community management, influencer outreach, and performance tracking",
           ],
         },
         {
-          title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
+          title: "How often will you post on my social media accounts?",
           description: [
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+            "The posting frequency depends on your package and strategy. Typically, we recommend 3-5 posts per week for consistency and engagement, along with daily stories or updates.",
           ],
         },
         {
-          title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
+          title: "Do you provide paid advertising on social media (Facebook Ads, Instagram Ads, etc.)?",
           description: [
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+            "Yes, We create and manage paid social media campaigns to reach larger audiences, drive traffic, and boost sales with precise targeting.",
           ],
         },
         {
-          title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
+          title: "Can you help with both organic and paid social media growth?",
           description: [
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+            "Absolutely, We balance organic content strategies (consistent posting, engagement, community building) with paid ads for faster reach and measurable ROI.",
           ],
         },
         {
-          title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
+          title: "How do you measure the success of social media campaigns?",
           description: [
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+            "We track reach, engagement, followers growth, leads generated, website traffic, and ROI using analytics tools like Meta Business Suite, LinkedIn Insights, and Google Analytics",
+          ],
+        },
+        {
+          title: "Will the social media strategy align with my brand identity?",
+          description: [
+            "Yes, We create content and campaigns that reflect your brand’s tone, style, and values to ensure consistency across all platforms.",
           ],
         },
       ],
@@ -3069,9 +3081,9 @@ export const ServicePageDataOfDigitalMarketing = [
       title: "Content That Educates, Converts,",
       subtitle: "and Builds Authority",
       description: [
-        "In a world flooded with noise, content that delivers value stands out. At Harichtech, we help businesses create purposeful, high-impact content that attracts attention, builds trust, and drives real action.",
-        "Whether you’re a tech company explaining a complex product, an e-commerce brand launching a new line, or a service provider nurturing leads, strategic content is your most powerful asset.",
-        "We don’t just write-we research, plan, optimize, and distribute. Our content marketing is designed to meet your audience where they are, answer their questions, and move them closer to conversion.",
+        "In a world flooded with noise, content that delivers value stands out. At Harichtech, we help businesses create purposeful, high impact content that attracts attention, builds trust, and drives real action.",
+        "Whether you’re a tech company explaining a complex product, an ecommerce brand launching a new line, or a service provider nurturing leads, strategic content is your most powerful asset.",
+        "We don’t just write we research, plan, optimize, and distribute. Our content marketing is designed to meet your audience where they are, answer their questions, and move them closer to conversion.",
       ],
       svgIcon: Helper.ContentMarketingSvg,
     },
@@ -3090,7 +3102,7 @@ export const ServicePageDataOfDigitalMarketing = [
           id: 2,
           title: "It Fuels SEO",
           description:
-            "Every blog, landing page, or FAQ you create adds keywords, structure, and value to your site-improving organic reach.",
+            "Every blog, landing page, or FAQ you create adds keywords, structure, and value to your site improving organic reach.",
         },
         {
           id: 3,
@@ -3121,12 +3133,12 @@ export const ServicePageDataOfDigitalMarketing = [
       points: {
         title: "",
         bulletPoints: [
-          "Content With Purpose: Everything we write supports a business goal-brand awareness, lead generation, or conversion.",
-          "SEO + Human Tone: Our content ranks in search and resonates with people-never robotic.",
-          "B2B & B2C Expertise: From emotional storytelling to technical documentation-we adapt to your brand and audience.",
+          "Content With Purpose: Everything we write supports a business goal brand awareness, lead generation, or conversion.",
+          "SEO + Human Tone: Our content ranks in search and resonates with people never robotic.",
+          "B2B & B2C Expertise: From emotional storytelling to technical documentation we adapt to your brand and audience.",
           "Collaborative Workflow: We plan ahead, share calendars, and invite feedback at every stage.",
           "Full Funnel Thinking: We understand how content fits into broader marketing workflows (email, social, PPC, sales).",
-          "Consistency & Scale: Whether 4 blogs a month or a 40-page resource-our team delivers quality at scale.",
+          "Consistency & Scale: Whether 4 blogs a month or a 40 page resource our team delivers quality at scale.",
         ],
       },
       rightImage: Helper.ContentMarketing,
@@ -3134,7 +3146,7 @@ export const ServicePageDataOfDigitalMarketing = [
     connectUsSection: {
       title: "Let’s Tell Your Story-Strategically",
       descriptions: [
-        "The right words, delivered at the right time, to the right audience,that’s the power of content done right. Whether you need a blog strategy, lead magnets, or full-funnel messaging, Harichtech is ready to help you grow with content.",
+        "The right words, delivered at the right time, to the right audience,that’s the power of content done right. Whether you need a blog strategy, lead magnets, or full funnel messaging, Harichtech is ready to help you grow with content.",
         "Ready to create content that performs? Let’s talk.",
       ],
       btnTitle: "Connect With us",
@@ -3165,15 +3177,15 @@ export const ServicePageDataOfDigitalMarketing = [
           id: 2,
           title: "Website & Landing Page Copy",
           description:
-            "We craft clear, conversion-oriented content for your most important digital assets-your website, service pages, and landing pages.",
+            "We craft clear, conversion oriented content for your most important digital assets your website, service pages, and landing pages.",
           points: {
             title: "We create:",
             bullets: [
               "Homepage and About Us pages",
               "Product and service descriptions",
-              "CTA-optimized landing pages",
+              "CTA optimized landing pages",
               "Sales pages for lead capture or downloads",
-              "Location or industry-specific pages",
+              "Location or industry specific pages",
             ],
           },
         },
@@ -3185,9 +3197,9 @@ export const ServicePageDataOfDigitalMarketing = [
           points: {
             title: "What we cover:",
             bullets: [
-              "SEO-optimized articles",
+              "SEO optimized articles",
               "Thought leadership and trend reports",
-              "How-tos, listicles, and guides",
+              "How tos, listicles, and guides",
               "Industry commentary",
               "Internal linking and CTA integration",
             ],
@@ -3195,9 +3207,9 @@ export const ServicePageDataOfDigitalMarketing = [
         },
         {
           id: 4,
-          title: "Long-Form Content & Resources",
+          title: "Long Form Content & Resources",
           description:
-            "For more in-depth engagement, we create downloadable or gated assets that help build credibility and generate leads.",
+            "For more in depth engagement, we create downloadable or gated assets that help build credibility and generate leads.",
           points: {
             title: "Includes:",
             bullets: [
@@ -3213,7 +3225,7 @@ export const ServicePageDataOfDigitalMarketing = [
           id: 5,
           title: "Email & Newsletter Copywriting",
           description:
-            "We help you stay top of mind with your audience - through campaigns that inform, sell, or simply nurture trust.",
+            "We help you stay top of mind with your audience through campaigns that inform, sell, or simply nurture trust.",
           points: {
             title: "Types of emails:",
             bullets: [
@@ -3229,7 +3241,7 @@ export const ServicePageDataOfDigitalMarketing = [
           id: 6,
           title: "Video Scripts & Visual Content",
           description:
-            "For brands leveraging video or visual storytelling, we provide concise, brand-aligned scripts and on-screen content.",
+            "For brands leveraging video or visual storytelling, we provide concise, brand aligned scripts and on screen content.",
           points: {
             title: "We help with:",
             bullets: [
@@ -3300,28 +3312,28 @@ export const ServicePageDataOfDigitalMarketing = [
           icons: Helper.RealEstateSvg,
           title: "Real Estate",
           description:
-            "We develop property portals, CRM integrations, booking systems, and map-based project listings optimized for lead generation and customer experience.",
+            "We develop property portals, CRM integrations, booking systems, and map based project listings optimized for lead generation and customer experience.",
         },
         {
           id: 2,
           icons: Helper.EcommoarceSvg,
           title: "E-commerce",
           description:
-            "React.js enables us to create fast, scalable e-commerce platforms with advanced product filtering, dynamic cart management, and secure payment integration.",
+            "React.js enables us to create fast, scalable ecommerce platforms with advanced product filtering, dynamic cart management, and secure payment integration.",
         },
         {
           id: 3,
           icons: Helper.FinanceSvg,
           title: "Finance & Fintech",
           description:
-            "We build secure, responsive dashboards and platforms for financial institutions, with real-time data visualization and transaction tracking.",
+            "We build secure, responsive dashboards and platforms for financial institutions, with real time data visualization and transaction tracking.",
         },
         {
           id: 4,
           icons: Helper.HealthcareSvg,
           title: "Healthcare / Pharma ",
           description:
-            "HIPAA-compliant web applications, teleconsultation portals, and digital patient management systems built with React.js for performance and reliability.",
+            "HIPAA compliant web applications, teleconsultation portals, and digital patient management systems built with React.js for performance and reliability.",
         },
         {
           id: 5,
@@ -3335,7 +3347,7 @@ export const ServicePageDataOfDigitalMarketing = [
           icons: Helper.RetailStore,
           title: "Retail",
           description:
-            "Inventory management dashboards, sales tools, and consumer-facing web interfaces optimized for real-time updates and mobile-first interactions.",
+            "Inventory management dashboards, sales tools, and consumer facing web interfaces optimized for real time updates and mobile first interactions.",
         },
       ],
     },
@@ -3366,41 +3378,42 @@ export const ServicePageDataOfDigitalMarketing = [
       ],
     },
     faqSection: {
-      title: "FAQ",
+      title: "FAQs",
       ponits: [
         {
-          title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
+          title: "How does content marketing help with SEO?",
           description: [
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+            "High quality content improves keyword rankings, increases organic traffic, and attracts backlinks. Search engines reward websites that consistently publish valuable and relevant content.",
           ],
         },
         {
-          title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
+          title: " How do you decide what type of content my business needs?",
           description: [
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+            "We analyze your industry, target audience, and competitors. Based on this, we create a content strategy that includes the right mix of formats and distribution channels.",
           ],
         },
         {
-          title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
+          title: "Do you provide content strategy as well as creation?",
           description: [
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+            "Yes. We offer end to end content marketing services including research, strategy, content creation, publishing, and performance tracking.",
           ],
         },
         {
-          title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
+          title: "How long does it take to see results from content marketing?",
           description: [
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+            "Content marketing is a long term strategy. You may start seeing engagement and traffic growth in 2-3 months, but significant SEO and lead generation results usually take 6-12 months",
           ],
         },
         {
-          title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
+          title: "Can you repurpose existing content for my brand?",
           description: [
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+            "Absolutely. We can audit and repurpose your old blogs, videos, or posts into fresh formats like infographics, carousels, or email campaigns to maximize value.",
+          ],
+        },
+        {
+          title: "Do you handle content distribution?",
+          description: [
+            "Yes. We distribute content across relevant platforms, websites, blogs, social media, newsletters, and PR outlets to maximize reach and impact.",
           ],
         },
       ],
@@ -3418,9 +3431,9 @@ export const ServicePageDataOfDigitalMarketing = [
       title: "Inbox Strategies That",
       subtitle: "Nurture, Convert, and Retain",
       description: [
-        "In a world of fast-scrolling social feeds and disappearing digital ads, email remains one of the most direct and dependable ways to communicate with your audience. At Harichtech, we help you create email experiences that feel personal, purposeful, and perfectly timed.",
+        "In a world of fast scrolling social feeds and disappearing digital ads, email remains one of the most direct and dependable ways to communicate with your audience. At Harichtech, we help you create email experiences that feel personal, purposeful, and perfectly timed.",
         "Whether you're nurturing leads, onboarding new users, launching products, or driving repeat purchases, we craft campaigns that speak to the right people at the right moment with content that’s built to drive results.",
-        "We don’t just send emails-we build email systems that support your full customer journey.",
+        "We don’t just send emails we build email systems that support your full customer journey.",
       ],
       svgIcon: Helper.EmailMarketingSvg,
     },
@@ -3433,7 +3446,7 @@ export const ServicePageDataOfDigitalMarketing = [
           id: 1,
           title: "Direct & Personal",
           description:
-            "Email lands directly in your audience’s inbox-no algorithm, no ad fatigue. It’s permission-based, trusted, and personal.",
+            "Email lands directly in your audience’s inbox no algorithm, no ad fatigue. It’s permission based, trusted, and personal.",
         },
         {
           id: 2,
@@ -3471,10 +3484,10 @@ export const ServicePageDataOfDigitalMarketing = [
         title: "",
         bulletPoints: [
           "Copy + Design Under One Roof: Seamless collaboration between content creators and visual designers.",
-          "Full-Funnel Thinking: We understand how email fits into broader marketing and sales strategies.",
-          "Results-Driven: Every campaign is built with KPIs in mind, from opens to revenue.",
+          "Full Funnel Thinking: We understand how email fits into broader marketing and sales strategies.",
+          "Results Driven: Every campaign is built with KPIs in mind, from opens to revenue.",
           "Segmented & Personalized: One email doesn’t fit all. We craft messages for the right audience segments at the right time.",
-          "Compliance & Deliverability: We ensure your campaigns meet global privacy standards (GDPR, CAN-SPAM, etc.) and don’t land in spam folders.",
+          "Compliance & Deliverability: We ensure your campaigns meet global privacy standards (GDPR, CAN SPAM, etc.) and don’t land in spam folders.",
           "Transparent Reporting: You’ll always know how your campaigns are performing with insights that go beyond vanity metrics.",
         ],
       },
@@ -3483,7 +3496,7 @@ export const ServicePageDataOfDigitalMarketing = [
     connectUsSection: {
       title: "Let’s Build an Email Engine That Works",
       descriptions: [
-        "Email marketing isn’t dead-it’s evolving. With the right strategy, content, and automation in place, your emails can become your highest-converting marketing channel. At Harichtech, we help you stop sending emails and start sending results.",
+        "Email marketing isn’t dead it’s evolving. With the right strategy, content, and automation in place, your emails can become your highest-converting marketing channel. At Harichtech, we help you stop sending emails and start sending results.",
         "Let’s talk about how email can grow your business.",
       ],
       btnTitle: "Connect With us",
@@ -3492,7 +3505,7 @@ export const ServicePageDataOfDigitalMarketing = [
       title: "Our Email ",
       blueTitle: " Marketing Services",
       description:
-        "We provide end-to-end email marketing from strategy and design to automation and performance tracking. Whether you're starting from scratch or optimizing an existing list, we’ve got you covered.",
+        "We provide end to end email marketing from strategy and design to automation and performance tracking. Whether you're starting from scratch or optimizing an existing list, we’ve got you covered.",
       cards: [
         {
           id: 1,
@@ -3514,11 +3527,11 @@ export const ServicePageDataOfDigitalMarketing = [
           id: 2,
           title: "Email Copywriting & Design",
           description:
-            "We craft high-performing, on-brand content that speaks directly to your audience and looks good across devices.",
+            "We craft high performing, on brand content that speaks directly to your audience and looks good across devices.",
           points: {
             title: "We create:",
             bullets: [
-              "Short-form and long-form email copy",
+              "Short form and long form email copy",
               "Personalized messaging",
               "A/B testing variants",
               "Responsive HTML email templates",
@@ -3536,10 +3549,10 @@ export const ServicePageDataOfDigitalMarketing = [
             bullets: [
               "SWelcome sequences",
               "Abandoned cart emails",
-              "Post-purchase follow-ups",
+              "Post purchase follow ups",
               "Lead nurturing series",
               "Event/webinar reminders",
-              "Re-engagement campaigns",
+              "Re engagement campaigns",
             ],
           },
         },
@@ -3551,7 +3564,7 @@ export const ServicePageDataOfDigitalMarketing = [
           points: {
             title: "Services include:",
             bullets: [
-              "Monthly/bi-weekly newsletters",
+              "Monthly/bi weekly newsletters",
               "Product updates",
               "Industry news & blog highlights",
               "Digest curation",
@@ -3563,12 +3576,12 @@ export const ServicePageDataOfDigitalMarketing = [
           id: 5,
           title: "Email List Building & Management",
           description:
-            "We help you grow, clean, and maintain a high-quality subscriber list that improves deliverability and performance.",
+            "We help you grow, clean, and maintain a high quality subscriber list that improves deliverability and performance.",
           points: {
             title: "We handle:",
             bullets: [
               "Lead magnet creation (eBooks, guides, checklists)",
-              "Opt-in forms and landing pages",
+              "Opt in forms and landing pages",
               "List hygiene and segmentation",
               "GDPR/consent compliance",
               "Unsubscribe & bounce handling",
@@ -3644,35 +3657,35 @@ export const ServicePageDataOfDigitalMarketing = [
       title: "Industries We",
       blueTitle: "Serve",
       description:
-        "Email marketing isn’t one-size-fits-all. We build strategies suited to your industry’s user behavior, sales cycles, and messaging style.",
+        "Email marketing isn’t one size fits all. We build strategies suited to your industry’s user behavior, sales cycles, and messaging style.",
       cards: [
         {
           id: 1,
           icons: Helper.RealEstateSvg,
           title: "Real Estate",
           description:
-            "We develop property portals, CRM integrations, booking systems, and map-based project listings optimized for lead generation and customer experience.",
+            "We develop property portals, CRM integrations, booking systems, and map based project listings optimized for lead generation and customer experience.",
         },
         {
           id: 2,
           icons: Helper.EcommoarceSvg,
           title: "E-commerce",
           description:
-            "React.js enables us to create fast, scalable e-commerce platforms with advanced product filtering, dynamic cart management, and secure payment integration.",
+            "React.js enables us to create fast, scalable ecommerce platforms with advanced product filtering, dynamic cart management, and secure payment integration.",
         },
         {
           id: 3,
           icons: Helper.FinanceSvg,
           title: "Finance & Fintech",
           description:
-            "We build secure, responsive dashboards and platforms for financial institutions, with real-time data visualization and transaction tracking.",
+            "We build secure, responsive dashboards and platforms for financial institutions, with real time data visualization and transaction tracking.",
         },
         {
           id: 4,
           icons: Helper.HealthcareSvg,
           title: "Healthcare / Pharma ",
           description:
-            "HIPAA-compliant web applications, teleconsultation portals, and digital patient management systems built with React.js for performance and reliability.",
+            "HIPAA compliant web applications, teleconsultation portals, and digital patient management systems built with React.js for performance and reliability.",
         },
         {
           id: 5,
@@ -3686,7 +3699,7 @@ export const ServicePageDataOfDigitalMarketing = [
           icons: Helper.RetailStore,
           title: "Retail",
           description:
-            "Inventory management dashboards, sales tools, and consumer-facing web interfaces optimized for real-time updates and mobile-first interactions.",
+            "Inventory management dashboards, sales tools, and consumer facing web interfaces optimized for real time updates and mobile first interactions.",
         },
       ],
     },
@@ -3717,41 +3730,42 @@ export const ServicePageDataOfDigitalMarketing = [
       ],
     },
     faqSection: {
-      title: "FAQ",
+      title: "FAQs",
       ponits: [
         {
-          title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
+          title: "Do you provide email templates and design?",
           description: [
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+            "Yes, We design custom, mobile friendly, and visually appealing email templates that align with your brand identity and boost engagement.",
           ],
         },
         {
-          title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
+          title: "How do you grow an email subscriber list?",
           description: [
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+            "We use lead magnets, sign up forms, landing pages, pop ]ups, and gated content strategies to grow your email list with quality subscribers",
           ],
         },
         {
-          title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
+          title: "Can you segment my audience for personalized emails?",
           description: [
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+            "Absolutely. We segment audiences based on behavior, demographics, and preferences to ensure your subscribers receive relevant and personalized content",
           ],
         },
         {
-          title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
+          title: "What tools or platforms do you use for email marketing?",
           description: [
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+            " We work with leading platforms like Mailchimp, HubSpot, Klaviyo, Active Campaign, Constant Contact, and Sendinblue, depending on your requirements.",
           ],
         },
         {
-          title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
+          title: "How do you measure the success of email campaigns?",
           description: [
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+            "We track open rates, click through rates, conversions, bounce rates, and ROI to measure success and optimize future campaigns.",
+          ],
+        },
+        {
+          title: "How often should my business send emails?",
+          description: [
+            "It depends on your goals and audience. Most businesses send weekly or bi weekly emails, but we design a schedule that balances consistency with subscriber engagement.",
           ],
         },
       ],
@@ -3771,7 +3785,7 @@ export const ServicePageDataOfDigitalMarketing = [
       description: [
         "At Harichtech, we believe that decisions backed by data are the ones that drive real results. Our Analytics & Reporting services are designed to help you uncover actionable insights, track performance across every touchpoint, and continuously optimize your digital presence.",
         "Whether you're running campaigns, launching new features, or scaling user engagement, knowing what works (and what doesn't) is the key to sustainable growth.",
-        "We go beyond surface-level metrics. Our team builds reporting systems that are clear, insightful, and aligned with your specific goals, so you always know where you stand, and where to go next.",
+        "We go beyond surface level metrics. Our team builds reporting systems that are clear, insightful, and aligned with your specific goals, so you always know where you stand, and where to go next.",
       ],
       svgIcon: Helper.AnalyticsSvg,
     },
@@ -3784,7 +3798,7 @@ export const ServicePageDataOfDigitalMarketing = [
           id: 1,
           title: "Direct & Personal",
           description:
-            "Email lands directly in your audience’s inbox-no algorithm, no ad fatigue. It’s permission-based, trusted, and personal.",
+            "Email lands directly in your audience’s inbox no algorithm, no ad fatigue. It’s permission based, trusted, and personal.",
         },
         {
           id: 2,
@@ -3822,10 +3836,10 @@ export const ServicePageDataOfDigitalMarketing = [
         title: "",
         bulletPoints: [
           "Copy + Design Under One Roof: Seamless collaboration between content creators and visual designers.",
-          "Full-Funnel Thinking: We understand how email fits into broader marketing and sales strategies.",
-          "Results-Driven: Every campaign is built with KPIs in mind, from opens to revenue.",
+          "Full Funnel Thinking: We understand how email fits into broader marketing and sales strategies.",
+          "Results Driven: Every campaign is built with KPIs in mind, from opens to revenue.",
           "Segmented & Personalized: One email doesn’t fit all. We craft messages for the right audience segments at the right time.",
-          "Compliance & Deliverability: We ensure your campaigns meet global privacy standards (GDPR, CAN-SPAM, etc.) and don’t land in spam folders.",
+          "Compliance & Deliverability: We ensure your campaigns meet global privacy standards (GDPR, CAN SPAM, etc.) and don’t land in spam folders.",
           "Transparent Reporting: You’ll always know how your campaigns are performing with insights that go beyond vanity metrics.",
         ],
       },
@@ -3834,7 +3848,7 @@ export const ServicePageDataOfDigitalMarketing = [
     connectUsSection: {
       title: "Let’s Turn Data Into Growth",
       descriptions: [
-        "The numbers are there. The tools are in place. What you need now is clarity-and a partner who can turn raw data into real direction.",
+        "The numbers are there. The tools are in place. What you need now is clarity and a partner who can turn raw data into real direction.",
         "At Harichtech, our Analytics & Reporting services help you understand the story behind the numbers and use that story to grow smarter, faster, and stronger.",
         "Ready to take control of your performance data? Let’s talk.",
       ],
@@ -3857,8 +3871,8 @@ export const ServicePageDataOfDigitalMarketing = [
               "Google Analytics 4 (GA4) setup",
               "Google Tag Manager configuration",
               "Conversion and event tracking",
-              "Cross-domain & subdomain tracking",
-              "E-commerce tracking",
+              "Cross domain & subdomain tracking",
+              "Ecommerce tracking",
               "Consent banner integration "
             ],
           },
@@ -3867,7 +3881,7 @@ export const ServicePageDataOfDigitalMarketing = [
           id: 2,
           title: "Custom Dashboard Development",
           description:
-            "We build real-time dashboards that help your team make faster, more informed decisions with only the data that’s relevant to you.",
+            "We build real time dashboards that help your team make faster, more informed decisions with only the data that’s relevant to you.",
           points: {
             title: "Platforms we build in:",
             bullets: [
@@ -3883,11 +3897,11 @@ export const ServicePageDataOfDigitalMarketing = [
           id: 3,
           title: "Campaign Performance Tracking",
           description:
-            "For every campaign you run ads, social posts, emails - we track its reach, engagement, conversions, and contribution to your business goals.",
+            "For every campaign you run ads, social posts, emails we track its reach, engagement, conversions, and contribution to your business goals.",
           points: {
             title: "Tracking Includes:",
             bullets: [
-              "Multi-channel attribution",
+              "Multi channel attribution",
               "UTM tracking setup and audits",
               "Goal completions and funnel paths",
               "Paid campaign ROI (CPC, CPL, ROAS)",
@@ -3905,10 +3919,10 @@ export const ServicePageDataOfDigitalMarketing = [
             title: "We track:",
             bullets: [
               "Purchase funnels",
-              "Add-to-cart behavior",
+              "Add to cart behavior",
               "Checkout abandonment",
               "Repeat purchases and customer lifetime value",
-              "Top-performing products and bundles",
+              "Top performing products and bundles",
             ],
           },
         },
@@ -3916,7 +3930,7 @@ export const ServicePageDataOfDigitalMarketing = [
           id: 5,
           title: "User Behavior Analysis",
           description:
-            "We analyze how users navigate your website or app- what they click, where they drop off, and how to reduce friction.",
+            "We analyze how users navigate your website or app what they click, where they drop off, and how to reduce friction.",
           points: {
             title: "Tools we use:",
             bullets: [
@@ -3931,13 +3945,13 @@ export const ServicePageDataOfDigitalMarketing = [
           id: 6,
           title: "Reporting & Insights",
           description:
-            "We deliver monthly or weekly reports with actionable insights-not just numbers. You get clarity on what happened, why it matters, and what to do next.",
+            "We deliver monthly or weekly reports with actionable insights not just numbers. You get clarity on what happened, why it matters, and what to do next.",
           points: {
             title: "Reports Include:",
             bullets: [
               "KPI summary and trendlines",
               "Growth vs previous period",
-              "Channel-specific performance",
+              "Channel specific performance",
               "User behavior breakdown",
             ],
           },
@@ -3948,7 +3962,7 @@ export const ServicePageDataOfDigitalMarketing = [
       title: "Our Approach to ",
       blueTitle: "Harichtech Analytics",
       description:
-        "We don’t just track everything-we track what matters. Our analytics approach is centered on clarity, alignment, and actionable next steps.",
+        "We don’t just track everything we track what matters. Our analytics approach is centered on clarity, alignment, and actionable next steps.",
       banner: Helper.DigitalMarketingProcess,
     },
     techStacksSection: {
@@ -3995,35 +4009,35 @@ export const ServicePageDataOfDigitalMarketing = [
       title: "Industries We",
       blueTitle: "Serve",
       description:
-        "We tailor our analytics reporting to industry-specific KPIs and performance goals—ensuring relevance and actionability.",
+        "We tailor our analytics reporting to industry specific KPIs and performance goals—ensuring relevance and actionability.",
       cards: [
         {
           id: 1,
           icons: Helper.RealEstateSvg,
           title: "Real Estate",
           description:
-            "We develop property portals, CRM integrations, booking systems, and map-based project listings optimized for lead generation and customer experience.",
+            "We develop property portals, CRM integrations, booking systems, and map based project listings optimized for lead generation and customer experience.",
         },
         {
           id: 2,
           icons: Helper.EcommoarceSvg,
           title: "E-commerce",
           description:
-            "React.js enables us to create fast, scalable e-commerce platforms with advanced product filtering, dynamic cart management, and secure payment integration.",
+            "React.js enables us to create fast, scalable ecommerce platforms with advanced product filtering, dynamic cart management, and secure payment integration.",
         },
         {
           id: 3,
           icons: Helper.FinanceSvg,
           title: "Finance & Fintech",
           description:
-            "We build secure, responsive dashboards and platforms for financial institutions, with real-time data visualization and transaction tracking.",
+            "We build secure, responsive dashboards and platforms for financial institutions, with real time data visualization and transaction tracking.",
         },
         {
           id: 4,
           icons: Helper.HealthcareSvg,
           title: "Healthcare / Pharma ",
           description:
-            "HIPAA-compliant web applications, teleconsultation portals, and digital patient management systems built with React.js for performance and reliability.",
+            "HIPAA compliant web applications, teleconsultation portals, and digital patient management systems built with React.js for performance and reliability.",
         },
         {
           id: 5,
@@ -4037,7 +4051,7 @@ export const ServicePageDataOfDigitalMarketing = [
           icons: Helper.RetailStore,
           title: "Retail",
           description:
-            "Inventory management dashboards, sales tools, and consumer-facing web interfaces optimized for real-time updates and mobile-first interactions.",
+            "Inventory management dashboards, sales tools, and consumer facing web interfaces optimized for real time updates and mobile first interactions.",
         },
       ],
     },
@@ -4068,41 +4082,42 @@ export const ServicePageDataOfDigitalMarketing = [
       ],
     },
     faqSection: {
-      title: "FAQ",
+      title: "FAQs",
       ponits: [
         {
-          title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
+          title: "What platforms and tools do you use?",
           description: [
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+            "We use tools like Google Analytics 4 (GA4), Google Tag Manager, Google Data Studio (Looker Studio), SEMrush, Ahrefs, HubSpot, and custom dashboards depending on business needs.",
           ],
         },
         {
-          title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
+          title: "Can you track conversions and ROI?",
           description: [
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+            "Yes, We set up conversion tracking, goal funnels, and ROI measurement so you can clearly see how campaigns contribute to leads, sales, and revenue.",
           ],
         },
         {
-          title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
+          title: "Do you provide real-time dashboards?",
           description: [
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+            "Absolutely, We create custom, real time dashboards that allow you to monitor website traffic, campaign performance, and KPIs anytime.",
           ],
         },
         {
-          title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
+          title: "How often will I receive reports?",
           description: [
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+            "We provide weekly, monthly, or custom reports based on your preference. Reports include actionable insights, not just numbers.",
           ],
         },
         {
-          title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
+          title: "Can you integrate multiple data sources into one report?",
           description: [
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+            "Yes, We consolidate data from Google Ads, SEO tools, social media platforms, CRM, and email campaigns into a single easy-to-read report.",
+          ],
+        },
+        {
+          title: "Will you customize reports for my business goals?",
+          description: [
+            "Definitely, We align analytics and reporting with your specific KPIs whether that’s traffic, leads, eCommerce sales, or customer engagement.",
           ],
         },
       ],
@@ -4120,7 +4135,7 @@ export const ServicePageDataOfDigitalMarketing = [
       title: "Build Authentic Reach",
       subtitle: "Through Credible Voices",
       description: [
-        "In today’s digital ecosystem, people trust people - not just ads. Influencer marketing leverages this truth by tapping into the authentic voices your audience already listens to.",
+        "In today’s digital ecosystem, people trust people not just ads. Influencer marketing leverages this truth by tapping into the authentic voices your audience already listens to.",
         "At Harichtech, we help you connect with the right creators, build campaigns that feel genuine, not scripted and turn social influence into measurable business results. Whether you're looking to build brand awareness, drive traffic, or boost conversions, our influencer marketing services deliver campaigns that resonate and scale.",
         "We don’t just find influencers, we build strategic collaborations that align with your brand, values, and goals.",
       ],
@@ -4129,7 +4144,7 @@ export const ServicePageDataOfDigitalMarketing = [
     whyChooseUsSection: {
       title: "Why Influencer Marketing Works?",
       description:
-        "Influencer marketing isn’t just a trend, it's a proven channel that combines the power of word-of-mouth with the reach of digital. The right influencer can introduce your brand to thousands (or millions) in a way that feels personal and credible.",
+        "Influencer marketing isn’t just a trend, it's a proven channel that combines the power of word of mouth with the reach of digital. The right influencer can introduce your brand to thousands (or millions) in a way that feels personal and credible.",
       cards: [
         {
           id: 1,
@@ -4141,25 +4156,25 @@ export const ServicePageDataOfDigitalMarketing = [
           id: 2,
           title: "Niche Reach",
           description:
-            "From micro-communities to industry leaders, influencers help you reach highly targeted audiences that traditional ads often miss.",
+            "From micro communities to industry leaders, influencers help you reach highly targeted audiences that traditional ads often miss.",
         },
         {
           id: 3,
           title: "Content at Scale",
           description:
-            "Influencer partnerships generate valuable user-generated content (UGC) that can be repurposed across your channels.",
+            "Influencer partnerships generate valuable user generated content (UGC) that can be repurposed across your channels.",
         },
         {
           id: 4,
           title: "Measurable ROI",
           description:
-            "Track every view, click, share, and sale-making it easy to justify investment and scale what works.",
+            "Track every view, click, share, and sale making it easy to justify investment and scale what works.",
         },
         {
           id: 5,
           title: "Social Proof & Brand Lift",
           description:
-            "Being featured by trusted creators improves perception, increases trust, and drives long-term brand equity.",
+            "Being featured by trusted creators improves perception, increases trust, and drives long term brand equity.",
         },
       ],
     },
@@ -4173,8 +4188,8 @@ export const ServicePageDataOfDigitalMarketing = [
         title: "",
         bulletPoints: [
           "Strategic Alignment: We treat influencer campaigns like business campaigns with ROI goals, structure, and accountability.",
-          "Creator Relationships: We prioritize long-term partnerships, not just one-off posts.",
-          "Full-Service Model: From discovery to reporting, we manage everything so your team doesn’t have to.",
+          "Creator Relationships: We prioritize long term partnerships, not just one off posts.",
+          "Full Service Model: From discovery to reporting, we manage everything so your team doesn’t have to.",
           "Authenticity First: We help creators tell your story in a way that feels natural, not forced.",
           "Scalable Systems: Whether 5 creators or 50, we can scale while maintaining quality and consistency.",
           "Transparent Performance: Clear reports, real results, and no influencer fluff.",
@@ -4201,7 +4216,7 @@ export const ServicePageDataOfDigitalMarketing = [
           id: 1,
           title: "Influencer Strategy & Planning",
           description:
-            "We design influencer marketing strategies that align with your objectives whether it’s launching a product, increasing app downloads, or driving e-commerce sales.",
+            "We design influencer marketing strategies that align with your objectives whether it’s launching a product, increasing app downloads, or driving ecommerce sales.",
           points: {
             title: "What’s included:",
             bullets: [
@@ -4209,7 +4224,7 @@ export const ServicePageDataOfDigitalMarketing = [
               "Audience profiling & platform strategy",
               "Budget planning and ROI forecasts",
               "Content direction and messaging guidelines",
-              "Multi-phase campaign timelines",
+              "Multi phase campaign timelines",
             ],
           },
         },
@@ -4225,7 +4240,7 @@ export const ServicePageDataOfDigitalMarketing = [
               "Engagement rates and growth trends",
               "Content quality and tone",
               "Past brand collaborations",
-              "Platform-specific performance",
+              "Platform specific performance",
             ],
           },
         },
@@ -4233,7 +4248,7 @@ export const ServicePageDataOfDigitalMarketing = [
           id: 3,
           title: "Outreach, Negotiation & Contracting",
           description:
-            "We handle all communications, from outreach and relationship-building to rate negotiation and compliance.",
+            "We handle all communications, from outreach and relationship building to rate negotiation and compliance.",
           points: {
             title: "What we manage:",
             bullets: [
@@ -4273,7 +4288,7 @@ export const ServicePageDataOfDigitalMarketing = [
               "Sample scripts or talking points",
               "Brand guidelines and tone",
               "Review and feedback process",
-              "Multi-version content approvals"
+              "Multi version content approvals"
             ],
           },
         },
@@ -4281,14 +4296,14 @@ export const ServicePageDataOfDigitalMarketing = [
           id: 6,
           title: "Performance Tracking & Reporting",
           description:
-            "Every campaign ends with insights. We deliver data-rich reports so you can see what worked, what didn’t, and what to do next.",
+            "Every campaign ends with insights. We deliver data rich reports so you can see what worked, what didn’t, and what to do next.",
           points: {
             title: "Reports Include:",
             bullets: [
               "Engagement metrics ",
               "Audience reach & impressions",
               "Referral traffic & conversions",
-              "ROI, cost-per-engagement (CPE)",
+              "ROI, cost per engagement (CPE)",
               "Sentiment analysis & UGC highlights"
             ],
           },
@@ -4357,28 +4372,28 @@ export const ServicePageDataOfDigitalMarketing = [
           icons: Helper.RealEstateSvg,
           title: "Real Estate",
           description:
-            "We develop property portals, CRM integrations, booking systems, and map-based project listings optimized for lead generation and customer experience.",
+            "We develop property portals, CRM integrations, booking systems, and map based project listings optimized for lead generation and customer experience.",
         },
         {
           id: 2,
           icons: Helper.EcommoarceSvg,
           title: "E-commerce",
           description:
-            "React.js enables us to create fast, scalable e-commerce platforms with advanced product filtering, dynamic cart management, and secure payment integration.",
+            "React.js enables us to create fast, scalable ecommerce platforms with advanced product filtering, dynamic cart management, and secure payment integration.",
         },
         {
           id: 3,
           icons: Helper.FinanceSvg,
           title: "Finance & Fintech",
           description:
-            "We build secure, responsive dashboards and platforms for financial institutions, with real-time data visualization and transaction tracking.",
+            "We build secure, responsive dashboards and platforms for financial institutions, with real time data visualization and transaction tracking.",
         },
         {
           id: 4,
           icons: Helper.HealthcareSvg,
           title: "Healthcare / Pharma ",
           description:
-            "HIPAA-compliant web applications, teleconsultation portals, and digital patient management systems built with React.js for performance and reliability.",
+            "HIPAA compliant web applications, teleconsultation portals, and digital patient management systems built with React.js for performance and reliability.",
         },
         {
           id: 5,
@@ -4392,7 +4407,7 @@ export const ServicePageDataOfDigitalMarketing = [
           icons: Helper.RetailStore,
           title: "Retail",
           description:
-            "Inventory management dashboards, sales tools, and consumer-facing web interfaces optimized for real-time updates and mobile-first interactions.",
+            "Inventory management dashboards, sales tools, and consumer facing web interfaces optimized for real time updates and mobile first interactions.",
         },
       ],
     },
@@ -4423,41 +4438,42 @@ export const ServicePageDataOfDigitalMarketing = [
       ],
     },
     faqSection: {
-      title: "FAQ",
+      title: "FAQs",
       ponits: [
         {
-          title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
+          title: "What types of influencers do you work with?",
           description: [
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+            "We work with nano, micro, macro, and celebrity influencers, depending on your campaign goals, audience reach, and budget.",
           ],
         },
         {
-          title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
+          title: "How do you select the right influencer for my brand?",
           description: [
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+            "We analyze audience demographics, engagement rates, content quality, niche relevance, and brand alignment to ensure the influencer matches your target customers.",
           ],
         },
         {
-          title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
+          title: "Which platforms do you provide influencer marketing on?",
           description: [
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+            "We manage campaigns on Instagram, YouTube, TikTok, LinkedIn, Facebook, and Twitter (X) choosing the best platform based on your goals.",
           ],
         },
         {
-          title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
+          title: "Do you only work with large influencers?",
           description: [
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+            "No, Micro and nano influencers often drive stronger engagement and authentic connections, making them powerful for niche campaigns.",
           ],
         },
         {
-          title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
+          title: "How do you measure success in influencer campaigns?",
           description: [
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+            "We track reach, engagement, clicks, conversions, brand mentions, and ROI using analytics tools and custom reports",
+          ],
+        },
+        {
+          title: "Can Influencer marketing work for small businesses?",
+          description: [
+            "Yes, Small businesses can collaborate with local or niche influencers to build trust and attract loyal customers at affordable costs.",
           ],
         },
       ],

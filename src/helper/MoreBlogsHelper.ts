@@ -25,6 +25,7 @@ import SilentGrowth from "../../public/Image/more-blogs-banner/silent-growth-ban
 import SilentGrowthMobile from "../../public/Image/more-blogs-banner/silent-growth-mobile-banner.png"
 
 
+
 export const Helper = {
     //Banner
     AppDevelopmentBanner,

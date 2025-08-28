@@ -1,8 +1,9 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import { FAQItem } from "./FAQItem";
 import { StaticImageData } from "next/image";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 interface PointArray {
   title: string;
@@ -16,35 +17,63 @@ interface FAQSectionProps {
 }
 
 export const FAQSection: React.FC<FAQSectionProps> = ({ title, faqs, svg }) => {
+  const [activeIndex, setActiveIndex] = useState<number | null>(null);
+
+  const handleToggle = (index: number) => {
+    setActiveIndex((prev) => (prev === index ? null : index)); // close if same, open if different
+  };
+
   return (
-    <section className="py-16">
-      <div className=" mx-auto px-4">
-        <div className="grid md:grid-cols-3 gap-12 items-center">
+    <section className="py-5">
+      <div className="mx-auto px-4">
+        <div className="w-full flex flex-col md:flex-row items-start gap-6">
           {/* 🔹 Left side - FAQs */}
-          <div className="md:col-span-2">
-            <h2 className="text-3xl md:text-4xl font-bold bg-gradient-to-l from-[#2058FF] to-[#004BC2] bg-clip-text text-transparent text-left mb-8">
+          <motion.div
+            className="w-full md:w-1/2"
+            initial={{ opacity: 0, x: -40 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            viewport={{ once: true }}
+          >
+            <h2 className="text-3xl md:text-4xl font-bold bg-gradient-to-l from-[#2058FF] to-[#004BC2] bg-clip-text text-transparent text-left">
               {title}
             </h2>
 
-            <div className="space-y-4">
+            <motion.div
+              className="space-y-4"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.7, delay: 0.2 }}
+              viewport={{ once: true }}
+            >
               {faqs.map((faq, index) => (
                 <FAQItem
                   key={index}
                   title={faq.title}
                   descriptions={faq.description}
+                  isOpen={activeIndex === index}
+                  onToggle={() => handleToggle(index)}
                 />
               ))}
-            </div>
-          </div>
+            </motion.div>
+          </motion.div>
 
           {/* 🔹 Right side - SVG */}
-          <div className="md:col-span-1 flex justify-center md:justify-end">
-            <Image
-              src={svg}
-              alt="FAQ illustration"
-              className="max-w-sm w-full h-auto"
-            />
-          </div>
+          <motion.div
+            className="w-full md:w-1/2 flex justify-center md:justify-end"
+            initial={{ opacity: 0, x: 40 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut", delay: 0.3 }}
+            viewport={{ once: true }}
+          >
+            <div className="sticky top-20">
+              <Image
+                src={svg}
+                alt="FAQ illustration"
+                className="h-auto max-w-md w-auto"
+              />
+            </div>
+          </motion.div>
         </div>
       </div>
     </section>

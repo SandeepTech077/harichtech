@@ -12,7 +12,12 @@ import Retail from "../../public/Image/indutries/main-image/retail.png";
 
 
 //profile
-import yashProfile from "../../public/Image/indutries/profiles/yash-brahmbhatt.jpg"
+import yashProfile from "../../public/Image/indutries/profiles/yash-brahmbhatt.jpg";
+import RutikProfile from "../../public/Image/indutries/profiles/rutik-parmar.png";
+import JigneshProfile from "../../public/Image/indutries/profiles/jignesh-prajapati.png";
+import RajShahProfile from "../../public/Image/indutries/profiles/raj-shah.png";
+import AmitPandyaProfile from "../../public/Image/indutries/profiles/amit-pandya.png";
+
 
 // icon 
 import RightTick from "../../public/SVG/right.svg"
@@ -43,7 +48,6 @@ export const Helper = {
   Retail,
 
   RightTick,
-  yashProfile,
   InsightProject,
   AarambhProject,
   MicrobrangeProject,
@@ -55,5 +59,12 @@ export const Helper = {
   EducationSvg,
   RetailStore,
 
-  FaqSvg,
+  FaqSvg, 
+
+  // profile 
+    yashProfile,
+    RutikProfile,
+    JigneshProfile,
+    RajShahProfile,
+    AmitPandyaProfile,
 };

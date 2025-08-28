@@ -21,18 +21,23 @@ export default function Home() {
       {/* Page Sections */}
       <div className="w-full">
         <div className="mx-auto px-4  lg:px-16">
-          <div className="space-y-24 sm:space-y-28 lg:space-y-28">
+          <div className="space-y-24 sm:space-y-28 lg:space-y-15">
             <AboutStatus status={ourStatus.status} />
             <AboutUs data={HomePagedata.aboutUs} />
             <PortfolioComponent data={HomePagedata.portfolio} />
             <HomeServices data={HomePagedata.serviceList} />
-             <IndustriesSection
-                      title={HomePagedata.IndustriesSection.title}
-                      blueTitle={HomePagedata.IndustriesSection.blueTitle}
-                      description={HomePagedata.IndustriesSection.description}
-                      cards={HomePagedata.IndustriesSection.cards}
-                    />
-            <GetInTouch />
+            <IndustriesSection
+              title={HomePagedata.IndustriesSection.title}
+              blueTitle={HomePagedata.IndustriesSection.blueTitle}
+              description={HomePagedata.IndustriesSection.description}
+              cards={HomePagedata.IndustriesSection.cards}
+            />
+            <GetInTouch
+              title="Ready to Accelerate Your Digital Journey?"
+              subtitle="Let's discuss your vision and turn it into a powerful digital reality."
+              buttonText="Let’s Connect"
+              bg="bg-white"
+            />
             <OurClients data={HomePagedata.ourClient} />
             <ClientsComponent data={HomePagedata.client} />
           </div>

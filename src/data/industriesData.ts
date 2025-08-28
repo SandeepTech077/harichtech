@@ -8,8 +8,8 @@ export const industiesData = [
       title: "Digital Transformation for ",
       blueTitle: "the Real Estate Industry",
       descriptions: [
-        "The real estate sector is evolving rapidly, driven by the need for digital-first solutions that enhance operational efficiency, client engagement, and overall market reach. Today’s property buyers, investors, and tenants expect seamless, technology-enabled experiences, whether they are searching for properties, scheduling visits, or completing transactions.",
-        "At Harichtech, we deliver bespoke real estate IT solutions designed to meet the unique needs of real estate developers, agents, property management companies, and brokerage firms. Our goal is to help real estate businesses streamline processes, digitize services, and build a stronger connection with their customers through intelligent, scalable, and user-centric technology platforms.",
+        "The real estate sector is evolving rapidly, driven by the need for digital first solutions that enhance operational efficiency, client engagement, and overall market reach. Today’s property buyers, investors, and tenants expect seamless, technology enabled experiences, whether they are searching for properties, scheduling visits, or completing transactions.",
+        "At Harichtech, we deliver bespoke real estate IT solutions designed to meet the unique needs of real estate developers, agents, property management companies, and brokerage firms. Our goal is to help real estate businesses streamline processes, digitize services, and build a stronger connection with their customers through intelligent, scalable, and user centric technology platforms.",
       ],
       rightSideImage: Helper.RealEstate,
     },
@@ -17,7 +17,7 @@ export const industiesData = [
       title: "Industries We ",
       blueTitle: "Serve",
       description: [
-        "We provide full-spectrum digital solutions tailored to the distinct segments within the real estate industry",
+        "We provide full spectrum digital solutions tailored to the distinct segments within the real estate industry",
       ],
 
       cards: [
@@ -29,7 +29,7 @@ export const industiesData = [
         {
           id: 2,
           icon: Helper.RightTick,
-          title: "Residential Property Developers",
+          title: "Property Management Companies",
         },
         {
           id: 3,
@@ -39,7 +39,7 @@ export const industiesData = [
         {
           id: 4,
           icon: Helper.RightTick,
-          title: "Commercial Real Estate Firms",
+          title: "Real Estate Investment Groups",
         },
         {
           id: 5,
@@ -49,7 +49,7 @@ export const industiesData = [
         {
           id: 6,
           icon: Helper.RightTick,
-          title: "Real Estate Brokers and Agents",
+          title: "Real Estate Aggregator Platforms",
         },
       ],
     },
@@ -67,7 +67,7 @@ export const industiesData = [
           id: 2,
           title: "Custom CRM Solutions for Real Estate",
           description:
-            "Our CRM platforms are designed to streamline lead management, automate follow-ups, and simplify the sales cycle. These solutions are tailored for real estate workflows, providing agents with real-time insights into prospects, properties, and transactions.",
+            "Our CRM platforms are designed to streamline lead management, automate follow ups, and simplify the sales cycle. These solutions are tailored for real estate workflows, providing agents with real time insights into prospects, properties, and transactions.",
         },
         {
           id: 3,
@@ -79,19 +79,19 @@ export const industiesData = [
           id: 4,
           title: "360° Virtual Tours and AR Integration",
           description:
-            "React.js is backed by Meta (formerly Facebook) and supported by a global community. It integrates well with other libraries, APIs, and frameworks, making it highly flexible and future-ready.",
+            "React.js is backed by Meta (formerly Facebook) and supported by a global community. It integrates well with other libraries, APIs, and frameworks, making it highly flexible and future ready.",
         },
         {
           id: 5,
           title: "Lead Management Systems",
           description:
-            "When paired with frameworks like Next.js, React.js supports server-side rendering and static site generation, helping improve website SEO and page load times.",
+            "When paired with frameworks like Next.js, React.js supports server side rendering and static site generation, helping improve website SEO and page load times.",
         },
         {
           id: 6,
           title: "Real-Time Analytics and Reporting",
           description:
-            "When paired with frameworks like Next.js, React.js supports server-side rendering and static site generation, helping improve website SEO and page load times.",
+            "Our solutions include custom dashboards that provide a real time overview of user activity, property views, inquiry sources, and agent performance. Data driven insights help refine marketing strategies and improve ROI.",
         },
       ],
     },
@@ -110,17 +110,17 @@ export const industiesData = [
           id: 2,
           title: "Bespoke Digital Platforms",
           description:
-            "We offer fully customized solutions not off-the-shelf templates ensuring your platform reflects your brand, meets your specific functional needs, and delivers a unique digital experience.",
+            "We offer fully customized solutions not off the shelf templates ensuring your platform reflects your brand, meets your specific functional needs, and delivers a unique digital experience.",
         },
         {
           id: 3,
           title: "Scalable and Secure Architecture",
           description:
-            "Our solutions are engineered for scalability and security, handling high traffic volumes, sensitive user data, and multi-platform integrations with ease.",
+            "Our solutions are engineered for scalability and security, handling high traffic volumes, sensitive user data, and multi platform integrations with ease.",
         },
         {
           id: 4,
-          title: "User-Centric Design Approach",
+          title: "User Centric Design Approach",
           description:
             "We prioritize user experience through responsive design, intuitive navigation, and performance optimization. Our goal is to maximize engagement and streamline user journeys across all devices.",
         },
@@ -128,7 +128,7 @@ export const industiesData = [
           id: 5,
           title: "Seamless Technology Integration",
           description:
-            "From CRM systems and payment gateways to third-party property databases and marketing tools, we ensure complete system interoperability for a unified digital ecosystem.",
+            "From CRM systems and payment gateways to third party property databases and marketing tools, we ensure complete system interoperability for a unified digital ecosystem.",
         },
       ],
     },
@@ -148,7 +148,7 @@ export const industiesData = [
       bullets: null,
       testimonial: {
         description:
-          "We’ve worked with Harich Tech more than once, and each time they’ve delivered beyond expectations. For our Shilp project, we needed a digital presence that not only looked premium but also resonated with our audience - and Harich got it absolutely right.They understood the nuances of real estate presentation - from highlighting projects to optimizing the layout for easy navigation. The site is fast, functional, and communicates the value of the project clearly. Their team was proactive, responsive, and always aligned with our vision. ",
+          "We’ve worked with Harich Tech more than once, and each time they’ve delivered beyond expectations. For our Shilp project, we needed a digital presence that not only looked premium but also resonated with our audience and Harich got it absolutely right.They understood the nuances of real estate presentation from highlighting projects to optimizing the layout for easy navigation. The site is fast, functional, and communicates the value of the project clearly. Their team was proactive, responsive, and always aligned with our vision. ",
         name: "- Yash Brahmbhatt",
         designation: "CEO of Shilp Group",
         profile: Helper.yashProfile,
@@ -190,28 +190,28 @@ export const industiesData = [
           icons: Helper.RealEstateSvg,
           title: "Real Estate",
           description:
-            "We develop property portals, CRM integrations, booking systems, and map-based project listings optimized for lead generation and customer experience.",
+            "We develop property portals, CRM integrations, booking systems, and map based project listings optimized for lead generation and customer experience.",
         },
         {
           id: 2,
           icons: Helper.EcommoarceSvg,
           title: "E-commerce",
           description:
-            "React.js enables us to create fast, scalable e-commerce platforms with advanced product filtering, dynamic cart management, and secure payment integration.",
+            "React.js enables us to create fast, scalable ecommerce platforms with advanced product filtering, dynamic cart management, and secure payment integration.",
         },
         {
           id: 3,
           icons: Helper.FinanceSvg,
           title: "Finance & Fintech",
           description:
-            "We build secure, responsive dashboards and platforms for financial institutions, with real-time data visualization and transaction tracking.",
+            "We build secure, responsive dashboards and platforms for financial institutions, with real time data visualization and transaction tracking.",
         },
         {
           id: 4,
           icons: Helper.HealthcareSvg,
-          title: "Healthcare / Pharma ",
+          title: "Healthcare & Pharma ",
           description:
-            "HIPAA-compliant web applications, teleconsultation portals, and digital patient management systems built with React.js for performance and reliability.",
+            "HIPAA compliant web applications, teleconsultation portals, and digital patient management systems built with React.js for performance and reliability.",
         },
         {
           id: 5,
@@ -225,46 +225,52 @@ export const industiesData = [
           icons: Helper.RetailStore,
           title: "Retail",
           description:
-            "Inventory management dashboards, sales tools, and consumer-facing web interfaces optimized for real-time updates and mobile-first interactions.",
+            "Inventory management dashboards, sales tools, and consumer facing web interfaces optimized for real time updates and mobile first interactions.",
         },
       ],
     },
     faqSection: {
-      title: "FAQ",
+      title: "FAQs",
       ponits: [
         {
-          title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
+          title: "How does digital transformation improve customer experience?",
           description: [
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+            "It provides buyers with virtual property tours, personalized recommendations, instant communication via chatbots, mobile-friendly platforms, and real-time updates, making property search and buying seamless.",
           ],
         },
         {
-          title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
+          title:
+            "Can digital transformation help in generating real estate leads?",
           description: [
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+            "Yes. Through data-driven marketing, automated campaigns, SEO, and CRM integrations, real estate businesses can attract and nurture more qualified leads.",
           ],
         },
         {
-          title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
+          title:
+            "How can real estate companies use data analytics effectively?",
           description: [
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+            "Analytics helps track buyer preferences, lead sources, property demand trends, and ROI of marketing campaigns, allowing businesses to make smarter investment and sales decisions.",
           ],
         },
         {
-          title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
+          title:
+            "Is digital transformation only for big real estate companies?",
           description: [
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+            "No. Small and mid-sized agencies can also benefit by adopting affordable tools like CRMs, automated email campaigns, and digital marketing to compete with larger players.",
           ],
         },
         {
-          title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
+          title:
+            "How does digital transformation impact property sales cycles?",
           description: [
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+            "By automating lead management, enabling virtual site visits, and using AI-driven targeting, the sales cycle shortens, and customers can make faster, more informed decisions.",
+          ],
+        },
+        {
+          title:
+            "What role does mobile technology play in real estate digitalization?",
+          description: [
+            "Mobile apps allow clients to browse listings, schedule site visits, connect with agents, and access documents on the go, improving convenience and engagement.",
           ],
         },
       ],
@@ -275,11 +281,11 @@ export const industiesData = [
     id: 2,
     type: "ecommerce",
     mainSection: {
-      title: "Building Scalable, Secure, and Customer-Centric",
-      blueTitle: "E-commerce Experiences",
+      title: "Building Scalable, Secure, and Customer Centric",
+      blueTitle: " E-commerce Experiences",
       descriptions: [
-        "The global shift toward digital commerce has transformed how businesses operate, market, and grow. E-commerce is no longer limited to retail giants it is now a vital channel for businesses of all sizes, across industries. Whether serving B2B or B2C audiences, success in e-commerce today depends on more than just having an online store. It requires powerful, scalable, and user-focused technology that simplifies complex processes, enhances customer experience, and drives consistent growth.",
-        "At Harichtech, we design and develop comprehensive e-commerce technology solutions tailored to modern customer behavior and market dynamics. Our expertise spans the full spectrum of e-commerce development,from custom storefronts and mobile commerce to secure payment integrations, logistics automation, and performance optimization.",
+        "The global shift toward digital commerce has transformed how businesses operate, market, and grow. Ecommerce is no longer limited to retail giants it is now a vital channel for businesses of all sizes, across industries. Whether serving B2B or B2C audiences, success in ecommerce today depends on more than just having an online store. It requires powerful, scalable, and user focused technology that simplifies complex processes, enhances customer experience, and drives consistent growth.",
+        "At Harichtech, we design and develop comprehensive ecommerce technology solutions tailored to modern customer behavior and market dynamics. Our expertise spans the full spectrum of ecommerce development,from custom storefronts and mobile commerce to secure payment integrations, logistics automation, and performance optimization.",
         "We help brands create seamless online shopping experiences that build trust, boost conversions, and scale with their ambitions.",
       ],
       rightSideImage: Helper.Ecommerce,
@@ -288,28 +294,28 @@ export const industiesData = [
       title: "E-commerce Segments We ",
       blueTitle: "Serve",
       description: [
-        "Harichtech works with a wide range of e-commerce business models and sectors. Our solutions are built around the specific workflows, audience needs, and growth goals of each segment, ensuring maximum impact.",
+        "Harichtech works with a wide range of ecommerce business models and sectors. Our solutions are built around the specific workflows, audience needs, and growth goals of each segment, ensuring maximum impact.",
       ],
       cards: [
         {
           id: 1,
           icon: Helper.RightTick,
-          title: "Direct-to-Consumer (D2C) Brands",
+          title: "Direct to Consumer (D2C) Brands",
         },
         {
           id: 2,
           icon: Helper.RightTick,
-          title: "Business-to-Business (B2B) and Wholesale E-commerce",
+          title: "Business to Business (B2B) and Wholesale Ecommerce",
         },
         {
           id: 3,
           icon: Helper.RightTick,
-          title: "Multi-vendor Marketplaces",
+          title: "Multi vendor Marketplaces",
         },
         {
           id: 4,
           icon: Helper.RightTick,
-          title: "Subscription-Based Commerce Platforms",
+          title: "Subscription Based Commerce Platforms",
         },
         {
           id: 5,
@@ -344,26 +350,26 @@ export const industiesData = [
       ],
     },
     whyChooseUsSection: {
-      title: "Our Full-Suite E-commerce Services",
+      title: "Our Full Suite E-commerce Services",
       description: "",
       cards: [
         {
           id: 1,
           title: "Custom E-commerce Website Development",
           description:
-            "We design custom e-commerce websites on platforms like Shopify and WooCommerce. Our sites are secure, fast, and responsive, featuring advanced search, product recommendations, and intuitive navigation for a seamless customer experience.",
+            "We design custom ecommerce websites on platforms like Shopify and WooCommerce. Our sites are secure, fast, and responsive, featuring advanced search, product recommendations, and intuitive navigation for a seamless customer experience.",
         },
         {
           id: 2,
           title: "Mobile Commerce Application Development",
           description:
-            "We build native mobile apps for Android and iOS, focusing on a smooth user experience. Our apps include features like real-time inventory sync, push notifications for deals, and mobile wallet integration to keep customers engaged on the go.",
+            "We build native mobile apps for Android and iOS, focusing on a smooth user experience. Our apps include features like real time inventory sync, push notifications for deals, and mobile wallet integration to keep customers engaged on the go.",
         },
         {
           id: 3,
-          title: "Multi-vendor Marketplace Development",
+          title: "Multi vendor Marketplace Development",
           description:
-            "We create scalable, multi-vendor marketplaces, similar to Amazon. These platforms allow sellers to manage their own stores while giving you full administrative control over product approvals, orders, and commissions.",
+            "We create scalable, multi vendor marketplaces, similar to Amazon. These platforms allow sellers to manage their own stores while giving you full administrative control over product approvals, orders, and commissions.",
         },
         {
           id: 4,
@@ -375,13 +381,13 @@ export const industiesData = [
           id: 5,
           title: "Secure Payment Gateway Integration",
           description:
-            "We integrate secure payment options like credit cards, UPI, and BNPL services to improve conversions and build customer trust. All integrations are PCI-DSS compliant with built-in fraud prevention.",
+            "We integrate secure payment options like credit cards, UPI, and BNPL services to improve conversions and build customer trust. All integrations are PCI DSS compliant with built in fraud prevention.",
         },
         {
           id: 6,
           title: "Logistics and Order Management Automation",
           description:
-            "Our solutions automate the entire order fulfillment process. We integrate with logistics providers to handle real-time tracking, shipping label generation, and inventory syncing, which reduces costs and speeds up deliveries.",
+            "Our solutions automate the entire order fulfillment process. We integrate with logistics providers to handle real time tracking, shipping label generation, and inventory syncing, which reduces costs and speeds up deliveries.",
         },
         {
           id: 7,
@@ -393,7 +399,7 @@ export const industiesData = [
           id: 8,
           title: "Analytics, Insights & Conversion Optimization",
           description:
-            "We set up comprehensive analytics using Google Analytics and other tools to provide real-time insights into traffic and revenue. We analyze user behavior to help you streamline the checkout process and drive growth.",
+            "We set up comprehensive analytics using Google Analytics and other tools to provide real time insights into traffic and revenue. We analyze user behavior to help you streamline the checkout process and drive growth.",
         },
       ],
     },
@@ -404,25 +410,25 @@ export const industiesData = [
       cards: [
         {
           id: 1,
-          title: "Industry-Centric Expertise",
+          title: "Industry Centric Expertise",
           description:
-            "We understand that e-commerce is not just about building an online store, it’s about creating an experience that drives repeat customers and long-term brand value. Our team brings deep experience in e-commerce technology, design, integrations, and digital marketing",
+            "We understand that ecommerce is not just about building an online store, it’s about creating an experience that drives repeat customers and long term brand value. Our team brings deep experience in ecommerce technology, design, integrations, and digital marketing",
         },
         {
           id: 2,
           title: "Platform Agnostic, Strategy First",
           description:
-            "We work with the platform that best fits your business goals whether it’s Shopify for rapid deployment, Magento for flexibility, WooCommerce for content-led commerce, or a headless solution for custom scalability. Our recommendations are always strategic, not platform-biased.",
+            "We work with the platform that best fits your business goals whether it’s Shopify for rapid deployment, Magento for flexibility, WooCommerce for content led commerce, or a headless solution for custom scalability. Our recommendations are always strategic, not platform biased.",
         },
         {
           id: 3,
           title: "Scalable and Secure Architecture",
           description:
-            "Every solution we deliver is built with growth in mind. Whether you serve 500 or 50,000 daily users, our platforms are equipped to scale securely. Regular audits, code optimizations, and backup protocols ensure long-term stability and protection.",
+            "Every solution we deliver is built with growth in mind. Whether you serve 500 or 50,000 daily users, our platforms are equipped to scale securely. Regular audits, code optimizations, and backup protocols ensure long term stability and protection.",
         },
         {
           id: 4,
-          title: "Customer-Centric Design",
+          title: "Customer Centric Design",
           description:
             "From UX wireframing to final UI, we place your customer at the center of the design process. We aim to reduce friction at every stage of the user journey, leading to increased conversions, lower bounce rates, and improved retention.",
         },
@@ -437,7 +443,7 @@ export const industiesData = [
     connectUsSection: {
       title: "Let’s Build the Future of Your E-commerce Brand",
       descriptions: [
-        "The digital commerce landscape is competitive and constantly evolving. Success depends on the right combination of technology, design, operations, and strategy. At Harichtech, we bring these elements together to help you build a resilient, future-ready e-commerce presence.",
+        "The digital commerce landscape is competitive and constantly evolving. Success depends on the right combination of technology, design, operations, and strategy. At Harichtech, we bring these elements together to help you build a resilient, future ready ecommerce presence.",
       ],
       btnTitle: "Connect With us",
     },
@@ -447,7 +453,7 @@ export const industiesData = [
       descriptions: null,
       bullets: {
         title:
-          "Over the years, Harichtech has helped e-commerce businesses expand their digital reach, streamline backend operations, and enhance customer satisfaction. Our clients have reported measurable improvements in:",
+          "Over the years, Harichtech has helped ecommerce businesses expand their digital reach, streamline backend operations, and enhance customer satisfaction. Our clients have reported measurable improvements in:",
         points: [
           {
             id: 1,
@@ -471,20 +477,20 @@ export const industiesData = [
           },
           {
             id: 6,
-            points: "Faster go-to-market timelines",
+            points: "Faster go to market timelines",
           },
         ],
         descriptions: [
-          "We understand that every e-commerce business is different, and our solutions reflect that. Whether you’re launching a new product line, scaling to new geographies, or looking to integrate with global marketplaces, we help turn your goals into scalable digital outcomes.",
+          "We understand that every ecommerce business is different, and our solutions reflect that. Whether you’re launching a new product line, scaling to new geographies, or looking to integrate with global marketplaces, we help turn your goals into scalable digital outcomes.",
         ],
       },
 
       testimonial: {
         description:
-          "We’ve worked with Harich Tech more than once, and each time they’ve delivered beyond expectations. For our Shilp project, we needed a digital presence that not only looked premium but also resonated with our audience - and Harich got it absolutely right.They understood the nuances of real estate presentation - from highlighting projects to optimizing the layout for easy navigation. The site is fast, functional, and communicates the value of the project clearly. Their team was proactive, responsive, and always aligned with our vision. ",
-        name: "- Yash Brahmbhatt",
-        designation: "CEO of Shilp Group",
-        profile: Helper.yashProfile,
+          "With Orium, we wanted to position ourselves as a premium, next gen air solutions brand. Harich Tech understood that vision from day one. They created a sleek, high performance website that not only looks sharp but also works flawlessly across devices. Their team paid attention to the smallest details from user flow to content placement and delivered a platform that elevates the brand. It speaks to both our customers and our positioning.",
+        name: "- Rutik Parmar",
+        designation: "CEO of Orium",
+        profile: Helper.RutikProfile,
       },
     },
     portfolioSection: {
@@ -523,21 +529,21 @@ export const industiesData = [
           icons: Helper.RealEstateSvg,
           title: "Real Estate",
           description:
-            "We develop property portals, CRM integrations, booking systems, and map-based project listings optimized for lead generation and customer experience.",
+            "We develop property portals, CRM integrations, booking systems, and map based project listings optimized for lead generation and customer experience.",
         },
         {
           id: 2,
           icons: Helper.HealthcareSvg,
-          title: "Healthcare / Pharma ",
+          title: "Healthcare & Pharma ",
           description:
-            "React.js enables us to create fast, scalable e-commerce platforms with advanced product filtering, dynamic cart management, and secure payment integration.",
+            "React.js enables us to create fast, scalable ecommerce platforms with advanced product filtering, dynamic cart management, and secure payment integration.",
         },
         {
           id: 3,
           icons: Helper.FinanceSvg,
           title: "Finance & Fintech",
           description:
-            "We build secure, responsive dashboards and platforms for financial institutions, with real-time data visualization and transaction tracking.",
+            "We build secure, responsive dashboards and platforms for financial institutions, with real time data visualization and transaction tracking.",
         },
         {
           id: 4,
@@ -551,46 +557,50 @@ export const industiesData = [
           icons: Helper.RetailStore,
           title: "Retail",
           description:
-            "Inventory management dashboards, sales tools, and consumer-facing web interfaces optimized for real-time updates and mobile-first interactions.",
+            "Inventory management dashboards, sales tools, and consumer facing web interfaces optimized for real time updates and mobile first interactions.",
         },
       ],
     },
     faqSection: {
-      title: "FAQ",
+      title: "FAQs",
       ponits: [
         {
-          title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
+          title:
+            "How does digital transformation improve customer experience in e-commerce?",
           description: [
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+            "It enables personalized product suggestions, faster checkout processes, omnichannel shopping, seamless payment gateways, and real-time customer support, improving satisfaction and loyalty.",
           ],
         },
         {
-          title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
+          title: "Can digital transformation help increase sales?",
           description: [
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+            "Yes. With data analytics, marketing automation, and personalized engagement, e-commerce businesses can boost conversions, reduce cart abandonment, and increase repeat purchases.",
           ],
         },
         {
-          title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
+          title: "How does data analytics support e-commerce growth?",
           description: [
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+            "Analytics provides insights into customer behavior, purchase trends, and campaign performance, helping businesses make informed decisions that improve ROI.",
           ],
         },
         {
-          title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
+          title:
+            "Is digital transformation only for large e-commerce platforms?",
           description: [
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+            "Not at all. Small and mid-sized online stores can also benefit by adopting tools like cloud platforms, CRM, AI-powered chat, and targeted marketing, helping them scale effectively.",
           ],
         },
         {
-          title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
+          title: "What role does automation play in e-commerce?",
           description: [
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+            "Automation improves inventory management, order processing, customer segmentation, marketing campaigns, and customer service, saving time and reducing errors.",
+          ],
+        },
+        {
+          title:
+            " How does digital transformation affect supply chain and logistics?",
+          description: [
+            "It enables real-time inventory tracking, predictive demand forecasting, faster deliveries, and efficient warehouse management, ensuring smoother operations.",
           ],
         },
       ],
@@ -601,11 +611,11 @@ export const industiesData = [
     id: 3,
     type: "finance",
     mainSection: {
-      title: "Enabling Secure, Scalable, and Intelligent Digita ",
+      title: "Enabling Secure, Scalable, and Intelligent Digital ",
       blueTitle: "Transformation for Financial Services",
       descriptions: [
-        "The finance and technology sectors are at the heart of global digital innovation. As consumers and businesses increasingly demand faster, smarter, and more secure financial solutions, traditional models are being replaced by agile, technology-driven platforms. Whether it’s banking, fintech, wealth management, insurance, or enterprise financial software digital trust, compliance, and user experience are critical.",
-        "At Harichtech, we specialize in designing and developing secure, high-performance digital solutions for financial institutions and technology-driven enterprises. From mobile banking apps and investment dashboards to AI-powered chatbots and blockchain integrations, we help businesses reimagine financial services through scalable and compliant technology.",
+        "The finance and technology sectors are at the heart of global digital innovation. As consumers and businesses increasingly demand faster, smarter, and more secure financial solutions, traditional models are being replaced by agile, technology driven platforms. Whether it’s banking, fintech, wealth management, insurance, or enterprise financial software digital trust, compliance, and user experience are critical.",
+        "At Harichtech, we specialize in designing and developing secure, high performance digital solutions for financial institutions and technology driven enterprises. From mobile banking apps and investment dashboards to AI powered chatbots and blockchain integrations, we help businesses reimagine financial services through scalable and compliant technology.",
       ],
       rightSideImage: Helper.Finance,
     },
@@ -613,7 +623,7 @@ export const industiesData = [
       title: "Finance and Tech Segments We ",
       blueTitle: "Serve",
       description: [
-        "We work with a wide range of financial institutions and fintech innovators. Our industry-focused approach ensures compliance with regulatory frameworks while delivering superior digital experiences.",
+        "We work with a wide range of financial institutions and fintech innovators. Our industry focused approach ensures compliance with regulatory frameworks while delivering superior digital experiences.",
       ],
 
       cards: [
@@ -625,7 +635,7 @@ export const industiesData = [
         {
           id: 2,
           icon: Helper.RightTick,
-          title: "Digital-Only NeoBanks",
+          title: "Digital Only NeoBanks",
         },
         {
           id: 3,
@@ -683,13 +693,13 @@ export const industiesData = [
           id: 2,
           title: "Mobile Banking and Wallet Applications",
           description:
-            "We create user-friendly mobile apps for iOS and Android that enable secure account management. Key features include biometric login, UPI and QR-based payments, and budgeting tools, all adhering to global security standards.",
+            "We create user friendly mobile apps for iOS and Android that enable secure account management. Key features include biometric login, UPI and QR based payments, and budgeting tools, all adhering to global security standards.",
         },
         {
           id: 3,
-          title: "AI-Driven Financial Chatbots",
+          title: "AI Driven Financial Chatbots",
           description:
-            "Our AI-powered chatbots improve customer service and reduce support costs. They handle FAQs, process service requests, and manage accounts conversationally, providing 24/7 support and seamlessly integrating with CRMs.",
+            "Our AI powered chatbots improve customer service and reduce support costs. They handle FAQs, process service requests, and manage accounts conversationally, providing 24/7 support and seamlessly integrating with CRMs.",
         },
         {
           id: 4,
@@ -701,7 +711,7 @@ export const industiesData = [
           id: 5,
           title: "Wealth Management and Investment Platforms",
           description:
-            "We build investment platforms with features like multi-asset dashboards, goal-based planning, and risk profiling. Our solutions simplify decision-making for both advisors and individuals by integrating with key financial APIs.",
+            "We build investment platforms with features like multi asset dashboards, goal based planning, and risk profiling. Our solutions simplify decision making for both advisors and individuals by integrating with key financial APIs.",
         },
         {
           id: 6,
@@ -726,11 +736,11 @@ export const industiesData = [
           id: 2,
           title: "Custom Architecture and Development",
           description:
-            "We don’t use one-size-fits-all templates. Every solution is uniquely architected to meet your business goals whether you’re a startup building a niche finance product or an enterprise modernizing legacy infrastructure.",
+            "We don’t use one size fits all templates. Every solution is uniquely architected to meet your business goals whether you’re a startup building a niche finance product or an enterprise modernizing legacy infrastructure.",
         },
         {
           id: 3,
-          title: "Security-First Mindset",
+          title: "Security First Mindset",
           description:
             "Our development and DevOps teams prioritize cybersecurity and compliance throughout every phase of delivery. From encryption protocols to secure authentication flows, we ensure that your data and your customers' trust is protected.",
         },
@@ -738,13 +748,13 @@ export const industiesData = [
           id: 4,
           title: "Collaborative and Agile Delivery",
           description:
-            "We follow agile delivery frameworks to allow for continuous feedback, iterative development, and rapid go-to-market readiness. Our process keeps stakeholders in sync, projects transparent, and innovation flowing.",
+            "We follow agile delivery frameworks to allow for continuous feedback, iterative development, and rapid go to market readiness. Our process keeps stakeholders in sync, projects transparent, and innovation flowing.",
         },
         {
           id: 5,
           title: "Scalable for Future Growth",
           description:
-            "Our solutions are built for scale from high-volume transaction processing to multi-location rollouts. Whether you serve 10,000 users or 10 million, our platforms grow with your business.",
+            "Our solutions are built for scale from high volume transaction processing to multi location rollouts. Whether you serve 10,000 users or 10 million, our platforms grow with your business.",
         },
       ],
     },
@@ -790,10 +800,10 @@ export const industiesData = [
       },
       testimonial: {
         description:
-          "We’ve worked with Harich Tech more than once, and each time they’ve delivered beyond expectations. For our Shilp project, we needed a digital presence that not only looked premium but also resonated with our audience - and Harich got it absolutely right.They understood the nuances of real estate presentation - from highlighting projects to optimizing the layout for easy navigation. The site is fast, functional, and communicates the value of the project clearly. Their team was proactive, responsive, and always aligned with our vision. ",
-        name: "- Yash Brahmbhatt",
-        designation: "CEO of Shilp Group",
-        profile: Helper.yashProfile,
+          "We’re in the tech business, so I needed a site that’s fast, smart, and makes a strong impression. Harich delivered and we loved it. Their understanding of functionality combined with solid design made the entire process efficient. Would definitely recommend them! ",
+        name: "- Jignesh Prajapati",
+        designation: "CEO of Appcom Infotech",
+        profile: Helper.JigneshProfile,
       },
     },
     portfolioSection: {
@@ -832,21 +842,21 @@ export const industiesData = [
           icons: Helper.RealEstateSvg,
           title: "Real Estate",
           description:
-            "We develop property portals, CRM integrations, booking systems, and map-based project listings optimized for lead generation and customer experience.",
+            "We develop property portals, CRM integrations, booking systems, and map based project listings optimized for lead generation and customer experience.",
         },
         {
           id: 2,
           icons: Helper.HealthcareSvg,
-          title: "Healthcare / Pharma ",
+          title: "Healthcare & Pharma ",
           description:
-            "HIPAA-compliant web applications, teleconsultation portals, and digital patient management systems built with React.js for performance and reliability.",
+            "HIPAA compliant web applications, teleconsultation portals, and digital patient management systems built with React.js for performance and reliability.",
         },
         {
           id: 3,
           icons: Helper.EcommoarceSvg,
           title: "E-commerce",
           description:
-            "React.js enables us to create fast, scalable e-commerce platforms with advanced product filtering, dynamic cart management, and secure payment integration.",
+            "React.js enables us to create fast, scalable ecommerce platforms with advanced product filtering, dynamic cart management, and secure payment integration.",
         },
         {
           id: 4,
@@ -860,46 +870,50 @@ export const industiesData = [
           icons: Helper.RetailStore,
           title: "Retail",
           description:
-            "Inventory management dashboards, sales tools, and consumer-facing web interfaces optimized for real-time updates and mobile-first interactions.",
+            "Inventory management dashboards, sales tools, and consumer facing web interfaces optimized for real time updates and mobile first interactions.",
         },
       ],
     },
     faqSection: {
-      title: "FAQ",
+      title: "FAQs",
       ponits: [
         {
-          title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
+          title:
+            "How does digital transformation improve customer experience in banking and fintech?",
           description: [
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+            "It enables 24/7 digital banking, personalized financial recommendations, instant payments, mobile-first experiences, and seamless onboarding, improving trust and engagement.",
           ],
         },
         {
-          title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
+          title: "Can digital transformation help reduce operational costs?",
           description: [
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+            "Yes. Automation and AI-powered systems reduce manual work, lower transaction costs, streamline compliance, and improve fraud detection, resulting in significant cost savings.",
           ],
         },
         {
-          title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
+          title: "How does data analytics support financial institutions?",
           description: [
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+            " Analytics helps in credit risk assessment, fraud detection, customer segmentation, investment forecasting, and compliance monitoring, leading to smarter decision-making.",
           ],
         },
         {
-          title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
+          title: "Is digital transformation secure for financial transactions?",
           description: [
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+            " Absolutely. With blockchain, biometric authentication, AI fraud detection, and encryption technologies, digital transformation enhances security and compliance.",
           ],
         },
         {
-          title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
+          title:
+            "Do only large banks and fintechs need digital transformation?",
           description: [
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+            " No. Small and mid-sized financial firms can also benefit by adopting affordable digital tools like mobile apps, cloud banking platforms, and AI-driven customer support.",
+          ],
+        },
+        {
+          title:
+            "How does digital transformation affect regulatory compliance?",
+          description: [
+            " It enables financial institutions to automatically track, report, and comply with evolving regulations through RegTech (Regulatory Technology) solutions.",
           ],
         },
       ],
@@ -913,7 +927,7 @@ export const industiesData = [
       title: "Empowering Healthcare and Pharmaceutical Innovation",
       blueTitle: " Through Digital Transformation",
       descriptions: [
-        "The healthcare and pharmaceutical sectors are undergoing a fundamental shift toward digitization. Patients now expect faster, more transparent, and more accessible care. Providers and pharmaceutical companies, in turn, need agile, scalable, and compliant digital systems to meet rising demands and regulatory standards. From hospital management systems and telemedicine platforms to clinical trial automation and pharmacy apps - technology is reshaping every facet of healthcare delivery and pharmaceutical innovation.",
+        "The healthcare and pharmaceutical sectors are undergoing a fundamental shift toward digitization. Patients now expect faster, more transparent, and more accessible care. Providers and pharmaceutical companies, in turn, need agile, scalable, and compliant digital systems to meet rising demands and regulatory standards. From hospital management systems and telemedicine platforms to clinical trial automation and pharmacy apps  technology is reshaping every facet of healthcare delivery and pharmaceutical innovation.",
         "At Harichtech, we specialize in delivering intelligent, secure, and highly adaptable digital solutions for the healthcare and pharmaceutical industries. With a deep understanding of medical workflows, compliance frameworks, and data security protocols, we develop systems that improve patient outcomes, streamline operations, and support medical innovation at scale.",
       ],
       rightSideImage: Helper.HealthCare,
@@ -928,7 +942,7 @@ export const industiesData = [
         {
           id: 1,
           icon: Helper.RightTick,
-          title: "Hospitals and Multi-Specialty Clinics",
+          title: "Hospitals and Multi Specialty Clinics",
         },
         {
           id: 2,
@@ -985,7 +999,7 @@ export const industiesData = [
           id: 1,
           title: "Hospital & Clinic Management Systems",
           description:
-            "We develop all-in-one platforms for hospitals and clinics that digitize patient care. Our systems handle everything from appointment scheduling to billing, centralizing data to improve accuracy and efficiency. They are also HIPAA and HL7 compliant, ensuring data security.",
+            "We develop all in one platforms for hospitals and clinics that digitize patient care. Our systems handle everything from appointment scheduling to billing, centralizing data to improve accuracy and efficiency. They are also HIPAA and HL7 compliant, ensuring data security.",
         },
         {
           id: 2,
@@ -997,13 +1011,13 @@ export const industiesData = [
           id: 3,
           title: "Pharmacy App & E-Prescription Solutions",
           description:
-            "We create digital platforms for pharmacies, integrating them with medical records and payment systems. These apps offer features like prescription uploads, real-time stock updates, and auto-refill options, helping both B2C and B2B pharmacies streamline their operations.",
+            "We create digital platforms for pharmacies, integrating them with medical records and payment systems. These apps offer features like prescription uploads, real time stock updates, and auto refill options, helping both B2C and B2B pharmacies streamline their operations.",
         },
         {
           id: 4,
           title: "Healthcare CRM and Patient Portals",
           description:
-            "We develop centralized CRM and patient portals to improve communication and care. Our tools automate follow-up reminders and provide health tips and reports, enhancing patient satisfaction and retention through personalized engagement.",
+            "We develop centralized CRM and patient portals to improve communication and care. Our tools automate follow up reminders and provide health tips and reports, enhancing patient satisfaction and retention through personalized engagement.",
         },
         {
           id: 5,
@@ -1013,7 +1027,7 @@ export const industiesData = [
         },
         {
           id: 6,
-          title: "Real-Time Analytics and Reporting",
+          title: "Real Time Analytics and Reporting",
           description:
             "We design secure platforms to streamline clinical trials. These systems manage participant recruitment, data collection, and adverse event reporting, ensuring GCP and ICH compliance and accelerating research timelines.",
         },
@@ -1021,36 +1035,36 @@ export const industiesData = [
           id: 7,
           title: "Data Analytics & Population Health Insight",
           description:
-            "We implement data analytics and business intelligence dashboards to help healthcare providers and public health agencies. These tools offer insights into treatment efficacy, disease trends, and operational KPIs, enabling data-driven decision-making.",
+            "We implement data analytics and business intelligence dashboards to help healthcare providers and public health agencies. These tools offer insights into treatment efficacy, disease trends, and operational KPIs, enabling data driven decision making.",
         },
         {
           id: 8,
           title: "Compliance, Data Security & Privacy Solutions",
           description:
-            "Our platforms are built with robust security and compliance at their core. We support global standards like HIPAA and GDPR, implementing features like encrypted data storage, audit trails, and role-based access to ensure patient privacy and digital trust.",
+            "Our platforms are built with robust security and compliance at their core. We support global standards like HIPAA and GDPR, implementing features like encrypted data storage, audit trails, and role based access to ensure patient privacy and digital trust.",
         },
       ],
     },
     serviceSections: {
       title: "Why Choose Harichtech for",
-      blueTitle: " Healthcare & Pharma IT Solutions?",
+      blueTitle: "Healthcare & Pharma IT Solutions?",
       description: "",
       cards: [
         {
           id: 1,
           title: "Deep Industry Understanding",
           description:
-            "We understand healthcare isn’t just another industry-it’s a critical, regulated, and deeply human field. Our team brings in-depth experience across care delivery, pharmaceutical supply chains, and medical research.",
+            "We understand healthcare isn’t just another industry it’s a critical, regulated, and deeply human field. Our team brings in depth experience across care delivery, pharmaceutical supply chains, and medical research.",
         },
         {
           id: 2,
-          title: "Tailor-Made Digital Solutions",
+          title: "Tailor Made Digital Solutions",
           description:
-            "We don’t believe in generic software. Every product we build is designed for your organization’s unique challenges-whether you’re managing patients, clinical workflows, or manufacturing cycles.",
+            "We don’t believe in generic software. Every product we build is designed for your organization’s unique challenges whether you’re managing patients, clinical workflows, or manufacturing cycles.",
         },
         {
           id: 3,
-          title: "Compliance-First Development",
+          title: "Compliance First Development",
           description:
             "Every solution is developed with global and regional healthcare compliance standards at its core. Our teams work with legal and compliance experts to ensure regulatory readiness from day one.",
         },
@@ -1058,20 +1072,20 @@ export const industiesData = [
           id: 4,
           title: "Secure, Scalable Architecture",
           description:
-            "We prioritize data protection, platform scalability, and system interoperability. Whether you’re a startup or a multi-location hospital network, our solutions grow with your operations.",
+            "We prioritize data protection, platform scalability, and system interoperability. Whether you’re a startup or a multi location hospital network, our solutions grow with your operations.",
         },
         {
           id: 5,
           title: "Collaborative & Agile Process",
           description:
-            "We follow agile methodologies, ensuring you receive regular updates, complete transparency, and rapid time-to-market. Clinical and business teams remain involved throughout the project lifecycle.",
+            "We follow agile methodologies, ensuring you receive regular updates, complete transparency, and rapid time to market. Clinical and business teams remain involved throughout the project lifecycle.",
         },
       ],
     },
     connectUsSection: {
       title: "Let’s Build the Future of Healthcare & Pharma Together",
       descriptions: [
-        "The future of healthcare depends on technology that is fast, secure, reliable, and patient-focused. At Harichtech, we combine our technical expertise with deep domain insight to help healthcare providers, pharmaceutical companies, and life sciences organizations thrive in a digital-first world.",
+        "The future of healthcare depends on technology that is fast, secure, reliable, and patient focused. At Harichtech, we combine our technical expertise with deep domain insight to help healthcare providers, pharmaceutical companies, and life sciences organizations thrive in a digital first world.",
       ],
       btnTitle: "Connect With us",
     },
@@ -1090,7 +1104,7 @@ export const industiesData = [
           {
             id: 2,
             points:
-              "Reduced patient no-shows and missed follow-ups through automated CRM workflows",
+              "Reduced patient no shows and missed follow ups through automated CRM workflows",
           },
           {
             id: 3,
@@ -1114,10 +1128,10 @@ export const industiesData = [
       },
       testimonial: {
         description:
-          "We’ve worked with Harich Tech more than once, and each time they’ve delivered beyond expectations. For our Shilp project, we needed a digital presence that not only looked premium but also resonated with our audience - and Harich got it absolutely right.They understood the nuances of real estate presentation - from highlighting projects to optimizing the layout for easy navigation. The site is fast, functional, and communicates the value of the project clearly. Their team was proactive, responsive, and always aligned with our vision. ",
-        name: "- Yash Brahmbhatt",
-        designation: "CEO of Shilp Group",
-        profile: Helper.yashProfile,
+          "With Sankalp, we wanted something grounded and value-driven - a site that felt trustworthy. Harich took time to understand our ethos and reflected that beautifully online. We’ve been getting great feedback from clients ever since. We highly recommend Harich for the people who desire and value quality work. ",
+        name: "- Raj Shah",
+        designation: "CEO of Sankalp",
+        profile: Helper.RajShahProfile,
       },
     },
     portfolioSection: {
@@ -1150,14 +1164,14 @@ export const industiesData = [
       title: "Industries We",
       blueTitle: "Serve",
       description:
-        "Our React.js development services are industry-agnostic, with successful projects across various sectors",
+        "Our React.js development services are industry agnostic, with successful projects across various sectors",
       cards: [
         {
           id: 1,
           icons: Helper.RealEstateSvg,
           title: "Real Estate",
           description:
-            "We develop property portals, CRM integrations, booking systems, and map-based project listings optimized for lead generation and customer experience.",
+            "We develop property portals, CRM integrations, booking systems, and map based project listings optimized for lead generation and customer experience.",
         },
         {
           id: 2,
@@ -1171,7 +1185,7 @@ export const industiesData = [
           icons: Helper.FinanceSvg,
           title: "Finance & Fintech",
           description:
-            "We build secure, responsive dashboards and platforms for financial institutions, with real-time data visualization and transaction tracking.",
+            "We build secure, responsive dashboards and platforms for financial institutions, with real time data visualization and transaction tracking.",
         },
         {
           id: 4,
@@ -1185,46 +1199,49 @@ export const industiesData = [
           icons: Helper.RetailStore,
           title: "Retail",
           description:
-            "Inventory management dashboards, sales tools, and consumer-facing web interfaces optimized for real-time updates and mobile-first interactions.",
+            "Inventory management dashboards, sales tools, and consumer facing web interfaces optimized for real time updates and mobile first interactions.",
         },
       ],
     },
     faqSection: {
-      title: "FAQ",
+      title: "FAQs",
       ponits: [
         {
-          title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
+          title: "How does digital transformation improve patient experience?",
           description: [
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+            "Patients get easy access to teleconsultations, faster test results, personalized health apps, real-time monitoring through wearables, and seamless communication with doctors, leading to better outcomes.",
           ],
         },
         {
-          title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
+          title:
+            "How does digital transformation impact the pharmaceutical industry?",
           description: [
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+            "It helps pharma companies accelerate drug discovery with AI, streamline clinical trials, improve supply chain visibility, ensure regulatory compliance, and enable precision medicine.",
           ],
         },
         {
-          title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
+          title: "Can digital transformation improve healthcare data security?",
           description: [
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+            "Yes, With blockchain, advanced encryption, and AI-powered fraud detection, healthcare organizations can secure sensitive patient data and comply with regulations like HIPAA and GDPR.",
           ],
         },
         {
-          title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
+          title: "How can hospitals and clinics benefit from digitalization?",
           description: [
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+            "Hospitals can leverage smart scheduling, AI-driven patient management, digital billing, remote monitoring, and automated workflows, reducing costs and improving efficiency.",
           ],
         },
         {
-          title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
+          title:
+            "Is digital transformation affordable for small clinics and healthcare startups?",
           description: [
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+            "Yes, Scalable solutions like cloud-based EHRs, telehealth apps, and affordable CRM systems allow even small clinics to adopt digital technologies cost effectively.",
+          ],
+        },
+        {
+          title: " How does data analytics support healthcare and pharma?",
+          description: [
+            "Analytics helps in predicting disease outbreaks, monitoring patient progress, improving clinical trial success rates, and enhancing drug supply chains.",
           ],
         },
       ],
@@ -1238,8 +1255,8 @@ export const industiesData = [
       title: "Transforming Education Through Scalable and",
       blueTitle: "Intelligent Digital Infrastructure",
       descriptions: [
-        "The education sector is undergoing a major evolution, driven by the need for accessible, flexible, and technology-enabled learning experiences. Institutions across the globe from K-12 schools and universities to vocational institutes and edtech platforms which are embracing digital tools to engage students, manage operations, and scale their impact. Learners today demand convenience, interactivity, and personalization-whether in a physical classroom, hybrid setting, or fully virtual environment.",
-        "At Harichtech, we develop robust, secure, and future-ready digital solutions for the education sector. Our platforms are designed to facilitate learning, streamline administration, enhance student outcomes, and enable collaboration among educators, institutions, and learners.With a strong focus on usability, scalability, and data security, we empower educational institutions and edtech startups to deliver high-quality learning experiences across all formats.",
+        "The education sector is undergoing a major evolution, driven by the need for accessible, flexible, and technology enabled learning experiences. Institutions across the globe from K 12 schools and universities to vocational institutes and edtech platforms which are embracing digital tools to engage students, manage operations, and scale their impact. Learners today demand convenience, interactivity, and personalization whether in a physical classroom, hybrid setting, or fully virtual environment.",
+        "At Harichtech, we develop robust, secure, and future ready digital solutions for the education sector. Our platforms are designed to facilitate learning, streamline administration, enhance student outcomes, and enable collaboration among educators, institutions, and learners.With a strong focus on usability, scalability, and data security, we empower educational institutions and edtech startups to deliver high quality learning experiences across all formats.",
       ],
       rightSideImage: Helper.Education,
     },
@@ -1303,7 +1320,7 @@ export const industiesData = [
       ],
     },
     whyChooseUsSection: {
-      title: "Our End-to-End Education Technology Services",
+      title: "Our End to End Education Technology Services",
       description: "",
       cards: [
         {
@@ -1316,25 +1333,25 @@ export const industiesData = [
           id: 2,
           title: "E-learning Platforms and Apps",
           description:
-            "For edtech businesses, we develop full-featured e-learning platforms and native mobile apps. These solutions offer on-demand content, interactive quizzes, and flexible subscription models, along with user analytics to ensure a smooth learning experience on any device.",
+            "For edtech businesses, we develop full featured e-learning platforms and native mobile apps. These solutions offer on demand content, interactive quizzes, and flexible subscription models, along with user analytics to ensure a smooth learning experience on any device.",
         },
         {
           id: 3,
           title: "Virtual Classroom and Live Teaching Solutions",
           description:
-            "We create secure, low-latency virtual classrooms for real-time teaching. Our platforms include high-definition video conferencing, digital whiteboards, and breakout rooms, allowing for seamless integration with existing LMS systems to replicate a live classroom experience.",
+            "We create secure, low latency virtual classrooms for real time teaching. Our platforms include high definition video conferencing, digital whiteboards, and breakout rooms, allowing for seamless integration with existing LMS systems to replicate a live classroom experience.",
         },
         {
           id: 4,
           title: "Student Information Systems (SIS) and School ERP",
           description:
-            "We build comprehensive school management systems to simplify daily operations. Our platforms manage everything from admissions and attendance to fee collection and report cards, providing role-based access for students, parents, and staff.",
+            "We build comprehensive school management systems to simplify daily operations. Our platforms manage everything from admissions and attendance to fee collection and report cards, providing role based access for students, parents, and staff.",
         },
         {
           id: 5,
           title: "Online Examination and Assessment Platforms",
           description:
-            "We develop secure and scalable online exam platforms. These systems support various test formats and include features like real-time proctoring, randomized question banks, and automated grading to ensure fair and efficient assessments.",
+            "We develop secure and scalable online exam platforms. These systems support various test formats and include features like real time proctoring, randomized question banks, and automated grading to ensure fair and efficient assessments.",
         },
         {
           id: 6,
@@ -1346,13 +1363,13 @@ export const industiesData = [
           id: 7,
           title: "Mobile Learning (mLearning) Solutions",
           description:
-            "We create mobile-first learning apps optimized for on-the-go education. Our mLearning solutions include responsive design, offline content access, and personalized learning paths, ensuring high engagement and retention for modern learners.",
+            "We create mobile first learning apps optimized for on the go education. Our mLearning solutions include responsive design, offline content access, and personalized learning paths, ensuring high engagement and retention for modern learners.",
         },
         {
           id: 8,
           title: "Analytics, Insights & Performance Dashboards",
           description:
-            "We integrate advanced analytics and dashboards into our platforms to provide actionable insights. These tools track course completion rates, student performance, and faculty effectiveness, enabling data-driven decisions to improve educational outcomes.",
+            "We integrate advanced analytics and dashboards into our platforms to provide actionable insights. These tools track course completion rates, student performance, and faculty effectiveness, enabling data driven decisions to improve educational outcomes.",
         },
       ],
     },
@@ -1363,7 +1380,7 @@ export const industiesData = [
       cards: [
         {
           id: 1,
-          title: "In-Depth Domain Understanding",
+          title: "In Depth Domain Understanding",
           description:
             "We understand the nuances of teaching methodologies, curriculum workflows, and student expectations. Our solutions are built to simplify education while enhancing learning outcomes.",
         },
@@ -1375,7 +1392,7 @@ export const industiesData = [
         },
         {
           id: 3,
-          title: "Engaging, User-Centric Design",
+          title: "Engaging, User Centric Design",
           description:
             "We prioritize usability, intuitive navigation, and responsive interfaces to ensure learners stay engaged and complete their educational journeys smoothly.",
         },
@@ -1389,14 +1406,14 @@ export const industiesData = [
           id: 5,
           title: "Collaborative, Agile Execution",
           description:
-            "From CRM systems and payment gateways to third-party property databases and marketing tools, we ensure complete system interoperability for a unified digital ecosystem.",
+            "From CRM systems and payment gateways to third party property databases and marketing tools, we ensure complete system interoperability for a unified digital ecosystem.",
         },
       ],
     },
     connectUsSection: {
       title: "Let’s Redefine Learning Together",
       descriptions: [
-        "The future of education lies in personalization, accessibility, and intelligent technology. At Harichtech, we help educational institutions and edtech innovators build platforms that support better learning, smarter teaching, and scalable growth.Let’s connect. Our team will work closely with you to build solutions that are engaging, secure, and built for long-term impact.",
+        "The future of education lies in personalization, accessibility, and intelligent technology. At Harichtech, we help educational institutions and edtech innovators build platforms that support better learning, smarter teaching, and scalable growth.Let’s connect. Our team will work closely with you to build solutions that are engaging, secure, and built for long term impact.",
       ],
       btnTitle: "Connect With us",
     },
@@ -1430,16 +1447,16 @@ export const industiesData = [
           {
             id: 6,
             points:
-              "Generate new revenue streams through subscription-based models",
+              "Generate new revenue streams through subscription based models",
           },
         ],
         descriptions: [
-          "We don't just build technology-we build ecosystems that empower learners and educators alike.",
+          "We don't just build technology we build ecosystems that empower learners and educators alike.",
         ],
       },
       testimonial: {
         description:
-          "We’ve worked with Harich Tech more than once, and each time they’ve delivered beyond expectations. For our Shilp project, we needed a digital presence that not only looked premium but also resonated with our audience - and Harich got it absolutely right.They understood the nuances of real estate presentation - from highlighting projects to optimizing the layout for easy navigation. The site is fast, functional, and communicates the value of the project clearly. Their team was proactive, responsive, and always aligned with our vision. ",
+          "We’ve worked with Harich Tech more than once, and each time they’ve delivered beyond expectations. For our Shilp project, we needed a digital presence that not only looked premium but also resonated with our audience and Harich got it absolutely right.They understood the nuances of real estate presentation from highlighting projects to optimizing the layout for easy navigation. The site is fast, functional, and communicates the value of the project clearly. Their team was proactive, responsive, and always aligned with our vision. ",
         name: "- Yash Brahmbhatt",
         designation: "CEO of Shilp Group",
         profile: Helper.yashProfile,
@@ -1475,7 +1492,7 @@ export const industiesData = [
       title: "Industries We",
       blueTitle: "Serve",
       description:
-        "Our React.js development services are industry-agnostic, with successful projects across various sectors",
+        "Our React.js development services are industry agnostic, with successful projects across various sectors",
       cards: [
         {
           id: 1,
@@ -1496,60 +1513,65 @@ export const industiesData = [
           icons: Helper.FinanceSvg,
           title: "Finance & Fintech",
           description:
-            "We build secure, responsive dashboards and platforms for financial institutions, with real-time data visualization and transaction tracking.",
+            "We build secure, responsive dashboards and platforms for financial institutions, with real time data visualization and transaction tracking.",
         },
         {
           id: 4,
           icons: Helper.RealEstateSvg,
           title: "Real Estate",
           description:
-            "We develop property portals, CRM integrations, booking systems, and map-based project listings optimized for lead generation and customer experience.",
+            "We develop property portals, CRM integrations, booking systems, and map based project listings optimized for lead generation and customer experience.",
         },
         {
           id: 6,
           icons: Helper.RetailStore,
           title: "Retail",
           description:
-            "Inventory management dashboards, sales tools, and consumer-facing web interfaces optimized for real-time updates and mobile-first interactions.",
+            "Inventory management dashboards, sales tools, and consumer facing web interfaces optimized for real time updates and mobile first interactions.",
         },
       ],
     },
     faqSection: {
-      title: "FAQ",
+      title: "FAQs",
       ponits: [
         {
-          title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
+          title:
+            "How does digital transformation improve student learning experiences?",
           description: [
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+            "It allows for interactive lessons, personalized study plans, 24/7 access to learning materials, real-time performance tracking, and engaging digital content, making learning more effective.",
           ],
         },
         {
-          title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
+          title: "Can digital transformation benefit teachers and educators?",
           description: [
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+            "Yes, Teachers get access to automated grading, student progress insights, smart scheduling, content-sharing platforms, and collaboration tools, saving time and improving efficiency.",
           ],
         },
         {
-          title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
+          title:
+            "How can schools ensure digital learning is accessible to all students?",
           description: [
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+            "By implementing cloud-based platforms, mobile learning apps, and offline-compatible resources, institutions can make education accessible even in remote areas.",
           ],
         },
         {
-          title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
+          title:
+            "Is digital transformation secure for educational institutions?",
           description: [
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+            "Absolutely. With secure cloud storage, encrypted student records, and access controls, institutions can protect data while complying with privacy regulations.",
           ],
         },
         {
-          title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
+          title:
+            "How can small coaching centers or institutes adopt digital transformation affordably?",
           description: [
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+            "They can use cost-effective LMS platforms, video conferencing tools, online assessments, and social media marketing to reach more students and improve operations.",
+          ],
+        },
+        {
+          title: "How does data analytics help in education?",
+          description: [
+            "Analytics helps track student performance, identify learning gaps, measure teaching effectiveness, and predict student success, supporting data-driven improvements.",
           ],
         },
       ],
@@ -1563,9 +1585,9 @@ export const industiesData = [
       title: "Bridging Physical and Digital Commerce Through",
       blueTitle: "Intelligent Retail Technology",
       descriptions: [
-        "The retail industry is evolving at an unprecedented pace. As consumer expectations shift toward seamless, personalized, and omnichannel shopping experiences, retailers must modernize their operations and customer engagement strategies. From brick-and-mortar stores to eCommerce marketplaces, the key to success lies in data-driven insights, scalable technology infrastructure, and integrated retail experiences.",
+        "The retail industry is evolving at an unprecedented pace. As consumer expectations shift toward seamless, personalized, and omnichannel shopping experiences, retailers must modernize their operations and customer engagement strategies. From brick and mortar stores to eCommerce marketplaces, the key to success lies in data driven insights, scalable technology infrastructure, and integrated retail experiences.",
         "At Harichtech, we empower retailers to embrace digital transformation with powerful, customized, and scalable retail IT solutions. We help businesses streamline operations, improve customer experience, unify sales channels, and unlock data to make smarter, faster decisions.",
-        "Whether you're a local chain expanding online or a global brand reimagining your retail strategy-our solutions are designed to support agility, customer loyalty, and sustainable growth.",
+        "Whether you're a local chain expanding online or a global brand reimagining your retail strategy our solutions are designed to support agility, customer loyalty, and sustainable growth.",
       ],
       rightSideImage: Helper.Retail,
     },
@@ -1624,49 +1646,49 @@ export const industiesData = [
         {
           id: 10,
           icon: Helper.RightTick,
-          title: "Franchise and Multi-location Retail Chains",
+          title: "Franchise and Multi location Retail Chains",
         },
       ],
     },
     whyChooseUsSection: {
-      title: "Our End-to-End Retail Technology Services",
+      title: "Our End to End Retail Technology Services",
       description: "",
       cards: [
         {
           id: 1,
           title: "Omnichannel Retail Platform Development",
           description:
-            "We build platforms that unify a retailer's online, in-store, and mobile channels for a consistent customer experience. Our solutions offer a centralized product catalog, real-time inventory sync, and a unified cart across all touchpoints.",
+            "We build platforms that unify a retailer's online, in store, and mobile channels for a consistent customer experience. Our solutions offer a centralized product catalog, real time inventory sync, and a unified cart across all touchpoints.",
         },
         {
           id: 2,
           title: "E-commerce Website & App Development",
           description:
-            "We create custom e-commerce websites and apps that are scalable and conversion-focused. Our platforms feature mobile-first design, smart filters, and SEO optimization, built on leading platforms like Shopify and WooCommerce.",
+            "We create custom ecommerce websites and apps that are scalable and conversion focused. Our platforms feature mobile first design, smart filters, and SEO optimization, built on leading platforms like Shopify and WooCommerce.",
         },
         {
           id: 3,
-          title: "Point-of-Sale (POS) System Integration",
+          title: "Point of Sale (POS) System Integration",
           description:
-            "We implement cloud-based POS systems that streamline in-store operations. These systems offer fast billing, loyalty program integration, and real-time sales reporting, all synced with your inventory and e-commerce platforms.",
+            "We implement cloud based POS systems that streamline in store operations. These systems offer fast billing, loyalty program integration, and real time sales reporting, all synced with your inventory and e-commerce platforms.",
         },
         {
           id: 4,
           title: "Inventory & Supply Chain Management Systems",
           description:
-            "We develop systems to optimize your inventory and supply chain. Our solutions provide multi-warehouse stock visibility, automatic reordering alerts, and SKU-level tracking to prevent stockouts and reduce operational costs.",
+            "We develop systems to optimize your inventory and supply chain. Our solutions provide multi warehouse stock visibility, automatic reordering alerts, and SKU level tracking to prevent stockouts and reduce operational costs.",
         },
         {
           id: 5,
           title: "Customer Relationship Management (CRM)",
           description:
-            "We build retail-specific CRM platforms to improve customer retention. Our tools centralize customer profiles, track purchase history, and enable segmented marketing campaigns to deliver personalized experiences.",
+            "We build retail specific CRM platforms to improve customer retention. Our tools centralize customer profiles, track purchase history, and enable segmented marketing campaigns to deliver personalized experiences.",
         },
         {
           id: 6,
           title: "Retail Analytics & Business Intelligence",
           description:
-            "We provide analytics dashboards that transform data into actionable insights. Our tools track sales trends, product performance, and customer lifetime value (CLTV), helping you make smarter, data-driven business decisions.",
+            "We provide analytics dashboards that transform data into actionable insights. Our tools track sales trends, product performance, and customer lifetime value (CLTV), helping you make smarter, data driven business decisions.",
         },
         {
           id: 7,
@@ -1678,7 +1700,7 @@ export const industiesData = [
           id: 8,
           title: "Loyalty, Rewards & Membership Programs",
           description:
-            "We build custom loyalty programs that incentivize repeat purchases. Our solutions feature tiered membership levels, personalized rewards, and real-time point redemption to turn one-time buyers into loyal brand advocates.",
+            "We build custom loyalty programs that incentivize repeat purchases. Our solutions feature tiered membership levels, personalized rewards, and real time point redemption to turn one time buyers into loyal brand advocates.",
         },
       ],
     },
@@ -1689,9 +1711,9 @@ export const industiesData = [
       cards: [
         {
           id: 1,
-          title: "Industry-Specific Expertise",
+          title: "Industry Specific Expertise",
           description:
-            "We understand the fast-moving dynamics of retail from inventory cycles to seasonal sales patterns. Our solutions are informed by real-world business needs and customer behavior.",
+            "We understand the fast moving dynamics of retail from inventory cycles to seasonal sales patterns. Our solutions are informed by real world business needs and customer behavior.",
         },
         {
           id: 2,
@@ -1713,16 +1735,16 @@ export const industiesData = [
         },
         {
           id: 5,
-          title: "Data-Driven Strategy",
+          title: "Data Driven Strategy",
           description:
-            "From loyalty campaigns to sales planning, our platforms enable data-backed decisions that improve ROI and customer satisfaction.",
+            "From loyalty campaigns to sales planning, our platforms enable data backed decisions that improve ROI and customer satisfaction.",
         },
       ],
     },
     connectUsSection: {
       title: "Powering the Future of Retail with Technology",
       descriptions: [
-        "The modern retail landscape is driven by agility, personalization, and convenience. At Harichtech, we help brands harness technology to create engaging shopping journeys, intelligent operations, and measurable growth.Let’s talk about building secure, scalable, and customer-centric solutions for your retail success.",
+        "The modern retail landscape is driven by agility, personalization, and convenience. At Harichtech, we help brands harness technology to create engaging shopping journeys, intelligent operations, and measurable growth.Let’s talk about building secure, scalable, and customer centric solutions for your retail success.",
       ],
       btnTitle: "Connect With us",
     },
@@ -1755,19 +1777,19 @@ export const industiesData = [
           {
             id: 5,
             points:
-              "Unified customer database across in-store and online channels",
+              "Unified customer database across in store and online channels",
           },
         ],
         descriptions: [
-          "We focus on building systems that not only power transactions-but build long-term brand value",
+          "We focus on building systems that not only power transactions but build long term brand value",
         ],
       },
       testimonial: {
         description:
-          "We’ve worked with Harich Tech more than once, and each time they’ve delivered beyond expectations. For our Shilp project, we needed a digital presence that not only looked premium but also resonated with our audience - and Harich got it absolutely right.They understood the nuances of real estate presentation - from highlighting projects to optimizing the layout for easy navigation. The site is fast, functional, and communicates the value of the project clearly. Their team was proactive, responsive, and always aligned with our vision. ",
-        name: "- Yash Brahmbhatt",
-        designation: "CEO of Shilp Group",
-        profile: Helper.yashProfile,
+          "At Insight Management, everything we do is about creating unforgettable experiences - and we needed a website that could reflect that same energy and precision online. Harich Tech got it right from the start. They understood our brand vision - modern, dynamic, and detail-driven - and translated it into a site that truly feels like an extension of who we are. It’s clean, fast, visually engaging, and easy to navigate. Most importantly, it captures the essence of what we do on-ground. With Harich, it never felt like a one-way brief - it was a creative partnership. The result speaks for itself.",
+        name: "- Amit Pandya",
+        designation: "CEO of Insight Management",
+        profile: Helper.AmitPandyaProfile,
       },
     },
     portfolioSection: {
@@ -1800,14 +1822,14 @@ export const industiesData = [
       title: "Industries We",
       blueTitle: "Serve",
       description:
-        "Our React.js development services are industry-agnostic, with successful projects across various sectors",
+        "Our React.js development services are industry agnostic, with successful projects across various sectors",
       cards: [
         {
           id: 1,
           icons: Helper.HealthcareSvg,
           title: "Healthcare / Pharma ",
           description:
-            "HIPAA-compliant web applications, teleconsultation portals, and digital patient management systems built with React.js for performance and reliability.",
+            "HIPAA compliant web applications, teleconsultation portals, and digital patient management systems built with React.js for performance and reliability.",
         },
         {
           id: 2,
@@ -1821,7 +1843,7 @@ export const industiesData = [
           icons: Helper.FinanceSvg,
           title: "Finance & Fintech",
           description:
-            "We build secure, responsive dashboards and platforms for financial institutions, with real-time data visualization and transaction tracking.",
+            "We build secure, responsive dashboards and platforms for financial institutions, with real time data visualization and transaction tracking.",
         },
         {
           id: 4,
@@ -1835,7 +1857,7 @@ export const industiesData = [
           icons: Helper.RetailStore,
           title: "Retail",
           description:
-            "Inventory management dashboards, sales tools, and consumer-facing web interfaces optimized for real-time updates and mobile-first interactions.",
+            "Inventory management dashboards, sales tools, and consumer facing web interfaces optimized for real time updates and mobile first interactions.",
         },
       ],
     },
@@ -1843,38 +1865,42 @@ export const industiesData = [
       title: "FAQ",
       ponits: [
         {
-          title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
+          title:
+            "How does digital transformation improve customer experience in retail?",
           description: [
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+            "It allows for personalized offers, contactless payments, self-checkout systems, seamless online-to-offline shopping, and 24/7 customer support, making shopping more convenient.",
           ],
         },
         {
-          title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
+          title: "Can digital transformation help retailers increase sales?",
           description: [
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+            "Yes, With personalized marketing, predictive analytics, and omnichannel engagement, retailers can boost conversions, reduce cart abandonment, and improve repeat purchases.",
           ],
         },
         {
-          title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
+          title: "How does data analytics support retail businesses?",
           description: [
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+            "Analytics helps track customer buying behavior, demand trends, pricing strategies, and inventory needs, enabling smarter decision-making",
           ],
         },
         {
-          title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
+          title: "Is digital transformation only for large retail chains?",
           description: [
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+            "No, Small and mid-sized retailers can also benefit by adopting cloud-based POS systems, e-commerce platforms, digital marketing, and mobile apps at affordable costs",
           ],
         },
         {
-          title: "Worem ipsum dolor sit amet, consectetur adipiscing elit.",
+          title:
+            "How does digital transformation impact supply chain management?",
           description: [
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
-            "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+            "It enables real-time inventory tracking, automated restocking, faster logistics, and demand forecasting, improving efficiency and reducing losses.",
+          ],
+        },
+        {
+          title:
+            "Can digital transformation help physical retail stores compete with e-commerce?",
+          description: [
+            "Yes, By creating omnichannel strategies, click and collect services, loyalty programs, and in-store digital experiences, physical stores can stay relevant and competitive.",
           ],
         },
       ],

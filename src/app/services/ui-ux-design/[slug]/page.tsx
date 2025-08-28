@@ -9,6 +9,7 @@ import { ServicesSection } from "@/components/ServicesAllPageComponent/ServicesS
 import { DevelopmentProcess } from "@/components/ServicesAllPageComponent/DevelopementProcess";
 import { TechStackSection } from "@/components/ServicesAllPageComponent/TechStackSection";
 import { IndustriesSection } from "@/components/ServicesAllPageComponent/IndustriesSection";
+import { FAQSection } from "@/components/ServicesAllPageComponent/FAQSection";
 
 export async function generateStaticParams() {
   // Make sure this includes ALL possible slug values, including 'website'
@@ -64,7 +65,7 @@ export default async function ServicePage({ params }: ServicePageProps) {
   }
 
   return (
-    <main className="py-36 ">
+    <main className="mt-33 py-4">
       <div className="px-4 sm:px-6 lg:px-16">
         <BannerSection
           title={service.bannerTitle.title}
@@ -120,6 +121,11 @@ export default async function ServicePage({ params }: ServicePageProps) {
           blueTitle={service.IndustriesSection.blueTitle}
           description={service.IndustriesSection.description}
           cards={service.IndustriesSection.cards}
+        />
+        <FAQSection
+          title={service.faqSection.title}
+          faqs={service.faqSection.ponits}
+          svg={service.faqSection.svgimage}
         />
       </div>
     </main>

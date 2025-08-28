@@ -8,7 +8,7 @@ export const OurProjects = {
       BannerSection: {
         icon: Helper.InsightLogo,
         description:
-          "At Insight, we believe the key to better decisions is already within reach - It just needs to be uncovered, organized, and understood. In most organizations, valuable knowledge lives in scattered documents, forgotten conversations, and siloed tools.",
+          "At Insight, we believe the key to better decisions is already within reach  It just needs to be uncovered, organized, and understood. In most organizations, valuable knowledge lives in scattered documents, forgotten conversations, and siloed tools.",
         button: {
           title: "Visit Website",
           href: "https://www.insightmanagement.in",
@@ -24,9 +24,9 @@ export const OurProjects = {
           title: "Project Overview",
           titleTextColor: "text-[#1B5AA7]",
           describation: [
-            "At Insight, we believe the key to better decisions is already within reach - It just needs to be uncovered, organized, and understood. In most organizations, valuable knowledge lives in scattered documents, forgotten conversations, and siloed tools. We’re here to change that.",
+            "At Insight, we believe the key to better decisions is already within reach  It just needs to be uncovered, organized, and understood. In most organizations, valuable knowledge lives in scattered documents, forgotten conversations, and siloed tools. We’re here to change that.",
             "Insight is a platform built to bring all your research, feedback, and findings into one intelligent, connected space. Whether you're gathering user interviews, analyzing surveys, or sharing internal learnings, we make it easy to turn information into clear, actionable understanding.",
-            "We partner with teams who value thoughtful decisions - product managers, researchers, strategists, and innovators - and help them work with greater clarity, speed, and alignment.",
+            "We partner with teams who value thoughtful decisions  product managers, researchers, strategists, and innovators  and help them work with greater clarity, speed, and alignment.",
             "Our mission is simple: to turn everyday information into powerful insight, and insight into impact.",
             "Because when you truly understand your world, you can shape it with confidence.",
           ],
@@ -70,7 +70,7 @@ export const OurProjects = {
         happyClintIcon: Helper.InsightHappyClient,
         profileImage: Helper.commonProfile,
         describation:
-          "At Insight Management, everything we do is about creating unforgettable experiences - and we needed a website that could reflect that same energy and precision online. Harich Tech got it right from the start. They understood our brand vision - modern, dynamic, and detail-driven - and translated it into a site that truly feels like an extension of who we are. It’s clean, fast, visually engaging, and easy to navigate. Most importantly, it captures the essence of what we do on-ground. With Harich, it never felt like a one-way brief - it was a creative partnership. The result speaks for itself.",
+          "At Insight Management, everything we do is about creating unforgettable experiences  and we needed a website that could reflect that same energy and precision online. Harich Tech got it right from the start. They understood our brand vision  modern, dynamic, and detail driven  and translated it into a site that truly feels like an extension of who we are. It’s clean, fast, visually engaging, and easy to navigate. Most importantly, it captures the essence of what we do on ground. With Harich, it never felt like a one way brief it was a creative partnership. The result speaks for itself.",
       },
     },
     {
@@ -79,7 +79,7 @@ export const OurProjects = {
       BannerSection: {
         icon: Helper.AarambhLogo,
         description:
-          "Shilp Aarambh GIFT City Run was conceived as a celebration of fitness, community, and a shared vision for a healthier, drug-free future. The event was born out of the idea that by coming together, we can make a difference in the lives of individuals struggling with drug addiction. It's an opportunity to raise awareness, promote a healthy lifestyle, and build a supportive community.",
+          "Shilp Aarambh GIFT City Run was conceived as a celebration of fitness, community, and a shared vision for a healthier, drug free future. The event was born out of the idea that by coming together, we can make a difference in the lives of individuals struggling with drug addiction. It's an opportunity to raise awareness, promote a healthy lifestyle, and build a supportive community.",
         button: {
           title: "Visit Website",
           href: "https://shilpaarambh.com",
@@ -96,7 +96,7 @@ export const OurProjects = {
           title: "Project Overview",
           titleTextColor: "text-[#E51D25]",
           describation: [
-            "Shilp Aarambh GIFT City Run was conceived as a celebration of fitness, community, and a shared vision for a healthier, drug-free future. The event was born out of the idea that by coming together, we can make a difference in the lives of individuals struggling with drug addiction. It's an opportunity to raise awareness, promote a healthy lifestyle, and build a supportive community.",
+            "Shilp Aarambh GIFT City Run was conceived as a celebration of fitness, community, and a shared vision for a healthier, drug free future. The event was born out of the idea that by coming together, we can make a difference in the lives of individuals struggling with drug addiction. It's an opportunity to raise awareness, promote a healthy lifestyle, and build a supportive community.",
           ],
         },
       },
@@ -134,7 +134,7 @@ export const OurProjects = {
         happyClintIcon: Helper.AarambhHappyClient,
         profileImage: Helper.AarambhProfile,
         describation:
-          "Shilp Aarambh - Gift City Run is a project that’s extremely close to my heart. It’s not just an event, it’s a statement of purpose, energy, and community spirit - and we needed a digital presence that could convey all of that in a crisp and inspiring way. Harich Tech understood the emotion behind Aarambh from the very beginning. The website they delivered is vibrant, forward-focused, and perfectly in sync with the theme of fresh starts and positive movement. Their team brought in not just design expertise, but a thoughtful approach to storytelling and user flow. It’s rare to find a digital partner who balances creativity with clarity - and Harich did exactly that.",
+          "Shilp Aarambh Gift City Run is a project that’s extremely close to my heart. It’s not just an event, it’s a statement of purpose, energy, and community spirit and we needed a digital presence that could convey all of that in a crisp and inspiring way. Harich Tech understood the emotion behind Aarambh from the very beginning. The website they delivered is vibrant, forward focused, and perfectly in sync with the theme of fresh starts and positive movement. Their team brought in not just design expertise, but a thoughtful approach to storytelling and user flow. It’s rare to find a digital partner who balances creativity with clarity and Harich did exactly that.",
       },
     },
     {
@@ -143,7 +143,7 @@ export const OurProjects = {
       BannerSection: {
         icon: Helper.MicroLogo,
         description:
-          "At Microb Range Pvt Ltd, we are dedicated to transforming global nutrition through innovative, science-backed solutions. By combining Spirulina, collagen, and other microbial advancements, we provide affordable, non-GMO, and chemical-free nutraceutical products that cater to diverse dietary needs. ",
+          "At Microb Range Pvt Ltd, we are dedicated to transforming global nutrition through innovative, science backed solutions. By combining Spirulina, collagen, and other microbial advancements, we provide affordable, non GMO, and chemical free nutraceutical products that cater to diverse dietary needs. ",
         button: {
           title: "Visit Website",
           href: "/",
@@ -159,8 +159,8 @@ export const OurProjects = {
           title: "Project Overview",
           titleTextColor: "text-[#4BBA72]",
           describation: [
-            "At Microb Range Pvt Ltd, we are dedicated to transforming global nutrition through innovative, science-backed solutions. By combining Spirulina, collagen, and other microbial advancements, we provide affordable, non-GMO, and chemical-free nutraceutical products that cater to diverse dietary needs. ",
-            "Our mission is to combat malnutrition and nutritional deficiencies while promoting overall health and well-being. With a focus on sustainability, inclusivity, and rigorous research, we strive to make balanced nutrition accessible to all.",
+            "At Microb Range Pvt Ltd, we are dedicated to transforming global nutrition through innovative, science backed solutions. By combining Spirulina, collagen, and other microbial advancements, we provide affordable, non-GMO, and chemical-free nutraceutical products that cater to diverse dietary needs. ",
+            "Our mission is to combat malnutrition and nutritional deficiencies while promoting overall health and well being. With a focus on sustainability, inclusivity, and rigorous research, we strive to make balanced nutrition accessible to all.",
           ],
         },
       },
@@ -202,7 +202,7 @@ export const OurProjects = {
         happyClintIcon: Helper.MicroHappyClient,
         profileImage: Helper.MicroProfile,
         describation:
-          "Mircorange, on the other hand, needed a different energy -  bold, vibrant, and creatively driven. Harich brought that flair while still maintaining clarity and structure. The site they built feels alive, engaging, and aligned with our dynamic identity. Even though Mircorange has a very different tone, Harich managed to give each its own space without compromising quality. Their versatility and design sense really stood out.",
+          "Mircorange, on the other hand, needed a different energy bold, vibrant, and creatively driven. Harich brought that flair while still maintaining clarity and structure. The site they built feels alive, engaging, and aligned with our dynamic identity. Even though Mircorange has a very different tone, Harich managed to give each its own space without compromising quality. Their versatility and design sense really stood out.",
       },
     },
     {
@@ -266,7 +266,7 @@ export const OurProjects = {
         happyClintIcon: Helper.ArkleHappyClient,
         profileImage: Helper.ArkleProfile,
         describation:
-          "I wanted Arkle’s website to reflect not just our facilities, but the passion we bring to equestrian sport. Harich delivered more than just a website - they built an experience that speaks to every rider and horse lover who visits us. Simple, elegant, and exactly what we needed.",
+          "I wanted Arkle’s website to reflect not just our facilities, but the passion we bring to equestrian sport. Harich delivered more than just a website they built an experience that speaks to every rider and horse lover who visits us. Simple, elegant, and exactly what we needed.",
       },
     },
     {
@@ -275,7 +275,7 @@ export const OurProjects = {
       BannerSection: {
         icon: Helper.ShilpLogo,
         description:
-          "Shilp Group, a leading real estate company in Ahmedabad, is built on the pillars of quality, integrity, and authenticity. Recognized for its innovative approach, cutting-edge designs, and commitment to excellence, Shilp Group has delivered over 50 landmark projects across the city. The company is known for identifying upcoming areas and creating modern, dynamic structures that meet market needs.",
+          "Shilp Group, a leading real estate company in Ahmedabad, is built on the pillars of quality, integrity, and authenticity. Recognized for its innovative approach, cutting edge designs, and commitment to excellence, Shilp Group has delivered over 50 landmark projects across the city. The company is known for identifying upcoming areas and creating modern, dynamic structures that meet market needs.",
         button: {
           title: "Visit Website",
           href: "https://shilpgroup.com",
@@ -291,7 +291,7 @@ export const OurProjects = {
           title: "Project Overview",
           titleTextColor: "text-black",
           describation: [
-            "Shilp Group, a leading real estate company in Ahmedabad, is built on the pillars of quality, integrity, and authenticity. Recognized for its innovative approach, cutting-edge designs, and commitment to excellence, Shilp Group has delivered over 50 landmark projects across the city. The company is known for identifying upcoming areas and creating modern, dynamic structures that meet market needs.",
+            "Shilp Group, a leading real estate company in Ahmedabad, is built on the pillars of quality, integrity, and authenticity. Recognized for its innovative approach, cutting edge designs, and commitment to excellence, Shilp Group has delivered over 50 landmark projects across the city. The company is known for identifying upcoming areas and creating modern, dynamic structures that meet market needs.",
             "Founded in 2004 by Mr. Yash Brahmbhatt, Shilp Group started with a small land acquisition and has since grown into a trusted brand shaping Ahmedabad’s skyline. It was the first to develop projects on Sindhu Bhavan Road, now a prime location, and continues to pioneer strategic real estate developments. Adapting to trends while staying true to timeless values, Shilp Group has also ventured into affordable housing and plotting schemes to meet evolving demands.",
           ],
         },
@@ -326,7 +326,7 @@ export const OurProjects = {
         happyClintIcon: Helper.ShilpHappyClient,
         profileImage: Helper.yashProfile,
         describation:
-          "We’ve worked with Harich Tech more than once, and each time they’ve delivered beyond expectations. For our Shilp project, we needed a digital presence that not only looked premium but also resonated with our audience - and Harich got it absolutely right.They understood the nuances of real estate presentation - from highlighting projects to optimizing the layout for easy navigation. The site is fast, functional, and communicates the value of the project clearly. Their team was proactive, responsive, and always aligned with our vision. ",
+          "We’ve worked with Harich Tech more than once, and each time they’ve delivered beyond expectations. For our Shilp project, we needed a digital presence that not only looked premium but also resonated with our audience and Harich got it absolutely right.They understood the nuances of real estate presentation from highlighting projects to optimizing the layout for easy navigation. The site is fast, functional, and communicates the value of the project clearly. Their team was proactive, responsive, and always aligned with our vision. ",
       },
     },
     {
@@ -334,8 +334,8 @@ export const OurProjects = {
       type: "yash-brambhatt",
       BannerSection: {
         icon: Helper.YashLogo,
-        description:
-          "Yash Brahmbhatt is a self-made, first-generation entrepreneur and the founder and CEO of Shilp Group, a leading real estate company in Ahmedabad. Coming from humble beginnings, he never waited for opportunities—he created them. With a strong vision and relentless drive, he has shaped both his journey and the city’s skyline. ",
+        description: 
+          "Yash Brahmbhatt is a self made, first generation entrepreneur and the founder and CEO of Shilp Group, a leading real estate company in Ahmedabad. Coming from humble beginnings, he never waited for opportunities—he created them. With a strong vision and relentless drive, he has shaped both his journey and the city’s skyline. ",
         button: {
           title: "Visit Website",
           href: "https://www.yashbrahmbhatt.in",
@@ -386,7 +386,7 @@ export const OurProjects = {
         happyClintIcon: Helper.YashHappyClient,
         profileImage: Helper.yashProfile,
         describation:
-          "As someone from the real estate and development industry, I value precision, clarity, and strong presentation. Harich delivered exactly that for YB Official. The website reflects my professional identity with a clean and well-structured design. Their team worked efficiently, understood the brief quickly, and executed it with finesse. It was a seamless experience from start to finish. ",
+          "As someone from the real estate and development industry, I value precision, clarity, and strong presentation. Harich delivered exactly that for YB Official. The website reflects my professional identity with a clean and well structured design. Their team worked efficiently, understood the brief quickly, and executed it with finesse. It was a seamless experience from start to finish. ",
       },
     },
     {
@@ -395,7 +395,7 @@ export const OurProjects = {
       BannerSection: {
         icon: Helper.SnehalLogo,
         description:
-          "Meet Snehal Brahmbhatt - a maverick, innovator, and changemaker. As the Founder of Snehshilp Foundation, COO of the prestigious Shilp Group, and Spousal Chair of the EO Gujarat Chapter, Snehal’s journey is anything but conventional. ",
+          "Meet Snehal Brahmbhatt a maverick, innovator, and changemaker. As the Founder of Snehshilp Foundation, COO of the prestigious Shilp Group, and Spousal Chair of the EO Gujarat Chapter, Snehal’s journey is anything but conventional. ",
         button: {
           title: "Visit Website",
           href: "https://snehalbrahmbhatt.com",
@@ -411,7 +411,7 @@ export const OurProjects = {
           title: "Project Overview",
           titleTextColor: "text-black",
           describation: [
-            "Meet Snehal Brahmbhatt - a maverick, innovator, and changemaker. As the Founder of Snehshilp Foundation, COO of the prestigious Shilp Group, and Spousal Chair of the EO Gujarat Chapter, Snehal’s journey is anything but conventional. Her passion for youth empowerment, community service, and leadership transcends boundaries, challenging societal norms and redefining what’s possible. With a fearless spirit and a mind that thrives on innovation, she doesn’t just follow the rules - she rewrites them. Snehal’s mission is to inspire, empower, and create a world where bold ideas ignite meaningful change.",
+            "Meet Snehal Brahmbhatt a maverick, innovator, and changemaker. As the Founder of Snehshilp Foundation, COO of the prestigious Shilp Group, and Spousal Chair of the EO Gujarat Chapter, Snehal’s journey is anything but conventional. Her passion for youth empowerment, community service, and leadership transcends boundaries, challenging societal norms and redefining what’s possible. With a fearless spirit and a mind that thrives on innovation, she doesn’t just follow the rules she rewrites them. Snehal’s mission is to inspire, empower, and create a world where bold ideas ignite meaningful change.",
             "Step into her world and witness a life driven by purpose, creativity, and a belief in the power of individuality.",
           ],
         },
@@ -472,7 +472,7 @@ export const OurProjects = {
           titleTextColor: "text-[#73BE5F]",
           describation: [
             "SnehShilp Foundation is the culmination of the years of hard work of Shilp. Shilp has been turning people’s dreams into reality since 2004 by keeping their needs in focus and building around them. We wish to take a leap now and give back to the society by doing what it takes to make a significant difference in people’s lives. SnehShilp Foundation has been established with the sole purpose of empowering, strengthening and enabling people to live a life they truly deserve.",
-            "We sincerely believe that helping others is not a matter of time, it is about feelings followed by dedication. It isn’t about doing great things; it is all about doing small things with great love. There is a lot of power in giving. Lending a hand to someone not only helps the one in need but greatly satisfies the thirst of the giver, the thirst of happiness and self-fulfillment.",
+            "We sincerely believe that helping others is not a matter of time, it is about feelings followed by dedication. It isn’t about doing great things; it is all about doing small things with great love. There is a lot of power in giving. Lending a hand to someone not only helps the one in need but greatly satisfies the thirst of the giver, the thirst of happiness and self fulfillment.",
           ],
         },
       },
@@ -506,7 +506,7 @@ export const OurProjects = {
         happyClintIcon: Helper.SnehShilpHappyClient,
         profileImage: Helper.SnehalProfile,
         describation:
-          "Sneh Shilp Foundation began as a heartfelt initiative, rooted in compassion and the desire to create real impact. It’s more than just an organisation - it’s a reflection of the values we believe in: care, dignity, and meaningful change. When we started working with Harich Tech, I hoped they’d understand that this wasn’t just about building a website - it was about telling our story with honesty and warmth. And they did just that. The site feels calm, clean, and genuine - exactly what we wanted. It doesn’t shout, it gently invites people to understand what we do. The Harich team listened closely, worked patiently, and brought our vision to life in a way that feels personal. I’m truly grateful for the heart they brought into this project.",
+          "Sneh Shilp Foundation began as a heartfelt initiative, rooted in compassion and the desire to create real impact. It’s more than just an organisation it’s a reflection of the values we believe in: care, dignity, and meaningful change. When we started working with Harich Tech, I hoped they’d understand that this wasn’t just about building a website it was about telling our story with honesty and warmth. And they did just that. The site feels calm, clean, and genuine exactly what we wanted. It doesn’t shout, it gently invites people to understand what we do. The Harich team listened closely, worked patiently, and brought our vision to life in a way that feels personal. I’m truly grateful for the heart they brought into this project.",
       },
     },
     {
@@ -638,7 +638,7 @@ export const OurProjects = {
       BannerSection: {
         icon: Helper.OreumLogo,
         description:
-          "A next-generation, compact air purification system powered by Spirulina and other high-performing microalgae—often referred to as “liquid trees” for their remarkable ability to convert CO₂ into oxygen at rates surpassing most terrestrial plants, our system enhances indoor environments by working in harmony with traditional greenery—not replacing, but reinforcing nature’s work. ",
+          "A next generation, compact air purification system powered by Spirulina and other high performing microalgae—often referred to as “liquid trees” for their remarkable ability to convert CO₂ into oxygen at rates surpassing most terrestrial plants, our system enhances indoor environments by working in harmony with traditional greenery—not replacing, but reinforcing nature’s work. ",
         button: {
           title: "Visit Website",
           href: "/",
@@ -655,7 +655,7 @@ export const OurProjects = {
           title: "Project Overview",
           titleTextColor: "text-black",
           describation: [
-            "A next-generation, compact air purification system powered by Spirulina and other high-performing microalgae—often referred to as “liquid trees” for their remarkable ability to convert CO₂ into oxygen at rates surpassing most terrestrial plants, our system enhances indoor environments by working in harmony with traditional greenery—not replacing, but reinforcing nature’s work. Beyond oxygenation, Orium’s advanced biofiltration technology actively reduces airborne bacterial load and removes harmful particulate matter (PM2.5 and PM10), making it ideal for homes, offices, and healthcare spaces. Constructed from biodegradable, recyclable materials and equipped with automated monitoring and control systems, Orium is a smart, sustainable solution for healthier indoor living.  ",
+            "A next generation, compact air purification system powered by Spirulina and other high performing microalgae—often referred to as “liquid trees” for their remarkable ability to convert CO₂ into oxygen at rates surpassing most terrestrial plants, our system enhances indoor environments by working in harmony with traditional greenery—not replacing, but reinforcing nature’s work. Beyond oxygenation, Orium’s advanced biofiltration technology actively reduces airborne bacterial load and removes harmful particulate matter (PM2.5 and PM10), making it ideal for homes, offices, and healthcare spaces. Constructed from biodegradable, recyclable materials and equipped with automated monitoring and control systems, Orium is a smart, sustainable solution for healthier indoor living.  ",
           ],
         },
       },
@@ -697,7 +697,7 @@ export const OurProjects = {
         happyClintIcon: Helper.OreumHappyClient,
         profileImage: Helper.MicroProfile,
         describation:
-          "With Orium, we wanted to position ourselves as a premium, next-gen air solutions brand. Harich Tech understood that vision from day one. They created a sleek, high-performance website that not only looks sharp but also works flawlessly across devices. Their team paid attention to the smallest details - from user flow to content placement - and delivered a platform that elevates the brand. It speaks to both our customers and our positioning",
+          "With Orium, we wanted to position ourselves as a premium, next gen air solutions brand. Harich Tech understood that vision from day one. They created a sleek, high performance website that not only looks sharp but also works flawlessly across devices. Their team paid attention to the smallest details from user flow to content placement and delivered a platform that elevates the brand. It speaks to both our customers and our positioning",
       },
     },
     {
@@ -724,7 +724,7 @@ export const OurProjects = {
           describation: [
             "Once upon a time, in a world where modern life often left people struggling to maintain their health, a vision was born—a vision of a healthier, more nourished world. This dream became Ever Vital, a trusted companion for those seeking balance in their busy lives.",
             "At Ever Vital, we believe that good health is not a luxury but a necessity—a cornerstone of a fulfilling and vibrant life. Guided by this belief, we set out on a mission as simple as it was profound: to make balanced nutrition accessible and affordable for all.",
-            "Imagine a family, their days filled with responsibilities and aspirations, yearning for wellness but unsure how to achieve it. Enter Ever Vital with its all-in-one nutraceutical solution—a blend of nature’s finest ingredients, crafted to fill the gaps in daily nutrition. ",
+            "Imagine a family, their days filled with responsibilities and aspirations, yearning for wellness but unsure how to achieve it. Enter Ever Vital with its all in one nutraceutical solution—a blend of nature’s finest ingredients, crafted to fill the gaps in daily nutrition. ",
           ],
         },
       },
@@ -762,7 +762,7 @@ export const OurProjects = {
         happyClintIcon: Helper.EverVitalHappyClient,
         profileImage: Helper.DarshilProfile,
         describation:
-          "In the health and wellness space, trust is everything - and your digital presence plays a big role in that. Harich Tech instinctively understood what Ever Vital was all about - they captured our need for clean design, a calming visual presence, and effortless user experience without needing constant direction. The website they created feels professional yet approachable - exactly the tone we were aiming for. It reflects our values and builds credibility from the first click. Our users have responded positively, and we’ve seen real engagement since the launch. Harich brought a thoughtful approach to the process, and it shows in the final result.",
+          "In the health and wellness space, trust is everything and your digital presence plays a big role in that. Harich Tech instinctively understood what Ever Vital was all about they captured our need for clean design, a calming visual presence, and effortless user experience without needing constant direction. The website they created feels professional yet approachable exactly the tone we were aiming for. It reflects our values and builds credibility from the first click. Our users have responded positively, and we’ve seen real engagement since the launch. Harich brought a thoughtful approach to the process, and it shows in the final result.",
       },
     },
   ],

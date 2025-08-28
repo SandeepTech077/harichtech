@@ -199,8 +199,8 @@ const Header = () => {
       <header
         className={`fixed left-0 right-0 w-full z-40 transition-all duration-300 ${
           scrolled
-            ? "top-0 bg-white shadow-lg"
-            : "sm:top-12 top-0 bg-white/98 backdrop-blur-md shadow-lg"
+            ? "top-0 bg-white"
+            : "sm:top-12 top-0 bg-white/98 backdrop-blur-md"
         }`}
       >
         <div className="w-full max-w-full">

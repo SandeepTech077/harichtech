@@ -1,23 +1,23 @@
-import React, { useState } from "react";
+import React from "react";
 
 interface FAQItemProps {
   title: string;
   descriptions: string[];
-  defaultOpen?: boolean;
+  isOpen: boolean; // controlled open/close
+  onToggle: () => void; // handler from parent
 }
 
 export const FAQItem: React.FC<FAQItemProps> = ({
   title,
   descriptions,
-  defaultOpen = false,
+  isOpen,
+  onToggle,
 }) => {
-  const [isOpen, setIsOpen] = useState(defaultOpen);
-
   return (
     <div className="bg-white rounded-lg shadow-md">
       <button
         className="w-full p-6 text-left hover:bg-gray-50 font-semibold text-gray-800 flex justify-between items-center"
-        onClick={() => setIsOpen(!isOpen)}
+        onClick={onToggle}
       >
         <span>{title}</span>
         <span className="text-xl font-bold text-blue-600">

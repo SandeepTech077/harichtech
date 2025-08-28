@@ -4,6 +4,7 @@ import React from "react";
 import Image, { StaticImageData } from "next/image";
 import Title from "../Title";
 import Button from "../Button";
+import { motion } from "framer-motion";
 
 interface DataProps {
   title: string;
@@ -21,7 +22,13 @@ const ServiceDetailCard = ({ data }: ServiceDetailCardProps) => {
   return (
     <article className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 xl:gap-16 items-center">
       {/* Content Section */}
-      <div className="flex flex-col gap-6 lg:gap-8">
+      <motion.div
+        initial={{ opacity: 0, x: -50 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.7, ease: "easeOut" }}
+        viewport={{ once: true }}
+        className="flex flex-col gap-6 lg:gap-8"
+      >
         {/* Title Badge */}
         <div className="w-fit">
           <Title title={data.title} />
@@ -40,17 +47,20 @@ const ServiceDetailCard = ({ data }: ServiceDetailCardProps) => {
         {/* Call to Action Button */}
         {data.btnTitle && (
           <div className="mt-2">
-            <Button 
-              text={data.btnTitle}
-             href="/contact-us"
-            />
+            <Button text={data.btnTitle} href="/contact-us" />
           </div>
         )}
-      </div>
+      </motion.div>
 
       {/* Image Section */}
       {data.BannerRight && (
-        <div className="relative flex justify-center lg:justify-end">
+        <motion.div
+          initial={{ opacity: 0, scale: 0.9 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          viewport={{ once: true }}
+          className="relative flex justify-center lg:justify-end"
+        >
           <div className="relative w-full max-w-lg lg:max-w-xl xl:max-w-2xl">
             <Image
               src={data.BannerRight}
@@ -58,10 +68,9 @@ const ServiceDetailCard = ({ data }: ServiceDetailCardProps) => {
               width={600}
               height={300}
               className="w-full h-100 object-contain drop-shadow-lg"
-              
             />
           </div>
-        </div>
+        </motion.div>
       )}
     </article>
   );

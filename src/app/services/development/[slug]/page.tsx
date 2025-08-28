@@ -11,6 +11,7 @@ import { DevelopmentProcess } from "@/components/ServicesAllPageComponent/Develo
 import { TechStackSection } from "@/components/ServicesAllPageComponent/TechStackSection";
 import { IndustriesSection } from "@/components/ServicesAllPageComponent/IndustriesSection";
 import { PortfolioSection } from "@/components/ServicesAllPageComponent/PortfolioSection";
+import MotionComponent from "@/Animation/MotionComponent";
 
 export async function generateStaticParams() {
   return ServicePageDataWebDevelopement.map((service) => ({
@@ -34,7 +35,7 @@ export default async function ServicePage({ params }: ServicePageProps) {
   }
 
   return (
-    <main className="py-36 ">
+    <main className="mt-33 py-4 ">
       <div className="px-4 sm:px-6 lg:px-16">
         <BannerSection
           title={service.bannerTitle.title}
@@ -91,12 +92,15 @@ export default async function ServicePage({ params }: ServicePageProps) {
           description={service.IndustriesSection.description}
           cards={service.IndustriesSection.cards}
         />
-        <PortfolioSection
-          title={service.portfolioSection.title}
-          blueTitle={service.portfolioSection.blueTitle}
-          projects={service.portfolioSection.projects}
-          buttonTitle={service.portfolioSection.btnTitle}
-        />
+
+        <MotionComponent type="fadeIn" duration={1} delay={0.3}>
+          <PortfolioSection
+            title={service.portfolioSection.title}
+            blueTitle={service.portfolioSection.blueTitle}
+            projects={service.portfolioSection.projects}
+            buttonTitle={service.portfolioSection.btnTitle}
+          />
+        </MotionComponent>
         <FAQSection
           title={service.faqSection.title}
           faqs={service.faqSection.ponits}

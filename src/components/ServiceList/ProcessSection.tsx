@@ -1,7 +1,10 @@
+"use client";
+
 import Image from "next/image";
 import React from "react";
 import Arrow from "../../../public/SVG/Arrow 4.svg";
 import Title from "../Title";
+import { motion } from "framer-motion";
 
 interface ProcessStep {
   id: number;
@@ -20,8 +23,35 @@ interface ProcessComponentProps {
   processData: ProcessData;
 }
 
-const ProcessComponent: React.FC<ProcessComponentProps> = ({ processData }) => {
+const   ProcessComponent: React.FC<ProcessComponentProps> = ({ processData }) => {
   const { title, subTitle, shortDescribation, steps } = processData;
+
+  // Animation variants
+  const stepVariant = {
+    hidden: { opacity: 0, y: 50 },
+    visible: (i: number) => ({
+      opacity: 1,
+      y: 0,
+      transition: {
+        delay: i * 0.3, // stagger each step
+        duration: 0.6,
+        ease: "easeOut",
+      },
+    }),
+  };
+
+  const arrowVariant = {
+    hidden: { opacity: 0, scale: 0.8 },
+    visible: (i: number) => ({
+      opacity: 1,
+      scale: 1,
+      transition: {
+        delay: i * 0.3 + 0.2, // appear right after step
+        duration: 0.5,
+        ease: "easeOut",
+      },
+    }),
+  };
 
   return (
     <div className="pt-10 mx-auto px-4">
@@ -42,36 +72,47 @@ const ProcessComponent: React.FC<ProcessComponentProps> = ({ processData }) => {
         {steps.map((step, index) => (
           <React.Fragment key={step.id}>
             {/* Step Card */}
-            <div className="relative flex-1 z-10 w-full h-auto">
-              <div className="bg-blue-600 text-white py-16 w-full rounded-lg text-center relative">
+            <motion.div
+              className="relative flex-1 z-10 w-full h-auto"
+              variants={stepVariant}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              custom={index}
+            >
+              <div className="bg-blue-600 text-white py-16 w-full rounded-lg text-center relative shadow-lg hover:scale-105 transition-transform duration-300">
                 <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 w-16 h-16 rounded-full bg-white border border-blue-200 shadow-md flex items-center justify-center">
                   <span className="text-blue-600 font-bold text-lg">
                     {step.number}
                   </span>
                 </div>
-                <div className="mt-6">{step.title}</div>
+                <div className="mt-6 text-lg font-semibold">{step.title}</div>
               </div>
-            </div>
+            </motion.div>
 
             {/* Arrow Between Steps */}
             {index < steps.length - 1 && (
-              <div
+              <motion.div
                 className="hidden md:block absolute -top-16 z-0"
                 style={{
                   left: `calc((100% / ${steps.length}) * ${index + 1} - 80px)`,
                 }}
+                variants={arrowVariant}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                custom={index}
               >
-              <div className="relative w-40 h-[60px]">
-  <Image
-    src={Arrow}
-    alt="Arrow"
-    fill
-    className="object-contain"
-    priority
-  />
-</div>
-
-              </div>
+                <div className="relative w-40 h-[60px]">
+                  <Image
+                    src={Arrow}
+                    alt="Arrow"
+                    fill
+                    className="object-contain"
+                    priority
+                  />
+                </div>
+              </motion.div>
             )}
           </React.Fragment>
         ))}

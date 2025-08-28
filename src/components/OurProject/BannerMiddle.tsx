@@ -12,15 +12,15 @@ interface BannerMiddleProps {
 
 const BannerMiddle: React.FC<BannerMiddleProps> = ({ data }) => {
   return (
-    <section className="relative w-full h-[38vh] mt-10 overflow-hidden">
+    <section className="relative w-full h-[40dvh] md:h-[100vh] mt-10">
       {/* Desktop Banner */}
       <div className="hidden md:block absolute inset-0 z-0 w-full h-full">
         <Image
           src={data.Banner}
-          alt="Middle Banner"
           fill
-          className="object-contain"
+          alt="Middle Banner"
           priority
+          className="object-cover"
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 100vw"
         />
       </div>

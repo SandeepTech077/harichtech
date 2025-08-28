@@ -52,6 +52,7 @@ export const IndustriesSection: React.FC<IndustriesSectionProps> = ({
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: index * 0.2 }}
+                className="h-full"
               >
                 <IndustryCard
                   title={card.title}

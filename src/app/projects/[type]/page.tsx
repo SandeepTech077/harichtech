@@ -32,7 +32,7 @@ const PortfolioDetail = async ({ params }: Props) => {
       <OverView data={project.projectOverView} />
       <BannerMiddle data={project.MiddleBannerSection} />
       <DesignComponent data={project.design} />
-      <ReviewComponent data={project.review} />
+      {/* <ReviewComponent data={project.review} /> */}
       <div className="px-4 lg:px-20 py-10 pt-10">
         <GetInTouch
           title="Ready to Accelerate Your Digital Journey?"

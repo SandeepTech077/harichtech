@@ -84,7 +84,7 @@ export const ServiceListData = {
         titleDescribation:
           "Before the first pixel, we’re focused on what matters most: your vision.",
         describation:
-          "With thoughtful planning, clean design, and smart technology, we build solutions that perform. We value timelines, communication, and craft - delivering work that’s both strategic and beautiful. At Harich Tech, you don’t just get a service - you gain a partner.",
+          "With thoughtful planning, clean design, and smart technology, we build solutions that perform. We value timelines, communication, and craft  delivering work that’s both strategic and beautiful. At Harich Tech, you don’t just get a service you gain a partner.",
         list: [
           {
             id: 1,
@@ -119,7 +119,7 @@ export const ServiceListData = {
         title: "Services",
         subtitle: "Mobile App Development",
         describation:
-          "Our mobile app development services deliver innovative, high-performance applications tailored to your business goals. We create engaging native and cross-platform apps for iOS and Android, focusing on seamless functionality, robust architecture, and scalability. From concept to launch, we build solutions that connect users, drive engagement, and foster growth.",
+          "Our mobile app development services deliver innovative, high performance applications tailored to your business goals. We create engaging native and cross platform apps for iOS and Android, focusing on seamless functionality, robust architecture, and scalability. From concept to launch, we build solutions that connect users, drive engagement, and foster growth.",
         btnTitle: "Consult our Creative Design Team",
         BannerRight: Helper.MobileBanner,
       },
@@ -192,7 +192,7 @@ export const ServiceListData = {
         titleDescribation:
           "Before the first pixel, we’re focused on what matters most: your vision.",
         describation:
-          "With thoughtful planning, clean design, and smart technology, we build solutions that perform. We value timelines, communication, and craft - delivering work that’s both strategic and beautiful. At Harich Tech, you don’t just get a service - you gain a partner.",
+          "With thoughtful planning, clean design, and smart technology, we build solutions that perform. We value timelines, communication, and craft delivering work that’s both strategic and beautiful. At Harich Tech, you don’t just get a service you gain a partner.",
         list: [
           {
             id: 1,
@@ -227,7 +227,7 @@ export const ServiceListData = {
         title: "Services",
         subtitle: "Web Development",
         describation:
-          "We design and develop dynamic, responsive websites that captivate users and achieve business objectives. Our team specializes in creating scalable, secure, and feature-rich web solutions, from corporate websites to e-commerce platforms. By integrating modern technologies, we deliver seamless experiences that align with your brand and empower digital success.",
+          "We design and develop dynamic, responsive websites that captivate users and achieve business objectives. Our team specializes in creating scalable, secure, and feature rich web solutions, from corporate websites to ecommerce platforms. By integrating modern technologies, we deliver seamless experiences that align with your brand and empower digital success.",
         btnTitle: "Consult our Creative Design Team",
         BannerRight: Helper.WebBanner,
       },
@@ -263,10 +263,10 @@ export const ServiceListData = {
         title: "Design Services",
         subTitle: "Our Core Services",
         services: [
-          "Native apps(iOS and Android)",
-          "Hybrid apps",
-          "Cross platform apps",
-          "Progressive web apps",
+          "Front end Development (Client side)",
+          "Back end Development (Server side)",
+          "Full stack Development",
+          "Static Site Generation/ Single Page Applications",
         ],
       },
       portfolio: {
@@ -300,7 +300,7 @@ export const ServiceListData = {
         titleDescribation:
           "Before the first pixel, we’re focused on what matters most: your vision.",
         describation:
-          "With thoughtful planning, clean design, and smart technology, we build solutions that perform. We value timelines, communication, and craft - delivering work that’s both strategic and beautiful. At Harich Tech, you don’t just get a service - you gain a partner.",
+          "With thoughtful planning, clean design, and smart technology, we build solutions that perform. We value timelines, communication, and craft   delivering work that’s both strategic and beautiful. At Harich Tech, you don’t just get a service you gain a partner.",
         list: [
           {
             id: 1,
@@ -335,7 +335,7 @@ export const ServiceListData = {
         title: "Services",
         subtitle: "Digital Marketing Services",
         describation:
-          "Our digital marketing services amplify your brand’s online presence, driving visibility and growth. We craft strategic campaigns that combine SEO, social media, content marketing, and paid advertising. With data-driven insights and creative execution, we help businesses connect with their audiences, generate leads, and achieve measurable results in the digital landscape.",
+          "Our digital marketing services amplify your brand’s online presence, driving visibility and growth. We craft strategic campaigns that combine SEO, social media, content marketing, and paid advertising. With data driven insights and creative execution, we help businesses connect with their audiences, generate leads, and achieve measurable results in the digital landscape.",
         btnTitle: "Consult our Creative Design Team",
         BannerRight: Helper.DigitalBanner,
       },
@@ -347,7 +347,7 @@ export const ServiceListData = {
         steps: [
           {
             id: 1,
-            title: "In-depth Analysis",
+            title: "In depth Analysis",
             number: "01",
           },
           {
@@ -372,7 +372,7 @@ export const ServiceListData = {
         subTitle: "Our Digital Marketing Services",
         services: [
           "Search Engine Optimization (SEO)",
-          "Pay-Per-Click (PPC) Advertising",
+          "Pay Per Click (PPC) Advertising",
           "Social Media Marketing",
           "Content Marketing",
           "Email Marketing",

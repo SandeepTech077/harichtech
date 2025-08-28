@@ -17,10 +17,11 @@ export default function ServicesPage() {
         <ServiceTitleSection serviceTitle={serviceTitle} />
       </MotionComponent>
 
-      <ServicesSection services={services} />
+      <MotionComponent type="bounce" duration={1} delay={0.75}>
+        <ServicesSection services={services} />
+      </MotionComponent>
       <OurClients data={HomePagedata.ourClient} />
       <WhyChooseUs whyUsData={whyUs} />
-     
     </main>
   );
 }

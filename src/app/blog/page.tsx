@@ -11,13 +11,10 @@ export default function BlogPage() {
       {/* Animated Banner Section */}
       <MotionComponent type="slideIn" duration={1} delay={0.3}>
         <BannerSection
-          id={bannerData.id}
-          banner={bannerData.banner}
-          mobileBanner={bannerData.mobileBanner}
-          title={bannerData.title}
-          describation={bannerData.description}
-          btnRedirect={bannerData.btnRedirect}
-          btnArrowSvg={bannerData.btnArrowSvg}
+          buttonText={bannerData.buttonText}
+          buttonHref={bannerData.buttonHref}
+          heading={bannerData.heading}
+          highlightText={bannerData.highlightText}
         />
       </MotionComponent>
 

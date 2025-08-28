@@ -88,7 +88,7 @@ import EcommoarceSvg from "../../public/Image/ServicesPagesAllImages/serve/e-com
 import FinanceSvg from "../../public/Image/ServicesPagesAllImages/serve/finance.svg"
 import HealthcareSvg from "../../public/Image/ServicesPagesAllImages/serve/healthcare.svg"
 import EducationSvg from "../../public/Image/ServicesPagesAllImages/serve/eduction.svg"
-import RetailStore from "../../public/Image/ServicesPagesAllImages/serve/real-estate.svg"
+import RetailStore from "../../public/Image/ServicesPagesAllImages/serve/store.svg"
 
 export const Helper = {
   KnownImage,

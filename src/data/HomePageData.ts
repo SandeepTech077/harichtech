@@ -132,7 +132,7 @@ export const HomePagedata = {
           },
         ],
         describation:
-          "We craft high performance solutions that are fast, reliable, and built to scale with confidence.",
+          "Our mobile app development services deliver innovative, high performance applications tailored to your business goals.",
       },
       {
         id: 3,
@@ -153,7 +153,7 @@ export const HomePagedata = {
           },
         ],
         describation:
-          "We craft high performance solutions that are fast, reliable, and built to scale with confidence.",
+          "We design and develop dynamic, responsive websites that captivate users and achieve business objectives. ",
       },
       {
         id: 4,
@@ -182,7 +182,7 @@ export const HomePagedata = {
           },
         ],
         describation:
-          "We craft high performance solutions that are fast, reliable, and built to scale with confidence.",
+          "Our digital marketing services amplify your brand’s online presence, driving visibility and growth.",
       },
     ],
   },
@@ -443,7 +443,7 @@ export const HomePagedata = {
       {
         id: 4,
         icons: Helper.HealthcareSvg,
-        title: "Healthcare / Pharma ",
+        title: "Healthcare & Pharma ",
         description:
           "HIPAA compliant web applications, teleconsultation portals, and digital patient management systems built with React.js for performance and reliability.",
       },
