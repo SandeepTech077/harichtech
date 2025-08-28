@@ -5,9 +5,9 @@ import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import Logo from "../../../public/Logo/logo-white.svg";
-import facebookLogo from "../../../public/SVG/facebook-logo.svg";
-import instagramLogo from "../../../public/SVG/instagram-logo.svg";
-import linkedinLogo from "../../../public/SVG/linkedin-logo.svg";
+import facebookLogo from "../../../public/SVG/footer-facebook.svg";
+import instagramLogo from "../../../public/SVG/footer-instagram.svg";
+import linkedinLogo from "../../../public/SVG/footer-linkdin.svg";
 import { sendFooterMessage } from "@/api/base"
 
 const Footer = () => {
@@ -140,7 +140,7 @@ const Footer = () => {
                       className="w-10 h-10 sm:w-11 sm:h-11 lg:w-12 lg:h-12 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110 active:scale-95"
                       aria-label={`Visit our ${social.name} profile`}
                     >
-                      <div className="w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6 relative">
+                      <div className="w-10 h-10  relative">
                         <Image src={social.icon} alt={social.name} fill className="object-contain" />
                       </div>
                     </a>
@@ -230,9 +230,7 @@ const Footer = () => {
                     name="phone"
                     value={FooterState.phone}
                     onChange={(e) => {
-                      // sirf digits allow
                       let value = e.target.value.replace(/\D/g, "");
-                      // max 10 digit hi rakho
                       if (value.length > 10) {
                         value = value.slice(0, 10);
                       }
@@ -241,7 +239,7 @@ const Footer = () => {
                     inputMode="numeric" // mobile keyboard number only
                     pattern="[0-9]*"
                     disabled={isSubmitting}
-                    className={`"w-full px-4 py-3 bg-transparent border border-white/30 rounded-lg text-white" $
+                    className={`w-full px-4 py-3 bg-transparent border border-white/30 rounded-lg text-white $
                       FooterState.phone ?
                     `}
                     placeholder="Moblie No."

@@ -24,7 +24,7 @@ export const sendEmailMessage = async (formState: {
       formState
     );
     return { ok: response.status === 200, result: response.data };
-  } catch (error: any) {
+  } catch (error) {
     console.error("Email API error:", error);
     throw error;
   }
@@ -43,7 +43,7 @@ export const sendFooterMessage = async (FooterState: {
       FooterState
     );
     return { ok: response.status === 200, result: response.data };
-  } catch (error: any) {
+  } catch (error) {
     console.error("Footer API error:", error);
     throw error;
   }

@@ -3,8 +3,22 @@ import React, { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import Image, { StaticImageData } from "next/image";
 
+interface BlogSection {
+  sectionTitle?: string;
+  description?: string | string[];
+  bullets?: string[];
+}
+
+interface Blog {
+  title: string;
+  description?: string | string[];
+  bullets?: string[];
+  sections?: BlogSection[];
+}
+
+
 interface BlogContentProps {
-  blogs: any[];
+  blogs: Blog[];
   title: string;
   Banner: StaticImageData;
   mobileBanner: StaticImageData;
@@ -21,14 +35,16 @@ const BlogContent: React.FC<BlogContentProps> = ({
 
   // Scroll to section
   const scrollToSection = (index: number) => {
-    const section = sectionRefs.current[index + 1]; // +1 because intro = -1
+    const section = sectionRefs.current[index + 1]; // ✅ matches above
     if (section) {
       window.scrollTo({
         top: section.offsetTop - 100,
         behavior: "smooth",
       });
+      setActiveSection(index); // ✅ highlight immediately
     }
   };
+
 
   // Track active section on scroll
   useEffect(() => {
@@ -38,7 +54,7 @@ const BlogContent: React.FC<BlogContentProps> = ({
 
       sectionRefs.current.forEach((sec, index) => {
         if (sec && sec.offsetTop <= scrollPos) {
-          foundActive = index - 1; // shift back (-1 = intro)
+          foundActive = index - 1; // ✅ shift back (-1 = intro, 0 = first blog)
         }
       });
 
@@ -93,7 +109,7 @@ const BlogContent: React.FC<BlogContentProps> = ({
     );
   };
 
-  const renderSection = (section: any, index: number) => (
+  const renderSection = (section: BlogSection, index: number) => (
     <div key={index} className="mb-6 sm:mb-8">
       {section.sectionTitle && (
         <h3 className="text-lg sm:text-xl lg:text-2xl font-semibold text-gray-800 mb-3 sm:mb-4">
@@ -105,11 +121,11 @@ const BlogContent: React.FC<BlogContentProps> = ({
     </div>
   );
 
-  const renderBlogSection = (blog: any, index: number) => (
+  const renderBlogSection = (blog: Blog, index: number) => (
     <section
       key={index}
       ref={(el) => {
-        sectionRefs.current[index] = el;
+        sectionRefs.current[index + 1] = el; // ✅ shift by 1
       }}
       className="mb-8 sm:mb-12"
     >
@@ -118,7 +134,7 @@ const BlogContent: React.FC<BlogContentProps> = ({
       </h2>
       {renderDescriptions(blog.description)}
       {renderBullets(blog.bullets)}
-      {blog.sections?.map((section: any, sectionIndex: number) =>
+      {blog.sections?.map((section: BlogSection, sectionIndex: number) =>
         renderSection(section, sectionIndex)
       )}
     </section>
@@ -158,7 +174,7 @@ const BlogContent: React.FC<BlogContentProps> = ({
 
         {/* Right Sidebar */}
         <div className="hidden lg:block w-1/5 flex-shrink-0">
-          <div className="sticky top-20 space-y-8">
+          <div className="sticky top-4 space-y-8">
             {/* Article Nav */}
             <motion.div
               className="bg-gray-50 rounded-lg p-6"
@@ -171,19 +187,20 @@ const BlogContent: React.FC<BlogContentProps> = ({
               </h3>
               <nav className="space-y-2">
                 <motion.button
-                  onClick={() =>
-                    window.scrollTo({ top: 0, behavior: "smooth" })
-                  }
+                  onClick={() => {
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                    setActiveSection(-1); // ✅ Highlight "Introduction"
+                  }}
                   className={`block w-full text-left text-sm font-medium mb-3 py-2 pl-4 border-l-2 rounded-r-md transition-all duration-300 ${
                     activeSection === -1
-                      ? "text-black text-md bg-blue-50 border-blue-600"
-                      : "text-blue-600 hover:bg-blue-50 border-blue-400 hover:border-blue-600"
+                      ? "text-blue-600 bg-blue-50 border-blue-600 font-medium"
+                      : "text-gray-600 hover:text-blue-600 border-gray-200 hover:border-blue-600 hover:bg-blue-50"
                   }`}
                   whileHover={{ x: 4 }}
                   whileTap={{ scale: 0.98 }}
                 >
-                  Introduction
                 </motion.button>
+
                 {blogs.map((point, index) => (
                   <motion.button
                     key={index}
@@ -203,7 +220,7 @@ const BlogContent: React.FC<BlogContentProps> = ({
             </motion.div>
 
             {/* Get in Touch Form */}
-            <div className="space-y-6 border border-gray-400 py-4 px-3 rounded-lg">
+            {/* <div className="space-y-6 border border-gray-400 py-4 px-3 rounded-lg mb-20">
               <h3 className="text-xl font-bold border-b-2 border-white/30 pb-2 inline-block text-[#2058FF]">
                 Contact Us
               </h3>
@@ -211,22 +228,22 @@ const BlogContent: React.FC<BlogContentProps> = ({
                 <input
                   type="text"
                   placeholder="Your Name"
-                  className="w-full px-4 py-3 border border-grey-400 rounded-lg "
+                  className="w-full px-4 py-3 border border-gray-400 rounded-lg "
                 />
                 <input
                   type="email"
                   placeholder="Email Id"
-                  className="w-full px-4 py-3 border border-grey-100 rounded-lg"
+                  className="w-full px-4 py-3 border border-gray-100 rounded-lg"
                 />
                 <input
                   type="tel"
                   placeholder="Mobile No."
-                  className="w-full px-4 py-3 border border-grey-100 rounded-lg"
+                  className="w-full px-4 py-3 border border-gray-100 rounded-lg"
                 />
                 <textarea
                   placeholder="Your Message"
                   rows={4}
-                  className="w-full px-4 py-3 border border-grey-100 rounded-lg"
+                  className="w-full px-4 py-3 border border-gray-100 rounded-lg"
                 />
                 <button
                   type="submit"
@@ -245,7 +262,7 @@ const BlogContent: React.FC<BlogContentProps> = ({
                   </svg>
                 </button>
               </form>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

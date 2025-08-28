@@ -2,7 +2,6 @@ import React from "react";
 import Image from "next/image";
 import Title from "@/components/Title";
 import Button from "../Button";
-import Link from "next/link";
 interface InnovationMeetProps {
   innovationMeet: {
     title: string;

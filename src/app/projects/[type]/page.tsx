@@ -4,7 +4,6 @@ import ProjectBanner from "@/components/OurProject/ProjectBanner";
 import OverView from "@/components/OurProject/OverView";
 import BannerMiddle from "@/components/OurProject/BannerMiddle";
 import DesignComponent from "@/components/OurProject/DesignComponent";
-import ReviewComponent from "@/components/OurProject/ReviewComponent";
 import GetInTouch from "@/components/Ui/GetInTouch";
 
 interface Props {

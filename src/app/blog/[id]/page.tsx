@@ -1,17 +1,22 @@
-"use client";
-
-import { use } from "react";
 import { notFound } from "next/navigation";
 import { MoreBlogsData } from "@/data/MoreBlogsData";
 import BlogHeading from "@/components/Blog/BlogHeading";
 import BlogContent from "@/components/BlogsCompoenet/BlogContent";
 
 interface Props {
-  params: Promise<{ id: string }>; // 👈 promise, not plain object
+  params: Promise<{ id: string }>;
 }
 
-function BlogsDetails({ params }: Props) {
-  const { id } = use(params); // 👈 unwrap the promise without await
+export async function generateStaticParams() {
+  return MoreBlogsData.blogsMap.map((blog) => ({
+    id: blog.id.toString(),
+  }));
+}
+
+async function BlogsDetails({ params }: Props) {
+  // ✅ Await params first
+  const { id } = await params;
+
   const project = MoreBlogsData.blogsMap.find(
     (item) => item.id === parseInt(id)
   );

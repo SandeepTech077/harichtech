@@ -2,9 +2,10 @@ import { BlogData } from "@/data/BlogData";
 import BannerSection from "@/components/Blog/BannerSection";
 import { BlogCard } from "@/components/Blog/BlogCard";
 import MotionComponent from "@/Animation/MotionComponent";
+import CategoryFilter from "@/components/Blog/CategoryFilter";
 
-export default function BlogPage() {
-  const { BannerSection: bannerData, blogs } = BlogData;
+export default function BlogPage() { 
+  const { BannerSection: bannerData, blogs, categories } = BlogData;
 
   return (
     <main className="w-full py-22 md:py-36 px-5 md:px-10 lg:px-20 space-y-10">
@@ -16,6 +17,11 @@ export default function BlogPage() {
           heading={bannerData.heading}
           highlightText={bannerData.highlightText}
         />
+      </MotionComponent>
+
+      {/* Animated Category Filter */}
+      <MotionComponent type="fadeIn" duration={1} delay={0.5}>
+        <CategoryFilter categories={categories} />
       </MotionComponent>
 
       {/* Animated Blog Cards */}

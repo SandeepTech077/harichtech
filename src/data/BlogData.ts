@@ -8,6 +8,13 @@ export const BlogData = {
     highlightText: "Blogs",
   },
 
+   categories: [
+    "App Development",
+    "Website Development",
+    "Web App Development",
+    "Artificial Intelligence",
+   ],
+
   blogs: [
     {
       id: 1,
