@@ -18,10 +18,8 @@ export async function generateStaticParams() {
 
 const PortfolioDetail = async ({ params }: Props) => {
   const { type } = await params;
-  console.log(type,"type")
 
   const project = OurProjects.projectdata.find((item) => item.type === type);
-  console.log(project, "project");
 
   if (!project) return notFound();
 
