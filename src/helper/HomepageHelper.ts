@@ -17,13 +17,15 @@ import WorkImage4 from "../../public/Image/HomePageImage/Work/Image4.png";
 import WorkImage5 from "../../public/Image/HomePageImage/Work/Image5.png";
 
 //testimonials
-import profile from "../../public/Image/HomePageImage/TestimonialImage/profile.jpg";
+import profile from "../../public/Image/HomePageImage/TestimonialImage/profile.svg";
 import yash from "../../public/Image/HomePageImage/TestimonialImage/yash.png";
 import snehal from "../../public/Image/HomePageImage/TestimonialImage/snehal.png";
 import darshil from "../../public/Image/HomePageImage/TestimonialImage/darshil.png";
 import oriem from "../../public/Image/HomePageImage/TestimonialImage/oriem.png";
 import samir from "../../public/Image/HomePageImage/TestimonialImage/samir.svg"
 import clip from "../../public/SVG/Clip.svg"
+import insight from "../../public/Image/HomePageImage/TestimonialImage/insight.jpg";
+import appcom from "../../public/Image/HomePageImage/TestimonialImage/appcom.jpeg";
 
 //Blogs
 import BlogImage1 from "../../public/Image/HomePageImage/Blogs/Img1.png";
@@ -134,7 +136,8 @@ export const Helper = {
   oriem,
   clip,
   samir,
-
+  insight,
+  appcom,
 
   //Blogs
   BlogImage1,

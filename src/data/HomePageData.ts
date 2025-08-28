@@ -2,7 +2,7 @@ import { Helper } from "../helper/HomepageHelper";
 
 export const HomePagedata = {
   mainTitleSection: {
-    title: "Thinking The High Quality Websites and App",
+    title: "Thinking The High Quality Websites and Applications",
     allTitle: [
       {
         id: 1,
@@ -220,30 +220,35 @@ export const HomePagedata = {
         title: "Borem ipsum ",
         shortDescription: "Lorem ipsum ",
         Image: Helper.WorkImage1,
+        href: "/projects/shilp-group/",
       },
       {
         number: 8,
         title: "Borem ipsum ",
         shortDescription: "Lorem ipsum ",
         Image: Helper.WorkImage2,
+        href: "/projects/snehshilp-foundation/",
       },
       {
         number: 1,
         title: "Borem ipsum ",
         shortDescription: "Lorem ipsum ",
         Image: Helper.WorkImage3,
+        href: "/projects/insight/",
       },
       {
         number: 2,
         title: "Borem ipsum ",
         shortDescription: "Lorem ipsum ",
         Image: Helper.WorkImage4,
+        href: "/projects/shilp-aarambh/",
       },
       {
         number: 3,
         title: "Borem ipsum ",
         shortDescription: "Lorem ipsum ",
         Image: Helper.WorkImage5,
+        href: "/projects/microbrange/",
       },
     ],
   },
@@ -291,12 +296,12 @@ export const HomePagedata = {
       },
       {
         id: 4,
-        name: " Jignesh Patel",
+        name: " Jignesh Prajapati",
         position: "Appcom",
         description:
           "We’re in the tech business, so I needed a site that’s fast, smart, and makes a strong impression. Harich delivered and we loved it. Their understanding of functionality combined with solid design made the entire process efficient. Would definitely recommend them! ",
         clipImg: Helper.clip,
-        img: Helper.profile,
+        img: Helper.appcom,
       },
       {
         id: 5,
@@ -386,7 +391,7 @@ export const HomePagedata = {
         description:
           "At Insight Management, everything we do is about creating unforgettable experiences and we needed a website that could reflect that same energy and precision online. Harich Tech got it right from the start. They understood our brand vision  modern, dynamic, and detail driven and translated it into a site that truly feels like an extension of who we are. It’s clean, fast, visually engaging, and easy to navigate. Most importantly, it captures the essence of what we do on ground. With Harich, it never felt like a one way brief it was a creative partnership. The result speaks for itself.",
         clipImg: Helper.clip,
-        img: Helper.profile,
+        img: Helper.insight,
       },
       {
         id: 15,
@@ -411,7 +416,8 @@ export const HomePagedata = {
   IndustriesSection: {
     title: "Industries We",
     blueTitle: "Serve",
-    description: null,
+    description:
+      "We empower businesses across diverse sectors with tailored digital solutions, driving innovation and growth.",
     cards: [
       {
         id: 1,

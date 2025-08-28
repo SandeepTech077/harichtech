@@ -143,26 +143,26 @@ const  HomeServices: React.FC<HomeServicesProps> = ({ data }) => {
         animate={isGridInView ? "visible" : "hidden"}
         className="mx-auto"
       >
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
           {serviceLists.map((service) => (
             <motion.div
               key={service.id}
               variants={cardVariant}
-              className="group bg-[#F1F1F1] rounded-2xl p-8 hover:bg-white hover:shadow-lg transition-all duration-300 cursor-pointer flex items-center gap-6"
+              className="group bg-[#F1F1F1] rounded-2xl p-5 md:p-8 hover:bg-white hover:shadow-lg transition-all duration-300 cursor-pointer flex flex-col md:flex-row items-start md:items-center gap-4 md:gap-6"
             >
               {/* Left Side: Service Image */}
-              <div className="flex-shrink-0 w-50 h-full rounded-xl overflow-hidden bg-white flex items-center justify-center">
+              <div className="w-full md:w-32 md:h-32 rounded-xl overflow-hidden bg-white flex items-center justify-center">
                 <Image
                   src={service.Image}
                   alt={service.title}
-                  className="w-full h-full object-cover"
+                  className="w-full h-auto md:w-full md:h-full object-cover"
                 />
               </div>
 
               {/* Right Side: Content */}
               <div className="flex-1">
                 {/* Title */}
-                <h3 className="text-2xl font-bold mb-3 text-gray-900 group-hover:text-blue-600 transition-colors duration-300">
+                <h3 className="text-lg md:text-2xl font-bold mb-2 md:mb-3 text-gray-900 group-hover:text-blue-600 transition-colors duration-300">
                   {service.title}
                 </h3>
 
@@ -183,7 +183,7 @@ const  HomeServices: React.FC<HomeServicesProps> = ({ data }) => {
                 </div>
 
                 {/* Description */}
-                <p className="text-gray-600 leading-relaxed">
+                <p className="text-sm md:text-base text-gray-600 leading-relaxed">
                   {service.describation}
                 </p>
               </div>
