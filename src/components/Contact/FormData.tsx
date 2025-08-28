@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 "use client";
 
 import React, { useState } from 'react';
@@ -54,8 +55,6 @@ export default function FormData({ data }: FormDataProps) {
     setMessage(null); 
 
 
-   const handleSubmit = async (e: React.FormEvent) => {
-  e.preventDefault();
 
    const errors: Record<string, string> = {};
   if (!/^[0-9]{10}$/.test(formState.phone)) {
@@ -69,7 +68,7 @@ export default function FormData({ data }: FormDataProps) {
   if (Object.keys(errors).length > 0) {
     setMessage({ type: "error", text: Object.values(errors).join(", ") });
     return;
-  }
+  
    }
   
     try {
