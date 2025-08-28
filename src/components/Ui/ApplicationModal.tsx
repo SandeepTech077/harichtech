@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import { submitResume } from "@/api/resume";
+import { submitResume } from "@/api/base";
 
 interface ApplicationFormData {
   fullName: string;
@@ -85,7 +85,7 @@ const ApplicationModal: React.FC<{
     formDataToSend.append("email", formData.email);
     formDataToSend.append("phone", formData.phone);
     formDataToSend.append("jobTitle", formData.jobTitle);
-    if (formData.resume) formDataToSend.append("resume", formData.resume);
+    if (formData.resume) formDataToSend.append("resume", formData.resume);  
 
     const response = await submitResume(formDataToSend);
 

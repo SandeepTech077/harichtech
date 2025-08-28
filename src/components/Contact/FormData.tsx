@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import Image, { StaticImageData } from 'next/image';
-import { sendEmailMessage } from "@/api/email";
+import { sendEmailMessage } from "@/api/base";
 interface FormDataProps {
   data: {
     name: string;

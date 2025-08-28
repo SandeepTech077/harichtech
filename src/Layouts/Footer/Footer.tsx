@@ -7,7 +7,7 @@ import Logo from "../../../public/Logo/logo-white.svg";
 import facebookLogo from "../../../public/SVG/facebook-logo.svg";
 import instagramLogo from "../../../public/SVG/instagram-logo.svg";
 import linkedinLogo from "../../../public/SVG/linkedin-logo.svg";
-import { sendFooterMessage } from "@/api/footer"
+import { sendFooterMessage } from "@/api/base"
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
