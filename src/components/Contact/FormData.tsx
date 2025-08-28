@@ -54,8 +54,7 @@ export default function FormData({ data }: FormDataProps) {
     setMessage(null); 
 
 
-   const handleSubmit = async (e: React.FormEvent) => {
-  e.preventDefault();
+
 
    const errors: Record<string, string> = {};
   if (!/^[0-9]{10}$/.test(formState.phone)) {
@@ -70,9 +69,8 @@ export default function FormData({ data }: FormDataProps) {
     setMessage({ type: "error", text: Object.values(errors).join(", ") });
     return;
   }
-   }
   try {
-    const response = await fetch("http://localhost:5000/api/email", {
+    const response = await fetch("http://localhost:8080/api/email", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -253,7 +251,6 @@ export default function FormData({ data }: FormDataProps) {
                 </span>
               </button>
 
-              {/* Success / Error Message */}
               {message && (
                 <p className={`text-sm ${message.type === "success" ? "text-green-600" : "text-red-600"}`}>
                   {message.text}

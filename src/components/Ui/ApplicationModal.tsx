@@ -85,7 +85,7 @@ const ApplicationModal: React.FC<{
       formDataToSend.append("jobTitle", formData.jobTitle);
       if (formData.resume) formDataToSend.append("resume", formData.resume);
 
-      const response = await fetch("http://localhost:5000/api/career/resume", {
+      const response = await fetch("http://localhost:8080/api/career/resume", {
         method: "POST",
         body: formDataToSend,
       });
@@ -99,6 +99,7 @@ const ApplicationModal: React.FC<{
         setSubmitSuccess(false);
         onClose();
       }, 3000);
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     } catch (error) {
       setSubmitError("Something went wrong!");
     } finally {
