@@ -20,10 +20,10 @@ const AboutUs: React.FC<AboutUsProps> = ({ aboutUs }) => {
 
       {/* Main content */}
       <div className="md:text-center mb-10 relative z-10">
-        <h1 className="text-[32px] md:text-[48px] font-bold mb-4">
+        <h1 className="text-[32px] md:text-[43px] font-bold mb-3">
           {aboutUs.subTitle.split("Harichtech")[0]}
           <br />
-          <span className="mt-2 inline-block bg-gradient-to-l from-[#2058FF] to-[#004BC2] bg-clip-text text-transparent">
+          <span className=" inline-block bg-gradient-to-l from-[#2058FF] to-[#004BC2] bg-clip-text text-transparent">
             Harichtech
           </span>
         </h1>

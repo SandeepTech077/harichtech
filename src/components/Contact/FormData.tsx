@@ -125,40 +125,42 @@ export default function FormData({ data }: FormDataProps) {
                 />
               </div>
 
-
               {/* Email Field */}
               <div>
-                  <input
-                    type="email"
-                    name="email"
-                    placeholder='Email'
-                    value={formState.email}
-                    onChange={(e) =>
-                      setFormState({ ...formState, email: e.target.value })
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Email"
+                  value={formState.email}
+                  onChange={(e) =>
+                    setFormState({ ...formState, email: e.target.value })
+                  }
+                  className={`border p-2 bg-white  rounded w-full ${
+                    message?.text.includes("email")
+                      ? "border-red-500"
+                      : "border-gray-300"
+                  }`}
+                />
+              </div>
+              {/* phone Field */}
+              <div className="space-y-2">
+                <input
+                  type="text"
+                  name="phone"
+                  placeholder="Moblie No."
+                  value={formState.phone}
+                  onChange={(e) => {
+                    if (/^[0-9]{0,10}$/.test(e.target.value)) {
+                      setFormState({ ...formState, phone: e.target.value });
                     }
-                    className={`border p-2 rounded w-full ${
-                      message?.text.includes("email") ? "border-red-500" : "border-gray-300"
-                    }`}
-                  />
-                  </div>
-                  {/* phone Field */}
-                  <div className='space-y-2'>
-                   <input
-                    type="text"
-                    name="phone"
-                    placeholder='Moblie No.'
-                    value={formState.phone}
-                    onChange={(e) => {
-                      if (/^[0-9]{0,10}$/.test(e.target.value)) {
-                        setFormState({ ...formState, phone: e.target.value });
-                      }
-                    }}
-                    className={`border p-2 rounded w-full ${
-                      message?.text.includes("Phone") ? "border-red-500" : "border-gray-300"
-                    }`}
-                  />
-                  </div>
-                  
+                  }}
+                  className={`border p-2 bg-white  rounded w-full ${
+                    message?.text.includes("Phone")
+                      ? "border-red-500"
+                      : "border-gray-300"
+                  }`}
+                />
+              </div>
 
               {/* Country Field */}
               <div className="space-y-2">
@@ -182,7 +184,9 @@ export default function FormData({ data }: FormDataProps) {
                   required
                   className="w-full px-4 py-4 border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 text-gray-900 bg-white"
                 >
-                  <option value="" disabled className="text-gray-500">{data.budget}</option>
+                  <option value="" disabled className="text-gray-500">
+                    {data.budget}
+                  </option>
                   <option value="$1,000 - $5,000">$1,000 - $5,000</option>
                   <option value="$5,000 - $10,000">$5,000 - $10,000</option>
                   <option value="$10,000 - $25,000">$10,000 - $25,000</option>
@@ -193,7 +197,7 @@ export default function FormData({ data }: FormDataProps) {
               </div>
 
               {/* Custom Budget Field */}
-              {formState.budget === 'custom' && (
+              {formState.budget === "custom" && (
                 <div className="space-y-2">
                   <input
                     type="text"
@@ -227,15 +231,20 @@ export default function FormData({ data }: FormDataProps) {
                 className="group relative w-full sm:w-auto px-8 py-4 bg-gradient-to-r from-blue-600 to-blue-700 text-white font-semibold rounded-lg  transform hover:-translate-y-0.5 transition-all duration-200 disabled:opacity-70 disabled:cursor-not-allowed disabled:transform-none"
               >
                 <span className="flex items-center justify-center space-x-2">
-                  <span>{isSubmitting ? 'Sending...' : data.btnText}</span>
+                  <span>{isSubmitting ? "Sending..." : data.btnText}</span>
                   {!isSubmitting && (
-                    <svg 
-                      className="w-5 h-5 transform group-hover:translate-x-1 transition-transform duration-200" 
-                      fill="none" 
-                      stroke="currentColor" 
+                    <svg
+                      className="w-5 h-5 transform group-hover:translate-x-1 transition-transform duration-200"
+                      fill="none"
+                      stroke="currentColor"
                       viewBox="0 0 24 24"
                     >
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M14 5l7 7m0 0l-7 7m7-7H3"
+                      />
                     </svg>
                   )}
                 </span>
@@ -243,7 +252,13 @@ export default function FormData({ data }: FormDataProps) {
 
               {/* Success / Error Message */}
               {message && (
-                <p className={`text-sm ${message.type === "success" ? "text-green-600" : "text-red-600"}`}>
+                <p
+                  className={`text-sm ${
+                    message.type === "success"
+                      ? "text-green-600"
+                      : "text-red-600"
+                  }`}
+                >
                   {message.text}
                 </p>
               )}
@@ -255,7 +270,7 @@ export default function FormData({ data }: FormDataProps) {
             <div className="relative h-[500px] lg:h-[600px] w-full">
               <div className="absolute inset-0 bg-gradient-to-br from-blue-100 to-indigo-100 rounded-3xl transform rotate-3"></div>
               <div className="absolute inset-0 bg-gradient-to-br from-blue-50 to-purple-50 rounded-3xl transform -rotate-1"></div>
-              
+
               <div className="relative h-full w-full bg-white rounded-2xl overflow-hidden">
                 <Image
                   src={data.rightSideImage}

@@ -35,7 +35,7 @@ const ServiceDetailCard = ({ data }: ServiceDetailCardProps) => {
         </div>
 
         {/* Main Heading */}
-        <h1 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold text-gray-900 leading-tight">
+        <h1 className="text-2xl sm:text-3xl lg:text-4xl xl:text-4xl font-bold text-gray-900 leading-tight">
           {data.subtitle}
         </h1>
 

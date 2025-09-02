@@ -17,7 +17,7 @@ export const MainSection: React.FC<MainSectionProps> = ({
   return (
     <section className="py-8">
       <div className="container mx-auto px-4">
-        <h2 className="text-[30px] md:text-[48px] font-bold text-gray-900 mb-10 leading-snug text-center lg:text-left">
+        <h2 className="text-[30px] md:text-[43px] font-bold text-gray-900 mb-6 leading-snug text-center lg:text-left">
           {title}
           <span className="bg-gradient-to-l from-[#2058FF] to-[#004BC2] bg-clip-text text-transparent">
             {blueTitle}

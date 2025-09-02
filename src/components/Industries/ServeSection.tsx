@@ -26,7 +26,7 @@ export const ServeSection: React.FC<ServeSectionProps> = ({
       <div className="container mx-auto px-4">
         
         {/* 🔹 Title */}
-        <h2 className="text-[30px] md:text-[48px] font-bold text-black mb-10 leading-snug text-center">
+        <h2 className="text-[30px] md:text-[43px] font-bold text-black mb-6 leading-snug text-center">
           {title}
           <span className="bg-gradient-to-l from-[#2058FF] to-[#004BC2] bg-clip-text text-transparent">
             {blueTitle}
@@ -35,7 +35,7 @@ export const ServeSection: React.FC<ServeSectionProps> = ({
 
         {/* 🔹 Descriptions */}
         {descriptions.length > 0 && (
-          <div className=" mx-auto mb-12 text-center text-[18px] text-black space-y-4">
+          <div className=" mx-auto mb-6 text-center text-[18px] text-black space-y-4">
             {descriptions.map((desc, index) => (
               <p key={index}>{desc}</p>
             ))}

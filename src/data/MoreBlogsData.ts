@@ -4,6 +4,7 @@ export const MoreBlogsData = {
   blogsMap: [
     {
       id: 1,
+      type: "smarter-marketing-with-ai",
       title: "Smarter Marketing with AI: How to Stay Ahead in 2025",
       Banner: Helper.SmartMarketingBanner,
       mobileBanner: Helper.SmartMarketingMobile,
@@ -31,7 +32,7 @@ export const MoreBlogsData = {
           ],
         },
         {
-          title: "1. Predictive Analytics: Marketing That Thinks Ahead",
+          title: " Predictive Analytics: Marketing That Thinks Ahead",
           description: [
             "AI models can forecast future behavior by analyzing historical and real-time data, helping marketers make better decisions and campaign optimizations.",
             "Use predictive analytics to:",
@@ -45,7 +46,7 @@ export const MoreBlogsData = {
         },
         {
           title:
-            "2. Hyper-Personalization: AI Knows Your Customer Better Than You Do",
+            " Hyper-Personalization: AI Knows Your Customer Better Than You Do",
           description: [
             "Forget broad segments like 'millennials' or 'working moms.' AI drills down to micro-personas and delivers customized messaging based on behavior, preferences, and purchase intent.",
             "Personalization Inputs:",
@@ -72,7 +73,7 @@ export const MoreBlogsData = {
           },
         },
         {
-          title: "3. Content Creation with AI: Creativity Meets Efficiency",
+          title: " Content Creation with AI: Creativity Meets Efficiency",
           description: [
             "AI tools like GPT, Jasper, and Copy.ai generate blog titles, ads, and posts in seconds. But they don't just create — they optimize too.",
             "You can automate:",
@@ -85,7 +86,7 @@ export const MoreBlogsData = {
           ],
         },
         {
-          title: "4. Smarter Campaign Management with Automation Systems",
+          title: " Smarter Campaign Management with Automation Systems",
           description: [
             "AI unifies campaigns across multiple touchpoints (email, social, web, ads, SMS) by syncing platforms and adapting based on performance data.",
             "Examples of automation:",
@@ -98,7 +99,7 @@ export const MoreBlogsData = {
           ],
         },
         {
-          title: "5. Real-Time Data Insights: React. Refine. Repeat.",
+          title: " Real-Time Data Insights: React. Refine. Repeat.",
           description: [
             "AI-powered dashboards reveal how your campaigns are performing, what's working, and what needs refining. No more waiting for post-campaign analysis.",
             "With real-time insights, marketers can:",
@@ -111,7 +112,7 @@ export const MoreBlogsData = {
           ],
         },
         {
-          title: "6. Conversational AI: Redefining Customer Service & Sales",
+          title: " Conversational AI: Redefining Customer Service & Sales",
           description: [
             "Chatbots powered by NLP can answer FAQs, qualify leads, suggest products, and escalate critical issues — 24/7.",
             "Benefits:",
@@ -124,7 +125,7 @@ export const MoreBlogsData = {
           ],
         },
         {
-          title: "7. Social Listening & Sentiment Analysis",
+          title: " Social Listening & Sentiment Analysis",
           description: [
             "AI tools analyze what people say about your brand on platforms like X (formerly Twitter), Reddit, YouTube, and Instagram.",
             "Brands use this data to:",
@@ -156,8 +157,9 @@ export const MoreBlogsData = {
         },
       ],
     },
-    {
+    { 
       id: 2,
+      type: "ai-powered-analytics",
       title: "AI-Powered Analytics: See Beyond the Data",
       Banner: Helper.AiPowered,
       mobileBanner: Helper.AiPoweredMobile,
@@ -289,8 +291,9 @@ export const MoreBlogsData = {
         },
       ],
     },
-    {
+    { 
       id: 3,
+      type: "automate-or-fall-behind",
       title: "Automate or Fall Behind: The Future of Customer Engagement",
       Banner: Helper.Automate,
       mobileBanner: Helper.AutomateMobile,
@@ -419,8 +422,9 @@ export const MoreBlogsData = {
         },
       ],
     },
-    {
+    { 
       id: 4,
+      type: "ai-meets-creativity",
       title: "AI Meets Creativity: The New Face of Digital Campaigns",
       Banner: Helper.AiMeet,
       mobileBanner: Helper.AiMeetMobile,
@@ -508,8 +512,9 @@ export const MoreBlogsData = {
         },
       ],
     },
-    {
+    { 
       id: 5,
+      type: "the-death-of-manual-targeting",
       title: "The Death of Manual Targeting (and the Fall of Spray-and-Pray)",
       Banner: Helper.ManualTargeting,
       mobileBanner: Helper.ManualTargetingMobile,

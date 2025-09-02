@@ -55,7 +55,7 @@ const PortfolioComponent: React.FC<PortfolioComponentProps> = ({ data }) => {
         </div>
 
         {/* Heading */}
-        <h2 className="text-[30px] lg:text-[48px] font-bold mt-2 mx-auto">
+        <h2 className="text-[30px] lg:text-[43px] font-bold mt-2 mx-auto">
           {data.Subtitle.split(" ").slice(0, -1).join(" ")}{" "}
           <span className="bg-gradient-to-l from-[#2058FF] to-[#004BC2] bg-clip-text text-transparent">
             {data.Subtitle.split(" ").slice(-1)}

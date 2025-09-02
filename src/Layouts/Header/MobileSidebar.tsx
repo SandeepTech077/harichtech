@@ -138,13 +138,13 @@ const MobileSidebar: React.FC<MobileSidebarProps> = ({ isOpen, onClose }) => {
                         {expanded && (
                           <div className="ml-4 mt-1 space-y-1">
                             {/* Main Category Link */}
-                            <Link
+                            {/* <Link
                               href={item.path}
                               className="block py-2 px-3 text-xs font-medium text-blue-600 hover:text-blue-700 hover:bg-blue-50 rounded-lg transition-colors"
                               onClick={onClose}
                             >
                               {item.name}
-                            </Link>
+                            </Link> */}
 
                             {/* Subcategories */}
                             {item.data?.map((subItem) => (

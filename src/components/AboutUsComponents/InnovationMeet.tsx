@@ -25,12 +25,12 @@ const InnovationMeet: React.FC<InnovationMeetProps> = ({ innovationMeet }) => {
   const { title, leftSide, rightSide } = innovationMeet;
 
   return (
-    <section className="w-full py-16 mx-auto">
+    <section className="w-full py-4 mx-auto">
       <div className="flex mb-10"></div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <div className="flex flex-col">
-          <div className="w-52 mb-10">
+          <div className="w-52 mb-4">
             <Title title={title} />
           </div>
           <h2 className="text-2xl lg:text-4xl font-bold mb-6">

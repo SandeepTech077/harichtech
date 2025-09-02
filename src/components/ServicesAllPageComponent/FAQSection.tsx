@@ -35,7 +35,7 @@ export const FAQSection: React.FC<FAQSectionProps> = ({ title, faqs, svg }) => {
             transition={{ duration: 0.8, ease: "easeOut" }}
             viewport={{ once: true }}
           >
-            <h2 className="text-3xl md:text-4xl font-bold bg-gradient-to-l from-[#2058FF] to-[#004BC2] bg-clip-text text-transparent text-left">
+            <h2 className="text-3xl md:text-4xl font-bold bg-gradient-to-l from-[#2058FF] to-[#004BC2] bg-clip-text text-transparent text-left mb-3">
               {title}
             </h2>
 

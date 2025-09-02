@@ -27,10 +27,10 @@ const Footer = () => {
   const servicesData = [
     {
       name: "Web & App Development",
-      path: "/services/web-and-app-development",
+      path: "/services-list/web-detail",
     },
-    { name: "UI/UX Design", path: "/services/ui-ux-design" },
-    { name: "Digital Marketing", path: "/services/digital-marketing" },
+    { name: "UI/UX Design", path: "/services-list/uiux-detail" },
+    { name: "Digital Marketing", path: "/services-list/digital-marketing-detail" },
   ];
 
   const industriesData = [
@@ -206,7 +206,7 @@ const Footer = () => {
             </div>
 
             {/* Contact Form */}
-            <div className="space-y-6">
+            <div className=" hidden md:block  space-y-6">
               <h3 className="text-xl font-bold border-b-2 border-white/30 pb-2">Get In Touch</h3>
               <form className="space-y-4" onSubmit={handleSubmit}>
                 <input

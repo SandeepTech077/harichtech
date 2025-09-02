@@ -125,11 +125,11 @@ const ClientsComponent: React.FC<ClientsComponentProps> = ({ data }) => {
             <div className="inline-block mb-4">
               <Title title={data.title} />
             </div>
-            <h2 className="text-[30px] lg:text-[48px] font-bold">
+            <h2 className="text-[30px] lg:text-[43px] font-bold leading-[1.1]">
               See What{" "}
               <span className="bg-gradient-to-l from-[#2058FF] to-[#004BC2] bg-clip-text text-transparent">
                 Our Clients
-              </span>{" "}
+              </span>
               <br />
               Have to Say
             </h2>

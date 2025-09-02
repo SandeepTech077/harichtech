@@ -35,9 +35,9 @@ export const GrowthSection: React.FC<GrowthSectionProps> = ({
   testimonial,
 }) => {
   return (
-    <section className=" py-16">
+    <section className="py-8">
       {/* 🔹 Heading */}
-      <h2 className="text-[30px] sm:text-[48px] font-bold mb-6">
+      <h2 className="text-[30px] sm:text-[42px] font-bold mb-6">
         {title}{" "}
         <span className="bg-gradient-to-l from-[#2058FF] to-[#004BC2] bg-clip-text text-transparent">
           {blueTitle}

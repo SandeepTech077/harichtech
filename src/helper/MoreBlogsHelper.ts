@@ -23,6 +23,11 @@ import ManualTargeting from "../../public/Image/more-blogs-banner/manual-targeti
 import ManualTargetingMobile from "../../public/Image/more-blogs-banner/manual-targeting-mobile-banner.png"
 import SilentGrowth from "../../public/Image/more-blogs-banner/silent-growth-banner.png"
 import SilentGrowthMobile from "../../public/Image/more-blogs-banner/silent-growth-mobile-banner.png"
+import AIpoweredlast from "../../public/Image/more-blogs-banner/ai-powered-last.svg";
+import Automatelast from "../../public/Image/more-blogs-banner/automate-last.svg";
+import SmarterMarketlast from "../../public/Image/more-blogs-banner/smarter-market-last.svg";
+import AiMeetslast from "../../public/Image/more-blogs-banner/ai-meets-last.svg";
+import TheDeathlast from "../../public/Image/more-blogs-banner/the-death-last.svg";
 
 
 
@@ -52,6 +57,11 @@ export const Helper = {
     ManualTargetingMobile,
     SilentGrowth,
     SilentGrowthMobile,
+    AIpoweredlast,
+    Automatelast,
+    SmarterMarketlast,
+    AiMeetslast,
+    TheDeathlast,
     
 
 

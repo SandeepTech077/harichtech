@@ -46,7 +46,7 @@ const AboutUs: React.FC<AboutUsProps> = ({ data }) => {
 
           {/* Subtitle */}
           <motion.h2
-            className="text-[30px] md:text-[45px] font-bold leading-snug"
+            className="text-[30px] md:text-[43px] font-bold leading-snug"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}

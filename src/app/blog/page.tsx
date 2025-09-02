@@ -5,7 +5,7 @@ import MotionComponent from "@/Animation/MotionComponent";
 import CategoryFilter from "@/components/Blog/CategoryFilter";
 
 export default function BlogPage() { 
-  const { BannerSection: bannerData, blogs, categories } = BlogData;
+  const { BannerSection: bannerData, blogs, categories, } = BlogData;
 
   return (
     <main className="w-full py-22 md:py-36 px-5 md:px-10 lg:px-20 space-y-10">
@@ -13,7 +13,7 @@ export default function BlogPage() {
       <MotionComponent type="slideIn" duration={1} delay={0.3}>
         <BannerSection
           buttonText={bannerData.buttonText}
-          buttonHref={bannerData.buttonHref}
+          
           heading={bannerData.heading}
           highlightText={bannerData.highlightText}
         />
@@ -29,6 +29,7 @@ export default function BlogPage() {
         {blogs.map((blog, index) => (
           <BlogCard
             id={blog.id}
+            type={blog.type}
             key={blog.id}
             image={blog.image}
             title={blog.title}

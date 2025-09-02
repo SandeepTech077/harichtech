@@ -111,7 +111,7 @@ const  HomeServices: React.FC<HomeServicesProps> = ({ data }) => {
           <div className="w-40 text-center mb-4 lg:mb-10">
             <Title title={title} />
           </div>
-          <h2 className="text-2xl md:text-4xl font-bold">
+          <h2 className="text-2xl md:text-[39px] font-bold">
             We Provide The{" "}
             <span className="bg-gradient-to-l from-[#2058FF] to-[#004BC2] bg-clip-text text-transparent">
               Solution

@@ -58,6 +58,7 @@ export const OurProjects = {
           },
         ],
         Banner: Helper.InsightFont,
+        mobileBanner: Helper.InsightFontMobile,
       },
       review: {
         Textcolor: "text-[#1B5AA7]",
@@ -122,6 +123,7 @@ export const OurProjects = {
           },
         ],
         Banner: Helper.AarambhFont,
+        mobileBanner: Helper.AarambhFontMobile,
       },
       review: {
         Textcolor: "text-black",
@@ -190,6 +192,7 @@ export const OurProjects = {
           },
         ],
         Banner: Helper.MicroFont,
+        mobileBanner: Helper.MicroFontMobile,
       },
       review: {
         Textcolor: "text-black",
@@ -254,6 +257,7 @@ export const OurProjects = {
           },
         ],
         Banner: Helper.ArkleFont,
+        mobileBanner: Helper.ArkleFontMobile,
       },
       review: {
         Textcolor: "text-black",
@@ -314,6 +318,7 @@ export const OurProjects = {
           },
         ],
         Banner: Helper.ShilpFont,
+        mobileBanner: Helper.ShilpFontMobile,
       },
       review: {
         Textcolor: "text-black",
@@ -374,6 +379,7 @@ export const OurProjects = {
           },
         ],
         Banner: Helper.YashFont,
+        mobileBanner: Helper.YashFontMobile,
       },
       review: {
         Textcolor: "text-black",
@@ -434,6 +440,7 @@ export const OurProjects = {
           },
         ],
         Banner: Helper.SnehalFont,
+        mobileBanner: Helper.SnehalFontMobile,
       },
       review: {
         Textcolor: "text-black",
@@ -494,6 +501,7 @@ export const OurProjects = {
           },
         ],
         Banner: Helper.SnehShilpFont,
+        mobileBanner: Helper.SnehalFontMobile,
       },
       review: {
         Textcolor: "text-black",
@@ -554,6 +562,7 @@ export const OurProjects = {
           },
         ],
         Banner: Helper.FestFont,
+        mobileBanner: Helper.StartupFontMobile,
       },
       review: {
         Textcolor: "text-black",
@@ -618,6 +627,7 @@ export const OurProjects = {
           },
         ],
         Banner: Helper.AeroFont,
+        mobileBanner: Helper.AerotyneFontMobile,
       },
       review: {
         bgImage: Helper.BgImage,
@@ -685,6 +695,7 @@ export const OurProjects = {
           },
         ],
         Banner: Helper.OreumFont,
+        mobileBanner: Helper.OreumFontMobile,
       },
       review: {
         Textcolor: "text-black",
@@ -750,6 +761,7 @@ export const OurProjects = {
           },
         ],
         Banner: Helper.EverVitalFont,
+        mobileBanner: Helper.EverVitalFontMobile
       },
       review: {
         Textcolor: "text-black",

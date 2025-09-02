@@ -13,6 +13,7 @@ interface DesignData {
   textColor?: string;
   colors: ColorItem[];
   Banner: StaticImageData;
+  mobileBanner?: StaticImageData;
 }
 
 interface DesignComponentProps {
@@ -20,7 +21,7 @@ interface DesignComponentProps {
 }
 
 const DesignComponent: React.FC<DesignComponentProps> = ({ data }) => {
-  const { title, textColor, colors, Banner } = data;
+  const { title, textColor, colors, Banner, mobileBanner } = data; // ✅ added mobileBanner
 
   // Split last word to apply color
   const words = title.split(" ");
@@ -50,9 +51,9 @@ const DesignComponent: React.FC<DesignComponentProps> = ({ data }) => {
         ))}
       </div>
 
-      {/* Banner Image */}
+      {/* Desktop Banner */}
       <div className="flex justify-center">
-        <div className="w-full  px-2">
+        <div className="w-full px-2 hidden md:block">
           <Image
             src={Banner}
             alt="Design Banner"
@@ -60,6 +61,17 @@ const DesignComponent: React.FC<DesignComponentProps> = ({ data }) => {
           />
         </div>
       </div>
+
+      {/* Mobile Banner */}
+      {mobileBanner && (
+        <div className="block md:hidden px-2">
+          <Image
+            src={mobileBanner}
+            alt="Design Mobile Banner"
+            className="w-full h-auto object-contain"
+          />
+        </div>
+      )}
     </section>
   );
 };

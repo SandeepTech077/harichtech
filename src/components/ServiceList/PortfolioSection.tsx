@@ -34,7 +34,7 @@ const PortfolioSection: React.FC<PortfolioSectionProps> = ({
           <div className="inline-block bg-gray-100 px-4 py-2 rounded-md mb-3">
             <Title title={portfolioData.title} />
           </div>
-          <h2 className="text-6xl font-bold">
+          <h2 className="text-[43px] font-bold">
             Discover Our{" "}
             <span className="bg-gradient-to-l from-[#2058FF] to-[#004BC2] bg-clip-text text-transparent">
               Digital

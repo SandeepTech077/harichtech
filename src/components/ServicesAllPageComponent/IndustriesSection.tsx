@@ -26,11 +26,11 @@ export const IndustriesSection: React.FC<IndustriesSectionProps> = ({
   cards,
 }) => {
   return (
-    <section className="py-16">
+    <section className="py-3">
       <div className="container mx-auto px-4">
         <div className="mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-[32px] md:text-[48px] font-bold text-gray-800 mb-6">
+            <h2 className="text-[32px] md:text-[43px] font-bold text-gray-800 mb-6">
               {title}{" "}
               <span className="bg-gradient-to-l from-[#2058FF] to-[#004BC2] bg-clip-text text-transparent">
                 {blueTitle}

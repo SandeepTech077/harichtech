@@ -99,6 +99,21 @@ import AeroFont from "../../public/Image/OurProjects/Design/aero-font.png"
 import OreumFont from "../../public/Image/OurProjects/Design/orium-font.png"
 import EverVitalFont from "../../public/Image/OurProjects/Design/evervital-font.png"
 
+//Design font Mobile 
+import InsightFontMobile from "../../public/Image/OurProjects/Design/insight-font-mobile.png";
+import AarambhFontMobile from "../../public/Image/OurProjects/Design/aarambh-font-mobile.png";
+import MicroFontMobile from "../../public/Image/OurProjects/Design/microrange-font-mobile.png";
+import ArkleFontMobile from "../../public/Image/OurProjects/Design/arkle-font-mobile.png";
+import ShilpFontMobile from "../../public/Image/OurProjects/Design/shilp-font-mobile.png";
+import YashFontMobile from "../../public/Image/OurProjects/Design/yash-font-mobile.png";
+import SnehalFontMobile from "../../public/Image/OurProjects/Design/snehal-font-mobile.png";
+import SnehalShilpFontMobile from "../../public/Image/OurProjects/Design/snehalshilp-font-mobile.png";
+import StartupFontMobile from "../../public/Image/OurProjects/Design/fest-font-mobile.png";
+import AerotyneFontMobile from "../../public/Image/OurProjects/Design/aerotyne-font-mobile.png";
+import OreumFontMobile from "../../public/Image/OurProjects/Design/orium-font-mobile.png";
+import EverVitalFontMobile from "../../public/Image/OurProjects/Design/evervital-font-mobile.png";
+
+
 //review modal 
 import InsightReview from "../../public/Image/OurProjects/clientReview/insight.png"
 import AarambhReview from "../../public/Image/OurProjects/clientReview/aarambh.png"
@@ -324,6 +339,20 @@ export const Helper = {
     AeroFont,
     OreumFont,
     EverVitalFont,
+
+// Design font mobile 
+ InsightFontMobile,
+ AarambhFontMobile,
+ MicroFontMobile,
+ ArkleFontMobile,
+ ShilpFontMobile,
+ YashFontMobile,
+ SnehalFontMobile,
+ SnehalShilpFontMobile,
+ StartupFontMobile,
+ AerotyneFontMobile,
+ OreumFontMobile,
+ EverVitalFontMobile,
 
 
     //cleint review 

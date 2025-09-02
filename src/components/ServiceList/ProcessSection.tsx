@@ -59,7 +59,7 @@ const   ProcessComponent: React.FC<ProcessComponentProps> = ({ processData }) =>
         <div className="inline-block mb-4">
           <Title title={title} />
         </div>
-        <h2 className="text-[24px] lg:text-[48px] font-bold mb-3">
+        <h2 className="text-[24px] lg:text-[43px] font-bold mb-3">
           {subTitle.split(" ").slice(0, -1).join(" ")}{" "}
           <span className="text-blue-600">{subTitle.split(" ").pop()}</span>
         </h2>

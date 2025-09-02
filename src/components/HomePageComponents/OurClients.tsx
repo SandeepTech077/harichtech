@@ -41,9 +41,9 @@ const OurClients: React.FC<OurClientsProps> = ({ data }) => {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
         viewport={{ once: true }}
-        className="mb-12 text-center"
+        className="mb-5 text-center"
       >
-        <h2 className="text-3xl md:text-4xl font-bold">
+        <h2 className="text-3xl md:text-[45px] font-bold">
           {title.split(" ")[0]}{" "}
           <span className="bg-gradient-to-l from-[#2058FF] to-[#004BC2] bg-clip-text text-transparent">
             {title.split(" ")[1] || ""}

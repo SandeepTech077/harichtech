@@ -24,7 +24,7 @@ interface WhyUsProps {
 
 const WhyChooseUs: React.FC<WhyUsProps> = ({ whyUsData }) => {
   return (
-    <div className="py-6 mx-auto px-4 sm:px-6 lg:px-8">
+    <div className=" mx-auto px-4 sm:px-6 lg:px-2">
       {/* Title + Descriptions */}
       <motion.div
         initial={{ opacity: 0, y: 40 }}

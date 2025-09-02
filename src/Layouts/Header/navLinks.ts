@@ -34,13 +34,21 @@ export interface MainNavItem {
 
 export const servicesData: NavItem[] = [
   {
-    name: "Web & App Development",
+    name: "Web Development",
     icon: WebIcon,
     path: "/services-list/web-detail",
     children: [
       { name: "React.js Development", path: "/services/development/react" },
       { name: "Node.js Development", path: "/services/development/node" },
       { name: "Next.js Development", path: "/services/development/next" },
+    ],
+  },
+
+  {
+    name: "App Development",
+    icon: WebIcon,
+    path: "/services-list/web-detail",
+    children: [
       {
         name: "React Native Development",
         path: "/services/development/react-native",
@@ -98,13 +106,14 @@ export const servicesData: NavItem[] = [
       },
     ],
   },
+
 ];
 
 export const industriesData: NavItem[] = [
   { name: "Real Estate", icon: RealEstate , path: "/industries/real-estate" },
   { name: "E-commerce", icon: ECommeace, path: "/industries/ecommerce" },
   { name: "Finance & Fintech", icon: Finamce, path: "/industries/finance" },
-  { name: "Healthcare / Pharma", icon: HealthCare, path: "/industries/healthcare" },
+  { name: "Healthcare & Pharma", icon: HealthCare, path: "/industries/healthcare" },
   { name: "Education", icon: Eduction, path: "/industries/education" },
   { name: "Retail", icon: Retail, path: "/industries/retail" },
 ];

@@ -47,7 +47,7 @@ const ProcessComponent: React.FC<ProcessComponentProps> = ({ data }) => {
         <div className="inline-block mb-4">
           <Title title={data.title} />
         </div>
-        <h2 className="text-3xl font-bold">
+        <h2 className="text-[43px] font-bold">
           <span className="bg-gradient-to-l from-[#2058FF] to-[#004BC2] bg-clip-text text-transparent">Process</span>{" "}
           {data.subtitle.replace("Process", "")}
         </h2>
