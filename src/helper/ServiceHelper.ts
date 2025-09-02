@@ -50,6 +50,9 @@ import Line from "../../public/SVG/Line.svg"
 import InsightProject from "../../public/Image/HomePageImage/Work/Image3.png"
 import AarambhProject from "../../public/Image/HomePageImage/Work/Image4.png"
 import MicroProject from "../../public/Image/HomePageImage/Work/Image5.png"
+import ServiceListProcess from "../../public/SVG/servicelist/service-list-process-image.svg";
+
+
 export const Helper = {
 
     // Project 
@@ -94,6 +97,7 @@ export const Helper = {
     MobileBanner,
     DigitalBanner,
 
-
+    // Service List 
+    ServiceListProcess,
 
 }

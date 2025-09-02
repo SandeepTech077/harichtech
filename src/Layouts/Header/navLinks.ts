@@ -47,7 +47,7 @@ export const servicesData: NavItem[] = [
   {
     name: "App Development",
     icon: WebIcon,
-    path: "/services-list/web-detail",
+    path: "/services-list/mobile-app-detail",
     children: [
       {
         name: "React Native Development",
@@ -106,7 +106,6 @@ export const servicesData: NavItem[] = [
       },
     ],
   },
-
 ];
 
 export const industriesData: NavItem[] = [

@@ -23,7 +23,7 @@ export const TechStackSection: React.FC<TechStackSectionProps> = ({
   cards,
 }) => {
   return (
-    <section className="px-4 lg:px-20 bg-white">
+    <section className="px-4 lg:px-20 bg-white py-4">
       <div className="mx-auto px-4">
         <div className="mx-auto">
           {/* Heading */}

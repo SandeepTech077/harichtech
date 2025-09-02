@@ -17,7 +17,7 @@ export const DevelopmentProcess: React.FC<DevelopmentProcessProps> = ({
   banner,
 }) => {
   return (
-    <section className="py-20">
+    <section className="py-10">
       <motion.div
         className="text-center mx-auto mb-12"
         initial={{ opacity: 0, y: 40 }}

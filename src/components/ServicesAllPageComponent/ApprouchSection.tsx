@@ -23,8 +23,8 @@ export const ApprouchSection: React.FC<ApprouchSectionProps> = ({
   points,
 }) => {
   return (
-    <section className="py-20 bg-white">
-      <div className="mx-auto px-4 sm:px-6 lg:px-40 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+    <section className="py-12 bg-white">
+      <div className="mx-auto px-4 sm:px-6 lg:px-40 grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
         {/* Left Content */}
         <motion.div
           initial={{ opacity: 0, x: -50 }}

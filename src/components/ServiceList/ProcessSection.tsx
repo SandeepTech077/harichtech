@@ -59,16 +59,16 @@ const   ProcessComponent: React.FC<ProcessComponentProps> = ({ processData }) =>
         <div className="inline-block mb-4">
           <Title title={title} />
         </div>
-        <h2 className="text-[24px] lg:text-[43px] font-bold mb-3">
+        <h2 className="text-[22px] sm:text-[28px] md:text-[34px] lg:text-[43px] font-bold mb-3">
           {subTitle.split(" ").slice(0, -1).join(" ")}{" "}
           <span className="text-blue-600">{subTitle.split(" ").pop()}</span>
         </h2>
-        <p className="text-black text-[14px] lg:text-[18px]">
+        <p className="text-black text-[14px] sm:text-[16px] md:text-[17px] lg:text-[18px]">
           {shortDescribation}
         </p>
       </div>
 
-      <div className="relative flex flex-col md:flex-row justify-between items-center gap-14">
+      <div className="relative flex flex-col md:flex-row flex-wrap justify-center md:justify-between items-center gap-10 md:gap-14">
         {steps.map((step, index) => (
           <React.Fragment key={step.id}>
             {/* Step Card */}
@@ -80,7 +80,7 @@ const   ProcessComponent: React.FC<ProcessComponentProps> = ({ processData }) =>
               viewport={{ once: true }}
               custom={index}
             >
-              <div className="bg-blue-600 text-white py-16 w-full rounded-lg text-center relative shadow-lg hover:scale-105 transition-transform duration-300">
+              <div className="bg-gradient-to-br from-[#2058FF] to-[#004BC2] text-white py-16 w-full rounded-lg text-center relative shadow-lg hover:scale-105 transition-transform duration-300">
                 <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 w-16 h-16 rounded-full bg-white border border-blue-200 shadow-md flex items-center justify-center">
                   <span className="text-blue-600 font-bold text-lg">
                     {step.number}
