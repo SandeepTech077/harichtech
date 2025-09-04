@@ -114,3 +114,4 @@ const WhyChooseUs: React.FC<WhyUsProps> = ({ whyUsData }) => {
 };
 
 export default WhyChooseUs;
+

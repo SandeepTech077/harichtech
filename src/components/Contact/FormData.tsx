@@ -277,7 +277,6 @@ export default function FormData({ data }: FormDataProps) {
                   alt="Contact illustration"
                   fill
                   className="object-contain p-8"
-                  priority
                 />
               </div>
             </div>

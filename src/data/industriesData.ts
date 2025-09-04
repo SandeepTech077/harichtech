@@ -1253,7 +1253,7 @@ export const industiesData = [
     type: "education",
     mainSection: {
       title: "Transforming Education Through Scalable and",
-      blueTitle: "Intelligent Digital Infrastructure",
+      blueTitle: " Intelligent Digital Infrastructure",
       descriptions: [
         "The education sector is undergoing a major evolution, driven by the need for accessible, flexible, and technology enabled learning experiences. Institutions across the globe from K 12 schools and universities to vocational institutes and edtech platforms which are embracing digital tools to engage students, manage operations, and scale their impact. Learners today demand convenience, interactivity, and personalization whether in a physical classroom, hybrid setting, or fully virtual environment.",
         "At Harichtech, we develop robust, secure, and future ready digital solutions for the education sector. Our platforms are designed to facilitate learning, streamline administration, enhance student outcomes, and enable collaboration among educators, institutions, and learners.With a strong focus on usability, scalability, and data security, we empower educational institutions and edtech startups to deliver high quality learning experiences across all formats.",

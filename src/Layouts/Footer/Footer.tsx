@@ -26,11 +26,15 @@ const Footer = () => {
   // Data
   const servicesData = [
     {
-      name: "Web & App Development",
+      name: "Web Development",
       path: "/services-list/web-detail",
     },
+    { name: "App Development", path: "/services-list/mobile-app-detail" },
     { name: "UI/UX Design", path: "/services-list/uiux-detail" },
-    { name: "Digital Marketing", path: "/services-list/digital-marketing-detail" },
+    {
+      name: "Digital Marketing",
+      path: "/services-list/digital-marketing-detail",
+    },
   ];
 
   const industriesData = [
@@ -116,10 +120,7 @@ const Footer = () => {
               <Image
                 src={Logo}
                 alt="Harich Technologies"
-                width={200}
-                height={50}
-                className="mb-6"
-                priority
+                className="w-53 h-auto mb-6"
               />
               <div className="space-y-4">
                 <p className="text-sm leading-relaxed text-white/90">
@@ -141,16 +142,27 @@ const Footer = () => {
                       aria-label={`Visit our ${social.name} profile`}
                     >
                       <div className="w-10 h-10  relative">
-                        <Image src={social.icon} alt={social.name} fill className="object-contain" />
+                        <Image
+                          src={social.icon}
+                          alt={social.name}
+                          fill
+                          className="object-contain"
+                        />
                       </div>
                     </a>
                   ))}
                 </div>
                 <div className="pt-4 space-y-2">
-                  <a href="tel:+918200665684" className="block text-lg font-semibold hover:text-blue-200">
+                  <a
+                    href="tel:+918200665684"
+                    className="block text-lg font-semibold hover:text-blue-200"
+                  >
                     +91 8200 66 5684
                   </a>
-                  <a href="mailto:info@harichtech.com" className="block text-sm text-white/90 hover:text-white">
+                  <a
+                    href="mailto:info@harichtech.com"
+                    className="block text-sm text-white/90 hover:text-white"
+                  >
                     info@harichtech.com
                   </a>
                 </div>
@@ -165,7 +177,10 @@ const Footer = () => {
               <ul className="space-y-3">
                 {servicesData.map((service) => (
                   <li key={service.name}>
-                    <Link href={service.path} className="text-white/90 hover:text-white text-sm">
+                    <Link
+                      href={service.path}
+                      className="text-white/90 hover:text-white text-sm"
+                    >
                       {service.name}
                     </Link>
                   </li>
@@ -181,7 +196,10 @@ const Footer = () => {
               <ul className="space-y-3">
                 {industriesData.map((industry) => (
                   <li key={industry.name}>
-                    <Link href={industry.path} className="text-white/90 hover:text-white text-sm">
+                    <Link
+                      href={industry.path}
+                      className="text-white/90 hover:text-white text-sm"
+                    >
                       {industry.name}
                     </Link>
                   </li>
@@ -197,7 +215,10 @@ const Footer = () => {
               <ul className="space-y-3">
                 {hireDevelopers.map((developer) => (
                   <li key={developer}>
-                    <Link href="#" className="text-white/90 hover:text-white text-sm">
+                    <Link
+                      href="#"
+                      className="text-white/90 hover:text-white text-sm"
+                    >
                       {developer}
                     </Link>
                   </li>
@@ -207,7 +228,9 @@ const Footer = () => {
 
             {/* Contact Form */}
             <div className=" hidden md:block  space-y-6">
-              <h3 className="text-xl font-bold border-b-2 border-white/30 pb-2">Get In Touch</h3>
+              <h3 className="text-xl font-bold border-b-2 border-white/30 pb-2">
+                Get In Touch
+              </h3>
               <form className="space-y-4" onSubmit={handleSubmit}>
                 <input
                   type="text"
@@ -225,25 +248,25 @@ const Footer = () => {
                   placeholder="Email Id"
                   className="w-full px-4 py-3 bg-transparent border border-white/30 rounded-lg text-white"
                 />
-             <input
-                    type="tel"
-                    name="phone"
-                    value={FooterState.phone}
-                    onChange={(e) => {
-                      let value = e.target.value.replace(/\D/g, "");
-                      if (value.length > 10) {
-                        value = value.slice(0, 10);
-                      }
-                      setFormState((prev) => ({ ...prev, phone: value }));
-                    }}
-                    inputMode="numeric" // mobile keyboard number only
-                    pattern="[0-9]*"
-                    disabled={isSubmitting}
-                    className={`w-full px-4 py-3 bg-transparent border border-white/30 rounded-lg text-white $
+                <input
+                  type="tel"
+                  name="phone"
+                  value={FooterState.phone}
+                  onChange={(e) => {
+                    let value = e.target.value.replace(/\D/g, "");
+                    if (value.length > 10) {
+                      value = value.slice(0, 10);
+                    }
+                    setFormState((prev) => ({ ...prev, phone: value }));
+                  }}
+                  inputMode="numeric" // mobile keyboard number only
+                  pattern="[0-9]*"
+                  disabled={isSubmitting}
+                  className={`w-full px-4 py-3 bg-transparent border border-white/30 rounded-lg text-white $
                       FooterState.phone ?
                     `}
-                    placeholder="Moblie No."
-                  />
+                  placeholder="Moblie No."
+                />
                 <textarea
                   name="message"
                   value={FooterState.message}
@@ -260,7 +283,13 @@ const Footer = () => {
                   {isSubmitting ? "Sending..." : "Send Message"}
                 </button>
                 {message && (
-                  <p className={`text-sm mt-2 ${message.type === "success" ? "text-green-300" : "text-red-300"}`}>
+                  <p
+                    className={`text-sm mt-2 ${
+                      message.type === "success"
+                        ? "text-green-300"
+                        : "text-red-300"
+                    }`}
+                  >
                     {message.text}
                   </p>
                 )}
@@ -276,9 +305,13 @@ const Footer = () => {
               Copyright © {currentYear} Harichtech | All Rights Reserved
             </p>
             <div className="flex items-center gap-6">
-              <Link href="#" className="text-sm text-white/70 hover:text-white">Privacy Policy</Link>
+              <Link href="#" className="text-sm text-white/70 hover:text-white">
+                Privacy Policy
+              </Link>
               <span className="text-white/40">|</span>
-              <Link href="#" className="text-sm text-white/70 hover:text-white">Terms & Condition</Link>
+              <Link href="#" className="text-sm text-white/70 hover:text-white">
+                Terms & Condition
+              </Link>
             </div>
           </div>
         </div>

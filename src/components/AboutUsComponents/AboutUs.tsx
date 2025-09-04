@@ -48,6 +48,7 @@ const AboutUs: React.FC<AboutUsProps> = ({ aboutUs }) => {
             alt="About Us Banner"
             width={1232}
             height={479}
+            priority
             className="w-full h-auto"
           />
         ) : (

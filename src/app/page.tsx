@@ -14,14 +14,14 @@ export default function Home() {
   const { ourStatus } = AboutUsData;
 
   return (
-    <main className="w-full overflow-hidden">
+    <main className="w-full overflow-hidden space-y-6">
       {/* Fullscreen Hero */}
       <MainTitleSection data={HomePagedata.mainTitleSection} />
 
       {/* Page Sections */}
       <div className="w-full">
         <div className="mx-auto px-4  lg:px-16">
-          <div className="space-y-24 sm:space-y-28 lg:space-y-8">
+          <div className="space-y-24 sm:space-y-28 lg:space-y-9">
             <AboutStatus status={ourStatus.status} />
             <AboutUs data={HomePagedata.aboutUs} />
             <PortfolioComponent data={HomePagedata.portfolio} />

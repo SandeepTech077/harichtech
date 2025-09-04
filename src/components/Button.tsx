@@ -18,9 +18,7 @@ const Button: React.FC<GradientButtonProps> = ({ text, href = "#" }) => {
       <Image
         src={Arrow}
         alt="Arrow"
-        width={16}
-        height={16}
-        className="w-4 h-4"
+        className="w-auto h-4"
       />
     </Link>
   );

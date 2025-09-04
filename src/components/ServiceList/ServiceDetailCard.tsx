@@ -67,6 +67,7 @@ const ServiceDetailCard = ({ data }: ServiceDetailCardProps) => {
               alt={`${data.title} - ${data.subtitle}`}
               width={600}
               height={300}
+              priority
               className="w-full h-100 object-contain drop-shadow-lg"
             />
           </div>

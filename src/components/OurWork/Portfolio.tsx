@@ -1,4 +1,5 @@
 "use client";
+
 import React from "react";
 import Link from "next/link";
 import Image, { StaticImageData } from "next/image";
@@ -99,7 +100,6 @@ const Portfolio: React.FC<PortfolioProps> = ({ design }) => {
                           src={item.image}
                           alt={item.title}
                           className="w-full h-auto object-cover"
-                          priority
                         />
                       </div>
                     </div>

@@ -176,7 +176,7 @@ const  HomeServices: React.FC<HomeServicesProps> = ({ data }) => {
                       <Image
                         src={icon.image}
                         alt="tech-icon"
-                        className="w-6 h-6 object-contain"
+                        className="w-6 h-auto object-contain"
                       />
                     </div>
                   ))}

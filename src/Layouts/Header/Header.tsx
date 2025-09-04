@@ -132,8 +132,7 @@ const Header = () => {
                   <Image
                     src={MobileEMailIcon}
                     alt="Email Icon"
-                    width={20}
-                    height={20}
+                    className="w-5 h-auto"
                   />
                 </div>
                 <Link
@@ -210,7 +209,6 @@ const Header = () => {
                 src={Logo}
                 alt="Harich Technologies"
                 className="h-14 lg:h-14 w-auto max-w-[140px] sm:max-w-none"
-                priority
               />
             </Link>
 

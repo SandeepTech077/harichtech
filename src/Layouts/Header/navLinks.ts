@@ -1,5 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import WebIcon from "../../../public/SVG/header/web-development.svg"
+import AppIcon from "../../../public/SVG/header/app-development.svg"
 import UIUX from "../../../public/SVG/header/uiux-desgin.svg"
 import DigitalMarketing from "../../../public/SVG/header/digital-market.svg"
 import RealEstate from "../../../public/SVG/header/real-estate.svg"
@@ -46,7 +47,7 @@ export const servicesData: NavItem[] = [
 
   {
     name: "App Development",
-    icon: WebIcon,
+    icon: AppIcon,
     path: "/services-list/mobile-app-detail",
     children: [
       {

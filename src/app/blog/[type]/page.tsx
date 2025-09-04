@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import { MoreBlogsData } from "@/data/MoreBlogsData";
 import BlogHeading from "@/components/Blog/BlogHeading";
 import BlogContent from "@/components/BlogsCompoenet/BlogContent";
+import MotionComponent from "@/Animation/MotionComponent";
 
 interface Props {
   params: Promise<{ type: string }>;
@@ -26,17 +27,20 @@ async function BlogsDetails({ params }: Props) {
 
   return (
     <div className="min-h-screen bg-white">
-      <BlogHeading title={project.title} />
+      <MotionComponent type="fadeIn" duration={1} delay={0.3}>
+        <BlogHeading title={project.title} />
+      </MotionComponent>
 
       <div className="w-full px-4 lg:px-10 mt-8 flex flex-col lg:flex-row gap-8">
         <div className="flex-1">
-          <BlogContent
-            Banner={project.Banner}
-            mobileBanner={project.mobileBanner}
-            title={project.title}
-            blogs={project.blogs}
-            currentBlogType={project.type}
-          />
+            <BlogContent
+              Banner={project.Banner}
+              mobileBanner={project.mobileBanner}
+              title={project.title}
+              blogs={project.blogs}
+              currentBlogType={project.type}
+            />
+         
         </div>
       </div>
     </div>

@@ -339,7 +339,7 @@ export const OurProjects = {
       type: "yash-brambhatt",
       BannerSection: {
         icon: Helper.YashLogo,
-        description: 
+        description:
           "Yash Brahmbhatt is a self made, first generation entrepreneur and the founder and CEO of Shilp Group, a leading real estate company in Ahmedabad. Coming from humble beginnings, he never waited for opportunities—he created them. With a strong vision and relentless drive, he has shaped both his journey and the city’s skyline. ",
         button: {
           title: "Visit Website",
@@ -585,7 +585,7 @@ export const OurProjects = {
       BannerSection: {
         icon: Helper.AeroLogo,
         description:
-          "Qorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis.",
+          "Aerotyne Industry Pvt. Ltd. is a leading provider of automation parts and industrial solutions, dedicated to helping businesses achieve unmatched precision and efficiency. With a strong focus on innovation and quality, we craft machines and deliver components that redefine industry standards. ",
         button: {
           title: "Visit Website",
           href: "/",
@@ -601,7 +601,8 @@ export const OurProjects = {
           title: "Project Overview",
           titleTextColor: "text-[#53CCC7]",
           describation: [
-            " Qorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent auctor purus luctus enim egestas, ac scelerisque ante pulvinar. Donec ut rhoncus ex. Suspendisse ac rhoncus nisl, eu tempor urna. Curabitur vel bibendum lorem. Morbi convallis convallis diam sit amet lacinia. Aliquam in elementum tellus.",
+            "Aerotyne Industry Pvt. Ltd. is a leading provider of automation parts and industrial solutions, dedicated to helping businesses achieve unmatched precision and efficiency. With a strong focus on innovation and quality, we craft machines and deliver components that redefine industry standards.",
+            " Our platform offers a wide range of automation parts designed to support diverse manufacturing and engineering needs. Backed by advanced technology, rigorous quality checks, and reliable customer support, Aerotyne ensures that every product contributes to higher productivity and long lasting performance.",
           ],
         },
       },
@@ -761,7 +762,7 @@ export const OurProjects = {
           },
         ],
         Banner: Helper.EverVitalFont,
-        mobileBanner: Helper.EverVitalFontMobile
+        mobileBanner: Helper.EverVitalFontMobile,
       },
       review: {
         Textcolor: "text-black",

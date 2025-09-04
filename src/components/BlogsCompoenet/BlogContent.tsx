@@ -289,20 +289,23 @@ const BlogContent: React.FC<BlogContentProps> = ({
             </div>
           </div>
 
-          {/* ✅ Prev / Next inside content column */}
+          {/* ✅ Prev / Next inside same wrapper */}
           <div className="w-full flex justify-between items-start mb-10">
             {prevBlog ? (
               <Link
                 href={`/blog/${prevBlog.type}`}
-                className="flex items-center gap-3 group max-w-[45%] "
+                className="flex items-center gap-3 group max-w-[45%]"
               >
-                <Image
-                  src={prevBlog.Banner}
-                  alt={prevBlog.title}
-                  width={100}
-                  height={100}
-                  className="rounded-lg object-cover "
-                />
+                {/* Responsive image wrapper */}
+                <div className="relative w-20 h-20 sm:w-24 sm:h-32 md:w-20 md:h-20 flex-shrink-0">
+                  <Image
+                    src={prevBlog.Banner}
+                    alt={prevBlog.title}
+                    fill
+                    className="rounded-lg object-cover"
+                  />
+                </div>
+
                 <div>
                   <p className="text-sm text-gray-500">← Previous article</p>
                   <h4 className="text-sm font-medium text-gray-800 group-hover:text-blue-600 line-clamp-2">
@@ -325,13 +328,15 @@ const BlogContent: React.FC<BlogContentProps> = ({
                     {nextBlog.title}
                   </h4>
                 </div>
-                <Image
-                  src={nextBlog.Banner.src}
-                  alt={nextBlog.title}
-                  width={100}
-                  height={100}
-                  className="rounded-lg object-cover"
-                />
+
+                <div className="relative w-20 h-28 sm:w-24 sm:h-32 md:w-20 md:h-20 flex-shrink-0">
+                  <Image
+                    src={nextBlog.Banner}
+                    alt={nextBlog.title}
+                    fill
+                    className="rounded-lg object-cover"
+                  />
+                </div>
               </Link>
             ) : (
               <div />
@@ -404,7 +409,7 @@ const BlogContent: React.FC<BlogContentProps> = ({
                     }
                     setFormState((prev) => ({ ...prev, phone: value }));
                   }}
-                  inputMode="numeric" // mobile keyboard number only
+                  inputMode="numeric"
                   pattern="[0-9]*"
                   disabled={isSubmitting}
                   className="w-full px-4 py-3 bg-transparent border border-gray-300 rounded-lg text-black"
