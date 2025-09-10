@@ -23,7 +23,13 @@ export const Career = {
       // },
       {
         title: "BDE (Bussiness Development Executive)",
-        experiance: "Experience : 02 Years",
+        experiance: "Experience : 0.6 Years",
+        opening: "Open Position : 02",
+        btnText: "Apply Now",
+      },
+      {
+        title: "SE0 (Search Engine optimization)",
+        experiance: "Experience : 2+ Years",
         opening: "Open Position : 01",
         btnText: "Apply Now",
       },
@@ -45,7 +51,8 @@ export const Career = {
   whyChooseUs: {
     title: "Why Us",
     subTitle: "Why Choose Harichtech?",
-    titleDescribation:"Before the first pixel, we’re focused on what matters most: your vision.",
+    titleDescribation:
+      "Before the first pixel, we’re focused on what matters most: your vision.",
     describation:
       "With thoughtful planning, clean design, and smart technology, we build solutions that perform. We value timelines, communication, and craft   delivering work that’s both strategic and beautiful. At Harich Tech, you don’t just get a service you gain a partner.",
     list: [

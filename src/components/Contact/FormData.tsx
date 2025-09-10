@@ -1,9 +1,10 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 "use client";
 
-import React, { useState } from 'react';
-import Image, { StaticImageData } from 'next/image';
+import React, { useState } from "react";
+import Image, { StaticImageData } from "next/image";
 import { sendEmailMessage } from "@/api/base";
+
 interface FormDataProps {
   data: {
     name: string;
@@ -29,48 +30,53 @@ interface FormState {
 
 export default function FormData({ data }: FormDataProps) {
   const [formState, setFormState] = useState<FormState>({
-    name: '',
-    email: '',
-    phone: '',
-    country: '',
-    budget: '',
-    customBudget: '',
-    description: ''
+    name: "",
+    email: "",
+    phone: "",
+    country: "",
+    budget: "",
+    customBudget: "",
+    description: "",
   });
 
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [message, setMessage] = useState<{ type: "success" | "error"; text: string } | null>(null);
+  const [message, setMessage] = useState<{
+    type: "success" | "error";
+    text: string;
+  } | null>(null);
 
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+  const handleInputChange = (
+    e: React.ChangeEvent<
+      HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
+    >
+  ) => {
     const { name, value } = e.target;
-    setFormState(prev => ({
+    setFormState((prev) => ({
       ...prev,
-      [name]: value
+      [name]: value,
     }));
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    setMessage(null); 
+    setMessage(null);
 
+    const errors: Record<string, string> = {};
+    if (!/^[0-9]{10}$/.test(formState.phone)) {
+      errors.phone = "Phone number must be 10 digits";
+    }
 
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formState.email)) {
+      errors.email = "Enter a valid email address";
+    }
 
-   const errors: Record<string, string> = {};
-  if (!/^[0-9]{10}$/.test(formState.phone)) {
-    errors.phone = "Phone number must be 10 digits";
-  }
+    if (Object.keys(errors).length > 0) {
+      setMessage({ type: "error", text: Object.values(errors).join(", ") });
+      setIsSubmitting(false);
+      return;
+    }
 
-  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formState.email)) {
-    errors.email = "Enter a valid email address";
-  }
-
-  if (Object.keys(errors).length > 0) {
-    setMessage({ type: "error", text: Object.values(errors).join(", ") });
-    return;
-  
-   }
-  
     try {
       const { ok, result } = await sendEmailMessage(formState);
 
@@ -104,7 +110,6 @@ export default function FormData({ data }: FormDataProps) {
     }
   };
 
-
   return (
     <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-slate-50 to-blue-50">
       <div className="max-w-7xl mx-auto">
@@ -121,12 +126,12 @@ export default function FormData({ data }: FormDataProps) {
                   value={formState.name}
                   onChange={handleInputChange}
                   required
-                  className="w-full px-4 py-4 border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 text-gray-900 placeholder-gray-500 bg-white "
+                  className="w-full px-4 py-4 border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 text-gray-900 placeholder-gray-500 bg-white"
                 />
               </div>
 
               {/* Email Field */}
-              <div>
+              <div className="space-y-2">
                 <input
                   type="email"
                   name="email"
@@ -135,29 +140,30 @@ export default function FormData({ data }: FormDataProps) {
                   onChange={(e) =>
                     setFormState({ ...formState, email: e.target.value })
                   }
-                  className={`border p-2 bg-white  rounded w-full ${
+                  className={`w-full px-4 py-4 border rounded-lg bg-white text-gray-900 placeholder-gray-500 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 ${
                     message?.text.includes("email")
                       ? "border-red-500"
-                      : "border-gray-300"
+                      : "border-gray-200"
                   }`}
                 />
               </div>
-              {/* phone Field */}
+
+              {/* Phone Field */}
               <div className="space-y-2">
                 <input
                   type="text"
                   name="phone"
-                  placeholder="Moblie No."
+                  placeholder="Mobile No."
                   value={formState.phone}
                   onChange={(e) => {
                     if (/^[0-9]{0,10}$/.test(e.target.value)) {
                       setFormState({ ...formState, phone: e.target.value });
                     }
                   }}
-                  className={`border p-2 bg-white  rounded w-full ${
+                  className={`w-full px-4 py-4 border rounded-lg bg-white text-gray-900 placeholder-gray-500 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 ${
                     message?.text.includes("Phone")
                       ? "border-red-500"
-                      : "border-gray-300"
+                      : "border-gray-200"
                   }`}
                 />
               </div>
@@ -171,7 +177,7 @@ export default function FormData({ data }: FormDataProps) {
                   value={formState.country}
                   onChange={handleInputChange}
                   required
-                  className="w-full px-4 py-4 border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 text-gray-900 placeholder-gray-500 bg-white "
+                  className="w-full px-4 py-4 border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 text-gray-900 placeholder-gray-500 bg-white"
                 />
               </div>
 
@@ -220,7 +226,7 @@ export default function FormData({ data }: FormDataProps) {
                   onChange={handleInputChange}
                   rows={4}
                   required
-                  className="w-full px-4 py-4 border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 text-gray-900 placeholder-gray-500 bg-white  resize-none"
+                  className="w-full px-4 py-4 border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 text-gray-900 placeholder-gray-500 bg-white resize-none"
                 />
               </div>
 
@@ -228,7 +234,7 @@ export default function FormData({ data }: FormDataProps) {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="group relative w-full sm:w-auto px-8 py-4 bg-gradient-to-r from-blue-600 to-blue-700 text-white font-semibold rounded-lg  transform hover:-translate-y-0.5 transition-all duration-200 disabled:opacity-70 disabled:cursor-not-allowed disabled:transform-none"
+                className="group relative w-full sm:w-auto px-8 py-4 bg-gradient-to-r from-blue-600 to-blue-700 text-white font-semibold rounded-lg transform hover:-translate-y-0.5 transition-all duration-200 disabled:opacity-70 disabled:cursor-not-allowed disabled:transform-none"
               >
                 <span className="flex items-center justify-center space-x-2">
                   <span>{isSubmitting ? "Sending..." : data.btnText}</span>

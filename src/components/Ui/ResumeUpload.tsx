@@ -1,8 +1,9 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import Image, { StaticImageData } from "next/image";
 import { ArrowUpRight } from "lucide-react";
+import ApplicationModal from "./ApplicationModal"; // ✅ Import modal
 
 interface ResumeUploadData {
   title: string;
@@ -18,28 +19,15 @@ interface ResumeUploadProps {
 const ResumeUpload: React.FC<ResumeUploadProps> = ({ data }) => {
   const { title, describation, btnText, rightImage } = data;
 
-  const handleUploadClick = (): void => {
-    const input = document.createElement("input");
-    input.type = "file";
-    input.accept = ".pdf,.doc,.docx";
-    input.onchange = (e: Event) => {
-      const target = e.target as HTMLInputElement;
-      const file = target.files?.[0];
-      if (file) {
-        handleFileUpload(file);
-      }
-    };
-    input.click();
+  // ✅ State for modal (like in Hiring)
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleOpenModal = (): void => {
+    setIsModalOpen(true);
   };
 
-  const handleFileUpload = async (file: File): Promise<void> => {
-    try {
-      const formData = new FormData();
-      formData.append("resume", file);
-
-    } catch (error) {
-      console.error("Error uploading file:", error);
-    }
+  const handleCloseModal = (): void => {
+    setIsModalOpen(false);
   };
 
   return (
@@ -60,12 +48,14 @@ const ResumeUpload: React.FC<ResumeUploadProps> = ({ data }) => {
               <p className="text-white/90 text-sm sm:text-base lg:text-lg leading-relaxed mb-6 sm:mb-8">
                 {describation}
               </p>
+
+              {/* ✅ Button now opens modal */}
               <button
-                onClick={handleUploadClick}
+                onClick={handleOpenModal}
                 className="inline-flex items-center px-6 sm:px-8 py-3 sm:py-4 font-semibold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2"
                 style={{
-                  background:"white",
-                  color: "black", // ✅ Custom text color here
+                  background: "white",
+                  color: "black",
                 }}
                 type="button"
                 aria-label="Upload your resume"
@@ -90,6 +80,13 @@ const ResumeUpload: React.FC<ResumeUploadProps> = ({ data }) => {
           </div>
         </div>
       </div>
+
+      {/* ✅ Reuse ApplicationModal */}
+      <ApplicationModal
+        isOpen={isModalOpen}
+        onClose={handleCloseModal}
+        jobTitle="General Resume Upload" // You can customize this text
+      />
     </div>
   );
 };

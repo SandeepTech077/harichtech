@@ -3,7 +3,7 @@ import { Helper } from "@/helper/ContactUsHelper";
 export const ContactData = {
   getTouch: {
     title: "Get In Touch",
-    subTitle: "Stay Contact Us",
+    subTitle: "Lets Connect",
     describation:
       "Get in touch and let us know how we can help. Fill out the form and we’ll be in touch as soon as possible.",
     socilaMedia: [
