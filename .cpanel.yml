@@ -1,5 +1,8 @@
----
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/haricmhj/public_html
-    - /bin/cp -R images $DEPLOYPATH
+    - export DEPLOYPATH=/home/haricmhj/public_html/
+    - npm ci
+    - npm run build
+    - /bin/rm -rf $DEPLOYPATH/*
+    - /bin/cp -R out/* $DEPLOYPATH
+    - /bin/cp .htaccess $DEPLOYPATH
