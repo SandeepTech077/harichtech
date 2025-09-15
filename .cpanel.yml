@@ -1,6 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/haricmhj/public_html
-    - /bin/cp -R out/* $DEPLOYPATH
-    - /bin/cp .htaccess $DEPLOYPATH
+    - export DEPLOYPATH=/home/haricmhj/public_html/
+    - /bin/cp -R images $DEPLOYPATH
